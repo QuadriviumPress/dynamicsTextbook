@@ -115,7 +115,11 @@ def main():
     report.check(not absent, f"all {len(referenced)} referenced images exist",
                  ", ".join(str(p.relative_to(ROOT)) for p in absent[:10]))
     on_disk = {p.resolve() for p in (ROOT / "images").rglob("*") if p.is_file()}
-    orphans = sorted(on_disk - referenced)
+    # Site logos are referenced from myst.yml options, not markdown.
+    logo_names = {"logo.svg", "logo-dark.svg", "logo.png", "logo.jpg"}
+    orphans = sorted(
+        p for p in (on_disk - referenced) if p.name not in logo_names
+    )
     report.check(not orphans, f"no orphaned files under images/ ({len(on_disk)} on disk)",
                  ", ".join(str(p.relative_to(ROOT)) for p in orphans[:10]))
 
