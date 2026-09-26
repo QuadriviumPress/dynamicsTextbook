@@ -133,7 +133,7 @@ $$
 \frac{\mathrm{d}U}{\mathrm{d}t} = \vec{\nabla}U \cdot \frac{\mathrm{d}\vec{r}}{\mathrm{d}t}
 $$
 
-So if we assume that we only have conservative forces, then $E = K + U$ then the time derivative of the energy is:
+So if we assume that we only have conservative forces, then $E = K + U$ and the time derivative of the energy is:
 
 $$
 \begin{aligned}
@@ -227,7 +227,7 @@ A uniform spherical shell of mass $M$ and radius $R$ is able to rotate about a v
 :alt: Figure shows the setup of the problem with a sphere, pulley, and hanging mass.
 :width: 161px
 
-The set up for this problem shows the spherical shell of mass $M$ and $R$ that can rotate on an axis. There is a disk-pulley with mass $M_{p}$ and radius $R_{P}$ that can likewise rotate about an axis. There is a mass $m$ hanging over the edge that can descend due to gravity. There is no friction (no energy loss) and the rope has no mass and cannot stretch.
+The set up for this problem shows the spherical shell of mass $M$ and radius $R$ that can rotate on an axis. There is a disk-pulley with mass $M_{p}$ and radius $R_{P}$ that can likewise rotate about an axis. There is a mass $m$ hanging over the edge that can descend due to gravity. There is no friction (no energy loss) and the rope has no mass and cannot stretch.
 :::
 
 **Solution**
@@ -345,7 +345,7 @@ $$
 
 First step is to consider all sources of kinetic energy and all sources of potential energy.
 
-For potential energy, we have the two masses within a gravitational field. For small distances, we can assume that $F_{g}= mg$ and that means that $U = mg\Delta y$, where $\Delta y$ indicates the change in vertical. If we set $y$ = 0 to be at the midpoint of the pulley (see [Figure 9.4](#fig-9-4)), then the potential energy of the masses are $U_{1}= -m_{1}gy_{1}$ and $U_{2}= -m_{2}gy_{2}$, where $y_{1}$ and $y_{2}$ are the positions of the masses relative to the pulley.
+For potential energy, we have the two masses within a gravitational field. For small distances, we can assume that $F_{g}= mg$ and that means that $U = mg\Delta y$, where $\Delta y$ indicates the change in vertical. If we set $y$ = 0 to be at the midpoint of the pulley (see [Figure 9.4](#fig-9-4)), then the potential energies of the masses are $U_{1}= -m_{1}gy_{1}$ and $U_{2}= -m_{2}gy_{2}$, where $y_{1}$ and $y_{2}$ are the positions of the masses relative to the pulley.
 
 :::{figure} ../images/figures/figure-9-4.png
 :label: fig-9-4
@@ -353,7 +353,7 @@ For potential energy, we have the two masses within a gravitational field. For s
 :alt: Figure shows the positions of the two masses relative to the center of the pulley.
 :width: 248px
 
-Position of masses in the Atwood machine. The midpoint of the pulley sets the $y$ = 0 point, with the masses distances $y_{1}$ and $y_{2}$ being measured from the $y$ = 0.
+Position of masses in the Atwood machine. The midpoint of the pulley sets the $y$ = 0 point, with the masses’ distances $y_{1}$ and $y_{2}$ being measured from the $y$ = 0.
 :::
 
 Note that there is no potential energy from the pulley because the pulley does not move vertically. So there is no work done by gravity in moving the pulley (by its centre of mass).
@@ -552,7 +552,7 @@ $$
 Translation and rotational motion of the pulley from [Figure 9.6](#fig-9-6). The entire disk moves down with $v = v_{cm}$. But when the pulley moves, it will also rotate without slipping with $\omega = v_{cm}/R$. So at point $P$ on the fixed side, the velocity is instantaneously zero.
 :::
 
-Second, let’s consider how the spring stretches relative to the pulley’s motion. As the pulley moves down with the stretch of the spring, the pulley will rotate clockwise (see [Figure 9.8](#fig-9-8)). Point $P$ is the contact point for the rotation and the net velocity there will be zero. Note that the contact point will be on the side of pulley that is fixed to the ceiling. That’s because the other side with the spring is able to change in height, not the fixed side. On the side with the spring, however, the velocities from the translation and rotation add together such that pulley moves away from the spring at twice the speed of the centre of mass.
+Second, let’s consider how the spring stretches relative to the pulley’s motion. As the pulley moves down with the stretch of the spring, the pulley will rotate clockwise (see [Figure 9.8](#fig-9-8)). Point $P$ is the contact point for the rotation and the net velocity there will be zero. Note that the contact point will be on the side of pulley that is fixed to the ceiling. That’s because the other side with the spring is able to change in height, not the fixed side. On the side with the spring, however, the velocities from the translation and rotation add together such that the pulley moves away from the spring at twice the speed of the centre of mass.
 
 ::::{tip} Quick Questions
 
@@ -657,7 +657,7 @@ $$
 
 By setting the time derivative of $E$ to zero, you will obtain a differential equation of motion which you can use to solve the physics problem.
 
-While going through this chapter and the practice problems below, compare how the solution from energy conservation with what you would need to do if you were applying Newton’s second law instead. Consider which method you prefer and under which circumstances you would favour one over the other.
+While going through this chapter and the practice problems below, compare the solution from energy conservation with what you would need to do if you were applying Newton’s second law instead. Consider which method you prefer and under which circumstances you would favour one over the other.
 
 ::::
 
@@ -714,7 +714,7 @@ A rock of mass $M$ is released from a height $h$ above the ground. What is the v
 
 ::::{admonition} Practice Problem 9-3
 
-A mass $m$ is attached to a spring with constant $k$ and set in simple harmonic motion with an amplitude $A$. Find the equations for potential and kinetic energy in terms of $m, k$, and $A$. Plot these forces and their sum as a function of time from $t$ = 0 to $t = T$ (the period of oscillations). For the plot, choose arbitrary values for $k, m$, and $A$.
+A mass $m$ is attached to a spring with constant $k$ and set in simple harmonic motion with an amplitude $A$. Find the equations for potential and kinetic energy in terms of $m, k$, and $A$. Plot these energies and their sum as a function of time from $t$ = 0 to $t = T$ (the period of oscillations). For the plot, choose arbitrary values for $k, m$, and $A$.
 
 ::::
 

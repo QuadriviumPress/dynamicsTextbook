@@ -57,7 +57,7 @@ $$ (eq-6-3)
 
 <!-- Source PDF page 123; printed label 114. -->
 
-For simplicity, let’s take a case with 3 particles. Such that the total momentum is:
+For simplicity, let’s take a case with 3 particles. The total momentum is:
 
 $$
 \vec{p}_{tot}= \sum \vec{p}_{i}= \vec{p}_{1}+ \vec{p}_{2}+ \vec{p}_{3}
@@ -263,7 +263,7 @@ We want to find the velocity (speed and direction) of the system after an inelas
 The motion of two identical particles, $m_{1}$ and $m_{2}$, on a coordinate grid. The velocity of the post-collision system is shown by the purple vector.
 :::
 
-When the masses collide, they continue their journey as $m_{1}+m_{2}= 2m$ (purple vector). We do not know the exact direction of motion for the post-collision system, however. The $m_{1}+m_{2}$ system may move at an angle $\theta$ above or below the horizontal. [Figure 6.3](#fig-6-3) shows the above case. If we chose wrong, we will get a negative angle.
+When the masses collide, they continue their journey as $m_{1}+m_{2}= 2m$ (purple vector). We do not know the exact direction of motion for the post-collision system, however. The $m_{1}+m_{2}$ system may move at an angle $\theta$ above or below the horizontal. [Figure 6.3](#fig-6-3) shows the above case. If we choose wrong, we will get a negative angle.
 
 Since this is an isolated system, the total momentum must be conserved and it must be conserved in both $x$ and $y$, where
 
@@ -353,7 +353,7 @@ For a completely elastic collision, the particles rebound off each other and the
 
 ::::{admonition} Examples of Elastic Collisions
 
-A good example of elastic collisions is a game of pool / billiards, where you use one billiard ball to hit other ones into pockets. Or even a game of domino’s, where one domino piece hits the next and so forth. In practice, these are not fully elastic collisions as there will be some loss of energy, but there is little energy loss.
+A good example of elastic collisions is a game of pool / billiards, where you use one billiard ball to hit other ones into pockets. Or even a game of dominoes, where one domino piece hits the next and so forth. In practice, these are not fully elastic collisions as there will be some loss of energy, but there is little energy loss.
 
 For some nice examples of elastic-like collisions, here are videos showing [Newton’s cradle](https://www.youtube.com/watch?v=0LnbyjOyEQ8) and [Dominos with cats](https://www.youtube.com/watch?v=7Nn7NZI_LN4).
 
@@ -375,7 +375,7 @@ Consider two balls moving toward each other on the $x-$axis as shown in [Figure 
 :alt: Cartoon showing the before and after collision velocities of the two masses.
 :width: 341px
 
-Two masses, $m_{1}$ and $m_{2}$ collide in an elastic collisions before and after. Their speeds change and they move in opposite directions after the collision.
+Two masses, $m_{1}$ and $m_{2}$ collide in an elastic collision. Their speeds change and they move in opposite directions after the collision.
 :::
 
 This may sound like an easy problem, but there are some tricks to it. We want to find $v_{1,f}$ and $v_{2,f}$ in terms of $m_{1}, m_{2}, v_{1,i}$ and $v_{2,i}$. For a completely elastic collision, the total momentum is conserved, so the initial momentum equals the final momentum.
@@ -549,7 +549,7 @@ $$ (eq-6-13)
 
 where $\vec{v}_{cm}$ is the velocity of the centre of mass. In other words, the total momentum of a system of particles is equivalent to the total mass of the system times the velocity of the centre of mass (how the centre of mass of the system is moving).
 
-Equation 6.13 is a way to approximate a complicated system. In physics, we like to simplify problems as much as possible. Rather than trying to solve a complicated problem of a system of particles or an irregularly shaped body, you can instead use one giant particle with a mass given by the total mass of the system located at and moving with the centre of mass and moving. You are basically condensing the problem from a collection of particles down to a representative particle at a mass-weighted average position.
+Equation 6.13 is a way to approximate a complicated system. In physics, we like to simplify problems as much as possible. Rather than trying to solve a complicated problem of a system of particles or an irregularly shaped body, you can instead use one giant particle with a mass given by the total mass of the system located at and moving with the centre of mass. You are basically condensing the problem from a collection of particles down to a representative particle at a mass-weighted average position.
 
 It can also be useful to consider a coordinate system relative to the centre of mass rather than a stationary observer. [Figure 6.5](#fig-6-5) shows the difference between an initial reference frame from a stationary observer, $S$, and a moving frame, $S^{\prime }$, located at the centre of mass of an irregular object. For simplicity, the centre of mass is moving with a constant velocity, $\vec{u}$ (so $S^{\prime }$ is also an inertial frame). To an observer in $S^{\prime }$, the irregular object would appear to be stationary (both the observer and the object are moving together). This means that the total momentum in the CM frame is zero.
 
@@ -561,16 +561,16 @@ It can also be useful to consider a coordinate system relative to the centre of 
 :alt: Figure 6.5 from the source textbook
 :width: 260px
 
-Comparison between a stationary observer coordinate system $(S)$ and a centre-ofmass coordinate system $(S ^{\prime })$. An irregular object is moving in the stationary frame. The centre of mass $(cm)$ of this object has a speed $\vec{u}$ relative to the stationary frame. The $S ^{\prime }$ frame is fixed relative to the centre of mass and moves with it (such that the object would be stationary in the centre-of-mass frame).
+Comparison between a stationary observer coordinate system $(S)$ and a centre-of-mass coordinate system $(S ^{\prime })$. An irregular object is moving in the stationary frame. The centre of mass $(cm)$ of this object has a speed $\vec{u}$ relative to the stationary frame. The $S ^{\prime }$ frame is fixed relative to the centre of mass and moves with it (such that the object would be stationary in the centre-of-mass frame).
 :::
 
-Consider the same particle in both reference frames. The particle has a velocity $\vec{v}_{i}$ in frame S and a velocity $\vec{v}_{i}^{\prime }$ in frame S$'$. Since the two frames differ by a relative velocity $\vec{u}$, the velocity in S and S$'$ are connected by,
+Consider the same particle in both reference frames. The particle has a velocity $\vec{v}_{i}$ in frame S and a velocity $\vec{v}_{i}^{\prime }$ in frame S$'$. Since the two frames differ by a relative velocity $\vec{u}$, the velocities in S and S$'$ are connected by,
 
 $$
 \vec{v}_{i}= \vec{v}_{i}^{\prime }+ \vec{u}
 $$
 
-This equation implies that if the total momentum must be conserved in both frames, because the final and initial momentum shifted by a constant amount $(\vec{u})$. This case is true if there are no external forces (only internal forces) and no acceleration.
+This equation implies that the total momentum must be conserved in both frames because the final and initial momenta are shifted by a constant amount $(\vec{u})$. This case is true if there are no external forces (only internal forces) and no acceleration.
 
 (example-6-3)=
 
@@ -675,7 +675,7 @@ Switching to the centre of mass frame can be convenient when you have complicate
 
 Up until now, we have applied Newton’s second law as $\sum \vec{F} = ma$. This equation is applicable if the system mass is constant with time. But you can have problems in physics where the mass changes.
 
-In general, Newton’s second law follows;
+In general, Newton’s second law follows:
 
 $$
 \sum\vec{F} = \frac{\mathrm{d}\vec{p}}{\mathrm{d}t} = \frac{\mathrm{d}(m\vec{v})}{\mathrm{d}t} = \Bigg(\frac{\mathrm{d}m}{\mathrm{d}t} \Bigg)\vec{v} + m\Bigg(\frac{\mathrm{d}\vec{v}}{\mathrm{d}t} \Bigg)
@@ -687,7 +687,7 @@ Note that you recover $\sum \vec{F} = m\vec{a}$ if the mass is constant $(\dot{m
 
 ::::{admonition} Sample Problem 6-4
 
-A rope with a linear mass density of $\lambda$ (in kg $\mathrm{m}^{-1})$ and length $L$ is coiled in a heap on the floor. You grab one end of the rope and pull it up at a constant speed of $v$. **What is the force as a function of height** $y$ **that you must apply to raise rope?**
+A rope with a linear mass density of $\lambda$ (in kg $\mathrm{m}^{-1})$ and length $L$ is coiled in a heap on the floor. You grab one end of the rope and pull it up at a constant speed of $v$. **What is the force as a function of height** $y$ **that you must apply to raise the rope?**
 
 **Solution**
 
@@ -721,7 +721,7 @@ $$
 
 where $\lambda y$ represents the amount of mass above the ground. The total mass of the rope is given by $m_{tot}= \lambda L$.
 
-To solve for the external force, we apply Newton’s second law. We don’t know how quickly the mass is changing (we don’t have $\dot{m}$ , but we can use the general form of Newton’s second law:
+To solve for the external force, we apply Newton’s second law. We don’t know how quickly the mass is changing (we don’t have $\dot{m}$), but we can use the general form of Newton’s second law:
 
 $$
 \sum \vec{F} = \frac{\mathrm{d}\vec{p}}{\mathrm{d}t}
@@ -748,7 +748,7 @@ $$
 = \lambda (\dot{y})^{2}\hat{\jmath} =\Rightarrow \dot{y} \mathrm{is} \mathrm{constant}
 $$
 
-Thus, we can can express $F_{ext}$ from Newton’s second law:
+Thus, we can express $F_{ext}$ from Newton’s second law:
 
 $$
 \Sigma \vec{F} = \lambda (\dot{y})^{2}\hat{\jmath}
@@ -795,7 +795,7 @@ $$
 
 At time $t+$d$t$, the rocket expels exhaust in the $-x$ direction. Under the conservation of momentum, the rocket must be given equal momentum in the $+x$ direction (this is the impulse given to the rocket that propels it forward). The rocket gains a bit of velocity d$v$ and speeds up. But as the rocket is gaining velocity, it is also losing mass because it is using up fuel by expelling the exhaust. The mass of exhaust will equal the mass lost by the rocket (we need to obey the conservation of mass). The exhaust at time $t$ + d$t$ has a mass of d$m_{ex}$ and a speed of $v_{ex}(-\hat{\imath})$ relative to the speed of the system as a whole (see [Figure 6.7](#fig-6-7)).
 
-In the frame of a stationary observer at time $t$ + d$t$, the exhaust is moving a speed of $(v - v_{ex})\hat{\imath}$ and the rocket has a mass $m -$ d$m_{ex}$ and a velocity of $(v$ + d$v)\hat{\imath}$. The total
+In the frame of a stationary observer at time $t$ + d$t$, the exhaust is moving at a speed of $(v - v_{ex})\hat{\imath}$ and the rocket has a mass $m -$ d$m_{ex}$ and a velocity of $(v$ + d$v)\hat{\imath}$. The total
 
 ::::
 
@@ -849,7 +849,7 @@ Thus, we found the equation for the velocity when the mass decreased from $M$ to
 
 Recreational activities like air hockey, billiards (pool), and bumper cars are all built around the principle of collisions, whether elastic or inelastic. In general, these applications will always involve friction which will make the puck, balls, or car come to a halt given time. Each uses a different method to try to reduce that friction as far as possible: a layer of air to keep the puck off the table for air hockey, smooth paint on the balls and low-friction felt for billiards, and graphite sprinkled across a smooth metal floor for bumper cars.
 
-On a larger scale, collisions and momentum conservation are also crucial for particle physics. The Large Hadron Collider (LHC) at CERN, routinely collides particle beams. The particle beams travel in opposite directions around a 27-km accelerator ring, guided and accelerated to very high energies (very close to the speed of light) using thousands of super-cooled superconducting magnets, before being made to collide. While operating at relativistic velocities and energies, the same basic physics of conservation of momentum and energy applies in these collisions.
+On a larger scale, collisions and momentum conservation are also crucial for particle physics. The Large Hadron Collider (LHC) at CERN routinely collides particle beams. The particle beams travel in opposite directions around a 27-km accelerator ring, guided and accelerated to very high energies (very close to the speed of light) using thousands of super-cooled superconducting magnets, before being made to collide. While operating at relativistic velocities and energies, the same basic physics of conservation of momentum and energy applies in these collisions.
 
 The objective of studying these ultra-high-energy collisions is to understand more about matter and how the universe evolved. The LHC is able to simulate energy levels and temperatures similar to those that existed approximately $10^{-12}$ seconds after the Big Bang. In relativistic collisions between free particles, energy and momentum are always conserved. The LHC has detectors to measure the speed, mass, and charge of the post-collision particles, which enables them to identify new particles based on the fundamental requirement that momentum must be conserved.
 
@@ -889,7 +889,7 @@ $$
 
 In systems where the total linear momentum is conserved, the net force is zero. If the system has variable mass, then one must use the general form of Newton’s second law to solve for the equations of motion.
 
-This chapter also defines impulse and collisions, which is how momentum of a system can change. Impulse is when an external force acts on a system over a short time duration such that the system has not had time to move between the start of the event and the end.
+This chapter also defines impulse and collisions, which are how momentum of a system can change. Impulse is when an external force acts on a system over a short time duration such that the system has not had time to move between the start of the event and the end.
 
 $$
 \vec{I} = \int_{t_{1}}^{t_{2}} \vec{F}\mathrm{d}t = \Delta \vec{p}
@@ -901,13 +901,13 @@ $$
 \vec{p}_{i}= \vec{p}_{f}
 $$
 
-An important property for systems of particles in the centre of mass. The centre of mass is a special radius vector that represents the mass-weighted average position vector.
+An important property for systems of particles is the centre of mass. The centre of mass is a special radius vector that represents the mass-weighted average position vector.
 
 $$
 \vec{R}_{cm}= \frac{\sum m_{i}\vec{r}_{i}}{M}
 $$
 
-Large or complex systems of particles can be simplified to a single giant particle at the position of the centre of mass that is moving with the centre of mass. The centre-ofmass reference frame can also be helpful in simplifying problems, because the net linear momentum of the centre-of-mass frame is zero by definition.
+Large or complex systems of particles can be simplified to a single giant particle at the position of the centre of mass that is moving with the centre of mass. The centre-of-mass reference frame can also be helpful in simplifying problems, because the net linear momentum of the centre-of-mass frame is zero by definition.
 
 ::::
 
@@ -984,7 +984,7 @@ Particle 2: $\hat{\jmath}$
 
 Particle 3: $\hat{\imath} + \hat{\jmath} + \hat{k}$
 
-Where all values are in SI units. What is the centre-of-mass velocity $v_{cm}$ of this system?
+All values are in SI units. What is the centre-of-mass velocity $v_{cm}$ of this system?
 
 ::::
 
@@ -1046,7 +1046,7 @@ An artillery shell is launched upwards with a speed of $v_{0}$ at an angle of $\
 
 ::::{admonition} Practice Problem 6-7
 
-A Velcro block target of mass $M$ hangs from the cross-bar of a hockey net with an ideal rope of length $L$. Iconic hockey player Wayne Gretzky’s slap-shot fires a puck (covered in Velcro), of mass $m_{p}$ straight into the block target and becomes stuck to the block. The block is initially at rest and the puck has an initial speed of $v_{0}$. The impact causes the block to oscillate with a maximum angle of $\theta _{\max}$ from the vertical.
+A Velcro block target of mass $M$ hangs from the cross-bar of a hockey net with an ideal rope of length $L$. Iconic hockey player Wayne Gretzky’s slap-shot fires a puck (covered in Velcro), of mass $m_{p}$ straight into the block target, and the puck becomes stuck to the block. The block is initially at rest and the puck has an initial speed of $v_{0}$. The impact causes the block to oscillate with a maximum angle of $\theta _{\max}$ from the vertical.
 
 a) Find the speed of the block at the moment the puck becomes stuck to it.
 
@@ -1127,7 +1127,7 @@ a) What is the mass of the car after a length $x$ of rope has uncoiled?
 
 b) What is the speed of the car after a length $x$ of rope has uncoiled? Assume that the driver of the car does not exert any change in force that would affect the speed.
 
-c) What is the tension in the rope in the piece of rope that is right next to the pile on the ground
+c) What is the tension in the rope in the piece of rope that is right next to the pile on the ground?
 
 ::::
 

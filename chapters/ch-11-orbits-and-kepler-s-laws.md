@@ -15,7 +15,7 @@
 
 ::::
 
-In this chapter, we will expand on orbits and their properties within a gravitational potential that was introduced in the last chapter. When one thinks of orbits, they likely picture the planets orbiting the Sun, the Moon orbiting the Earth, or communication satellites orbiting the Earth. The force behind orbits is gravity. As a reminder, gravity is a central force ([Chapter 10](#ch-10)) that follows an inverse-square law. The consequences for an inverse-square law central force is that bound orbits will be elliptical. In this chapter, we will look at elliptical orbits in more detail and how they apply to Kepler’s Laws.
+In this chapter, we will expand on orbits and their properties within a gravitational potential that was introduced in the last chapter. When one thinks of orbits, they likely picture the planets orbiting the Sun, the Moon orbiting the Earth, or communication satellites orbiting the Earth. The force behind orbits is gravity. As a reminder, gravity is a central force ([Chapter 10](#ch-10)) that follows an inverse-square law. The consequences for an inverse-square law central force are that bound orbits will be elliptical. In this chapter, we will look at elliptical orbits in more detail and how they apply to Kepler’s Laws.
 
 ::::{admonition} Examples of Orbits
 
@@ -23,7 +23,7 @@ Examples of circular orbits are geostationary satellites around the Earth.
 
 Examples of elliptical orbits are the orbits of the planets around the Sun.
 
-A good example of a [hyperbolic orbit](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/comets/oumuamua/in-depth/) is the interstellar asteroid, ‘Oumuamua, that did a flyby of the Solar System in 2017.
+A good example of a [hyperbolic orbit](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/comets/oumuamua/in-depth/) is the interstellar asteroid, ‘Oumuamua, which did a flyby of the Solar System in 2017.
 
 ::::
 
@@ -279,7 +279,7 @@ $$
 
 So our initial energy is $E_i=-m\gamma^2/(2L^2)$.
 
-Now, let’s consider what happens to the energy after the engines are fired briefly. We will first assume that the satellite moves a negligible amount, so its position vector, $r$ is unchanged during the energy boost from the engines. We are told that the energy is directed inward toward the Earth. In other words, the energy is applied along a radial direction. Any motion along the radial direction does not change the angular momentum, because $L = \vec{r} \times \vec{p}$ . The component of motion along a radial direction does not produce additional angular momentum. So $L$ is the same before and after the energy boost. Thus, the effective potential does not change.
+Now, let’s consider what happens to the energy after the engines are fired briefly. We will first assume that the satellite moves a negligible amount, so its position vector, $r$, is unchanged during the energy boost from the engines. We are told that the energy is directed inward toward the Earth. In other words, the energy is applied along a radial direction. Any motion along the radial direction does not change the angular momentum, because $L = \vec{r} \times \vec{p}$ . The component of motion along a radial direction does not produce additional angular momentum. So $L$ is the same before and after the energy boost. Thus, the effective potential does not change.
 
 But, the energy boost does induce a change in the radial momentum, which means that $\dot{r} \not =$ 0. If we have a radial velocity, then our energy after the boost, $E_{f}$ is
 
@@ -293,7 +293,7 @@ $$
 E_{f}= \frac{1}{2} m\dot{r}^{2}+ E_{i}
 $$
 
-Thus, the total energy has increased because kinetic energy was added to the satellite. It does not matter if the rockets move the satellite toward the Earth $(\dot{r} < 0)$ or away from the Earth $(\dot{r} > 0)$, the kinetic energy term is always positive so it will always add to the total energy. The final energy, $E_{f}$, must be larger than our initial energy $E_{i}$. The exact value larger depends on the radial velocity $\dot{r}$ given to the satellite by the engines. Since we are not given that quantity, all we can conclude is that the total energy of the satellite has increased due to the engines firing.
+Thus, the total energy has increased because kinetic energy was added to the satellite. It does not matter if the rockets move the satellite toward the Earth $(\dot{r} < 0)$ or away from the Earth $(\dot{r} > 0)$, the kinetic energy term is always positive so it will always add to the total energy. The final energy, $E_{f}$, must be larger than our initial energy $E_{i}$. The exact amount of the increase depends on the radial velocity $\dot{r}$ given to the satellite by the engines. Since we are not given that quantity, all we can conclude is that the total energy of the satellite has increased due to the engines firing.
 
 b) There are a couple of ways we can answer this question. First, we can sketch the energy diagram. [Figure 11.4](#fig-11-4) shows a sketch of what the initial and final energies may
 
@@ -531,7 +531,7 @@ Scaling relations, like the one used in this question, can be extremely useful. 
 
 ::::{admonition} Sample Problem 11-3
 
-Halley’s comet has an eccentricity of $\varepsilon = 0.967$. **What are the perihelion and aphe-** **lion distances and how fast is the comet traveling at those positions?**
+Halley’s comet has an eccentricity of $\varepsilon = 0.967$. **What are the perihelion and aphelion distances and how fast is the comet traveling at those positions?**
 
 **Solution**
 
@@ -608,13 +608,13 @@ As expected, we get $v_{p}> v_{a}$.
 (sec-11-5)=
 ## 11.5 Real World Application
 
-Preventing an asteroid strike on Earth may seem like a plot out of a movie, but there is ongoing research into how to do this properly. Rather than trying to blow up the asteroid, scientists have come up with different technique: alter the orbit through a kinetic impact. The basis of this plan is to slam a spacecraft into an asteroid head on so that it loses angular momentum and subsequently moves into a slightly different orbit.
+Preventing an asteroid strike on Earth may seem like a plot out of a movie, but there is ongoing research into how to do this properly. Rather than trying to blow up the asteroid, scientists have come up with a different technique: alter the orbit through a kinetic impact. The basis of this plan is to slam a spacecraft into an asteroid head on so that it loses angular momentum and subsequently moves into a slightly different orbit.
 
 The Double Asteroid Redirection Test (DART) spacecraft was launched to test this exact scenario. DART targeted a tiny asteroid called Dimorphos, which is in orbit around a larger asteroid, Didymos. The goal of this mission was to use the kinetic impact of DART to change the orbital parameters of Dimorphos.
 
 On 26 September 2022, DART made impact on Dimorphos and successfully caused the moonlet to spiral inward into a new (smaller) orbit. Subsequent observations confirmed a new orbital period that decreased by 32 minutes (from an original length of almost 12 hours). The mission was a big success and showed that such techniques could be used to protect the Earth in future.
 
-For more information: [The DART Mission Website](https://dart.jhuapl.edu/Mission/index.php) has lots of information and there is also [video of the impact](https://www.youtube.com/watch?v=dkr33IjUnqQ). The Jet Propulsion Lab [some information on the science and engineering](https://www.jpl.nasa.gov/edu/news/2022/9/22/the-science-behind-nasas-first-attempt-at-redirecting-an-asteroid/) behind the mission.
+For more information: [The DART Mission Website](https://dart.jhuapl.edu/Mission/index.php) has lots of information and there is also [video of the impact](https://www.youtube.com/watch?v=dkr33IjUnqQ). The Jet Propulsion Lab [has some information on the science and engineering](https://www.jpl.nasa.gov/edu/news/2022/9/22/the-science-behind-nasas-first-attempt-at-redirecting-an-asteroid/) behind the mission.
 
 (sec-11-6)=
 ## 11.6 Summary
@@ -641,7 +641,7 @@ $$
 r_{a}= a(1 + \varepsilon)
 $$
 
-For a system with only gravity acting, we derived the orbit equation in terms of the the
+For a system with only gravity acting, we derived the orbit equation in terms of the
 
 ::::
 

@@ -31,7 +31,7 @@ A force in the form of $F = -kx$ is also called a *restoring force*, because the
 
 ::::{admonition} Restoring Forces
 
-The key element to a restoring force is that the force is the negative sign in the $F = -kx$ equation. Because of that negative sign, the force vector will always point in the opposite direction as the displacement. If $x$ = 0 is our equilibrium position, then for $x < 0$ the restoring force will move the system toward a positive $x$, and for $x > 0$ the restoring force will move the system towards negative $x$ (in either case, the force tries to get the system back to equilibrium). If $x$ = 0, then there is no force.
+The key element of a restoring force is the negative sign in the $F = -kx$ equation. Because of that negative sign, the force vector will always point in the opposite direction as the displacement. If $x$ = 0 is our equilibrium position, then for $x < 0$ the restoring force will move the system toward a positive $x$, and for $x > 0$ the restoring force will move the system towards negative $x$ (in either case, the force tries to get the system back to equilibrium). If $x$ = 0, then there is no force.
 
 ::::
 
@@ -202,7 +202,7 @@ $$
 
 1. Consider a vertical spring-mass system with an equilibrium position at $x_{0}= - \frac{mg}{k}$ . What is the magnitude of the spring force at $x = x_{0}$ and $x$ = 0?
 
-2. How does increasing (or decreasing) the spring constant affect the motion and the equilibrium point of a vertical spring-mass system.
+2. How does increasing (or decreasing) the spring constant affect the motion and the equilibrium point of a vertical spring-mass system?
 
 3. If you moved the spring-mass system from Earth to the Moon (lower gravity) or Jupiter (higher gravity), how would the motion and equilibrium position change?
 
@@ -268,7 +268,7 @@ A pendulum is a simple harmonic oscillator as well, because it has an equilibriu
 
 ::::{admonition} Keep in Mind
 
-We’re going to discuss the simple pendulum in two ways. Here, we use $F = ma$ to describe the motion of a simple pendulum. Later in [Chapter 7](#ch-7), we will revisit the simple pendulum using torques to show you how the two approaches differ. One of the key elements of this textbook is determine which methodology is ideal to use for a given physics problem. So when going through both, think about the pros (and cons) of each method.
+We’re going to discuss the simple pendulum in two ways. Here, we use $F = ma$ to describe the motion of a simple pendulum. Later in [Chapter 7](#ch-7), we will revisit the simple pendulum using torques to show you how the two approaches differ. One of the key elements of this textbook is to determine which methodology is ideal to use for a given physics problem. So when going through both, think about the pros (and cons) of each method.
 
 ::::
 
@@ -282,7 +282,7 @@ To solve for the force, let’s look at the free-body diagram of this system ([F
 :alt: Figure shows a free-body diagram for a simple pendulum with standard Cartesian axes.
 :width: 163px
 
-Free-body diagram of the simple pendulum from [Figure 3.4](#fig-3-4). The labeled forces are tension $(T)$ in red, gravity $(mg)$in blue, and the restoring force $(mg\sin \theta)$ in magenta. Shown in dotted-red is the component of gravity that balances tension $(mg\cos \theta)$.
+Free-body diagram of the simple pendulum from [Figure 3.4](#fig-3-4). The labeled forces are tension $(T)$ in red, gravity $(mg)$ in blue, and the restoring force $(mg\sin \theta)$ in magenta. Shown in dotted-red is the component of gravity that balances tension $(mg\cos \theta)$.
 :::
 
 The restoring force is caused by a component of gravity that is perpendicular to the tension in the string. Because the mass-string system has an angular displacement $(\theta)$ from the equilibrium line, there is a component of gravity along the string and a component of gravity perpendicular to the string. It is the perpendicular component that is our restoring force (see magenta arrow in [Figure 3.5](#fig-3-5)). From trigonometry, the component parallel to the string can be written as $mg\cos \theta$ and the component perpendicular to the string is $mg\sin \theta$. The $mg\cos \theta$ component is equal (and opposite) to the tension in the string. The $mg\sin \theta$ component is our restoring force and it will be driving our motion. So we have,
@@ -423,7 +423,7 @@ Let’s first look at the free-body diagram of the system. There is the gravitat
 Free-body diagram of the block and two spring system where $F_{1}$ comes from spring 1 and $F_{2}$ comes from spring 2, and the mass has been displaced $\Delta x$ to the left.
 :::
 
-Using Newton’s second law, the sum of all (horizontal) forces is;
+Using Newton’s second law, the sum of all (horizontal) forces is:
 
 $$
 \begin{aligned}
@@ -466,7 +466,7 @@ This is the same solution as the simple (one spring) case, but $k \rightarrow k_
 
 ::::{admonition} Sample Problem 3-2
 
-A simple pendulum of mass $m$ and length $L$ is also attached to spring with spring constant $k$ as shown in the figure below. The equilibrium point for both the pendulum and spring is given by the vertical with the pivot point. If the pendulum is displaced from this equilibrium by an angle $\theta$ (like a pendulum), **find the period of oscillations**.
+A simple pendulum of mass $m$ and length $L$ is also attached to a spring with spring constant $k$ as shown in the figure below. The equilibrium point for both the pendulum and spring lies on the vertical line directly below the pivot point. If the pendulum is displaced from this equilibrium by an angle $\theta$ (like a pendulum), **find the period of oscillations**.
 
 :::{figure} ../images/figures/figure-3-10.png
 :label: fig-3-10
@@ -542,7 +542,7 @@ But for fun, here are some videos that show damping motion in action. An excelle
 
 <!-- Source PDF page 73; printed label 64. -->
 
-tuned mass damper in Taipei 101 is available to be seen. Here is [a nice video showing the Taipei 101 building tuned mass damper](https://www.youtube.com/watch?v=ohKqE_mwMmo) in action This video does a nice job [illustrating why these dampers work](https://www.youtube.com/watch?v=f1U4SAgy60c).
+tuned mass damper in Taipei 101 is available to be seen. Here is [a nice video showing the Taipei 101 building tuned mass damper](https://www.youtube.com/watch?v=ohKqE_mwMmo) in action. This video does a nice job [illustrating why these dampers work](https://www.youtube.com/watch?v=f1U4SAgy60c).
 
 And to also showcase driven motion, here is a video from 1940 which shows the [collapse of](https://youtu.be/GBa_USozxFM?t=75) [the Tacoma Narrows bridge](https://youtu.be/GBa_USozxFM?t=75) in the USA during a strong wind after less than four months in operation. Here is the [Millennium pedestrian bridge in the UK](https://www.youtube.com/watch?v=eAXVa__XWZ8). It did not collapse, but note how the oscillations are driven; as the bridge sways, more and more people become unbalanced at the same time and then take steps in sequence driving stronger oscillations.
 
@@ -709,7 +709,7 @@ An antique pendulum clock uses a uniform rod of length $L$ and operates with an 
 
 a) What is the differential equation of motion for this clock?
 
-b) Plot the period as function of rod length for lengths between 10 cm and 1 m.
+b) Plot the period as a function of rod length for lengths between 10 cm and 1 m.
 
 c) What length would give you a period of 1s? Check your answer against your plots from part b).
 

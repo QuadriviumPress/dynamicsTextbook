@@ -274,7 +274,7 @@ $$
 U_{eff}= \frac{1}{2} \frac{L^{2}}{mr^{2}} + U(r)
 $$ (eq-10-8)
 
-where first term is related to the angular momentum and is often called the centrifugal potential. The second term is the potential due to the central force itself.
+where the first term is related to the angular momentum and is often called the centrifugal potential. The second term is the potential due to the central force itself.
 
 ::::{admonition} Effective Potential
 
@@ -288,7 +288,7 @@ $$
 E = \frac{1}{2} m\dot{r}^{2}+ U_{eff}
 $$ (eq-10-9)
 
-Which looks exactly like a 1-D energy problem, even though the system may be in a 3-D space and moving in a 2-D plane. By cutting back on the dimensions, we make the math much easier.
+This looks exactly like a 1-D energy problem, even though the system may be in a 3-D space and moving in a 2-D plane. By cutting back on the dimensions, we make the math much easier.
 
 We can re-write Equation 10.9 as follows (solving for $\dot{r}^{2})$:
 
@@ -323,7 +323,7 @@ is a constant. The angular momentum of the particle is $L$. If $\dot{r}$ = 0, **
 
 **Solution**
 
-The energy equation for our central force is $E = \frac{1}{2} m\dot{r}^{2}+U_{eff}$. If $\dot{r}$ = 0, then $E = U_{eff}$. The potential of the central force.
+The energy equation for our central force is $E = \frac{1}{2} m\dot{r}^{2}+U_{eff}$. If $\dot{r}$ = 0, then $E = U_{eff}$. The potential of the central force is:
 
 $$
 \begin{aligned}
@@ -500,7 +500,7 @@ The allowed energies for a system in a gravitational potential with no angular m
 
 ::::
 
-**2) Consider the case where** $L \not =$ 0**:** If $L$ is a non-zero, then the system has angular momentum, and that angular momentum is constant. If $L \not =$ 0, then
+**2) Consider the case where** $L \not =$ 0**:** If $L$ is non-zero, then the system has angular momentum, and that angular momentum is constant. If $L \not =$ 0, then
 
 $$
 U_{eff}= \frac{1}{2} \frac{L^{2}}{mr^{2}} - \frac{GMm}{r}
@@ -508,7 +508,7 @@ $$
 
 [Figure 10.4](#fig-10-4) shows the effective potential (purple curve) for an object under the potential $U_{eff}$. The figure compares the effective potential with the centrifugal potential (red curve) and the gravitational potential (blue curve). The constants are given arbitrary values.
 
-The effective potential still sets the minimum value of energy that a system can have. That is, we still have the condition $E \ge U_{eff}$ because $\dot{r}^{2}\ge 0$. So the effective potential curve $U_{eff}$ in [Figure 10.4](#fig-10-4) shows the minimum allowed energy of the system. Note that this curve has a distinct shape with a local minimum in the potential. This shape has profound impact on how objects in this potential are going to move.
+The effective potential still sets the minimum value of energy that a system can have. That is, we still have the condition $E \ge U_{eff}$ because $\dot{r}^{2}\ge 0$. So the effective potential curve $U_{eff}$ in [Figure 10.4](#fig-10-4) shows the minimum allowed energy of the system. Note that this curve has a distinct shape with a local minimum in the potential. This shape has a profound impact on how objects in this potential are going to move.
 
 For simplicity, let’s look at the condition where $\dot{r}$ = 0. An object with $\dot{r}$ = 0 has no radial motion. Instead, all the motion will be transverse due to the non-zero angular momentum $(L = m\dot{\theta}r^{2})$. Note that transverse motion describes rotation. So an object in a gravitational field will rotate or *orbit* around the source of that gravitational field.
 
@@ -597,7 +597,7 @@ $$
 E_{\min}= - \frac{1}{2} \frac{m\gamma ^{2}}{L^{2}}
 $$
 
-The values of $r_{\min}$ and $E_{\min}$ represent a special case where the is only one unique solution to the quadratic equation. If you sub $E = E_{\min}$ into the quadratic equation for $r$, you will get that $r = r_{\min}$ as the only solution, as expected.
+The values of $r_{\min}$ and $E_{\min}$ represent a special case where there is only one unique solution to the quadratic equation. If you sub $E = E_{\min}$ into the quadratic equation for $r$, you will get that $r = r_{\min}$ as the only solution, as expected.
 
 ::::{tip} Quick Question
 
@@ -611,9 +611,9 @@ When $E = E_{\min}$, it means that your orbital solution has the minimum allowed
 
 <!-- Source PDF page 228; printed label 219. -->
 
-the condition $E \ge U_{eff}$ in [Figure 10.4](#fig-10-4)). That is, for radii of $r < 0.1$ and $r > 0.24, E = -0.2$ would be below effective potential curve, which is not allowed.
+the condition $E \ge U_{eff}$ in [Figure 10.4](#fig-10-4)). That is, for radii of $r < 0.1$ and $r > 0.24, E = -0.2$ would be below the effective potential curve, which is not allowed.
 
-This scenario describes a *bound elliptical orbit*. The particle can move freely from $r \approx 0.1$ to $r \approx 0.24$ and back again all with the same energy (energy is conserved). The positions of $r \approx 0.1$ and $r \approx 0.24$ are special, because there are where $\dot{r}$ is instantaneously zero, but in this case, the radial velocity does not stay zero (unlike in Case 1).
+This scenario describes a *bound elliptical orbit*. The particle can move freely from $r \approx 0.1$ to $r \approx 0.24$ and back again all with the same energy (energy is conserved). The positions of $r \approx 0.1$ and $r \approx 0.24$ are special, because they are where $\dot{r}$ is instantaneously zero, but in this case, the radial velocity does not stay zero (unlike in Case 1).
 
 Let’s say the particle starts at $t$ = 0 at $r \approx 0.1$. At this instantaneous moment, $E = U_{eff}$, so $\dot{r} = 0 (K_{r}$ = 0). But this is an instantaneous moment. The particle is allowed to move to larger radii (given its energy), but $E = K_{r}+U_{eff}$ will still be constant, so as $U_{eff}$ drops toward larger radii, $K_{r}$ will increase. As the particle approaches $r \approx 0.24, E \rightarrow U_{eff}$ and $K_{r}\rightarrow$ 0 again. The particle cannot travel further radially (it does not have enough energy) and instead, it will turn around back toward the origin. Thus, the $r \approx 0.1$ and $r \approx 0.24$ points are the turnaround points in this elliptical orbit. The motion is bounded by these two limits. We’ll discuss elliptical orbits in more detail in [Chapter 11](#ch-11).
 
@@ -671,7 +671,7 @@ where $U(r)$ is the potential given in the equation. If you plot the effective p
 An example of $U_{eff}$ with arbitrary constants.
 :::
 
-So, we see that there are multiple possible places where the derivative of $U_{eff}$ will be zero (local maxima or minima). Note that the exact the shape of the effective potential curve will depend on the constants themselves.
+So, we see that there are multiple possible places where the derivative of $U_{eff}$ will be zero (local maxima or minima). Note that the exact shape of the effective potential curve will depend on the constants themselves.
 
 To get the equations for a circular orbit, let’s first solve for the derivative and set that to be zero:
 
@@ -707,9 +707,9 @@ $$
 r=\frac{L^2/m\pm\sqrt{(L^2/m)^2-12\gamma^2\varepsilon}}{2\gamma}.
 $$
 
-Since these are by definition the radii at a local maxima or minima, they are the solutions for a circular orbit. But only a local minimum will produce a stable circular orbit. Recall the discussion on saddle points from [Chapter 8.8](#sec-8-8).
+Since these are by definition the radii at a local maximum or minimum, they are the solutions for a circular orbit. But only a local minimum will produce a stable circular orbit. Recall the discussion on saddle points from [Chapter 8.8](#sec-8-8).
 
-Remember that effective force is the gradient of a potential, so our initial assumption was that $F_{eff}$ = 0 for circular orbits. This means that our two radii are at the minimum and maximum points of potential, one being at a stable position and the other at an unstable position. We can look back to [Chapter 8](#ch-8), to the analogy of a ball resting atop the potential energy curve to helped to describe the stability of positions. This means that the radius at the max potential will be unstable and the radius at the minimum potential will be stable.
+Remember that effective force is the gradient of a potential, so our initial assumption was that $F_{eff}$ = 0 for circular orbits. This means that our two radii are at the minimum and maximum points of potential, one being at a stable position and the other at an unstable position. We can look back to [Chapter 8](#ch-8), to the analogy of a ball resting atop the potential energy curve to help describe the stability of positions. This means that the radius at the max potential will be unstable and the radius at the minimum potential will be stable.
 
 ::::
 
@@ -796,7 +796,7 @@ A key central force is gravity. Gravity follows an inverse-square law, and its e
 
 2. For $E_{\min}< E < 0$, the orbit is elliptical (there are two real solutions for radius).
 
-3. $E > 0$, the orbit is unbound (there are two solutions for radius, but only one is physical)
+3. For $E > 0$, the orbit is unbound (there are two solutions for radius, but only one is physical)
 
 Elliptical orbits are discussed more in [Chapter 11](#ch-11).
 
@@ -897,7 +897,7 @@ What is the effective force on a particle moving under the influence of a centra
 
 ::::{admonition} Practice Problem 10-3
 
-A particle of mass $m$ moves under the influence of a central force with a potential of $U(r) = - \frac{1}{r}$. For an angular momentum $L$, what is the efef ctive potential of a circular orbit? Is this a stable or unstable point?
+A particle of mass $m$ moves under the influence of a central force with a potential of $U(r) = - \frac{1}{r}$. For an angular momentum $L$, what is the effective potential of a circular orbit? Is this a stable or unstable point?
 
 ::::
 
@@ -923,7 +923,7 @@ A particle of mass $m$ moves in a circular orbit of radius $R$ under the influen
 
 ::::{admonition} Practice Problem 10-6
 
-Using the modification of Earth’s gravitational field as described as $U(r) = - \frac{\gamma}{r} \Big(1 + \frac{\varepsilon}{r^{2}}$
+Consider the modification of Earth’s gravitational field described by $U(r) = - \frac{\gamma}{r} \Big(1 + \frac{\varepsilon}{r^{2}}$
 
 $$
 \Big)
@@ -937,7 +937,7 @@ where $\gamma$ and $\varepsilon$ are constants. A particle of mass $m$ is in a c
 
 ::::{admonition} Practice Problem 10-7
 
-The planet Mercury is close enough to the Sun that it feels a slight perturbation in its gravitational force.Assume that Mercury feels a central force with the form of $f(r) = - \frac{\gamma}{r^{2}} +\varepsilon r$, where $\gamma$ and $\varepsilon$ are constants. What is the effective potential from this force? (Remember you can have $U$ = 0 at any convenient radius.)
+The planet Mercury is close enough to the Sun that it feels a slight perturbation in its gravitational force. Assume that Mercury feels a central force with the form of $f(r) = - \frac{\gamma}{r^{2}} +\varepsilon r$, where $\gamma$ and $\varepsilon$ are constants. What is the effective potential from this force? (Remember you can have $U$ = 0 at any convenient radius.)
 
 ::::
 
@@ -945,7 +945,7 @@ The planet Mercury is close enough to the Sun that it feels a slight perturbatio
 
 ::::{admonition} Practice Problem 10-8
 
-A particle of mass $m$ and angular momentum $L$ moves in central force field that produces a potential that can be described by $U(r) = -Ae^{-\beta r^{3}}$, where $A$ and $\beta$ are constants. If the particle moves in a circular orbit of radius $r = R$, what is the magnitude of angular momentum necessary to maintain this circular orbit?
+A particle of mass $m$ and angular momentum $L$ moves in a central force field that produces a potential that can be described by $U(r) = -Ae^{-\beta r^{3}}$, where $A$ and $\beta$ are constants. If the particle moves in a circular orbit of radius $r = R$, what is the magnitude of angular momentum necessary to maintain this circular orbit?
 
 ::::
 

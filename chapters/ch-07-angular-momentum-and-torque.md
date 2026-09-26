@@ -26,7 +26,7 @@ $$
 \vec{l}_{i}= \vec{r}_{i}\times \vec{p}_{i}
 $$ (eq-7-1)
 
-where $\vec{r}_{i}$ is the position of the particle relative to the origin, and $\vec{p}_{i}$ is the momentum of that particle. The total angular momentum of a system of particles is the sum of all the particles angular momentum’s:
+where $\vec{r}_{i}$ is the position of the particle relative to the origin, and $\vec{p}_{i}$ is the momentum of that particle. The total angular momentum of a system of particles is the sum of all the particles’ angular momentum:
 
 $$
 \vec{L} = \sum \vec{l}_{i}= \sum (\vec{r}_{i}\times \vec{p}_{i})
@@ -69,7 +69,7 @@ $$
 \end{aligned}
 $$
 
-We get that the time derivative of the angular momentum equals to the cross product of $\vec{r}$ and $\vec{F}$ . This cross product is also known as the torque, $\vec{\tau}$.
+We get that the time derivative of the angular momentum equals the cross product of $\vec{r}$ and $\vec{F}$ . This cross product is also known as the torque, $\vec{\tau}$.
 
 $$
 \vec{\tau}_{i}= \vec{r}_{i}\times \vec{F}_{i}
@@ -126,7 +126,7 @@ You’ve probably heard that the Moon causes tides on
 :align: center
 :::
 
-Earth. The tides don’t occur right when the Moon is overhead, instead the tides are ahead of the Moon. As a consequence, the Earth’s tides bulge at an angle to the Moon. This bulge pulls on the Moon and the Moon in return pulls on the bulge (equal and opposite reactions), see figure (not to scale). Because these tiny forces are at an angle relative to the Earth-Moon radial line, they will each cause a torque. The torque on the Moon pulls the Moon ahead in its orbit slightly (the Moon gains momentum), whereas the torque on Earth drags the Earth slightly back in its spin (the Earth loses momentum). This is a case of angular momentum conservation! The net effect is very small, but the Moon is slowly moving away from us (at a rate of $\sim 40$ mm per year) and the Earth’s day is slowly increasing (by $\sim 2$ ms per century). For more information, see the [Wikipedia webpage](https://en.wikipedia.org/wiki/Tidal_acceleration) and [Explaining Science’s](https://explainingscience.org/2014/05/27/the-days-are-getting-longer/) [webpage](https://explainingscience.org/2014/05/27/the-days-are-getting-longer/) on tidal acceleration and the day on Earth.
+Earth. The tides don’t occur right when the Moon is overhead; instead, the tides are ahead of the Moon. As a consequence, the Earth’s tides bulge at an angle to the Moon. This bulge pulls on the Moon and the Moon in return pulls on the bulge (equal and opposite reactions), see figure (not to scale). Because these tiny forces are at an angle relative to the Earth-Moon radial line, they will each cause a torque. The torque on the Moon pulls the Moon ahead in its orbit slightly (the Moon gains momentum), whereas the torque on Earth drags the Earth slightly back in its spin (the Earth loses momentum). This is a case of angular momentum conservation! The net effect is very small, but the Moon is slowly moving away from us (at a rate of $\sim 40$ mm per year) and the Earth’s day is slowly increasing (by $\sim 2$ ms per century). For more information, see the [Wikipedia webpage](https://en.wikipedia.org/wiki/Tidal_acceleration) and [Explaining Science’s](https://explainingscience.org/2014/05/27/the-days-are-getting-longer/) [webpage](https://explainingscience.org/2014/05/27/the-days-are-getting-longer/) on tidal acceleration and the day on Earth.
 
 ::::
 
@@ -388,7 +388,7 @@ Diagram of the physical pendulum. This physical pendulum is constructed from a d
 
 **Solution**
 
-This system is not a simple pendulum (e.g., a point source at the end of a rope), because the rod has mass and disk has mass and dimension. So you need to consider this as a physical pendulum.
+This system is not a simple pendulum (e.g., a point source at the end of a rope), because the rod has mass and the disk has mass and dimensions. So you need to consider this as a physical pendulum.
 
 The solution for a physical pendulum is:
 
@@ -504,7 +504,7 @@ In this case, we will consider a system rolling on a surface. In ideal cases, ro
 
 ::::{admonition} Sample Problem 7-2
 
-A light cord is wrapped around the inner drum of a wheel of mass $m$ and pulled with a constant force $F$ to make the wheel roll. The wheel has a radius $R$ and the inner drum has a radius of $r$. If the wheel rolls without slipping, **what is the force of friction** **at the point of contact between the wheel and horizontal surface?**
+A light cord is wrapped around the inner drum of a wheel of mass $m$ and pulled with a constant force $F$ to make the wheel roll. The wheel has a radius $R$ and the inner drum has a radius of $r$. If the wheel rolls without slipping, **what is the force of friction** **at the point of contact between the wheel and the horizontal surface?**
 
 :::{figure} ../images/figures/figure-7-9.png
 :label: fig-7-9
@@ -561,7 +561,7 @@ Let’s look at $\sum F = ma_{cm}$ to start. What forces do we need to worry abo
 The rolling wheel of radius $R$. The centre of mass is given by the origin $(O)$ and the system moves forward a distance $s$ given by the red arc.
 :::
 
-If the system has moved a distance $s$ in time $\Delta t$. If you have *rolling without slipping*, then the centre of mass motion is given by $v_{cm} = \frac{\Delta x}{\Delta t} = \frac{s}{\Delta t}$. For very small times,
+The system has moved a distance $s$ in time $\Delta t$. If you have *rolling without slipping*, then the centre of mass motion is given by $v_{cm} = \frac{\Delta x}{\Delta t} = \frac{s}{\Delta t}$. For very small times,
 
 <!-- Source PDF page 161; printed label 152. -->
 
@@ -616,7 +616,7 @@ $$
 
 where $\omega$ is the angular velocity and $\alpha$ is the angular acceleration. Note that the vector directions are not the same for these quantities. Only the magnitudes apply.
 
-For a rigid object, $v_{cm}$ applies equally in magnitude and direction to the whole object (it is moving forward and doesn’t deform), whereas the motion from rotation depends on the radius and can be either forward or backwards. Consider the motion from translation and rotation at the contact point (where the wheel meets the ground). There are two velocities acting at that point, the translation velocity from $v_{cm}$ and the rotation velocity, $R\omega$. These two velocity are equal in magnitude, but opposite in direction (at the contact point, the wheel is moving forward with $v_{cm}$ but backwards with $\omega R$ from rotation). Therefore, the contact point is *instantaneously* at rest. If you had rolling with slipping, then the contact point would have excess motion from translation and not be at rest.
+For a rigid object, $v_{cm}$ applies equally in magnitude and direction to the whole object (it is moving forward and doesn’t deform), whereas the motion from rotation depends on the radius and can be either forward or backwards. Consider the motion from translation and rotation at the contact point (where the wheel meets the ground). There are two velocities acting at that point, the translation velocity from $v_{cm}$ and the rotation velocity, $R\omega$. These two velocities are equal in magnitude, but opposite in direction (at the contact point, the wheel is moving forward with $v_{cm}$ but backwards with $\omega R$ from rotation). Therefore, the contact point is *instantaneously* at rest. If you had rolling with slipping, then the contact point would have excess motion from translation and not be at rest.
 
 Now let’s switch to $\sum \tau = I\alpha$. This equation describes how the wheel is going to rotate. Again, rotation and translation are two separate actions, although their magnitudes are connected due to the condition of rolling without slipping. To describe the rotation, we will want to look at how the wheel is being torqued. There are two torques acting on the wheel from $F$ and $f$, so we want to find $\tau _{F}$ and $\tau _{f}$.
 
@@ -657,7 +657,7 @@ $$
 
 It may seem counter intuitive to have the external force as the negative term, but this is due to our choice to define the clockwise direction as positive. Had we defined the counter-clockwise direction as positive, then we would have the external force as the positive term (but we would need a negative factor relating $a_{cm}$ and $\alpha$; see prior comment).
 
-Now we have both forms of Newton’s law’s:
+Now we have both forms of Newton’s laws:
 
 $$
 \sum F = ma_{cm}=\Rightarrow F - f = mR\alpha
@@ -717,7 +717,7 @@ $$
 (sec-7-7)=
 ## 7.7 Real-World Application
 
-The conservation of angular momentum is a fundamental physics concept. It is sometimes referred to as Gyroscopic Motion, the tendency of a rotating object to maintain its orientation of motion. A common application you may be familiar with are fidget spinners. Fidget spinners are essentially miniature gyroscopes with a low-friction bearing to allow it to rotate longer. If you set the spinner in motion and then tilt it slowly to one side, you’ll feel it resisting the tilt, pulling back toward its original position to conserve angular momentum.
+The conservation of angular momentum is a fundamental physics concept. It is sometimes referred to as Gyroscopic Motion, the tendency of a rotating object to maintain its orientation of motion. A common application you may be familiar with is fidget spinners. Fidget spinners are essentially miniature gyroscopes with a low-friction bearing to allow them to rotate longer. If you set the spinner in motion and then tilt it slowly to one side, you’ll feel it resisting the tilt, pulling back toward its original position to conserve angular momentum.
 
 :::{figure} ../images/figures/figure-7-13.png
 :label: fig-7-13
@@ -732,7 +732,7 @@ While the fidget spinner is an example of a simple low-weight mechanical gyrosco
 
 <!-- Source PDF page 165; printed label 156. -->
 
-are other types, including fluid, laser, fibre-optic, and vibrational, all working on same basic principles of rotational motion. For example, with vibrational or MEMS (Micro Electro- Mechanical System) gyroscopes, the angular velocity in the sensor produces torques on vibration elements, providing measurable displacements that can then be amplified to produce an angular velocity signal. Three sensors arranged orthogonally in a single chip provide three dimensional components and track changes in orientation. This is the type of gyroscope is used in smart phones to provide image stabilization in a camera or auto-rotation, track step counts in fitness programs, and help give accurate location and positioning with accelerometers in GPS satellites.
+are other types, including fluid, laser, fibre-optic, and vibrational, all working on the same basic principles of rotational motion. For example, with vibrational or MEMS (Micro Electro- Mechanical System) gyroscopes, the angular velocity in the sensor produces torques on vibration elements, providing measurable displacements that can then be amplified to produce an angular velocity signal. Three sensors arranged orthogonally in a single chip provide three dimensional components and track changes in orientation. This is the type of gyroscope used in smart phones to provide image stabilization in a camera or auto-rotation, track step counts in fitness programs, and help give accurate location and positioning with accelerometers in GPS satellites.
 
 **For more information:**
 
@@ -918,7 +918,7 @@ See figure below. A piece of sticky putty of mass $m$ moves with speed $v_{0}$ a
 
 a) Write an equation for the angular momentum before and after the collision. Assume that $M \gg m$ such that the centre of mass of the system remains at the centre of the rod.
 
-b) What is the angular velocity $\omega$ of the resulting rotation.
+b) What is the angular velocity $\omega$ of the resulting rotation?
 
 :::{figure} ../images/figures/figure-7-16.png
 :label: fig-7-16
@@ -989,7 +989,7 @@ Figure for [Problem 7-7](#problem-7-7).
 
 ::::{admonition} Practice Problem 7-8
 
-A Physical pendulum made of a rod of length $L$ and a sphere of radius $R$, as shown in [Figure 7-14](#fig-7-14) (top right). The rod and the sphere have the same mass, $M$. Consider the pivot point to be through the opposite end of the rod from the sphere.
+A Physical pendulum is made of a rod of length $L$ and a sphere of radius $R$, as shown in [Figure 7-14](#fig-7-14) (top right). The rod and the sphere have the same mass, $M$. Consider the pivot point to be through the opposite end of the rod from the sphere.
 
 a) Where is the center of mass?
 

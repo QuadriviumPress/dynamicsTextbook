@@ -49,7 +49,7 @@ Newton’s three laws of motion are a mathematical description connecting motion
 
 3. **The law of action and reaction**: For every force acting on a body, there is an equal and opposite reactive force.
 
-The **first law** corresponds to the conservation of momentum. The idea here, is that an object with no forces acting on it will be at rest or moving at a constant velocity. It is important to note that the first law requires that you define an appropriate inertial frame (a frame of reference). Your inertial frame can be static (at rest) or in motion (with constant velocity, no acceleration). If your reference frame is accelerating, we call that a non-inertial frame and the physics is a bit different. We will discuss non-inertial frames in [Chapters 4](#ch-4) and 5.
+The **first law** corresponds to the conservation of momentum. The idea here is that an object with no forces acting on it will be at rest or moving at a constant velocity. It is important to note that the first law requires that you define an appropriate inertial frame (a frame of reference). Your inertial frame can be static (at rest) or in motion (with constant velocity, no acceleration). If your reference frame is accelerating, we call that a non-inertial frame and the physics is a bit different. We will discuss non-inertial frames in [Chapters 4](#ch-4) and 5.
 
 The **second law** corresponds to the rate of change of momentum, $\vec{p}$ . The net force acting on a system is:
 
@@ -77,7 +77,7 @@ For example, when you stand on the ground, you push downward on the surface due 
 
 ::::{admonition} Limitations of Newton’s Laws
 
-For most “everyday life physics”, Newtonian mechanics applies just fine. Nevertheless, there are cases where Newtonian mechanics break down because the assumption of
+For most “everyday life physics”, Newtonian mechanics applies just fine. Nevertheless, there are cases where Newtonian mechanics breaks down because the assumption of
 
 ::::
 
@@ -114,7 +114,7 @@ Static systems are systems that are not in motion. In this case, the sum of all 
 :alt: Figure shows an incline with two masses and a pulley connecting them.
 :width: 248px
 
-Two masses are attached to an ideal string that runs along ideal pulley at the edge of an incline of angle $\theta$. One mass sits on the incline and the other hangs off the edge of the incline. The incline has a coefficient of friction, $\mu$. The system is at rest.
+Two masses are attached to an ideal string that runs along the ideal pulley at the edge of an incline of angle $\theta$. One mass sits on the incline and the other hangs off the edge of the incline. The incline has a coefficient of friction, $\mu$. The system is at rest.
 :::
 
 **Solution**
@@ -226,14 +226,14 @@ An Atwood machine is an ideal pulley system with masses attached by an ideal rop
 :alt: Figure shows simple examples of the single Atwood and double Atwood machines.
 :width: 228px
 
-A single Atwood (left) and double Atwood (right) machine. The ropes and pulleys in each machine are ideal. The single Atwood machine has one rope (connecting $M_{1}$ and $M_{2})$, whereas the double Atwood machine has lower rope connecting $M_{1}$ and $M_{2}$ and an upper rope connecting $M$ and the lower pulley.
+A single Atwood (left) and double Atwood (right) machine. The ropes and pulleys in each machine are ideal. The single Atwood machine has one rope (connecting $M_{1}$ and $M_{2})$, whereas the double Atwood machine has a lower rope connecting $M_{1}$ and $M_{2}$ and an upper rope connecting $M$ and the lower pulley.
 :::
 
 Since ideal pulleys have no mass, they will have no net force acting on them (Newton’s second law). That condition makes them useful when equating forces to solve problems. Consider the free-body diagrams for the mass and pulley systems above. Whichever forces act on the pulleys will have to balance to zero.
 
 ::::{admonition} Lance’s Thoughts
 
-The key to free body diagrams (FBDs) for Atwood machines is to remember that every mass and every pulley needs one. If you’re working with ideal pulleys, the FBDs for those will give you the ratios of the tensions in your system and having those will make your life a lot easier. Remember that for ideal ropes that the tension is equal everywhere on the same rope and the sum of forces on the pulley is zero. Things get a little more complicated if the pulleys have mass, but drawing the FBD will still help you.
+The key to free body diagrams (FBDs) for Atwood machines is to remember that every mass and every pulley needs one. If you’re working with ideal pulleys, the FBDs for those will give you the ratios of the tensions in your system and having those will make your life a lot easier. Remember that for ideal ropes the tension is equal everywhere on the same rope and the sum of forces on the pulley is zero. Things get a little more complicated if the pulleys have mass, but drawing the FBD will still help you.
 
 ::::
 
@@ -275,7 +275,7 @@ We will assume that the ball stays close to the ground such that we can approxim
 
 First, consider how the ball will move. Since the ball is given both a vertical and horizontal initial motion, this is a 2D problem. But the only source of acceleration is from gravity, which is constant and points downwards (gravity does not affect the horizontal motion).
 
-Therefore, the ball will make an arc, with its vertical motion changing (due to the acceleration with gravity) and its horizontal motion held constant (we will ignore any air resistance). The motion along $x$ and $y$ are independent, so we can solve this problem by looking at each component separately.
+Therefore, the ball will make an arc, with its vertical motion changing (due to the acceleration with gravity) and its horizontal motion held constant (we will ignore any air resistance). The motion along $x$ and $y$ is independent, so we can solve this problem by looking at each component separately.
 
 1. **What is the maximum height?** This is point B in [Figure 2.5](#fig-2-5). The maximum height depends only on the motion along the $y-$axis, so we can ignore motion on the $x-$axis. For the $y-$axis motion, we have an acceleration of $a = -g$, defining up as positive. Since $a = \frac{\mathrm{d}v}{\mathrm{d}t}$ , we can integrate to get the equation for velocity as a function of time. See also, [Chapter 1](#ch-1) for more details.
 
@@ -490,7 +490,7 @@ x
 \end{aligned}
 $$
 
-In this above example, we use $X$ and $\tau$ to represent the position at some unknown time. They are just representative variables for position and time to avoid confusion and can be swapped out with the generic $x$ and $t$ at the end.
+In the above example, we use $X$ and $\tau$ to represent the position at some unknown time. They are just representative variables for position and time to avoid confusion and can be swapped out with the generic $x$ and $t$ at the end.
 
 <!-- Source PDF page 50; printed label 41. -->
 
@@ -558,11 +558,11 @@ $$
 
 1. What is the velocity as $t \rightarrow$ 0 and $t \rightarrow \infty$? Do these values make sense?
 
-2. Find the equation for the acceleration of the particle and the units for any constants? What is the acceleration as $t \rightarrow$ 0 and $t \rightarrow \infty$?
+2. Find the equation for the acceleration of the particle and the units for any constants. What is the acceleration as $t \rightarrow$ 0 and $t \rightarrow \infty$?
 
 ::::
 
-What about $x$? Well, using our equation for $v$ and the condition of $x$ = 0 at $t$ = 0.
+What about $x$? Well, we can use our equation for $v$ and the condition of $x$ = 0 at $t$ = 0:
 
 $$
 \begin{aligned}
@@ -592,7 +592,7 @@ There are other ways that force can be proportional to velocity. Let’s look at
 
 ::::{admonition} Sample Problem 2-3
 
-A metal block of mass $m$ slides on a horizontal surface that has a layer of heavy oil so that the block experiences a viscous force that varies as the $3/2$ power of the speed, that is, $F(v) = -bmv^{3/2}$, here $b$ is a positive constant. Let the initial speed of the block be $v_{0}$ at $x$ = 0. **What is the equation of maximum distance that the block will** **travel before it comes to rest in terms of** $m, v_{0}$**, and** $b$**?**
+A metal block of mass $m$ slides on a horizontal surface that has a layer of heavy oil so that the block experiences a viscous force that varies as the $3/2$ power of the speed, that is, $F(v) = -bmv^{3/2}$; here $b$ is a positive constant. Let the initial speed of the block be $v_{0}$ at $x$ = 0. **What is the equation of maximum distance that the block will** **travel before it comes to rest in terms of** $m, v_{0}$**, and** $b$**?**
 
 :::{figure} ../images/figures/figure-2-6.png
 :label: fig-2-6
@@ -682,7 +682,7 @@ You will get the same answer if you solve for $v(t), x(t)$, and the time $t_{\ma
 (sec-2-6)=
 ## 2.6 Real-World Application
 
-Drag is often considered a problem in design, but it has many constructive uses as well. One of the most obvious ways to see a drag force in action is by considering a parachute. In the case of a skydiver, the parachute opens behind/above them and creates a much larger surface area perpendicular into the motion, increasing the drag force to counter most of the acceleration due to Earth’s gravity, and lowering the diver’s terminal velocity enough to allow the parachutist to reach the ground with only a mild impact.
+Drag is often considered a problem in design, but it has many constructive uses as well. One of the most obvious ways to see a drag force in action is by considering a parachute. In the case of a skydiver, the parachute opens behind/above them and creates a much larger surface area perpendicular to the motion, increasing the drag force to counter most of the acceleration due to Earth’s gravity, and lowering the diver’s terminal velocity enough to allow the parachutist to reach the ground with only a mild impact.
 
 Parachutes are used for other purposes as well, like slowing a race car down quickly after it hits the finish line in a short-track race, increased resistance for a runner trying to build strength, and landing a space capsule for retrieval or planetary exploration.
 
@@ -863,7 +863,7 @@ Figure for problem 2-7.
 
 ::::{admonition} Practice Problem 2-8
 
-See figure below. A spherical ball of mass $m$ and radius $R$ is dropped into a vat of liquid as shown in the figure. As the ball sinks to bottom of the vat, it experiences a viscous force of $\vec{F}_{v}= -\alpha \vec{v}$, where $\alpha$ is a constant, and a buoyancy force of magnitude $F_{b}= \rho Vg$, where $\rho$ is the density of the liquid (constant), $V$ is the volume of the ball (constant), and $g$ is the acceleration due to gravity.
+See figure below. A spherical ball of mass $m$ and radius $R$ is dropped into a vat of liquid as shown in the figure. As the ball sinks to the bottom of the vat, it experiences a viscous force of $\vec{F}_{v}= -\alpha \vec{v}$, where $\alpha$ is a constant, and a buoyancy force of magnitude $F_{b}= \rho Vg$, where $\rho$ is the density of the liquid (constant), $V$ is the volume of the ball (constant), and $g$ is the acceleration due to gravity.
 
 a) Draw a free-body diagram for the ball.
 

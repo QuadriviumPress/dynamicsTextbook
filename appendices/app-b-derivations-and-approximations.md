@@ -272,7 +272,7 @@ $$
 
 It is key that $x$ is small (for $x_{0}$ = 0). If $x$ is larger, then the higher order terms are more significant and cannot be considered negligible.
 
-The Taylor series for the $\sin x$ and $\cos x$ (with $x_{0}$ = 0) are:
+The Taylor series for $\sin x$ and $\cos x$ (with $x_{0}$ = 0) are:
 
 $$
 \begin{aligned}
@@ -281,7 +281,7 @@ $$
 \end{aligned}
 $$
 
-Note that $x$ must be in radians for the Taylor series approximation to hold. You cannot use $x$ in degree. If $x$ (in radians) is small, then the higher order terms again become negligible and $\sin x \approx x$ and $\cos x \approx 1 - \frac{x^{2}}{2}$ . There are several functions with well established Taylor series approximations based on the above definition. [Appendix A.3](#sec-A-3) lists the expansions for many common equations.
+Note that $x$ must be in radians for the Taylor series approximation to hold. You cannot use $x$ in degrees. If $x$ (in radians) is small, then the higher order terms again become negligible and $\sin x \approx x$ and $\cos x \approx 1 - \frac{x^{2}}{2}$ . There are several functions with well established Taylor series approximations based on the above definition. [Appendix A.3](#sec-A-3) lists the expansions for many common equations.
 
 ::::{admonition} Small Angle Approximation
 
@@ -295,7 +295,7 @@ The small angle approximation is an application of the Taylor Series expansion. 
 
 You will use the small angle assumption many times in this course and in other courses. As an astronomer, I use the small angle approximation in my research all the time. For example, large objects in space
 
-(e.g., diameter of a crater on the moon, radius of a planet-forming disk around another star, distance between two interacting galaxies) subtend very tiny angles because they are so far away $(\theta$ is small because $D$ is large. We also use this approximation in optics with interference and diffraction patterns, where the distance to the first fringes correspond to small angle differences from the normal.
+(e.g., diameter of a crater on the moon, radius of a planet-forming disk around another star, distance between two interacting galaxies) subtend very tiny angles because they are so far away $(\theta$ is small because $D$ is large. We also use this approximation in optics with interference and diffraction patterns, where the distance to the first fringes corresponds to small angle differences from the normal.
 
 ::::
 

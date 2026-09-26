@@ -30,7 +30,7 @@ where $\vec{F}$ is the force and $\mathrm{d}\vec{r}$ represents a small displace
 
 ::::{admonition} Units of Work
 
-Work has units of energy. The SI units for energy is the Joule, abbreviated as [J].
+Work has units of energy. The SI unit for energy is the Joule, abbreviated as [J].
 
 $$
 [1 \mathrm{J}] = [1 \mathrm{N} \mathrm{m}] = [1 \mathrm{kg} \mathrm{m}^{2}\mathrm{s}^{-2}].
@@ -172,7 +172,7 @@ $$ (eq-8-5)
 
 The work-kinetic energy theorem applies to all inertial frames (constant velocity) whether they are moving or stationary. So the change in work is the same within a stationary $(S)$ frame or in a moving frame $S^{\prime }$ (e.g., the centre-of-mass frame such as in [Chapter 6](#ch-6)).
 
-[Figure 8.1](#fig-8-1) show a particle starting from rest and moving under a constant force $F$ in a laboratory. This particle will have a constant acceleration $a$ due to this force. The work done to move this particle from point $x_{1}$ to $x_{2}$ in the laboratory frame $(S)$ is simply $W_{S}= F\Delta x = \Delta K$ because all the motion is in 1-D.
+[Figure 8.1](#fig-8-1) shows a particle starting from rest and moving under a constant force $F$ in a laboratory. This particle will have a constant acceleration $a$ due to this force. The work done to move this particle from point $x_{1}$ to $x_{2}$ in the laboratory frame $(S)$ is simply $W_{S}= F\Delta x = \Delta K$ because all the motion is in 1-D.
 
 :::{figure} ../images/figures/figure-8-1.png
 :label: fig-8-1
@@ -217,7 +217,7 @@ $$
 \end{aligned}
 $$
 
-where $K_{f}$ is the final kinetic energy and $K_{i}$ in the initial kinetic energy.
+where $K_{f}$ is the final kinetic energy and $K_{i}$ is the initial kinetic energy.
 
 So while the values of $W$ and $K$ as measured in the two frames (stationary and moving) may be different, the requirement that $\Delta W = \Delta K$ holds in both frames. Again, this is only the case for *inertial* frames. In non-inertial frames (e.g., rotating or accelerating frames), the net force will include fictitious forces due to the non-inertial frame and the measured accelerations would be different (see [Chapters 4](#ch-4) and 5).
 
@@ -229,7 +229,7 @@ So while the values of $W$ and $K$ as measured in the two frames (stationary and
 
 Near the Earth’s surface, we often describe the gravitational force as $\vec{F}_{g}= m\vec{g}$, where $\vec{g}$ is a constant vector that points down vertically and has a constant magnitude.
 
-Consider the case where the position of a heavy box of mass $m$ changes $y_{1}$ to $y_{2}$ in vertical height and that both positions $y_{2}$ and $y_{1}$ are near the Earth’s surface. Work is done by gravity as the box moves by this displacement. The vector describing the displacement of
+Consider the case where the position of a heavy box of mass $m$ changes from $y_{1}$ to $y_{2}$ in vertical height and that both positions $y_{2}$ and $y_{1}$ are near the Earth’s surface. Work is done by gravity as the box moves by this displacement. The vector describing the displacement of
 
 <!-- Source PDF page 178; printed label 169. -->
 
@@ -351,7 +351,7 @@ $$
 v_{esc}=\sqrt{\frac{2GM_E}{R_E}}.
 $$
 
-[Equation 8.9](#eq-8-9) describes the *escape velocity* and for Earth, which is roughly 11 km $\mathrm{s}^{-1}$. The escape velocity is the minimum speed for rockets and satellites to leave Earth’s surface and travel great distances away.
+[Equation 8.9](#eq-8-9) describes the *escape velocity*, which for Earth is roughly 11 km $\mathrm{s}^{-1}$. The escape velocity is the minimum speed for rockets and satellites to leave Earth’s surface and travel great distances away.
 
 ::::{tip} Quick Question
 
@@ -611,7 +611,7 @@ Once again, we want to set a convenient initial value like $x_{1}$ = 0 (the equi
 
 ::::{tip} Quick Questions
 
-1. Show that that the potential energy of a pendulum can be written as $U = \frac{1}{2} mgh\theta ^{2}$ for small angles of $\theta$ and setting $\theta _{1}$ = 0.
+1. Show that the potential energy of a pendulum can be written as $U = \frac{1}{2} mgh\theta ^{2}$ for small angles of $\theta$ and setting $\theta _{1}$ = 0.
 
 2. Show that the potential energy of the electric force $F_{e}= \frac{kQq}{r^{2}} \hat{r}$ is given by $U = \frac{kQq}{r}$, where $k$ is the electric constant, $Q$ is the electric charge of the central object forming the electric field, and $q$ is the charge of the test particle in the field.
 
@@ -728,7 +728,7 @@ A potential energy has the function of $U(r) = U_{0}- \frac{1}{2} A\sigma ^{2}e^
 
 **Solution**
 
-Since the potential energy has a radial component only, we only need the radial com-
+Since the potential energy has a radial component only, we only need the radial component
 
 ::::
 
@@ -736,7 +736,7 @@ Since the potential energy has a radial component only, we only need the radial 
 
 ::::{admonition} Continued
 
-ponent of the gradient $(\vec{F} = -\vec{\nabla}U)$ to find the force.
+of the gradient $(\vec{F} = -\vec{\nabla}U)$ to find the force.
 
 $$
 \vec{F} = -\vec{\nabla}U = - \frac{\partial U(r)}{\partial r} \hat{r} = -\bigg(\frac{1}{2} A\sigma ^{2}\bigg)(- \frac{2r}{\sigma ^{2}} e^{-r^{2}/\sigma ^{2}})\hat{r} = -rAe^{-r^{2}/\sigma ^{2}}\hat{r}
@@ -816,7 +816,7 @@ At $x = -1$ m, $U^{\prime \prime }< 0$ and at $x$ = 2 m, $U^{\prime \prime }> 0$
 
 ::::{admonition} Real World Applications
 
-Lagrange points are saddle points that correspond to maxima or minima in gravitational potential between the planets and the Sun. These are special points where gravity from the Sun and planet and the centrifugal force balance. For example, Jupiter has a collection of “moons” called Trojan asteroids that located in two clusters within Jupiter’s orbit at the Lagrange Points L4 and L5, which are potential minima. These asteroids are effectively trapped by a local potential minimum saddle point and they orbit [the](http://hyperphysics.phy-astr.gsu.edu/hbase/Solar/trojan.html) Sun (not Jupiter) in lock-step with Jupiter. For more information, see the [hyperphysics webpage](http://hyperphysics.phy-astr.gsu.edu/hbase/Solar/trojan.html) for Trojan satellites and [NASA’s webpage](https://solarsystem.nasa.gov/resources/754/what-is-a-lagrange-point/) on Lagrange points.
+Lagrange points are saddle points that correspond to maxima or minima in gravitational potential between the planets and the Sun. These are special points where gravity from the Sun and planet and the centrifugal force balance. For example, Jupiter has a collection of “moons” called Trojan asteroids that are located in two clusters within Jupiter’s orbit at the Lagrange Points L4 and L5, which are potential minima. These asteroids are effectively trapped by a local potential minimum saddle point and they orbit [the](http://hyperphysics.phy-astr.gsu.edu/hbase/Solar/trojan.html) Sun (not Jupiter) in lock-step with Jupiter. For more information, see the [hyperphysics webpage](http://hyperphysics.phy-astr.gsu.edu/hbase/Solar/trojan.html) for Trojan satellites and [NASA’s webpage](https://solarsystem.nasa.gov/resources/754/what-is-a-lagrange-point/) on Lagrange points.
 
 ::::
 
@@ -1176,7 +1176,7 @@ A particle of mass m moves under a potential of $U(x,y,z) = ax + by^{2}+ cz^{3}$
 
 ::::{admonition} Practice Problem 8-9
 
-Famous tennis player Serena Williams is playing a match when her opponent sends the $0.0577$ kg tennis ball is $1.5$ m above the ground and has a speed of $20.0$ m/s. Williams hits the ball, doing 50 J of work on it. However, due to air resistance the energy of the ball halves by the time it hits the ground.
+Famous tennis player Serena Williams is playing a match when her opponent sends the $0.0577$ kg tennis ball toward her. The ball is $1.5$ m above the ground and has a speed of $20.0$ m/s. Williams hits the ball, doing 50 J of work on it. However, due to air resistance the energy of the ball halves by the time it hits the ground.
 
 a) Determine the potential energy of the ball before Williams hits it.
 

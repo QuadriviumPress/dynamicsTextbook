@@ -26,7 +26,7 @@ $$
 \vec{a}^{\prime }= \vec{a} - \vec{\alpha} \times \vec{r}^{\prime }- 2\vec{\omega} \times \vec{v}^{\prime }- \vec{\omega} \times (\vec{\omega} \times \vec{r}^{\prime }) - \vec{A}
 $$ (eq-5-1)
 
-where the parameters with primes are in the rotating reference frame and the parameters without primes are measured in an inertial frame. See [Chapter 4.5](#sec-4-5) for what each of these terms mean. If your system is *not* rotating, then $\vec{\alpha} = \vec{\omega} = 0$ and we recover the same equation for a linear non-inertial frame from [Chapter 4.2](#sec-4-2),
+where the parameters with primes are in the rotating reference frame and the parameters without primes are measured in an inertial frame. See [Chapter 4.5](#sec-4-5) for what each of these terms means. If your system is *not* rotating, then $\vec{\alpha} = \vec{\omega} = 0$ and we recover the same equation for a linear non-inertial frame from [Chapter 4.2](#sec-4-2),
 
 $$
 \vec{a}^{\prime }= \vec{a} - \vec{A} =\Rightarrow \mathrm{for} \mathrm{no} \mathrm{rotation}
@@ -55,7 +55,7 @@ $$
 
 <!-- Source PDF page 102; printed label 93. -->
 
-where the four labeled terms are the four fictitious forces: the azimuthal force, the Coriolis force, the centrifugal force, and the translational force. Note how each of these forces are defined with negative signs because they act opposite the direction of acceleration.
+where the four labeled terms are the four fictitious forces: the azimuthal force, the Coriolis force, the centrifugal force, and the translational force. Note how each of these forces is defined with negative signs because they act opposite the direction of acceleration.
 
 In the next two sections, we will look at examples of the centrifugal force and the Coriolis force. The azimuthal force will be left for practice. See [Chapter 4](#ch-4) for examples of the translational force.
 
@@ -76,7 +76,7 @@ In rotational motion, we have two similar sounding accelerations, the centrifuga
 
 ::::
 
-While similar in magnitude, the direction of the centrifugal force is not the same as the direction of the centripetal acceleration. The centrifugal force points radially outward for rotating frames, whereas the centripetal acceleration points radially inward. This should make intuitive sense as fictitious forces act in the opposite direction to the acceleration in the inertial frame (negative sign in the Equation (5.5).
+While similar in magnitude, the direction of the centrifugal force is not the same as the direction of the centripetal acceleration. The centrifugal force points radially outward for rotating frames, whereas the centripetal acceleration points radially inward. This should make intuitive sense as fictitious forces act in the opposite direction to the acceleration in the inertial frame (negative sign in the Equation (5.5)).
 
 To prove that the centrifugal force is radially outward, let’s go through an example vector cross product for uniform circular motion with its axis of rotation pointing up $(\hat{k}^{\prime })$. Even though we have a radial dependence with our cross product, we will use Cartesian coordinates for the rotating frame $(\hat{\imath}^{\prime },\hat{\jmath}^{\prime },\hat{k}^{\prime })$. The reason is, in our rotating frame, the radial vector will move with the non-inertial coordinate system. That is, from the perspective of a non-inertial observer rotating with the coordinate system, the radial vector does not change. So we can define our radial vector as being along the $x-$axis $(\vec{r}^{\prime }= r\hat{\imath}^{\prime })$ for example, and as the system rotates, our radial vector will remain along the $\hat{\imath}^{\prime }$ direction (both the position and the coordinates are rotating in this non-inertial frame).
 
@@ -181,7 +181,7 @@ Cat’s Frame: The cat is our observer in the rotating frame, which means that t
 Free-body diagram for the cat on a spinning turntable. The labeled forces are the gravitational force $(F_{g})$, the normal force $(N)$, friction $(f)$, and the centrifugal force $(F_{cent})$. The three forces in purple are the forces that we would identify in an inertial frame. The centrifugal force in black is only in the cat’s frame.
 :::
 
-Compared to the inertial frame, the cat would identify one additional force. The centrifugal force. So the sum of all forces would be:
+Compared to the inertial frame, the cat would identify one additional force: the centrifugal force. So the sum of all forces would be:
 
 $$
 m\vec{a}^{\prime }= \vec{F}_{I}+ \vec{F}_{cent}
@@ -205,7 +205,7 @@ $$
 \omega=\sqrt{\frac{\mu g}{R}}.
 $$
 
-which is the same solution as the inertial frame (as expected). The difference is that we have identified the fictitious centrifugal force for the non-inertial frame.
+This is the same solution as the inertial frame (as expected). The difference is that we have identified the fictitious centrifugal force for the non-inertial frame.
 
 1. Fictitious forces act like a modification of gravity (e.g., effective gravity) in the non-inertial frame. Depending on the problem, the effective gravity vector can be at an angle relative to the vertical. Assuming there is only the centrifugal force acting on the cat, what is the equation for the angle for the effective gravity in terms of $\omega, R$, and $g$? Hint, add the $F_{g}$ and $F_{cent}$ vectors.
 
@@ -285,7 +285,7 @@ Let’s return to the question of the cat sitting on a turntable from [Sample Pr
 
 **Solution**
 
-Inertial Frame: In the inertial frame, the net force acting on the cat is still friction with the table. But due to the combination of a rotating frame and the cat is moving, friction is no longer radial (e.g., we cannot say that the cat is undergoing simple circular motion). It is *much easier* to solve this problem in the cat’s reference frame.
+Inertial Frame: In the inertial frame, the net force acting on the cat is still friction with the table. But due to the combination of the rotating frame and the cat’s motion, friction is no longer radial (e.g., we cannot say that the cat is undergoing simple circular motion). It is *much easier* to solve this problem in the cat’s reference frame.
 
 The Cat’s Frame: From the cat’s perspective, there is no acceleration because it is moving at a constant velocity. So we can simplify the equation of motion with $\vec{a}^{\prime }$ = 0. But there are two fictitious forces acting on the cat. So the force equation becomes:
 
@@ -369,7 +369,7 @@ x^{\prime}&= \dfrac{\sqrt{\mu^{2}g^{2}-4(v')^{2}\omega^{2}}}{\omega^{2}}
 \end{aligned}
 $$
 
-So this is the maximum radial distance that the cat can reach before the combination of fictitious forces exceed the condition for slipping.
+So this is the maximum radial distance that the cat can reach before the combination of fictitious forces exceeds the condition for slipping.
 
 1. Consider the case where the cat walks inward toward the origin instead of outward. What is the *Coriolis* force in this case?
 
@@ -540,7 +540,7 @@ Foucault’s pendulum is a classic example of the Coriolis force in action. Cons
 :alt: Cartoon showing the tension and gravitational forces for a Foucault pendulum.
 :width: 150px
 
-A Foucault pendulum of mass $m$ and length $\ell$. The pivot point at $P$ does not move and has no friction. Two forces act in the inertial frame, tension $(\vec{T}$ ) and gravity $(\vec{F}_{g})$. Gravity points down, tension is directed to the pivot. Note that the pendulum is moving near Earth’s surface, so we will want to use only the non-inertial coordinate system.
+A Foucault pendulum of mass $m$ and length $\ell$. The pivot point at $P$ does not move and has no friction. Two forces act in the inertial frame, tension $(\vec{T}$ ) and gravity $(\vec{F}_{g})$. Gravity points down; tension is directed to the pivot. Note that the pendulum is moving near Earth’s surface, so we will want to use only the non-inertial coordinate system.
 :::
 
 When set in motion, the pendulum will have a non-zero Coriolis force. Ignoring the azimuthal and centrifugal forces (negligible), we can simplify the non-inertial frame acceleration as (see previous section):
@@ -553,7 +553,7 @@ where $a$ is the acceleration due to the net (real) forces acting on the pendulu
 
 <!-- Source PDF page 113; printed label 104. -->
 
-**1. Finding the inertial forces:** The inertial forces are gravity and tension. Gravity acts down $(-\hat{k}^{\prime }$ direction) in the non-inertial frame. So we need to convert tension to our non-inertial reference frame by finding its components along $\hat{\imath}^{\prime },\hat{\jmath}^{\prime },\hat{k}^{\prime }$. [Figure 5.8](#fig-5-8) shows the break down of the tension, $\vec{T}$ in red, into the non-inertial coordinate system.
+**1. Finding the inertial forces:** The inertial forces are gravity and tension. Gravity acts down $(-\hat{k}^{\prime }$ direction) in the non-inertial frame. So we need to convert tension to our non-inertial reference frame by finding its components along $\hat{\imath}^{\prime },\hat{\jmath}^{\prime },\hat{k}^{\prime }$. [Figure 5.8](#fig-5-8) shows the breakdown of the tension, $\vec{T}$ in red, into the non-inertial coordinate system.
 
 :::{figure} ../images/figures/figure-5-8.png
 :label: fig-5-8
@@ -572,7 +572,7 @@ $$
 \vec{T} = - \frac{Tx^{\prime}}{\ell} \hat{\imath}^{\prime}- \frac{Ty^{\prime}}{\ell} \hat{\jmath}^{\prime}+ \frac{T(\ell - z^{\prime})}{\ell} \hat{k}^{\prime}
 $$
 
-Note the negative signs for the $x^{\prime }$ and $y^{\prime }$ components. This should make sense as these would be a restoring force and restoring forces are always negative.
+Note the negative signs for the $x^{\prime }$ and $y^{\prime }$ components. This should make sense as these would be restoring forces and restoring forces are always negative.
 
 For the $z^{\prime }$ component, we can use the vector dot product because we know the angle between tension and $\hat{k}^{\prime }$ is $\delta$. So $T_{z^{\prime }}= T \cos \delta$. We can define $\cos \delta$ from the length of the rope because it is fixed. The pendulum height is given by $z^{\prime }= \ell -\ell \cos \delta$, so we can solve for $\cos \delta = \frac{\ell -z^{\prime}}{\ell}$. For small angles, $z^{\prime }\approx 0$ so $T_{z^{\prime }}\approx T$.
 
@@ -627,7 +627,7 @@ m\ddot{y}^{\prime}&= - \frac{Ty^{\prime}}{l} - 2m\omega \sin \theta \dot{x}^{\pr
 \end{aligned}
 $$
 
-where $\theta$ is the latitude of the observer. if we assume that the angle of displacement is small, then $T \approx mg$. So we can simplify the above as:
+where $\theta$ is the latitude of the observer. If we assume that the angle of displacement is small, then $T \approx mg$. So we can simplify the above as:
 
 $$
 \begin{aligned}
@@ -638,7 +638,7 @@ $$
 
 The above equations are differential equations of motion. Note that for a given observer on Earth, $\omega$ and $\theta$ are constant. The first term should look familiar. This is the solution for a simple pendulum that is displaced by a small angle from equilibrium. If $\omega$ = 0, then we recover the differential equation of motion for an ordinary pendulum in an inertial frame.
 
-The second term comes from the Coriolis force and describe a deflection in the pendulum’s swing. This deflection always acts perpendicular to the velocity vector in the plane of motion. So instead of just oscillating back and forth in a straight line, the pendulum will slowly turn (precess) as it oscillates back and forth. The magnitude of the Coriolis force is small, but it changes the direction of the pendulum just enough that it will trace out a circle over time.
+The second term comes from the Coriolis force and describes a deflection in the pendulum’s swing. This deflection always acts perpendicular to the velocity vector in the plane of motion. So instead of just oscillating back and forth in a straight line, the pendulum will slowly turn (precess) as it oscillates back and forth. The magnitude of the Coriolis force is small, but it changes the direction of the pendulum just enough that it will trace out a circle over time.
 
 <!-- Source PDF page 115; printed label 106. -->
 
@@ -671,13 +671,13 @@ So the Foucault pendulum offers a direct way to measure your latitude. At the No
 (sec-5-6)=
 ## 5.6 Real-World Application
 
-Although forces like the centrifugal force and Coriolis force are fictitious, we can see the effects of rotating references frames on objects and ourselves. A centrifuge is a device that rotates an object around a fixed axis very quickly. In laboratories, these high rotation speeds are used to separate out different substances into layers by their densities allowing pristine samples to be collected. The effective force can be hundreds or thousands of times that of a standard Earth gravity.
+Although forces like the centrifugal force and Coriolis force are fictitious, we can see the effects of rotating reference frames on objects and ourselves. A centrifuge is a device that rotates an object around a fixed axis very quickly. In laboratories, these high rotation speeds are used to separate out different substances into layers by their densities allowing pristine samples to be collected. The effective force can be hundreds or thousands of times that of a standard Earth gravity.
 
 Rotating rides at amusement parks operate at lower speeds than centrifuges, but those on the rides feel similar effects. When on one of these rides, you would feel your body move
 
 <!-- Source PDF page 116; printed label 107. -->
 
-outward, often against the wall. Space agencies also use systems like centrifuges for highgravity simulation during astronaut training. Astronauts leaving or returning to Earth feel changes in effective gravity that can affect the blood flow to their heads and make them pass out. With training, the astronauts can simulate those conditions and learn to function.
+outward, often against the wall. Space agencies also use systems like centrifuges for high gravity simulation during astronaut training. Astronauts leaving or returning to Earth feel changes in effective gravity that can affect the blood flow to their heads and make them pass out. With training, the astronauts can simulate those conditions and learn to function.
 
 Courtesy of the ESA astronaut Andreas Mogensen, [this video shows](https://www.youtube.com/watch?v=Hgz7kJJSksM) the view from outside and inside a training centrifuge in operation.
 
@@ -688,7 +688,7 @@ Fisher Scientific provides [a primer on centrifuge theory](https://www.fishersci
 
 ::::{admonition} Key Takeaways
 
-This chapter applies the basic concepts of non-inertial frames from [Chapter 4](#ch-4) to more complex problems. In particular, this chapter expands on the Coriolis and centrifugal fictitious forces in rotating frames. The general equation for the fictitious forces are,
+This chapter applies the basic concepts of non-inertial frames from [Chapter 4](#ch-4) to more complex problems. In particular, this chapter expands on the Coriolis and centrifugal fictitious forces in rotating frames. The general equation for the fictitious forces is,
 
 $$
 m\vec{a}'=m\vec{a}
@@ -698,9 +698,9 @@ m\vec{a}'=m\vec{a}
 \underbrace{-m\vec{A}}_{\vec{F}_{trans}}.
 $$
 
-This chapter also introduces the Earth to be a non-inertial frame. To first order, the physics problems from [Chapter 2](#ch-2) and 3 assume that the Earth is an inertial frame of reference. This approximation is generally fine, as the fictitious forces do not greatly affect these types of physics problems. Try the practice problems below to see the magnitude of some of these forces.
+This chapter also introduces the Earth as a non-inertial frame. To first order, the physics problems from [Chapter 2](#ch-2) and 3 assume that the Earth is an inertial frame of reference. This approximation is generally fine, as the fictitious forces do not greatly affect these types of physics problems. Try the practice problems below to see the magnitude of some of these forces.
 
-But for some types of high-precision physics, such as weather patterns, satellite orbits, and Foucault pendulums, you need to take into account the fictitious forces that arise from a non-inertial Earth-bound reference frame. This chapter goes through a few examples, highlighting how to breakdown and simplify such problems.
+But for some types of high-precision physics, such as weather patterns, satellite orbits, and Foucault pendulums, you need to take into account the fictitious forces that arise from a non-inertial Earth-bound reference frame. This chapter goes through a few examples, highlighting how to break down and simplify such problems.
 
 ::::
 

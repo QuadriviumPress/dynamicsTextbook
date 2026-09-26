@@ -85,7 +85,7 @@ $$
 
 See [Chapter 1.6](#sec-1-6) and [Appendix B](#app-b) for details on how functions can be approximated.
 
-Common Taylor Series approximations for values around $x \approx 0$. Note that angles must be in units of radians for these approximations to be applicable:
+The following are common Taylor Series approximations for values around $x \approx 0$. Note that angles must be in units of radians for these approximations to be applicable:
 
 $$
 \begin{aligned}

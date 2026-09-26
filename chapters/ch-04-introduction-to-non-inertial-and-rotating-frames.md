@@ -20,7 +20,7 @@ In this chapter, we will review inertial frames of reference and introduce non-i
 (sec-4-1)=
 ## 4.1 Review of Reference Frames
 
-[Figure 4.1](#fig-4-1) shows two reference frames with a point $P$ common to both. The black $S$ frame is stationary and the red $S^{\prime }$ frame is moving. (Imagine two observers looking at point $P$ with one observer standing still and the other is moving.) The vector from the $S$ to the point is $\vec{r}_{PS}$ and the vector from $S^{\prime }$ to the point is $\vec{r}_{PS^{\prime }}$. The vector from $S$ to $S^{\prime }$ is $\vec{r}_{S^{\prime }S}$. Using vector addition, you can show that $\vec{r}_{PS}= \vec{r}_{S^{\prime }S}+ \vec{r}_{PS^{\prime }}$.
+[Figure 4.1](#fig-4-1) shows two reference frames with a point $P$ common to both. The black $S$ frame is stationary and the red $S^{\prime }$ frame is moving. (Imagine two observers looking at point $P$ with one observer standing still and the other moving.) The vector from $S$ to the point is $\vec{r}_{PS}$ and the vector from $S^{\prime }$ to the point is $\vec{r}_{PS^{\prime }}$. The vector from $S$ to $S^{\prime }$ is $\vec{r}_{S^{\prime }S}$. Using vector addition, you can show that $\vec{r}_{PS}= \vec{r}_{S^{\prime }S}+ \vec{r}_{PS^{\prime }}$.
 
 :::{figure} ../images/figures/figure-4-1.png
 :label: fig-4-1
@@ -48,7 +48,7 @@ For two different *inertial* frames, an observer in each frame would measure the
 (sec-4-2)=
 ## 4.2 Introduction to Non-Inertial Reference Frames
 
-In a non-inertial frame, the frame of reference is accelerating or rotating. Going back to our example from [Section 4.1](#sec-4-1), now $\vec{a}_{S^{\prime }S}\not =$ 0 and the acceleration for point P measured in both frames will be different because,
+In a non-inertial frame, the frame of reference is accelerating or rotating. Going back to our example from [Section 4.1](#sec-4-1), now $\vec{a}_{S^{\prime }S}\not =$ 0 and the acceleration for point P measured in both frames will be different because
 
 $$
 \vec{a}_{PS}= \vec{a}_{S^{\prime }S}+ \vec{a}_{PS^{\prime }}
@@ -96,7 +96,7 @@ Note that the fictitious forces do not represent actual forces. Fictitious force
 
 ::::{admonition} Cora’s Thoughts
 
-Overall fictitious forces are forces that *appear* to act on an object to explain its motion. A good way to think of fictitious forces is in the context of driving a car. If you are driving a car down a straight road with cruise control on (traveling at a constant linear velocity), then you are in an inertial frame and you do not feel any forces from the motion of the car. However, when you hit a bend in the road you accelerate as you turn making the car a non-inertial frame. When the car turns left, it accelerates to the left, and you feel a “force” that pushes you to the right. That “force” is the fictitious force. It is the force felt in the opposite the direction of the acceleration, that comes from being an observer in a non-inertial frame, as you only know that you are in an accelerating frame due to feeling this fictitious force.
+Overall fictitious forces are forces that *appear* to act on an object to explain its motion. A good way to think of fictitious forces is in the context of driving a car. If you are driving a car down a straight road with cruise control on (traveling at a constant linear velocity), then you are in an inertial frame and you do not feel any forces from the motion of the car. However, when you hit a bend in the road you accelerate as you turn making the car a non-inertial frame. When the car turns left, it accelerates to the left, and you feel a “force” that pushes you to the right. That “force” is the fictitious force. It is the force felt in the opposite direction of the acceleration, that comes from being an observer in a non-inertial frame, as you only know that you are in an accelerating frame due to feeling this fictitious force.
 
 :::{figure} ../images/figures/figure-4-2.png
 :label: fig-4-2
@@ -152,7 +152,7 @@ Let’s put non-inertial frames into practice with a couple of examples where th
 
 ::::{admonition} Sample Problem 4-1
 
-The mass is hanging from the ceiling of an elevator by a rope, and elevator is moving upwards with an acceleration of $a_{e}$. **Compare the tension in the rope as measured** **by an observer in (a) an inertial frame and (b) the elevator’s moving frame.** See [Figure 4.3](#fig-4-3).
+The mass is hanging from the ceiling of an elevator by a rope, and the elevator is moving upwards with an acceleration of $a_{e}$. **Compare the tension in the rope as measured** **by an observer in (a) an inertial frame and (b) the elevator’s moving frame.** See [Figure 4.3](#fig-4-3).
 
 :::{figure} ../images/figures/figure-4-3.png
 :label: fig-4-3
@@ -189,7 +189,7 @@ $$
 
 where $a_{e}$ is the acceleration of the mass because of the elevator.
 
-b) Elevator Frame: Now consider the observer $O^{\prime }$ in the elevator with the mass. From the perspective of this observer, the mass is stationary because both the observer and the mass are moving upwards (there is no relative motion between $O^{\prime }$ and $m)$. So $\sum \vec{F}_{S^{\prime }}$ = 0. But we cannot say that $\sum \vec{F}_{S^{\prime }}$ is given by tension and gravity alone, because $S^{\prime }$ is in a non-inertial frame. This observer must take into account the acceleration of their own frame and include a fictitious force acting on mass.
+b) Elevator Frame: Now consider the observer $O^{\prime }$ in the elevator with the mass. From the perspective of this observer, the mass is stationary because both the observer and the mass are moving upwards (there is no relative motion between $O^{\prime }$ and $m)$. So $\sum \vec{F}_{S^{\prime }}$ = 0. But we cannot say that $\sum \vec{F}_{S^{\prime }}$ is given by tension and gravity alone, because $S^{\prime }$ is in a non-inertial frame. This observer must take into account the acceleration of their own frame and include a fictitious force acting on the mass.
 
 For the moving reference frame, we need to correct the second law using the fictitious force. Taking up as positive, we have:
 
@@ -223,7 +223,7 @@ which is the same answer as before from the inertial frame as expected. We need 
 
 ::::{admonition} Sample Problem 4-2
 
-A truck is carrying a box of mass $m$. When the truck decelerates at a rate of $a_{0}= 0.6g$, the box in the rear of the truck begins to slide forward relative to an observer sitting in the truck. If the coefficient of friction between the box and the truck is $\mu = 0.4$, **what** **is the acceleration of the box relative to the (a) the ground and (b) the truck?**
+A truck is carrying a box of mass $m$. When the truck decelerates at a rate of $a_{0}= 0.6g$, the box in the rear of the truck begins to slide forward relative to an observer sitting in the truck. If the coefficient of friction between the box and the truck is $\mu = 0.4$, **what** **is the acceleration of the box relative to (a) the ground and (b) the truck?**
 
 **Solution**
 
@@ -238,7 +238,7 @@ A truck is carrying a box of mass $m$. When the truck decelerates at a rate of $
 Free-body diagram of the mass $m$ in the inertial frame. The forces acting on the mass are the force of friction $(f)$ in red, the normal force $(N)$ and gravity $(mg)$.
 :::
 
-Inertial Frame: [Figure 4.4](#fig-4-4), shows the free-body diagram of the box relative to an observer in an inertial frame (e.g., an observer on the ground). If the box is moving forward $(+x$ direction), then friction is acting in the opposite direction $(-x$ direction). We also have gravity and the normal force.
+Inertial Frame: [Figure 4.4](#fig-4-4) shows the free-body diagram of the box relative to an observer in an inertial frame (e.g., an observer on the ground). If the box is moving forward $(+x$ direction), then friction is acting in the opposite direction $(-x$ direction). We also have gravity and the normal force.
 
 All motion is horizontal. The box does not move up or down, so $\sum \vec{F}_{y}$ = 0. There are only two vertical forces, gravity and the normal force. Therefore, we can say that
 
@@ -437,7 +437,7 @@ $$
 
 <!-- Source PDF page 89; printed label 80. -->
 
-The above equation says that the velocity of the point, $P$, between the inertial (non-rotating) frame and the non-inertial (rotating) frame are related by an extra term corresponding to the rotation of the coordinate system itself.
+The above equation says that the velocities of the point, $P$, in the inertial (non-rotating) frame and the non-inertial (rotating) frame are related by an extra term corresponding to the rotation of the coordinate system itself.
 
 We need to solve for $\frac{\mathrm{d}\hat{\imath}'}{\mathrm{d}t}$, $\frac{\mathrm{d}\hat{\jmath}'}{\mathrm{d}t}$, and $\frac{\mathrm{d}\hat{k}'}{\mathrm{d}t}$ to fully complete the coordinate transformation. The unit vectors in $S^{\prime }$ are rotating at a rate of $\vec{\omega}$, which is the angular velocity:
 
@@ -445,7 +445,7 @@ $$
 \vec{\omega} = \omega \hat{n}
 $$
 
-where $\hat{n}$ is unit vector in the direction of $\vec{\omega}$ (the normal to the plane of rotation). Recall that using the right-hand rule, if your fingers curl in the direction of rotation, extending your thumb gives the direction of the angular velocity vector.
+where $\hat{n}$ is a unit vector in the direction of $\vec{\omega}$ (the normal to the plane of rotation). Recall that using the right-hand rule, if your fingers curl in the direction of rotation, extending your thumb gives the direction of the angular velocity vector.
 
 [Figure 4.8](#fig-4-8) shows the rotation of the $\hat{\imath}^{\prime }$ coordinate axis.
 
@@ -478,7 +478,7 @@ $$
 \frac{\mathrm{d}\hat{\imath}^{\prime}}{\mathrm{d}t} = (\hat{\imath}^{\prime}\sin \varphi)\omega =\Rightarrow \omega = \frac{\mathrm{d}\theta}{\mathrm{d}t}
 $$
 
-This form of this equation should look familiar. It looks like a vector cross product. Recall that $\vec{a} \times \vec{b} = ab\sin \theta$, where $\theta$ is the angle between the vectors. So we can say that
+The form of this equation should look familiar. It looks like a vector cross product. Recall that $\vec{a} \times \vec{b} = ab\sin \theta$, where $\theta$ is the angle between the vectors. So we can say that
 
 $$
 \frac{\mathrm{d}\hat{\imath}^{\prime}}{\mathrm{d}t} = \vec{\omega} \times \hat{\imath}^{\prime}
@@ -592,7 +592,7 @@ $$
 
 where $\vec{a}$ is the acceleration of the point in the inertial frame and $\vec{a}^{\prime }$ is the acceleration of the point in the rotating frame.
 
-In addition, recall that the velocity of the object from the perspective of the rotating frame:
+In addition, recall that the velocity of the object from the perspective of the rotating frame is:
 
 $$
 \vec{v}^{\prime}= \Bigg(\frac{\mathrm{d}\vec{r}^{\prime}}{\mathrm{d}t} \Bigg)_{R}
@@ -614,7 +614,7 @@ $$
 
 So we will define the time derivative of $\vec{\omega}$ as $\vec{\alpha}$ , which is the angular acceleration.
 
-Thus, we obtain the equation for the coordinate transformation of:
+Thus, we obtain the equation for the coordinate transformation of acceleration:
 
 $$
 \vec{a} = \vec{a}^{\prime }+ \vec{\alpha} \times \vec{r}^{\prime }+ 2\vec{\omega} \times \vec{v}^{\prime }+ \vec{\omega} \times (\vec{\omega} \times \vec{r}^{\prime })
@@ -721,7 +721,7 @@ $$
 m\vec{a}^{\prime }= 0
 $$
 
-But this observer has not considered that they are on a rotating reference frame. As a result, they need to consider the fictitious forces that come with that frame.Fortunately, many of the terms are equal to zero.
+But this observer has not considered that they are on a rotating reference frame. As a result, they need to consider the fictitious forces that come with that frame. Fortunately, many of the terms are equal to zero.
 
 $$
 m\vec{a}'=\sum\vec{F}_{I}
@@ -781,7 +781,7 @@ which is exactly what we had for the inertial frame.
 
 This chapter introduces the concepts of inertial and non-inertial frames. Inertial frames are reference frames that are either stationary or move with a constant velocity, whereas non-inertial frames are either accelerating or rotating.
 
-To solve physics problems in non-inertial and rotating frames, we introduced the concept of *fictitious forces*. These are not real forces, in the sense that they arise from any specific interactions. They are forces that appear to act on an object to explain its properties. The fictitious force always acts opposite the direction of the acceleration (equivalence principle).
+To solve physics problems in non-inertial and rotating frames, we introduced the concept of *fictitious forces*. These are not real forces, in the sense that they do not arise from any specific interactions. They are forces that appear to act on an object to explain its properties. The fictitious force always acts opposite the direction of the acceleration (equivalence principle).
 
 $$
 \vec{F}_{fic}= -m\vec{a}_{S^{\prime }S}
@@ -876,7 +876,7 @@ A 70 kg person stands on a bathroom scale in a moving elevator.
 
 a) If the elevator has a *downward* acceleration of $a = \frac{g}{4}$, what is the force of the person on the scale?
 
-b) If the elevator has a *upward* acceleration of $a = \frac{g}{4}$, what is the force of the person on the scale?
+b) If the elevator has an *upward* acceleration of $a = \frac{g}{4}$, what is the force of the person on the scale?
 
 ::::
 
@@ -918,7 +918,7 @@ b) If $a = 0.1g$ and $\theta = 30^{\circ}$, what is the magnitude of $g_{eff}$
 
 ::::{admonition} Practice Problem 4-6
 
-Small object of mass $m$ is suspended from the ceiling of a train by an ideal rope of length $L$. If the mass oscillates like a simple pendulum, how does the period of oscillations change if the train goes from rest to an acceleration of $a = \frac{1}{3} g$?
+A small object of mass $m$ is suspended from the ceiling of a train by an ideal rope of length $L$. If the mass oscillates like a simple pendulum, how does the period of oscillations change if the train goes from rest to an acceleration of $a = \frac{1}{3} g$?
 
 ::::
 

@@ -292,7 +292,7 @@ Quarter the mass $(m/4)$
 
 **Problem 3-2:** [Question](#problem-3-2)
 
-Looking up the gravitational acceleration for each planet, some examples:
+Using the gravitational acceleration for each planet, we obtain these examples:
 
 Mercury: 0.375 m, Earth: 1 m, Mars: 0.376 m, Jupiter: 2.5 m, Neptune: 1.13 m
 
@@ -588,7 +588,7 @@ $$
 \mathrm{b}) \vec{F}_{I}= 2m\omega \dot{x}^{\prime }\hat{y}^{\prime }
 $$
 
-c) The centrifugal force $F_{cent}$ points parallel to the $x$ prime axis, the Coriolis force $F_{Cor}$ is anti-parallel to the $y$ prime axis, and the inertial force $F_{I}$ is parallel to the $y$ prime axis. the system is rotating in the counter-clockwise direction. [Reaction force between the bead and rod]
+c) The centrifugal force $F_{cent}$ points parallel to the $x$ prime axis, the Coriolis force $F_{Cor}$ is anti-parallel to the $y$ prime axis, and the inertial force $F_{I}$ is parallel to the $y$ prime axis. The system is rotating in the counter-clockwise direction. [Reaction force between the bead and rod]
 
 $$
 \mathrm{d}) x(t) = \frac{L}{2} [e^{\omega t}- e^{-\omega t}]

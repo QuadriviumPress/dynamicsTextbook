@@ -11,7 +11,7 @@
 
 ::::
 
-In this chapter, we will introduce the Lagrangian and the Euler-Lagrange method to solving physics problems. This technique represents another tool in your physics toolkit, much like how we can use energy conservation, momentum conservation, and Newton’s laws to solve physics problems.
+In this chapter, we will introduce the Lagrangian and the Euler-Lagrange method for solving physics problems. This technique represents another tool in your physics toolkit, much like how we can use energy conservation, momentum conservation, and Newton’s laws to solve physics problems.
 
 (sec-12-1)=
 ## 12.1 Introduction to the Lagrangian Method
@@ -87,7 +87,7 @@ The Lagrangian method represents yet another way you can solve problems in physi
 
 1. Show that the units of the Euler-Lagrange equation match expectations.
 
-2. Show that you get comparable equations for the $y$ and $z$ axis.
+2. Show that you get comparable equations for the $y$ and $z$ axes.
 
 ::::
 
@@ -158,7 +158,7 @@ $$
 
 ::::{admonition} Continued
 
-where we can use the energy terms from previously to solve the Lagrangian,
+where we can use the energy terms from earlier to solve the Lagrangian,
 
 $$
 L = K - U = \frac{1}{2} m\dot{x}^{2}- \frac{1}{2} kx^{2}
@@ -207,7 +207,7 @@ $$
 m_{1}\ddot{x} = (m1 + m2)\dot{x} + m_{1}gx_{1}+ m_{2}g(h - x_{1})
 $$
 
-until you get used to the process and so can be easier to see position and velocity as separate variables.
+until you get used to the process; doing so can make it easier to see position and velocity as separate variables.
 
 ::::
 
@@ -404,7 +404,7 @@ $$
 0 = \frac{\mathrm{d}}{\mathrm{d}t} \Bigg(\frac{\partial L}{\partial \dot{\theta}} \Bigg)
 $$
 
-So the derivative of the Lagrangian with angular velocity $(\frac{\partial L}{\partial \dot{\theta}}$ ) is constant with time.
+So the derivative of the Lagrangian with respect to angular velocity $(\frac{\partial L}{\partial \dot{\theta}}$ ) is constant with time.
 
 $$
 \frac{\partial L}{\partial \dot{\theta}} = \frac{\partial}{\partial \dot{\theta}} \bigg(\frac{1}{2} mr^{2}\dot{\theta}^{2}\bigg) = mr^{2}\dot{\theta} = \mathrm{constant}
@@ -496,7 +496,7 @@ Since the motion is along the incline only, we will define $\hat{x}$ to be point
 :alt: Figure shows a right triangle defining the height as a function of distance down the incline.
 :width: 248px
 
-Using Pythagorean theorem we can determine the change in height of the sphere.
+Using the Pythagorean theorem we can determine the change in height of the sphere.
 :::
 
 The potential energy is therefore:
@@ -521,7 +521,7 @@ $$
 
 ::::{admonition} Continued
 
-For a sphere, $I = \frac{2}{5} MR^{2}$ (see [Appendix A.4](#sec-A-4)) it is rolling without slipping, which means
+For a sphere, $I = \frac{2}{5} MR^{2}$ (see [Appendix A.4](#sec-A-4)); it is rolling without slipping, which means
 
 $$
 \omega = \frac{v_{cm}}{R} = \frac{\dot{x}}{R}
@@ -576,7 +576,7 @@ For this problem, the solution is not a simple differential equation. Consider w
 
 ::::{admonition} Sample Problem 12-5
 
-A particle of mass $m$, moves along a bent wire. The shape of the wire can be described with the equation $y = ax^{4}$. (Note that the wire equation represents the path the particle can move along.) **What is the equation of motion for the particle?**
+A particle of mass $m$ moves along a bent wire. The shape of the wire can be described with the equation $y = ax^{4}$. (Note that the wire equation represents the path the particle can move along.) **What is the equation of motion for the particle?**
 
 :::{figure} ../images/figures/figure-12-6.png
 :label: fig-12-6
@@ -584,12 +584,12 @@ A particle of mass $m$, moves along a bent wire. The shape of the wire can be de
 :alt: Figure shows a parabolic-like wire with a bead on it on Cartesian coordinates.
 :width: 217px
 
-The function $y = ax^{4}$ is the path that particle of mass $m$ moves along.
+The function $y = ax^{4}$ is the path that the particle of mass $m$ moves along.
 :::
 
 **Solution**
 
-To help solve this problem, we will break it down into a few parts. We will get the equation of motion when we have expressions for $K$ and $U$. That means we need to describe the motion of the particle at any given time and we need to describe the position of the particle at any give time.
+To help solve this problem, we will break it down into a few parts. We will get the equation of motion when we have expressions for $K$ and $U$. That means we need to describe the motion of the particle at any given time and we need to describe the position of the particle at any given time.
 
 **a) What is the velocity of the particle?**
 
@@ -607,7 +607,7 @@ $$
 
 **b) Solve the Lagrangian.**
 
-We know that,
+We know that
 
 $$
 L = K - U
@@ -623,7 +623,7 @@ $$
 K = \frac{1}{2} mv^{2}
 $$
 
-where,
+where
 
 $$
 v^{2}= \vec{v} \cdot \vec{v}
@@ -744,11 +744,11 @@ The solution is a differential equation of motion, but it is difficult to solve 
 (sec-12-6)=
 ## 12.6 Real-World Applications
 
-Initially, it might seem like the Euler-Lagrange Method is unnecessarily complicated, but we’re really just touching the edge of what it can be used for. Remember that this textbooks is still mostly focusing on simple, idealized problems. The real world of experimentation and research is much more complex, and many physics problems don’t have simple, analytical solutions and can only be probed numerically using computers.
+Initially, it might seem like the Euler-Lagrange Method is unnecessarily complicated, but we’re really just touching the edge of what it can be used for. Remember that this textbook is still mostly focusing on simple, idealized problems. The real world of experimentation and research is much more complex, and many physics problems don’t have simple, analytical solutions and can only be probed numerically using computers.
 
 Lagrangian mechanics help simplify the calculations for complex or even chaotic systems where forces are hard to define or the initial conditions can drastically change the outcome (e.g., consider the [motion of a double pendulum](https://www.youtube.com/watch?v=czLIj-4suOk)). In terms of physics research, solving problems with the Euler-Lagrange method is often more efficient when mapping the motion of stars in galactic mergers or near supermassive black holes, tracing particle collisions in accelerators, solving problems in fluid mechanics, or tracking systems of particles in thermodynamics or quantum mechanics. The Euler-Lagrange equations are a tool to break down big problems into smaller calculations.
 
-One common application of Lagrangian mechanics is with magnetohydrodynamics (MHD), which is the study of fluids that conduct electrically. MHD is used in many branches of physics, but one example is nuclear fusion experimentation, where many experiments seek to produce energy by magnetically confining a fast-moving plasma in a torus. MHD research must solving various equations such as the equation of state, mass continuity, Faraday’s law, and Ohm’s law simultaneously for the entire system, and these equations are usually non-linear with time. As such, Lagrangian mechanics are often employed to simplify the problem.
+One common application of Lagrangian mechanics is with magnetohydrodynamics (MHD), which is the study of fluids that conduct electrically. MHD is used in many branches of physics, but one example is nuclear fusion experimentation, where many experiments seek to produce energy by magnetically confining a fast-moving plasma in a torus. MHD research must solve various equations such as the equation of state, mass continuity, Faraday’s law, and Ohm’s law simultaneously for the entire system, and these equations are usually non-linear with time. As such, Lagrangian mechanics are often employed to simplify the problem.
 
 For more information: [Wikipedia webpage on MHD](https://en.wikipedia.org/wiki/Magnetohydrodynamics), listing various forms and equations. [Science article](https://www.science.org/content/article/bizarre-reactor-might-save-nuclear-fusion) on some recent nuclear fusion experiment designs.
 
@@ -987,7 +987,7 @@ b) What is the potential energy of this system?
 
 c) What is the kinetic energy of this system?
 
-d) Use the Lagrange method to find the differential equation of motion for this system? Note: you must solve the $x$ and $\theta$ terms separately. Do not solve the differential equation.
+d) Use the Lagrange method to find the differential equation of motion for this system. Note: you must solve the $x$ and $\theta$ terms separately. Do not solve the differential equation.
 
 :::{figure} ../images/figures/figure-12-12.png
 :label: fig-12-12

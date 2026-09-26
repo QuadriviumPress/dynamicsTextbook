@@ -95,7 +95,7 @@ Problems at the end of each chapter to test your understanding of the concepts.
 
 Physics teaches **problem solving**. The main goals of this textbook are to develop your **physics toolkit** and to teach **critical thinking** so that you can break down big problems into smaller, easier to implement pieces. There are often multiple ways to solve a physics problem, and by building your foundation, you will be able to select which of those ways is most efficient or most ideal. When solving problems, think about the different methods you could use to solve physics problems and under which situations you would favour one method over another.
 
-*Thinking like a physicist*: there are lots of ways to approach physics problems. As you practice solving problems, try to recognize and develop the strategies that make learning best for you. Everyone is different, but here are some common tips and strategies to consider:
+*Thinking like a physicist*: there are lots of ways to approach physics problems. As you practice solving problems, try to recognize and develop the strategies that work best for you. Everyone is different, but here are some common tips and strategies to consider:
 
 I) Make sure you understand the system set up: Before attempting any problem, be sure you know what the system looks like given the description and all the moving parts. If it helps to visualize it, draw a diagram (it doesn’t need to be perfect). Taking a few moments to think about the system as a whole can save you a lot of time and trouble when solving the problem later on.
 
@@ -123,7 +123,7 @@ $$
 [\mathrm{J}] = [\mathrm{J}]
 $$
 
-For more information, see lists of Standard International (SI) units and some simple conversions from [Wolfram](https://scienceworld.wolfram.com/physics/SI.html), [National Physical Laboratory](https://www.npl.co.uk/si-units), and [Wikipedia](https://en.wikipedia.org/wiki/International_System_of_Units).
+For more information, see lists of the International System of Units (SI) and some simple conversions from [Wolfram](https://scienceworld.wolfram.com/physics/SI.html), [National Physical Laboratory](https://www.npl.co.uk/si-units), and [Wikipedia](https://en.wikipedia.org/wiki/International_System_of_Units).
 
 ::::
 

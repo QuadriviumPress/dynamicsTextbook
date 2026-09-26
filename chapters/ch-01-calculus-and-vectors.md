@@ -119,7 +119,7 @@ For a rigid body rotating on a fixed axis, a point $P$ on the body will travel i
 
 For rotational motion, it is useful to describe the motion in terms of angles: angular position $(\theta)$, angular velocity $(\omega)$, and angular acceleration $(\alpha)$. Note that a radius $r$ is also necessary to describe the motion, and we will assume this is constant for now. For this coordinate system to work, you need a reference axis (reference point).
 
-Consider the figure below. In time $t_{1}$ to $t_{2}$ the object has rotated from the first position at $\theta _{1}$ to the second position at $\theta _{2}$. The distance from the origin to both points (radius) is constant. Thus, the angular position that the object moves is $\Delta \theta = \theta _{2}- \theta _{1}$ in time $\Delta t = t_{2}- t_{1}$. The distance traveled is the arc, $s$, as traced out by the angle $\Delta \theta$.
+Consider the figure below. From time $t_{1}$ to $t_{2}$ the object has rotated from the first position at $\theta _{1}$ to the second position at $\theta _{2}$. The distance from the origin to both points (radius) is constant. Thus, the angular position that the object moves is $\Delta \theta = \theta _{2}- \theta _{1}$ in time $\Delta t = t_{2}- t_{1}$. The distance traveled is the arc, $s$, as traced out by the angle $\Delta \theta$.
 
 :::{figure} ../images/figures/figure-1-3.png
 :label: fig-1-3
@@ -162,7 +162,7 @@ For a rigid body, all points in the object move with the same angular velocity a
 
 1. What is the angle $\theta$ (in radians) for two complete rotations?
 
-2. A wheel with radius of 1 m rotates at 2.5 revolutions per second. What is the angular displacement (in radians) of the wheel after 1 minute?
+2. A wheel with a radius of 1 m rotates at 2.5 revolutions per second. What is the angular displacement (in radians) of the wheel after 1 minute?
 
 ::::
 
@@ -195,7 +195,7 @@ Visual definitions of $\hat{r}$ and $\hat{\theta}$ in plane polar coordinates. T
 
 ::::{admonition} Real World Applications
 
-Aircraft and naval navigation are both based on cylindrical coordinate systems, using a distance (radius), direction (angle), and altitude or depth $(z)$. These coordinate systems are often slightly modified to use North, either magnetic or true, as the zero angle. The use of polar coordinates are helpful in putting context to the positions of objects and obstacles relative to the moving vehicle.
+Aircraft and naval navigation are both based on cylindrical coordinate systems, using a distance (radius), direction (angle), and altitude or depth $(z)$. These coordinate systems are often slightly modified to use North, either magnetic or true, as the zero angle. The use of polar coordinates is helpful in putting context to the positions of objects and obstacles relative to the moving vehicle.
 
 ::::
 
@@ -247,7 +247,7 @@ $$
 \end{aligned}
 $$
 
-The above equation applies a full time derivative to $\hat{r}$ , which means that you must not only take the time derivative of $\cos \theta$ and $\sin \theta$, but also time derivative of $\theta$. See the textbook repository for a video showing the difference between full and partial derivatives.
+The above equation applies a full time derivative to $\hat{r}$ , which means that you must not only take the time derivative of $\cos \theta$ and $\sin \theta$, but also the time derivative of $\theta$. See the textbook repository for a video showing the difference between full and partial derivatives.
 
 Now that we have $\frac{\mathrm{d}\hat{r}}{\mathrm{d}t}$, we can go back to our velocity equation from before. For polar coordinates we get:
 
@@ -352,7 +352,7 @@ $$
 \alpha = \frac{\mathrm{d}\omega}{\mathrm{d}t} =\Rightarrow \omega = \int \alpha \mathrm{d}t
 $$
 
-The solutions to these integrals depends on how the system moves with time. For example, consider the case when $\alpha$ and $\vec{a}$ are constant with time. Let’s look at the case of linear motion with constant acceleration in 1-D so that we can drop the vector notation.
+The solutions to these integrals depend on how the system moves with time. For example, consider the case when $\alpha$ and $\vec{a}$ are constant with time. Let’s look at the case of linear motion with constant acceleration in 1-D so that we can drop the vector notation.
 
 $$
 v_{x}= \int a_{x}\,\mathrm{d}t
@@ -595,7 +595,7 @@ $$
 
 1. **How long does it take the wheel to come to a rest?** We will use the equation for angular speed to solve this problem. (You may notice a degree of similarity with the last problem. This was intentional to show how similar problems can have slight differences in answers and methodology.)
 
-Here, we don’t know $\alpha$ or $t$. If we set $\omega$ = 0 at time $t$, we have 0 = $\alpha t+\omega _{0}$, where the only known quantity is $\omega _{0}$. But we can solve for $\alpha$ because we are told that the acceleration is constant. That means that the instantaneous acceleration at any time is equal to the average acceleration between any fixed time. Between $t$ = 0 and $t = \tau$, the angular velocity decreased from $\omega _{0}$ to $\omega _{\tau}$ such that the average acceleration is:
+Here, we don’t know $\alpha$ or $t$. If we set $\omega$ = 0 at time $t$, we have 0 = $\alpha t+\omega _{0}$, where the only known quantity is $\omega _{0}$. But we can solve for $\alpha$ because we are told that the acceleration is constant. That means that the instantaneous acceleration at any time is equal to the average acceleration between any two fixed times. Between $t$ = 0 and $t = \tau$, the angular velocity decreased from $\omega _{0}$ to $\omega _{\tau}$ such that the average acceleration is:
 
 ::::
 
@@ -757,7 +757,7 @@ $$
 
 ::::{admonition} Definitions
 
-In general, angular velocity $(\omega)$ and angular acceleration $(\alpha)$ are vectors, although we often drop the vector symbol. The true definition of these terms are:
+In general, angular velocity $(\omega)$ and angular acceleration $(\alpha)$ are vectors, although we often drop the vector symbol. The true definitions of these terms are:
 
 $$
 \begin{aligned}
@@ -1005,7 +1005,7 @@ $$
 \vec{a} = \ddot{x}\hat{\imath} + \ddot{y}\hat{\jmath} + \ddot{z}\hat{k}
 $$
 
-And plane-polar coordinates, where the position vector is given by $\langle r,\theta \rangle$, and the velocity is described by:
+In plane-polar coordinates, the position vector is given by $\langle r,\theta \rangle$, and the velocity is described by:
 
 $$
 \begin{aligned}
@@ -1221,7 +1221,7 @@ $$
 
 ::::{admonition} Practice Problem 1-8
 
-A particle moves in a cloud chamber such that its position can be described by, $r = e^{2t}$ and $\theta = t^{2}$. Find its velocity and acceleration. Assume all quantities are unitless.
+A particle moves in a cloud chamber such that its position can be described by $r = e^{2t}$ and $\theta = t^{2}$. Find its velocity and acceleration. Assume all quantities are unitless.
 
 ::::
 
