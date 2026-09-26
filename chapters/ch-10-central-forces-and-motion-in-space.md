@@ -735,7 +735,7 @@ Based on its orbital properties, it was determined that ‘Oumuamua originated f
 The orbit of ‘Oumuamua. Image credit: ESO.
 :::
 
-For more information: NASA’s [basic information page on ‘Oumuamua](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/comets/oumuamua/in-depth/) has some good introductory reading plus an animation of the object’s orbit near its closest approach to the Sun and this [NASA article](https://solarsystem.nasa.gov/news/482/10-things-mysterious-oumuamua/) [highlights how much and how little we know about ‘Oumuamua](https://solarsystem.nasa.gov/news/482/10-things-mysterious-oumuamua/).
+For more information: NASA’s [basic information page on ‘Oumuamua](https://solarsystem.nasa.gov/asteroids-comets-and-meteors/comets/oumuamua/in-depth/) has some good introductory reading plus an animation of the object’s orbit near its closest approach to the Sun and this [NASA article highlights how much and how little we know about ‘Oumuamua](https://solarsystem.nasa.gov/news/482/10-things-mysterious-oumuamua/).
 
 <!-- Source PDF page 232; printed label 223. -->
 

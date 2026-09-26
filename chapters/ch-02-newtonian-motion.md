@@ -381,7 +381,7 @@ How fast do you need to go? The Earth’s surface curves down $\sim 5$ m every $
 
 ::::{admonition} Try at Home
 
-There are some helpful web applications that can help you visualize 2-D projectile motion and test your calculations with different input parameters. Give them a try and test your calculations for different circumstances. [Projectile Motion simulator from the](https://phet.colorado.edu/en/simulation/projectile-motion) [University of Colorado Boulder](https://phet.colorado.edu/en/simulation/projectile-motion) [Projectile motion simulator from the University of Virginia](http://galileoandeinstein.phys.virginia.edu/more_stuff/Applets/Projectile/projectile.html)
+There are some helpful web applications that can help you visualize 2-D projectile motion and test your calculations with different input parameters. Give them a try and test your calculations for different circumstances. [Projectile Motion simulator from the University of Colorado Boulder](https://phet.colorado.edu/en/simulation/projectile-motion) and [Projectile motion simulator from the University of Virginia](http://galileoandeinstein.phys.virginia.edu/more_stuff/Applets/Projectile/projectile.html)
 
 ::::
 
@@ -443,7 +443,7 @@ where $V$ and $\tau$ are dummy variables to represent the velocity at a later ti
 
 ::::{admonition} Continued
 
-integral contains the initial conditions (in the lower bounds), so solving this equation will give you the full equation for velocity without needing to solve for a constant of integration. We will show examples of *both* cases in this textbook. See the [online](https://github.com/OSTP/dynamicsTextbook/blob/main/video_links.md) [repository](https://github.com/OSTP/dynamicsTextbook/blob/main/video_links.md) for a video that directly compares these cases.
+integral contains the initial conditions (in the lower bounds), so solving this equation will give you the full equation for velocity without needing to solve for a constant of integration. We will show examples of *both* cases in this textbook. See the [online repository](https://github.com/OSTP/dynamicsTextbook/blob/main/video_links.md) for a video that directly compares these cases.
 
 ::::
 

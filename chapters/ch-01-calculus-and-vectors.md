@@ -850,7 +850,7 @@ A common application of Taylor Series approximations is the small angle case, wh
 
 ::::
 
-See [Appendix A.3](#sec-A-3) for a list of common Taylor series approximations and [Appendix B.2](#sec-B-2) for more details on this method and other approximations. Taylor series approximations [may](https://xkcd.com/2605/) [seem confusing at first](https://xkcd.com/2605/), but they can work for you when applied properly. When we use the Taylor approximation throughout this text, think about why we are using it and how the approximation simplifies the calculations.
+See [Appendix A.3](#sec-A-3) for a list of common Taylor series approximations and [Appendix B.2](#sec-B-2) for more details on this method and other approximations. Taylor series approximations [may seem confusing at first](https://xkcd.com/2605/), but they can work for you when applied properly. When we use the Taylor approximation throughout this text, think about why we are using it and how the approximation simplifies the calculations.
 
 <!-- Source PDF page 29; printed label 20. -->
 

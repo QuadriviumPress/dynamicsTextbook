@@ -544,7 +544,7 @@ But for fun, here are some videos that show damping motion in action. An excelle
 
 tuned mass damper in Taipei 101 is available to be seen. Here is [a nice video showing the Taipei 101 building tuned mass damper](https://www.youtube.com/watch?v=ohKqE_mwMmo) in action. This video does a nice job [illustrating why these dampers work](https://www.youtube.com/watch?v=f1U4SAgy60c).
 
-And to also showcase driven motion, here is a video from 1940 which shows the [collapse of](https://youtu.be/GBa_USozxFM?t=75) [the Tacoma Narrows bridge](https://youtu.be/GBa_USozxFM?t=75) in the USA during a strong wind after less than four months in operation. Here is the [Millennium pedestrian bridge in the UK](https://www.youtube.com/watch?v=eAXVa__XWZ8). It did not collapse, but note how the oscillations are driven; as the bridge sways, more and more people become unbalanced at the same time and then take steps in sequence driving stronger oscillations.
+And to also showcase driven motion, here is a video from 1940 which shows the [collapse of the Tacoma Narrows bridge](https://youtu.be/GBa_USozxFM?t=75) in the USA during a strong wind after less than four months in operation. Here is the [Millennium pedestrian bridge in the UK](https://www.youtube.com/watch?v=eAXVa__XWZ8). It did not collapse, but note how the oscillations are driven; as the bridge sways, more and more people become unbalanced at the same time and then take steps in sequence driving stronger oscillations.
 
 (sec-3-7)=
 ## 3.7 Real-World Application
@@ -807,7 +807,7 @@ c) Find the angular frequency and period of the mass as it oscillates.
 
 d) Find the equations for displacement, velocity, and acceleration in terms of the variables given.
 
-e) Plot the functions from part d). Sample python codes are available in the [online](https://github.com/OSTP/dynamicsTextbook/tree/main/py_notebooks) [repository](https://github.com/OSTP/dynamicsTextbook/tree/main/py_notebooks).
+e) Plot the functions from part d). Sample python codes are available in the [online repository](https://github.com/OSTP/dynamicsTextbook/tree/main/py_notebooks).
 
 ::::
 
