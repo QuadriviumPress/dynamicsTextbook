@@ -66,7 +66,7 @@ where $A,\omega _{0}$, and $\varphi$ are all constants.
 
 - $A$ is the amplitude of the motion, the maximum displacement from equilibrium.
 
-- $\omega _{0}$ is the angular frequency. This is not the same as angular velocity (recall that we used $\omega = \frac{\mathrm{d}\theta}{\mathrm{d}t})$. Instead, $\omega _{0}$ is a fundamental property of the system itself. See details below for more details.
+- $\omega _{0}$ is the angular frequency. This is not the same as angular velocity (recall that we used $\omega = \frac{\mathrm{d}\theta}{\mathrm{d}t})$. Instead, $\omega _{0}$ is a fundamental property of the system itself. See below for more details.
 
 - $\varphi$ is the phase constant (sets where you are in the motion at $t$ = 0).
 
@@ -155,7 +155,7 @@ $$
 \sum F = ma
 $$
 
-$F_{g}+ F_{s}= ma =\Rightarrow \sum F$ is gravity $(F_{g})$ and the spring force $(F_{s})$ $ma = -kx - mg =\Rightarrow F_{g}= -mg$ and $F_{s}= -kx$ by definition $(+\hat{x}$ is up)
+$F_{g} + F_{s} = ma$. The forces are gravity $(F_{g})$ and the spring force $(F_{s})$. With $+\hat{x}$ upward, $F_{g} = -mg$ and $F_{s} = -kx$, so $ma = -kx - mg$.
 
 If the system is static, it is in equilibrium. Here, $ma$ = 0 and $-kx - mg$ = 0, which means that the new equilibrium position is $x_{0}= - \frac{mg}{k}$ . Note that $x_{0}$ is negative because we defined $x$ = 0 to be at the original equilibrium point when there is no mass on the spring and we defined $x$ as positive pointing up.
 
@@ -174,7 +174,7 @@ $$
 
 Here we used $x_{0}=-\frac{mg}{k}$, so $-mg=kx_{0}$.
 
-So we have an additional (constant) term in our differential equation of motion. Nevertheless, we can still solve this second order differential equation. The trick here is that,
+So we have an additional (constant) term in our differential equation of motion. Nevertheless, we can still solve this second-order differential equation. The trick here is that,
 
 $$
 \frac{\mathrm{d}^{2}}{\mathrm{d}t^{2}} (x - x_{0}) = \frac{\mathrm{d}^{2}x}{\mathrm{d}t^{2}}
@@ -223,7 +223,7 @@ $$
 0 = \frac{\mathrm{d}^{2}x}{\mathrm{d}t^{2}} + Cx
 $$
 
-where $C$ is constant with time, then you can get the angular frequency, $\omega _{0}$ (and by default, the period $T$ and frequency $f)$ directly from the equation alone. In this form, where the differential has no coefficient, $\omega _{0}^{2}= C$. Other constants do not matter (e.g., consider the vertical spring) to solving $\omega _{0}$. Thus, you can read off the value of $\omega _{0}$ directly from the equation.
+where $C$ is constant with time, then you can get the angular frequency, $\omega _{0}$ (and by default, the period $T$ and frequency $f)$ directly from the equation alone. In this form, where the differential has no coefficient, $\omega _{0}^{2}= C$. Other constants do not matter (e.g., consider the vertical spring) when solving for $\omega _{0}$. Thus, you can read off the value of $\omega _{0}$ directly from the equation.
 
 <!-- Source PDF page 66; printed label 57. -->
 
@@ -282,7 +282,7 @@ To solve for the force, let’s look at the free-body diagram of this system ([F
 :alt: Figure shows a free-body diagram for a simple pendulum with standard Cartesian axes.
 :width: 163px
 
-Free-body diagram of the simple pendulum from [Figure 3.4](#fig-3-4). The labeled forces are tension $(T)$ in red, gravity $(mg)$ in blue, and the restoring force $(mg\sin \theta)$ in magenta. Shown in dotted-red is the component of gravity that balances tension $(mg\cos \theta)$.
+Free-body diagram of the simple pendulum from [Figure 3.4](#fig-3-4). The labelled forces are tension $(T)$ in red, gravity $(mg)$ in blue, and the restoring force $(mg\sin \theta)$ in magenta. Shown in dotted-red is the component of gravity that balances tension $(mg\cos \theta)$.
 :::
 
 The restoring force is caused by a component of gravity that is perpendicular to the tension in the string. Because the mass-string system has an angular displacement $(\theta)$ from the equilibrium line, there is a component of gravity along the string and a component of gravity perpendicular to the string. It is the perpendicular component that is our restoring force (see magenta arrow in [Figure 3.5](#fig-3-5)). From trigonometry, the component parallel to the string can be written as $mg\cos \theta$ and the component perpendicular to the string is $mg\sin \theta$. The $mg\cos \theta$ component is equal (and opposite) to the tension in the string. The $mg\sin \theta$ component is our restoring force and it will be driving our motion. So we have,
@@ -305,7 +305,7 @@ $$
 :alt: Figure shows a simple pendulum and the small angle approximation.
 :width: 130px
 
-Small angle approximation diagram for small values of $\theta$, as this is approximately a right angle triangle where the $y-$axis $(L)$, and displacement $x$ meet.
+Small angle approximation diagram for small values of $\theta$, as this is approximately a right-angled triangle where the $y-$axis $(L)$ and displacement $x$ meet.
 :::
 
 The true path of the pendulum is an arc, so this assumption requires that $\theta$ isn’t too big so that there is very little difference between an arc and a straight line. See [Appendix B](#app-b) for a review on applying small angle approximations.
@@ -378,7 +378,7 @@ Technically, any object can be made into a pendulum if displaced from its equili
 :::{figure} ../images/figures/figure-3-7.png
 :label: fig-3-7
 :enumerator: 3.7
-:alt: Figure shows an irregular object as a physical pendulum with a restoring force at the center of mass.
+:alt: Figure shows an irregular object as a physical pendulum with a restoring force at the centre of mass.
 :width: 182px
 
 A physical pendulum. The irregular object has an equilibrium position as shown by the black dashed outline. When rotated out of this equilibrium position, a restoring force $F$ will seek to move it back toward equilibrium.
@@ -417,7 +417,7 @@ Let’s first look at the free-body diagram of the system. There is the gravitat
 :::{figure} ../images/figures/figure-3-9.png
 :label: fig-3-9
 :enumerator: 3.9
-:alt: Figure shows a free body diagram for a mass with two horizontal springs.
+:alt: Figure shows a free-body diagram for a mass with two horizontal springs.
 :width: 217px
 
 Free-body diagram of the block and two spring system where $F_{1}$ comes from spring 1 and $F_{2}$ comes from spring 2, and the mass has been displaced $\Delta x$ to the left.
@@ -487,7 +487,7 @@ This problem contains two simple harmonic oscillators. Let’s look at a free-bo
 :alt: Figure shows the free-body diagram for the simple pendulum and spring.
 :width: 248px
 
-On the left is the free-body diagram of the spring-mass system, and on the right is the component break-down of the force of gravity, $(F_{g})$ in red.
+On the left is the free-body diagram of the spring-mass system, and on the right is the component breakdown of the force of gravity, $(F_{g})$ in red.
 :::
 
 Putting these forces together, we can solve the equation of motion from the sum of all
@@ -536,7 +536,7 @@ $$
 (sec-3-6)=
 ## 3.6 Aside on Damping and Driven Motion
 
-The harmonic motion described above is all perfectly conserved (e.g., there is no loss of energy from friction). In practice, most oscillators undergoing harmonic motion are damped or driven. Examples of damped (energy lost) oscillations include the suspension in a vehicle (this is on purpose to limit the oscillations from bumps on the road) and tuned mass dampers in tall buildings to limit motion at high floors from earthquakes or strong winds. Examples of driven (energy gained) oscillations include pushing a child on a swing (when timed right, the child goes higher and higher) or resonances in bridges. Damped and driven motion will not be covered here.
+In the harmonic motion described above, energy is perfectly conserved (e.g., there is no loss of energy from friction). In practice, most oscillators undergoing harmonic motion are damped or driven. Examples of damped (energy lost) oscillations include the suspension in a vehicle (this is on purpose to limit the oscillations from bumps on the road) and tuned mass dampers in tall buildings to limit motion at high floors from earthquakes or strong winds. Examples of driven (energy gained) oscillations include pushing a child on a swing (when timed right, the child goes higher and higher) or resonances in bridges. Damped and driven motion will not be covered here.
 
 But for fun, here are some videos that show damping motion in action. An excellent example of a tuned mass damper is the Taipei 101 building in Taiwan. Unlike most skyscrapers, the
 
@@ -551,7 +551,7 @@ And to also showcase driven motion, here is a video from 1940 which shows the [c
 
 Not all oscillations are simple harmonic motion. Nevertheless, other types of periodic behaviour can be expressed with similar base mathematics even if the physics behind them is very different than a simple restoring force. These more complex cases consequently produce more complex oscillatory motions, extending the concepts of *simple* harmonic motion into more varied phenomena.
 
-Seismology is the study of seismic (sound) waves that move around and through the Earth. Studying these waves can provide us information about the structure of our planet’s interior that we couldn’t otherwise constrain. The strongest seismic waves are generated by movements of tectonic plates but waves may also be caused by volcanoes, landslides, explosions, and other energetic events on and under the Earth’s surface.
+Seismology is the study of seismic (sound) waves that move around and through the Earth. Studying these waves can provide us with information about the structure of our planet’s interior that we couldn’t otherwise constrain. The strongest seismic waves are generated by movements of tectonic plates, but waves may also be caused by volcanoes, landslides, explosions, and other energetic events on and under the Earth’s surface.
 
 Seismographs are used to record the motion of the ground due to seismic waves. Those waves travel through layers with different compositions and densities, and so are refracted and reflected. Using multiple instruments, the amount of time it takes seismic waves to travel through the Earth can be calculated and the type of material the waves are travelling through can be deduced, giving a picture of the Earth’s interior.
 
@@ -697,7 +697,7 @@ If you are given a clock made from a simple mass and spring system, but the cloc
 
 ::::{admonition} Practice Problem 3-2
 
-A standard pendulum clock on Earth has a period of 2s. If NASA wants to engineer a series of simple pendulum clocks that can keep proper time on all of the planets in the Solar System, what arm lengths would be necessary for each planet?
+A standard pendulum clock on Earth has a period of 2 s. If NASA wants to engineer a series of simple pendulum clocks that can keep proper time on all of the planets in the Solar System, what arm lengths would be necessary for each planet?
 
 ::::
 
@@ -711,7 +711,7 @@ a) What is the differential equation of motion for this clock?
 
 b) Plot the period as a function of rod length for lengths between 10 cm and 1 m.
 
-c) What length would give you a period of 1s? Check your answer against your plots from part b).
+c) What length would give you a period of 1 s? Check your answer against your plots from part b).
 
 ::::
 
@@ -738,11 +738,11 @@ Figure for [Problem 3-4](#problem-3-4).
 
 ::::{admonition} Practice Problem 3-5
 
-An elevator is falling at nearly the free-fall acceleration. If the elevator also contains a simple pendulum clock, what happens to the periodic motion of the pendulum clock when,
+An elevator is falling at nearly the free-fall acceleration. If the elevator also contains a simple pendulum clock, what happens to the periodic motion of the pendulum clock if:
 
-a) The elevator was stationary?
+a) The elevator is stationary?
 
-b) While it is in free-fall? Note: free-fall means that the elevator is traveling at near the gravitational acceleration.
+b) The elevator is in free-fall? Note: free-fall means that the elevator is travelling at nearly the gravitational acceleration.
 
 ::::
 

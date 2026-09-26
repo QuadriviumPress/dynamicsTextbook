@@ -32,7 +32,7 @@ $$ (eq-9-2)
 
 where $E$ is the mechanical energy of the system. If $E$ is a constant, then your mechanical energy equals the total (kinetic plus potential) energy of your system.
 
-Because energy is scalar instead of a vector quantity, it is sometimes easier to solve a question using energy conservation than using Newton’s Laws. The important points to consider are:
+Because energy is a scalar instead of a vector quantity, it is sometimes easier to solve a question using energy conservation than using Newton’s Laws. The important points to consider are:
 
 1. What are your sources of kinetic energy (translation versus rotation)?
 
@@ -62,7 +62,7 @@ $$
 \frac{\mathrm{d}E}{\mathrm{d}t} = 0
 $$ (eq-9-3)
 
-For this method to be applicable, you need to express the energy as a function of a time $t$.
+For this method to be applicable, you need to express the energy as a function of time $t$.
 
 (sec-9-2)=
 ## 9.2 Energy Conservation in 3-D
@@ -181,7 +181,7 @@ where $\oint$ indicates a closed loop. You can take any closed loop for a conser
 :alt: Figure shows a closed square loop drawn in the x-y plane.
 :width: 217px
 
-A simple closed loop. You can define any closed loop for conservative forces, but direct paths are the most mathematically simple to use. Here we have four paths that are labeled as (1), (2), (3), and (4).
+A simple closed loop. You can define any closed loop for conservative forces, but direct paths are the most mathematically simple to use. Here we have four paths that are labelled as (1), (2), (3), and (4).
 :::
 
 So we can break up the work for this system using each of the different path legs. For the first path length (1), it is entirely along the $x-$axis, so we can solve the work from just $F_{x}$ because no work is being done in $y$ along that axis.
@@ -227,7 +227,7 @@ A uniform spherical shell of mass $M$ and radius $R$ is able to rotate about a v
 :alt: Figure shows the setup of the problem with a sphere, pulley, and hanging mass.
 :width: 161px
 
-The set up for this problem shows the spherical shell of mass $M$ and radius $R$ that can rotate on an axis. There is a disk-pulley with mass $M_{p}$ and radius $R_{P}$ that can likewise rotate about an axis. There is a mass $m$ hanging over the edge that can descend due to gravity. There is no friction (no energy loss) and the rope has no mass and cannot stretch.
+The setup for this problem shows the spherical shell of mass $M$ and radius $R$ that can rotate on an axis. There is a disk-pulley with mass $M_{p}$ and radius $R_{p}$ that can likewise rotate about an axis. There is a mass $m$ hanging over the edge that can descend due to gravity. There is no friction (no energy loss) and the rope has no mass and cannot stretch.
 :::
 
 **Solution**
@@ -350,7 +350,7 @@ For potential energy, we have the two masses within a gravitational field. For s
 :::{figure} ../images/figures/figure-9-4.png
 :label: fig-9-4
 :enumerator: 9.4
-:alt: Figure shows the positions of the two masses relative to the center of the pulley.
+:alt: Figure shows the positions of the two masses relative to the centre of the pulley.
 :width: 248px
 
 Position of masses in the Atwood machine. The midpoint of the pulley sets the $y$ = 0 point, with the masses’ distances $y_{1}$ and $y_{2}$ being measured from the $y$ = 0.
@@ -366,7 +366,7 @@ $$
 
 This is the potential energy for a given time, $t$. We don’t know which mass will move up and which one will move down. All we know is that $m_{1}$ and $m_{2}$ are at specific positions $y_{1}$ and $y_{2}$ at $t$.
 
-For the kinetic energy, there are three sources of kinetic energy in this system. We have the translation motion of $m_{1}$, the translation motion of $m_{2}$, and the rotational motion of the pulley. For the translation motion, we have $K_{1}= \frac{1}{2} m_{1}(\dot{y}_{1})^{2}$ and $K_{2}= \frac{1}{2} m_{2}(\dot{y}_{2})^{2}$. For the rotational motion, we have $K_{p}= \frac{1}{2} I\omega ^{2}$.
+For the kinetic energy, there are three sources of kinetic energy in this system. We have the translational motion of $m_{1}$, the translational motion of $m_{2}$, and the rotational motion of the pulley. For the translational motion, we have $K_{1}= \frac{1}{2} m_{1}(\dot{y}_{1})^{2}$ and $K_{2}= \frac{1}{2} m_{2}(\dot{y}_{2})^{2}$. For the rotational motion, we have $K_{p}= \frac{1}{2} I\omega ^{2}$.
 
 $$
 \begin{aligned}
@@ -375,7 +375,7 @@ K &= \frac{1}{2} m_{1}(\dot{y}_{1})^{2}+ \frac{1}{2} m_{2}(\dot{y}_{2})^{2}+ \fr
 \end{aligned}
 $$
 
-Similar to the previous problem, we need to connect the rotational motion to the translation motion. The pulley rotates at an angular speed of $\omega$. Since the rope is inextensible (does not stretch), we can assume that the two masses move at the same speed
+Similar to the previous problem, we need to connect the rotational motion to the translational motion. The pulley rotates at an angular speed of $\omega$. Since the rope is inextensible (does not stretch), we can assume that the two masses move at the same speed
 
 <!-- Source PDF page 206; printed label 197. -->
 
@@ -384,7 +384,7 @@ $(|\dot{y}_{1}| = |\dot{y}_{2}| = v)$ and with the same linear speed as the cont
 :::{figure} ../images/figures/figure-9-5.png
 :label: fig-9-5
 :enumerator: 9.5
-:alt: Figure shows a diagram of the pulley with its rotation speed at the edge labeled on both sides of contact with the string.
+:alt: Figure shows a diagram of the pulley with its rotation speed at the edge labelled on both sides of contact with the string.
 :width: 155px
 
 Rotation of the pulley assuming $m_{1}> m_{2}$. The pulley rotates at the angular speed $\omega$. The velocity of that angular speed at the two points shown will be $v = \omega R$ where $v$ is the speed of the masses.
@@ -467,7 +467,7 @@ In general, you can use Newton’s laws or energy conservation to solve simple h
 
 ::::{admonition} Sample Problem 9-4
 
-Consider a mass $m$ hanging from the center of a disk pulley of mass $M$ and radius $R$ as shown in [Figure 9.6](#fig-9-6). The pulley is supported by an inextensible and massless rope that is fixed to the ceiling at one end and attached to a spring of spring constant $k$ on the other end. If the pulley rotates without slipping, **find the equilibrium position** **and the period of oscillations if the small mass** $m$ **is pulled down a small** **distance.** Assume there is no loss of energy from friction.
+Consider a mass $m$ hanging from the centre of a disk pulley of mass $M$ and radius $R$ as shown in [Figure 9.6](#fig-9-6). The pulley is supported by an inextensible and massless rope that is fixed to the ceiling at one end and attached to a spring of spring constant $k$ on the other end. If the pulley rotates without slipping, **find the equilibrium position** **and the period of oscillations if the small mass** $m$ **is pulled down a small** **distance.** Assume there is no loss of energy from friction.
 
 ::::
 
@@ -491,7 +491,7 @@ We can solve for this equilibrium point by setting the net force and net torque 
 :::{figure} ../images/figures/figure-9-7.png
 :label: fig-9-7
 :enumerator: 9.7
-:alt: Figure shows a free body diagram for the pulley alone with all forces labelled.
+:alt: Figure shows a free-body diagram for the pulley alone with all forces labelled.
 :width: 155px
 
 Free-body diagram of the pulley. There is a tension $T_{1}$ from the rope on the left, and a tension $T_{2}$ from the small mass $m$ acting at the centre of mass. The pulley has its own gravity $Mg$. And there is the spring force $F_{s}$ acting on the right side of the pulley.
@@ -533,7 +533,7 @@ $$
 K = \frac{1}{2} I\omega ^{2}+ \frac{1}{2} Mv^{2}+ \frac{1}{2} mv^{2}
 $$
 
-Before we combine the energies for this question, let’s first ask how this system will move. The spring will stretch and compress, and this will lower and raise $m$ and the pulley, and the pulley will also rotate. At first glance, you may be tempted to assume that if the mass moves down a distance $x$, then the pulley should move down a distance $x$ and the spring should be stretched a distance $x$. But for this system, the spring will *stretch* *twice as much* as $m$ and $M$ move down because some of the kinetic energy that goes into the pulley and mass is used to rotate the pulley rather than translate the pulley. This is the same principle behind rolling without slipping (see [Chapter 7](#ch-7)).
+Before we combine the energies for this question, let’s first ask how this system will move. The spring will stretch and compress, and this will lower and raise $m$ and the pulley, and the pulley will also rotate. At first glance, you may be tempted to assume that if the mass moves down a distance $x$, then the pulley should move down a distance $x$ and the spring should be stretched a distance $x$. But for this system, the spring will *stretch twice as much* as $m$ and $M$ move down. That factor of two is the no-slip condition on the rope, the same constraint used for rolling without slipping (see [Chapter 7](#ch-7)).
 
 Let’s look at the motion of the pulley. [Figure 9.8](#fig-9-8) shows the translational and rotational motion of the pulley. First, consider the motion of the mass and pulley. The mass is connected to the pulley at its centre-of-mass by an inextensible rope. Whatever distance one moves, the other will move the same amount, and this motion will equal the motion of the centre-of-mass of the pulley, $v_{cm}$. Since the pulley is also rotating without slipping, we can connect the centre of mass motion directly to the rotation
 
@@ -552,7 +552,7 @@ $$
 Translation and rotational motion of the pulley from [Figure 9.6](#fig-9-6). The entire disk moves down with $v = v_{cm}$. But when the pulley moves, it will also rotate without slipping with $\omega = v_{cm}/R$. So at point $P$ on the fixed side, the velocity is instantaneously zero.
 :::
 
-Second, let’s consider how the spring stretches relative to the pulley’s motion. As the pulley moves down with the stretch of the spring, the pulley will rotate clockwise (see [Figure 9.8](#fig-9-8)). Point $P$ is the contact point for the rotation and the net velocity there will be zero. Note that the contact point will be on the side of pulley that is fixed to the ceiling. That’s because the other side with the spring is able to change in height, not the fixed side. On the side with the spring, however, the velocities from the translation and rotation add together such that the pulley moves away from the spring at twice the speed of the centre of mass.
+Second, let’s consider how the spring stretches relative to the pulley’s motion. As the pulley moves down with the stretch of the spring, the pulley will rotate clockwise (see [Figure 9.8](#fig-9-8)). Point $P$ is the contact point for the rotation and the net velocity there will be zero. Note that the contact point will be on the side of the pulley that is fixed to the ceiling. That’s because the other side with the spring is able to change in height, not the fixed side. On the side with the spring, however, the velocities from the translation and rotation add together such that the pulley moves away from the spring at twice the speed of the centre of mass.
 
 ::::{tip} Quick Questions
 

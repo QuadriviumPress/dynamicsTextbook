@@ -9,7 +9,7 @@
 
 - Define momentum with external forces, impulse, and collision
 
-- Define center of mass for N-body systems
+- Define centre of mass for N-body systems
 
 - Investigate problems with variable mass
 
@@ -95,7 +95,7 @@ $$
 \end{aligned}
 $$
 
-The above example is for three particles, but we can easily generalize the solution to $N$ particles as long as the system is isolated (no external forces). For a system of $n-$particles,
+The above example is for three particles, but we can easily generalize the solution to $N$ particles as long as the system is isolated (no external forces). For a system of $N$ particles,
 
 $$
 \vec{p}_{tot}= \sum_{i=1}^{N}\vec{p}_{i}
@@ -203,7 +203,7 @@ Increasing the impact time to decrease the force occurs many times in everyday l
 
 Generally we consider impulses to be short bursts. An impulse is a powerful force that quickly changes the momentum of a system, hence why $\Delta t \rightarrow$ d$t$.
 
-An airbag is an excellent example of impulse in everyday life. When an accident occurs and the vehicle stops, the driver's momentum carries them forward towards the steering wheel, where they will experience a quick change in momentum (impulse). The airbag extends the time of that impact lessening the force on the driver, often saving lives. In [Figure 6.1](#fig-6-1), the red graph may be what the force with the airbag would look like, and the blue would be what the force without the airbag would look like.
+An airbag is an excellent example of impulse in everyday life. When an accident occurs and the vehicle stops, the driver's momentum carries them forward towards the steering wheel, where they will experience a quick change in momentum (impulse). The airbag extends the time of that impact, lessening the force on the driver, often saving lives. In [Figure 6.1](#fig-6-1), the red graph may be what the force with the airbag would look like, and the blue would be what the force without the airbag would look like.
 
 ::::
 
@@ -478,7 +478,7 @@ $$
 
 ::::{admonition} Test your Understanding
 
-Here is [a fun web application](https://www.physicsclassroom.com/Physics-Interactives/Momentum-and-Collisions/Collision-Carts/Collision-Carts-Interactive) that you can use to test your understanding of both elastic and inelastic collisions. Try to solve the set up problems before running the application and see how well you do.
+Here is [a fun web application](https://www.physicsclassroom.com/Physics-Interactives/Momentum-and-Collisions/Collision-Carts/Collision-Carts-Interactive) that you can use to test your understanding of both elastic and inelastic collisions. Try to solve the setup problems before running the application and see how well you do.
 
 ::::
 
@@ -488,7 +488,7 @@ Here is [a fun web application](https://www.physicsclassroom.com/Physics-Interac
 Another important concept in motion and momentum is the centre of mass. Whether you have a system of independent particles (e.g., a cluster of stars) or an irregularly shaped rigid body (e.g., a car), every system has a special point called the *centre of mass*. The centre of mass is not a mass, but a position. It’s the centroid position and it is defined as:
 
 $$
-\vec{R}_{cm}= \frac{m_{1}\vec{r}_{1}+ m_{2}\vec{r}_{2}+ \cdot \cdot \cdot + m_{n}\vec{r}_{n}}{m_{1}+ m_{2}+ \cdot \cdot \cdot m_{n}} = \frac{\sum m_{i}\vec{r}_{i}}{\sum m_{i}}
+\vec{R}_{cm}= \frac{m_{1}\vec{r}_{1}+ m_{2}\vec{r}_{2}+ \cdot \cdot \cdot + m_{n}\vec{r}_{n}}{m_{1}+ m_{2}+ \cdot \cdot \cdot + m_{n}} = \frac{\sum m_{i}\vec{r}_{i}}{\sum m_{i}}
 $$
 
 where $\vec{r}_{i}$ is the position of the $i$th particle relative to the origin and $m_{i}$ is the mass of that particle. Since $\sum m_{i}= M$ is the total mass of the system, the centre of mass is:
@@ -772,7 +772,7 @@ A classic variable mass problem is a rocket (or car or airplane) using fuel. The
 
 ::::{admonition} Sample Problem 6-5
 
-A rocket has an initial mass of $M$ before launch. To move the rocket, its engines burn fuel at a constant rate and expel the gases from the back at a speed of $v_{ex}$ relative to the speed of the rocket. Ignoring gravity and drag, **find the speed** $v_{f}$ **when the rocket** **mass has decreased from its initial mass to a mass of** $M_{f}$**?**
+A rocket has an initial mass of $M$ before launch. To move the rocket, its engines burn fuel at a constant rate and expel the gases from the back at a speed of $v_{ex}$ relative to the speed of the rocket. Ignoring gravity and drag, **find the speed** $v_{f}$ **when the rocket** **mass has decreased from its initial mass to a mass of** $M_{f}$.**
 
 **Solution**
 
@@ -817,7 +817,7 @@ $$
 \vec{p}_{tot}(t) = \vec{p}_{tot}(t + \mathrm{d}t)
 $$
 
-$mv$ = (d$m_{ex})(v - v_{ex}) + (m -$ d$m_{ex})(v$ + d$v) =\Rightarrow$ all motion in 1D, drop $\hat{\imath}$ $mv = v$d$m_{ex}- v_{ex}$d$m_{ex}+ mv + m$d$v - v$d$m_{ex}-$ d$m_{ex}$d$v =\Rightarrow$ expand 0 = $-v_{ex}$d$m_{ex}+ m$d$v -$ d$m_{ex}$d$v =\Rightarrow$ simplify the terms 0 = $-v_{ex}$d$m_{ex}+ m$d$v =\Rightarrow$ ignore the d$m$d$v$ term, it is very small
+$mv = (\mathrm{d}m_{ex})(v - v_{ex}) + (m - \mathrm{d}m_{ex})(v + \mathrm{d}v)$. All motion is in one dimension, so $\hat{\imath}$ has been dropped. Expanding and cancelling $mv$ gives $0 = -v_{ex}\,\mathrm{d}m_{ex} + m\,\mathrm{d}v - \mathrm{d}m_{ex}\,\mathrm{d}v$. The product $\mathrm{d}m_{ex}\,\mathrm{d}v$ is second order and can be neglected, so $0 = -v_{ex}\,\mathrm{d}m_{ex} + m\,\mathrm{d}v$.
 
 $$
 \mathrm{d}v = v_{ex} \frac{\mathrm{d}m_{ex}}{m}
@@ -1018,7 +1018,7 @@ b) Consider that $M_{2}= 2M_{1}$ and the collision is instead perfectly inelasti
 
 ::::{admonition} Practice Problem 6-4
 
-A student is late running from Depuis Hall to Stirling Hall. As they run past the speedometer on University Ave, they notice that they are running at 18 km/h. They then run into another student who is waiting for the bus. (Assume that the running student weighs 65 kg).
+A student is late running from Dupuis Hall to Stirling Hall. As they run past the speedometer on University Ave, they notice that they are running at 18 km/h. They then run into another student who is waiting for the bus. (Assume that the running student weighs 65 kg).
 
 a) What is the impulse required for the student waiting for the bus to stop the running student and not fall over?
 
@@ -1030,7 +1030,7 @@ b) If this impulse is delivered to the student in 0.20 seconds, then what is the
 
 ::::{admonition} Practice Problem 6-5
 
-A bullet traveling at a velocity of $v\hat{\imath}$ is shot through a stationary block of wood head on. When it emerges from the other side, the bullet has lost half its speed. If the block has a mass of $M$ and the bullet has a mass of $m$, what is the velocity of the block of wood after the bullet emerges? (Ignore any friction or loss of energy. Assume the block of wood loses no mass.)
+A bullet travelling at a velocity of $v\hat{\imath}$ is shot through a stationary block of wood head-on. When it emerges from the other side, the bullet has lost half its speed. If the block has a mass of $M$ and the bullet has a mass of $m$, what is the velocity of the block of wood after the bullet emerges? (Ignore any friction or loss of energy. Assume the block of wood loses no mass.)
 
 ::::
 
@@ -1098,7 +1098,7 @@ Figure for [Problem 6-8](#problem-6-8).
 
 ::::{admonition} Practice Problem 6-9
 
-See the figure below. A mass $m_{1}$ is moving toward a second mass, $m_{2}$, with a speed of $u$. The second mass $m_{2}$ is stationary and connected to a spring (see figure). After $m_{1}$ collides with $m_{2}$ they stick and compress the spring.
+See the figure below. A mass $m_{1}$ is moving toward a second mass, $m_{2}$, with a speed of $u$. The second mass $m_{2}$ is stationary and connected to a spring (see figure). After $m_{1}$ collides with $m_{2}$, they stick and compress the spring.
 
 a) Find the centre-of-mass velocity of the system after collision.
 

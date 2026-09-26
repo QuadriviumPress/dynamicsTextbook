@@ -84,7 +84,7 @@ $$
 \sum \vec{F}_{S^{\prime }}= \sum \vec{F}_{S}+ F_{fic}
 $$
 
-where we have introduced a “new force”, $\vec{F}_{fic}$. We call this “new force” a *fictitious force* or an inertial force. For the second law to match in both the inertial and non-inertial (accelerating) frame, we add in these fictitious forces to the inertial frame, where
+where we have introduced a “new force”, $\vec{F}_{fic}$. We call this “new force” a *fictitious force* or an inertial force. For the second law to match in both the inertial and non-inertial (accelerating) frame, we add in these fictitious forces to the non-inertial frame, where
 
 $$
 \vec{F}_{fic}= -m\vec{a}_{S^{\prime }S}
@@ -96,7 +96,7 @@ Note that the fictitious forces do not represent actual forces. Fictitious force
 
 ::::{admonition} Cora’s Thoughts
 
-Overall fictitious forces are forces that *appear* to act on an object to explain its motion. A good way to think of fictitious forces is in the context of driving a car. If you are driving a car down a straight road with cruise control on (traveling at a constant linear velocity), then you are in an inertial frame and you do not feel any forces from the motion of the car. However, when you hit a bend in the road you accelerate as you turn making the car a non-inertial frame. When the car turns left, it accelerates to the left, and you feel a “force” that pushes you to the right. That “force” is the fictitious force. It is the force felt in the opposite direction of the acceleration, that comes from being an observer in a non-inertial frame, as you only know that you are in an accelerating frame due to feeling this fictitious force.
+Overall fictitious forces are forces that *appear* to act on an object to explain its motion. A good way to think of fictitious forces is in the context of driving a car. If you are driving a car down a straight road with cruise control on (travelling at a constant linear velocity), then you are in an inertial frame and you do not feel any forces from the motion of the car. However, when you hit a bend in the road you accelerate as you turn making the car a non-inertial frame. When the car turns left, it accelerates to the left, and you feel a “force” that pushes you to the right. That “force” is the fictitious force. It is the force felt in the opposite direction of the acceleration that comes from being an observer in a non-inertial frame, as you only know that you are in an accelerating frame due to feeling this fictitious force.
 
 :::{figure} ../images/figures/figure-4-2.png
 :label: fig-4-2
@@ -139,7 +139,7 @@ $$ (eq-4-2)
 
 ::::{admonition} Equivalence Principle of Mechanics
 
-The equivalence principle of mechanics describes how fictitious forces apply to noninertial frames. Consider a moving particle. The motion of this particle as seen by an observer in the non-inertial frame can be described by the applied forces on the particle (e.g., gravity, tension, etc) and an additional fictitious force in the direction of $-a$. This fictitious force acts like a force, and can be thought of as a modification of one of the inertial forces (like gravity). That is, we can think of the fictitious force as an effective gravity term, since gravity is just given by $m$ and an acceleration.
+The equivalence principle of mechanics describes how fictitious forces apply to non-inertial frames. Consider a moving particle. The motion of this particle as seen by an observer in the non-inertial frame can be described by the applied forces on the particle (e.g., gravity, tension, etc.) and an additional fictitious force in the direction of $-a$. This fictitious force acts like a force, and can be thought of as a modification of one of the inertial forces (like gravity). That is, we can think of the fictitious force as an effective gravity term, since gravity is just given by $m$ and an acceleration.
 
 ::::
 
@@ -232,7 +232,7 @@ A truck is carrying a box of mass $m$. When the truck decelerates at a rate of $
 :::{figure} ../images/figures/figure-4-4.png
 :label: fig-4-4
 :enumerator: 4.4
-:alt: Figure shows a free body diagram for the mass in the inertial frame.
+:alt: Figure shows a free-body diagram for the mass in the inertial frame.
 :width: 186px
 
 Free-body diagram of the mass $m$ in the inertial frame. The forces acting on the mass are the force of friction $(f)$ in red, the normal force $(N)$ and gravity $(mg)$.
@@ -289,7 +289,7 @@ So the acceleration of the box relative to the truck is $0.2g$. Note that this i
 :::{figure} ../images/figures/figure-4-5.png
 :label: fig-4-5
 :enumerator: 4.5
-:alt: Figure shows a free body diagram for the mass in the non-inertial frame.
+:alt: Figure shows a free-body diagram for the mass in the non-inertial frame.
 :width: 186px
 
 Free-body diagram of the mass $m$ in the non-inertial frame. The forces acting on the mass are the force of friction $(f)$ and the fictitious force $(F_{fic})$ in red, the normal force $(N)$ and gravity $(mg)$.
@@ -297,7 +297,7 @@ Free-body diagram of the mass $m$ in the non-inertial frame. The forces acting o
 
 Truck Frame: [Figure 4.5](#fig-4-5) shows the free-body diagram of the box relative to an observer in the truck (non-inertial frame). We have the same forces as the inertial frame (friction, gravity, normal), but there is also the fictitious force.
 
-Again, all motion is horizontal. But in the non-inertial frame of the truck, there are two horizontal forces. First, is friction given by $f = -\mu N = -\mu mg$ (negative because it acts in the $-x$ direction). Second, is the fictitious force because the truck is a non-inertial frame. Recall that fictitious forces act in the opposite direction of the acceleration of the frame relative to an inertial frame. Since the truck is decelerating $(-x$ direction) relative to the inertial frame $(a_{0}= -0.6g)$, the fictitious force acts in the $+x$ direction.
+Again, all motion is horizontal. But in the non-inertial frame of the truck, there are two horizontal forces. The first is friction, given by $f = -\mu N = -\mu mg$ (negative because it acts in the $-x$ direction). The second is the fictitious force, because the truck is a non-inertial frame. Recall that fictitious forces act in the opposite direction of the acceleration of the frame relative to an inertial frame. Since the truck is decelerating $(-x$ direction) relative to the inertial frame $(a_{0}= -0.6g)$, the fictitious force acts in the $+x$ direction.
 
 For the non-inertial frame, we will first find $a_{b^{\prime }}$, the acceleration of the box relative to an observer on the truck.
 
@@ -345,7 +345,7 @@ $$
 \vec{a} = \vec{\omega} \times (\vec{\omega} \times \vec{r})
 $$
 
-Consider an object rotating with $\omega$ in the $\hat{k}$ direction and that this axis of rotation is fixed (see [Figure 4.6](#fig-4-6)). A point P in this system has the vector position$\vec{r}$. This vector position can also be described by $\vec{r} = \rho \hat{\rho}+z\hat{k}$ , where $\vec{\rho}$ is the projection of $\vec{r}$ onto the plane perpendicular to $\vec{\omega}$ (for $\vec{\omega}$ along $\hat{k}$ , this plane is the $x - y$ plane).
+Consider an object rotating with $\omega$ in the $\hat{k}$ direction and that this axis of rotation is fixed (see [Figure 4.6](#fig-4-6)). A point P in this system has the vector position $\vec{r}$. This vector position can also be described by $\vec{r} = \rho \hat{\rho}+z\hat{k}$ , where $\vec{\rho}$ is the projection of $\vec{r}$ onto the plane perpendicular to $\vec{\omega}$ (for $\vec{\omega}$ along $\hat{k}$ , this plane is the $x - y$ plane).
 
 :::{figure} ../images/figures/figure-4-6.png
 :label: fig-4-6
@@ -353,7 +353,7 @@ Consider an object rotating with $\omega$ in the $\hat{k}$ direction and that th
 :alt: Figure shows an irregular object rotating around the z-axis.
 :width: 176px
 
-An irregular object rotating in the counterclockwise direction around the $z-$axis of an $xyz-$axis coordinate system. The labeled point is a distance $\vec{r}$ from the origin and a distance $\rho$ from the $z-$axis.
+An irregular object rotating in the counterclockwise direction around the $z-$axis of an $xyz-$axis coordinate system. The labelled point is a distance $\vec{r}$ from the origin and a distance $\rho$ from the $z-$axis.
 :::
 
 From this definition of $\vec{r}$ and $\vec{\rho}$ , we can show that the velocity is:
@@ -362,7 +362,7 @@ $$
 \vec{v} = \vec{\omega} \times \vec{r} = \omega r\sin \theta \hat{\theta} = \omega \rho \hat{\theta}
 $$
 
-where $\hat{\theta}$ is an azimuthal angle between $\vec{\omega}$ and $\vec{r}$.
+where $\theta$ is the angle between $\vec{\omega}$ and $\vec{r}$, and $\hat{\theta}$ is the azimuthal unit vector.
 
 <!-- Source PDF page 88; printed label 79. -->
 
@@ -455,7 +455,7 @@ where $\hat{n}$ is a unit vector in the direction of $\vec{\omega}$ (the normal 
 :alt: Figure shows the rotation of the i-hat-prime axis.
 :width: 195px
 
-The $\hat{\imath}^{\prime }$ coordinate is offset by an angle $\varphi$ from the rotation axis (angle in red). In time $\Delta t, \hat{\imath}^{\prime }$ moves from position $A$ to position $B$ due to rotation. The change in the vector position is shown by the angle $\Delta \hat{\imath}^{\prime }$ and angle $\Delta \theta$.
+The $\hat{\imath}^{\prime }$ coordinate is offset by an angle $\varphi$ from the rotation axis (angle in red). In time $\Delta t, \hat{\imath}^{\prime }$ moves from position $A$ to position $B$ due to rotation. The change in the vector position is shown by the change $\Delta \hat{\imath}^{\prime }$ and the angle $\Delta \theta$.
 :::
 
 From [Figure 4.8](#fig-4-8), the $\hat{\imath}^{\prime }$ axis moves a distance $\Delta \hat{\imath}^{\prime }$ between points $A$ and $B$ in a time $\Delta t$. That displacement in time $\Delta t$ is:
@@ -738,7 +738,7 @@ $$
 -\underbrace{m\vec{\omega}\times(\vec{\omega}\times\vec{r})}_{\vec{F}_{cent}}
 $$
 
-For this circular rotation, the angular velocity and radial vectors are perpendicular to each other. Thus, $F_{cent}$ has a magnitude of $m\omega ^{2}R$. You’ll notice that this force has the same magnitude as the centripetal acceleration in the inertial frame.
+For this circular rotation, the angular velocity and radial vectors are perpendicular to each other. Thus, $F_{cent}$ has a magnitude of $m\omega ^{2}R$. You’ll notice that this force has the same magnitude as the centripetal force in the inertial frame.
 
 What about the direction of the centrifugal force? In the rotating frame, the centrifugal force points outward from the origin. This makes sense, since fictitious forces act in the opposite direction to the acceleration relative to the inertial frame (equivalence principle). The centripetal acceleration always points inward. The figure below shows a breakdown of the $\vec{\omega} \times (\vec{\omega} \times \vec{r})$ cross product terms.
 
@@ -749,7 +749,7 @@ What about the direction of the centrifugal force? In the rotating frame, the ce
 :::{figure} ../images/figures/figure-4-10.png
 :label: fig-4-10
 :enumerator: 4.10
-:alt: ω points in the positive z-direction, and⃗r points in the positive y-direction. So ω cross r points in the negative x-direction. Since ω points in the positive z-direction, negative ω points in the negative direction.
+:alt: $\omega$ points in the positive $z$-direction, and $\vec{r}$ points in the positive $y$-direction. So $\omega \times \vec{r}$ points in the negative $x$-direction. Since $\omega$ points in the positive $z$-direction, $-\omega$ points in the negative $z$-direction.
 :width: 297px
 
 For the direction of the centrifugal force, use the right-hand rule.
@@ -787,7 +787,7 @@ $$
 \vec{F}_{fic}= -m\vec{a}_{S^{\prime }S}
 $$
 
-In this chapter, we derive the coordinate transformations between inertial and noninertial frames. The general case is,
+In this chapter, we derive the coordinate transformations between inertial and non-inertial frames. The general case is,
 
 $$
 \vec{a}^{\prime }= \vec{a} - \vec{\alpha} \times \vec{r}^{\prime }- 2\vec{\omega} \times \vec{v}^{\prime }- \vec{\omega} \times (\vec{\omega} \times \vec{r}^{\prime }) - \vec{A}
@@ -811,7 +811,7 @@ $$
 m\vec{a}^{\prime }= \sum \vec{F}_{I}+ \vec{F}_{az}+ \vec{F}_{Cor}+ \vec{F}_{cent}+ \vec{F}_{trans}
 $$
 
-Depending on your physics problem, it can be easier to solve a question in the noninertial frame than in the inertial frame. Recognizing which frame to use is part of the challenge. When working on the practice problems, think about which frame of reference is easier to work with.
+Depending on your physics problem, it can be easier to solve a question in the non-inertial frame than in the inertial frame. Recognizing which frame to use is part of the challenge. When working on the practice problems, think about which frame of reference is easier to work with.
 
 ::::
 
@@ -910,7 +910,7 @@ A funicular train is accelerating up an incline with an angle $\theta$ above the
 
 a) Would the effective gravity felt by the passengers be higher or lower than $g$?
 
-b) If $a = 0.1g$ and $\theta = 30^{\circ}$, what is the magnitude of $g_{eff}$
+b) If $a = 0.1g$ and $\theta = 30^{\circ}$, what is the magnitude of $g_{eff}$?
 
 ::::
 
@@ -926,7 +926,7 @@ A small object of mass $m$ is suspended from the ceiling of a train by an ideal 
 
 ::::{admonition} Practice Problem 4-7
 
-A wheel of radius $R$ rolls on the ground without slipping in the $+x-$direction with a constant speed at its center of mass of $v_{0}$. What is the magnitude of the centrifugal acceleration and the Coriolis acceleration of a point on the rim of the wheel?
+A wheel of radius $R$ rolls on the ground without slipping in the $+x-$direction with a constant speed at its centre of mass of $v_{0}$. What is the magnitude of the centrifugal acceleration and the Coriolis acceleration of a point on the rim of the wheel?
 
 :::{figure} ../images/figures/figure-4-11.png
 :label: fig-4-11
@@ -945,9 +945,9 @@ Figure for [Problem 4-7](#problem-4-7).
 
 A fun house at a local amusement park has a circular room with a rotating floor that has a constant angular speed of $\omega _{0}\hat{k}$ (up direction). A physics student enters the room. Which fictitious forces does the student feel if they:
 
-a) sit in the very center of the room?
+a) sit in the very centre of the room?
 
-b) sit at a radius $r$ from the center?
+b) sit at a radius $r$ from the centre?
 
 c) move with a constant velocity from a radius $r_{1}$ to $r_{2}$?
 

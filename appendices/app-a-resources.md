@@ -30,7 +30,7 @@ This Appendix contains various formulas and constants that may be used throughou
 | Proton mass | $m_p$ | $1.67\times 10^{-27}\,\mathrm{kg}$ |
 | Coulomb constant | $k=\frac{1}{4\pi\epsilon_0}$ | $8.99\times 10^9\,\mathrm{N\,m^2\,C^{-2}}$ |
 
-Numerical values may also be presented with prefixes. For example, km corresponds to kilometer or 1000 m.
+Numerical values may also be presented with prefixes. For example, km corresponds to kilometre or 1000 m.
 
 | Factor | Prefix | Symbol | Factor | Prefix | Symbol |
 | --- | --- | --- | --- | --- | --- |
@@ -110,7 +110,10 @@ $$
 $$
 
 $$
-\frac{1}{\sqrt{1 - x^{2}}} = 1 + \frac{x^{2}}{2} + \frac{3x^{4}}{8} + \frac{5x^{6}}{16} + \cdot \cdot \cdot \frac{1}{\sqrt{1 + x^{2}}} = 1 - \frac{x^{2}}{2} + \frac{3x^{4}}{8} - \frac{5x^{6}}{16} + \cdot \cdot \cdot
+\begin{aligned}
+\frac{1}{\sqrt{1 - x^{2}}} &= 1 + \frac{x^{2}}{2} + \frac{3x^{4}}{8} + \frac{5x^{6}}{16} + \cdot \cdot \cdot \\
+\frac{1}{\sqrt{1 + x^{2}}} &= 1 - \frac{x^{2}}{2} + \frac{3x^{4}}{8} - \frac{5x^{6}}{16} + \cdot \cdot \cdot
+\end{aligned}
 $$
 
 <!-- Source PDF page 279; printed label 270. -->
@@ -204,8 +207,8 @@ In cylindrical coordinates, $c_{1}= r, c_{2}= \theta$, and $c_{3}= z$, where
 
 $$
 \begin{aligned}
-x &= r\cos \varphi \\
-y &= r\sin \varphi
+x &= r\cos \theta \\
+y &= r\sin \theta
 \end{aligned}
 $$
 

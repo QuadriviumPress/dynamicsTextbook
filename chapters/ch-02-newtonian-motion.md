@@ -130,7 +130,7 @@ With the forces, let’s draw the free-body diagram. For simplicity, we’ll spl
 :::{figure} ../images/figures/figure-2-2.png
 :label: fig-2-2
 :enumerator: 2.2
-:alt: Figure shows free body diagrams for the two masses with standard 2D Cartesian axes.
+:alt: Figure shows free-body diagrams for the two masses with standard 2D Cartesian axes.
 :width: 217px
 
 Free-body diagram showing gravity $(mg)$, tension $(T)$, friction $(f)$, and the normal force $(N)$ associated with [Figure 2.1](#fig-2-1). Left panel is for $M_{1}$, right panel is for $M_{2}$.
@@ -233,7 +233,7 @@ Since ideal pulleys have no mass, they will have no net force acting on them (Ne
 
 ::::{admonition} Lance’s Thoughts
 
-The key to free body diagrams (FBDs) for Atwood machines is to remember that every mass and every pulley needs one. If you’re working with ideal pulleys, the FBDs for those will give you the ratios of the tensions in your system and having those will make your life a lot easier. Remember that for ideal ropes the tension is equal everywhere on the same rope and the sum of forces on the pulley is zero. Things get a little more complicated if the pulleys have mass, but drawing the FBD will still help you.
+The key to free-body diagrams (FBDs) for Atwood machines is to remember that every mass and every pulley needs one. If you’re working with ideal pulleys, the FBDs for those will give you the ratios of the tensions in your system and having those will make your life a lot easier. Remember that for ideal ropes the tension is equal everywhere on the same rope and the sum of forces on the pulley is zero. Things get a little more complicated if the pulleys have mass, but drawing the FBD will still help you.
 
 ::::
 
@@ -283,7 +283,7 @@ Therefore, the ball will make an arc, with its vertical motion changing (due to 
 
 <!-- Source PDF page 45; printed label 36. -->
 
-$v_{y}= \int a$d$t =\Rightarrow v_{y}$ is given by the integral of $a$, which is a constant $v_{y}= -gt + C =\Rightarrow a = -g, C$ is the initial velocity along the $y-$axis $v_{y}= -gt + v_{0}\sin \theta =\Rightarrow v_{0}\sin \theta$ is the initial velocity (see [Figure 2.5](#fig-2-5))
+$v_{y} = \int a\,\mathrm{d}t$. Since $a = -g$ is constant, $v_{y} = -gt + C$, where $C$ is the initial velocity along the $y$-axis. That initial velocity is $v_{0}\sin\theta$, so $v_{y} = -gt + v_{0}\sin\theta$ (see [Figure 2.5](#fig-2-5)).
 
 For height, $y = \int v_{y}$d$t$. Integrating the velocity equation gives,
 
@@ -313,7 +313,7 @@ $$
 
 Note that this equation has the same form as the 1-D case (see Example 1-1), but with a $\sin \theta$ term. If $\theta = 90^{\circ}$, then the ball is being thrown straight up and we recover the 1-D case exactly, as we should. So the 2-D equation is a more generic form of how the ball moves, whereas the 1-D situation is a specific case.
 
-2. **How far does the ball travel horizontally when it hits the ground?** Unlike the vertical motion, the horizontal motion does not have an acceleration. So the horizontal component of the motion remains constant throughout the ball’s travels. The horizontal component of the motion is given by $v_{x}= v_{0}\cos \theta$. Assuming that the ball starts at $x$ = 0, we want to calculate the position it has traveled after time $t_{C}$. That distance is simply given by $x_{C}= v_{x}t_{C}$, because the ball starts at $x$ = 0 (definition) and $a_{x}$ = 0. That means we need to know how long the ball was in the air to know how far it traveled horizontally.
+2. **How far does the ball travel horizontally when it hits the ground?** Unlike the vertical motion, the horizontal motion does not have an acceleration. So the horizontal component of the motion remains constant throughout the ball’s travels. The horizontal component of the motion is given by $v_{x}= v_{0}\cos \theta$. Assuming that the ball starts at $x$ = 0, we want to calculate the position it has travelled after time $t_{C}$. That distance is simply given by $x_{C}= v_{x}t_{C}$, because the ball starts at $x$ = 0 (definition) and $a_{x}$ = 0. That means we need to know how long the ball was in the air to know how far it travelled horizontally.
 
 <!-- Source PDF page 46; printed label 37. -->
 
@@ -337,7 +337,7 @@ $$
 t_{C}=\frac{v_{0}\sin\theta+\sqrt{v_{0}^{2}\sin^{2}\theta+2gr_{0}}}{g}
 $$
 
-And the horizontal distance traveled by the ball in that time is:
+And the horizontal distance travelled by the ball in that time is:
 
 $$
 x_{C}=v_{x}t_{C}
@@ -539,7 +539,7 @@ equation. We can now easily integrate both sides to solve this problem.
 
 $$
 \begin{aligned}
-\frac{\mathrm{d}v}{v} &= -\alpha \mathrm{d}t =\Rightarrow \mathrm{using} \mathrm{prime} \mathrm{variables} \mathrm{because} \mathrm{we}\text{’}\mathrm{re} \mathrm{solving} \mathrm{for} v \mathrm{at} t \\
+\frac{\mathrm{d}v}{v} &= -\alpha \mathrm{d}t =\Rightarrow \mathrm{using} \mathrm{dummy} \mathrm{variables} \mathrm{because} \mathrm{we}\text{’}\mathrm{re} \mathrm{solving} \mathrm{for} v \mathrm{at} t \\
 \int_{v_{0}}^{V} \frac{\mathrm{d}v}{v} &= -\alpha \int_{0}^{\tau} \mathrm{d}t =\Rightarrow v = v_{0}\mathrm{at} t = 0, V \mathrm{and} \tau \mathrm{are} \mathrm{dummy} \mathrm{variables} \\
 \left[\ln v\right]_{v_{0}}^{V} &= -\alpha (\tau - 0)
 \end{aligned}
@@ -580,7 +580,7 @@ $$
 
 1. What is the position as $t \rightarrow$ 0 and $t \rightarrow \infty$? Do these values make sense?
 
-2. Plot position, velocity, and acceleration for the particle assuming $\alpha = 0.5 \mathrm{s}^{-1}$ and $v_{0}$ = 2m $\mathrm{s}^{-1}$. You can use any programming language (e.g., python, MATLAB) or you can try and plot it by hand. Check your limits against your plots.
+2. Plot position, velocity, and acceleration for the particle assuming $\alpha = 0.5 \mathrm{s}^{-1}$ and $v_{0}$ = 2 m $\mathrm{s}^{-1}$. You can use any programming language (e.g., python, MATLAB) or you can try and plot it by hand. Check your limits against your plots.
 
 ::::
 
@@ -647,7 +647,7 @@ a &= \frac{\Delta v}{\Delta x} v =\Rightarrow \frac{\Delta x}{\Delta t} = v \\
 \end{aligned}
 $$
 
-The chain rule simplifies the math needed to solve the problem. Tricks like this are helpful to more efficiently tackle physics problems. It may not be intuitive to you yet, but the more you practice using this trick, the more you will be able to know when to apply it.
+The chain rule simplifies the math needed to solve the problem. Tricks like this are helpful to more efficiently tackle physics problems. It may not be intuitive to you yet, but the more you practise using this trick, the more you will be able to know when to apply it.
 
 Using the chain rule, we can get the equation of motion in terms of $v(x)$:
 
@@ -684,7 +684,7 @@ You will get the same answer if you solve for $v(t), x(t)$, and the time $t_{\ma
 
 Drag is often considered a problem in design, but it has many constructive uses as well. One of the most obvious ways to see a drag force in action is by considering a parachute. In the case of a skydiver, the parachute opens behind/above them and creates a much larger surface area perpendicular to the motion, increasing the drag force to counter most of the acceleration due to Earth’s gravity, and lowering the diver’s terminal velocity enough to allow the parachutist to reach the ground with only a mild impact.
 
-Parachutes are used for other purposes as well, like slowing a race car down quickly after it hits the finish line in a short-track race, increased resistance for a runner trying to build strength, and landing a space capsule for retrieval or planetary exploration.
+Parachutes are used for other purposes as well, like slowing a race car down quickly after it hits the finish line in a short-track race, increasing resistance for a runner trying to build strength, and landing a space capsule for retrieval or planetary exploration.
 
 **For more information:** For demonstrations of the drag force in action to slow down short track race cars, check out [this video, courtesy of the National Hot Rod Association.](https://www.youtube.com/watch?v=xEjLviWTuXU)
 
@@ -731,7 +731,7 @@ before attempting any problems.
 
 ::::{admonition} Important Equations
 
-**Newton's 2nd Law: Newton's 3rd Law:**
+**Newton’s second law and Newton’s third law:**
 
 $$
 \begin{aligned}
@@ -894,11 +894,11 @@ Figure for problem 2-8.
 
 ::::{admonition} Practice Problem 2-9
 
-Two blocks are sitting on top of each other on a frictionless surface. The top block has a mass $m_{1}$ and the bottom block has a mass $m_{2}$. There is a coefficient of friction $\mu$ between the two blocks. At $t = 0, m_{1}$ is moving with a speed of $v_{0}$ relative to $m_{2}$, and $m_{2}$ is at rest relative to the frictionless surface. After a certain time, $t = t_{r}, m_{1}$ will be at rest with respect to $m_{2}$ (e.g., the two boxes are traveling at the same velocity).
+Two blocks are sitting on top of each other on a frictionless surface. The top block has a mass $m_{1}$ and the bottom block has a mass $m_{2}$. There is a coefficient of friction $\mu$ between the two blocks. At $t = 0, m_{1}$ is moving with a speed of $v_{0}$ relative to $m_{2}$, and $m_{2}$ is at rest relative to the frictionless surface. After a certain time, $t = t_{r}, m_{1}$ will be at rest with respect to $m_{2}$ (e.g., the two blocks are travelling at the same velocity).
 
 a) Draw the free-body diagram for both masses.
 
-b) Find time $t = t_{r}$ when the two masses are traveling at the same velocity.
+b) Find time $t = t_{r}$ when the two masses are travelling at the same velocity.
 
 c) Find the velocity of $m_{1}$ and $m_{2}$ at $t = t_{r}$.
 

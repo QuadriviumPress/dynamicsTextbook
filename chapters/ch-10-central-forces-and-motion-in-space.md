@@ -28,7 +28,7 @@ Consider a particle of fixed mass at a position that can be defined by the vecto
 :alt: Figure shows the point P in standard 3D Cartesian coordinates.
 :width: 168px
 
-Point $P$ is the particle. Shown in red is the vector $\vec{r}$ in the figure to the right. $\hat{r}$ is shown in black as the unit vector in the direction of $\vec{r}$.
+Point $P$ is the particle. Shown in red is the vector $\vec{r}$. $\hat{r}$ is shown in black as the unit vector in the direction of $\vec{r}$.
 :::
 
 A *central force* is defined as follows:
@@ -85,7 +85,7 @@ f(r) & 0 & 0
 \end{aligned}
 $$
 
-Because $f(r)$ does not depend on $\theta$ or $\varphi$ (by definition), the partial derivatives of $f(r)$ with $\theta$ and $\varphi$ equal zero and the curl of $\vec{F}$ is zero. This means a general central force will always be conservative. Note that a conservative force may not be central. The force must still obey the two criteria in the first section to be defined as a central force.
+Because $f(r)$ does not depend on $\theta$ or $\varphi$ (by definition), the partial derivatives of $f(r)$ with respect to $\theta$ and $\varphi$ equal zero and the curl of $\vec{F}$ is zero. This means a general central force will always be conservative. Note that a conservative force may not be central. The force must still obey the two criteria in the first section to be defined as a central force.
 
 If a central force is conservative, that means there is a potential field $U(r)$ that can describe the force where,
 
@@ -95,7 +95,7 @@ $$
 
 <!-- Source PDF page 218; printed label 209. -->
 
-where d$r$ is a tiny path. Recall that for conservative fields, the change in potential energy is independent of the path. Only the initial and final points matter.
+where d$r$ is a tiny displacement along the path. Recall that for conservative fields, the change in potential energy is independent of the path. Only the initial and final points matter.
 
 Or we can solve for the force if we know the potential of the central force:
 
@@ -138,7 +138,7 @@ So for any central force with $\vec{F} = f(r)\hat{r}$ , the angular momentum of 
 
 ::::{tip} Quick Questions
 
-1. What is the torque on a central force? Comment on this answer using the definition of torque from the central force and the definition of the net torque from Newton’s second law.
+1. What is the torque due to a central force? Comment on this answer using the definition of torque from the central force and the definition of the net torque from Newton’s second law.
 
 ::::
 
@@ -175,7 +175,7 @@ $$
 
 where we have a radial component of the acceleration and a tangential component (azimuthal or $\theta$ component). But the central force is radial only. This is a definition of a central force. As a consequence, we can make two conclusions about the acceleration.
 
-**1)** The radial acceleration is $m\vec{a}_{r}= f(r)\hat{r}$ because both act in the radial direction.
+**1)** The radial equation of motion is $m\vec{a}_{r}= f(r)\hat{r}$ because both act in the radial direction.
 
 $$
 f(r)\hat{r} = m\vec{a}_{r}= m(\ddot{r} - \dot{\theta}^{2}r)\hat{r}
@@ -327,7 +327,7 @@ The energy equation for our central force is $E = \frac{1}{2} m\dot{r}^{2}+U_{ef
 
 $$
 \begin{aligned}
-U(r) &= - f(r)\mathrm{d}r \\
+U(r) &= -\int f(r)\,\mathrm{d}r \\
 U(r) &= -\int (- \frac{\gamma}{r^{3}})\mathrm{d}r \\
 U(r) &= - \frac{\gamma}{2r^{2}}
 \end{aligned}
@@ -796,7 +796,7 @@ A key central force is gravity. Gravity follows an inverse-square law, and its e
 
 2. For $E_{\min}< E < 0$, the orbit is elliptical (there are two real solutions for radius).
 
-3. For $E > 0$, the orbit is unbound (there are two solutions for radius, but only one is physical)
+3. For $E > 0$, the orbit is unbound (there are two solutions for radius, but only one is physical).
 
 Elliptical orbits are discussed more in [Chapter 11](#ch-11).
 

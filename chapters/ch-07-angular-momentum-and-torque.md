@@ -143,7 +143,7 @@ $$ (eq-7-6)
 
 where $m_{i}$ is the mass of a tiny piece of the system and $r_{i}$ is the distance between that mass and the rotation axis (pivot point) of that system.
 
-For example, [Figure 7.1](#fig-7-1) shows an irregular shaped mass that is free to rotate back and forth about a pivot point toward its top. The position vector $\vec{r}_{i}$ is defined for each mass element in the object as measured from the pivot point. You must sum up all mass elements to measure the full moment of inertia for any object. Note that any mass elements at the position of the rotation axis have zero contribution to the moment of inertia because $\vec{r}_{i}$ = 0.
+For example, [Figure 7.1](#fig-7-1) shows an irregularly shaped mass that is free to rotate back and forth about a pivot point toward its top. The position vector $\vec{r}_{i}$ is defined for each mass element in the object as measured from the pivot point. You must sum up all mass elements to measure the full moment of inertia for any object. Note that any mass elements at the position of the rotation axis have zero contribution to the moment of inertia because $\vec{r}_{i}$ = 0.
 
 :::{figure} ../images/figures/figure-7-1.png
 :label: fig-7-1
@@ -232,7 +232,7 @@ Let’s return to the pendulum program from [Chapter 3.4](#sec-3-4), but this ti
 :alt: Figure 7.4 from the source textbook
 :width: 455px
 
-Example of a simple pendulum. Left: The mass is in equilibrium when it is vertically downward and displaced from equilibrium when shifted an angle $\theta$ from the vertical axis. A restoring force $(F)$ moves the pendulum back to equilibrium. Right: The free-body diagram shows the labeled forces tension $(T)$ in red, gravity $(mg)$ in blue, and the restoring force $(mg\sin \theta)$ in magenta. Shown in dotted-red is the component of gravity that balances tension $(mg\cos \theta)$.
+Example of a simple pendulum. Left: The mass is in equilibrium when it is vertically downward and displaced from equilibrium when shifted an angle $\theta$ from the vertical axis. A restoring force $(F)$ moves the pendulum back to equilibrium. Right: The free-body diagram shows the labelled forces tension $(T)$ in red, gravity $(mg)$ in blue, and the restoring force $(mg\sin \theta)$ in magenta. Shown in dotted-red is the component of gravity that balances tension $(mg\cos \theta)$.
 :::
 
 The restoring force acting on the pendulum is given by $F = -mg\sin \theta$. The torque acting on the pendulum is then $\vec{\tau} = \vec{r}\times \vec{F}$ . So we need to find $\vec{r}, \vec{F}$ , and the angle between them.
@@ -286,7 +286,7 @@ $$
 \frac{\mathrm{d}^{2}\theta}{\mathrm{d}t^{2}} + \frac{mgL}{I} \theta = 0
 $$
 
-Now our equation is in the form of a simple differential equation of motion (see [Chapter 3](#ch-3)), and we know how to solve an equation in this format. The solution for $x(t)$ is a cos function with an angular frequency given by the coefficient in front of the $\theta$ term.
+Now our equation is in the form of a simple differential equation of motion (see [Chapter 3](#ch-3)), and we know how to solve an equation in this format. The solution for $\theta(t)$ is a cos function with an angular frequency given by the coefficient in front of the $\theta$ term.
 
 But wait, that isn’t the exact same solution as what we had before in [Chapter 3.4](#sec-3-4). Well, there is one more step we need to do. We need to define the moment of inertia, $I$.
 
@@ -314,7 +314,7 @@ Complex pendulum shapes are hard to solve with the linear force method. Think ab
 
 2. You construct a pendulum by attaching a ring to a massless rod and setting it into periodic motion. Find the angular frequency, $\omega _{0}$, of this pendulum if the rod has a length $L$, and the ring has a mass $M$ and radius $R$.
 
-3. You have a massless rod of length $L$ to which you can attach either a solid sphere or a spherical shell. The solid sphere and spherical shells have masses and radii of (1) $M, R, (2) 2M, \frac{1}{2} R$, or (3) $\frac{1}{2} M 2R$. Which object will give your pendulum the shortest period and which will give you the longest period of oscillation?
+3. You have a massless rod of length $L$ to which you can attach either a solid sphere or a spherical shell. The solid sphere and spherical shells have masses and radii of (1) $M, R, (2) 2M, \frac{1}{2} R$, or (3) $\frac{1}{2} M, 2R$. Which object will give your pendulum the shortest period and which will give you the longest period of oscillation?
 
 ::::
 
@@ -388,7 +388,7 @@ Diagram of the physical pendulum. This physical pendulum is constructed from a d
 
 **Solution**
 
-This system is not a simple pendulum (e.g., a point source at the end of a rope), because the rod has mass and the disk has mass and dimensions. So you need to consider this as a physical pendulum.
+This system is not a simple pendulum (e.g., a point mass at the end of a rope), because the rod has mass and the disk has mass and dimensions. So you need to consider this as a physical pendulum.
 
 The solution for a physical pendulum is:
 
@@ -542,7 +542,7 @@ $$
 
 <!-- Source PDF page 160; printed label 151. -->
 
-Note that for the translation motion, we’re interested only in how the centre of mass is moving. That’s because the centre of mass has no rotation motion, only linear motion.
+Note that for the translational motion, we’re interested only in how the centre of mass is moving. That’s because the centre of mass has no rotational motion, only linear motion.
 
 Let’s set up our coordinate system. We define $+x$ toward the right, $+y$ up, and $+\omega$ in the clockwise direction. These choices are intentional. If the linear motion is in the $+\hat{\imath}$, then the rotation should be in the clockwise direction. While we set up the coordinate system to be most intuitive, as long as you are consistent with your defined coordinate system you will still get the correct answer.
 
@@ -550,12 +550,12 @@ Let’s look at $\sum F = ma_{cm}$ to start. What forces do we need to worry abo
 
 *What about* $a_{cm}$*?* Keep in mind that the acceleration corresponds to the bulk forward motion of the system. If the wheel was a square box that didn’t rotate, then $a_{cm}$ would be how fast you were able to drag the box. But the magnitude of $a_{cm}$ depends on the rate of rotation because all the motion happens due to rotation (condition of rolling without slipping).
 
-[Figure 7.11](#fig-7-11) shows a schematic of our rolling wheel. The wheel is rolling forward a distance $s$ represented by the red arc. As a result of moving forward, the centre of mass has changed position from $x_{1}$ to $x_{2}$, where $\Delta x = s$ (the translation motion is relative to the ground). That is, the system goes forward an equal distance given by the arc of the circle traveled.
+[Figure 7.11](#fig-7-11) shows a schematic of our rolling wheel. The wheel is rolling forward a distance $s$ represented by the red arc. As a result of moving forward, the centre of mass has changed position from $x_{1}$ to $x_{2}$, where $\Delta x = s$ (the translational motion is relative to the ground). That is, the system goes forward an equal distance given by the arc of the circle travelled.
 
 :::{figure} ../images/figures/figure-7-11.png
 :label: fig-7-11
 :enumerator: 7.11
-:alt: Figure shows how the wheel rotates an arc length S as its center of mass moves between two points.
+:alt: Figure shows how the wheel rotates an arc length S as its centre of mass moves between two points.
 :width: 217px
 
 The rolling wheel of radius $R$. The centre of mass is given by the origin $(O)$ and the system moves forward a distance $s$ given by the red arc.
@@ -565,7 +565,7 @@ The system has moved a distance $s$ in time $\Delta t$. If you have *rolling wit
 
 <!-- Source PDF page 161; printed label 152. -->
 
-$\Delta t \rightarrow$ d$t, v_{cm}$ and $a_{cm}$ can be instead written as:
+$\Delta t \rightarrow$ d$t, v_{cm}$ and $a_{cm}$ can instead be written as:
 
 $$
 \begin{aligned}
@@ -655,7 +655,7 @@ $$
 \sum \tau = Rf - rF
 $$
 
-It may seem counter intuitive to have the external force as the negative term, but this is due to our choice to define the clockwise direction as positive. Had we defined the counter-clockwise direction as positive, then we would have the external force as the positive term (but we would need a negative factor relating $a_{cm}$ and $\alpha$; see prior comment).
+It may seem counter-intuitive to have the external force as the negative term, but this is due to our choice to define the clockwise direction as positive. Had we defined the counter-clockwise direction as positive, then we would have the external force as the positive term (but we would need a negative factor relating $a_{cm}$ and $\alpha$; see prior comment).
 
 Now we have both forms of Newton’s laws:
 
@@ -732,7 +732,7 @@ While the fidget spinner is an example of a simple low-weight mechanical gyrosco
 
 <!-- Source PDF page 165; printed label 156. -->
 
-are other types, including fluid, laser, fibre-optic, and vibrational, all working on the same basic principles of rotational motion. For example, with vibrational or MEMS (Micro Electro- Mechanical System) gyroscopes, the angular velocity in the sensor produces torques on vibration elements, providing measurable displacements that can then be amplified to produce an angular velocity signal. Three sensors arranged orthogonally in a single chip provide three dimensional components and track changes in orientation. This is the type of gyroscope used in smart phones to provide image stabilization in a camera or auto-rotation, track step counts in fitness programs, and help give accurate location and positioning with accelerometers in GPS satellites.
+are other types, including fluid, laser, fibre-optic, and vibrational, all working on the same basic principles of rotational motion. For example, with vibrational or MEMS (micro-electro-mechanical system) gyroscopes, the angular velocity in the sensor produces torques on vibration elements, providing measurable displacements that can then be amplified to produce an angular velocity signal. Three sensors arranged orthogonally in a single chip provide three dimensional components and track changes in orientation. This is the type of gyroscope used in smart phones to provide image stabilization in a camera or auto-rotation, track step counts in fitness programs, and help give accurate location and positioning with accelerometers in GPS satellites.
 
 **For more information:**
 
@@ -879,7 +879,7 @@ d) A rod of length $L$ and mass $M_{R}$ with a hollow cylinder of mass $M_{C}$, 
 
 ::::{admonition} Practice Problem 7-2
 
-A red giant star has a mass fifteen times that of our Sun (15 $\mathrm{M}_{\odot})$ and a radius of one astronomical unit $(1.5 \times 10^{8}$ km). It undergoes a sudden supernova, producing a neutron star with a radius of 20 km. Assuming only 1/10th of the star’s mass ends up in the neutron star, what happens to its rotation rate (angular speed)? Assume both the red giant star and the neutron star can be approximated as perfect spheres.
+A red giant star has a mass fifteen times that of our Sun (15 $\mathrm{M}_{\odot}$) and a radius of one astronomical unit $(1.5 \times 10^{8}$ km). It undergoes a sudden supernova, producing a neutron star with a radius of 20 km. Assuming only 1/10th of the star’s mass ends up in the neutron star, what happens to its rotation rate (angular speed)? Assume both the red giant star and the neutron star can be approximated as perfect spheres.
 
 ::::
 
@@ -977,7 +977,7 @@ A metre stick is pivoted at the 20cm mark and allowed to freely oscillate. What 
 :::{figure} ../images/figures/figure-7-18.png
 :label: fig-7-18
 :enumerator: 7.18
-:alt: Figure shows a metre stick with the pivot point labeled as described in the problem.
+:alt: Figure shows a metre stick with the pivot point labelled as described in the problem.
 :width: 62px
 
 Figure for [Problem 7-7](#problem-7-7).
@@ -989,9 +989,9 @@ Figure for [Problem 7-7](#problem-7-7).
 
 ::::{admonition} Practice Problem 7-8
 
-A Physical pendulum is made of a rod of length $L$ and a sphere of radius $R$, as shown in [Figure 7-14](#fig-7-14) (top right). The rod and the sphere have the same mass, $M$. Consider the pivot point to be through the opposite end of the rod from the sphere.
+A physical pendulum is made of a rod of length $L$ and a sphere of radius $R$, as shown in [Figure 7.14](#fig-7-14) (top right). The rod and the sphere have the same mass, $M$. Consider the pivot point to be through the opposite end of the rod from the sphere.
 
-a) Where is the center of mass?
+a) Where is the centre of mass?
 
 b) What is the moment of inertia?
 
@@ -1003,9 +1003,9 @@ c) Find the period of oscillations for small angles.
 
 ::::{admonition} Practice Problem 7-9
 
-A circular disk of mass $M$ and radius $R$ rolls down an incline (angle for the incline is $\theta)$ without slipping. The moment of inertia for a disk is $\frac{1}{2} MR^{2}$.
+A circular disk of mass $M$ and radius $R$ rolls down an incline (angle for the incline is $\theta$) without slipping. The moment of inertia for a disk is $\frac{1}{2} MR^{2}$.
 
-a) Draw a free body diagram for the system.
+a) Draw a free-body diagram for the system.
 
 ::::
 

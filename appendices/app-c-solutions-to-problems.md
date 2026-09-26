@@ -467,7 +467,7 @@ $$
 
 **Problem 4-8:** [Question](#problem-4-8)
 
-a) No fictitious forces act (assuming the very center of the room is the rotation axis)
+a) No fictitious forces act (assuming the very centre of the room is the rotation axis)
 
 b) Centrifugal force
 
@@ -1114,7 +1114,7 @@ $$
 
 **Problem 10-3:** [Question](#problem-10-3)
 
-$U_{eff,\max}= -\dfrac{m}{2L}$, stable
+$U_{eff,\min}= -\dfrac{m}{2L^{2}}$, stable
 
 (solution-10-5)=
 
@@ -1132,21 +1132,21 @@ $$
 F_{eff}= \frac{L^{2}}{mr^{3}} - \frac{\gamma}{r^{2}} - \frac{3\gamma \varepsilon}{r^{4}}
 $$
 
-**Problem 10-2:** [Question](#problem-10-2)
+**Problem 10-7:** [Question](#problem-10-7)
 
 $$
-U_{eff}= \frac{1}{2} \frac{L^{2}}{mr^{2}} + - \frac{\gamma}{r} - \frac{1}{2} \varepsilon r^{2}
+U_{eff}= \frac{1}{2} \frac{L^{2}}{mr^{2}} - \frac{\gamma}{r} - \frac{1}{2} \varepsilon r^{2}
 $$
 
-**Problem 10-3:** [Question](#problem-10-3)
+**Problem 10-8:** [Question](#problem-10-8)
 
 $$
 L = \sqrt{3A\beta mR^{5}e^{\beta R^{3}}}
 $$
 
-(solution-10-4)=
+(solution-10-9)=
 
-**Problem 10-4:** [Question](#problem-10-4)
+**Problem 10-9:** [Question](#problem-10-9)
 
 a) For small values of $r, \frac{L^{2}}{mr^{2}} >> Ar^{2}$, so the centrifugal potential dominates $U_{eff}$. For large values of $r, \frac{L^{2}}{mr^{2}} << Ar^{2}$, so the central force potential dominates $U_{eff}$.
 
@@ -1158,7 +1158,7 @@ $$
 \mathrm{c}) E = \sqrt{\frac{2AL^{2}}{m}}
 $$
 
-**Problem 10-5:** [Question](#problem-10-5)
+**Problem 10-10:** [Question](#problem-10-10)
 
 $$
 \mathrm{a}) \dot{r} = 2\sqrt{A}\frac{L}{mr^{3/2}}
@@ -1176,7 +1176,7 @@ $$
 \mathrm{d}) F_{r}= - \frac{L^{2}}{m} \bigg(\frac{6A}{r^{4}} + \frac{1}{r^{3}} \bigg)
 $$
 
-**Problem 10-6:** [Question](#problem-10-6)
+**Problem 10-11:** [Question](#problem-10-11)
 
 a) For small values of $r, \frac{1}{r^{3}} \gg \frac{1}{r^{2}}$. For large values of $r, \frac{1}{r^{3}} \ll \frac{1}{r^{2}}$.
 
@@ -1248,7 +1248,7 @@ $$
 **Problem 11-6:** [Question](#problem-11-6)
 
 $$
-v = \sqrt{\frac{GM}{R_{s}}}
+M = 0.783 M_{sun}
 $$
 
 (solution-11-7)=
@@ -1256,7 +1256,7 @@ $$
 **Problem 11-7:** [Question](#problem-11-7)
 
 $$
-M_{BH}= 1.2 \times 10^{6}M_{sun}
+v = \sqrt{\frac{GM}{R_{s}}}
 $$
 
 (solution-11-8)=
@@ -1264,18 +1264,26 @@ $$
 **Problem 11-8:** [Question](#problem-11-8)
 
 $$
-v_{p}= 2.3v_{0}
+M_{BH}= 1.2 \times 10^{6}M_{sun}
 $$
 
 (solution-11-9)=
 
 **Problem 11-9:** [Question](#problem-11-9)
 
-Height = 1140 km
+$$
+v_{p}= 2.3v_{0}
+$$
 
 (solution-11-10)=
 
 **Problem 11-10:** [Question](#problem-11-10)
+
+Height = 1140 km
+
+(solution-11-11)=
+
+**Problem 11-11:** [Question](#problem-11-11)
 
 ::::
 
@@ -1377,7 +1385,7 @@ $$
 **Problem 12-7:** [Question](#problem-12-7)
 
 $$
-\ddot{x} = \frac{(M \sin \theta - m)g}{M + m}
+\ddot{x} = \frac{(M_{1} \sin \theta - M_{2})g}{M_{1} + M_{2}}
 $$
 
 (solution-12-8)=
@@ -1385,7 +1393,7 @@ $$
 **Problem 12-8:** [Question](#problem-12-8)
 
 $$
-\mathrm{a}) L = \frac{3}{8} MR\dot{\theta}^{2}- \frac{1}{4} MgR\theta ^{2}
+\mathrm{a}) L = \frac{3}{8} MR^{2}\dot{\theta}^{2}- \frac{1}{4} MgR\theta ^{2}
 $$
 
 $$

@@ -55,7 +55,7 @@ $$
 
 <!-- Source PDF page 102; printed label 93. -->
 
-where the four labeled terms are the four fictitious forces: the azimuthal force, the Coriolis force, the centrifugal force, and the translational force. Note how each of these forces is defined with negative signs because they act opposite the direction of acceleration.
+where the four labelled terms are the four fictitious forces: the azimuthal force, the Coriolis force, the centrifugal force, and the translational force. Note how each of these forces is defined with negative signs because they act opposite the direction of acceleration.
 
 In the next two sections, we will look at examples of the centrifugal force and the Coriolis force. The azimuthal force will be left for practice. See [Chapter 4](#ch-4) for examples of the translational force.
 
@@ -144,7 +144,7 @@ which is just the centripetal acceleration. The force behind this acceleration i
 
 <!-- Source PDF page 104; printed label 95. -->
 
-friction with the table. The friction force points inward toward the center, because the rotation makes the cat want to move outward (centrifugal force).
+friction with the table. The friction force points inward toward the centre, because the rotation makes the cat want to move outward (centrifugal force).
 
 $$
 \vec{f} = -\mu N\hat{r} = -\mu mg\hat{r}
@@ -178,7 +178,7 @@ Cat’s Frame: The cat is our observer in the rotating frame, which means that t
 :alt: Figure shows a diagram of the cat on a turntable with relevant forces labelled.
 :width: 310px
 
-Free-body diagram for the cat on a spinning turntable. The labeled forces are the gravitational force $(F_{g})$, the normal force $(N)$, friction $(f)$, and the centrifugal force $(F_{cent})$. The three forces in purple are the forces that we would identify in an inertial frame. The centrifugal force in black is only in the cat’s frame.
+Free-body diagram for the cat on a spinning turntable. The labelled forces are the gravitational force $(F_{g})$, the normal force $(N)$, friction $(f)$, and the centrifugal force $(F_{cent})$. The three forces in purple are the forces that we would identify in an inertial frame. The centrifugal force in black is only in the cat’s frame.
 :::
 
 Compared to the inertial frame, the cat would identify one additional force: the centrifugal force. So the sum of all forces would be:
@@ -199,7 +199,7 @@ $$
 0 = \vec{F}_{I}+ \vec{F}_{cent}
 $$
 
-0 = $f + F_{cent}=\Rightarrow$ only inertial force is friction 0 = $-\mu mg + mR\omega ^{2}=\Rightarrow f$ and $F_{cent}$ act in opposite directions
+The only inertial force is friction, and $f$ and $F_{cent}$ act in opposite directions, so $0 = f + F_{cent} = -\mu mg + mR\omega^{2}$.
 
 $$
 \omega=\sqrt{\frac{\mu g}{R}}.
@@ -344,7 +344,7 @@ Same as [Figure 5.2](#fig-5-2), but with the net force from the inertial frame i
 
 We can use the net inertial force to get the net acceleration in the inertial frame as $\vec{a} = 2v^{\prime }\omega \hat{\jmath}^{\prime }- \omega ^{2}x^{\prime }\hat{\imath}^{\prime }$. Note that this acceleration is not constant and it is not radial.
 
-The condition for slipping is when the net force acting on a system has a magnitude that is equal to the static friction force, $|\vec{F}_{I}| \le f = \mu mg$.
+The condition for slipping is when the net force acting on a system has a magnitude that is equal to the static friction force, $|\vec{F}_{I}| = f = \mu mg$.
 
 $$
 \mu mg = |\vec{F}_{I}|
@@ -384,15 +384,15 @@ So this is the maximum radial distance that the cat can reach before the combina
 
 The Earth is rotating, which means the Earth is a non-inertial reference frame. To think about the fictitious forces acting on the Earth, it helps to think in 3-D.
 
-Consider [Figure 5.4](#fig-5-4), which shows the position of a person on Earth’s surface. Ignoring Earth’s orbit around the Sun, we can set the inertial reference frame to the center of the planet (rotation is zero there) and we can set the non-inertial reference frame to the position of the person at the surface. Note: this example is a case where the inertial and rotating frames do not have the same origin. But the distance between them, $R$ is fixed.
+Consider [Figure 5.4](#fig-5-4), which shows the position of a person on Earth’s surface. Ignoring Earth’s orbit around the Sun, we can set the inertial reference frame to the centre of the planet (rotation is zero there) and we can set the non-inertial reference frame to the position of the person at the surface. Note: this example is a case where the inertial and rotating frames do not have the same origin. But the distance between them, $R$ is fixed.
 
 :::{figure} ../images/figures/figure-5-4.png
 :label: fig-5-4
 :enumerator: 5.4
-:alt: Figure shows the relationship between the inertial x-y-z coordinate centered on the Earth and the rotating x-prime, y-prime, z-prime coordinate system on the Earth’s surface.
+:alt: Figure shows the relationship between the inertial x-y-z coordinate centred on the Earth and the rotating x-prime, y-prime, z-prime coordinate system on the Earth’s surface.
 :width: 293px
 
-A coordinate system on Earth. The point shown is fixed to the surface of the Earth. The red coordinates show the non-inertial reference frame for an observer at this location $(O^{\prime })$. The black coordinates show the inertial reference frame at the center of the Earth, a distance $R$ from the point. Also shown are the latitude $\theta$, polar angle $\varphi$, and distance to the rotation axis $\rho$.
+A coordinate system on Earth. The point shown is fixed to the surface of the Earth. The red coordinates show the non-inertial reference frame for an observer at this location $(O^{\prime })$. The black coordinates show the inertial reference frame at the centre of the Earth, a distance $R$ from the point. Also shown are the latitude $\theta$, polar angle $\varphi$, and distance to the rotation axis $\rho$.
 :::
 
 Our observer is located at the point shown in [Figure 5.4](#fig-5-4). This person is at a latitude of $\theta$, where the equator is located at the $x,y-$plane of the inertial frame. We can also describe the person’s position using the polar angle $\varphi$ (also called the colatitude), where $\varphi = 90-\theta$. In the inertial frame, these angles do not change (e.g., the latitude of a fixed point on Earth does not change), but the $x,y$ axes rotate about the $z$ axis due to Earth’s spin.
@@ -436,7 +436,7 @@ $$
 
 Let’s start with the centrifugal force, $F_{cent}= -m\vec{\omega} \times (\vec{\omega} \times \vec{r}^{\prime })$.
 
-[Figure 5.6](#fig-5-6) shows the breakdown of the vector directions from the two cross products. Since $\vec{\omega}$ is not along the $\hat{k}^{\prime }$ axis and it is not perpendicular to $\vec{R}$ , getting the direction is not intuitive. You can use the right hand rule (see [Chapter 1.5.2](#sec-1-5-2)), to estimate the direction, where $\vec{\omega}\times \vec{R}$ points mostly into the page, and $\vec{\omega}\times (\vec{\omega}\times \vec{R}$ ) points mostly toward the Earth’s axis of rotation. Thus, we should expect the centrifugal force to mostly point away from the axis of rotation.
+[Figure 5.6](#fig-5-6) shows the breakdown of the vector directions from the two cross products. Since $\vec{\omega}$ is not along the $\hat{k}^{\prime }$ axis and it is not perpendicular to $\vec{R}$ , getting the direction is not intuitive. You can use the right-hand rule (see [Chapter 1.5.2](#sec-1-5-2)) to estimate the direction, where $\vec{\omega}\times \vec{R}$ points mostly into the page, and $\vec{\omega}\times (\vec{\omega}\times \vec{R}$ ) points mostly toward the Earth’s axis of rotation. Thus, we should expect the centrifugal force to mostly point away from the axis of rotation.
 
 The total magnitude of the centrifugal force should therefore be given by
 
@@ -504,7 +504,7 @@ which is pointing in a direction that is South and up. Looking at [Figure 5.6](#
 
 <!-- Source PDF page 112; printed label 103. -->
 
-By contrast, gravity from the Earth is directed toward the center of the Earth, which will be along the $-\hat{k}^{\prime }$ direction, by definition. That means we have two vectors with different directions. The effective gravity will be the sum of these two vectors.
+By contrast, gravity from the Earth is directed toward the centre of the Earth, which will be along the $-\hat{k}^{\prime }$ direction, by definition. That means we have two vectors with different directions. The effective gravity will be the sum of these two vectors.
 
 Taking the magnitude of $\vec{F}_{cen}$, we have:
 
@@ -618,12 +618,12 @@ $$
 
 for the $x^{\prime }$ and $y^{\prime }$ axes, respectively. Again, we’re going to ignore the $\hat{k}^{\prime }$ component and focus on the deflection in $\hat{\imath}^{\prime }$ and $\hat{\jmath}^{\prime }$.
 
-**3. Finding the acceleration** We have descriptions for gravity, tension, and the Coriolis force in our non-inertial reference frame. We can now solve for the acceleration. For simplicity, we will do this for the $x^{\prime }$ and $y^{\prime }$ components separately. Since we are assuming negligible motion in $z^{\prime }$, we can ignore all forces (inertial or fictitious) in the $z^{\prime }$ direction. The remaining forces in $x^{\prime }$ and $y^{\prime }$ are the inertial tension force and the fictitious Coriolis force.
+**3. Finding the acceleration:** We have descriptions for gravity, tension, and the Coriolis force in our non-inertial reference frame. We can now solve for the acceleration. For simplicity, we will do this for the $x^{\prime }$ and $y^{\prime }$ components separately. Since we are assuming negligible motion in $z^{\prime }$, we can ignore all forces (inertial or fictitious) in the $z^{\prime }$ direction. The remaining forces in $x^{\prime }$ and $y^{\prime }$ are the inertial tension force and the fictitious Coriolis force.
 
 $$
 \begin{aligned}
-m\ddot{x}^{\prime}&= - \frac{Tx^{\prime}}{l} + 2m\omega \sin \theta \dot{y}^{\prime} \\
-m\ddot{y}^{\prime}&= - \frac{Ty^{\prime}}{l} - 2m\omega \sin \theta \dot{x}^{\prime}
+m\ddot{x}^{\prime}&= - \frac{Tx^{\prime}}{\ell} + 2m\omega \sin \theta \dot{y}^{\prime} \\
+m\ddot{y}^{\prime}&= - \frac{Ty^{\prime}}{\ell} - 2m\omega \sin \theta \dot{x}^{\prime}
 \end{aligned}
 $$
 
@@ -631,8 +631,8 @@ where $\theta$ is the latitude of the observer. If we assume that the angle of d
 
 $$
 \begin{aligned}
-\ddot{x}^{\prime}&= - \frac{g}{l} x^{\prime}+ (2\omega \sin \theta)\dot{y}^{\prime} \\
-\ddot{y}^{\prime}&= - \frac{g}{l} y^{\prime}- (2\omega \sin \theta)\dot{x}^{\prime}
+\ddot{x}^{\prime}&= - \frac{g}{\ell} x^{\prime}+ (2\omega \sin \theta)\dot{y}^{\prime} \\
+\ddot{y}^{\prime}&= - \frac{g}{\ell} y^{\prime}- (2\omega \sin \theta)\dot{x}^{\prime}
 \end{aligned}
 $$
 
@@ -698,7 +698,7 @@ m\vec{a}'=m\vec{a}
 \underbrace{-m\vec{A}}_{\vec{F}_{trans}}.
 $$
 
-This chapter also introduces the Earth as a non-inertial frame. To first order, the physics problems from [Chapter 2](#ch-2) and 3 assume that the Earth is an inertial frame of reference. This approximation is generally fine, as the fictitious forces do not greatly affect these types of physics problems. Try the practice problems below to see the magnitude of some of these forces.
+This chapter also introduces the Earth as a non-inertial frame. To first order, the physics problems from [Chapter 2](#ch-2) and [Chapter 3](#ch-3) assume that the Earth is an inertial frame of reference. This approximation is generally fine, as the fictitious forces do not greatly affect these types of physics problems. Try the practice problems below to see the magnitude of some of these forces.
 
 But for some types of high-precision physics, such as weather patterns, satellite orbits, and Foucault pendulums, you need to take into account the fictitious forces that arise from a non-inertial Earth-bound reference frame. This chapter goes through a few examples, highlighting how to break down and simplify such problems.
 
@@ -824,7 +824,7 @@ Figure for [Problem 5-3](#problem-5-3).
 
 ::::{admonition} Practice Problem 5-4
 
-Typical vinyl records spin $33 \frac{1}{3}$ times per minute. What is the magnitude and direction of the Coriolis Force experienced by a ladybug $(m = 0.02$ g) that is crawling radially outward with a velocity of 1 cm $\mathrm{s}^{-1}$ at a distance of 10 cm from the axis of rotation?
+Typical vinyl records spin $33 \frac{1}{3}$ times per minute. What is the magnitude and direction of the Coriolis force experienced by a ladybug $(m = 0.02$ g) that is crawling radially outward with a velocity of 1 cm $\mathrm{s}^{-1}$ at a distance of 10 cm from the axis of rotation?
 
 ::::
 
@@ -848,14 +848,14 @@ c) Find the magnitude of the azimuthal force and centrifugal force halfway throu
 
 ::::{admonition} Practice Problem 5-6
 
-A race car driver at the Indy 500 races (latitude is 40 deg N) is traveling south in their reference frame.
+A race car driver at the Indy 500 races (latitude is 40 deg N) is travelling south in their reference frame.
 
 a) What is the direction of the Coriolis force acting on the driver?
 
 b) If the race car driver hits a speed of 200 km/h going due north at the Indy 500 races, what is the magnitude of the Coriolis force acting on this driver relative to the force of gravity (e.g., $F_{Cor}/F_{g})$? You can assume that the angular velocity for the Earth is
 
 $$
-7.27 \times 10^{-5}\mathrm{s}^{-1}).
+7.27 \times 10^{-5}\mathrm{s}^{-1}.
 $$
 
 ::::

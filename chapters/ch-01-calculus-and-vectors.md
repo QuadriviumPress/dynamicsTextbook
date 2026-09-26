@@ -21,7 +21,7 @@ This chapter reviews basic calculus and vector notation and coordinate systems. 
 (sec-1-1-1)=
 ### 1.1.1 Linear Motion
 
-For linear motion, we can use the Cartesian coordinate system. The position of an object is described by a vector $\vec{r}$ in $x, y$, and $z$, the linear velocity of the object is the time derivative of position, and the linear acceleration is the time derivative of velocity.
+For linear motion, we can use the Cartesian coordinate system. The position of an object is described by a vector $\vec{r}$ in $x$, $y$, and $z$. The linear velocity of the object is the time derivative of position, and the linear acceleration is the time derivative of velocity.
 
 $$
 \vec{r} = x\hat{\imath} + y\hat{\jmath} + z\hat{k} = \langle x,y,z\rangle
@@ -89,7 +89,7 @@ The above equations highlight that there are several ways to write a parameter i
 
 The time derivative of position gives you *instantaneous* velocity and the time derivative of velocity gives you the *instantaneous* acceleration. These are instantaneous because they correspond to the velocity or acceleration in that exact instant or moment in time. By contrast, the *average* velocity $(\bar{v} = \frac{\Delta \vec{r}}{\Delta t})$ and *average* acceleration $(\bar{a} = \frac{\Delta \vec{v}}{\Delta t})$ are measured over a longer duration of time, $\Delta t$. The average quantity is denoted by a bar (–) over the variable.
 
-Note that in the limit as $\Delta t \rightarrow 0, \frac{\Delta \vec{r}}{\Delta t} \rightarrow \vec{v}$ and $\frac{\Delta v}{\Delta t} \rightarrow \vec{a}$. So for a very short duration of time, $\Delta t \rightarrow$ d$t$, the average velocity and average acceleration are equivalent to the instantaneous quantities.
+Note that in the limit as $\Delta t \rightarrow 0, \frac{\Delta \vec{r}}{\Delta t} \rightarrow \vec{v}$ and $\frac{\Delta \vec{v}}{\Delta t} \rightarrow \vec{a}$. So for a very short duration of time, $\Delta t \rightarrow$ d$t$, the average velocity and average acceleration are equivalent to the instantaneous quantities.
 
 ::::
 
@@ -119,7 +119,7 @@ For a rigid body rotating on a fixed axis, a point $P$ on the body will travel i
 
 For rotational motion, it is useful to describe the motion in terms of angles: angular position $(\theta)$, angular velocity $(\omega)$, and angular acceleration $(\alpha)$. Note that a radius $r$ is also necessary to describe the motion, and we will assume this is constant for now. For this coordinate system to work, you need a reference axis (reference point).
 
-Consider the figure below. From time $t_{1}$ to $t_{2}$ the object has rotated from the first position at $\theta _{1}$ to the second position at $\theta _{2}$. The distance from the origin to both points (radius) is constant. Thus, the angular position that the object moves is $\Delta \theta = \theta _{2}- \theta _{1}$ in time $\Delta t = t_{2}- t_{1}$. The distance traveled is the arc, $s$, as traced out by the angle $\Delta \theta$.
+Consider the figure below. From time $t_{1}$ to $t_{2}$ the object has rotated from the first position at $\theta _{1}$ to the second position at $\theta _{2}$. The distance from the origin to both points (radius) is constant. Thus, the change in angular position is $\Delta \theta = \theta _{2}- \theta _{1}$ in time $\Delta t = t_{2}- t_{1}$. The distance travelled is the arc, $s$, as traced out by the angle $\Delta \theta$.
 
 :::{figure} ../images/figures/figure-1-3.png
 :label: fig-1-3
@@ -169,7 +169,7 @@ For a rigid body, all points in the object move with the same angular velocity a
 (sec-1-2)=
 ## 1.2 Introduction to Plane Polar Coordinates
 
-In cases of circular motion, it is often easier to solve a problem by changing your coordinate system from Cartesian plane $(x,y)$ to polar coordinates $(r,\theta)$. The two coordinate systems are connected, where $x = r\cos \theta$ and $y = r\sin \theta$, where $r$ is the radius length and $\theta$ is the polar angle (see [Figure 1.4](#fig-1-4)). Solving for $r$ and $\theta$, we get:
+In cases of circular motion, it is often easier to solve a problem by changing your coordinate system from the Cartesian plane $(x,y)$ to polar coordinates $(r,\theta)$. The two coordinate systems are connected, where $x = r\cos \theta$ and $y = r\sin \theta$, where $r$ is the radius length and $\theta$ is the polar angle (see [Figure 1.4](#fig-1-4)). Solving for $r$ and $\theta$, we get:
 
 $$
 \begin{aligned}
@@ -190,7 +190,7 @@ The position vector in plane polar coordinates can be written as $\vec{r} = r\ha
 :alt: Plane polar unit vectors r-hat pointing radially outward and theta-hat tangent counterclockwise.
 :width: 228px
 
-Visual definitions of $\hat{r}$ and $\hat{\theta}$ in plane polar coordinates. The unit vector for radius extends away from the origin and the unit vector for angle points counter clockwise. Note that $\hat{\theta}$ is always tangent to the radius by definition.
+Visual definitions of $\hat{r}$ and $\hat{\theta}$ in plane polar coordinates. The unit vector for radius extends away from the origin and the unit vector for angle points counter-clockwise. Note that $\hat{\theta}$ is always tangent to the radius by definition.
 :::
 
 ::::{admonition} Real World Applications
@@ -229,7 +229,7 @@ Note that the Cartesian unit vectors $(\hat{\imath}, \hat{\jmath}$ ) are fixed, 
 :alt: Polar unit vectors r-hat and theta-hat resolved into fixed Cartesian i-hat and j-hat components.
 :width: 228px
 
-Sketch showing how $\hat{r}$ and $\hat{\theta}$ can be described in terms of $\hat{\imath}$ and $\hat{\jmath}$ . Note that the Cartesian system $(\hat{\imath}$ and $\hat{\jmath}$ ) do not change with time, but the plane polar system $(\hat{r}$ and $\hat{\theta}$ ) do change with time.
+Sketch showing how $\hat{r}$ and $\hat{\theta}$ can be described in terms of $\hat{\imath}$ and $\hat{\jmath}$ . Note that the Cartesian system $(\hat{\imath}$ and $\hat{\jmath}$ ) does not change with time, but the plane polar system $(\hat{r}$ and $\hat{\theta}$ ) does change with time.
 :::
 
 If we take the derivative of $\hat{r}$ with respect to time, we get:
@@ -404,7 +404,7 @@ The above equations of motion for $v_{x}$ and $x$ (and the equivalent for $y$ an
 
 ::::{admonition} Real World Applications
 
-We typically use Standard International (SI) units to describe position, velocity, acceleration, and time. But historically and around the world, there have been many different ways of looking at those measurements. One interesting example is the water clock from the Babylonian Empire, where time had the same units as mass. These clocks used the weight of water passing through the clock as a measure of time. Since the Babylonian Empire wasn’t directly on the equator, the amount of water used to break up the day had to be adjusted throughout the year.
+We typically use the International System of Units (SI) to describe position, velocity, acceleration, and time. But historically and around the world, there have been many different ways of looking at those measurements. One interesting example is the water clock from the Babylonian Empire, where time had the same units as mass. These clocks used the weight of water passing through the clock as a measure of time. Since the Babylonian Empire wasn’t directly on the equator, the amount of water used to break up the day had to be adjusted throughout the year.
 
 ::::
 
@@ -494,7 +494,7 @@ Cartoon of 1-D vertical motion. For vertical motion upward with an acceleration 
 
 Note that we are using the $y$ axis only at this time because all the motion is in the vertical.
 
-1. **What is the maximum height that the ball reaches?** This is the height at point B in [Figure 1.7](#fig-1-7). This problem is a linear motion question with constant acceleration. We just solved that equation in [Section 1.3](#sec-1-3), so we will need to use the equation, $y = \frac{1}{2} at^{2}+ v_{y,0}t + r_{0}$ to solve for $y$ when the ball is at its highest point. We aren’t given that time when this happens, but we can solve for it, because when the ball has reached its maximum height, $v_{y}$ = 0 (requirement of the physics). So the first step is to get the time when the ball has reached its maximum height.
+1. **What is the maximum height that the ball reaches?** This is the height at point B in [Figure 1.7](#fig-1-7). This problem is a linear motion question with constant acceleration. We just solved that equation in [Section 1.3](#sec-1-3), so we will need to use the equation, $y = \frac{1}{2} at^{2}+ v_{y,0}t + r_{0}$ to solve for $y$ when the ball is at its highest point. We aren’t given the time when this happens, but we can solve for it, because when the ball has reached its maximum height, $v_{y}$ = 0 (requirement of the physics). So the first step is to get the time when the ball has reached its maximum height.
 
 $$
 v_{y}= at + v_{y,0}=\Rightarrow \mathrm{see} \mathrm{Section} 1.3
@@ -639,7 +639,7 @@ $$
 \end{aligned}
 $$
 
-Note that we are interested in the angular displacement. As such, the initial angle $\theta _{0}$ does not matter. We are counting revolutions from $t$ = 0 where $\theta _{0}$ is our reference angle and set to $\theta _{0}$ = 0.
+Note that we are interested in the angular displacement. As such, the initial angle $\theta _{0}$ does not matter. We are counting revolutions from $t$ = 0 where $\theta _{0}$ is our reference angle and is set to $\theta _{0}$ = 0.
 
 (a) How many revolutions do you get if $\omega _{0}$ = 240 revolutions per minute, $\omega _{\tau}= 180$ revolutions per minute, and $\tau = 10$ s?
 
@@ -712,17 +712,17 @@ $$
 
 <!-- Source PDF page 26; printed label 17. -->
 
-where $\theta$ is the angle between the two vectors when the vectors are tail-to-tail. But this is only the magnitude. To get the direction of the cross product, you can use one of two methods: (1) the right hand rule (RHR) or (2) the matrix determinant method to solve the vector cross product.
+where $\theta$ is the angle between the two vectors when the vectors are tail-to-tail. But this is only the magnitude. To get the direction of the cross product, you can use one of two methods: (1) the right-hand rule (RHR) or (2) the matrix determinant method to solve the vector cross product.
 
 [Figure 1.8](#fig-1-8) shows how to solve for the cross product direction with the RHR.
 
 :::{figure} ../images/figures/figure-1-8.png
 :label: fig-1-8
 :enumerator: 1.8
-:alt: Cartoon hand of the right hand rule for the vector cross product.
+:alt: Cartoon hand of the right-hand rule for the vector cross product.
 :width: 195px
 
-Vector orientation from the right hand rule. For $\vec{a} \times \vec{b}$, align your index finger with the direction of $\vec{a}$ and your middle finger with the direction of $\vec{b}$. Your thumb then points in the direction given by $\vec{a} \times \vec{b}$.
+Vector orientation from the right-hand rule. For $\vec{a} \times \vec{b}$, align your index finger with the direction of $\vec{a}$ and your middle finger with the direction of $\vec{b}$. Your thumb then points in the direction given by $\vec{a} \times \vec{b}$.
 :::
 
 The matrix determinant method gives you the full vector solution for the cross product:
@@ -833,7 +833,7 @@ $$
 
 where we drop the higher order terms because if $x$ is small $(|x| \ll$ 1), then the higher order terms which have $x^{2}$ and $x^{3}$ become negligible. A function of 1 + $x$ is much simpler to work with than a function of $e^{x}$. This highlights the power of a Taylor series expansion.
 
-[Figure 1.9](#fig-1-9) demonstrates this approximation. The figure compares a function of $e^{x}$ with a function of $1+x$. For small values of $x$ (such as $-0.3 < x < 0.3)$, the two functions are very similar. For larger values of $x$, however, the approximation breaks down. Note, however that you can include additional higher order terms when necessary. That is, $e^{x}\approx 1+x+ \frac{1}{2} x^{2}$ would give a better approximation than $e^{x}\approx 1 + x$.
+[Figure 1.9](#fig-1-9) demonstrates this approximation. The figure compares a function of $e^{x}$ with a function of $1+x$. For small values of $x$ (such as $-0.3 < x < 0.3)$, the two functions are very similar. For larger values of $x$, however, the approximation breaks down. Note, however, that you can include additional higher order terms when necessary. That is, $e^{x}\approx 1+x+ \frac{1}{2} x^{2}$ would give a better approximation than $e^{x}\approx 1 + x$.
 
 :::{figure} ../images/figures/figure-1-9.png
 :label: fig-1-9
@@ -846,7 +846,7 @@ The left figure compares $y = e^{x}$ with the Taylor approximation of $y = 1+x$ 
 
 ::::{admonition} Real World Applications
 
-A common application of Taylor Series approximations is the small angle case, where for small angles $\sin \theta \approx \theta$ and $\tan \theta \approx \theta$ (for angles in radians). In astronomy, nearby stars make small shifts in position relative to more distant background stars due to Earth’s orbit around the Sun. The size of the shift, called a stellar parallax, is measured as the angle on the sky from the apparent shift in position. From trigonometry, the parallax angle is given by $\tan \theta _{p}= \frac{Earth orbit}{star distance}$. Since stars are very far away, stellar parallaxes are very small angles $(\ll$ 1 rad), so we can simplify the parallax equation as $\theta _{p}= \frac{Earth orbit}{star distance}$. Knowing the Earth’s orbit size, we can therefore find the distances to stars by measuring their parallax angles with telescopes. For example, the *Gaia* space [telescope](https://www.esa.int/Science_Exploration/Space_Science/Gaia/Gaia_creates_richest_star_map_of_our_Galaxy_and_beyond) has measured stellar parallaxes to over 1 billion stars providing unprecedented maps of our Galaxy.
+A common application of Taylor Series approximations is the small angle case, where for small angles $\sin \theta \approx \theta$ and $\tan \theta \approx \theta$ (for angles in radians). In astronomy, nearby stars make small shifts in position relative to more distant background stars due to Earth’s orbit around the Sun. The size of the shift, called a stellar parallax, is measured as the angle on the sky from the apparent shift in position. From trigonometry, the parallax angle is given by $\tan \theta _{p}= \frac{\text{Earth's orbit}}{\text{star distance}}$. Since stars are very far away, stellar parallaxes are very small angles $(\ll$ 1 rad), so we can simplify the parallax equation as $\theta _{p}= \frac{\text{Earth's orbit}}{\text{star distance}}$. Knowing the Earth’s orbit size, we can therefore find the distances to stars by measuring their parallax angles with telescopes. For example, the *Gaia* space [telescope](https://www.esa.int/Science_Exploration/Space_Science/Gaia/Gaia_creates_richest_star_map_of_our_Galaxy_and_beyond) has measured stellar parallaxes to over 1 billion stars providing unprecedented maps of our Galaxy.
 
 ::::
 

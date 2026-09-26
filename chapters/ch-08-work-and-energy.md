@@ -38,7 +38,7 @@ $$
 
 ::::
 
-If the force is *constant*, then you can simplify the above equations to:
+If the force is *constant*, then you can simplify the above equation to:
 
 $$
 W = \vec{F} \cdot \int \mathrm{d}\vec{r} = \vec{F} \cdot \Delta \vec{r} = F_{x}\Delta x + F_{y}\Delta y + F_{z}\Delta z
@@ -46,7 +46,7 @@ $$
 
 where $\Delta \vec{r}$ represents the displacement between two points, $r_{1}$ and $r_{2}$. Alternatively, the vector dot product can be solved following $\vec{F} \cdot \Delta \vec{r} = F\Delta r\cos \theta$, where $\theta$ is the angle between the two vectors.
 
-If $\vec{F}$ and $\mathrm{d}\vec{r}$ are parallel $(\theta$ = 0), then the force is acting in the same direction as the displacement and the force does maximum positive work. If the force is perpendicular to the displacement $(\theta = \frac{\pi}{2})$, then the force does zero work. That is, the force is not responsible for the displacement and contributed no work to that displacement. If the force
+If $\vec{F}$ and $\mathrm{d}\vec{r}$ are parallel $(\theta$ = 0), then the force is acting in the same direction as the displacement and the force does maximum positive work. If the force is perpendicular to the displacement $(\theta = \frac{\pi}{2})$, then the force does zero work. That is, the force is not responsible for the displacement and contributes no work to that displacement. If the force
 
 <!-- Source PDF page 174; printed label 165. -->
 
@@ -258,7 +258,7 @@ $$
 \vec{F}_{g}= - \frac{GMm}{r^{2}} \hat{r}
 $$ (eq-8-7)
 
-where $G$ is the gravitational constant of $6.67 \times 10^{-11}$ N $\mathrm{m}^{2}\mathrm{kg}^{-2}, M$ is the mass of the object producing the gravitational field, $m$ is the mass of an object being accelerated in the gravitational field, and $r$ is the distance between the centers of the two objects. Thus, the true form for the acceleration due to gravity is given by:
+where $G$ is the gravitational constant of $6.67 \times 10^{-11}$ N $\mathrm{m}^{2}\mathrm{kg}^{-2}, M$ is the mass of the object producing the gravitational field, $m$ is the mass of an object being accelerated in the gravitational field, and $r$ is the distance between the centres of the two objects. Thus, the true form for the acceleration due to gravity is given by:
 
 $$
 \vec{g} = - \frac{GM}{r^{2}} \hat{r}
@@ -320,7 +320,7 @@ Note that if $r_{2}> r_{1}, W < 0$ as we would expect (e.g., you are doing work 
 (sec-8-4-3)=
 ### 8.4.3 Escape velocity
 
-The gravitational force follows an inverse square ( $\frac{1}{r^{2}})$ law. So at very large distances from the source of the gravitational field, the gravitational force goes to zero and the work necessary to move a particle also goes to zero (if there is no force, there is no work).
+The gravitational force follows an inverse square ($\frac{1}{r^{2}}$) law. So at very large distances from the source of the gravitational field, the gravitational force goes to zero and the work necessary to move a particle also goes to zero (if there is no force, there is no work).
 
 Consider an object that is on the surface of Earth and is launched so that it reaches a very large distance away (assume infinity). Due to Earth’s gravitational field, the object will feel a force that opposes its motion to leave. Gravity will be doing negative work and the kinetic energy of the object will decrease. **What speed is needed for this object to** **just reach infinity?** Assume Earth’s atmosphere does not affect its motion.
 
@@ -442,9 +442,9 @@ The second requirement states that the total work done to move an object between
 Comparison of two paths between points $r_{1}$ and $r_{2}$. For a conservative force, the work done to go from $r_{1}$ to $r_{2}$ is the same for both paths, even though the paths are very different.
 :::
 
-And of course, if you go from $r_{1}$ to $r_{2}$ and then from $r_{2}$ back to $r_{1}$, the total work is zero (first criterion) no matter which path you take in either case (e.g., Path I from $r_{1}$ to $r_{2}$ and then Path II from $r_{2}$ back to $r_{1})$.
+And of course, if you go from $r_{1}$ to $r_{2}$ and then from $r_{2}$ back to $r_{1}$, the total work is zero (first criterion) no matter which path you take in either case (e.g., Path I from $r_{1}$ to $r_{2}$ and then Path II from $r_{2}$ back to $r_{1}$).
 
-Note that forces like friction are *not* conservative forces. First, friction doesn’t depend on position. Second, friction removes energy from a system. Third, the work done by friction in a closed loop is not zero. For example, consider a hockey puck moving in a circle of radius $R$ on a rough horizontal surface that has friction. The friction force on the hockey puck is $\vec{f} = \mu _{K}mg\hat{\theta}$ , and the puck moves so that it is always antiparallel $(180^{\circ})$ to the displacement. So $W_{f}= -f\Delta d = -\mu _{K}mg(2\pi R)$ for a closed loop. Thus, $W_{f}\not =$ 0.
+Note that forces like friction are *not* conservative forces. First, friction doesn’t depend on position. Second, friction removes energy from a system. Third, the work done by friction in a closed loop is not zero. For example, consider a hockey puck moving in a circle of radius $R$ on a rough horizontal surface that has friction. The friction force on the hockey puck is $\vec{f} = \mu _{K}mg\hat{\theta}$ , and the friction force is always antiparallel $(180^{\circ})$ to the displacement. So $W_{f}= -f\Delta d = -\mu _{K}mg(2\pi R)$ for a closed loop. Thus, $W_{f}\not =$ 0.
 
 (sec-8-5-1)=
 ### 8.5.1 Identifying Conservative Forces
@@ -461,7 +461,7 @@ $$
 \vec{\nabla} = \frac{\partial}{\partial x} \hat{\imath} + \frac{\partial}{\partial y} \hat{\jmath} + \frac{\partial}{\partial z} \hat{k}
 $$
 
-where $\partial$ indicates the partial derivative. For partial derivatives, you ignore any other variable. For example, $\frac{\partial}{\partial x} f(y)$ = 0 because $x$ is not present in the function (you treat $y$ as a constant for a partial derivative with respect to $x)$. For $\vec{\nabla}$ in other coordinate systems, see [Appendix A.5](#sec-A-5).
+where $\partial$ indicates the partial derivative. For partial derivatives, you ignore any other variable. For example, $\frac{\partial}{\partial x} f(y)$ = 0 because $x$ is not present in the function (you treat $y$ as a constant for a partial derivative with respect to $x$). For $\vec{\nabla}$ in other coordinate systems, see [Appendix A.5](#sec-A-5).
 
 <!-- Source PDF page 183; printed label 174. -->
 
@@ -518,7 +518,7 @@ $$
 = 0
 $$
 
-because there is no $\theta$ or $\varphi$ dependence on the force. That is, $\frac{\partial}{\partial \theta} f(r) = \frac{\partial}{\partial \varphi} f(r)$ = 0 because you would treat $r$ as a constant for a partial derivative with respect to $\theta$ or $\varphi$. Since we have $\vec{\nabla} \times \vec{F}$ = 0, the gravitational force is conservative.
+because the force has no $\theta$ or $\varphi$ dependence. That is, $\frac{\partial}{\partial \theta} f(r) = \frac{\partial}{\partial \varphi} f(r)$ = 0 because you would treat $r$ as a constant for a partial derivative with respect to $\theta$ or $\varphi$. Since we have $\vec{\nabla} \times \vec{F}$ = 0, the gravitational force is conservative.
 
 ::::
 
@@ -718,7 +718,7 @@ $$
 = 0\hat{\imath} + 0\hat{\jmath} + 0\hat{k} = 0
 $$
 
-Note for the above we are assuming that $U$ is twice continuously differentiable. If $U$ can be differentiated twice, then its partial derivatives are independent of the order and all terms cancel (e.g, $\frac{\partial ^{2}U}{\partial y\partial z} = \frac{\partial ^{2}U}{\partial z\partial y})$.
+Note for the above we are assuming that $U$ is twice continuously differentiable. If $U$ can be differentiated twice, then its partial derivatives are independent of the order and all terms cancel (e.g., $\frac{\partial ^{2}U}{\partial y\partial z} = \frac{\partial ^{2}U}{\partial z\partial y}$).
 
 (example-8-3)=
 
@@ -744,12 +744,12 @@ $$
 
 ::::
 
-For a potential, $U$, there can be points where $-\vec{\nabla}U = \vec{F}$ = 0. Mathematically, these points are located where the derivative of the potential is zero and correspond to points of local maxima or local minima. [Figure 8.5](#fig-8-5)) shows a sketch of a potential with a local maximum and local minimum. These locations are also known as *equilibrium points* or saddle points.
+For a potential, $U$, there can be points where $-\vec{\nabla}U = \vec{F}$ = 0. Mathematically, these points are located where the derivative of the potential is zero and correspond to points of local maxima or local minima. [Figure 8.5](#fig-8-5) shows a sketch of a potential with a local maximum and local minimum. These locations are also known as *equilibrium points* or saddle points.
 
 :::{figure} ../images/figures/figure-8-5.png
 :label: fig-8-5
 :enumerator: 8.5
-:alt: Figure shows a simple graph of a cubic-shaped function with local maximum and minimum points labeled to demonstrate equilibrium points.
+:alt: Figure shows a simple graph of a cubic-shaped function with local maximum and minimum points labelled to demonstrate equilibrium points.
 :width: 260px
 
 Example potential with a local maximum and local minimum.
@@ -1180,7 +1180,7 @@ Famous tennis player Serena Williams is playing a match when her opponent sends 
 
 a) Determine the potential energy of the ball before Williams hits it.
 
-b) Determine the kinetic energy of the ball before Williams spikes it.
+b) Determine the kinetic energy of the ball before Williams hits it.
 
 c) Determine the total mechanical energy of the ball before Williams hits it.
 
@@ -1198,7 +1198,7 @@ Consider the forces $F_{1}= x\hat{\imath} + y\hat{\jmath}$ , and $F_{2}= y\hat{\
 
 a) Find the work done by both forces to move a particle from position $(0,$ 0) to $(0,$ 1) and then the work done to move the particle from position $(0,$ 1) to $(1,$ 1)
 
-b) Find the work done by both forces to move a particle from position $(0,$ 0) to $(1,$ 1) using a direct path (e.g., using the line $y = x)$.
+b) Find the work done by both forces to move a particle from position $(0,$ 0) to $(1,$ 1) using a direct path (e.g., using the line $y = x$).
 
 c) Note that the initial and final points in a) and b) are the same. How does the total work done from both forces compare between a) and b)? What does that mean for the forces?
 

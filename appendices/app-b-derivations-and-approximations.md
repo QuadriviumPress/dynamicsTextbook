@@ -92,10 +92,10 @@ $$
 -\bigg(y - \frac{m\gamma}{L^{2}} \bigg)^{2}= -y^{2}+ \frac{2m\gamma}{L^{2}} y - \bigg(\frac{m\gamma}{L^{2}} \bigg)^{2}(\mathrm{B}.8)
 $$
 
-Note that the first two terms on the righthand side of Equation 8 are present in the righthand side of Equation B.7. From Equation B.8, we can say that
+Note that the first two terms on the right-hand side of Equation B.8 are present on the right-hand side of Equation B.7. From Equation B.8, we can say that
 
 $$
--y^{2}+ \frac{2m\gamma}{L^{2}} = -\bigg(y - \frac{m\gamma}{L^{2}} \bigg)^{2}+ \bigg(\frac{m\gamma}{L^{2}} \bigg)^{2}(\mathrm{B}.9)
+-y^{2}+ \frac{2m\gamma}{L^{2}} y = -\bigg(y - \frac{m\gamma}{L^{2}} \bigg)^{2}+ \bigg(\frac{m\gamma}{L^{2}} \bigg)^{2}(\mathrm{B}.9)
 $$
 
 And we can substitute Equation B.9 into Equation B.7 to give:
@@ -249,7 +249,7 @@ f(x) &= f(x_{0}) + \frac{\mathrm{d}f(x_{0})}{\mathrm{d}x} (x - x_{0}) + \frac{1}
 \end{aligned}
 $$
 
-where $x_{0}$ = 0 has the same meaning as before.
+where $x_{0}$ has the same meaning as before.
 
 For example, the Taylor series expansion of $\sqrt{1 + x}$ (where $x_{0}$ = 0) is equal to:
 
@@ -295,7 +295,7 @@ The small angle approximation is an application of the Taylor Series expansion. 
 
 You will use the small angle assumption many times in this course and in other courses. As an astronomer, I use the small angle approximation in my research all the time. For example, large objects in space
 
-(e.g., diameter of a crater on the moon, radius of a planet-forming disk around another star, distance between two interacting galaxies) subtend very tiny angles because they are so far away $(\theta$ is small because $D$ is large. We also use this approximation in optics with interference and diffraction patterns, where the distance to the first fringes corresponds to small angle differences from the normal.
+(e.g., diameter of a crater on the moon, radius of a planet-forming disk around another star, distance between two interacting galaxies) subtend very tiny angles because they are so far away $(\theta$ is small because $D$ is large). We also use this approximation in optics with interference and diffraction patterns, where the distance to the first fringes corresponds to small angle differences from the normal.
 
 ::::
 
@@ -303,7 +303,7 @@ You will use the small angle assumption many times in this course and in other c
 
 1. Use a calculator to verify that $\sin x \approx x$ and $\cos x \approx 1 - \frac{x^{2}}{2}$ for small angles.
 
-2. Try plotting both functions and see at which angles the approximations break down. Practice using a programming language like python if you can.
+2. Try plotting both functions and see at which angles the approximations break down. Practise using a programming language like python if you can.
 
 3. You have a telescope and lens that can resolve (separate) objects that subtend angles of at least $0.0003^{\circ}$. Could you resolve a crater that is 1 km in diameter on the Moon with this telescope? Assume the Moon is 300,000 km away.
 

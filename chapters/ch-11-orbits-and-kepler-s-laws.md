@@ -30,14 +30,14 @@ A good example of a [hyperbolic orbit](https://solarsystem.nasa.gov/asteroids-co
 (sec-11-1)=
 ## 11.1 Definition of an Ellipse
 
-[Figure 11.1](#fig-11-1) shows an example ellipse with several key properties labeled. An ellipse is essentially an elongated circle, where the longer of the two axes is the semi-major axis $(a)$ and the shorter of the two axes is the semi-minor axis $(b)$. The degree to which the circle has been stretched is called the eccentricity (or ellipticity) and is denoted by the symbol $\varepsilon$,
+[Figure 11.1](#fig-11-1) shows an example ellipse with several key properties labelled. An ellipse is essentially an elongated circle, where the longer of the two axes is the semi-major axis $(a)$ and the shorter of the two axes is the semi-minor axis $(b)$. The degree to which the circle has been stretched is called the eccentricity (or ellipticity) and is denoted by the symbol $\varepsilon$,
 
 (eq-11-1)=
 $$
 \varepsilon=\sqrt{1-\frac{b^2}{a^2}}.
 $$
 
-[Figure 11.1](#fig-11-1) also shows two special points in red, which are called the foci (focus is the singular term). These two foci, denoted as $f_{1}$ and $f_{2}$, are located on the semi-major axis, each at a distance $\varepsilon a$ from the center of the ellipse. The foci of an ellipse define the shape. An ellipse is defined by a locus (path) of points where the total distance from any point on
+[Figure 11.1](#fig-11-1) also shows two special points in red, which are called the foci (focus is the singular term). These two foci, denoted as $f_{1}$ and $f_{2}$, are located on the semi-major axis, each at a distance $\varepsilon a$ from the centre of the ellipse. The foci of an ellipse define the shape. An ellipse is defined by a locus (path) of points where the total distance from any point on
 
 <!-- Source PDF page 238; printed label 229. -->
 
@@ -49,7 +49,7 @@ the locus to the two foci adds up to a constant. For example, [Figure 11.1](#fig
 :alt: Figure 11.1 from the source textbook
 :width: 351px
 
-Schematic of an ellipse. The center is shown by a black dot and the two foci are shown as red dots. The semi-major axis $(a)$ and semi-minor axis $(b)$ are also labeled. The two foci are each a distance $\varepsilon a$ from the center, where $\varepsilon$ is the eccentricity. The total distance between the two foci $(r_{1}$ and $r_{2})$ and any position on the ellipse sum to a constant, $r_{1}+ r_{2}$ = constant.
+Schematic of an ellipse. The centre is shown by a black dot and the two foci are shown as red dots. The semi-major axis $(a)$ and semi-minor axis $(b)$ are also labelled. The two foci are each a distance $\varepsilon a$ from the centre, where $\varepsilon$ is the eccentricity. The distances from the two foci ($r_{1}$ and $r_{2}$) to any position on the ellipse sum to a constant, $r_{1}+ r_{2}$ = constant.
 :::
 
 The distances $r_{1}$ and $r_{2}$ in [Figure 11.1](#fig-11-1) can be measured relative to $a, \varepsilon$, and a position angle, $\theta$. [Figure 11.2](#fig-11-2) shows how we can relate these properties through Pythagoras’ theorem. Using the right-angle triangle in [Figure 11.2](#fig-11-2), we have
@@ -98,7 +98,7 @@ $$
 :::{figure} ../images/figures/figure-11-2.png
 :label: fig-11-2
 :enumerator: 11.2
-:alt: Figure shows the vector breakdown for a locus on an ellipse in terms following standard Cartesian coordinates.
+:alt: Figure shows the vector breakdown for a locus on an ellipse in terms of standard Cartesian coordinates.
 :width: 351px
 
 This shows the position vectors $r_{1}$ and $r_{2}$ again for the two foci, where $r_{1}$ has been broken up into two components, $r_{1}\sin \theta$ and $r_{1}\cos \theta$. This produces a right angle triangle with $r_{2}^{2} = (r_{1}\sin \theta)^{2}+ (2a\varepsilon + r_{1}\cos \theta)^{2}$ using the Pythagorean theorem.
@@ -137,7 +137,7 @@ $$ (eq-11-4)
 :::{figure} ../images/figures/figure-11-3.png
 :label: fig-11-3
 :enumerator: 11.3
-:alt: Figure shows an ellipse representing an orbit with the apocenter and pericenter distances and the semi-major and semi-minor axes labeled.
+:alt: Figure shows an ellipse representing an orbit with the apocenter and pericenter distances and the semi-major and semi-minor axes labelled.
 :width: 351px
 
 The apocenter $r_{a}$ and pericenter $r_{p}$ for an ellipse. Also shown is $r_{c}$ the distance between the focus and locus at an angle that is perpendicular to the semi-major axis $(\theta = 90^{\circ})$.
@@ -279,7 +279,7 @@ $$
 
 So our initial energy is $E_i=-m\gamma^2/(2L^2)$.
 
-Now, let’s consider what happens to the energy after the engines are fired briefly. We will first assume that the satellite moves a negligible amount, so its position vector, $r$, is unchanged during the energy boost from the engines. We are told that the energy is directed inward toward the Earth. In other words, the energy is applied along a radial direction. Any motion along the radial direction does not change the angular momentum, because $L = \vec{r} \times \vec{p}$ . The component of motion along a radial direction does not produce additional angular momentum. So $L$ is the same before and after the energy boost. Thus, the effective potential does not change.
+Now, let’s consider what happens to the energy after the engines are fired briefly. We will first assume that the satellite moves a negligible amount, so its position vector, $r$, is unchanged during the energy boost from the engines. We are told that the engine is fired inward toward the Earth. In other words, the thrust is applied along a radial direction. Any motion along the radial direction does not change the angular momentum, because $L = \vec{r} \times \vec{p}$ . The component of motion along a radial direction does not produce additional angular momentum. So $L$ is the same before and after the energy boost. Thus, the effective potential does not change.
 
 But, the energy boost does induce a change in the radial momentum, which means that $\dot{r} \not =$ 0. If we have a radial velocity, then our energy after the boost, $E_{f}$ is
 
@@ -312,7 +312,7 @@ look like for this satellite. Note, we are assuming that the boost in energy is 
 Change in energy for our perturbed satellite. The satellite starts in a circular orbit so that $E = E_{i}$ which is at the minimum of the effective potential. After the engines are fired, the energy increases so that $E = E_{f}$.
 :::
 
-[Figure 11.4](#fig-11-4) shows the initial energy, $E_{i}$ at the minimum of $U_{eff}$ and the final energy $E_{f}$ which is somewhat larger. The increase in energy makes the satellite go into an elliptical orbit. We can see that the orbit is elliptical because we have two solutions for $r$ when the energy line hits the effective potential curve (denoted by $r_{1}$ and $r_{2}$ in the figure). These values of $r_{1}$ and $r_{2}$ are the perigee and apogee positions of the satellite (with the Earth at a focus). If the engines move the rocket inward initially, the rocket will begin moving toward its perigee position (from an initially circular orbit of $r_{c}$).
+[Figure 11.4](#fig-11-4) shows the initial energy, $E_{i}$ at the minimum of $U_{eff}$ and the final energy $E_{f}$ which is somewhat larger. The increase in energy makes the satellite go into an elliptical orbit. We can see that the orbit is elliptical because we have two solutions for $r$ when the energy line hits the effective potential curve (denoted by $r_{1}$ and $r_{2}$ in the figure). These values of $r_{1}$ and $r_{2}$ are the perigee and apogee positions of the satellite (with the Earth at a focus). If the engines move the satellite inward initially, the satellite will begin moving toward its perigee position (from an initially circular orbit of $r_{c}$).
 
 Alternatively, we could argue that the orbit is elliptical by looking at the equation for $\varepsilon$ in [Equation 11.5](#eq-11-5). From this equation, $\varepsilon$ = 0 when $E = E_{\min}$ and $\varepsilon$ will increase if $E > E_{\min}$. An orbit is circular if $\varepsilon$ = 0 and elliptical for 0 $< \varepsilon < 1$.
 
@@ -331,7 +331,7 @@ The three laws of planetary motion are:
 
 3. The square of the period of a full orbit about the Sun is proportional to the cube of the semi-major axis.
 
-For the first law, we have shown in this chapter (and in the last chapter) that bound orbits are elliptical in a gravitational potential (we consider circular orbits to be a special case of the elliptical orbit where $r_{p}= r_{a})$. Gravity being a central force that follows an inverse-
+For the first law, we have shown in this chapter (and in the last chapter) that bound orbits are elliptical in a gravitational potential (we consider circular orbits to be a special case of the elliptical orbit where $r_{p}= r_{a}$). Gravity being a central force that follows an inverse-
 
 <!-- Source PDF page 245; printed label 236. -->
 
@@ -452,7 +452,7 @@ Halley’s comet has a period of 75 years. **What is its semi-major axis in au?*
 
 **Solution**
 
-This question is a straight forward example of Kepler’s third law. We will solve it in two ways. The first way is to just apply Kepler’s third law as it is written.
+This question is a straightforward example of Kepler’s third law. We will solve it in two ways. The first way is to just apply Kepler’s third law as it is written.
 
 $$
 T^{2}= \frac{4\pi ^{2}a^{3}}{GM}
@@ -531,7 +531,7 @@ Scaling relations, like the one used in this question, can be extremely useful. 
 
 ::::{admonition} Sample Problem 11-3
 
-Halley’s comet has an eccentricity of $\varepsilon = 0.967$. **What are the perihelion and aphelion distances and how fast is the comet traveling at those positions?**
+Halley’s comet has an eccentricity of $\varepsilon = 0.967$. **What are the perihelion and aphelion distances and how fast is the comet travelling at those positions?**
 
 **Solution**
 
@@ -608,7 +608,7 @@ As expected, we get $v_{p}> v_{a}$.
 (sec-11-5)=
 ## 11.5 Real World Application
 
-Preventing an asteroid strike on Earth may seem like a plot out of a movie, but there is ongoing research into how to do this properly. Rather than trying to blow up the asteroid, scientists have come up with a different technique: alter the orbit through a kinetic impact. The basis of this plan is to slam a spacecraft into an asteroid head on so that it loses angular momentum and subsequently moves into a slightly different orbit.
+Preventing an asteroid strike on Earth may seem like a plot out of a movie, but there is ongoing research into how to do this properly. Rather than trying to blow up the asteroid, scientists have come up with a different technique: alter the orbit through a kinetic impact. The basis of this plan is to slam a spacecraft into an asteroid head-on so that it loses angular momentum and subsequently moves into a slightly different orbit.
 
 The Double Asteroid Redirection Test (DART) spacecraft was launched to test this exact scenario. DART targeted a tiny asteroid called Dimorphos, which is in orbit around a larger asteroid, Didymos. The goal of this mission was to use the kinetic impact of DART to change the orbital parameters of Dimorphos.
 
@@ -805,7 +805,7 @@ A satellite is orbiting the Earth in an elliptical orbit. If the eccentricity is
 
 ::::{admonition} Practice Problem 11-10
 
-A satellite has an elliptical orbit where it is 250km above the Earth’s surface at perigee and it is traveling at a speed of 8km $\mathrm{s}^{-1}$ at perigee. How high above the Earth’s surface is this satellite at apogee? Hint: You can assume the Earth’s radius is 6370km and the mass of the Earth is $5.97 \times 10^{24}\mathrm{kg}$.
+A satellite has an elliptical orbit where it is 250km above the Earth’s surface at perigee and it is travelling at a speed of 8km $\mathrm{s}^{-1}$ at perigee. How high above the Earth’s surface is this satellite at apogee? Hint: You can assume the Earth’s radius is 6370km and the mass of the Earth is $5.97 \times 10^{24}\mathrm{kg}$.
 
 ::::
 

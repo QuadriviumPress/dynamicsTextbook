@@ -51,7 +51,7 @@ $$ (eq-12-1)
 
 <!-- Source PDF page 258; printed label 249. -->
 
-where $L$ is the Lagrangian, and we will use the symbol $L$ for the Lagrangian to make it distinct from the angular momentum (defined as $L$ in this text).
+where $L$ is the Lagrangian. This is the same symbol used for angular momentum in this text, so check the surrounding equations before deciding which quantity $L$ means.
 
 $L$ is a function of position and velocity. That is, $L = L(x,\dot{x}$ ) in 1-D, because $K = K(\dot{x}$ ) and $U = U(x)$. In this case, $K$ is not a function of position and $U$ is not a function of velocity. As such,
 
@@ -93,7 +93,7 @@ The Lagrangian method represents yet another way you can solve problems in physi
 
 ::::{admonition} Caveats to the Lagrange Method
 
-For the Lagrange method to work, we must treat $\dot{x}_{i}$ and $x_{i}$ as independent variables and assume that the time dependence only enters the problem through $x$ and $\dot{x}_{i}$.
+For the Lagrange method to work, we must treat $\dot{x}_{i}$ and $x_{i}$ as independent variables and assume that the time dependence only enters the problem through $x_{i}$ and $\dot{x}_{i}$.
 
 ::::
 
@@ -204,7 +204,7 @@ $$
 from
 
 $$
-m_{1}\ddot{x} = (m1 + m2)\dot{x} + m_{1}gx_{1}+ m_{2}g(h - x_{1})
+m_{1}\ddot{x} = (m_{1} + m_{2})\dot{x} + m_{1}gx_{1}+ m_{2}g(h - x_{1})
 $$
 
 until you get used to the process; doing so can make it easier to see position and velocity as separate variables.
@@ -230,12 +230,12 @@ The Atwood machine for this problem.
 
 **Solution**
 
-We’ve looked at this problem previously with energy conservation ([Sample Problem 9-3](#example-9-3)). Please review that question for more details, but briefly, the potential energy of the system comes from the vertical position of the two masses and the kinetic energy is from the linear motion of the two masses and the rotational motion of the pulley. [Figure 12.3](#fig-12-3) shows the definition of the position of each of the masses. Note that we have set the $y$ = 0 line (and the $U$ = 0 line) to be at the center of the pulley.
+We’ve looked at this problem previously with energy conservation ([Sample Problem 9-3](#example-9-3)). Please review that question for more details, but briefly, the potential energy of the system comes from the vertical position of the two masses and the kinetic energy is from the linear motion of the two masses and the rotational motion of the pulley. [Figure 12.3](#fig-12-3) shows the definition of the position of each of the masses. Note that we have set the $y$ = 0 line (and the $U$ = 0 line) to be at the centre of the pulley.
 
 :::{figure} ../images/figures/figure-12-3.png
 :label: fig-12-3
 :enumerator: 12.3
-:alt: Figure shows the position of each mass in the Atwood machine relative to center of the pulley.
+:alt: Figure shows the position of each mass in the Atwood machine relative to the centre of the pulley.
 :width: 211px
 
 The Atwood machine with the positions of each mass.
@@ -463,7 +463,7 @@ You will also notice that this is the effective force for a system moving under 
 (sec-12-4)=
 ## 12.4 Example Problem: Sphere on an Incline
 
-The following problem includes rolling and translation motion.
+The following problem includes rolling and translational motion.
 
 (example-12-4)=
 
@@ -511,7 +511,7 @@ $$
 
 The potential energy is negative because $U$ decreases as the sphere rolls down and we have defined $x$ as positive pointing down the incline (how we defined the coordinate system).
 
-For the kinetic energy, we have the translation and rotation motion of the sphere, which we defined in [Chapter 8](#ch-8). The kinetic energy is:
+For the kinetic energy, we have the translational and rotational motion of the sphere, which we defined in [Chapter 8](#ch-8). The kinetic energy is:
 
 $$
 K = \frac{1}{2} M\dot{x}^{2}+ \frac{1}{2} I\omega ^{2}
@@ -617,7 +617,7 @@ $$
 
 <!-- Source PDF page 269; printed label 260. -->
 
-so let’s find our kinetic and potential energies. We only have translation kinetic energy from the motion of the particle,
+so let’s find our kinetic and potential energies. We only have translational kinetic energy from the motion of the particle,
 
 $$
 K = \frac{1}{2} mv^{2}
@@ -686,7 +686,7 @@ $$
 
 ::::{admonition} Continued
 
-We can start by solving the left-side:
+We can start by solving the right-hand side:
 
 $$
 \begin{aligned}
@@ -696,7 +696,7 @@ $$
 \end{aligned}
 $$
 
-Now let’s solve the right-side:
+Now let’s solve the left-hand side:
 
 $$
 \begin{aligned}
@@ -724,18 +724,18 @@ m\ddot{x}(1 + 16a^{2}x^{6}) + m\dot{x}(96a^{2}x^{5}\dot{x}) = 48m\dot{x}^{2}a^{2
 $$
 
 $$
-m\ddot{x}(1 + 16a^{2}x^{6}) + m\dot{x}(48^{2}x^{5}\dot{x}) + 4mgax^{3}= 0
+m\ddot{x}(1 + 16a^{2}x^{6}) + m\dot{x}(48a^{2}x^{5}\dot{x}) + 4mgax^{3}= 0
 $$
 
 $$
-\ddot{x}(1 + 16a^{2}x^{6}) + \dot{x}(48^{2}x^{5}\dot{x}) + 4gax^{3}= 0
+\ddot{x}(1 + 16a^{2}x^{6}) + \dot{x}(48a^{2}x^{5}\dot{x}) + 4gax^{3}= 0
 $$
 
 The solution is a differential equation of motion, but it is difficult to solve because it is non-linear with respect to both $x$ and $\dot{x}$ . Thus, we leave the equation in this form.
 
 1. Try solving this problem using energy conservation. Hint: Remember that energy conservation uses full derivatives and not partial derivatives.
 
-2. If you were to try Newton’s law, to solve this problem, what other force is acting on the bead other than gravity (it is this force that makes applying Newton’s laws difficult)?
+2. If you were to try Newton’s laws to solve this problem, what other force is acting on the bead other than gravity (it is this force that makes applying Newton’s laws difficult)?
 
 ::::
 
@@ -748,7 +748,7 @@ Initially, it might seem like the Euler-Lagrange Method is unnecessarily complic
 
 Lagrangian mechanics help simplify the calculations for complex or even chaotic systems where forces are hard to define or the initial conditions can drastically change the outcome (e.g., consider the [motion of a double pendulum](https://www.youtube.com/watch?v=czLIj-4suOk)). In terms of physics research, solving problems with the Euler-Lagrange method is often more efficient when mapping the motion of stars in galactic mergers or near supermassive black holes, tracing particle collisions in accelerators, solving problems in fluid mechanics, or tracking systems of particles in thermodynamics or quantum mechanics. The Euler-Lagrange equations are a tool to break down big problems into smaller calculations.
 
-One common application of Lagrangian mechanics is with magnetohydrodynamics (MHD), which is the study of fluids that conduct electrically. MHD is used in many branches of physics, but one example is nuclear fusion experimentation, where many experiments seek to produce energy by magnetically confining a fast-moving plasma in a torus. MHD research must solve various equations such as the equation of state, mass continuity, Faraday’s law, and Ohm’s law simultaneously for the entire system, and these equations are usually non-linear with time. As such, Lagrangian mechanics are often employed to simplify the problem.
+One common application of Lagrangian mechanics is with magnetohydrodynamics (MHD), which is the study of fluids that conduct electricity. MHD is used in many branches of physics, but one example is nuclear fusion experimentation, where many experiments seek to produce energy by magnetically confining a fast-moving plasma in a torus. MHD research must solve various equations such as the equation of state, mass continuity, Faraday’s law, and Ohm’s law simultaneously for the entire system, and these equations are usually non-linear with time. As such, Lagrangian mechanics are often employed to simplify the problem.
 
 For more information: [Wikipedia webpage on MHD](https://en.wikipedia.org/wiki/Magnetohydrodynamics), listing various forms and equations. [Science article](https://www.science.org/content/article/bizarre-reactor-might-save-nuclear-fusion) on some recent nuclear fusion experiment designs.
 
@@ -927,7 +927,7 @@ b) Check that this answer makes sense by applying the Euler-Lagrange equations a
 :::{figure} ../images/figures/figure-12-10.png
 :label: fig-12-10
 :enumerator: 12.10
-:alt: Figure shows a physical pendulum disk that is pivoted a small distance above its center.
+:alt: Figure shows a physical pendulum disk that is pivoted a small distance above its centre.
 :width: 93px
 
 Figure for [Problem 12-8](#problem-12-8).
@@ -950,7 +950,7 @@ $$
 
 where $a$ is a constant and 0 $< \theta < \pi$. See the figure below.
 
-a) If gravity is the only force on the snowboarder, find the potential energy. Express this in terms of $\theta$ and $\dot{\theta}$ .
+a) If gravity is the only force on the snowboarder, find the potential energy. Express this in terms of $\theta$.
 
 b) What is the kinetic energy of the snowboarder? Express this in terms of $\theta$ and $\dot{\theta}$ .
 
@@ -967,7 +967,7 @@ d) Use the Euler-Lagrange equations to find the differential equation of motion.
 :::{figure} ../images/figures/figure-12-11.png
 :label: fig-12-11
 :enumerator: 12.11
-:alt: Figure shows a cartoon snowboarder on a parabolic-like track with Cartesian coordinates labeled.
+:alt: Figure shows a cartoon snowboarder on a parabolic-like track with Cartesian coordinates labelled.
 :width: 232px
 
 Figure for [Problem 12-9](#problem-12-9).
