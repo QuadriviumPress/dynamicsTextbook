@@ -313,7 +313,7 @@ $$
 
 Note that this equation has the same form as the 1-D case (see Example 1-1), but with a $\sin \theta$ term. If $\theta = 90^{\circ}$, then the ball is being thrown straight up and we recover the 1-D case exactly, as we should. So the 2-D equation is a more generic form of how the ball moves, whereas the 1-D situation is a specific case.
 
-2. **How far does the ball travel horizontally when it hits the ground?** Unlike the vertical motion, the horizontal motion does not have an acceleration. So the horizontal component of the motion remains constant throughout the ball’s travels. The horizontal component of the motion is given by $v_{x}= v_{0}\cos \theta$. Assuming that the ball starts at $x$ = 0, we want to calculate the position it has travelled after time $t_{C}$. That distance is simply given by $x_{C}= v_{x}t_{C}$, because the ball starts at $x$ = 0 (definition) and $a_{x}$ = 0. That means we need to know how long the ball was in the air to know how far it travelled horizontally.
+2. **How far does the ball travel horizontally when it hits the ground?** Unlike the vertical motion, the horizontal motion does not have an acceleration. So the horizontal component of the motion remains constant throughout the ball’s travels. The horizontal component of the motion is given by $v_{x}= v_{0}\cos \theta$. Assuming that the ball starts at $x$ = 0, we want to calculate the position it has traveled after time $t_{C}$. That distance is simply given by $x_{C}= v_{x}t_{C}$, because the ball starts at $x$ = 0 (definition) and $a_{x}$ = 0. That means we need to know how long the ball was in the air to know how far it traveled horizontally.
 
 <!-- Source PDF page 46; printed label 37. -->
 
@@ -337,7 +337,7 @@ $$
 t_{C}=\frac{v_{0}\sin\theta+\sqrt{v_{0}^{2}\sin^{2}\theta+2gr_{0}}}{g}
 $$
 
-And the horizontal distance travelled by the ball in that time is:
+And the horizontal distance traveled by the ball in that time is:
 
 $$
 x_{C}=v_{x}t_{C}
@@ -647,7 +647,7 @@ a &= \frac{\Delta v}{\Delta x} v =\Rightarrow \frac{\Delta x}{\Delta t} = v \\
 \end{aligned}
 $$
 
-The chain rule simplifies the math needed to solve the problem. Tricks like this are helpful to more efficiently tackle physics problems. It may not be intuitive to you yet, but the more you practise using this trick, the more you will be able to know when to apply it.
+The chain rule simplifies the math needed to solve the problem. Tricks like this are helpful to more efficiently tackle physics problems. It may not be intuitive to you yet, but the more you practice using this trick, the more you will be able to know when to apply it.
 
 Using the chain rule, we can get the equation of motion in terms of $v(x)$:
 
@@ -894,11 +894,11 @@ Figure for problem 2-8.
 
 ::::{admonition} Practice Problem 2-9
 
-Two blocks are sitting on top of each other on a frictionless surface. The top block has a mass $m_{1}$ and the bottom block has a mass $m_{2}$. There is a coefficient of friction $\mu$ between the two blocks. At $t = 0, m_{1}$ is moving with a speed of $v_{0}$ relative to $m_{2}$, and $m_{2}$ is at rest relative to the frictionless surface. After a certain time, $t = t_{r}, m_{1}$ will be at rest with respect to $m_{2}$ (e.g., the two blocks are travelling at the same velocity).
+Two blocks are sitting on top of each other on a frictionless surface. The top block has a mass $m_{1}$ and the bottom block has a mass $m_{2}$. There is a coefficient of friction $\mu$ between the two blocks. At $t = 0, m_{1}$ is moving with a speed of $v_{0}$ relative to $m_{2}$, and $m_{2}$ is at rest relative to the frictionless surface. After a certain time, $t = t_{r}, m_{1}$ will be at rest with respect to $m_{2}$ (e.g., the two blocks are traveling at the same velocity).
 
 a) Draw the free-body diagram for both masses.
 
-b) Find time $t = t_{r}$ when the two masses are travelling at the same velocity.
+b) Find time $t = t_{r}$ when the two masses are traveling at the same velocity.
 
 c) Find the velocity of $m_{1}$ and $m_{2}$ at $t = t_{r}$.
 

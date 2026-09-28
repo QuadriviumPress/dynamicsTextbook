@@ -96,7 +96,7 @@ Note that the fictitious forces do not represent actual forces. Fictitious force
 
 ::::{admonition} Cora’s Thoughts
 
-Overall fictitious forces are forces that *appear* to act on an object to explain its motion. A good way to think of fictitious forces is in the context of driving a car. If you are driving a car down a straight road with cruise control on (travelling at a constant linear velocity), then you are in an inertial frame and you do not feel any forces from the motion of the car. However, when you hit a bend in the road you accelerate as you turn making the car a non-inertial frame. When the car turns left, it accelerates to the left, and you feel a “force” that pushes you to the right. That “force” is the fictitious force. It is the force felt in the opposite direction of the acceleration that comes from being an observer in a non-inertial frame, as you only know that you are in an accelerating frame due to feeling this fictitious force.
+Overall fictitious forces are forces that *appear* to act on an object to explain its motion. A good way to think of fictitious forces is in the context of driving a car. If you are driving a car down a straight road with cruise control on (traveling at a constant linear velocity), then you are in an inertial frame and you do not feel any forces from the motion of the car. However, when you hit a bend in the road you accelerate as you turn making the car a non-inertial frame. When the car turns left, it accelerates to the left, and you feel a “force” that pushes you to the right. That “force” is the fictitious force. It is the force felt in the opposite direction of the acceleration that comes from being an observer in a non-inertial frame, as you only know that you are in an accelerating frame due to feeling this fictitious force.
 
 :::{figure} ../images/figures/figure-4-2.png
 :label: fig-4-2
@@ -333,7 +333,7 @@ For a review of rotational motion see [Chapter 1.1.2](#sec-1-1-2) and for an exa
 (sec-4-4-1)=
 ### 4.4.1 Rotating Systems
 
-In this section, we will introduce rotating non-inertial frames. We often call the Earth’s surface an inertial frame in physics, but this assumption neglects the rotation of the Earth about its axis (and the rotation of the Earth around the Sun, the rotation of the Sun around the centre of our galaxy, and the motion of our galaxy within our Local Group of galaxies...). For simple problems, we can often assume the Earth’s surface is an inertial frame. But there are physics problems that require that you take into account Earth’s own rotation.
+In this section, we will introduce rotating non-inertial frames. We often call the Earth’s surface an inertial frame in physics, but this assumption neglects the rotation of the Earth about its axis (and the rotation of the Earth around the Sun, the rotation of the Sun around the center of our galaxy, and the motion of our galaxy within our Local Group of galaxies...). For simple problems, we can often assume the Earth’s surface is an inertial frame. But there are physics problems that require that you take into account Earth’s own rotation.
 
 For inertial frames, an object that is rotating with a constant angular velocity of $\vec{\omega}$ around a fixed axis has the following equations of motion.
 
@@ -353,7 +353,7 @@ Consider an object rotating with $\omega$ in the $\hat{k}$ direction and that th
 :alt: Figure shows an irregular object rotating around the z-axis.
 :width: 176px
 
-An irregular object rotating in the counterclockwise direction around the $z-$axis of an $xyz-$axis coordinate system. The labelled point is a distance $\vec{r}$ from the origin and a distance $\rho$ from the $z-$axis.
+An irregular object rotating in the counterclockwise direction around the $z-$axis of an $xyz-$axis coordinate system. The labeled point is a distance $\vec{r}$ from the origin and a distance $\rho$ from the $z-$axis.
 :::
 
 From this definition of $\vec{r}$ and $\vec{\rho}$ , we can show that the velocity is:
@@ -926,7 +926,7 @@ A small object of mass $m$ is suspended from the ceiling of a train by an ideal 
 
 ::::{admonition} Practice Problem 4-7
 
-A wheel of radius $R$ rolls on the ground without slipping in the $+x-$direction with a constant speed at its centre of mass of $v_{0}$. What is the magnitude of the centrifugal acceleration and the Coriolis acceleration of a point on the rim of the wheel?
+A wheel of radius $R$ rolls on the ground without slipping in the $+x-$direction with a constant speed at its center of mass of $v_{0}$. What is the magnitude of the centrifugal acceleration and the Coriolis acceleration of a point on the rim of the wheel?
 
 :::{figure} ../images/figures/figure-4-11.png
 :label: fig-4-11
@@ -945,9 +945,9 @@ Figure for [Problem 4-7](#problem-4-7).
 
 A fun house at a local amusement park has a circular room with a rotating floor that has a constant angular speed of $\omega _{0}\hat{k}$ (up direction). A physics student enters the room. Which fictitious forces does the student feel if they:
 
-a) sit in the very centre of the room?
+a) sit in the very center of the room?
 
-b) sit at a radius $r$ from the centre?
+b) sit at a radius $r$ from the center?
 
 c) move with a constant velocity from a radius $r_{1}$ to $r_{2}$?
 

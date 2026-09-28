@@ -30,7 +30,7 @@ This Appendix contains various formulas and constants that may be used throughou
 | Proton mass | $m_p$ | $1.67\times 10^{-27}\,\mathrm{kg}$ |
 | Coulomb constant | $k=\frac{1}{4\pi\epsilon_0}$ | $8.99\times 10^9\,\mathrm{N\,m^2\,C^{-2}}$ |
 
-Numerical values may also be presented with prefixes. For example, km corresponds to kilometre or 1000 m.
+Numerical values may also be presented with prefixes. For example, km corresponds to kilometer or 1000 m.
 
 | Factor | Prefix | Symbol | Factor | Prefix | Symbol |
 | --- | --- | --- | --- | --- | --- |

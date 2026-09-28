@@ -170,7 +170,7 @@ $$ (eq-8-5)
 (sec-8-3)=
 ## 8.3 Work in Different Frames
 
-The work-kinetic energy theorem applies to all inertial frames (constant velocity) whether they are moving or stationary. So the change in work is the same within a stationary $(S)$ frame or in a moving frame $S^{\prime }$ (e.g., the centre-of-mass frame such as in [Chapter 6](#ch-6)).
+The work-kinetic energy theorem applies to all inertial frames (constant velocity) whether they are moving or stationary. So the change in work is the same within a stationary $(S)$ frame or in a moving frame $S^{\prime }$ (e.g., the center-of-mass frame such as in [Chapter 6](#ch-6)).
 
 [Figure 8.1](#fig-8-1) shows a particle starting from rest and moving under a constant force $F$ in a laboratory. This particle will have a constant acceleration $a$ due to this force. The work done to move this particle from point $x_{1}$ to $x_{2}$ in the laboratory frame $(S)$ is simply $W_{S}= F\Delta x = \Delta K$ because all the motion is in 1-D.
 
@@ -258,13 +258,13 @@ $$
 \vec{F}_{g}= - \frac{GMm}{r^{2}} \hat{r}
 $$ (eq-8-7)
 
-where $G$ is the gravitational constant of $6.67 \times 10^{-11}$ N $\mathrm{m}^{2}\mathrm{kg}^{-2}, M$ is the mass of the object producing the gravitational field, $m$ is the mass of an object being accelerated in the gravitational field, and $r$ is the distance between the centres of the two objects. Thus, the true form for the acceleration due to gravity is given by:
+where $G$ is the gravitational constant of $6.67 \times 10^{-11}$ N $\mathrm{m}^{2}\mathrm{kg}^{-2}, M$ is the mass of the object producing the gravitational field, $m$ is the mass of an object being accelerated in the gravitational field, and $r$ is the distance between the centers of the two objects. Thus, the true form for the acceleration due to gravity is given by:
 
 $$
 \vec{g} = - \frac{GM}{r^{2}} \hat{r}
 $$ (eq-8-8)
 
-Note that the acceleration due to gravity always points toward the centre of the source of the gravitational field (points radially inward).
+Note that the acceleration due to gravity always points toward the center of the source of the gravitational field (points radially inward).
 
 ::::{tip} Quick Question
 
@@ -293,9 +293,9 @@ $$
 A cartoon of the Earth with two different vectors, $\vec{r}_{1}$ and $\vec{r}_{2}$. Each vector also has a circle with corresponding radii of $r_{1}$ and $r_{2}$. Every point on the $r_{1}$ circle will have the same gravitational field magnitude and similarly, every point on the $r_{2}$ circle will have the same gravitational field magnitude.
 :::
 
-Since $r_{2}> r_{1}, |\vec{g}_{1}| > |\vec{g}_{2}|$. But any point on a sphere with radius $r_{1}$ around the Earth will have the same magnitude of acceleration due to gravity (e.g., the circles in [Figure 8.2](#fig-8-2)), and likewise for all the points on a sphere with radius $r_{2}$. You can think of gravity as a sphere of influence, where any point that has the same distance from the centre of the Earth has the same magnitude of $|\vec{g}|$.
+Since $r_{2}> r_{1}, |\vec{g}_{1}| > |\vec{g}_{2}|$. But any point on a sphere with radius $r_{1}$ around the Earth will have the same magnitude of acceleration due to gravity (e.g., the circles in [Figure 8.2](#fig-8-2)), and likewise for all the points on a sphere with radius $r_{2}$. You can think of gravity as a sphere of influence, where any point that has the same distance from the center of the Earth has the same magnitude of $|\vec{g}|$.
 
-Note that the direction of gravity will be different depending on where you are, because the force always points inward toward the centre of the Earth (in its true form, gravity is not vertical, but radial). For very small distances and positions near the Earth’s surface, you can still assume a vertical direction and constant magnitude for a frame at that surface.
+Note that the direction of gravity will be different depending on where you are, because the force always points inward toward the center of the Earth (in its true form, gravity is not vertical, but radial). For very small distances and positions near the Earth’s surface, you can still assume a vertical direction and constant magnitude for a frame at that surface.
 
 *What is the work done by gravity using this general equation?*
 
@@ -749,7 +749,7 @@ For a potential, $U$, there can be points where $-\vec{\nabla}U = \vec{F}$ = 0. 
 :::{figure} ../images/figures/figure-8-5.png
 :label: fig-8-5
 :enumerator: 8.5
-:alt: Figure shows a simple graph of a cubic-shaped function with local maximum and minimum points labelled to demonstrate equilibrium points.
+:alt: Figure shows a simple graph of a cubic-shaped function with local maximum and minimum points labeled to demonstrate equilibrium points.
 :width: 260px
 
 Example potential with a local maximum and local minimum.

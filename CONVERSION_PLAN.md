@@ -189,7 +189,7 @@ by 272 source SVG assets, under `unresolved` in `source/conversion.json`:
 | --- | --- |
 | A fraction split across a line boundary, so the region holds half of it | 167 |
 | A fraction rule crossing the region edge | 50 |
-| A horizontal brace grouping terms, which is not modelled | 20 |
+| A horizontal brace grouping terms, which is not modeled | 20 |
 | Glyphs the reconstruction could not account for | 17 |
 | A reconstruction that would not typeset | 8 |
 

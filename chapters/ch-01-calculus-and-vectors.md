@@ -119,7 +119,7 @@ For a rigid body rotating on a fixed axis, a point $P$ on the body will travel i
 
 For rotational motion, it is useful to describe the motion in terms of angles: angular position $(\theta)$, angular velocity $(\omega)$, and angular acceleration $(\alpha)$. Note that a radius $r$ is also necessary to describe the motion, and we will assume this is constant for now. For this coordinate system to work, you need a reference axis (reference point).
 
-Consider the figure below. From time $t_{1}$ to $t_{2}$ the object has rotated from the first position at $\theta _{1}$ to the second position at $\theta _{2}$. The distance from the origin to both points (radius) is constant. Thus, the change in angular position is $\Delta \theta = \theta _{2}- \theta _{1}$ in time $\Delta t = t_{2}- t_{1}$. The distance travelled is the arc, $s$, as traced out by the angle $\Delta \theta$.
+Consider the figure below. From time $t_{1}$ to $t_{2}$ the object has rotated from the first position at $\theta _{1}$ to the second position at $\theta _{2}$. The distance from the origin to both points (radius) is constant. Thus, the change in angular position is $\Delta \theta = \theta _{2}- \theta _{1}$ in time $\Delta t = t_{2}- t_{1}$. The distance traveled is the arc, $s$, as traced out by the angle $\Delta \theta$.
 
 :::{figure} ../images/figures/figure-1-3.png
 :label: fig-1-3

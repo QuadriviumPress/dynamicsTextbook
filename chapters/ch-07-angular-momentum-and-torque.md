@@ -156,7 +156,7 @@ Definition of the moment of inertia. This object will rotate about the fixed piv
 
 ::::{tip} Quick Questions
 
-1. Try calculating the moment of inertia for a simple geometric shape like a uniform ring or disk for an axis through the centre (see [Appendix A.4](#sec-A-4) for the solutions to many shapes).
+1. Try calculating the moment of inertia for a simple geometric shape like a uniform ring or disk for an axis through the center (see [Appendix A.4](#sec-A-4) for the solutions to many shapes).
 
 2. Show that $L = I\omega$ from $\vec{L} = \vec{r} \times \vec{p}$ for circular motion. Hint: Recall that $\vec{r} \perp \vec{p}$ for circular motion.
 
@@ -168,11 +168,11 @@ You can change the moment of inertia by changing the distribution of mass. For e
 
 ::::
 
-See [Appendix A.4](#sec-A-4) for a chart of basic shapes and their moments of inertia. Most of these equations are relative to a rotation axis through the centre of mass, whereas in practice, the rotation axis could be at a different location. If you change the location of the rotation axis, you can also change the mass distribution and the moment of inertia. We can calculate the new moment of inertia using the *parallel axis theorem*.
+See [Appendix A.4](#sec-A-4) for a chart of basic shapes and their moments of inertia. Most of these equations are relative to a rotation axis through the center of mass, whereas in practice, the rotation axis could be at a different location. If you change the location of the rotation axis, you can also change the mass distribution and the moment of inertia. We can calculate the new moment of inertia using the *parallel axis theorem*.
 
 <!-- Source PDF page 151; printed label 142. -->
 
-Equation 7.7 gives the parallel axis theorem. Consider an object that has a moment of inertia about its centre of mass of $I_{cm}$. If you were to pivot that object at a point $P$ that is a distance $d$ from the centre of mass, the moment of inertia about point $P$ would be.
+Equation 7.7 gives the parallel axis theorem. Consider an object that has a moment of inertia about its center of mass of $I_{cm}$. If you were to pivot that object at a point $P$ that is a distance $d$ from the center of mass, the moment of inertia about point $P$ would be.
 
 $$
 I_{p}= I_{cm}+ Md^{2}
@@ -182,7 +182,7 @@ where $I_{p}$ is the moment of inertia about $P$ and $M$ is the total mass of th
 
 ::::{admonition} Lance’s Thoughts
 
-The power of the parallel axis theorem shines through when you have a strange or unusual object that you can break into parts with individually easy moments. Once you’ve got those, you essentially stack them using the parallel axis theorem and add them all up. Don’t forget to calculate the centre of mass, too.
+The power of the parallel axis theorem shines through when you have a strange or unusual object that you can break into parts with individually easy moments. Once you’ve got those, you essentially stack them using the parallel axis theorem and add them all up. Don’t forget to calculate the center of mass, too.
 
 ::::
 
@@ -232,7 +232,7 @@ Let’s return to the pendulum program from [Chapter 3.4](#sec-3-4), but this ti
 :alt: Figure 7.4 from the source textbook
 :width: 455px
 
-Example of a simple pendulum. Left: The mass is in equilibrium when it is vertically downward and displaced from equilibrium when shifted an angle $\theta$ from the vertical axis. A restoring force $(F)$ moves the pendulum back to equilibrium. Right: The free-body diagram shows the labelled forces tension $(T)$ in red, gravity $(mg)$ in blue, and the restoring force $(mg\sin \theta)$ in magenta. Shown in dotted-red is the component of gravity that balances tension $(mg\cos \theta)$.
+Example of a simple pendulum. Left: The mass is in equilibrium when it is vertically downward and displaced from equilibrium when shifted an angle $\theta$ from the vertical axis. A restoring force $(F)$ moves the pendulum back to equilibrium. Right: The free-body diagram shows the labeled forces tension $(T)$ in red, gravity $(mg)$ in blue, and the restoring force $(mg\sin \theta)$ in magenta. Shown in dotted-red is the component of gravity that balances tension $(mg\cos \theta)$.
 :::
 
 The restoring force acting on the pendulum is given by $F = -mg\sin \theta$. The torque acting on the pendulum is then $\vec{\tau} = \vec{r}\times \vec{F}$ . So we need to find $\vec{r}, \vec{F}$ , and the angle between them.
@@ -326,19 +326,19 @@ By definition, a physical pendulum is any rigid body that is free to swing about
 :::{figure} ../images/figures/figure-7-5.png
 :label: fig-7-5
 :enumerator: 7.5
-:alt: Figure shows a physical pendulum of irregular shape with a pivot point near the top and the restoring force at the centre of mass toward the bottom.
+:alt: Figure shows a physical pendulum of irregular shape with a pivot point near the top and the restoring force at the center of mass toward the bottom.
 :width: 130px
 
-A physical pendulum. The body is suspended from the point $O$ and allowed to rotate freely by an angle $\theta$. The centre of mass of the system $C$ is located a distance $h$ from the pivot point. The total mass of the objects is $m$. The purple arrow shows the restoring force acting on this pendulum.
+A physical pendulum. The body is suspended from the point $O$ and allowed to rotate freely by an angle $\theta$. The center of mass of the system $C$ is located a distance $h$ from the pivot point. The total mass of the objects is $m$. The purple arrow shows the restoring force acting on this pendulum.
 :::
 
-Although the object has an irregular shape, the problem can be simplified by expressing the motion for the centre of mass rather than for each individual mass element of the object.
+Although the object has an irregular shape, the problem can be simplified by expressing the motion for the center of mass rather than for each individual mass element of the object.
 
 <!-- Source PDF page 155; printed label 146. -->
 
-You can think of this as compressing the mass of the entire object to a single point located at the centre of mass (point C) and then determining how the restoring force acts on that compressed object. The force acting on this physical pendulum is $F = -mg\sin \theta$ at the position C. This simplification is another strength of the centre of mass.
+You can think of this as compressing the mass of the entire object to a single point located at the center of mass (point C) and then determining how the restoring force acts on that compressed object. The force acting on this physical pendulum is $F = -mg\sin \theta$ at the position C. This simplification is another strength of the center of mass.
 
-The torque acting at the centre of mass is given by $\vec{\tau} = \vec{r}_{cm}\times F$. The $\vec{r}_{cm}$ vector is the vector from the pivot point to the centre of mass. We know that $\vec{r}_{cm}\perp F$, which means that our torque has a magnitude of $\tau = r_{cm}F = -mgh\sin \theta \approx -mgh\theta$ for small angles.
+The torque acting at the center of mass is given by $\vec{\tau} = \vec{r}_{cm}\times F$. The $\vec{r}_{cm}$ vector is the vector from the pivot point to the center of mass. We know that $\vec{r}_{cm}\perp F$, which means that our torque has a magnitude of $\tau = r_{cm}F = -mgh\sin \theta \approx -mgh\theta$ for small angles.
 
 If this is the only torque acting on our system, Equation (7.8) becomes:
 
@@ -358,9 +358,9 @@ $$
 0 = \frac{\mathrm{d}^{2}\theta}{\mathrm{d}t^{2}} + \frac{mgh}{I} \theta
 $$
 
-This is the exact same equation of motion as the simple pendulum, only that the simple pendulum had the length of the rope to the mass, $L$, and the physical pendulum has the distance between the pivot and the centre of mass $h$.
+This is the exact same equation of motion as the simple pendulum, only that the simple pendulum had the length of the rope to the mass, $L$, and the physical pendulum has the distance between the pivot and the center of mass $h$.
 
-So for a physical pendulum of any shape swinging from a pivot point that is a distance $h$ from its centre of mass, we find that the motion can be described with an angular frequency of $\omega_0=\sqrt{mgh/I}$, where $h$ is the distance to the centre of mass and $I$ is the moment of inertia for the body. Note that for an object to be a physical pendulum, the pivot point must be located away from the centre of mass (at the centre of mass, $h=0$).
+So for a physical pendulum of any shape swinging from a pivot point that is a distance $h$ from its center of mass, we find that the motion can be described with an angular frequency of $\omega_0=\sqrt{mgh/I}$, where $h$ is the distance to the center of mass and $I$ is the moment of inertia for the body. Note that for an object to be a physical pendulum, the pivot point must be located away from the center of mass (at the center of mass, $h=0$).
 
 (sec-7-5)=
 ## 7.5 Example of a Physical Pendulum
@@ -396,7 +396,7 @@ $$
 0 = \frac{\mathrm{d}^{2}\theta}{\mathrm{d}t^{2}} + \frac{Mgh\theta}{I}
 $$
 
-where $h$ is the distance to the centre of mass, $M=m_r+m_d$ is the total mass of the system, and $I$ is the moment of inertia for the system (see [Chapter 7.4](#sec-7-4)). The solution is a cosine function with an angular frequency of $\omega_0=\sqrt{Mgh/I}$. So the solution for the period of rotation is:
+where $h$ is the distance to the center of mass, $M=m_r+m_d$ is the total mass of the system, and $I$ is the moment of inertia for the system (see [Chapter 7.4](#sec-7-4)). The solution is a cosine function with an angular frequency of $\omega_0=\sqrt{Mgh/I}$. So the solution for the period of rotation is:
 
 $$
 T = \frac{2\pi}{\omega _{0}}
@@ -408,13 +408,13 @@ $$
 
 Getting the equation for the period isn’t the hard part. The trick for this problem is defining $h$ and $I$.
 
-Let’s start with $h$, which is the distance from the pivot to the centre of mass of the pendulum. Since both the rod and the disk have mass, the centre of mass of the two combined is located at a mass-averaged position between the two. We will need to calculate the position of the centre of mass (see [Chapter 6.4](#sec-6-4) for a definition of the centre of mass).
+Let’s start with $h$, which is the distance from the pivot to the center of mass of the pendulum. Since both the rod and the disk have mass, the center of mass of the two combined is located at a mass-averaged position between the two. We will need to calculate the position of the center of mass (see [Chapter 6.4](#sec-6-4) for a definition of the center of mass).
 
 <!-- Source PDF page 157; printed label 148. -->
 
-Fortunately, the centre of mass for each component of the pendulum is easy to calculate. The centre of mass for a uniform rod would be its midpoint and the centre of mass for a uniform disk would be its midpoint. For the rod, $r_{cm,r}= \frac{L}{2}$ (location of the midpoint of the rod from the pivot) whereas for the disk, $r_{cm,d}= L$ (location of the midpoint of the disk from the pivot). So we can treat both systems as effective point masses with all their mass at the respective centre-of-mass positions.
+Fortunately, the center of mass for each component of the pendulum is easy to calculate. The center of mass for a uniform rod would be its midpoint and the center of mass for a uniform disk would be its midpoint. For the rod, $r_{cm,r}= \frac{L}{2}$ (location of the midpoint of the rod from the pivot) whereas for the disk, $r_{cm,d}= L$ (location of the midpoint of the disk from the pivot). So we can treat both systems as effective point masses with all their mass at the respective center-of-mass positions.
 
-Thus, the centre of mass for this physical pendulum is:
+Thus, the center of mass for this physical pendulum is:
 
 $$
 h = \frac{m_{r}r_{cm,r}+ m_{d}r_{cm,d}}{m_{r}+ m_{d}}
@@ -426,7 +426,7 @@ $$
 
 where $M = m_{r}+ m_{d}$ is the total mass of the pendulum.
 
-Thus, we have a position for our centre of mass. Note that if our rod mass is very small (e.g., $m_{r}\rightarrow$ 0), then $M \rightarrow m_{d}$ and $r_{cm}\rightarrow L$, or the centre of the disk. This recovers the solution for a simple pendulum.
+Thus, we have a position for our center of mass. Note that if our rod mass is very small (e.g., $m_{r}\rightarrow$ 0), then $M \rightarrow m_{d}$ and $r_{cm}\rightarrow L$, or the center of the disk. This recovers the solution for a simple pendulum.
 
 Now let’s look at $I$. We have two objects, a rod and a disk. To get the moment of inertia for the combined rod+disk pendulum, we can simply add the $I$ components from each object separately.
 
@@ -451,20 +451,20 @@ $$
 :alt: Figure 7.8 from the source textbook
 :width: 93px
 
-Sketch of the disk with the pivot a distance $L$ from the centre of mass.
+Sketch of the disk with the pivot a distance $L$ from the center of mass.
 :::
 
 <!-- Source PDF page 158; printed label 149. -->
 
 ::::{admonition} Continued
 
-The moment of inertia for a disk with the axis of rotation through its centre of mass is ([Appendix A.4](#sec-A-4)):
+The moment of inertia for a disk with the axis of rotation through its center of mass is ([Appendix A.4](#sec-A-4)):
 
 $$
 I_{disk}= \frac{1}{2} m_{d}R^{2}
 $$
 
-But the pivot is not located at the centre of mass. The pivot is located a distance $L$ from the centre of mass. Therefore, we need to find $I$ for the disk about the pivot point, $O$. Using the parallel axis theorem ([Chapter 7.2.2](#sec-7-2-2)), we have,
+But the pivot is not located at the center of mass. The pivot is located a distance $L$ from the center of mass. Therefore, we need to find $I$ for the disk about the pivot point, $O$. Using the parallel axis theorem ([Chapter 7.2.2](#sec-7-2-2)), we have,
 
 $$
 I_{disk,0}= \frac{1}{2} m_{d}R^{2}+ m_{d}L^{2}
@@ -542,7 +542,7 @@ $$
 
 <!-- Source PDF page 160; printed label 151. -->
 
-Note that for the translational motion, we’re interested only in how the centre of mass is moving. That’s because the centre of mass has no rotational motion, only linear motion.
+Note that for the translational motion, we’re interested only in how the center of mass is moving. That’s because the center of mass has no rotational motion, only linear motion.
 
 Let’s set up our coordinate system. We define $+x$ toward the right, $+y$ up, and $+\omega$ in the clockwise direction. These choices are intentional. If the linear motion is in the $+\hat{\imath}$, then the rotation should be in the clockwise direction. While we set up the coordinate system to be most intuitive, as long as you are consistent with your defined coordinate system you will still get the correct answer.
 
@@ -550,18 +550,18 @@ Let’s look at $\sum F = ma_{cm}$ to start. What forces do we need to worry abo
 
 *What about* $a_{cm}$*?* Keep in mind that the acceleration corresponds to the bulk forward motion of the system. If the wheel was a square box that didn’t rotate, then $a_{cm}$ would be how fast you were able to drag the box. But the magnitude of $a_{cm}$ depends on the rate of rotation because all the motion happens due to rotation (condition of rolling without slipping).
 
-[Figure 7.11](#fig-7-11) shows a schematic of our rolling wheel. The wheel is rolling forward a distance $s$ represented by the red arc. As a result of moving forward, the centre of mass has changed position from $x_{1}$ to $x_{2}$, where $\Delta x = s$ (the translational motion is relative to the ground). That is, the system goes forward an equal distance given by the arc of the circle travelled.
+[Figure 7.11](#fig-7-11) shows a schematic of our rolling wheel. The wheel is rolling forward a distance $s$ represented by the red arc. As a result of moving forward, the center of mass has changed position from $x_{1}$ to $x_{2}$, where $\Delta x = s$ (the translational motion is relative to the ground). That is, the system goes forward an equal distance given by the arc of the circle traveled.
 
 :::{figure} ../images/figures/figure-7-11.png
 :label: fig-7-11
 :enumerator: 7.11
-:alt: Figure shows how the wheel rotates an arc length S as its centre of mass moves between two points.
+:alt: Figure shows how the wheel rotates an arc length S as its center of mass moves between two points.
 :width: 217px
 
-The rolling wheel of radius $R$. The centre of mass is given by the origin $(O)$ and the system moves forward a distance $s$ given by the red arc.
+The rolling wheel of radius $R$. The center of mass is given by the origin $(O)$ and the system moves forward a distance $s$ given by the red arc.
 :::
 
-The system has moved a distance $s$ in time $\Delta t$. If you have *rolling without slipping*, then the centre of mass motion is given by $v_{cm} = \frac{\Delta x}{\Delta t} = \frac{s}{\Delta t}$. For very small times,
+The system has moved a distance $s$ in time $\Delta t$. If you have *rolling without slipping*, then the center of mass motion is given by $v_{cm} = \frac{\Delta x}{\Delta t} = \frac{s}{\Delta t}$. For very small times,
 
 <!-- Source PDF page 161; printed label 152. -->
 
@@ -602,7 +602,7 @@ Here is a [video demonstration that shows positive and negative rotation](https:
 
 ::::
 
-A key feature of this problem is the condition of rolling without slipping. This condition specifies that the rotation is entirely responsible for any forward motion such that the rotation rate can be equated to the centre of mass motion. Under this condition,
+A key feature of this problem is the condition of rolling without slipping. This condition specifies that the rotation is entirely responsible for any forward motion such that the rotation rate can be equated to the center of mass motion. Under this condition,
 
 <!-- Source PDF page 162; printed label 153. -->
 
@@ -634,7 +634,7 @@ The external force is applied at the inner radius, $r$, whereas friction is acti
 :alt: Figure shows the direction of the radial vector and force vectors needed to calculate the torques produced by the applied force and the friction force.
 :width: 310px
 
-Sketch of how the two forces produce torques. The radius vectors are defined by the origin (centre of mass location) and the forces are shown with their directions.
+Sketch of how the two forces produce torques. The radius vectors are defined by the origin (center of mass location) and the forces are shown with their directions.
 :::
 
 <!-- Source PDF page 163; printed label 154. -->
@@ -697,7 +697,7 @@ To fully solve this problem, however, we need to know the moment of inertia $I$.
 
 ::::{admonition} Continued
 
-radius of $r$ and an outer radius of $R$. In this case, the rotation axis is through the centre of the wheel, so we don’t need to apply the parallel axis theorem ([Chapter 7.2.2](#sec-7-2-2)). The moment of inertia for a thick ring with an axis through its centre is $I_{CM}= \frac{1}{2} M(r_{1}^{2}+r_{2}^{2})$ (see [Appendix A.4](#sec-A-4)). For our values, this gives $I = \frac{1}{2} m(r^{2}+ R^{2})$. Adding our equation for $I$ to the problem, we get:
+radius of $r$ and an outer radius of $R$. In this case, the rotation axis is through the center of the wheel, so we don’t need to apply the parallel axis theorem ([Chapter 7.2.2](#sec-7-2-2)). The moment of inertia for a thick ring with an axis through its center is $I_{CM}= \frac{1}{2} M(r_{1}^{2}+r_{2}^{2})$ (see [Appendix A.4](#sec-A-4)). For our values, this gives $I = \frac{1}{2} m(r^{2}+ R^{2})$. Adding our equation for $I$ to the problem, we get:
 
 $$
 \begin{aligned}
@@ -732,7 +732,7 @@ While the fidget spinner is an example of a simple low-weight mechanical gyrosco
 
 <!-- Source PDF page 165; printed label 156. -->
 
-are other types, including fluid, laser, fibre-optic, and vibrational, all working on the same basic principles of rotational motion. For example, with vibrational or MEMS (micro-electro-mechanical system) gyroscopes, the angular velocity in the sensor produces torques on vibration elements, providing measurable displacements that can then be amplified to produce an angular velocity signal. Three sensors arranged orthogonally in a single chip provide three dimensional components and track changes in orientation. This is the type of gyroscope used in smart phones to provide image stabilization in a camera or auto-rotation, track step counts in fitness programs, and help give accurate location and positioning with accelerometers in GPS satellites.
+are other types, including fluid, laser, fiber-optic, and vibrational, all working on the same basic principles of rotational motion. For example, with vibrational or MEMS (micro-electro-mechanical system) gyroscopes, the angular velocity in the sensor produces torques on vibration elements, providing measurable displacements that can then be amplified to produce an angular velocity signal. Three sensors arranged orthogonally in a single chip provide three dimensional components and track changes in orientation. This is the type of gyroscope used in smart phones to provide image stabilization in a camera or auto-rotation, track step counts in fitness programs, and help give accurate location and positioning with accelerometers in GPS satellites.
 
 **For more information:**
 
@@ -780,7 +780,7 @@ $$
 v_{cm}= \omega R
 $$
 
-This condition allows you to simplify rolling problems. Rolling without slipping means that any translation (centre of mass) motion occurs due to rolling, such that forward motion can be directly connected to the rotation. If slipping occurs, then you can get forward motion independent of rotation.
+This condition allows you to simplify rolling problems. Rolling without slipping means that any translation (center of mass) motion occurs due to rolling, such that forward motion can be directly connected to the rotation. If slipping occurs, then you can get forward motion independent of rotation.
 
 ::::
 
@@ -869,7 +869,7 @@ b) A rod of length $L$ and mass $M_{R}$ with a sphere of radius $R$ and mass $M_
 
 c) A rod of length $L$ and mass $M_{R}$ with a thin rectangular plate of mass $M_{P}$, length $\ell$, and width $w$ attached to one end and the axis of rotation at the opposite end.
 
-d) A rod of length $L$ and mass $M_{R}$ with a hollow cylinder of mass $M_{C}$, inner radius $R_{1}$ and outer radius $R_{2}$ attached to one end. The axis of rotation is through the centre of the rod.
+d) A rod of length $L$ and mass $M_{R}$ with a hollow cylinder of mass $M_{C}$, inner radius $R_{1}$ and outer radius $R_{2}$ attached to one end. The axis of rotation is through the center of the rod.
 
 ::::
 
@@ -914,9 +914,9 @@ d) Two masses, $M_{1}$ and $M_{2}$, hang from opposite ends of a rope over a pul
 
 ::::{admonition} Practice Problem 7-4
 
-See figure below. A piece of sticky putty of mass $m$ moves with speed $v_{0}$ and collides with a rod of length $\ell$ and mass $M$. The rod is pivoted at its centre and the putty hits the rod (and sticks to it) at the far end at an angle perpendicular to the axis of the rod.
+See figure below. A piece of sticky putty of mass $m$ moves with speed $v_{0}$ and collides with a rod of length $\ell$ and mass $M$. The rod is pivoted at its center and the putty hits the rod (and sticks to it) at the far end at an angle perpendicular to the axis of the rod.
 
-a) Write an equation for the angular momentum before and after the collision. Assume that $M \gg m$ such that the centre of mass of the system remains at the centre of the rod.
+a) Write an equation for the angular momentum before and after the collision. Assume that $M \gg m$ such that the center of mass of the system remains at the center of the rod.
 
 b) What is the angular velocity $\omega$ of the resulting rotation?
 
@@ -935,7 +935,7 @@ Figure for [Problem 7-4](#problem-7-4).
 
 ::::{admonition} Practice Problem 7-5
 
-Two identical rods of mass $M$ and length $L$ are welded together forming a right angle. They are then allowed to rotate about a pivot point at their corner, producing a physical pendulum. What is the distance between the centre of mass of the physical pendulum and the pivot point?
+Two identical rods of mass $M$ and length $L$ are welded together forming a right angle. They are then allowed to rotate about a pivot point at their corner, producing a physical pendulum. What is the distance between the center of mass of the physical pendulum and the pivot point?
 
 ::::
 
@@ -943,7 +943,7 @@ Two identical rods of mass $M$ and length $L$ are welded together forming a righ
 
 ::::{admonition} Practice Problem 7-6
 
-See figure below. You have a circular disk of mass $M$ and radius $R$. The disk is hanging from a pivot point located a distance $s$ from the centre of mass as shown.
+See figure below. You have a circular disk of mass $M$ and radius $R$. The disk is hanging from a pivot point located a distance $s$ from the center of mass as shown.
 
 a) What is the moment of inertia for the disk about the pivot point $s$?
 
@@ -972,12 +972,12 @@ Figure for [Problem 7-6](#problem-7-6).
 
 ::::{admonition} Practice Problem 7-7
 
-A metre stick is pivoted at the 20cm mark and allowed to freely oscillate. What is the angular frequency of those oscillations assuming that the metre stick is displaced from equilibrium by a small amount?
+A meter stick is pivoted at the 20cm mark and allowed to freely oscillate. What is the angular frequency of those oscillations assuming that the meter stick is displaced from equilibrium by a small amount?
 
 :::{figure} ../images/figures/figure-7-18.png
 :label: fig-7-18
 :enumerator: 7.18
-:alt: Figure shows a metre stick with the pivot point labelled as described in the problem.
+:alt: Figure shows a meter stick with the pivot point labeled as described in the problem.
 :width: 62px
 
 Figure for [Problem 7-7](#problem-7-7).
@@ -991,7 +991,7 @@ Figure for [Problem 7-7](#problem-7-7).
 
 A physical pendulum is made of a rod of length $L$ and a sphere of radius $R$, as shown in [Figure 7.14](#fig-7-14) (top right). The rod and the sphere have the same mass, $M$. Consider the pivot point to be through the opposite end of the rod from the sphere.
 
-a) Where is the centre of mass?
+a) Where is the center of mass?
 
 b) What is the moment of inertia?
 
@@ -1015,7 +1015,7 @@ a) Draw a free-body diagram for the system.
 
 b) Find the equations for $\sum F$ and $\sum \tau$.
 
-c) What is the acceleration of the disk centre of mass?
+c) What is the acceleration of the disk center of mass?
 
 d) If the coefficient of static friction is $\mu$, what is the steepest angle $\theta$ before the disk starts to slip?
 

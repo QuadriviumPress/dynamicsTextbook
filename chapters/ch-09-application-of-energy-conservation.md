@@ -181,7 +181,7 @@ where $\oint$ indicates a closed loop. You can take any closed loop for a conser
 :alt: Figure shows a closed square loop drawn in the x-y plane.
 :width: 217px
 
-A simple closed loop. You can define any closed loop for conservative forces, but direct paths are the most mathematically simple to use. Here we have four paths that are labelled as (1), (2), (3), and (4).
+A simple closed loop. You can define any closed loop for conservative forces, but direct paths are the most mathematically simple to use. Here we have four paths that are labeled as (1), (2), (3), and (4).
 :::
 
 So we can break up the work for this system using each of the different path legs. For the first path length (1), it is entirely along the $x-$axis, so we can solve the work from just $F_{x}$ because no work is being done in $y$ along that axis.
@@ -350,13 +350,13 @@ For potential energy, we have the two masses within a gravitational field. For s
 :::{figure} ../images/figures/figure-9-4.png
 :label: fig-9-4
 :enumerator: 9.4
-:alt: Figure shows the positions of the two masses relative to the centre of the pulley.
+:alt: Figure shows the positions of the two masses relative to the center of the pulley.
 :width: 248px
 
 Position of masses in the Atwood machine. The midpoint of the pulley sets the $y$ = 0 point, with the masses’ distances $y_{1}$ and $y_{2}$ being measured from the $y$ = 0.
 :::
 
-Note that there is no potential energy from the pulley because the pulley does not move vertically. So there is no work done by gravity in moving the pulley (by its centre of mass).
+Note that there is no potential energy from the pulley because the pulley does not move vertically. So there is no work done by gravity in moving the pulley (by its center of mass).
 
 So our potential energy of the system is given by:
 
@@ -384,7 +384,7 @@ $(|\dot{y}_{1}| = |\dot{y}_{2}| = v)$ and with the same linear speed as the cont
 :::{figure} ../images/figures/figure-9-5.png
 :label: fig-9-5
 :enumerator: 9.5
-:alt: Figure shows a diagram of the pulley with its rotation speed at the edge labelled on both sides of contact with the string.
+:alt: Figure shows a diagram of the pulley with its rotation speed at the edge labeled on both sides of contact with the string.
 :width: 155px
 
 Rotation of the pulley assuming $m_{1}> m_{2}$. The pulley rotates at the angular speed $\omega$. The velocity of that angular speed at the two points shown will be $v = \omega R$ where $v$ is the speed of the masses.
@@ -467,7 +467,7 @@ In general, you can use Newton’s laws or energy conservation to solve simple h
 
 ::::{admonition} Sample Problem 9-4
 
-Consider a mass $m$ hanging from the centre of a disk pulley of mass $M$ and radius $R$ as shown in [Figure 9.6](#fig-9-6). The pulley is supported by an inextensible and massless rope that is fixed to the ceiling at one end and attached to a spring of spring constant $k$ on the other end. If the pulley rotates without slipping, **find the equilibrium position** **and the period of oscillations if the small mass** $m$ **is pulled down a small** **distance.** Assume there is no loss of energy from friction.
+Consider a mass $m$ hanging from the center of a disk pulley of mass $M$ and radius $R$ as shown in [Figure 9.6](#fig-9-6). The pulley is supported by an inextensible and massless rope that is fixed to the ceiling at one end and attached to a spring of spring constant $k$ on the other end. If the pulley rotates without slipping, **find the equilibrium position** **and the period of oscillations if the small mass** $m$ **is pulled down a small** **distance.** Assume there is no loss of energy from friction.
 
 ::::
 
@@ -479,7 +479,7 @@ Consider a mass $m$ hanging from the centre of a disk pulley of mass $M$ and rad
 :alt: Figure shows the setup of the problem with the pulley and a spring supporting a hanging mass.
 :width: 167px
 
-A “simple” harmonic oscillator formed by a pulley and spring. The pulley is a disk of radius $R$ and mass $M$ that is held up by an inextensible cord that is attached to the ceiling on one end and attached to a spring of spring constant $k$ on the other end. A small mass $m$ hangs from the centre of the disk.
+A “simple” harmonic oscillator formed by a pulley and spring. The pulley is a disk of radius $R$ and mass $M$ that is held up by an inextensible cord that is attached to the ceiling on one end and attached to a spring of spring constant $k$ on the other end. A small mass $m$ hangs from the center of the disk.
 :::
 
 **Solution**
@@ -491,10 +491,10 @@ We can solve for this equilibrium point by setting the net force and net torque 
 :::{figure} ../images/figures/figure-9-7.png
 :label: fig-9-7
 :enumerator: 9.7
-:alt: Figure shows a free-body diagram for the pulley alone with all forces labelled.
+:alt: Figure shows a free-body diagram for the pulley alone with all forces labeled.
 :width: 155px
 
-Free-body diagram of the pulley. There is a tension $T_{1}$ from the rope on the left, and a tension $T_{2}$ from the small mass $m$ acting at the centre of mass. The pulley has its own gravity $Mg$. And there is the spring force $F_{s}$ acting on the right side of the pulley.
+Free-body diagram of the pulley. There is a tension $T_{1}$ from the rope on the left, and a tension $T_{2}$ from the small mass $m$ acting at the center of mass. The pulley has its own gravity $Mg$. And there is the spring force $F_{s}$ acting on the right side of the pulley.
 :::
 
 Since we’re in equilibrium, the net torque must be zero. Therefore, $T_{1}= F_{s}$, otherwise the pulley would rotate. For a spring, $F_{s}= -kx = T_{1}$. The other unknown force is $T_{2}$, but that is simply the tension caused by the hanging mass $m$ and therefore $T_{2}= mg$.
@@ -535,7 +535,7 @@ $$
 
 Before we combine the energies for this question, let’s first ask how this system will move. The spring will stretch and compress, and this will lower and raise $m$ and the pulley, and the pulley will also rotate. At first glance, you may be tempted to assume that if the mass moves down a distance $x$, then the pulley should move down a distance $x$ and the spring should be stretched a distance $x$. But for this system, the spring will *stretch twice as much* as $m$ and $M$ move down. That factor of two is the no-slip condition on the rope, the same constraint used for rolling without slipping (see [Chapter 7](#ch-7)).
 
-Let’s look at the motion of the pulley. [Figure 9.8](#fig-9-8) shows the translational and rotational motion of the pulley. First, consider the motion of the mass and pulley. The mass is connected to the pulley at its centre-of-mass by an inextensible rope. Whatever distance one moves, the other will move the same amount, and this motion will equal the motion of the centre-of-mass of the pulley, $v_{cm}$. Since the pulley is also rotating without slipping, we can connect the centre of mass motion directly to the rotation
+Let’s look at the motion of the pulley. [Figure 9.8](#fig-9-8) shows the translational and rotational motion of the pulley. First, consider the motion of the mass and pulley. The mass is connected to the pulley at its center-of-mass by an inextensible rope. Whatever distance one moves, the other will move the same amount, and this motion will equal the motion of the center-of-mass of the pulley, $v_{cm}$. Since the pulley is also rotating without slipping, we can connect the center of mass motion directly to the rotation
 
 $$
 (v_{cm}= \omega R).
@@ -546,13 +546,13 @@ $$
 :::{figure} ../images/figures/figure-9-8.png
 :label: fig-9-8
 :enumerator: 9.8
-:alt: Figure shows the pulley alone with all velocities labelled to demonstrate rolling without slipping in the problem.
+:alt: Figure shows the pulley alone with all velocities labeled to demonstrate rolling without slipping in the problem.
 :width: 186px
 
 Translation and rotational motion of the pulley from [Figure 9.6](#fig-9-6). The entire disk moves down with $v = v_{cm}$. But when the pulley moves, it will also rotate without slipping with $\omega = v_{cm}/R$. So at point $P$ on the fixed side, the velocity is instantaneously zero.
 :::
 
-Second, let’s consider how the spring stretches relative to the pulley’s motion. As the pulley moves down with the stretch of the spring, the pulley will rotate clockwise (see [Figure 9.8](#fig-9-8)). Point $P$ is the contact point for the rotation and the net velocity there will be zero. Note that the contact point will be on the side of the pulley that is fixed to the ceiling. That’s because the other side with the spring is able to change in height, not the fixed side. On the side with the spring, however, the velocities from the translation and rotation add together such that the pulley moves away from the spring at twice the speed of the centre of mass.
+Second, let’s consider how the spring stretches relative to the pulley’s motion. As the pulley moves down with the stretch of the spring, the pulley will rotate clockwise (see [Figure 9.8](#fig-9-8)). Point $P$ is the contact point for the rotation and the net velocity there will be zero. Note that the contact point will be on the side of the pulley that is fixed to the ceiling. That’s because the other side with the spring is able to change in height, not the fixed side. On the side with the spring, however, the velocities from the translation and rotation add together such that the pulley moves away from the spring at twice the speed of the center of mass.
 
 ::::{tip} Quick Questions
 
@@ -657,7 +657,7 @@ $$
 
 By setting the time derivative of $E$ to zero, you will obtain a differential equation of motion which you can use to solve the physics problem.
 
-While going through this chapter and the practice problems below, compare the solution from energy conservation with what you would need to do if you were applying Newton’s second law instead. Consider which method you prefer and under which circumstances you would favour one over the other.
+While going through this chapter and the practice problems below, compare the solution from energy conservation with what you would need to do if you were applying Newton’s second law instead. Consider which method you prefer and under which circumstances you would favor one over the other.
 
 ::::
 
@@ -694,7 +694,7 @@ A roller coaster has a frictionless track in the $xz-$plane as shown below. The 
 :::{figure} ../images/figures/figure-9-9.png
 :label: fig-9-9
 :enumerator: 9.9
-:alt: Figure shows the roller coaster represented as a graph with eight points labelled A to H to indicate different positions in the motion.
+:alt: Figure shows the roller coaster represented as a graph with eight points labeled A to H to indicate different positions in the motion.
 :width: 310px
 
 The roller coaster car travels along the track starting at position $A$ and ending at position $H$.
@@ -801,9 +801,9 @@ A solid cylinder of mass $M$, radius $R$, and length $L$ is released from rest a
 
 ::::{admonition} Practice Problem 9-9
 
-See the figure below. A solid cylinder of mass $M$ and radius $R$ is connected to a spring with spring constant $k$ at its centre of mass as shown in the figure. The cylinder has a moment of inertia of $\frac{1}{2} MR^{2}$ at its centre of mass and it can roll on the floor without slipping.
+See the figure below. A solid cylinder of mass $M$ and radius $R$ is connected to a spring with spring constant $k$ at its center of mass as shown in the figure. The cylinder has a moment of inertia of $\frac{1}{2} MR^{2}$ at its center of mass and it can roll on the floor without slipping.
 
-a) If the spring is displaced by $x$, what is the velocity of the cylinder centre of mass relative to $\dot{x}$ ?
+a) If the spring is displaced by $x$, what is the velocity of the cylinder center of mass relative to $\dot{x}$ ?
 
 b) What is the rotational angular speed of the cylinder?
 
@@ -814,7 +814,7 @@ d) If the cylinder is displaced a small amount from equilibrium it will oscillat
 :::{figure} ../images/figures/figure-9-13.png
 :label: fig-9-13
 :enumerator: 9.13
-:alt: Figure shows the cylinder with a spring attached to its centre.
+:alt: Figure shows the cylinder with a spring attached to its center.
 :width: 217px
 
 The cylinder and spring system.

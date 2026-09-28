@@ -303,7 +303,7 @@ You will use the small angle assumption many times in this course and in other c
 
 1. Use a calculator to verify that $\sin x \approx x$ and $\cos x \approx 1 - \frac{x^{2}}{2}$ for small angles.
 
-2. Try plotting both functions and see at which angles the approximations break down. Practise using a programming language like python if you can.
+2. Try plotting both functions and see at which angles the approximations break down. Practice using a programming language like python if you can.
 
 3. You have a telescope and lens that can resolve (separate) objects that subtend angles of at least $0.0003^{\circ}$. Could you resolve a crater that is 1 km in diameter on the Moon with this telescope? Assume the Moon is 300,000 km away.
 

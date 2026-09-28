@@ -55,7 +55,7 @@ $$
 
 <!-- Source PDF page 102; printed label 93. -->
 
-where the four labelled terms are the four fictitious forces: the azimuthal force, the Coriolis force, the centrifugal force, and the translational force. Note how each of these forces is defined with negative signs because they act opposite the direction of acceleration.
+where the four labeled terms are the four fictitious forces: the azimuthal force, the Coriolis force, the centrifugal force, and the translational force. Note how each of these forces is defined with negative signs because they act opposite the direction of acceleration.
 
 In the next two sections, we will look at examples of the centrifugal force and the Coriolis force. The azimuthal force will be left for practice. See [Chapter 4](#ch-4) for examples of the translational force.
 
@@ -144,7 +144,7 @@ which is just the centripetal acceleration. The force behind this acceleration i
 
 <!-- Source PDF page 104; printed label 95. -->
 
-friction with the table. The friction force points inward toward the centre, because the rotation makes the cat want to move outward (centrifugal force).
+friction with the table. The friction force points inward toward the center, because the rotation makes the cat want to move outward (centrifugal force).
 
 $$
 \vec{f} = -\mu N\hat{r} = -\mu mg\hat{r}
@@ -175,10 +175,10 @@ Cat’s Frame: The cat is our observer in the rotating frame, which means that t
 :::{figure} ../images/figures/figure-5-1.png
 :label: fig-5-1
 :enumerator: 5.1
-:alt: Figure shows a diagram of the cat on a turntable with relevant forces labelled.
+:alt: Figure shows a diagram of the cat on a turntable with relevant forces labeled.
 :width: 310px
 
-Free-body diagram for the cat on a spinning turntable. The labelled forces are the gravitational force $(F_{g})$, the normal force $(N)$, friction $(f)$, and the centrifugal force $(F_{cent})$. The three forces in purple are the forces that we would identify in an inertial frame. The centrifugal force in black is only in the cat’s frame.
+Free-body diagram for the cat on a spinning turntable. The labeled forces are the gravitational force $(F_{g})$, the normal force $(N)$, friction $(f)$, and the centrifugal force $(F_{cent})$. The three forces in purple are the forces that we would identify in an inertial frame. The centrifugal force in black is only in the cat’s frame.
 :::
 
 Compared to the inertial frame, the cat would identify one additional force: the centrifugal force. So the sum of all forces would be:
@@ -384,15 +384,15 @@ So this is the maximum radial distance that the cat can reach before the combina
 
 The Earth is rotating, which means the Earth is a non-inertial reference frame. To think about the fictitious forces acting on the Earth, it helps to think in 3-D.
 
-Consider [Figure 5.4](#fig-5-4), which shows the position of a person on Earth’s surface. Ignoring Earth’s orbit around the Sun, we can set the inertial reference frame to the centre of the planet (rotation is zero there) and we can set the non-inertial reference frame to the position of the person at the surface. Note: this example is a case where the inertial and rotating frames do not have the same origin. But the distance between them, $R$ is fixed.
+Consider [Figure 5.4](#fig-5-4), which shows the position of a person on Earth’s surface. Ignoring Earth’s orbit around the Sun, we can set the inertial reference frame to the center of the planet (rotation is zero there) and we can set the non-inertial reference frame to the position of the person at the surface. Note: this example is a case where the inertial and rotating frames do not have the same origin. But the distance between them, $R$ is fixed.
 
 :::{figure} ../images/figures/figure-5-4.png
 :label: fig-5-4
 :enumerator: 5.4
-:alt: Figure shows the relationship between the inertial x-y-z coordinate centred on the Earth and the rotating x-prime, y-prime, z-prime coordinate system on the Earth’s surface.
+:alt: Figure shows the relationship between the inertial x-y-z coordinate centered on the Earth and the rotating x-prime, y-prime, z-prime coordinate system on the Earth’s surface.
 :width: 293px
 
-A coordinate system on Earth. The point shown is fixed to the surface of the Earth. The red coordinates show the non-inertial reference frame for an observer at this location $(O^{\prime })$. The black coordinates show the inertial reference frame at the centre of the Earth, a distance $R$ from the point. Also shown are the latitude $\theta$, polar angle $\varphi$, and distance to the rotation axis $\rho$.
+A coordinate system on Earth. The point shown is fixed to the surface of the Earth. The red coordinates show the non-inertial reference frame for an observer at this location $(O^{\prime })$. The black coordinates show the inertial reference frame at the center of the Earth, a distance $R$ from the point. Also shown are the latitude $\theta$, polar angle $\varphi$, and distance to the rotation axis $\rho$.
 :::
 
 Our observer is located at the point shown in [Figure 5.4](#fig-5-4). This person is at a latitude of $\theta$, where the equator is located at the $x,y-$plane of the inertial frame. We can also describe the person’s position using the polar angle $\varphi$ (also called the colatitude), where $\varphi = 90-\theta$. In the inertial frame, these angles do not change (e.g., the latitude of a fixed point on Earth does not change), but the $x,y$ axes rotate about the $z$ axis due to Earth’s spin.
@@ -504,7 +504,7 @@ which is pointing in a direction that is South and up. Looking at [Figure 5.6](#
 
 <!-- Source PDF page 112; printed label 103. -->
 
-By contrast, gravity from the Earth is directed toward the centre of the Earth, which will be along the $-\hat{k}^{\prime }$ direction, by definition. That means we have two vectors with different directions. The effective gravity will be the sum of these two vectors.
+By contrast, gravity from the Earth is directed toward the center of the Earth, which will be along the $-\hat{k}^{\prime }$ direction, by definition. That means we have two vectors with different directions. The effective gravity will be the sum of these two vectors.
 
 Taking the magnitude of $\vec{F}_{cen}$, we have:
 
@@ -848,7 +848,7 @@ c) Find the magnitude of the azimuthal force and centrifugal force halfway throu
 
 ::::{admonition} Practice Problem 5-6
 
-A race car driver at the Indy 500 races (latitude is 40 deg N) is travelling south in their reference frame.
+A race car driver at the Indy 500 races (latitude is 40 deg N) is traveling south in their reference frame.
 
 a) What is the direction of the Coriolis force acting on the driver?
 

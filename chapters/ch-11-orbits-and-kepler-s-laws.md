@@ -30,14 +30,14 @@ A good example of a [hyperbolic orbit](https://solarsystem.nasa.gov/asteroids-co
 (sec-11-1)=
 ## 11.1 Definition of an Ellipse
 
-[Figure 11.1](#fig-11-1) shows an example ellipse with several key properties labelled. An ellipse is essentially an elongated circle, where the longer of the two axes is the semi-major axis $(a)$ and the shorter of the two axes is the semi-minor axis $(b)$. The degree to which the circle has been stretched is called the eccentricity (or ellipticity) and is denoted by the symbol $\varepsilon$,
+[Figure 11.1](#fig-11-1) shows an example ellipse with several key properties labeled. An ellipse is essentially an elongated circle, where the longer of the two axes is the semi-major axis $(a)$ and the shorter of the two axes is the semi-minor axis $(b)$. The degree to which the circle has been stretched is called the eccentricity (or ellipticity) and is denoted by the symbol $\varepsilon$,
 
 (eq-11-1)=
 $$
 \varepsilon=\sqrt{1-\frac{b^2}{a^2}}.
 $$
 
-[Figure 11.1](#fig-11-1) also shows two special points in red, which are called the foci (focus is the singular term). These two foci, denoted as $f_{1}$ and $f_{2}$, are located on the semi-major axis, each at a distance $\varepsilon a$ from the centre of the ellipse. The foci of an ellipse define the shape. An ellipse is defined by a locus (path) of points where the total distance from any point on
+[Figure 11.1](#fig-11-1) also shows two special points in red, which are called the foci (focus is the singular term). These two foci, denoted as $f_{1}$ and $f_{2}$, are located on the semi-major axis, each at a distance $\varepsilon a$ from the center of the ellipse. The foci of an ellipse define the shape. An ellipse is defined by a locus (path) of points where the total distance from any point on
 
 <!-- Source PDF page 238; printed label 229. -->
 
@@ -49,7 +49,7 @@ the locus to the two foci adds up to a constant. For example, [Figure 11.1](#fig
 :alt: Figure 11.1 from the source textbook
 :width: 351px
 
-Schematic of an ellipse. The centre is shown by a black dot and the two foci are shown as red dots. The semi-major axis $(a)$ and semi-minor axis $(b)$ are also labelled. The two foci are each a distance $\varepsilon a$ from the centre, where $\varepsilon$ is the eccentricity. The distances from the two foci ($r_{1}$ and $r_{2}$) to any position on the ellipse sum to a constant, $r_{1}+ r_{2}$ = constant.
+Schematic of an ellipse. The center is shown by a black dot and the two foci are shown as red dots. The semi-major axis $(a)$ and semi-minor axis $(b)$ are also labeled. The two foci are each a distance $\varepsilon a$ from the center, where $\varepsilon$ is the eccentricity. The distances from the two foci ($r_{1}$ and $r_{2}$) to any position on the ellipse sum to a constant, $r_{1}+ r_{2}$ = constant.
 :::
 
 The distances $r_{1}$ and $r_{2}$ in [Figure 11.1](#fig-11-1) can be measured relative to $a, \varepsilon$, and a position angle, $\theta$. [Figure 11.2](#fig-11-2) shows how we can relate these properties through Pythagoras’ theorem. Using the right-angle triangle in [Figure 11.2](#fig-11-2), we have
@@ -137,7 +137,7 @@ $$ (eq-11-4)
 :::{figure} ../images/figures/figure-11-3.png
 :label: fig-11-3
 :enumerator: 11.3
-:alt: Figure shows an ellipse representing an orbit with the apocenter and pericenter distances and the semi-major and semi-minor axes labelled.
+:alt: Figure shows an ellipse representing an orbit with the apocenter and pericenter distances and the semi-major and semi-minor axes labeled.
 :width: 351px
 
 The apocenter $r_{a}$ and pericenter $r_{p}$ for an ellipse. Also shown is $r_{c}$ the distance between the focus and locus at an angle that is perpendicular to the semi-major axis $(\theta = 90^{\circ})$.
@@ -523,7 +523,7 @@ Look at how much faster it was to solve the same problem using a scaling relatio
 
 Note, the above scaling relation only applies to orbits around the Sun. If you change the source of the gravitational field, you need to change your reference orbit. This is because the constant of proportionality between $T^{2}$ and $a^{3}$ depends on the mass, $M$, that is producing the gravitational field.
 
-Scaling relations, like the one used in this question, can be extremely useful. In the astrophysics field, scaling relations are often used to describe trends observed between physical properties such as size, luminosity, mass, and colour of stars and galaxies. It can be very hard to determine these properties due to the large distances, gas clouds, and other factors in space. So, scaling relations such as the Faber-Jackson Relation (FJR) are used to determine these physical properties that are otherwise difficult to obtain or compare.
+Scaling relations, like the one used in this question, can be extremely useful. In the astrophysics field, scaling relations are often used to describe trends observed between physical properties such as size, luminosity, mass, and color of stars and galaxies. It can be very hard to determine these properties due to the large distances, gas clouds, and other factors in space. So, scaling relations such as the Faber-Jackson Relation (FJR) are used to determine these physical properties that are otherwise difficult to obtain or compare.
 
 ::::
 
@@ -531,7 +531,7 @@ Scaling relations, like the one used in this question, can be extremely useful. 
 
 ::::{admonition} Sample Problem 11-3
 
-Halley’s comet has an eccentricity of $\varepsilon = 0.967$. **What are the perihelion and aphelion distances and how fast is the comet travelling at those positions?**
+Halley’s comet has an eccentricity of $\varepsilon = 0.967$. **What are the perihelion and aphelion distances and how fast is the comet traveling at those positions?**
 
 **Solution**
 
@@ -805,7 +805,7 @@ A satellite is orbiting the Earth in an elliptical orbit. If the eccentricity is
 
 ::::{admonition} Practice Problem 11-10
 
-A satellite has an elliptical orbit where it is 250km above the Earth’s surface at perigee and it is travelling at a speed of 8km $\mathrm{s}^{-1}$ at perigee. How high above the Earth’s surface is this satellite at apogee? Hint: You can assume the Earth’s radius is 6370km and the mass of the Earth is $5.97 \times 10^{24}\mathrm{kg}$.
+A satellite has an elliptical orbit where it is 250km above the Earth’s surface at perigee and it is traveling at a speed of 8km $\mathrm{s}^{-1}$ at perigee. How high above the Earth’s surface is this satellite at apogee? Hint: You can assume the Earth’s radius is 6370km and the mass of the Earth is $5.97 \times 10^{24}\mathrm{kg}$.
 
 ::::
 

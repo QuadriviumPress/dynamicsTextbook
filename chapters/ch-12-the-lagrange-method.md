@@ -230,12 +230,12 @@ The Atwood machine for this problem.
 
 **Solution**
 
-We’ve looked at this problem previously with energy conservation ([Sample Problem 9-3](#example-9-3)). Please review that question for more details, but briefly, the potential energy of the system comes from the vertical position of the two masses and the kinetic energy is from the linear motion of the two masses and the rotational motion of the pulley. [Figure 12.3](#fig-12-3) shows the definition of the position of each of the masses. Note that we have set the $y$ = 0 line (and the $U$ = 0 line) to be at the centre of the pulley.
+We’ve looked at this problem previously with energy conservation ([Sample Problem 9-3](#example-9-3)). Please review that question for more details, but briefly, the potential energy of the system comes from the vertical position of the two masses and the kinetic energy is from the linear motion of the two masses and the rotational motion of the pulley. [Figure 12.3](#fig-12-3) shows the definition of the position of each of the masses. Note that we have set the $y$ = 0 line (and the $U$ = 0 line) to be at the center of the pulley.
 
 :::{figure} ../images/figures/figure-12-3.png
 :label: fig-12-3
 :enumerator: 12.3
-:alt: Figure shows the position of each mass in the Atwood machine relative to the centre of the pulley.
+:alt: Figure shows the position of each mass in the Atwood machine relative to the center of the pulley.
 :width: 211px
 
 The Atwood machine with the positions of each mass.
@@ -918,7 +918,7 @@ Figure for [Problem 12-7](#problem-12-7).
 
 ::::{admonition} Practice Problem 12-8
 
-A circular disk of mass $M$ and radius $R$ hangs from a pivot point that is displaced from the centre of mass by a distance $s = R/2$ as shown.
+A circular disk of mass $M$ and radius $R$ hangs from a pivot point that is displaced from the center of mass by a distance $s = R/2$ as shown.
 
 a) What is the Lagrangian for this system?
 
@@ -927,7 +927,7 @@ b) Check that this answer makes sense by applying the Euler-Lagrange equations a
 :::{figure} ../images/figures/figure-12-10.png
 :label: fig-12-10
 :enumerator: 12.10
-:alt: Figure shows a physical pendulum disk that is pivoted a small distance above its centre.
+:alt: Figure shows a physical pendulum disk that is pivoted a small distance above its center.
 :width: 93px
 
 Figure for [Problem 12-8](#problem-12-8).
@@ -967,7 +967,7 @@ d) Use the Euler-Lagrange equations to find the differential equation of motion.
 :::{figure} ../images/figures/figure-12-11.png
 :label: fig-12-11
 :enumerator: 12.11
-:alt: Figure shows a cartoon snowboarder on a parabolic-like track with Cartesian coordinates labelled.
+:alt: Figure shows a cartoon snowboarder on a parabolic-like track with Cartesian coordinates labeled.
 :width: 232px
 
 Figure for [Problem 12-9](#problem-12-9).

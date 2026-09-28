@@ -9,7 +9,7 @@
 
 - Define momentum with external forces, impulse, and collision
 
-- Define centre of mass for N-body systems
+- Define center of mass for N-body systems
 
 - Investigate problems with variable mass
 
@@ -483,21 +483,21 @@ Here is [a fun web application](https://www.physicsclassroom.com/Physics-Interac
 ::::
 
 (sec-6-4)=
-## 6.4 Centre of Mass
+## 6.4 Center of Mass
 
-Another important concept in motion and momentum is the centre of mass. Whether you have a system of independent particles (e.g., a cluster of stars) or an irregularly shaped rigid body (e.g., a car), every system has a special point called the *centre of mass*. The centre of mass is not a mass, but a position. It’s the centroid position and it is defined as:
+Another important concept in motion and momentum is the center of mass. Whether you have a system of independent particles (e.g., a cluster of stars) or an irregularly shaped rigid body (e.g., a car), every system has a special point called the *center of mass*. The center of mass is not a mass, but a position. It’s the centroid position and it is defined as:
 
 $$
 \vec{R}_{cm}= \frac{m_{1}\vec{r}_{1}+ m_{2}\vec{r}_{2}+ \cdot \cdot \cdot + m_{n}\vec{r}_{n}}{m_{1}+ m_{2}+ \cdot \cdot \cdot + m_{n}} = \frac{\sum m_{i}\vec{r}_{i}}{\sum m_{i}}
 $$
 
-where $\vec{r}_{i}$ is the position of the $i$th particle relative to the origin and $m_{i}$ is the mass of that particle. Since $\sum m_{i}= M$ is the total mass of the system, the centre of mass is:
+where $\vec{r}_{i}$ is the position of the $i$th particle relative to the origin and $m_{i}$ is the mass of that particle. Since $\sum m_{i}= M$ is the total mass of the system, the center of mass is:
 
 $$
 \vec{R}_{cm}= \frac{\sum m_{i}\vec{r}_{i}}{M}
 $$ (eq-6-11)
 
-Note that you can think of the centre of mass as a mass-weighted average position. The formal definition of an average quantity is:
+Note that you can think of the center of mass as a mass-weighted average position. The formal definition of an average quantity is:
 
 $$
 \bar{x} = \frac{\sum w_{i}x_{i}}{\sum w_{i}}
@@ -515,17 +515,17 @@ $$
 
 ::::
 
-The centre of mass is where you can perfectly balance a system and it doesn’t need to be at the centre of the object. For example, if you try to hold a hammer at its centre, it will feel unbalanced. That’s because a hammer has an uneven distribution of mass. The head of the hammer is much heavier than the handle, so the centre of mass for the hammer will be closer to the head than the middle of the handle because most of the mass is located near the head $(R_{cm}$ will be weighted more heavily toward the head than the handle).
+The center of mass is where you can perfectly balance a system and it doesn’t need to be at the center of the object. For example, if you try to hold a hammer at its center, it will feel unbalanced. That’s because a hammer has an uneven distribution of mass. The head of the hammer is much heavier than the handle, so the center of mass for the hammer will be closer to the head than the middle of the handle because most of the mass is located near the head $(R_{cm}$ will be weighted more heavily toward the head than the handle).
 
 <!-- Source PDF page 132; printed label 123. -->
 
 ::::{admonition} Try at Home
 
-This [web applet](https://phet.colorado.edu/en/simulation/balancing-act) will let you play around with balancing masses and finding the centre of mass. Examine different structures and test your understanding.
+This [web applet](https://phet.colorado.edu/en/simulation/balancing-act) will let you play around with balancing masses and finding the center of mass. Examine different structures and test your understanding.
 
 ::::
 
-In Cartesian coordinates, we can also describe the centre of mass in terms of the $x, y$, and $z$ axes. The position of a particle in the system is given by $\vec{r}_{i}= x_{i}\hat{\imath}+y_{i}\hat{\jmath}+z_{i}\hat{k}$ . The centre of mass for the system is then determined by $\vec{R}_{cm}= x_{cm}\hat{\imath} + y_{cm}\hat{\jmath} + z_{cm}\hat{k}$ , where
+In Cartesian coordinates, we can also describe the center of mass in terms of the $x, y$, and $z$ axes. The position of a particle in the system is given by $\vec{r}_{i}= x_{i}\hat{\imath}+y_{i}\hat{\jmath}+z_{i}\hat{k}$ . The center of mass for the system is then determined by $\vec{R}_{cm}= x_{cm}\hat{\imath} + y_{cm}\hat{\jmath} + z_{cm}\hat{k}$ , where
 
 $$
 \begin{aligned}
@@ -541,17 +541,17 @@ $$
 \vec{p} = \sum m_{i}\vec{v}_{i}= \sum m_{i} \frac{\mathrm{d}\vec{r}_{i}}{\mathrm{d}t} = \frac{\mathrm{d}}{\mathrm{d}t} \sum (m_{i}\vec{r}_{i})
 $$ (eq-6-12)
 
-Note that the term in the summation from the above equation is equivalent to $M\vec{R}_{cm}$ from Equation 6.11. Thus, we can put the total momentum in terms of the centre of mass.
+Note that the term in the summation from the above equation is equivalent to $M\vec{R}_{cm}$ from Equation 6.11. Thus, we can put the total momentum in terms of the center of mass.
 
 $$
 \vec{p} = \frac{\mathrm{d}}{\mathrm{d}t} (M\vec{R}_{cm}) = M\vec{v}_{cm}
 $$ (eq-6-13)
 
-where $\vec{v}_{cm}$ is the velocity of the centre of mass. In other words, the total momentum of a system of particles is equivalent to the total mass of the system times the velocity of the centre of mass (how the centre of mass of the system is moving).
+where $\vec{v}_{cm}$ is the velocity of the center of mass. In other words, the total momentum of a system of particles is equivalent to the total mass of the system times the velocity of the center of mass (how the center of mass of the system is moving).
 
-Equation 6.13 is a way to approximate a complicated system. In physics, we like to simplify problems as much as possible. Rather than trying to solve a complicated problem of a system of particles or an irregularly shaped body, you can instead use one giant particle with a mass given by the total mass of the system located at and moving with the centre of mass. You are basically condensing the problem from a collection of particles down to a representative particle at a mass-weighted average position.
+Equation 6.13 is a way to approximate a complicated system. In physics, we like to simplify problems as much as possible. Rather than trying to solve a complicated problem of a system of particles or an irregularly shaped body, you can instead use one giant particle with a mass given by the total mass of the system located at and moving with the center of mass. You are basically condensing the problem from a collection of particles down to a representative particle at a mass-weighted average position.
 
-It can also be useful to consider a coordinate system relative to the centre of mass rather than a stationary observer. [Figure 6.5](#fig-6-5) shows the difference between an initial reference frame from a stationary observer, $S$, and a moving frame, $S^{\prime }$, located at the centre of mass of an irregular object. For simplicity, the centre of mass is moving with a constant velocity, $\vec{u}$ (so $S^{\prime }$ is also an inertial frame). To an observer in $S^{\prime }$, the irregular object would appear to be stationary (both the observer and the object are moving together). This means that the total momentum in the CM frame is zero.
+It can also be useful to consider a coordinate system relative to the center of mass rather than a stationary observer. [Figure 6.5](#fig-6-5) shows the difference between an initial reference frame from a stationary observer, $S$, and a moving frame, $S^{\prime }$, located at the center of mass of an irregular object. For simplicity, the center of mass is moving with a constant velocity, $\vec{u}$ (so $S^{\prime }$ is also an inertial frame). To an observer in $S^{\prime }$, the irregular object would appear to be stationary (both the observer and the object are moving together). This means that the total momentum in the CM frame is zero.
 
 <!-- Source PDF page 133; printed label 124. -->
 
@@ -561,7 +561,7 @@ It can also be useful to consider a coordinate system relative to the centre of 
 :alt: Figure 6.5 from the source textbook
 :width: 260px
 
-Comparison between a stationary observer coordinate system $(S)$ and a centre-of-mass coordinate system $(S ^{\prime })$. An irregular object is moving in the stationary frame. The centre of mass $(cm)$ of this object has a speed $\vec{u}$ relative to the stationary frame. The $S ^{\prime }$ frame is fixed relative to the centre of mass and moves with it (such that the object would be stationary in the centre-of-mass frame).
+Comparison between a stationary observer coordinate system $(S)$ and a center-of-mass coordinate system $(S ^{\prime })$. An irregular object is moving in the stationary frame. The center of mass $(cm)$ of this object has a speed $\vec{u}$ relative to the stationary frame. The $S ^{\prime }$ frame is fixed relative to the center of mass and moves with it (such that the object would be stationary in the center-of-mass frame).
 :::
 
 Consider the same particle in both reference frames. The particle has a velocity $\vec{v}_{i}$ in frame S and a velocity $\vec{v}_{i}^{\prime }$ in frame S$'$. Since the two frames differ by a relative velocity $\vec{u}$, the velocities in S and S$'$ are connected by,
@@ -589,7 +589,7 @@ Inelastic collision between a moving smaller mass with a stationary larger mass.
 
 **Solution**
 
-You can solve this problem using a stationary frame where the two masses are moving. But here we’re going to solve this problem using both a stationary and the moving centre-of-mass (CM) frame.
+You can solve this problem using a stationary frame where the two masses are moving. But here we’re going to solve this problem using both a stationary and the moving center-of-mass (CM) frame.
 
 ::::
 
@@ -608,7 +608,7 @@ v &= \frac{m}{M + m} u
 \end{aligned}
 $$
 
-CM frame: In the CM frame, the observer is moving with a speed of $\vec{v}_{cm}$ corresponding to the centre of mass of the system. Note that the centre-of-mass velocity must be the same after the collision as before the collision because the centre-of-mass momentum is conserved (no external forces).
+CM frame: In the CM frame, the observer is moving with a speed of $\vec{v}_{cm}$ corresponding to the center of mass of the system. Note that the center-of-mass velocity must be the same after the collision as before the collision because the center-of-mass momentum is conserved (no external forces).
 
 First, we can find $\vec{v}_{cm}$. For our two particles, their individual masses are constant and
 
@@ -641,7 +641,7 @@ $$
 \vec{v}_{(M+m)}^{\prime }= \vec{v} - \vec{v}_{cm}
 $$
 
-But with only one particle, that particle represents the centre-of-mass position for the post-collision system. In the CM frame, the observer is moving with the centre of mass of the system, so there is no net velocity. That means $\vec{v}_{(M+m)}^{\prime }$ = 0.
+But with only one particle, that particle represents the center-of-mass position for the post-collision system. In the CM frame, the observer is moving with the center of mass of the system, so there is no net velocity. That means $\vec{v}_{(M+m)}^{\prime }$ = 0.
 
 Thus, we can now find the final velocity, $v$ in the CM frame.
 
@@ -664,11 +664,11 @@ which is exactly what we had before from the stationary frame.
 
 1. Find the velocities of $m$ and $M$ before the collision in the CM frame.
 
-2. How does the centre-of-mass position change as the two particles approach each other?
+2. How does the center-of-mass position change as the two particles approach each other?
 
 ::::
 
-Switching to the centre of mass frame can be convenient when you have complicated systems with an irregular rigid mass or a large system of masses.
+Switching to the center of mass frame can be convenient when you have complicated systems with an irregular rigid mass or a large system of masses.
 
 (sec-6-5)=
 ## 6.5 Variable Mass
@@ -817,7 +817,7 @@ $$
 \vec{p}_{tot}(t) = \vec{p}_{tot}(t + \mathrm{d}t)
 $$
 
-$mv = (\mathrm{d}m_{ex})(v - v_{ex}) + (m - \mathrm{d}m_{ex})(v + \mathrm{d}v)$. All motion is in one dimension, so $\hat{\imath}$ has been dropped. Expanding and cancelling $mv$ gives $0 = -v_{ex}\,\mathrm{d}m_{ex} + m\,\mathrm{d}v - \mathrm{d}m_{ex}\,\mathrm{d}v$. The product $\mathrm{d}m_{ex}\,\mathrm{d}v$ is second order and can be neglected, so $0 = -v_{ex}\,\mathrm{d}m_{ex} + m\,\mathrm{d}v$.
+$mv = (\mathrm{d}m_{ex})(v - v_{ex}) + (m - \mathrm{d}m_{ex})(v + \mathrm{d}v)$. All motion is in one dimension, so $\hat{\imath}$ has been dropped. Expanding and canceling $mv$ gives $0 = -v_{ex}\,\mathrm{d}m_{ex} + m\,\mathrm{d}v - \mathrm{d}m_{ex}\,\mathrm{d}v$. The product $\mathrm{d}m_{ex}\,\mathrm{d}v$ is second order and can be neglected, so $0 = -v_{ex}\,\mathrm{d}m_{ex} + m\,\mathrm{d}v$.
 
 $$
 \mathrm{d}v = v_{ex} \frac{\mathrm{d}m_{ex}}{m}
@@ -901,13 +901,13 @@ $$
 \vec{p}_{i}= \vec{p}_{f}
 $$
 
-An important property for systems of particles is the centre of mass. The centre of mass is a special radius vector that represents the mass-weighted average position vector.
+An important property for systems of particles is the center of mass. The center of mass is a special radius vector that represents the mass-weighted average position vector.
 
 $$
 \vec{R}_{cm}= \frac{\sum m_{i}\vec{r}_{i}}{M}
 $$
 
-Large or complex systems of particles can be simplified to a single giant particle at the position of the centre of mass that is moving with the centre of mass. The centre-of-mass reference frame can also be helpful in simplifying problems, because the net linear momentum of the centre-of-mass frame is zero by definition.
+Large or complex systems of particles can be simplified to a single giant particle at the position of the center of mass that is moving with the center of mass. The center-of-mass reference frame can also be helpful in simplifying problems, because the net linear momentum of the center-of-mass frame is zero by definition.
 
 ::::
 
@@ -945,7 +945,7 @@ $$
 \vec{I} = \int_{t_{1}}^{t_{2}} \vec{F}\mathrm{d}t = \int_{t_{1}}^{t_{2}} \frac{\mathrm{d}\vec{p}}{\mathrm{d}t} \mathrm{d}t = \int_{t_{1}}^{t_{2}} \mathrm{d}\vec{p} = \vec{p}_{2}- \vec{p}_{1}= \Delta \vec{p}
 $$
 
-**Centre of Mass:**
+**Center of Mass:**
 
 $$
 \vec{R}_{cm}= \frac{\sum m_{i}\vec{r}_{i}}{M}
@@ -984,7 +984,7 @@ Particle 2: $\hat{\jmath}$
 
 Particle 3: $\hat{\imath} + \hat{\jmath} + \hat{k}$
 
-All values are in SI units. What is the centre-of-mass velocity $v_{cm}$ of this system?
+All values are in SI units. What is the center-of-mass velocity $v_{cm}$ of this system?
 
 ::::
 
@@ -1030,7 +1030,7 @@ b) If this impulse is delivered to the student in 0.20 seconds, then what is the
 
 ::::{admonition} Practice Problem 6-5
 
-A bullet travelling at a velocity of $v\hat{\imath}$ is shot through a stationary block of wood head-on. When it emerges from the other side, the bullet has lost half its speed. If the block has a mass of $M$ and the bullet has a mass of $m$, what is the velocity of the block of wood after the bullet emerges? (Ignore any friction or loss of energy. Assume the block of wood loses no mass.)
+A bullet traveling at a velocity of $v\hat{\imath}$ is shot through a stationary block of wood head-on. When it emerges from the other side, the bullet has lost half its speed. If the block has a mass of $M$ and the bullet has a mass of $m$, what is the velocity of the block of wood after the bullet emerges? (Ignore any friction or loss of energy. Assume the block of wood loses no mass.)
 
 ::::
 
@@ -1100,7 +1100,7 @@ Figure for [Problem 6-8](#problem-6-8).
 
 See the figure below. A mass $m_{1}$ is moving toward a second mass, $m_{2}$, with a speed of $u$. The second mass $m_{2}$ is stationary and connected to a spring (see figure). After $m_{1}$ collides with $m_{2}$, they stick and compress the spring.
 
-a) Find the centre-of-mass velocity of the system after collision.
+a) Find the center-of-mass velocity of the system after collision.
 
 b) Use Newton’s laws to find the differential equation of motion of velocity for the spring.
 

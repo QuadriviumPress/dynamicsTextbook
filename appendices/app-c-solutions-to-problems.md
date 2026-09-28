@@ -467,7 +467,7 @@ $$
 
 **Problem 4-8:** [Question](#problem-4-8)
 
-a) No fictitious forces act (assuming the very centre of the room is the rotation axis)
+a) No fictitious forces act (assuming the very center of the room is the rotation axis)
 
 b) Centrifugal force
 
