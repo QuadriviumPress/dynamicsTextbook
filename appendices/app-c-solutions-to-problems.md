@@ -1116,6 +1116,16 @@ $$
 
 $U_{eff,\min}= -\dfrac{m}{2L^{2}}$, stable
 
+(solution-10-4)=
+
+**Problem 10-4:** [Question](#problem-10-4)
+
+$$
+U_{eff}(r)= \frac{1}{2r^{2}}\Bigg(\frac{L^{2}}{m}- 2m\Bigg)
+$$
+
+Both terms fall as $1/r^{2}$, so the curve has no turning point. For $L^{2}> 2m^{2}$ the centrifugal term wins and $U_{eff}> 0$, falling toward zero as $r$ grows. For $L^{2}< 2m^{2}$ the attractive potential wins and $U_{eff}< 0$, rising toward zero as $r$ grows. Increasing $L$ lifts the curve; increasing $m$ pulls it down.
+
 (solution-10-5)=
 
 **Problem 10-5:** [Question](#problem-10-5)
