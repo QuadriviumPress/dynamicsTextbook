@@ -116,7 +116,7 @@ def main():
                  ", ".join(str(p.relative_to(ROOT)) for p in absent[:10]))
     on_disk = {p.resolve() for p in (ROOT / "images").rglob("*") if p.is_file()}
     # Site logos are referenced from myst.yml options, not markdown.
-    logo_names = {"logo.svg", "logo-dark.svg", "logo.png", "logo.jpg"}
+    logo_names = {"logo.svg", "logo-dark.svg", "favicon.svg", "logo.png", "logo.jpg"}
     orphans = sorted(
         p for p in (on_disk - referenced) if p.name not in logo_names
     )
