@@ -302,7 +302,7 @@ which is exactly the same as what we had before in [Chapter 3](#ch-3), and it on
 
 ::::{admonition} Force vs Torque
 
-The torque method gives $\ddot{\theta}+ \frac{mgL}{I} \theta$ = 0, which is a more general solution to describe the motion of a pendulum. This solution holds for a single pendulum of any shape. If you can write down the moment of inertia for that pendulum, you can solve its equation of motion. See [Appendix A.4](#sec-A-4) for basic geometric shapes. Or you can find a [table of solutions online](https://courses.lumenlearning.com/physics/chapter/10-5-angular-momentum-and-its-conservation/).
+The torque method gives $\ddot{\theta}+ \frac{mgL}{I} \theta$ = 0, which is a more general solution to describe the motion of a pendulum. This solution holds for a single pendulum of any shape. If you can write down the moment of inertia for that pendulum, you can solve its equation of motion. See [Appendix A.4](#sec-A-4) for basic geometric shapes. Or you can find a [table of solutions online](https://openstax.org/books/college-physics-2e/pages/10-5-angular-momentum-and-its-conservation).
 
 Complex pendulum shapes are hard to solve with the linear force method. Think about the problem you are trying to solve, and consider using torques rather than forces!
 
@@ -736,7 +736,7 @@ are other types, including fluid, laser, fiber-optic, and vibrational, all worki
 
 **For more information:**
 
-For lots of detail on the physics of fidget spinners, check out [this article](https://www.researchgate.net/publication/325741350_Fidget_Spinner_Physics) from the International Journal for Research in Applied Science and Engineering Technology by Vandana Kaushik.
+For lots of detail on the physics of fidget spinners, check out [this article](https://doi.org/10.22214/ijraset.2018.4712) from the International Journal for Research in Applied Science and Engineering Technology by Vandana Kaushik.
 
 For some detail on the different types of gyroscopes, see [this article](https://www.smlease.com/entries/mechanical-design-basics/what-is-gyroscope-how-gyroscopes-work-and-their-applications/) from SM Lease Design.
 

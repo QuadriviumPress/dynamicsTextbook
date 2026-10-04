@@ -866,7 +866,7 @@ A very small section of the Large Hadron Collider tunnel. Image credit: CERN.
 
 See the [CERN website for more on the LHC](https://www.home.cern/science/accelerators/large-hadron-collider).
 
-Let’s Talk Science has [a nice introduction to momentum and billiards](https://letstalkscience.ca/educational-resources/stem-explained/billiards-and-collisions), with links to videos.
+Let’s Talk Science has [a nice introduction to momentum and billiards](https://web.archive.org/web/20250823115803/https://letstalkscience.ca/educational-resources/stem-explained/billiards-and-collisions), with links to videos.
 
 <!-- Source PDF page 140; printed label 131. -->
 

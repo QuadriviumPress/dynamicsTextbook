@@ -91,7 +91,7 @@ absolute space or an absolute time is not quite correct. For example, in special
 
 [Mercury’s unusual orbit](https://aether.lbl.gov/www/classes/p10/gr/PrecessionperihelionMercury.htm)
 
-[Introduction to General Relativity](https://courses.lumenlearning.com/astronomy/chapter/tests-of-general-relativity/)
+[Tests of general relativity](https://openstax.org/books/astronomy-2e/pages/24-3-tests-of-general-relativity)
 
 [Introduction to special relativity](https://www.youtube.com/watch?v=AInCqm5nCzw)
 
@@ -443,7 +443,7 @@ where $V$ and $\tau$ are dummy variables to represent the velocity at a later ti
 
 ::::{admonition} Continued
 
-integral contains the initial conditions (in the lower bounds), so solving this equation will give you the full equation for velocity without needing to solve for a constant of integration. We will show examples of *both* cases in this textbook. See the [online repository](https://github.com/OSTP/dynamicsTextbook/blob/main/video_links.md) for a video that directly compares these cases.
+integral contains the initial conditions (in the lower bounds), so solving this equation will give you the full equation for velocity without needing to solve for a constant of integration. We will show examples of *both* cases in this textbook. See the [online repository](https://github.com/QuadriviumPress/dynamicsTextbook/blob/main/video_links.md) for a video that directly compares these cases.
 
 ::::
 
@@ -784,7 +784,7 @@ You are standing a distance $d$ from a building and your friend is on the roof (
 
 ::::{admonition} Practice Problem 2-3
 
-For the following problems, plot the position, velocity, and acceleration for the first three seconds of motion. Example codes for python are provided in the [online repository](https://github.com/OSTP/dynamicsTextbook/tree/main/py_notebooks).
+For the following problems, plot the position, velocity, and acceleration for the first three seconds of motion. Example codes for python are provided in the [online repository](https://github.com/QuadriviumPress/dynamicsTextbook/tree/main/py_notebooks).
 
 a) A ball with an initial velocity of 10 m $\mathrm{s}^{-1}$ and an acceleration of 9.8 m $\mathrm{s}^{-2}$, both in the $+x$ direction. Assume the initial position is $x_{0}$ = 0.
 

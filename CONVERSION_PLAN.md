@@ -7,7 +7,9 @@ August 20, 2025 in the local and upstream README. It contains 305 physical
 PDF pages. The 2023 and 2024 PDFs remain historical sources.
 
 The upstream repository inspected on September 9, 2026 still advertises this
-edition: <https://github.com/OSTP/dynamicsTextbook>. A live Git ref comparison
+The upstream repository inspected on September 9, 2026 still advertised this
+edition. That repository, OSTP/dynamicsTextbook, is no longer published; this
+edition is maintained at <https://github.com/QuadriviumPress/dynamicsTextbook>. A live Git ref comparison
 could not be completed because shell DNS access to GitHub was unavailable.
 Do not claim that upstream HEAD has been verified against this checkout.
 
