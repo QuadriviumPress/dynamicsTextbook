@@ -614,7 +614,7 @@ The Double Asteroid Redirection Test (DART) spacecraft was launched to test this
 
 On 26 September 2022, DART made impact on Dimorphos and successfully caused the moonlet to spiral inward into a new (smaller) orbit. Subsequent observations confirmed a new orbital period that decreased by 32 minutes (from an original length of almost 12 hours). The mission was a big success and showed that such techniques could be used to protect the Earth in future.
 
-For more information: [The DART Mission Website](https://dart.jhuapl.edu/Mission/index.php) has lots of information and there is also [video of the impact](https://www.youtube.com/watch?v=dkr33IjUnqQ). The Jet Propulsion Lab [has some information on the science and engineering](https://www.jpl.nasa.gov/edu/news/2022/9/22/the-science-behind-nasas-first-attempt-at-redirecting-an-asteroid/) behind the mission.
+For more information: [The DART Mission Website](https://dart.jhuapl.edu/Mission/index.php) has lots of information and there is also [video of the impact](https://www.youtube.com/watch?v=dkr33IjUnqQ). NASA's [Planetary Defense page on DART](https://www.nasa.gov/planetarydefense/dart) covers the science and engineering behind the mission.
 
 (sec-11-6)=
 ## 11.6 Summary

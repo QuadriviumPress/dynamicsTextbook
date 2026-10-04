@@ -907,7 +907,7 @@ You might run across a very complicated equation you need to approximate, someth
 
 ::::{tip} Challenge Question
 
-1. Find the first three terms of the Taylor series for $y = e^{\cos (2x)}$ assuming $x$ is close to 0. Plot the function and your approximation using a programming language. See the [online repository](https://github.com/OSTP/dynamicsTextbook/tree/main/py_notebooks) for examples using python.
+1. Find the first three terms of the Taylor series for $y = e^{\cos (2x)}$ assuming $x$ is close to 0. Plot the function and your approximation using a programming language. See the [online repository](https://github.com/QuadriviumPress/dynamicsTextbook/tree/main/py_notebooks) for examples using python.
 
 ::::
 
@@ -982,7 +982,7 @@ First gravitational wave signal from LIGO. The strain $(y$ axis) indicates the f
 
 LIGO is an international collaboration including more than 1200 scientists from over 100 institutions located in 18 different countries. The ground-breaking discovery has significant implications for general relativity, black holes, and our universe. But recall that the basic principle at the heart of this experiment is a change in arrival time from a change in distance.
 
-**For more information:** The [LIGO Scientific Collaboration](https://www.ligo.org/detections/GW150914.php) website has a lot of information about the original detection and process. [This video](https://www.youtube.com/watch?v=QyDcTbR-kEA) translated the merging event into a sound bite that showcases the “chirp” from the merger. [Sky & Telescope](https://skyandtelescope.org/astronomy-news/gravitational-wave-detection-heralds-new-era-of-science-0211201644/) also has a nice article (with lots of links) describing the first detection.
+**For more information:** The [LIGO Scientific Collaboration](https://www.ligo.org/detections/GW150914.php) website has a lot of information about the original detection and process. [This video](https://www.youtube.com/watch?v=QyDcTbR-kEA) translated the merging event into a sound bite that showcases the “chirp” from the merger. [Wikipedia's account of the first detection](https://en.wikipedia.org/wiki/First_observation_of_gravitational_waves) collects the original reports and further reading.
 
 <!-- Source PDF page 33; printed label 24. -->
 
@@ -1293,7 +1293,7 @@ $$
 
 ::::{admonition} Practice Problem 1-13
 
-Plot the functions and Taylor series approximations (first three non-zero terms) for the following functions ([sample python script](https://github.com/OSTP/dynamicsTextbook/tree/main/py_notebooks)).
+Plot the functions and Taylor series approximations (first three non-zero terms) for the following functions ([sample python script](https://github.com/QuadriviumPress/dynamicsTextbook/tree/main/py_notebooks)).
 
 a) $f(x) = e^{-x^{2}}$ for $x \approx 0$
 
