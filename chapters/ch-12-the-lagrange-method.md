@@ -750,7 +750,7 @@ Lagrangian mechanics help simplify the calculations for complex or even chaotic 
 
 One common application of Lagrangian mechanics is with magnetohydrodynamics (MHD), which is the study of fluids that conduct electricity. MHD is used in many branches of physics, but one example is nuclear fusion experimentation, where many experiments seek to produce energy by magnetically confining a fast-moving plasma in a torus. MHD research must solve various equations such as the equation of state, mass continuity, Faraday’s law, and Ohm’s law simultaneously for the entire system, and these equations are usually non-linear with time. As such, Lagrangian mechanics are often employed to simplify the problem.
 
-For more information: [Wikipedia webpage on MHD](https://en.wikipedia.org/wiki/Magnetohydrodynamics), listing various forms and equations. [Science article](https://www.science.org/content/article/bizarre-reactor-might-save-nuclear-fusion) on some recent nuclear fusion experiment designs.
+For more information: [Wikipedia webpage on MHD](https://en.wikipedia.org/wiki/Magnetohydrodynamics), listing various forms and equations. [MIT news article](https://news.mit.edu/2021/MIT-CFS-major-advance-toward-fusion-energy-0908) on a compact fusion-reactor design.
 
 (sec-12-7)=
 ## 12.7 Summary on the Lagrange Method

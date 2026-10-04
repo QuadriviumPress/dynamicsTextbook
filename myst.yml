@@ -73,7 +73,7 @@ site:
     hide_authors: true
   actions:
     - title: Original source
-      url: https://github.com/OSTP/dynamicsTextbook
+      url: https://github.com/QuadriviumPress/dynamicsTextbook
   nav:
     - title: Sources & Attribution
       url: https://github.com/QuadriviumPress/dynamicsTextbook/blob/main/SOURCES.md
