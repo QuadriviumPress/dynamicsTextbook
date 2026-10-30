@@ -1,2 +1,2 @@
 PyMuPDF==1.28.2
-fonttools==4.46.0
+fonttools==4.60.2
