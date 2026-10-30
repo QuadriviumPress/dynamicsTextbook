@@ -31,7 +31,7 @@ For a fuller account of this edition’s relationship to the source, see [proven
 
 ## Build
 
-Use Node.js 22 and install the pinned MyST dependency locally:
+Use Node 26 and install the pinned MyST dependency locally:
 
 ```bash
 npm install
