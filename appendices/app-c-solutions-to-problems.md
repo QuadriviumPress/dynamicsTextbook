@@ -39,7 +39,7 @@ $$
 **Problem 1-4:** [Question](#problem-1-4)
 
 $$
-\mathrm{a}) -48, \mathrm{b}) 10, \mathrm{c}) 9c - 9 - 2c^{2}, \mathrm{d}) c = 3, \frac{3}{2}
+\text{a}) -48, \mathrm{b}) 10, \mathrm{c}) 9c - 9 - 2c^{2}, \mathrm{d}) c = 3, \frac{3}{2}
 $$
 
 (solution-1-5)=
@@ -47,7 +47,7 @@ $$
 **Problem 1-5:** [Question](#problem-1-5)
 
 $$
-\mathrm{a}) 4\hat{\imath} - 26\hat{\jmath} - 57\hat{k}
+\text{a}) 4\hat{\imath} - 26\hat{\jmath} - 57\hat{k}
 $$
 
 $$
@@ -67,7 +67,7 @@ $$
 **Problem 1-6:** [Question](#problem-1-6)
 
 $$
-\mathrm{a}) 4\hat{\imath} - 7\hat{\jmath} - \hat{k}
+\text{a}) 4\hat{\imath} - 7\hat{\jmath} - \hat{k}
 $$
 
 $$
@@ -83,7 +83,7 @@ $$
 **Problem 1-7:** [Question](#problem-1-7)
 
 $$
-\mathrm{a}) (5,\tan ^{-1}(\frac{4}{3}))
+\text{a}) (5,\tan ^{-1}(\frac{4}{3}))
 $$
 
 ::::
@@ -121,7 +121,7 @@ $$
 **Problem 1-10:** [Question](#problem-1-10)
 
 $$
-\mathrm{a}) \vec{v} = kr\hat{r} + cr\hat{\theta}
+\text{a}) \vec{v} = kr\hat{r} + cr\hat{\theta}
 $$
 
 $$
@@ -137,7 +137,7 @@ $$
 **Problem 1-11:** [Question](#problem-1-11)
 
 $$
-\mathrm{a}) x, \mathrm{b}) 1 + x + x^{2}, \mathrm{c}) -x - \frac{1}{2} x^{2}
+\text{a}) x, \mathrm{b}) 1 + x + x^{2}, \mathrm{c}) -x - \frac{1}{2} x^{2}
 $$
 
 (solution-1-12)=
@@ -145,8 +145,14 @@ $$
 **Problem 1-12:** [Question](#problem-1-12)
 
 $$
-\mathrm{a}) 1, \mathrm{b}) 1 + 5x, \mathrm{c}) \ln 2 + \frac{3}{2} x
+\text{a}) 1, \mathrm{b}) 1 + 5x, \mathrm{c}) \ln 2 + \frac{3}{2} x
 $$
+
+(solution-1-13)=
+
+**Problem 1-13:** [Question](#problem-1-13)
+
+Solution not provided in the source edition.
 
 ::::
 
@@ -181,6 +187,12 @@ $$
 v_{\min}= \sqrt{\frac{2g}{\sin ^{2}\theta} (h - y_{0})}
 $$
 
+(solution-2-3)=
+
+**Problem 2-3:** [Question](#problem-2-3)
+
+Solution not provided in the source edition.
+
 (solution-2-4)=
 
 **Problem 2-4:** [Question](#problem-2-4)
@@ -201,7 +213,7 @@ $$
 
 $$
 \begin{aligned}
-\mathrm{a}) v &= - \frac{k}{2} x^{2}+ v_{0} \\
+\text{a}) v &= - \frac{k}{2} x^{2}+ v_{0} \\
 \mathrm{b}) x(t) &= \sqrt{\frac{2v_{0}}{k}} \frac{\big(e^{\sqrt{2kv_{0}}t}- 1\big)}{\big(1 + e^{\sqrt{2kv_{0}}t}\big)}
 \end{aligned}
 $$
@@ -263,7 +275,7 @@ $$
 
 **Problem 2-10:** [Question](#problem-2-10)
 
-b) lower pulley goes down, $M$ goes up, $M_{2}$ falls faster than $M_{1}$.
+b) lower pulley goes down, $M_{3}$ goes up, $M_{2}$ falls faster than $M_{1}$.
 
 c) $- \frac{1}{2} (\ddot{y}_{1}+ \ddot{y}_{2})$, where $\ddot{y}_{1}$ is the acceleration of $M_{1}$ and $\ddot{y}_{2}$ is the acceleration of $M_{2}$.
 
@@ -301,7 +313,7 @@ Mercury: 0.375 m, Earth: 1 m, Mars: 0.376 m, Jupiter: 2.5 m, Neptune: 1.13 m
 **Problem 3-3:** [Question](#problem-3-3)
 
 $$
-\mathrm{a}) \ddot{x} = \frac{3g}{L} x = 0
+\text{a}) \ddot{x} = \frac{3g}{L} x = 0
 $$
 
 $$
@@ -321,7 +333,7 @@ $$
 **Problem 3-5:** [Question](#problem-3-5)
 
 $$
-\mathrm{a}) T = 2\pi \sqrt{\frac{L}{g}}
+\text{a}) T = 2\pi \sqrt{\frac{L}{g}}
 $$
 
 b) $T = 2\pi\sqrt{\dfrac{L}{(g + \ddot{y})}} \rightarrow \infty$ for $\ddot{y} = -g$
@@ -331,7 +343,7 @@ b) $T = 2\pi\sqrt{\dfrac{L}{(g + \ddot{y})}} \rightarrow \infty$ for $\ddot{y} =
 **Problem 3-6:** [Question](#problem-3-6)
 
 $$
-\mathrm{a}) x = A\cos \Bigg(t\sqrt{\frac{k}{m} + \frac{g}{L}} \Bigg)
+\text{a}) x = A\cos \Bigg(t\sqrt{\frac{k}{m} + \frac{g}{L}} \Bigg)
 $$
 
 $$
@@ -380,6 +392,12 @@ $$
 \mathrm{d}) x = A\cos \Bigg(t\sqrt{\frac{4k}{m}} \Bigg), v = -A\sqrt{\frac{4k}{m}} \sin \Bigg(t\sqrt{\frac{4k}{m}} \Bigg), a = -A\frac{4k}{m}\cos \Bigg(t\sqrt{\frac{4k}{m}} \Bigg)
 $$
 
+(solution-3-9)=
+
+**Problem 3-9:** [Question](#problem-3-9)
+
+Solution not provided in the source edition.
+
 (solution-3-10)=
 
 **Problem 3-10:** [Question](#problem-3-10)
@@ -405,9 +423,9 @@ Solutions to Practice Problems from [Chapter 4.8](#sec-4-8)
 
 **Problem 4-1:** [Question](#problem-4-1)
 
-a) The mass $m$ is inside the accelerating frame, so the inertial frame sees gravity pointing downward and tension pointing upward and to the positive $x-$direction (the direction of the acceleration).
+a) The mass $m$ is inside the accelerating frame, so the inertial frame sees gravity pointing downward and tension pointing upward and to the positive $x$-direction (the direction of the acceleration).
 
-b) The mass $m$ is inside the accelerating frame, so the non-inertial frame sees gravity pointing downward and tension pointing upward and to the positive $x-$direction (the direction of the acceleration) and a fictitious force opposite to the acceleration.
+b) The mass $m$ is inside the accelerating frame, so the non-inertial frame sees gravity pointing downward and tension pointing upward and to the positive $x$-direction (the direction of the acceleration) and a fictitious force opposite to the acceleration.
 
 (solution-4-2)=
 
@@ -434,7 +452,7 @@ $\theta = 26.6$ degrees
 **Problem 4-4:** [Question](#problem-4-4)
 
 $$
-\mathrm{a}) a = g\tan \theta, \mathrm{b}) g_{eff}= g/\cos \theta
+\text{a}) a = g\tan \theta, \mathrm{b}) g_{eff}= g/\cos \theta
 $$
 
 (solution-4-5)=
@@ -478,18 +496,18 @@ c) Centrifugal and Coriolis forces
 **Problem 4-9:** [Question](#problem-4-9)
 
 $$
-\mathrm{a}) F_{fic}= -ma\hat{z}
+\text{a}) F_{fic}= -ma\hat{z}
 $$
 
 $$
-\mathrm{b}) g_{eff}= -9.8\mathrm{m} \mathrm{s}^{-2}\hat{z}
+\mathrm{b}) g_{eff}= -9.8\text{m s}^{-2}\hat{z}
 $$
 
-c) $v_{\min}= 15.65\mathrm{m} \mathrm{s}^{-1}$ and $t = 0.64\mathrm{s}$
+c) $v_{\min}= 15.65\text{m s}^{-1}$ and $t = 0.64\mathrm{s}$
 
 d) No forces
 
-e) $v_{\min}= 15.65\mathrm{m} \mathrm{s}^{-1}$ and $t = 0.64\mathrm{s}$
+e) $v_{\min}= 15.65\text{m s}^{-1}$ and $t = 0.64\mathrm{s}$
 
 f) Inertial: horizontal and Non-Inertial: parabolic
 
@@ -509,7 +527,7 @@ Solutions to Practice Problems from [Chapter 5.8](#sec-5-8)
 **Problem 5-1:** [Question](#problem-5-1)
 
 $$
-\mathrm{a}) F_{Cor}
+\text{a}) F_{Cor}
 $$
 
 $$
@@ -527,7 +545,7 @@ e) $F_{cent}, F_{Cor}, F_{az}$ and $F_{trans}$
 **Problem 5-2:** [Question](#problem-5-2)
 
 $$
-\mathrm{a}) 8.84\omega ^{2}\hat{r}
+\text{a}) 8.84\omega ^{2}\hat{r}
 $$
 
 b) $4.7 \mathrm{s}^{-1}$ or 0.75 revolutions per second
@@ -538,8 +556,6 @@ b) $4.7 \mathrm{s}^{-1}$ or 0.75 revolutions per second
 
 The azimuthal force $F_{az}$ points in the positive $y^{\prime }-$direction and the centrifugal force $F_{cent}$ points in the positive $x^{\prime }-$direction.
 
-**Problem 5-3:** [Question](#problem-5-3)
-
 a) azimuthal and centrifugal forces
 
 $$
@@ -549,6 +565,12 @@ $$
 $$
 \mathrm{c}) F_{cent}= 343 \mathrm{N}, F_{az}= 12 \mathrm{N}
 $$
+
+(solution-5-4)=
+
+**Problem 5-4:** [Question](#problem-5-4)
+
+Solution not provided in the source edition.
 
 (solution-5-5)=
 
@@ -596,6 +618,12 @@ $$
 
 ::::
 
+(solution-5-9)=
+
+**Problem 5-9:** [Question](#problem-5-9)
+
+Solution not provided in the source edition.
+
 (sec-C-6)=
 ## C.6 Momentum and Variable Mass
 
@@ -616,7 +644,7 @@ $$
 **Problem 6-2:** [Question](#problem-6-2)
 
 $$
-\mathrm{a}) \frac{M_{1}}{M_{2}} v_{1}\hat{\imath}
+\text{a}) \frac{M_{1}}{M_{2}} v_{1}\hat{\imath}
 $$
 
 $$
@@ -628,7 +656,7 @@ $$
 **Problem 6-3:** [Question](#problem-6-3)
 
 $$
-\mathrm{a}) 8\hat{\imath}
+\text{a}) 8\hat{\imath}
 $$
 
 $$
@@ -640,8 +668,7 @@ $$
 **Problem 6-4:** [Question](#problem-6-4)
 
 $$
-\mathrm{a}) \vec{I} = -325 \mathrm{N} \mathrm{s}
-$$
+\text{a}) \vec{I} = -325 \text{N s}$$
 
 $$
 \mathrm{b}) |\vec{F}| = 1625 \mathrm{N}
@@ -668,7 +695,7 @@ $$
 **Problem 6-7:** [Question](#problem-6-7)
 
 $$
-\mathrm{a}) \vec{v}_{f}= \frac{m_{p}}{(m_{p}+ M)} \vec{v}_{0}
+\text{a}) \vec{v}_{f}= \frac{m_{p}}{(m_{p}+ M)} \vec{v}_{0}
 $$
 
 ::::
@@ -686,7 +713,7 @@ $$
 $$
 
 $$
-\mathrm{d}) 31.91 \mathrm{m} \mathrm{s}^{-1}
+\mathrm{d}) 31.91 \text{m s}^{-1}
 $$
 
 (solution-6-8)=
@@ -694,7 +721,7 @@ $$
 **Problem 6-8:** [Question](#problem-6-8)
 
 $$
-0.625 \mathrm{m} \mathrm{s}^{-1}
+0.625 \text{m s}^{-1}
 $$
 
 (solution-6-9)=
@@ -702,7 +729,7 @@ $$
 **Problem 6-9:** [Question](#problem-6-9)
 
 $$
-\mathrm{a}) \vec{v}_{cm}= \frac{m_{1}\vec{u}}{(m_{1}+ m_{2})}
+\text{a}) \vec{v}_{cm}= \frac{m_{1}\vec{u}}{(m_{1}+ m_{2})}
 $$
 
 $$
@@ -718,7 +745,7 @@ $$
 **Problem 6-10:** [Question](#problem-6-10)
 
 $$
-\mathrm{a}) M + \lambda x
+\text{a}) M + \lambda x
 $$
 
 $$
@@ -757,7 +784,7 @@ Solutions to Practice Problems from [Chapter 7.9](#sec-7-9)
 **Problem 7-1:** [Question](#problem-7-1)
 
 $$
-\mathrm{a}) \frac{3}{2} MR^{2}
+\text{a}) \frac{3}{2} MR^{2}
 $$
 
 $$
@@ -811,7 +838,7 @@ $$
 **Problem 7-6:** [Question](#problem-7-6)
 
 $$
-\mathrm{a}) I_{0}= \frac{1}{2} MR^{2}+ ms^{2}
+\text{a}) I_{0}= \frac{1}{2} MR^{2}+ ms^{2}
 $$
 
 $$
@@ -841,7 +868,7 @@ $$
 **Problem 7-8:** [Question](#problem-7-8)
 
 $$
-\mathrm{a}) h = \frac{3L + R}{4}
+\text{a}) h = \frac{3L + R}{4}
 $$
 
 $$
@@ -896,15 +923,15 @@ $$
 **Problem 8-2:** [Question](#problem-8-2)
 
 $$
-\mathrm{a}) 6.18 \times 10^{5}\mathrm{m} \mathrm{s}^{-1}
+\text{a}) 6.18 \times 10^{5}\text{m s}^{-1}
 $$
 
 $$
-\mathrm{b}) 4.2 \times 10^{4}\mathrm{m} \mathrm{s}^{-1}
+\mathrm{b}) 4.2 \times 10^{4}\text{m s}^{-1}
 $$
 
 $$
-\mathrm{c}) 7.7 \times 10^{3}\mathrm{m} \mathrm{s}^{-1}
+\mathrm{c}) 7.7 \times 10^{3}\text{m s}^{-1}
 $$
 
 (solution-8-3)=
@@ -936,7 +963,7 @@ Only if $c = -1$
 **Problem 8-6:** [Question](#problem-8-6)
 
 $$
-\mathrm{a}) \vec{F} = -(2\hat{\imath} + 6y\hat{\jmath} + 8z\hat{k})
+\text{a}) \vec{F} = -(2\hat{\imath} + 6y\hat{\jmath} + 8z\hat{k})
 $$
 
 $$
@@ -964,7 +991,7 @@ $$
 **Problem 8-9:** [Question](#problem-8-9)
 
 $$
-\mathrm{a}) 0.85 \mathrm{J}, \mathrm{b}) 11.54 \mathrm{J}, \mathrm{c}) 12.39 \mathrm{J}, \mathrm{d}) 31.20 \mathrm{J}, \mathrm{e}) 32.89 \mathrm{m/s}
+\text{a}) 0.85 \mathrm{J}, \mathrm{b}) 11.54 \mathrm{J}, \mathrm{c}) 12.39 \mathrm{J}, \mathrm{d}) 31.20 \mathrm{J}, \mathrm{e}) 32.89 \mathrm{m/s}
 $$
 
 (solution-8-10)=
@@ -1049,7 +1076,7 @@ $$
 **Problem 9-7:** [Question](#problem-9-7)
 
 $$
-\mathrm{a}) h = \frac{1}{2} \frac{kd^{2}}{mg}
+\text{a}) h = \frac{1}{2} \frac{kd^{2}}{mg}
 $$
 
 b) The adult can only jump half as high as the child.
@@ -1068,7 +1095,7 @@ $$
 
 $$
 \begin{aligned}
-\mathrm{a}) v_{cm}&= \frac{\mathrm{d}x}{\mathrm{d}t} \\
+\text{a}) v_{cm}&= \frac{\mathrm{d}x}{\mathrm{d}t} \\
 \mathrm{b}) \omega &= \frac{v_{cm}}{R}
 \end{aligned}
 $$
@@ -1142,11 +1169,15 @@ $$
 F_{eff}= \frac{L^{2}}{mr^{3}} - \frac{\gamma}{r^{2}} - \frac{3\gamma \varepsilon}{r^{4}}
 $$
 
+(solution-10-7)=
+
 **Problem 10-7:** [Question](#problem-10-7)
 
 $$
 U_{eff}= \frac{1}{2} \frac{L^{2}}{mr^{2}} - \frac{\gamma}{r} - \frac{1}{2} \varepsilon r^{2}
 $$
+
+(solution-10-8)=
 
 **Problem 10-8:** [Question](#problem-10-8)
 
@@ -1168,10 +1199,12 @@ $$
 \mathrm{c}) E = \sqrt{\frac{2AL^{2}}{m}}
 $$
 
+(solution-10-10)=
+
 **Problem 10-10:** [Question](#problem-10-10)
 
 $$
-\mathrm{a}) \dot{r} = 2\sqrt{A}\frac{L}{mr^{3/2}}
+\text{a}) \dot{r} = 2\sqrt{A}\frac{L}{mr^{3/2}}
 $$
 
 $$
@@ -1186,13 +1219,13 @@ $$
 \mathrm{d}) F_{r}= - \frac{L^{2}}{m} \bigg(\frac{6A}{r^{4}} + \frac{1}{r^{3}} \bigg)
 $$
 
+(solution-10-11)=
+
 **Problem 10-11:** [Question](#problem-10-11)
 
 a) For small values of $r, \frac{1}{r^{3}} \gg \frac{1}{r^{2}}$. For large values of $r, \frac{1}{r^{3}} \ll \frac{1}{r^{2}}$.
 
 <!-- Source PDF page 303; printed label 294. -->
-
-::::{admonition} Continued
 
 $$
 \mathrm{b}) r = \frac{3Am}{L^{2}}
@@ -1203,8 +1236,6 @@ $$
 $$
 
 d) Unstable
-
-::::
 
 (sec-C-11)=
 ## C.11 Orbits and Kepler’s Laws
@@ -1218,7 +1249,7 @@ Solutions to Practice Problems from [Chapter 11.7](#sec-11-7)
 **Problem 11-1:** [Question](#problem-11-1)
 
 $$
-\mathrm{a}) 0.206, \mathrm{b}) 0.078, \mathrm{c}) 0.967, \mathrm{d}) 0.041
+\text{a}) 0.206, \mathrm{b}) 0.078, \mathrm{c}) 0.967, \mathrm{d}) 0.041
 $$
 
 (solution-11-2)=
@@ -1226,7 +1257,7 @@ $$
 **Problem 11-2:** [Question](#problem-11-2)
 
 $$
-\mathrm{a}) 0.24 \mathrm{yr}, \mathrm{b}) 4.6 \mathrm{yr}, \mathrm{c}) 75.5 \mathrm{yr}, \mathrm{d}) 289 \mathrm{yr}
+\text{a}) 0.24 \mathrm{yr}, \mathrm{b}) 4.6 \mathrm{yr}, \mathrm{c}) 75.5 \mathrm{yr}, \mathrm{d}) 289 \mathrm{yr}
 $$
 
 (solution-11-3)=
@@ -1302,7 +1333,7 @@ Height = 1140 km
 ::::{admonition} Continued
 
 $$
-\mathrm{a}) r = \frac{p(1 + \varepsilon)}{1 + \varepsilon \cos \theta}
+\text{a}) r = \frac{p(1 + \varepsilon)}{1 + \varepsilon \cos \theta}
 $$
 
 $$
@@ -1375,7 +1406,7 @@ $$
 **Problem 12-6:** [Question](#problem-12-6)
 
 $$
-\mathrm{a}) K = \frac{1}{2} m\dot{x}^{2}
+\text{a}) K = \frac{1}{2} m\dot{x}^{2}
 $$
 
 b) $U_{spring}= \frac{1}{2} kx^{2}$ and $U_{grav}= mgx\sin \theta$
@@ -1403,7 +1434,7 @@ $$
 **Problem 12-8:** [Question](#problem-12-8)
 
 $$
-\mathrm{a}) L = \frac{3}{8} MR^{2}\dot{\theta}^{2}- \frac{1}{4} MgR\theta ^{2}
+\text{a}) L = \frac{3}{8} MR^{2}\dot{\theta}^{2}- \frac{1}{4} MgR\theta ^{2}
 $$
 
 $$
@@ -1415,7 +1446,7 @@ $$
 **Problem 12-9:** [Question](#problem-12-9)
 
 $$
-\mathrm{a}) U_{grav}= \frac{1}{4} mga(1 - \cos 2\theta)
+\text{a}) U_{grav}= \frac{1}{4} mga(1 - \cos 2\theta)
 $$
 
 $$

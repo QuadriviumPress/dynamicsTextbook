@@ -157,9 +157,9 @@ $$
 
 $F_{g} + F_{s} = ma$. The forces are gravity $(F_{g})$ and the spring force $(F_{s})$. With $+\hat{x}$ upward, $F_{g} = -mg$ and $F_{s} = -kx$, so $ma = -kx - mg$.
 
-If the system is static, it is in equilibrium. Here, $ma$ = 0 and $-kx - mg$ = 0, which means that the new equilibrium position is $x_{0}= - \frac{mg}{k}$ . Note that $x_{0}$ is negative because we defined $x$ = 0 to be at the original equilibrium point when there is no mass on the spring and we defined $x$ as positive pointing up.
+If the system is static, it is in equilibrium. Here, $ma$ = 0 and $-kx - mg$ = 0, which means that the new equilibrium position is $x_{0}= - \frac{mg}{k}$. Note that $x_{0}$ is negative because we defined $x$ = 0 to be at the original equilibrium point when there is no mass on the spring and we defined $x$ as positive pointing up.
 
-For any other position, $x$, the system will feel a net force and $a \not =$ 0:
+For any other position, $x$, the system will feel a net force and $a \neq 0$:
 
 $$
 ma = -kx - mg
@@ -186,8 +186,8 @@ if $x_{0}$ is a constant. The reason is that the derivative of a constant is alw
 
 $$
 \begin{aligned}
-\frac{\mathrm{d}^{2}X}{\mathrm{d}t^{2}} &= \frac{\mathrm{d}^{2}x}{\mathrm{d}t^{2}} =\Rightarrow \mathrm{where} x_{0}\mathrm{is} \mathrm{a} \mathrm{constant} \\
-\frac{\mathrm{d}^{2}X}{\mathrm{d}t^{2}} &= - \frac{k}{m} X =\Rightarrow \frac{\mathrm{d}^{2}x}{\mathrm{d}t^{2}} = - \frac{k}{m} (x - x_{0}) = - \frac{k}{m} X \\
+\frac{\mathrm{d}^{2}X}{\mathrm{d}t^{2}} &= \frac{\mathrm{d}^{2}x}{\mathrm{d}t^{2}} \quad\Rightarrow  \text{where} x_{0}\text{is a constant}\\
+\frac{\mathrm{d}^{2}X}{\mathrm{d}t^{2}} &= - \frac{k}{m} X \quad\Rightarrow  \frac{\mathrm{d}^{2}x}{\mathrm{d}t^{2}} = - \frac{k}{m} (x - x_{0}) = - \frac{k}{m} X \\
 X &= A\cos (\omega _{0}t + \varphi)
 \end{aligned}
 $$
@@ -200,7 +200,7 @@ $$
 
 ::::{admonition} Quick questions
 
-1. Consider a vertical spring-mass system with an equilibrium position at $x_{0}= - \frac{mg}{k}$ . What is the magnitude of the spring force at $x = x_{0}$ and $x$ = 0?
+1. Consider a vertical spring-mass system with an equilibrium position at $x_{0}= - \frac{mg}{k}$. What is the magnitude of the spring force at $x = x_{0}$ and $x$ = 0?
 
 2. How does increasing (or decreasing) the spring constant affect the motion and the equilibrium point of a vertical spring-mass system?
 
@@ -293,10 +293,10 @@ $$
 
 where the negative sign is present because this is a restoring force (it will act in the opposite direction to our angular displacement). Since $T$ and $mg\cos \theta$ cancel (equal and opposite forces because the string is not deforming), our net force is equal to this restoring force.
 
-You’ll notice that this force equation does not depend on $x$, but instead depends on the angular displacement. If we want to use $F = ma$, we need to get the displacement in units of $x$ because $a = \ddot{x}$ . Using the small angle approximation (see [Appendix B](#app-b)), we can write
+You’ll notice that this force equation does not depend on $x$, but instead depends on the angular displacement. If we want to use $F = ma$, we need to get the displacement in units of $x$ because $a = \ddot{x}$. Using the small angle approximation (see [Appendix B](#app-b)), we can write
 
 $$
-\sin \theta = \frac{x}{L} :
+\sin \theta \approx \frac{x}{L} :
 $$
 
 :::{figure} ../images/figures/figure-3-6.png
@@ -305,7 +305,7 @@ $$
 :alt: Figure shows a simple pendulum and the small angle approximation.
 :width: 130px
 
-Small angle approximation diagram for small values of $\theta$, as this is approximately a right-angled triangle where the $y-$axis $(L)$ and displacement $x$ meet.
+Small angle approximation diagram for small values of $\theta$, as this is approximately a right-angled triangle where the $y$-axis $(L)$ and displacement $x$ meet.
 :::
 
 The true path of the pendulum is an arc, so this assumption requires that $\theta$ isn’t too big so that there is very little difference between an arc and a straight line. See [Appendix B](#app-b) for a review on applying small angle approximations.
@@ -502,7 +502,7 @@ forces:
 
 $$
 \begin{aligned}
-\sum F &= F_{s}+ F_{p}= ma =\Rightarrow T \text{ and } F_{g}\cos \theta \text{ cancel, so we can ignore them} \\
+\sum F &= F_{s}+ F_{p}= ma \quad\Rightarrow  T \text{ and } F_{g}\cos \theta \text{ cancel, so we can ignore them} \\
 ma &= -kx - \frac{mg}{L} x \\
 m \frac{\mathrm{d}^{2}x}{\mathrm{d}t^{2}} &= -\bigg(k + \frac{mg}{L} \bigg)x \\
 \frac{\mathrm{d}^{2}x}{\mathrm{d}t^{2}} &= -\Bigg(\frac{kL + mg}{mL} \Bigg)x
@@ -617,17 +617,16 @@ Thus, if you can get a simple harmonic motion problem into its differential equa
 $$
 \begin{aligned}
 0 &= \frac{\mathrm{d}^{2}x}{\mathrm{d}t^{2}} + Cx \\
-\mathrm{where}:
+\text{where}:
 \end{aligned}
 $$
 
 $$
-C = \omega _{0}^{2}\mathrm{for} \mathrm{positive} \mathrm{constant} \mathrm{C}
-$$
+C = \omega _{0}^{2}\text{for positive constant C}$$
 
 $$
 \begin{aligned}
-\mathrm{and} \\
+\text{and} \\
 T &= \frac{2\pi}{\omega _{0}}
 \end{aligned}
 $$
@@ -776,11 +775,7 @@ c) What is the differential equation of motion for the mass?
 
 d) What is the period of oscillations for this motion? How does the period depend on $\theta$? Comment.
 
-::::
-
 <!-- Source PDF page 78; printed label 69. -->
-
-::::{admonition} Continued
 
 :::{figure} ../images/figures/figure-3-13.png
 :label: fig-3-13

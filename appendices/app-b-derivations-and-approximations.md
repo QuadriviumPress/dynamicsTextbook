@@ -18,18 +18,18 @@ $$
 \dot{r}^{2}= \frac{2}{m} (E - U_{eff}) (\mathrm{B}.1)
 $$
 
-where $\dot{r} = \frac{\mathrm{d}r}{\mathrm{d}t}$. We want to get $r(\theta)$ to describe the orbit. To do this, we will use the ratio of $\dot{r}$ and $\dot{\theta}$ ,
+where $\dot{r} = \frac{\mathrm{d}r}{\mathrm{d}t}$. We want to get $r(\theta)$ to describe the orbit. To do this, we will use the ratio of $\dot{r}$ and $\dot{\theta}$,
 
 $$
 \frac{\dot{r}}{\dot{\theta}} = \frac{\mathrm{d}r/\mathrm{d}t}{\mathrm{d}\theta /\mathrm{d}t} = \frac{\mathrm{d}r}{\mathrm{d}\theta} (\mathrm{B}.2)
 $$
 
-So we need to get an equation for $\dot{\theta}$ .
+So we need to get an equation for $\dot{\theta}$.
 
-For $\dot{\theta}$ , we can use the conservation of angular momentum. Recall that central forces conserve angular momentum by definition (see [Chapter 10](#ch-10)). The magnitude of angular momentum is:
+For $\dot{\theta}$, we can use the conservation of angular momentum. Recall that central forces conserve angular momentum by definition (see [Chapter 10](#ch-10)). The magnitude of angular momentum is:
 
 $$
-L = mr^{2}\dot{\theta} =\Rightarrow \dot{\theta} = \frac{L}{mr^{2}} (\mathrm{B}.3)
+L = mr^{2}\dot{\theta} \quad\Rightarrow  \dot{\theta} = \frac{L}{mr^{2}} (\mathrm{B}.3)
 $$
 
 with $L$ = constant.
@@ -37,11 +37,11 @@ with $L$ = constant.
 We can then combine the $\dot{r}$ and $\dot{\theta}$ equations as follows:
 
 $$
-\Bigg(\frac{\mathrm{d}r}{\mathrm{d}\theta} \Bigg)^{2}= \frac{\dot{r}^{2}}{\dot{\theta}^{2}} =\Rightarrow \mathrm{from} \mathrm{Equation} \mathrm{B}.2
+\Bigg(\frac{\mathrm{d}r}{\mathrm{d}\theta} \Bigg)^{2}= \frac{\dot{r}^{2}}{\dot{\theta}^{2}} \quad\Rightarrow  \text{from Equation B.2}
 $$
 
 $$
-\Bigg(\frac{\mathrm{d}r}{\mathrm{d}\theta} \Bigg)^{2}= \frac{\frac{2}{m} (E - U_{eff})}{\Big(\frac{L}{mr^{2}} \Big)^{2}} =\Rightarrow \mathrm{sub} \mathrm{in} \mathrm{Equations} \mathrm{B}.1 \mathrm{and} \mathrm{B}.3
+\Bigg(\frac{\mathrm{d}r}{\mathrm{d}\theta} \Bigg)^{2}= \frac{\frac{2}{m} (E - U_{eff})}{\Big(\frac{L}{mr^{2}} \Big)^{2}} \quad\Rightarrow  \text{sub in Equations B}.1 \text{and B}.3
 $$
 
 $$
@@ -49,13 +49,12 @@ $$
 $$
 
 $$
-\frac{1}{r^{4}} \Bigg(\frac{\mathrm{d}r}{\mathrm{d}\theta} \Bigg)^{2}= \frac{2m(E - U_{eff})}{L^{2}} =\Rightarrow \mathrm{bring} \mathrm{all} r \mathrm{terms} \mathrm{to} \mathrm{the} \mathrm{other} \mathrm{side}
-$$
+\frac{1}{r^{4}} \Bigg(\frac{\mathrm{d}r}{\mathrm{d}\theta} \Bigg)^{2}= \frac{2m(E - U_{eff})}{L^{2}} \quad\Rightarrow  \text{bring all}r \text{terms to the other side}$$
 
 <!-- Source PDF page 284; printed label 275. -->
 
 $$
-\Bigg(\frac{1}{r^{2}} \frac{\mathrm{d}r}{\mathrm{d}\theta} \Bigg)^{2}= \frac{2m(E - U_{eff})}{L^{2}} =\Rightarrow \mathrm{simplify} \mathrm{the} \mathrm{LHS} \mathrm{of} \mathrm{the} \mathrm{equation} (\mathrm{B}.4)
+\Bigg(\frac{1}{r^{2}} \frac{\mathrm{d}r}{\mathrm{d}\theta} \Bigg)^{2}= \frac{2m(E - U_{eff})}{L^{2}} \quad\Rightarrow  \text{simplify the LHS of the equation}(\mathrm{B}.4)
 $$
 
 Equation B.4 applies to any effective potential. Since we’re talking about orbits, the central force is gravity. That makes the effective potential:
@@ -71,19 +70,19 @@ $$
 $$
 
 $$
-\Bigg(\frac{1}{r^{2}} \frac{\mathrm{d}r}{\mathrm{d}\theta} \Bigg)^{2}= \frac{2mE}{L^{2}} - \frac{1}{r^{2}} + \frac{2m\gamma}{rL^{2}} =\Rightarrow \mathrm{simplify} (\mathrm{B}.6)
+\Bigg(\frac{1}{r^{2}} \frac{\mathrm{d}r}{\mathrm{d}\theta} \Bigg)^{2}= \frac{2mE}{L^{2}} - \frac{1}{r^{2}} + \frac{2m\gamma}{rL^{2}} \quad\Rightarrow  \text{simplify} (\mathrm{B}.6)
 $$
 
 To solve Equation B.6, there is a substitution trick we can use to help simplify the problem. Instead of solving for $r$, we’re going to solve for $y = \frac{1}{r}$. The reason for this substitution is that
 
 $$
-\frac{\mathrm{d}y}{\mathrm{d}\theta} = - \frac{1}{r^{2}} \frac{\mathrm{d}r}{\mathrm{d}\theta} =\Rightarrow \mathrm{remember} \mathrm{that} y = \frac{1}{r}
+\frac{\mathrm{d}y}{\mathrm{d}\theta} = - \frac{1}{r^{2}} \frac{\mathrm{d}r}{\mathrm{d}\theta} \quad\Rightarrow  \text{remember that}y = \frac{1}{r}
 $$
 
 Thus, we can write Equation B.6 in terms of $y = \frac{1}{r}$ instead of $r$.
 
 $$
-\Bigg(\frac{\mathrm{d}y}{\mathrm{d}\theta} \Bigg)^{2}= \frac{2mE}{L^{2}} - y^{2}+ \frac{2m\gamma}{L^{2}} y =\Rightarrow \mathrm{sub} y = \frac{1}{r} \mathrm{into} \mathrm{Equations} \mathrm{B}.6 (\mathrm{B}.7)
+\Bigg(\frac{\mathrm{d}y}{\mathrm{d}\theta} \Bigg)^{2}= \frac{2mE}{L^{2}} - y^{2}+ \frac{2m\gamma}{L^{2}} y \quad\Rightarrow  \text{sub} y = \frac{1}{r} \text{into Equations B}.6 (\mathrm{B}.7)
 $$
 
 Already this looks simpler. We can simplify more, however, by “completing the square”,
@@ -135,11 +134,16 @@ $$
 
 Now we have a fairly straightforward integral to solve. The solution to this problem is available in [Appendix A](#app-a).
 
-:::{image} ../images/math/p285-1e008daae40b.svg
-:alt: Mathematical expression from source PDF page 285
-:class: source-equation
-:align: center
-:::
+$$
+\begin{aligned}
+\bigg(\frac{\mathrm{d}z}{\mathrm{d}\theta}\bigg)^{2} &= -z^{2}+ B^{2} \\
+\frac{\mathrm{d}z}{\mathrm{d}\theta} &= \sqrt{B^{2}- z^{2}} \\
+\frac{\mathrm{d}z}{\sqrt{B^{2}- z^{2}}} &= \mathrm{d}\theta \\
+\int \frac{\mathrm{d}z}{\sqrt{B^{2}- z^{2}}} &= \int \mathrm{d}\theta \\
+\sin^{-1}\!\bigg(\frac{z}{B}\bigg) &= \theta + C
+\quad\Rightarrow\quad C\text{ is a constant of integration}
+\end{aligned}
+$$
 
 We can select the initial conditions such that the initial angle is anything we want because the motion is periodic. For ellipses, it helps to have the angle in terms of cos instead of sin, so we can set $C = \frac{\pi}{2}$. Thus, we get the solution:
 
@@ -150,11 +154,11 @@ $$
 Now we need to put back all of those substitutions that we made!
 
 $$
-1. z = y - \frac{m\gamma}{L^{2}} =\Rightarrow y - \frac{m\gamma}{L^{2}} = B\cos \theta
+1. z = y - \frac{m\gamma}{L^{2}} \quad\Rightarrow  y - \frac{m\gamma}{L^{2}} = B\cos \theta
 $$
 
 $$
-2. y = \frac{1}{r} =\Rightarrow \frac{1}{r} - \frac{m\gamma}{L^{2}} = B\cos \theta
+2. y = \frac{1}{r} \quad\Rightarrow  \frac{1}{r} - \frac{m\gamma}{L^{2}} = B\cos \theta
 $$
 
 <!-- Source PDF page 286; printed label 277. -->
@@ -245,7 +249,7 @@ For more general functions, you can approximate the function using its Taylor se
 $$
 \begin{aligned}
 f(x) &= f(x_{0}) + \frac{\mathrm{d}f(x_{0})}{\mathrm{d}x} (x - x_{0}) + \frac{1}{2} \frac{\mathrm{d}^{2}f(x_{0})}{\mathrm{d}x^{2}} (x - x_{0})^{2}+ \\
-\frac{1}{3!} \frac{\mathrm{d}^{3}f(x_{0})}{\mathrm{d}x^{3}} (x - x_{0})^{3}+ \cdot \cdot \cdot + \frac{1}{n!} \frac{\mathrm{d}^{n}f(x_{0})}{\mathrm{d}x^{n}} (x - x_{0})^{n}
+\frac{1}{3!} \frac{\mathrm{d}^{3}f(x_{0})}{\mathrm{d}x^{3}} (x - x_{0})^{3}+ \cdots + \frac{1}{n!} \frac{\mathrm{d}^{n}f(x_{0})}{\mathrm{d}x^{n}} (x - x_{0})^{n}
 \end{aligned}
 $$
 
@@ -276,12 +280,12 @@ The Taylor series for $\sin x$ and $\cos x$ (with $x_{0}$ = 0) are:
 
 $$
 \begin{aligned}
-\sin x &= x - \frac{x^{3}}{3!} + \frac{x^{5}}{5!} - \frac{x^{7}}{7!} + \frac{x^{9}}{9!} - \cdot \cdot \cdot \\
-\cos x &= 1 - \frac{x^{2}}{2!} + \frac{x^{4}}{4!} - \frac{x^{6}}{6!} + \frac{x^{8}}{8!} - \cdot \cdot \cdot
+\sin x &= x - \frac{x^{3}}{3!} + \frac{x^{5}}{5!} - \frac{x^{7}}{7!} + \frac{x^{9}}{9!} - \cdots \\
+\cos x &= 1 - \frac{x^{2}}{2!} + \frac{x^{4}}{4!} - \frac{x^{6}}{6!} + \frac{x^{8}}{8!} - \cdots
 \end{aligned}
 $$
 
-Note that $x$ must be in radians for the Taylor series approximation to hold. You cannot use $x$ in degrees. If $x$ (in radians) is small, then the higher order terms again become negligible and $\sin x \approx x$ and $\cos x \approx 1 - \frac{x^{2}}{2}$ . There are several functions with well established Taylor series approximations based on the above definition. [Appendix A.3](#sec-A-3) lists the expansions for many common equations.
+Note that $x$ must be in radians for the Taylor series approximation to hold. You cannot use $x$ in degrees. If $x$ (in radians) is small, then the higher order terms again become negligible and $\sin x \approx x$ and $\cos x \approx 1 - \frac{x^{2}}{2}$. There are several functions with well established Taylor series approximations based on the above definition. [Appendix A.3](#sec-A-3) lists the expansions for many common equations.
 
 ::::{admonition} Small Angle Approximation
 

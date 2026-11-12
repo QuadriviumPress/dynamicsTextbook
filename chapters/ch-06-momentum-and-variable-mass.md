@@ -37,7 +37,7 @@ If we assume that mass is constant we can substitute in Equation (6.1):
 $$
 \begin{aligned}
 \vec{F} &= \frac{\mathrm{d}(m\vec{v})}{\mathrm{d}t} \\
-\sum \vec{F} &= m \frac{\mathrm{d}\vec{v}}{\mathrm{d}t} =\Rightarrow \mathrm{assuming} \mathrm{mass} \mathrm{is} \mathrm{constant} \\
+\sum \vec{F} &= m \frac{\mathrm{d}\vec{v}}{\mathrm{d}t} \quad\Rightarrow  \text{assuming mass is constant}\\
 \vec{F} &= m\vec{a}
 \end{aligned}
 $$
@@ -52,7 +52,7 @@ If the net external force is equal to zero ($\sum \vec{F}=0$), then the total mo
 Consider an isolated system of n particles that have distinct masses and velocities. The total momentum of the system is given by:
 
 $$
-\vec{p}_{tot}= \sum \vec{p}_{i}= \vec{p}_{1}+ \vec{p}_{2}+ \cdot \cdot \cdot + \vec{p}_{n}
+\vec{p}_{tot}= \sum \vec{p}_{i}= \vec{p}_{1}+ \vec{p}_{2}+ \cdots + \vec{p}_{n}
 $$ (eq-6-3)
 
 <!-- Source PDF page 123; printed label 114. -->
@@ -69,7 +69,7 @@ $$
 \begin{aligned}
 \frac{\mathrm{d}\vec{p}_{tot}}{\mathrm{d}t} &= \frac{\mathrm{d}}{\mathrm{d}t} (\vec{p}_{1}+ \vec{p}_{2}+ \vec{p}_{3}) \\
 \frac{\mathrm{d}\vec{p}_{tot}}{\mathrm{d}t} &= \frac{\mathrm{d}\vec{p}_{1}}{\mathrm{d}t} + \frac{\mathrm{d}\vec{p}_{2}}{\mathrm{d}t} + \frac{\mathrm{d}\vec{p}_{3}}{\mathrm{d}t} \\
-\frac{\mathrm{d}\vec{p}_{tot}}{\mathrm{d}t} &= \sum \vec{F}_{1}+ \sum \vec{F}_{2}+ \sum \vec{F}_{3}=\Rightarrow \mathrm{set} \frac{\mathrm{d}\vec{p}}{\mathrm{d}t} = \vec{F}
+\frac{\mathrm{d}\vec{p}_{tot}}{\mathrm{d}t} &= \sum \vec{F}_{1}+ \sum \vec{F}_{2}+ \sum \vec{F}_{3}\quad\Rightarrow  \text{set} \frac{\mathrm{d}\vec{p}}{\mathrm{d}t} = \vec{F}
 \end{aligned}
 $$
 
@@ -121,7 +121,7 @@ $$
 \frac{\mathrm{d}\vec{p}_i}{\mathrm{d}t}=\sum_{\substack{j=1\\j\ne i}}^N\vec{F}_{ji}.
 $$
 
-which is basically saying that the time derivative of the momentum for the $i$th particle is just the sum of all the forces from the other particles. The condition of $j \not = i$ is needed because each particle acts on the other particles in the system, but not on themselves $(\vec{F}_{11},\vec{F}_{22},$ and $\vec{F}_{33}$ are not allowed).
+which is basically saying that the time derivative of the momentum for the $i$th particle is just the sum of all the forces from the other particles. The condition of $j \neq i$ is needed because each particle acts on the other particles in the system, but not on themselves $(\vec{F}_{11},\vec{F}_{22},$ and $\vec{F}_{33}$ are not allowed).
 
 To then get the total momentum of an isolated system, we need to sum over individual particles, $\vec{p}_{tot}= \sum \vec{p}_{i}$. This gives us our nested sums,
 
@@ -145,7 +145,7 @@ where $\vec{F}_{i,int}$ is the force on the particle from the system itself (int
 $$
 \begin{aligned}
 \frac{\mathrm{d}\vec{p}_{tot}}{\mathrm{d}t} &= \sum \frac{\mathrm{d}}{\mathrm{d}t}\vec{p}_{i}= \sum \vec{F}_{i,int}+ \sum \vec{F}_{i,ext} \\
-\frac{\mathrm{d}\vec{p}_{tot}}{\mathrm{d}t} &= \sum \vec{F}_{i,ext}=\Rightarrow \sum \vec{F}_{i,int}= 0 (\mathrm{see} \mathrm{Chapter} 6.2)
+\frac{\mathrm{d}\vec{p}_{tot}}{\mathrm{d}t} &= \sum \vec{F}_{i,ext}\quad\Rightarrow  \sum \vec{F}_{i,int}= 0 (\text{see Chapter}6.2)
 \end{aligned}
 $$
 
@@ -176,11 +176,11 @@ In general practice, an impulse is a fast, powerful force that quickly changes t
 
 ::::{tip} Quick Question
 
-1. A hockey player hits a puck. If the puck was initially going at a speed of $v_{i}\hat{\imath}$ and ends up going $v_{f}\hat{\jmath}$ , what was the direction of the impulse vector?
+1. A hockey player hits a puck. If the puck was initially going at a speed of $v_{i}\hat{\imath}$ and ends up going $v_{f}\hat{\jmath}$, what was the direction of the impulse vector?
 
 ::::
 
-[Figure 6.1](#fig-6-1) shows two identical impulses with the same area $\int \vec{F}$ d$t$, which means they have the same impulse magnitude. Note the differences between them. The average impulse is $\vec{I}_{avg}= \vec{F}_{avg}\Delta t$. So if you increase the interaction time, $\Delta t$, you decrease the average force necessary for the same impulse. In the figure, the blue curve has a shorter $\Delta t$ and requires a stronger force than the red curve to produce the same change in momentum. You can minimize the force by increasing the time of interaction.
+[Figure 6.1](#fig-6-1) shows two identical impulses with the same area $\int \vec{F}$ $\mathrm{d}t$, which means they have the same impulse magnitude. Note the differences between them. The average impulse is $\vec{I}_{avg}= \vec{F}_{avg}\Delta t$. So if you increase the interaction time, $\Delta t$, you decrease the average force necessary for the same impulse. In the figure, the blue curve has a shorter $\Delta t$ and requires a stronger force than the red curve to produce the same change in momentum. You can minimize the force by increasing the time of interaction.
 
 :::{figure} ../images/figures/figure-6-1.png
 :label: fig-6-1
@@ -201,7 +201,7 @@ Increasing the impact time to decrease the force occurs many times in everyday l
 
 ::::{admonition} Cora’s Thoughts
 
-Generally we consider impulses to be short bursts. An impulse is a powerful force that quickly changes the momentum of a system, hence why $\Delta t \rightarrow$ d$t$.
+Generally we consider impulses to be short bursts. An impulse is a powerful force that quickly changes the momentum of a system, hence why $\Delta t \rightarrow$ $\mathrm{d}t$.
 
 An airbag is an excellent example of impulse in everyday life. When an accident occurs and the vehicle stops, the driver's momentum carries them forward towards the steering wheel, where they will experience a quick change in momentum (impulse). The airbag extends the time of that impact, lessening the force on the driver, often saving lives. In [Figure 6.1](#fig-6-1), the red graph may be what the force with the airbag would look like, and the blue would be what the force without the airbag would look like.
 
@@ -244,9 +244,8 @@ If $M \gg m$, then $v$ is small relative to $u$. If $M \ll m$, then $v \approx u
 
 ::::{admonition} Sample Problem 6-1
 
-Two particles of equal mass $m$ and identical speeds $u$ collide and stick. The first particle initially moves at an angle of $\theta _{1}$ above the horizontal and the second particle initially moves at an angle of $\theta _{2}$ below the horizontal. If both $\theta _{1}$ and $\theta _{2}$ are $< 90^{\circ}$, **what is the** **final velocity of the system after collision?**
+Two particles of equal mass $m$ and identical speeds $u$ collide and stick. The first particle initially moves at an angle of $\theta _{1}$ above the horizontal and the second particle initially moves at an angle of $\theta _{2}$ below the horizontal. If both $\theta _{1}$ and $\theta _{2}$ are $< 90^{\circ}$, **what is the final velocity of the system after collision?**
 
-::::
 
 <!-- Source PDF page 127; printed label 118. -->
 
@@ -280,8 +279,7 @@ We will solve the $x$ and $y$ components of the motion separately.
 For the $x$ component
 
 $$
-p_{x,f}= p_{x,i}=\Rightarrow \mathrm{conservation} \mathrm{of} \mathrm{momentum}
-$$
+p_{x,f}= p_{x,i}\quad\Rightarrow  \text{conservation of momentum}$$
 
 $$
 (m_{1}+ m_{2})v_{x}= m_{1}v_{1,x}+ m_{2}v_{2,x}
@@ -297,14 +295,13 @@ $$
 For the $y$ component
 
 $$
-p_{y,f}= p_{y,i}=\Rightarrow \mathrm{conservation} \mathrm{of} \mathrm{momentum}
-$$
+p_{y,f}= p_{y,i}\quad\Rightarrow  \text{conservation of momentum}$$
 
 $$
 (m_{1}+ m_{2})v_{y}= m_{1}v_{1,y}+ m_{2}v_{2,y}
 $$
 
-$2mv_{y}= m(u\sin \theta _{1}) - m(u\sin \theta _{2}) =\Rightarrow v_{2,y}$ is in the negative direction
+$2mv_{y}= m(u\sin \theta _{1}) - m(u\sin \theta _{2}) \quad\Rightarrow  v_{2,y}$ is in the negative direction
 
 $$
 v_{y}= \frac{u}{2} (\sin \theta _{1}- \sin \theta _{2})
@@ -312,7 +309,6 @@ $$
 
 <!-- Source PDF page 128; printed label 119. -->
 
-::::{admonition} Continued
 
 With the $x$ and $y$ components of the motion, the final speed is:
 
@@ -328,7 +324,7 @@ $$
 \end{aligned}
 $$
 
-To get the angle, we can again use trigonometry. The $v_{x}$ component is the $x-$component of the vector and the $v_{y}$ component is the $y-$component of the vector.
+To get the angle, we can again use trigonometry. The $v_{x}$ component is the $x$-component of the vector and the $v_{y}$ component is the $y$-component of the vector.
 
 $$
 \begin{aligned}
@@ -365,7 +361,7 @@ For some nice examples of elastic-like collisions, here are videos showing [Newt
 
 ::::{admonition} Sample Problem 6-2
 
-Consider two balls moving toward each other on the $x-$axis as shown in [Figure 6.4](#fig-6-4). The first ball has a mass of $m_{1}$ and is moving at $v_{1,i}$, and the second ball has a mass of $m_{2}$ and is moving at a speed of $v_{2,i}$. After collision, $m_{1}$ is moving at $v_{1,f}$ and $m_{2}$ is moving at $v_{2,f}$. **Find equations for the final speeds in terms of the initial parameters?**
+Consider two balls moving toward each other on the $x$-axis as shown in [Figure 6.4](#fig-6-4). The first ball has a mass of $m_{1}$ and is moving at $v_{1,i}$, and the second ball has a mass of $m_{2}$ and is moving at a speed of $v_{2,i}$. After collision, $m_{1}$ is moving at $v_{1,f}$ and $m_{2}$ is moving at $v_{2,f}$. **Find equations for the final speeds in terms of the initial parameters?**
 
 **Solution**
 
@@ -433,7 +429,7 @@ $$
 $$
 
 $$
-v_{1,i}+ v_{1,f}= v_{2,f}+ v_{2,i}=\Rightarrow \mathrm{simplify}
+v_{1,i}+ v_{1,f}= v_{2,f}+ v_{2,i}\quad\Rightarrow  \text{simplify}
 $$
 
 So all that math went into showing that the sum of the two velocities for $m_{1}$ equals the sum of the two velocities for $m_{2}$. Note that this conclusion is not immediately obvious from either the conservation of momentum or the conservation of kinetic energy equations themselves. But for us to have a unique solution to this problem, the sum of the individual object velocities must be equal.
@@ -488,7 +484,7 @@ Here is [a fun web application](https://www.physicsclassroom.com/Physics-Interac
 Another important concept in motion and momentum is the center of mass. Whether you have a system of independent particles (e.g., a cluster of stars) or an irregularly shaped rigid body (e.g., a car), every system has a special point called the *center of mass*. The center of mass is not a mass, but a position. It’s the centroid position and it is defined as:
 
 $$
-\vec{R}_{cm}= \frac{m_{1}\vec{r}_{1}+ m_{2}\vec{r}_{2}+ \cdot \cdot \cdot + m_{n}\vec{r}_{n}}{m_{1}+ m_{2}+ \cdot \cdot \cdot + m_{n}} = \frac{\sum m_{i}\vec{r}_{i}}{\sum m_{i}}
+\vec{R}_{cm}= \frac{m_{1}\vec{r}_{1}+ m_{2}\vec{r}_{2}+ \cdots + m_{n}\vec{r}_{n}}{m_{1}+ m_{2}+ \cdots + m_{n}} = \frac{\sum m_{i}\vec{r}_{i}}{\sum m_{i}}
 $$
 
 where $\vec{r}_{i}$ is the position of the $i$th particle relative to the origin and $m_{i}$ is the mass of that particle. Since $\sum m_{i}= M$ is the total mass of the system, the center of mass is:
@@ -525,7 +521,7 @@ This [web applet](https://phet.colorado.edu/en/simulation/balancing-act) will le
 
 ::::
 
-In Cartesian coordinates, we can also describe the center of mass in terms of the $x, y$, and $z$ axes. The position of a particle in the system is given by $\vec{r}_{i}= x_{i}\hat{\imath}+y_{i}\hat{\jmath}+z_{i}\hat{k}$ . The center of mass for the system is then determined by $\vec{R}_{cm}= x_{cm}\hat{\imath} + y_{cm}\hat{\jmath} + z_{cm}\hat{k}$ , where
+In Cartesian coordinates, we can also describe the center of mass in terms of the $x, y$, and $z$ axes. The position of a particle in the system is given by $\vec{r}_{i}= x_{i}\hat{\imath}+y_{i}\hat{\jmath}+z_{i}\hat{k}$. The center of mass for the system is then determined by $\vec{R}_{cm}= x_{cm}\hat{\imath} + y_{cm}\hat{\jmath} + z_{cm}\hat{k}$, where
 
 $$
 \begin{aligned}
@@ -591,7 +587,6 @@ Inelastic collision between a moving smaller mass with a stationary larger mass.
 
 You can solve this problem using a stationary frame where the two masses are moving. But here we’re going to solve this problem using both a stationary and the moving center-of-mass (CM) frame.
 
-::::
 
 <!-- Source PDF page 134; printed label 125. -->
 
@@ -630,7 +625,7 @@ $$
 
 $$
 \begin{aligned}
-\vec{v}_{cm}&= \frac{1}{M + m} (m\vec{u} + 0) =\Rightarrow \mathrm{in} \mathrm{S}, \frac{\mathrm{d}\vec{r}_{m}}{\mathrm{d}t} = \vec{u} \mathrm{and} \frac{\mathrm{d}\vec{r}_{M}}{\mathrm{d}t} = 0 \\
+\vec{v}_{cm}&= \frac{1}{M + m} (m\vec{u} + 0) \quad\Rightarrow  \text{in S}, \frac{\mathrm{d}\vec{r}_{m}}{\mathrm{d}t} = \vec{u} \text{and} \frac{\mathrm{d}\vec{r}_{M}}{\mathrm{d}t} = 0 \\
 \vec{v}_{cm}&= \frac{m}{M + m} \vec{u}
 \end{aligned}
 $$
@@ -658,7 +653,6 @@ $$
 
 <!-- Source PDF page 135; printed label 126. -->
 
-::::{admonition} Continued
 
 which is exactly what we had before from the stationary frame.
 
@@ -675,13 +669,13 @@ Switching to the center of mass frame can be convenient when you have complicate
 
 Up until now, we have applied Newton’s second law as $\sum \vec{F} = ma$. This equation is applicable if the system mass is constant with time. But you can have problems in physics where the mass changes.
 
-In general, Newton’s second law follows:
+For a closed system of fixed composition, Newton’s second law is $\sum\vec{F} = \mathrm{d}\vec{p}/\mathrm{d}t$. Naively expanding the product for a single body gives
 
 $$
-\sum\vec{F} = \frac{\mathrm{d}\vec{p}}{\mathrm{d}t} = \frac{\mathrm{d}(m\vec{v})}{\mathrm{d}t} = \Bigg(\frac{\mathrm{d}m}{\mathrm{d}t} \Bigg)\vec{v} + m\Bigg(\frac{\mathrm{d}\vec{v}}{\mathrm{d}t} \Bigg)
+\frac{\mathrm{d}(m\vec{v})}{\mathrm{d}t} = \Bigg(\frac{\mathrm{d}m}{\mathrm{d}t} \Bigg)\vec{v} + m\Bigg(\frac{\mathrm{d}\vec{v}}{\mathrm{d}t} \Bigg),
 $$
 
-Note that you recover $\sum \vec{F} = m\vec{a}$ if the mass is constant $(\dot{m}$ = 0). But if the mass is changing, then you must include the $\dot{m}$ term as well when applying Newton’s second law.
+but that expression is not the general thrust equation for an open system that gains or loses mass. The correct treatment tracks the relative velocity of the ejected or accreted mass (developed for rockets later in this section). You recover $\sum \vec{F} = m\vec{a}$ if the mass is constant $(\dot{m}$ = 0). A special case where $\sum\vec{F} = (\mathrm{d}m/\mathrm{d}t)\vec{v} + m\vec{a}$ does apply is when mass joins the system from rest (relative velocity $-\vec{v}$), as in the rope example below.
 
 (example-6-4)=
 
@@ -691,7 +685,7 @@ A rope with a linear mass density of $\lambda$ (in kg $\mathrm{m}^{-1})$ and len
 
 **Solution**
 
-This is a variable mass problem, because you’re not moving the whole rope at once. The amount of mass you are raising is increasing as more of the rope is lifted off the ground. You are basically giving momentum to “new” atoms in the rope as they leave the ground and additional force is needed to apply that change in momentum.
+This is a variable mass problem, because you’re not moving the whole rope at once. The amount of mass you are raising is increasing as more of the rope is lifted off the ground. You are basically giving momentum to “new” atoms in the rope as they leave the ground and additional force is needed to apply that change in momentum. Those segments join from rest, so the special-case form $\sum\vec{F} = (\mathrm{d}m/\mathrm{d}t)\vec{v} + m\vec{a}$ applies here.
 
 Since the rope is moving with a constant speed, we know that $\mathrm{d}\vec{v}/\mathrm{d}t=0$. But there is still a net force acting on the rope because the mass is changing.
 
@@ -705,7 +699,7 @@ $$
 
 ::::{admonition} Continued
 
-There are only two forces acting on the system, the external force from you lifting the rope and gravity, both of which are being applied along the $y-$axis:
+There are only two forces acting on the system, the external force from you lifting the rope and gravity, both of which are being applied along the $y$-axis:
 
 $$
 \Sigma \vec{F} = \vec{F}_{ext}+ \vec{F}_{g}
@@ -729,7 +723,7 @@ $$
 
 and solve for the equation of the momentum.
 
-Momentum is defined as $\vec{p} = m\vec{v} = m(t)\vec{v}$ in this case. The mass at any given time, $t$, depends on the amount of rope that is lifted off the ground. If we call this height $y$, then the mass is $m(t) = \lambda y$ and the velocity is $\vec{v} = \dot{y}\hat{\jmath}$ .
+Momentum is defined as $\vec{p} = m\vec{v} = m(t)\vec{v}$ in this case. The mass at any given time, $t$, depends on the amount of rope that is lifted off the ground. If we call this height $y$, then the mass is $m(t) = \lambda y$ and the velocity is $\vec{v} = \dot{y}\hat{\jmath}$.
 
 $$
 \vec{p} = \lambda y\dot{y}\hat{\jmath}
@@ -745,8 +739,7 @@ $$
 $$
 
 $$
-= \lambda (\dot{y})^{2}\hat{\jmath} =\Rightarrow \dot{y} \mathrm{is} \mathrm{constant}
-$$
+= \lambda (\dot{y})^{2}\hat{\jmath} \quad\Rightarrow  \dot{y} \text{is constant}$$
 
 Thus, we can express $F_{ext}$ from Newton’s second law:
 
@@ -772,11 +765,11 @@ A classic variable mass problem is a rocket (or car or airplane) using fuel. The
 
 ::::{admonition} Sample Problem 6-5
 
-A rocket has an initial mass of $M$ before launch. To move the rocket, its engines burn fuel at a constant rate and expel the gases from the back at a speed of $v_{ex}$ relative to the speed of the rocket. Ignoring gravity and drag, **find the speed** $v_{f}$ **when the rocket** **mass has decreased from its initial mass to a mass of** $M_{f}$.**
+A rocket has an initial mass of $M$ before launch. To move the rocket, its engines burn fuel at a constant rate and expel the gases from the back at a speed of $v_{ex}$ relative to the speed of the rocket. Ignoring gravity and drag, **find the speed** $v_{f}$ **when the rocket mass has decreased from its initial mass to a mass of** $M_{f}$.**
 
 **Solution**
 
-First, describe the motion. [Figure 6.7](#fig-6-7) shows a cartoon of how the rocket is moving at time $t$ + d$t$. The rocket expels exhaust from its back and the gas is moving at a speed of $v_{ex}$ in the $-x$ direction relative to the motion of the rocket (and exhaust) system.
+First, describe the motion. [Figure 6.7](#fig-6-7) shows a cartoon of how the rocket is moving at time $t$ + $\mathrm{d}t$. The rocket expels exhaust from its back and the gas is moving at a speed of $v_{ex}$ in the $-x$ direction relative to the motion of the rocket (and exhaust) system.
 
 :::{figure} ../images/figures/figure-6-7.png
 :label: fig-6-7
@@ -784,7 +777,7 @@ First, describe the motion. [Figure 6.7](#fig-6-7) shows a cartoon of how the ro
 :alt: Figure shows a rocket with its changing mass and speed.
 :width: 341px
 
-At time $t$ + d$t$, the rocket expels $dm_{ex}$ of exhaust at a speed of $v_{ex}$ relative to the speed of the rocket $(v)$. As a consequence, the rocket is given an impulse and increases speed by $dv$.
+At time $t$ + $\mathrm{d}t$, the rocket expels $dm_{ex}$ of exhaust at a speed of $v_{ex}$ relative to the speed of the rocket $(v)$. As a consequence, the rocket is given an impulse and increases speed by $dv$.
 :::
 
 The rocket and exhaust form an isolated system (there are no other forces), so the total momentum of the system must be conserved. We will consider time $t$ before there is any burning of fuel. So at $t$ there is no contribution of momentum from the exhaust and all the momentum is from the rocket. We will assume that the rocket has a mass of $m$ and velocity $v$. The total momentum at time $t$ is therefore,
@@ -793,17 +786,15 @@ $$
 \vec{p}_{tot}(t) = mv\hat{\imath}
 $$
 
-At time $t+$d$t$, the rocket expels exhaust in the $-x$ direction. Under the conservation of momentum, the rocket must be given equal momentum in the $+x$ direction (this is the impulse given to the rocket that propels it forward). The rocket gains a bit of velocity d$v$ and speeds up. But as the rocket is gaining velocity, it is also losing mass because it is using up fuel by expelling the exhaust. The mass of exhaust will equal the mass lost by the rocket (we need to obey the conservation of mass). The exhaust at time $t$ + d$t$ has a mass of d$m_{ex}$ and a speed of $v_{ex}(-\hat{\imath})$ relative to the speed of the system as a whole (see [Figure 6.7](#fig-6-7)).
+At time $t+\mathrm{d}t$, the rocket expels exhaust in the $-x$ direction. Under the conservation of momentum, the rocket must be given equal momentum in the $+x$ direction (this is the impulse given to the rocket that propels it forward). The rocket gains a bit of velocity $\mathrm{d}v$ and speeds up. But as the rocket is gaining velocity, it is also losing mass because it is using up fuel by expelling the exhaust. The mass of exhaust will equal the mass lost by the rocket (we need to obey the conservation of mass). The exhaust at time $t$ + $\mathrm{d}t$ has a mass of $\mathrm{d}m_{ex}$ and a speed of $v_{ex}(-\hat{\imath})$ relative to the speed of the system as a whole (see [Figure 6.7](#fig-6-7)).
 
-In the frame of a stationary observer at time $t$ + d$t$, the exhaust is moving at a speed of $(v - v_{ex})\hat{\imath}$ and the rocket has a mass $m -$ d$m_{ex}$ and a velocity of $(v$ + d$v)\hat{\imath}$. The total
+In the frame of a stationary observer at time $t$ + $\mathrm{d}t$, the exhaust is moving at a speed of $(v - v_{ex})\hat{\imath}$ and the rocket has a mass $m -$ $\mathrm{d}m_{ex}$ and a velocity of $(v$ + $\mathrm{d}v)\hat{\imath}$. The total
 
-::::
 
 <!-- Source PDF page 138; printed label 129. -->
 
-::::{admonition} Continued
 
-momentum at time $t$ + d$t$ is therefore,
+momentum at time $t$ + $\mathrm{d}t$ is therefore,
 
 $$
 \vec{p}_{tot}(t+\mathrm{d}t)
@@ -811,7 +802,7 @@ $$
 +\underbrace{(m-\mathrm{d}m_{ex})(v+\mathrm{d}v)\hat{\imath}}_{\text{rocket}}.
 $$
 
-Since the total momentum of the rocket + exhaust system is conserved, the total momentum at time $t$ must be equal to the total momentum at time $t$ + d$t$.
+Since the total momentum of the rocket + exhaust system is conserved, the total momentum at time $t$ must be equal to the total momentum at time $t$ + $\mathrm{d}t$.
 
 $$
 \vec{p}_{tot}(t) = \vec{p}_{tot}(t + \mathrm{d}t)
@@ -823,13 +814,13 @@ $$
 \mathrm{d}v = v_{ex} \frac{\mathrm{d}m_{ex}}{m}
 $$
 
-This equation relates a differential velocity to a differential mass. But d$m_{ex}$ corresponds to the increasing mass of the exhaust, whereas the $m$ term in the above equation corresponds to the mass of the rocket. The increasing mass of the exhaust is equal to the decrease in mass in the rocket. In other words, d$m_{ex}= -$d$m$, where d$m$ is the change in mass of the rocket.
+This equation relates a differential velocity to a differential mass. But $\mathrm{d}m_{ex}$ corresponds to the increasing mass of the exhaust, whereas the $m$ term in the above equation corresponds to the mass of the rocket. The increasing mass of the exhaust is equal to the decrease in mass in the rocket. In other words, $\mathrm{d}m_{ex}= -\mathrm{d}m$, where $\mathrm{d}m$ is the change in mass of the rocket.
 
 $$
 \begin{aligned}
-\mathrm{d}v &= -v_{ex} \frac{\mathrm{d}m}{m} =\Rightarrow \mathrm{sub} \mathrm{d}m_{ex}= -\mathrm{d}m \\
-\int_{0}^{v_{f}} \mathrm{d}v &= -v_{ex}\int_{M}^{M_{f}} \frac{\mathrm{d}m}{m} =\Rightarrow v_{ex}\mathrm{is} \mathrm{a} \mathrm{constant} \\
-v_{f}- 0 &= -v_{ex}\Big(\ln m\Big|_{M}^{M_{f}}\Big) =\Rightarrow \mathrm{initial} \mathrm{is} v = 0, m = M \\
+\mathrm{d}v &= -v_{ex} \frac{\mathrm{d}m}{m} \quad\Rightarrow  \text{sub d}m_{ex}= -\mathrm{d}m \\
+\int_{0}^{v_{f}} \mathrm{d}v &= -v_{ex}\int_{M}^{M_{f}} \frac{\mathrm{d}m}{m} \quad\Rightarrow  v_{ex}\text{is a constant}\\
+v_{f}- 0 &= -v_{ex}\Big(\ln m\Big|_{M}^{M_{f}}\Big) \quad\Rightarrow  \text{initial is}v = 0, m = M \\
 v_{f}&= -v_{ex}(\ln M_{f}- \ln M)
 \end{aligned}
 $$
@@ -881,13 +872,9 @@ $$
 \sum \vec{p}_{i}= \mathrm{constant}
 $$
 
-Newton’s second law is also more formally defined based on the total linear momentum. If your system mass is allowed to change, then the full equation for Newton’s second law is:
+Newton’s second law is also more formally defined based on the total linear momentum: $\sum \vec{F} = \mathrm{d}\vec{p}/\mathrm{d}t$ for a closed system. For open (variable-mass) systems, the naive product rule $\sum \vec{F} = (\mathrm{d}m/\mathrm{d}t)\vec{v} + m\vec{a}$ is not generally valid; the thrust depends on the relative velocity of the added or ejected mass (as in the rocket derivation). That product-rule form does apply in special cases such as mass joining from rest.
 
-$$
-\sum \vec{F} = \frac{\mathrm{d}\vec{p}}{\mathrm{d}t} = \Bigg(\frac{\mathrm{d}m}{\mathrm{d}t} \Bigg)\vec{v} + m\Bigg(\frac{\mathrm{d}\vec{v}}{\mathrm{d}t} \Bigg)
-$$
-
-In systems where the total linear momentum is conserved, the net force is zero. If the system has variable mass, then one must use the general form of Newton’s second law to solve for the equations of motion.
+In systems where the total linear momentum is conserved, the net force is zero. If the system has variable mass, use a momentum balance that includes the relative velocity of the exchanged mass.
 
 This chapter also defines impulse and collisions, which are how momentum of a system can change. Impulse is when an external force acts on a system over a short time duration such that the system has not had time to move between the start of the event and the end.
 
@@ -921,11 +908,19 @@ $$
 \vec{p} = m\vec{v}
 $$
 
-**Newton’s Second Law:**
+**Newton’s Second Law (closed system / fixed mass):**
 
 $$
-\sum\vec{F} = \frac{\mathrm{d}\vec{p}}{\mathrm{d}t} = \frac{\mathrm{d}(m\vec{v})}{\mathrm{d}t} = \Bigg(\frac{\mathrm{d}m}{\mathrm{d}t} \Bigg)\vec{v} + m\Bigg(\frac{\mathrm{d}\vec{v}}{\mathrm{d}t} \Bigg)
+\sum\vec{F} = \frac{\mathrm{d}\vec{p}}{\mathrm{d}t} = m\vec{a}
 $$
+
+**Variable mass (special case: mass joining from rest):**
+
+$$
+\sum\vec{F} = \Bigg(\frac{\mathrm{d}m}{\mathrm{d}t} \Bigg)\vec{v} + m\Bigg(\frac{\mathrm{d}\vec{v}}{\mathrm{d}t} \Bigg)
+$$
+
+In general, open systems require the relative velocity of ejected or added mass (rocket equation), not this naive product rule.
 
 **Conservation of Momentum:**
 
@@ -1004,7 +999,7 @@ b) After collision, the two particles stick together and continue in the same di
 
 ::::{admonition} Practice Problem 6-3
 
-Two particles of mass $M_{1}$ and $M_{2}$ collide. Before the collision, the first particle has a speed of $v_{1}= 4\hat{\imath} - 3\hat{\jmath}$ and the second particle has a speed of $v_{2}= 4\hat{\imath} + 3\hat{\jmath}$ .
+Two particles of mass $M_{1}$ and $M_{2}$ collide. Before the collision, the first particle has a speed of $v_{1}= 4\hat{\imath} - 3\hat{\jmath}$ and the second particle has a speed of $v_{2}= 4\hat{\imath} + 3\hat{\jmath}$.
 
 a) If both particles have the same mass, what is the speed of $M_{1}$ if $M_{2}$ comes to a stop after the collision?
 

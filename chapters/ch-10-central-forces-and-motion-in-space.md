@@ -20,7 +20,7 @@ In this chapter, we will expand on a few concepts that have already been covered
 (sec-10-1)=
 ## 10.1 Introduction to Central Forces
 
-Consider a particle of fixed mass at a position that can be defined by the vector $\vec{r}$ with respect to an origin. We’ll also define $\hat{r}$ as the unit vector in the direction of $\vec{r}$. Recall that a unit vector has a length of one such that $\hat{r} \cdot \hat{r}$ = 1 and $\vec{r} = r\hat{r}$ .
+Consider a particle of fixed mass at a position that can be defined by the vector $\vec{r}$ with respect to an origin. We’ll also define $\hat{r}$ as the unit vector in the direction of $\vec{r}$. Recall that a unit vector has a length of one such that $\hat{r} \cdot \hat{r}$ = 1 and $\vec{r} = r\hat{r}$.
 
 :::{figure} ../images/figures/figure-10-1.png
 :label: fig-10-1
@@ -51,7 +51,7 @@ Gravity: $\vec{F}=-\dfrac{GMm}{r^2}\hat{r}$
 
 Electrostatic force: $\vec{F}=\dfrac{kQq}{r^2}\hat{r}$
 
-Spring Force: $\vec{F} = -kr\hat{r} =\Rightarrow$ often written in terms of 1-D motion (e.g., $F = -kx)$
+Spring Force: $\vec{F} = -kr\hat{r}$ $\Rightarrow$ often written in terms of 1-D motion (e.g., $F = -kx$)
 
 Note that gravity and the spring force are always attractive $(f(r) < 0)$. The electrostatic force can be either attractive or repulsive (depends on the charges).
 
@@ -67,7 +67,7 @@ $$
 \vec{\nabla} \times \vec{F} = 0
 $$
 
-If a central force is defined as $\vec{F} = f(r)\hat{r}$ , then we can show that $\vec{\nabla} \times \vec{F}$ = 0 for all central forces. For simplicity, we will use spherical coordinates for the curl (see [Appendix A.5](#sec-A-5)).
+If a central force is defined as $\vec{F} = f(r)\hat{r}$, then we can show that $\vec{\nabla} \times \vec{F}$ = 0 for all central forces. For simplicity, we will use spherical coordinates for the curl (see [Appendix A.5](#sec-A-5)).
 
 $$
 \begin{aligned}
@@ -95,7 +95,7 @@ $$
 
 <!-- Source PDF page 218; printed label 209. -->
 
-where d$r$ is a tiny displacement along the path. Recall that for conservative fields, the change in potential energy is independent of the path. Only the initial and final points matter.
+where $\mathrm{d}r$ is a tiny displacement along the path. Recall that for conservative fields, the change in potential energy is independent of the path. Only the initial and final points matter.
 
 Or we can solve for the force if we know the potential of the central force:
 
@@ -120,8 +120,8 @@ $$
 \begin{aligned}
 \frac{\mathrm{d}\vec{L}}{\mathrm{d}t} &= \frac{\mathrm{d}}{\mathrm{d}t} (\vec{r} \times \vec{p}) \\
 &= \frac{\mathrm{d}\vec{r}}{\mathrm{d}t} \times \vec{p} + \vec{r} \times \frac{\mathrm{d}\vec{p}}{\mathrm{d}t} \\
-&= \vec{v} \times \vec{p} + \vec{r} \times \vec{F} =\Rightarrow \vec{v} = \frac{\mathrm{d}\vec{r}}{\mathrm{d}t} \mathrm{and} \vec{F} = \frac{\mathrm{d}\vec{p}}{\mathrm{d}t} \\
-&= \vec{v} \times (m\vec{v}) + \vec{r} \times (f(r)\hat{r}) =\Rightarrow \mathrm{for} \mathrm{a} \mathrm{central} \mathrm{force}, \vec{F} = f(r)\hat{r}
+&= \vec{v} \times \vec{p} + \vec{r} \times \vec{F} \quad\Rightarrow  \vec{v} = \frac{\mathrm{d}\vec{r}}{\mathrm{d}t} \text{and} \vec{F} = \frac{\mathrm{d}\vec{p}}{\mathrm{d}t} \\
+&= \vec{v} \times (m\vec{v}) + \vec{r} \times (f(r)\hat{r}) \quad\Rightarrow  \text{for a central force}, \vec{F} = f(r)\hat{r}
 \end{aligned}
 $$
 
@@ -134,7 +134,7 @@ $$
 = 0
 $$
 
-So for any central force with $\vec{F} = f(r)\hat{r}$ , the angular momentum of the system is conserved (assuming constant mass).
+So for any central force with $\vec{F} = f(r)\hat{r}$, the angular momentum of the system is conserved (assuming constant mass).
 
 ::::{tip} Quick Questions
 
@@ -155,7 +155,7 @@ The motion of a particle under the action of a central force will take place on 
 :alt: Figure shows the angular momentum vector pointing away from a plane defined by the radial and velocity vectors.
 :width: 208px
 
-Vector diagram for the angular momentum, $\vec{L}$ . Recall that $\vec{L} = \vec{r}\times (m\vec{v})$ and will therefore be perpendicular to both $\vec{r}$ and $\vec{v}$.
+Vector diagram for the angular momentum, $\vec{L}$. Recall that $\vec{L} = \vec{r}\times (m\vec{v})$ and will therefore be perpendicular to both $\vec{r}$ and $\vec{v}$.
 :::
 
 In the previous section, we showed that the angular momentum is constant under a central force. That includes both magnitude and direction. Since $\vec{L}$ defines the normal that is perpendicular to the plane given by $\vec{r}$ and $\vec{v}$, that plane must also be constant (otherwise the direction of $\vec{L}$ would change). So both the radius and velocity vectors are confined and motion will only occur on this 2-D plane (e.g., the plane in [Figure 10.2](#fig-10-2)).
@@ -165,7 +165,7 @@ In the previous section, we showed that the angular momentum is constant under a
 
 Since motion under a central force occurs on a 2-D plane (see [Chapter 10.2.3](#sec-10-2-3)), we can simplify the motion of a particle under a central force. It is generally convenient to use polar coordinates (see [Chapter 1.2](#sec-1-2)).
 
-A central force has the form of $\vec{F} = f(r)\hat{r}$ . If this is the only force acting on a particle, then we can also use Newton’s second law to say that $\vec{F} = m\vec{a}$ (for a constant particle mass). Thus, we can say that $f(r)\hat{r} = m\vec{a}$.
+A central force has the form of $\vec{F} = f(r)\hat{r}$. If this is the only force acting on a particle, then we can also use Newton’s second law to say that $\vec{F} = m\vec{a}$ (for a constant particle mass). Thus, we can say that $f(r)\hat{r} = m\vec{a}$.
 
 In polar coordinates, $\vec{a}$ is written as:
 
@@ -218,8 +218,7 @@ $$
 $$
 
 $$
-= m\dot{\theta}r^{2}\hat{k} =\Rightarrow \mathrm{for} \mathrm{cylindrical} \mathrm{coordinates}
-$$
+= m\dot{\theta}r^{2}\hat{k} \quad\Rightarrow  \text{for cylindrical coordinates}$$
 
 Since $\vec{L}$ is a constant, the magnitude of $\vec{L}$ is also a constant. The magnitude of $\vec{L}$ is
 
@@ -268,7 +267,7 @@ $$
 
 <!-- Source PDF page 221; printed label 212. -->
 
-This should look familiar. This is a 1-D energy equation. You have the energy entirely expressed along one coordinate axis. For example, when we looked at a mass and spring, $K = \frac{1}{2} m\dot{x}^{2}$ and $U = \frac{1}{2} kx^{2}$, such that $E = \frac{1}{2} m\dot{x}^{2}+ \frac{1}{2} kx^{2}$, all the energy is along one axis $(x)$. So the energy equation for a central force can be simplified into a 1-D energy equation with an additional $r$ term. By definition, the potential energy will depend on position alone. So we can combine the two $r-$terms into an *effective potential energy*, $U_{eff}$:
+This should look familiar. This is a 1-D energy equation. You have the energy entirely expressed along one coordinate axis. For example, when we looked at a mass and spring, $K = \frac{1}{2} m\dot{x}^{2}$ and $U = \frac{1}{2} kx^{2}$, such that $E = \frac{1}{2} m\dot{x}^{2}+ \frac{1}{2} kx^{2}$, all the energy is along one axis $(x)$. So the energy equation for a central force can be simplified into a 1-D energy equation with an additional $r$ term. By definition, the potential energy will depend on position alone. So we can combine the two $r$-terms into an *effective potential energy*, $U_{eff}$:
 
 $$
 U_{eff}= \frac{1}{2} \frac{L^{2}}{mr^{2}} + U(r)
@@ -313,7 +312,7 @@ So with just the effective potential, we can start to get an idea of the allowed
 
 A particle of mass $m$ and energy $E$ moves in an inverse-cube field $f(r)=-\gamma/r^3$, where $\gamma$
 
-is a constant. The angular momentum of the particle is $L$. If $\dot{r}$ = 0, **find the equation** **for** $r$ **in terms of** $\gamma,m,$ **and** $E$**. What kind of motion is this?**
+is a constant. The angular momentum of the particle is $L$. If $\dot{r}$ = 0, **find the equation for** $r$ **in terms of** $\gamma,m,$ **and** $E$**. What kind of motion is this?**
 
 ::::
 
@@ -396,7 +395,7 @@ The effective force has two terms. The first term comes from the angular momentu
 A modification of Earth’s gravitational field is often described as
 $U(r)=-\dfrac{\gamma}{r}\left(1+\dfrac{\varepsilon}{r^2}\right)$
 
-where $\gamma$ and $\varepsilon$ are constants. **What is the effective force associated with this** **potential?** Assume a particle of mass $m$ and an angular momentum of $L$.
+where $\gamma$ and $\varepsilon$ are constants. **What is the effective force associated with this potential?** Assume a particle of mass $m$ and an angular momentum of $L$.
 
 **Solution**
 
@@ -466,7 +465,7 @@ $$
 
 because $\dot{r}^{2}\ge 0$.
 
-[Figure 10.3](#fig-10-3) shows the potential energy for an object moving under the gravitational force when $L$ = 0. The blue curve shows $U_{grav}$ and the shaded in area shows the allowed energies, $E > U_{grav}$. All constants are given arbitrary values for the purposes of plotting. Note that $E$ can be positive, depending on the value of $\dot{r}$ . We can only define the minimum allowed energy at each radius. For the actual motion within this system, we need to solve the equation:
+[Figure 10.3](#fig-10-3) shows the potential energy for an object moving under the gravitational force when $L$ = 0. The blue curve shows $U_{grav}$ and the shaded in area shows the allowed energies, $E > U_{grav}$. All constants are given arbitrary values for the purposes of plotting. Note that $E$ can be positive, depending on the value of $\dot{r}$. We can only define the minimum allowed energy at each radius. For the actual motion within this system, we need to solve the equation:
 
 $$
 \dot{r}^{2}= \frac{2}{m} \bigg(E + \frac{GMm}{r} \bigg)
@@ -500,7 +499,7 @@ The allowed energies for a system in a gravitational potential with no angular m
 
 ::::
 
-**2) Consider the case where** $L \not =$ 0**:** If $L$ is non-zero, then the system has angular momentum, and that angular momentum is constant. If $L \not =$ 0, then
+**2) Consider the case where** $L \neq 0$**:** If $L$ is non-zero, then the system has angular momentum, and that angular momentum is constant. If $L \neq 0$, then
 
 $$
 U_{eff}= \frac{1}{2} \frac{L^{2}}{mr^{2}} - \frac{GMm}{r}
@@ -535,8 +534,8 @@ $$
 
 $$
 \begin{aligned}
-0 &= \frac{1}{2} \frac{L^{2}}{mr^{2}} - \frac{\gamma}{r} - E =\Rightarrow U_{eff}= \frac{1}{2} \frac{L^{2}}{mr^{2}} - \frac{\gamma}{r} \\
-0 &= \frac{L^{2}}{m} - 2\gamma r - 2Er^{2}=\Rightarrow \mathrm{multiply} \mathrm{by} 2r^{2}
+0 &= \frac{1}{2} \frac{L^{2}}{mr^{2}} - \frac{\gamma}{r} - E \quad\Rightarrow  U_{eff}= \frac{1}{2} \frac{L^{2}}{mr^{2}} - \frac{\gamma}{r} \\
+0 &= \frac{L^{2}}{m} - 2\gamma r - 2Er^{2}\quad\Rightarrow  \text{multiply by}2r^{2}
 \end{aligned}
 $$
 
@@ -653,7 +652,7 @@ In [Sample Problem 10-2](#example-10-2), we used a modification of Earth’s gra
 
 as $U(r)=-\dfrac{\gamma}{r}\left(1+\dfrac{\varepsilon}{r^2}\right)$, where $\gamma$ and $\varepsilon$ are constants. A particle of mass $m$ is in a closed
 
-orbit in this gravitational potential with an angular momentum of $L$. **If the angular** **momentum of the system is the exact value to put the particle in a circular** **orbit, what are the possible radii for a circular orbit?**
+orbit in this gravitational potential with an angular momentum of $L$. **If the angular momentum of the system is the exact value to put the particle in a circular orbit, what are the possible radii for a circular orbit?**
 
 **Solution**
 
@@ -685,7 +684,7 @@ $$
 $$
 \begin{aligned}
 0 &= - \frac{L^{2}}{mr^{3}} + \frac{\gamma}{r^{2}} + \frac{3\gamma \varepsilon}{r^{4}} \\
-0 &= - \frac{L^{2}r}{m} + \gamma r^{2}+ 3\gamma \varepsilon =\Rightarrow \mathrm{multiply} \mathrm{by} r^{4}
+0 &= - \frac{L^{2}r}{m} + \gamma r^{2}+ 3\gamma \varepsilon \quad\Rightarrow  \text{multiply by}r^{4}
 \end{aligned}
 $$
 
@@ -782,7 +781,7 @@ If the central force potential is known, one can predict the motion of objects. 
 
 2. $L$ = 0: All motion is along $\hat{r}$ and magnitude depends only on distance.
 
-3. $L \not =$ 0 and $\dot{r} \not =$ 0: There will be a mix of linear and azimuthal motion and $E > U_{eff}$ because $\dot{r}^{2}$ is always positive.
+3. $L \neq 0$ and $\dot{r} \neq 0$: There will be a mix of linear and azimuthal motion and $E > U_{eff}$ because $\dot{r}^{2}$ is always positive.
 
 ::::
 
@@ -856,7 +855,7 @@ r_{\min}= \frac{L^{2}}{\gamma m}
 $$
 
 $$
-E_{\min}= - \frac{1}{2} \frac{m\gamma ^{2}}{L^{2}} \mathrm{for} \gamma = GMm \mathrm{and} U = - \frac{\gamma}{r}
+E_{\min}= - \frac{1}{2} \frac{m\gamma ^{2}}{L^{2}} \text{for} \gamma = GMm \text{and} U = - \frac{\gamma}{r}
 $$
 
 ::::
@@ -876,7 +875,7 @@ A particle is under the influence of a central force with a central potential en
 
 $$
 \begin{aligned}
-\mathrm{as}: \\
+\text{as}: \\
 U(r) &= \frac{k_{1}}{r^{3}} + \frac{k_{2}}{r^{2}}
 \end{aligned}
 $$

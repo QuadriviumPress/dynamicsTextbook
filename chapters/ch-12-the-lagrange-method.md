@@ -73,7 +73,7 @@ $$
 \frac{\mathrm{d}}{\mathrm{d}t} \Bigg(\frac{\partial L}{\partial \dot{x}} \Bigg) = \frac{\partial L}{\partial x}
 $$ (eq-12-2)
 
-This is the **Euler-Lagrange equation**. The above example is for 1-D motion in the $x-$axis, but in practice, you can apply the arguments to represent the Euler-Lagrange equations in other (independent) coordinates. In its general form, the Euler-Lagrange equation is:
+This is the **Euler-Lagrange equation**. The above example is for 1-D motion in the $x$-axis, but in practice, you can apply the arguments to represent the Euler-Lagrange equations in other (independent) coordinates. In its general form, the Euler-Lagrange equation is:
 
 $$
 \frac{\mathrm{d}}{\mathrm{d}t} \Bigg(\frac{\partial L}{\partial \dot{x}_{i}} \Bigg) = \frac{\partial L}{\partial x_{i}}
@@ -106,7 +106,7 @@ For the Lagrange method to work, we must treat $\dot{x}_{i}$ and $x_{i}$ as inde
 
 ::::{admonition} Sample Problem 12-1
 
-Consider a horizontal spring-mass system on a frictionless surface. **Compare the** **differential equation of motion for the mass using (1) Newton’s Laws, (2)** **Energy Conservation, and (3) the Euler-Lagrange method.**
+Consider a horizontal spring-mass system on a frictionless surface. **Compare the differential equation of motion for the mass using (1) Newton’s Laws, (2) Energy Conservation, and (3) the Euler-Lagrange method.**
 
 :::{figure} ../images/figures/figure-12-1.png
 :label: fig-12-1
@@ -127,7 +127,7 @@ $$
 
 $$
 \begin{aligned}
--kx &= m \frac{\mathrm{d}^{2}x}{\mathrm{d}t^{2}} = m\ddot{x} =\Rightarrow \mathrm{net} \mathrm{force} \mathrm{is} \mathrm{spring} \mathrm{force} \\
+-kx &= m \frac{\mathrm{d}^{2}x}{\mathrm{d}t^{2}} = m\ddot{x} \quad\Rightarrow  \text{net force is spring force}\\
 0 &= \ddot{x} + \frac{k}{m} x
 \end{aligned}
 $$
@@ -136,11 +136,11 @@ $$
 
 $$
 \begin{aligned}
-E &= K + U =\Rightarrow \mathrm{assume} U = 0 \mathrm{at} \mathrm{equilibrium} \\
-E &= \frac{1}{2} m\dot{x}^{2}+ \frac{1}{2} kx^{2}=\Rightarrow K = \frac{1}{2} m\dot{x}^{2}, U = \frac{1}{2} kx^{2} \\
+E &= K + U \quad\Rightarrow  \mathrm{assume} U = 0 \text{at equilibrium}\\
+E &= \frac{1}{2} m\dot{x}^{2}+ \frac{1}{2} kx^{2}\quad\Rightarrow  K = \frac{1}{2} m\dot{x}^{2}, U = \frac{1}{2} kx^{2} \\
 \frac{\mathrm{d}E}{\mathrm{d}t} &= \frac{\mathrm{d}}{\mathrm{d}t} \bigg(\frac{1}{2} m\dot{x}^{2}+ \frac{1}{2} kx^{2}\bigg) \\
-0 &= m\dot{x} \frac{\mathrm{d}\dot{x}}{\mathrm{d}t} + kx\dot{x} =\Rightarrow \mathrm{set} \frac{\mathrm{d}E}{\mathrm{d}t} = 0 \\
-0 &= \ddot{x} + \frac{k}{m} x =\Rightarrow \mathrm{simplify}
+0 &= m\dot{x} \frac{\mathrm{d}\dot{x}}{\mathrm{d}t} + kx\dot{x} \quad\Rightarrow  \text{set} \frac{\mathrm{d}E}{\mathrm{d}t} = 0 \\
+0 &= \ddot{x} + \frac{k}{m} x \quad\Rightarrow  \text{simplify}
 \end{aligned}
 $$
 
@@ -195,19 +195,19 @@ All three methods match!
 
 ::::{admonition} Lance’s Thoughts
 
-Thinking about a variable and its time derivative as two separate variables is a little strange to begin with, but if you’re able to set up the Lagrangian system properly, a couple of quick derivatives can get you to the solution a lot faster. It might help your first few tries at it to back out of dot notation very briefly: $x$ and $v$ look more different than $x$ and $\dot{x}$ . Visually, it can be easier to distinguish
+Thinking about a variable and its time derivative as two separate variables is a little strange to begin with, but if you’re able to set up the Lagrangian system properly, a couple of quick derivatives can get you to the solution a lot faster. It might help your first few tries at it to back out of dot notation very briefly: $x$ and $v$ look more different than $x$ and $\dot{x}$. Visually, it can be easier to distinguish a Lagrangian written with ordinary velocity symbols
 
 $$
-m_{1}a = (m_{1}+ m_{2})v^{2}+ m_{1}gx_{1}+ m_{2}g(h - x_{1})
+L = \frac{1}{2}mv^{2} - mgx
 $$
 
-from
+from the same expression in dot notation
 
 $$
-m_{1}\ddot{x} = (m_{1} + m_{2})\dot{x} + m_{1}gx_{1}+ m_{2}g(h - x_{1})
+L = \frac{1}{2}m\dot{x}^{2} - mgx
 $$
 
-until you get used to the process; doing so can make it easier to see position and velocity as separate variables.
+until you get used to the process; doing so can make it easier to see position and velocity as separate variables when you take $\partial L/\partial x$ and $\partial L/\partial \dot{x}$.
 
 ::::
 
@@ -252,7 +252,6 @@ $$
 
 At first glance, this may seem like a 2-D problem, but the positions of $y_{1}$ and $y_{2}$ are not independent. As one increases, the other decreases because the rope is inextensible
 
-::::
 
 <!-- Source PDF page 262; printed label 253. -->
 
@@ -275,7 +274,7 @@ $$
 $$
 \begin{aligned}
 K &= \frac{1}{2} (m_{1}+ m_{2})(\dot{y}_{1})^{2}+ \frac{1}{2} I \bigg(\frac{\dot{y}_{1}}{R} \bigg)^{2} \\
-&= \frac{1}{2} \bigg(m_{1}+ m_{2}+ \frac{1}{2} M\bigg)\dot{y}_{1}^{2}=\Rightarrow \mathrm{sub} \mathrm{in} I = \frac{1}{2} MR^{2}
+&= \frac{1}{2} \bigg(m_{1}+ m_{2}+ \frac{1}{2} M\bigg)\dot{y}_{1}^{2}\quad\Rightarrow  \text{sub in}I = \frac{1}{2} MR^{2}
 \end{aligned}
 $$
 
@@ -311,7 +310,6 @@ And the Euler-Lagrange equation is:
 
 <!-- Source PDF page 263; printed label 254. -->
 
-::::{admonition} Continued
 
 $$
 \begin{aligned}
@@ -332,7 +330,7 @@ This is exactly what we got from energy conservation ([Sample Problem 9-3](#exam
 
 ::::{admonition} Sample Problem 12-3
 
-Consider an object of mass $m$ moving in an elliptical orbit under gravity in polar coordinates where the acceleration due to gravity changes with position. **Solve the** **Euler-Lagrange equations for this object.**
+Consider an object of mass $m$ moving in an elliptical orbit under gravity in polar coordinates where the acceleration due to gravity changes with position. **Solve the Euler-Lagrange equations for this object.**
 
 **Solution**
 
@@ -361,7 +359,6 @@ $$
 
 See [Chapter 1.2](#sec-1-2) for a review of plane-polar coordinates. Thus, in polar coordinates, the energy equations are:
 
-::::
 
 <!-- Source PDF page 264; printed label 255. -->
 
@@ -410,11 +407,10 @@ $$
 \frac{\partial L}{\partial \dot{\theta}} = \frac{\partial}{\partial \dot{\theta}} \bigg(\frac{1}{2} mr^{2}\dot{\theta}^{2}\bigg) = mr^{2}\dot{\theta} = \mathrm{constant}
 $$
 
-The term $mr^{2}\dot{\theta}$ is the angular momentum of the system (see [Chapter 6](#ch-6)) and we recover the condition that angular momentum is constant (as expected for a central force; [Chapter 10](#ch-10)) directly from the Lagrangian and Euler-Lagrange equations.
+The term $mr^{2}\dot{\theta}$ is the angular momentum of the system (see [Chapter 7](#ch-7)) and we recover the condition that angular momentum is constant (as expected for a central force; [Chapter 10](#ch-10)) directly from the Lagrangian and Euler-Lagrange equations.
 
 <!-- Source PDF page 265; printed label 256. -->
 
-::::{admonition} Continued
 
 Now let’s look at the radial terms.
 
@@ -438,7 +434,7 @@ $$
 
 At this point, we have two equations of motion.
 
-$L = mr^{2}\dot{\theta} =\Rightarrow L$ is the angular momentum (and this is constant)
+$L = mr^{2}\dot{\theta} \quad\Rightarrow  L$ is the angular momentum (and this is constant)
 
 $$
 m\ddot{r}=mr\dot{\theta}^2-\frac{GMm}{r^2}
@@ -449,7 +445,7 @@ We can combine these equations to remove the $\dot{\theta}$ term from the radial
 
 $$
 \begin{aligned}
-m\ddot{r} &= mr \frac{L^{2}}{m^{2}r^{4}} - \frac{GMm}{r^{2}} =\Rightarrow \dot{\theta} = \frac{L}{mr^{2}} \\
+m\ddot{r} &= mr \frac{L^{2}}{m^{2}r^{4}} - \frac{GMm}{r^{2}} \quad\Rightarrow  \dot{\theta} = \frac{L}{mr^{2}} \\
 \ddot{r} &= \frac{L^{2}}{m^{2}r^{3}} - \frac{GM}{r^{2}}
 \end{aligned}
 $$
@@ -469,9 +465,8 @@ The following problem includes rolling and translational motion.
 
 ::::{admonition} Sample Problem 12-4
 
-A sphere rolls down an incline of angle $\theta$ without slipping. Assume that the moment of inertia of the sphere is $\frac{2}{5} MR^{2}$. **Solve the Euler-Lagrange equations for the** **rolling sphere.** Assume $U$ = 0 at $x$ = 0 at the top of the incline.
+A sphere rolls down an incline of angle $\theta$ without slipping. Assume that the moment of inertia of the sphere is $\frac{2}{5} MR^{2}$. **Solve the Euler-Lagrange equations for the rolling sphere.** Assume $U$ = 0 at $x$ = 0 at the top of the incline.
 
-::::
 
 <!-- Source PDF page 266; printed label 257. -->
 
@@ -519,7 +514,6 @@ $$
 
 <!-- Source PDF page 267; printed label 258. -->
 
-::::{admonition} Continued
 
 For a sphere, $I = \frac{2}{5} MR^{2}$ (see [Appendix A.4](#sec-A-4)); it is rolling without slipping, which means
 
@@ -599,7 +593,7 @@ $$
 \vec{v} = \dot{x}\hat{\imath} + \dot{y}\hat{\jmath}
 $$
 
-The position in the y-direction can be described by the equation of the wire, $y = ax^{4}$ so the y-velocity is the derivative with respect to time of our y-position, $\dot{y} = 4ax^{3}\dot{x}$ . This means that:
+The position in the y-direction can be described by the equation of the wire, $y = ax^{4}$ so the y-velocity is the derivative with respect to time of our y-position, $\dot{y} = 4ax^{3}\dot{x}$. This means that:
 
 $$
 \vec{v} = \dot{x}\hat{\imath} + 4ax^{3}\dot{x}\hat{\jmath}
@@ -613,7 +607,6 @@ $$
 L = K - U
 $$
 
-::::
 
 <!-- Source PDF page 269; printed label 260. -->
 
@@ -654,11 +647,11 @@ $$
 The only source of potential energy is gravity,
 
 $$
-U = mgh \qquad \mathrm{where}\ h = y
+U = mgh \qquad \text{where}\ h = y
 $$
 
 $$
-U = mgy \qquad \mathrm{where}\ U = 0\ \mathrm{when}\ y = 0
+U = mgy \qquad \text{where}\ U = 0\ \text{when}\ y = 0
 $$
 
 $$
@@ -684,7 +677,6 @@ $$
 
 <!-- Source PDF page 270; printed label 261. -->
 
-::::{admonition} Continued
 
 We can start by solving the right-hand side:
 
@@ -731,7 +723,7 @@ $$
 \ddot{x}(1 + 16a^{2}x^{6}) + \dot{x}(48a^{2}x^{5}\dot{x}) + 4gax^{3}= 0
 $$
 
-The solution is a differential equation of motion, but it is difficult to solve because it is non-linear with respect to both $x$ and $\dot{x}$ . Thus, we leave the equation in this form.
+The solution is a differential equation of motion, but it is difficult to solve because it is non-linear with respect to both $x$ and $\dot{x}$. Thus, we leave the equation in this form.
 
 1. Try solving this problem using energy conservation. Hint: Remember that energy conservation uses full derivatives and not partial derivatives.
 
@@ -763,7 +755,7 @@ $$
 L = K - U
 $$
 
-Second, you solve the Euler-Lagrange equations. For example, for motion in the $x-$axis only:
+Second, you solve the Euler-Lagrange equations. For example, for motion in the $x$-axis only:
 
 $$
 \frac{\mathrm{d}}{\mathrm{d}t} \Bigg(\frac{\partial L}{\partial \dot{x}} \Bigg) = \frac{\partial L}{\partial x}
@@ -952,9 +944,9 @@ where $a$ is a constant and 0 $< \theta < \pi$. See the figure below.
 
 a) If gravity is the only force on the snowboarder, find the potential energy. Express this in terms of $\theta$.
 
-b) What is the kinetic energy of the snowboarder? Express this in terms of $\theta$ and $\dot{\theta}$ .
+b) What is the kinetic energy of the snowboarder? Express this in terms of $\theta$ and $\dot{\theta}$.
 
-c) What is the Lagrangian of the system? Express this in terms of $\theta$ and $\dot{\theta}$ .
+c) What is the Lagrangian of the system? Express this in terms of $\theta$ and $\dot{\theta}$.
 
 d) Use the Euler-Lagrange equations to find the differential equation of motion. Do not solve this equation.
 

@@ -29,8 +29,7 @@ $$ (eq-5-1)
 where the parameters with primes are in the rotating reference frame and the parameters without primes are measured in an inertial frame. See [Chapter 4.5](#sec-4-5) for what each of these terms means. If your system is *not* rotating, then $\vec{\alpha} = \vec{\omega} = 0$ and we recover the same equation for a linear non-inertial frame from [Chapter 4.2](#sec-4-2),
 
 $$
-\vec{a}^{\prime }= \vec{a} - \vec{A} =\Rightarrow \mathrm{for} \mathrm{no} \mathrm{rotation}
-$$ (eq-5-2)
+\vec{a}^{\prime }= \vec{a} - \vec{A} \quad\Rightarrow  \text{for no rotation}$$ (eq-5-2)
 
 where $\vec{A}$ is the acceleration of the non-inertial frame relative to the inertial frame.
 
@@ -78,7 +77,7 @@ In rotational motion, we have two similar sounding accelerations, the centrifuga
 
 While similar in magnitude, the direction of the centrifugal force is not the same as the direction of the centripetal acceleration. The centrifugal force points radially outward for rotating frames, whereas the centripetal acceleration points radially inward. This should make intuitive sense as fictitious forces act in the opposite direction to the acceleration in the inertial frame (negative sign in the Equation (5.5)).
 
-To prove that the centrifugal force is radially outward, let’s go through an example vector cross product for uniform circular motion with its axis of rotation pointing up $(\hat{k}^{\prime })$. Even though we have a radial dependence with our cross product, we will use Cartesian coordinates for the rotating frame $(\hat{\imath}^{\prime },\hat{\jmath}^{\prime },\hat{k}^{\prime })$. The reason is, in our rotating frame, the radial vector will move with the non-inertial coordinate system. That is, from the perspective of a non-inertial observer rotating with the coordinate system, the radial vector does not change. So we can define our radial vector as being along the $x-$axis $(\vec{r}^{\prime }= r\hat{\imath}^{\prime })$ for example, and as the system rotates, our radial vector will remain along the $\hat{\imath}^{\prime }$ direction (both the position and the coordinates are rotating in this non-inertial frame).
+To prove that the centrifugal force is radially outward, let’s go through an example vector cross product for uniform circular motion with its axis of rotation pointing up $(\hat{k}^{\prime })$. Even though we have a radial dependence with our cross product, we will use Cartesian coordinates for the rotating frame $(\hat{\imath}^{\prime },\hat{\jmath}^{\prime },\hat{k}^{\prime })$. The reason is, in our rotating frame, the radial vector will move with the non-inertial coordinate system. That is, from the perspective of a non-inertial observer rotating with the coordinate system, the radial vector does not change. So we can define our radial vector as being along the $x$-axis $(\vec{r}^{\prime }= r\hat{\imath}^{\prime })$ for example, and as the system rotates, our radial vector will remain along the $\hat{\imath}^{\prime }$ direction (both the position and the coordinates are rotating in this non-inertial frame).
 
 Using $\vec{\omega} = \omega \hat{k}^{\prime }$ and $\vec{r}^{\prime }= r\hat{\imath}^{\prime }$, the centrifugal acceleration is $\vec{\omega} \times (\vec{\omega} \times \vec{r}^{\prime }) = \omega \hat{k}^{\prime }\times (\omega \hat{k}^{\prime }\times r\hat{\imath}^{\prime })$. To solve this problem, we need to do two cross products. First, we will do the cross product
 
@@ -128,7 +127,7 @@ The outward acceleration of the centrifugal force is why laundry sticks to the s
 
 ::::{admonition} Sample Problem 5-1
 
-A cat with mass $m$ sits on a turntable at a radial position of R. The turntable is spinning at a constant angular velocity of $\vec{\omega} = \omega \hat{k}$ (see [Figure 5.1](#fig-5-1)). If the coefficient of static friction between the cat and the table is $\mu$, **what is the maximum rotation** **rate before the cat starts to slip?**
+A cat with mass $m$ sits on a turntable at a radial position of $R$. The turntable is spinning at a constant angular velocity of $\vec{\omega} = \omega \hat{k}$ (see [Figure 5.1](#fig-5-1)). If the coefficient of static friction between the cat and the table is $\mu$, **what is the maximum rotation rate before the cat starts to slip?**
 
 **Solution**
 
@@ -140,7 +139,6 @@ $$
 
 which is just the centripetal acceleration. The force behind this acceleration is actually
 
-::::
 
 <!-- Source PDF page 104; printed label 95. -->
 
@@ -191,7 +189,6 @@ where $\vec{F}_{I}$ is the total force in the inertial frame (the real forces). 
 
 <!-- Source PDF page 105; printed label 96. -->
 
-::::{admonition} Continued
 
 Taking $\vec{a}^{\prime }$ = 0, we get:
 
@@ -219,9 +216,9 @@ This is the same solution as the inertial frame (as expected). The difference is
 
 ::::{admonition} Lance’s Thoughts
 
-For a rotating frame of reference, you start with five potential fictitious forces. Most of the time, you’ll be able to eliminate at least some of them based on whether the object is moving or accelerating inside the rotating frame and whether the non-inertial frame is rotating or moving at a constant rate. Look for terms that will equal zero.
+For a rotating frame of reference, you start with the four potential fictitious forces from [Section 5.1](#sec-5-1): azimuthal, Coriolis, centrifugal, and translational. Most of the time, you’ll be able to eliminate at least some of them based on whether the object is moving or accelerating inside the rotating frame and whether the non-inertial frame is rotating or moving at a constant rate. Look for terms that will equal zero.
 
-In the sample problem above, we only had centrifugal force to worry about. Since the cat, seen from inside the rotating frame, isn’t moving at all, we can eliminate the linear and Coriolis accelerations. Since the rotation is at a constant rate and the axis of rotation isn’t moving, we can eliminate the azimuthal and translational accelerations. With four out of five fictitious forces gone, this becomes a much easier problem to solve.
+In the sample problem above, we only had centrifugal force to worry about. Since the cat, seen from inside the rotating frame, isn’t moving at all, we can eliminate the Coriolis force. Since the rotation is at a constant rate and the origin of the rotating frame isn’t accelerating translationally, we can eliminate the azimuthal and translational forces. With three out of four fictitious forces gone, this becomes a much easier problem to solve.
 
 ::::
 
@@ -281,7 +278,7 @@ Overhead view of a rotating frame with a particle of mass $m$ moving at a speed 
 
 ::::{admonition} Sample Problem 5-2
 
-Let’s return to the question of the cat sitting on a turntable from [Sample Problem 5-1](#example-5-1). Now, the cat starts to move radially outward at a constant speed of $v^{\prime }\hat{\imath}^{\prime }$. **At what** **radius will the cat start to slip?**
+Let’s return to the question of the cat sitting on a turntable from [Sample Problem 5-1](#example-5-1). Now, the cat starts to move radially outward at a constant speed of $v^{\prime }\hat{\imath}^{\prime }$. **At what radius will the cat start to slip?**
 
 **Solution**
 
@@ -436,7 +433,7 @@ $$
 
 Let’s start with the centrifugal force, $F_{cent}= -m\vec{\omega} \times (\vec{\omega} \times \vec{r}^{\prime })$.
 
-[Figure 5.6](#fig-5-6) shows the breakdown of the vector directions from the two cross products. Since $\vec{\omega}$ is not along the $\hat{k}^{\prime }$ axis and it is not perpendicular to $\vec{R}$ , getting the direction is not intuitive. You can use the right-hand rule (see [Chapter 1.5.2](#sec-1-5-2)) to estimate the direction, where $\vec{\omega}\times \vec{R}$ points mostly into the page, and $\vec{\omega}\times (\vec{\omega}\times \vec{R}$ ) points mostly toward the Earth’s axis of rotation. Thus, we should expect the centrifugal force to mostly point away from the axis of rotation.
+[Figure 5.6](#fig-5-6) shows the breakdown of the vector directions from the two cross products. Since $\vec{\omega}$ is not along the $\hat{k}^{\prime }$ axis and it is not perpendicular to $\vec{R}$, getting the direction is not intuitive. You can use the right-hand rule (see [Chapter 1.5.2](#sec-1-5-2)) to estimate the direction, where $\vec{\omega}\times \vec{R}$ points mostly into the page, and $\vec{\omega}\times (\vec{\omega}\times \vec{R}$ ) points mostly toward the Earth’s axis of rotation. Thus, we should expect the centrifugal force to mostly point away from the axis of rotation.
 
 The total magnitude of the centrifugal force should therefore be given by
 

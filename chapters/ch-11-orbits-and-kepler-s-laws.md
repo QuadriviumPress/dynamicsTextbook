@@ -210,8 +210,8 @@ for the gravitational force. We can also prove this definition of $r_{c}$ using 
 
 $$
 \begin{aligned}
-\frac{\gamma}{r_{c}^{2}} &= \frac{mv^{2}}{r_{c}} =\Rightarrow \gamma r_{c}= mv^{2}r_{c}^{2} \\
-r_{c}&= \frac{(mvr_{c})^{2}}{m\gamma} =\Rightarrow L = mvr_{c}
+\frac{\gamma}{r_{c}^{2}} &= \frac{mv^{2}}{r_{c}} \quad\Rightarrow  \gamma r_{c}= mv^{2}r_{c}^{2} \\
+r_{c}&= \frac{(mvr_{c})^{2}}{m\gamma} \quad\Rightarrow  L = mvr_{c}
 \end{aligned}
 $$
 
@@ -259,11 +259,10 @@ For $\varepsilon \ge 1$, the orbit is unbound. These are hyperbolic orbits $(\va
 
 ::::{admonition} Sample Problem 11-1
 
-A satellite of mass $m$ orbits the Earth in a circular orbit of radius $r_{0}$. One of its engines is fired briefly toward the Earth. **a) Describe how the energy of this satellite changes after the engine is fired.** **b) What happens to the orbit of the satellite?**
+A satellite of mass $m$ orbits the Earth in a circular orbit of radius $r_{0}$. One of its engines is fired briefly toward the Earth. **a) Describe how the energy of this satellite changes after the engine is fired. b) What happens to the orbit of the satellite?**
 
 **Solution**
 
-::::
 
 <!-- Source PDF page 243; printed label 234. -->
 
@@ -279,9 +278,9 @@ $$
 
 So our initial energy is $E_i=-m\gamma^2/(2L^2)$.
 
-Now, let’s consider what happens to the energy after the engines are fired briefly. We will first assume that the satellite moves a negligible amount, so its position vector, $r$, is unchanged during the energy boost from the engines. We are told that the engine is fired inward toward the Earth. In other words, the thrust is applied along a radial direction. Any motion along the radial direction does not change the angular momentum, because $L = \vec{r} \times \vec{p}$ . The component of motion along a radial direction does not produce additional angular momentum. So $L$ is the same before and after the energy boost. Thus, the effective potential does not change.
+Now, let’s consider what happens to the energy after the engines are fired briefly. We will first assume that the satellite moves a negligible amount, so its position vector, $r$, is unchanged during the energy boost from the engines. We are told that the engine is fired inward toward the Earth. In other words, the thrust is applied along a radial direction. Any motion along the radial direction does not change the angular momentum, because $L = \vec{r} \times \vec{p}$. The component of motion along a radial direction does not produce additional angular momentum. So $L$ is the same before and after the energy boost. Thus, the effective potential does not change.
 
-But, the energy boost does induce a change in the radial momentum, which means that $\dot{r} \not =$ 0. If we have a radial velocity, then our energy after the boost, $E_{f}$ is
+But, the energy boost does induce a change in the radial momentum, which means that $\dot{r} \neq 0$. If we have a radial velocity, then our energy after the boost, $E_{f}$ is
 
 $$
 E_{f}= \frac{1}{2} m\dot{r}^{2}+ U_{eff}
@@ -299,7 +298,6 @@ b) There are a couple of ways we can answer this question. First, we can sketch 
 
 <!-- Source PDF page 244; printed label 235. -->
 
-::::{admonition} Continued
 
 look like for this satellite. Note, we are assuming that the boost in energy is sufficiently small that the satellite remains bound to the Earth.
 
@@ -359,17 +357,17 @@ In time $\Delta t$, a particle moves from position $a$ to position $b$ as shown 
 $$
 \begin{aligned}
 \Delta A &= \frac{1}{2} r(r\Delta \theta) = \frac{r^{2}\Delta \theta}{2} \\
-\frac{\Delta A}{\Delta t} &= \frac{r^{2}}{2} \frac{\Delta \theta}{\Delta t} =\Rightarrow \mathrm{divide} \mathrm{both} \mathrm{sides} \mathrm{by} \Delta t
+\frac{\Delta A}{\Delta t} &= \frac{r^{2}}{2} \frac{\Delta \theta}{\Delta t} \quad\Rightarrow  \text{divide both sides by}\Delta t
 \end{aligned}
 $$
 
-Note that this assumes that you have small enough angles $\Delta \theta$ so that we can approximate the area as a triangle. This approximation is true for infinitesimally small times. Therefore, we can assume $\Delta t \rightarrow$ d$t, \Delta A \rightarrow$ d$A$, and $\Delta \theta \rightarrow$ d$\theta$.
+Note that this assumes that you have small enough angles $\Delta \theta$ so that we can approximate the area as a triangle. This approximation is true for infinitesimally small times. Therefore, we can assume $\Delta t \rightarrow$ $\mathrm{d}t, \Delta A \rightarrow$ $\mathrm{d}A$, and $\Delta \theta \rightarrow$ $\mathrm{d}\theta$.
 
 $$
 \begin{aligned}
 \frac{\mathrm{d}A}{\mathrm{d}t} &= \frac{r^{2}}{2} \frac{\mathrm{d}\theta}{\mathrm{d}t} \\
-\dot{A} &= \frac{r^{2}\dot{\theta}}{2} =\Rightarrow \mathrm{recall} L = mr^{2}\dot{\theta} \\
-\dot{A} &= \frac{L}{2m} =\Rightarrow L = \mathrm{constant} \\
+\dot{A} &= \frac{r^{2}\dot{\theta}}{2} \quad\Rightarrow  \text{recall} L = mr^{2}\dot{\theta} \\
+\dot{A} &= \frac{L}{2m} \quad\Rightarrow  L = \mathrm{constant} \\
 \dot{A} &= \mathrm{constant}
 \end{aligned}
 $$
@@ -409,7 +407,7 @@ r_{p}+ r_{a}&= 2a \\
 2a &= \frac{r_{c}}{1 + \varepsilon} + \frac{r_{c}}{1 - \varepsilon} \\
 2a &= r_{c}\bigg(\frac{1 - \varepsilon}{1 - \varepsilon ^{2}} + \frac{1 + \varepsilon}{1 - \varepsilon ^{2}} \bigg) \\
 2a &= r_{c}\bigg(\frac{2}{1 - \varepsilon ^{2}} \bigg) \\
-1 - \varepsilon ^{2}&= \frac{r_{c}}{a} =\Rightarrow r_{c}= \frac{L^{2}}{m\gamma}
+1 - \varepsilon ^{2}&= \frac{r_{c}}{a} \quad\Rightarrow  r_{c}= \frac{L^{2}}{m\gamma}
 \end{aligned}
 $$
 
@@ -432,7 +430,7 @@ T^2&=\frac{4\pi^2m^2a^4(L^2/(am\gamma))}{L^2}
 $$
 
 $$
-T^{2}= \frac{4\pi ^{2}a^{3}}{GM} =\Rightarrow \mathrm{sub} \gamma = GMm
+T^{2}= \frac{4\pi ^{2}a^{3}}{GM} \quad\Rightarrow  \text{sub} \gamma = GMm
 $$
 
 $$
@@ -460,7 +458,6 @@ $$
 
 Note for comets, the orbit is around the Sun (the Sun is at one focus). So we need to
 
-::::
 
 <!-- Source PDF page 248; printed label 239. -->
 
@@ -519,7 +516,6 @@ Look at how much faster it was to solve the same problem using a scaling relatio
 
 <!-- Source PDF page 249; printed label 240. -->
 
-::::{admonition} Continued
 
 Note, the above scaling relation only applies to orbits around the Sun. If you change the source of the gravitational field, you need to change your reference orbit. This is because the constant of proportionality between $T^{2}$ and $a^{3}$ depends on the mass, $M$, that is producing the gravitational field.
 
@@ -588,11 +584,11 @@ Since we are interested in speeds, we do not care about the negative signs with 
 If we plug in our values for $M, \varepsilon, r_{a}$ and $r_{p}$ into the above equations, we get:
 
 $$
-v_{p}= 55 \mathrm{km} \mathrm{s}^{-1}
+v_{p}= 55 \text{km s}^{-1}
 $$
 
 $$
-v_{a}= 0.9 \mathrm{km} \mathrm{s}^{-1}
+v_{a}= 0.9 \text{km s}^{-1}
 $$
 
 As expected, we get $v_{p}> v_{a}$.
@@ -681,26 +677,34 @@ A useful technique when applying Kepler’s third law is to use scaling relation
 
 ::::{admonition} Important Equations
 
-**Eccentricity: Pericenter:**
+**Eccentricity:**
 
 $$
-\varepsilon=\sqrt{1-\frac{b^2}{a^2}}
-=\sqrt{1+\frac{2EL^2}{m\gamma^2}},
-\qquad
-r_p=a(1-\varepsilon)=\frac{r_c}{1+\varepsilon},
-\qquad
-v_p=\sqrt{\frac{GM(1+\varepsilon)}{r_p}}.
+\varepsilon = \sqrt{1 - \frac{b^{2}}{a^{2}}} = \sqrt{1 + \frac{2EL^{2}}{m\gamma ^{2}}}
+$$
+
+**Pericenter:**
+
+$$
+r_{p}= a(1 - \varepsilon) = \frac{r_{c}}{1 + \varepsilon},\qquad
+v_{p}= \sqrt{\frac{GM(1 + \varepsilon)}{r_{p}}}
 $$
 
 **Apocenter:**
 
 $$
-r_a=a(1+\varepsilon)=\frac{r_c}{1-\varepsilon},
-\qquad
-v_a=\sqrt{\frac{GM(1-\varepsilon)}{r_a}}.
+r_{a}= a(1 + \varepsilon) = \frac{r_{c}}{1 - \varepsilon},\qquad
+v_{a}= \sqrt{\frac{GM(1 - \varepsilon)}{r_{a}}}
 $$
 
 **Distance:**
+
+$$
+r = \frac{a(1 - \varepsilon ^{2})}{1 + \varepsilon \cos \theta} = \frac{r_{c}}{1 + \varepsilon \cos \theta},\qquad
+r_{c}= \frac{L^{2}}{m\gamma}
+$$
+
+**Kepler’s 3rd Law:**
 
 $$
 \frac{T^{2}}{a^{3}} = \frac{4\pi ^{2}}{GM} = \mathrm{constant}
@@ -777,11 +781,7 @@ Tau Ceti is a star approximately 11.9 light years from Earth and is known to hav
 
 ::::{admonition} Practice Problem 11-7
 
-What is the speed of a satellite in circular orbit around the Earth with a radius of orbit
-
-$$
-\mathrm{of} R_{s}?
-$$
+What is the speed of a satellite in circular orbit around the Earth with a radius of orbit of $R_{s}$?
 
 ::::
 

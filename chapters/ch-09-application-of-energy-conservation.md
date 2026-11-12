@@ -71,7 +71,7 @@ Consider a particle moving in 3-D,
 
 $$
 \begin{aligned}
-K &= \frac{1}{2} m(\vec{v} \cdot \vec{v}) =\Rightarrow \mathrm{Note} \mathrm{that} \vec{v} \cdot \vec{v} = v^{2} \\
+K &= \frac{1}{2} m(\vec{v} \cdot \vec{v}) \quad\Rightarrow  \text{Note that}\vec{v} \cdot \vec{v} = v^{2} \\
 &= \frac{1}{2} m(\dot{x}^{2}+ \dot{y}^{2}+ \dot{z}^{2})
 \end{aligned}
 $$
@@ -84,9 +84,9 @@ $$
 \begin{aligned}
 \frac{\mathrm{d}K}{\mathrm{d}t} &= \frac{1}{2} m \frac{\mathrm{d}}{\mathrm{d}t} (\dot{x}^{2}+ \dot{y}^{2}+ \dot{z}^{2}) \\
 \frac{\mathrm{d}K}{\mathrm{d}t} &= \frac{1}{2} m(2\dot{x}\ddot{x} + 2\dot{y}\ddot{y} + 2\dot{z}\ddot{z}) \\
-\frac{\mathrm{d}K}{\mathrm{d}t} &= m(\dot{x}\ddot{x} + \dot{y}\ddot{y} + \dot{z}\ddot{z}) =\Rightarrow \mathrm{Note} \mathrm{the} \mathrm{bracket} \mathrm{term} \mathrm{is} \dot{\vec{r}} \cdot \ddot{\vec{r}} \\
+\frac{\mathrm{d}K}{\mathrm{d}t} &= m(\dot{x}\ddot{x} + \dot{y}\ddot{y} + \dot{z}\ddot{z}) \quad\Rightarrow  \text{Note the bracket term is}\dot{\vec{r}} \cdot \ddot{\vec{r}} \\
 \frac{\mathrm{d}K}{\mathrm{d}t} &= m\dot{\vec{r}} \cdot \ddot{\vec{r}} \\
-\frac{\mathrm{d}K}{\mathrm{d}t} &= \frac{\mathrm{d}\vec{r}}{\mathrm{d}t} \cdot \vec{F} =\Rightarrow \mathrm{Recall} \mathrm{that} \vec{F} = m\vec{a} = m\ddot{\vec{r}} \\
+\frac{\mathrm{d}K}{\mathrm{d}t} &= \frac{\mathrm{d}\vec{r}}{\mathrm{d}t} \cdot \vec{F} \quad\Rightarrow  \text{Recall that}\vec{F} = m\vec{a} = m\ddot{\vec{r}} \\
 \mathrm{d}K &= \mathrm{d}\vec{r} \cdot \vec{F}
 \end{aligned}
 $$
@@ -157,11 +157,11 @@ Keep in mind that not all forces that are functions of position are conservative
 
 ::::{admonition} Sample Problem 9-1
 
-Consider a force $\vec{F} = -ky\hat{\imath}+kx\hat{\jmath}$ . **Show that the work done on a particle by this** **force in a closed loop does not equal zero.**
+Consider a force $\vec{F} = -ky\hat{\imath}+kx\hat{\jmath}$. **Show that the work done on a particle by this force in a closed loop does not equal zero.**
 
 **Solution**
 
-While one could demonstrate that $\vec{F}$ is *not* a conservative force by showing $\vec{\nabla}\times \vec{F} \not =$ 0, the problem specifically asks to show the solution for a closed loop. To solve this problem, we need to evaluate the integral:
+While one could demonstrate that $\vec{F}$ is *not* a conservative force by showing $\vec{\nabla}\times \vec{F} \neq 0$, the problem specifically asks to show the solution for a closed loop. To solve this problem, we need to evaluate the integral:
 
 $$
 \oint \vec{F} \cdot \mathrm{d}\vec{r}
@@ -184,7 +184,7 @@ where $\oint$ indicates a closed loop. You can take any closed loop for a conser
 A simple closed loop. You can define any closed loop for conservative forces, but direct paths are the most mathematically simple to use. Here we have four paths that are labeled as (1), (2), (3), and (4).
 :::
 
-So we can break up the work for this system using each of the different path legs. For the first path length (1), it is entirely along the $x-$axis, so we can solve the work from just $F_{x}$ because no work is being done in $y$ along that axis.
+So we can break up the work for this system using each of the different path legs. For the first path length (1), it is entirely along the $x$-axis, so we can solve the work from just $F_{x}$ because no work is being done in $y$ along that axis.
 
 $$
 W_{1}= W(0,0) \rightarrow W(a,0) = \int_{0}^{a} F_{x}\mathrm{d}x = -ky\int_{0}^{a} \mathrm{d}x = -kya = 0
@@ -202,9 +202,9 @@ W_{4}&= W(0,b) \rightarrow W(0,0) = \int_{b}^{0} F_{y}\mathrm{d}y = kx\int_{b}^{
 \end{aligned}
 $$
 
-So the total work done in this closed loop is $W = W_{1}+W_{2}+W_{3}+W_{4}= 0+kab+kab+0$ = $2kab \not =$ 0. So the above force is *not* conservative.
+So the total work done in this closed loop is $W = W_{1}+W_{2}+W_{3}+W_{4}= 0+kab+kab+0$ = $2kab \neq 0$. So the above force is *not* conservative.
 
-1. Confirm that the force $\vec{F} = -ky\hat{\imath}+kx\hat{\jmath}$ is not conservative by taking $\vec{\nabla}\times \vec{F}$ .
+1. Confirm that the force $\vec{F} = -ky\hat{\imath}+kx\hat{\jmath}$ is not conservative by taking $\vec{\nabla}\times \vec{F}$.
 
 2. Is $\vec{F} = (xy)\hat{\imath}+(xz)\hat{\jmath}+(yz)\hat{k}$ conservative? Try both the closed loop and the curl methods. Which do you like better?
 
@@ -219,7 +219,7 @@ So the total work done in this closed loop is $W = W_{1}+W_{2}+W_{3}+W_{4}= 0+ka
 
 ::::{admonition} Sample Problem 9-2
 
-A uniform spherical shell of mass $M$ and radius $R$ is able to rotate about a vertical axis without friction ([Figure 9.2](#fig-9-2)). A massless rope passes around the shell at its equator and over a pulley to a smaller mass $m$ that is hanging over the edge of a table. **If there** **are no losses in energy, what is the velocity of the mass** $m$ **after it has fallen** **a distance** $h$ **from rest?** Assume the pulley is a disk with mass $M_{p}$ and radius $R_{p}$.
+A uniform spherical shell of mass $M$ and radius $R$ is able to rotate about a vertical axis without friction ([Figure 9.2](#fig-9-2)). A massless rope passes around the shell at its equator and over a pulley to a smaller mass $m$ that is hanging over the edge of a table. **If there are no losses in energy, what is the velocity of the mass** $m$ **after it has fallen a distance** $h$ **from rest?** Assume the pulley is a disk with mass $M_{p}$ and radius $R_{p}$.
 
 :::{figure} ../images/figures/figure-9-2.png
 :label: fig-9-2
@@ -244,7 +244,6 @@ $$
 \Delta U = -mgh
 $$
 
-::::
 
 <!-- Source PDF page 203; printed label 194. -->
 
@@ -293,7 +292,6 @@ $$
 
 <!-- Source PDF page 204; printed label 195. -->
 
-::::{admonition} Continued
 
 From the conservation of energy, we have $\Delta K = -\Delta U$. Sub in our equations for $\Delta K$ and $\Delta U$.
 
@@ -339,7 +337,6 @@ $$
 K + U = E = \mathrm{constant}
 $$
 
-::::
 
 <!-- Source PDF page 205; printed label 196. -->
 
@@ -424,7 +421,6 @@ Since the total energy is constant for a system with only conservative forces, t
 
 <!-- Source PDF page 207; printed label 198. -->
 
-::::{admonition} Continued
 
 $$
 \begin{aligned}
@@ -465,11 +461,10 @@ In general, you can use Newton’s laws or energy conservation to solve simple h
 
 (example-9-4)=
 
-::::{admonition} Sample Problem 9-4
+:::::{admonition} Sample Problem 9-4
 
-Consider a mass $m$ hanging from the center of a disk pulley of mass $M$ and radius $R$ as shown in [Figure 9.6](#fig-9-6). The pulley is supported by an inextensible and massless rope that is fixed to the ceiling at one end and attached to a spring of spring constant $k$ on the other end. If the pulley rotates without slipping, **find the equilibrium position** **and the period of oscillations if the small mass** $m$ **is pulled down a small** **distance.** Assume there is no loss of energy from friction.
+Consider a mass $m$ hanging from the center of a disk pulley of mass $M$ and radius $R$ as shown in [Figure 9.6](#fig-9-6). The pulley is supported by an inextensible and massless rope that is fixed to the ceiling at one end and attached to a spring of spring constant $k$ on the other end. If the pulley rotates without slipping, **find the equilibrium position and the period of oscillations if the small mass** $m$ **is pulled down a small distance.** Assume there is no loss of energy from friction.
 
-::::
 
 <!-- Source PDF page 208; printed label 199. -->
 
@@ -508,7 +503,7 @@ $$
 $$
 
 $$
-0 = -2kx - g(M + m) =\Rightarrow \mathrm{for} \mathrm{equilibrium}, \sum F = 0
+0 = -2kx - g(M + m) \quad\Rightarrow  \text{for equilibrium}, \sum F = 0
 $$
 
 $$
@@ -577,7 +572,6 @@ where the change in potential energy depends on a displacement of $2x-x_{0}$, be
 
 <!-- Source PDF page 211; printed label 202. -->
 
-::::{admonition} Continued
 
 For rotating without slipping, $\omega = v/R$. So we can simplify the above as:
 
@@ -585,7 +579,7 @@ $$
 \begin{aligned}
 E &= \frac{1}{2} I \bigg(\frac{v}{R} \bigg)^{2}+ \frac{1}{2} Mv^{2}+ \frac{1}{2} mv^{2}- (M + m)gx + \frac{1}{2} k(2x - x_{0})^{2} \\
 E &= \frac{1}{2} v^{2} \bigg(\frac{I}{R^{2}} + M + m\bigg) - (M + m)gx + \frac{1}{2} k(2x - x_{0})^{2} \\
-E &= \frac{1}{2} v^{2}\bigg(\frac{1}{2} M + M + m\bigg) - (M + m)gx + \frac{1}{2} k(2x - x_{0})^{2}=\Rightarrow I = \frac{1}{2} MR^{2} \\
+E &= \frac{1}{2} v^{2}\bigg(\frac{1}{2} M + M + m\bigg) - (M + m)gx + \frac{1}{2} k(2x - x_{0})^{2}\quad\Rightarrow  I = \frac{1}{2} MR^{2} \\
 E &= \frac{1}{2} v^{2} \bigg(\frac{3}{2} M + m\bigg) - (M + m)gx + \frac{1}{2} k(2x - x_{0})^{2}
 \end{aligned}
 $$
@@ -596,7 +590,7 @@ $$
 \begin{aligned}
 \frac{\mathrm{d}E}{\mathrm{d}t} &= 0 = \frac{\mathrm{d}}{\mathrm{d}t} \bigg[\frac{1}{2} v^{2}\bigg(\frac{3}{2} M + m\bigg) - (M + m)gx + \frac{1}{2} k(2x - x_{0})^{2}\bigg] \\
 0 &= \bigg(\frac{3}{2} M + m\bigg) v \frac{\mathrm{d}v}{\mathrm{d}t} - (M + m)gv + k(2x - x_{0})(2v) \\
-0 &= \bigg(\frac{3}{2} M + m\bigg) \frac{\mathrm{d}v}{\mathrm{d}t} - (M + m)g + 2k(2x - x_{0}) =\Rightarrow \mathrm{eliminate} v \\
+0 &= \bigg(\frac{3}{2} M + m\bigg) \frac{\mathrm{d}v}{\mathrm{d}t} - (M + m)g + 2k(2x - x_{0}) \quad\Rightarrow  \mathrm{eliminate} v \\
 0 &= \frac{\mathrm{d}v}{\mathrm{d}t} + \Bigg(\frac{1}{\frac{3}{2} M + m} \Bigg)\Big[4kx - (M + m)g - 2kx_{0}\Big]
 \end{aligned}
 $$
@@ -628,7 +622,7 @@ $$
 
 Try to solve the same problem using torques and forces. Be wary of your vector directions and whatever coordinate system you originally define. You should obtain the exact same solution if done properly.
 
-::::
+:::::
 
 <!-- Source PDF page 212; printed label 203. -->
 

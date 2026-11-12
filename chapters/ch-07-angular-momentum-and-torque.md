@@ -34,7 +34,7 @@ $$ (eq-7-2)
 
 Note: The angular momentum is a vector quantity. The direction of the vector is given by the vector cross product of $\vec{r}$ and $\vec{p}$ (see [Chapter 1.5.2](#sec-1-5-2) for a review of cross products).
 
-Angular momentum is tied to circular motion. It describes any motion where there is rotation about an axis or arc-like movement. For example, an object moving in a straight line will have no angular momentum because $\vec{r}_{i}$ is parallel to $\vec{p}_{i}$ (cross product is zero). An object also has no angular momentum if it is stationary $(\vec{p}_{i}$ = 0) or it is at the origin
+Angular momentum is tied to circular motion. It describes any motion where there is rotation about an axis or arc-like movement. Straight-line motion does not automatically imply zero angular momentum: $\vec{L} = \vec{r} \times \vec{p}$ vanishes only if $\vec{r}$ is parallel to $\vec{p}$ (the line of motion passes through the reference origin). An object also has no angular momentum if it is stationary $(\vec{p}_{i}$ = 0) or it is at the origin
 
 $$
 (\vec{r}_{i}= 0).
@@ -61,15 +61,14 @@ Now, consider the time derivative of angular momentum. For simplicity, let’s l
 $$
 \begin{aligned}
 \frac{\mathrm{d}\vec{l}_{i}}{\mathrm{d}t} &= \frac{\mathrm{d}}{\mathrm{d}t} (\vec{r}_{i}\times \vec{p}_{i}) \\
-&= \frac{\mathrm{d}}{\mathrm{d}t}[\vec{r}_{i}\times (m_{i}\dot{\vec{r}}_{i})] =\Rightarrow \mathrm{assume} \mathrm{mass} \mathrm{is} \mathrm{constant} \\
-&= m_{i}(\dot{\vec{r}}_{i}\times \dot{\vec{r}}_{i}+ \vec{r}_{i}\times \ddot{\vec{r}}_{i}) =\Rightarrow \mathrm{apply} \mathrm{the} \mathrm{time} \mathrm{derivative} \mathrm{to} \mathrm{each} \mathrm{term} \\
-&= m_{i}(0 + \vec{r}_{i}\times \ddot{\vec{r}}_{i}) =\Rightarrow \mathrm{the} \mathrm{cross} \mathrm{product} \mathrm{of} \mathrm{two} \mathrm{identical} \mathrm{vectors} \mathrm{is} \mathrm{zero} \\
-&= \vec{r}_{i}\times (m_{i}\ddot{\vec{r}}_{i}) =\Rightarrow \mathrm{mass} \mathrm{is} \mathrm{a} \mathrm{constant}, \mathrm{so} \mathrm{you} \mathrm{can} \mathrm{put} \mathrm{it} \mathrm{anywhere} \\
-&= \vec{r}_{i}\times \vec{F}_{i}=\Rightarrow \mathrm{recall} \mathrm{that} F = ma = m\ddot{r} \mathrm{for} \mathrm{constant} \mathrm{mass}
-\end{aligned}
+&= \frac{\mathrm{d}}{\mathrm{d}t}[\vec{r}_{i}\times (m_{i}\dot{\vec{r}}_{i})] \quad\Rightarrow  \text{assume mass is constant}\\
+&= m_{i}(\dot{\vec{r}}_{i}\times \dot{\vec{r}}_{i}+ \vec{r}_{i}\times \ddot{\vec{r}}_{i}) \quad\Rightarrow  \text{apply the time derivative to each term}\\
+&= m_{i}(0 + \vec{r}_{i}\times \ddot{\vec{r}}_{i}) \quad\Rightarrow  \text{the cross product of two identical vectors is zero}\\
+&= \vec{r}_{i}\times (m_{i}\ddot{\vec{r}}_{i}) \quad\Rightarrow  \text{mass is a constant}, \text{so you can put it anywhere}\\
+&= \vec{r}_{i}\times \vec{F}_{i}\quad\Rightarrow  \text{recall that}F = ma = m\ddot{r} \text{for constant mass}\end{aligned}
 $$
 
-We get that the time derivative of the angular momentum equals the cross product of $\vec{r}$ and $\vec{F}$ . This cross product is also known as the torque, $\vec{\tau}$.
+We get that the time derivative of the angular momentum equals the cross product of $\vec{r}$ and $\vec{F}$. This cross product is also known as the torque, $\vec{\tau}$.
 
 $$
 \vec{\tau}_{i}= \vec{r}_{i}\times \vec{F}_{i}
@@ -189,7 +188,7 @@ The power of the parallel axis theorem shines through when you have a strange or
 (sec-7-2-3)=
 ### 7.2.3 Direction of Torque and Angular Momentum
 
-Torque and angular momentum are vectors, where their directions are defined by a vector cross product, which makes finding their directions more challenging. There are several ways to get the directions. First, you can use the RHR or matrix determinant to get the direction from the definition of each vector, e.g., $\vec{\tau} = \vec{r} \times \vec{F}$ . See [Chapter 1.5.2](#sec-1-5-2) for a review of the vector cross product.
+Torque and angular momentum are vectors, where their directions are defined by a vector cross product, which makes finding their directions more challenging. There are several ways to get the directions. First, you can use the RHR or matrix determinant to get the direction from the definition of each vector, e.g., $\vec{\tau} = \vec{r} \times \vec{F}$. See [Chapter 1.5.2](#sec-1-5-2) for a review of the vector cross product.
 
 Second, you can use the RHR for rotation to connect the rotation of a system to the direction of its torque or angular momentum vectors. To apply the RHR for rotation, curl your fingers in the direction of rotation and your thumb will point in the direction of the torque vector (see also [Figure 7.2](#fig-7-2)). Note you can also use the RHR for rotation to get the direction of rotation if you know the direction of torque.
 
@@ -235,7 +234,7 @@ Let’s return to the pendulum program from [Chapter 3.4](#sec-3-4), but this ti
 Example of a simple pendulum. Left: The mass is in equilibrium when it is vertically downward and displaced from equilibrium when shifted an angle $\theta$ from the vertical axis. A restoring force $(F)$ moves the pendulum back to equilibrium. Right: The free-body diagram shows the labeled forces tension $(T)$ in red, gravity $(mg)$ in blue, and the restoring force $(mg\sin \theta)$ in magenta. Shown in dotted-red is the component of gravity that balances tension $(mg\cos \theta)$.
 :::
 
-The restoring force acting on the pendulum is given by $F = -mg\sin \theta$. The torque acting on the pendulum is then $\vec{\tau} = \vec{r}\times \vec{F}$ . So we need to find $\vec{r}, \vec{F}$ , and the angle between them.
+The restoring force acting on the pendulum is given by $F = -mg\sin \theta$. The torque acting on the pendulum is then $\vec{\tau} = \vec{r}\times \vec{F}$. So we need to find $\vec{r}, \vec{F}$, and the angle between them.
 
 <!-- Source PDF page 153; printed label 144. -->
 
@@ -247,7 +246,7 @@ The restoring force acting on the pendulum is given by $F = -mg\sin \theta$. The
 
 ::::
 
-For our simple pendulum, $r = L$ is the distance from the pivot point to where the force is applied, which is fixed. $F$ is the restoring force, $F = -mg\sin \theta$. By definition, the restoring force is perpendicular to the radius vector (the restoring force is given by the component of gravity that is perpendicular to the radius vector along the string, see [Figure 7.4](#fig-7-4)). If $\vec{r} \perp \vec{F}$ , then $\tau = rF$. Putting this information in, we have:
+For our simple pendulum, $r = L$ is the distance from the pivot point to where the force is applied, which is fixed. $F$ is the restoring force, $F = -mg\sin \theta$. By definition, the restoring force is perpendicular to the radius vector (the restoring force is given by the component of gravity that is perpendicular to the radius vector along the string, see [Figure 7.4](#fig-7-4)). If $\vec{r} \perp \vec{F}$, then $\tau = rF$. Putting this information in, we have:
 
 $$
 \tau = |\vec{r} \times \vec{F}|
@@ -371,9 +370,8 @@ In this example, we will determine the equation of motion for a physical pendulu
 
 ::::{admonition} Sample Problem 7-1
 
-A disk of mass $m_{d}$ and radius $R$ is attached to a rod of mass $m_{r}$ and length $L$. **What** **is the period of oscillations if this object is set in motion about the other** **end of the rod?** See [Figure 7.6](#fig-7-6).
+A disk of mass $m_{d}$ and radius $R$ is attached to a rod of mass $m_{r}$ and length $L$. **What is the period of oscillations if this object is set in motion about the other end of the rod?** See [Figure 7.6](#fig-7-6).
 
-::::
 
 <!-- Source PDF page 156; printed label 147. -->
 
@@ -456,7 +454,6 @@ Sketch of the disk with the pivot a distance $L$ from the center of mass.
 
 <!-- Source PDF page 158; printed label 149. -->
 
-::::{admonition} Continued
 
 The moment of inertia for a disk with the axis of rotation through its center of mass is ([Appendix A.4](#sec-A-4)):
 
@@ -502,9 +499,9 @@ In this case, we will consider a system rolling on a surface. In ideal cases, ro
 
 (example-7-2)=
 
-::::{admonition} Sample Problem 7-2
+:::::{admonition} Sample Problem 7-2
 
-A light cord is wrapped around the inner drum of a wheel of mass $m$ and pulled with a constant force $F$ to make the wheel roll. The wheel has a radius $R$ and the inner drum has a radius of $r$. If the wheel rolls without slipping, **what is the force of friction** **at the point of contact between the wheel and the horizontal surface?**
+A light cord is wrapped around the inner drum of a wheel of mass $m$ and pulled with a constant force $F$ to make the wheel roll. The wheel has a radius $R$ and the inner drum has a radius of $r$. If the wheel rolls without slipping, **what is the force of friction at the point of contact between the wheel and the horizontal surface?**
 
 :::{figure} ../images/figures/figure-7-9.png
 :label: fig-7-9
@@ -531,14 +528,11 @@ Free-body diagram of the system. The force $F$ is applied to the wheel (magenta)
 Overall, the wheel is moving forward in the same direction as $F$ but it is also rotating. So there are two types of motion we need to consider, translation for the forward movement and rotation for the spin of the wheel. This means we will need to consider both forms of Newton’s second law.
 
 $$
-\sum F = ma_{cm}=\Rightarrow \mathrm{for} \mathrm{translation}
-$$
+\sum F = ma_{cm}\quad\Rightarrow  \text{for translation}$$
 
 $$
-\sum \tau = I\alpha =\Rightarrow \mathrm{for} \mathrm{rotation}
-$$
+\sum \tau = I\alpha \quad\Rightarrow  \text{for rotation}$$
 
-::::
 
 <!-- Source PDF page 160; printed label 151. -->
 
@@ -546,7 +540,7 @@ Note that for the translational motion, we’re interested only in how the cente
 
 Let’s set up our coordinate system. We define $+x$ toward the right, $+y$ up, and $+\omega$ in the clockwise direction. These choices are intentional. If the linear motion is in the $+\hat{\imath}$, then the rotation should be in the clockwise direction. While we set up the coordinate system to be most intuitive, as long as you are consistent with your defined coordinate system you will still get the correct answer.
 
-Let’s look at $\sum F = ma_{cm}$ to start. What forces do we need to worry about for the forward motion? Both gravity and the normal force act along the $y-$axis. These will be equal and opposite forces. The wheel does not rise above the ground nor does it sink below the ground. So we only care about $F$ and $f$. These are opposite in direction ([Figure 7.10](#fig-7-10)). Based on our definition of the $+x$ axis, we have $\sum F = F - f$.
+Let’s look at $\sum F = ma_{cm}$ to start. What forces do we need to worry about for the forward motion? Both gravity and the normal force act along the $y$-axis. These will be equal and opposite forces. The wheel does not rise above the ground nor does it sink below the ground. So we only care about $F$ and $f$. These are opposite in direction ([Figure 7.10](#fig-7-10)). Based on our definition of the $+x$ axis, we have $\sum F = F - f$.
 
 *What about* $a_{cm}$*?* Keep in mind that the acceleration corresponds to the bulk forward motion of the system. If the wheel was a square box that didn’t rotate, then $a_{cm}$ would be how fast you were able to drag the box. But the magnitude of $a_{cm}$ depends on the rate of rotation because all the motion happens due to rotation (condition of rolling without slipping).
 
@@ -565,7 +559,7 @@ The system has moved a distance $s$ in time $\Delta t$. If you have *rolling wit
 
 <!-- Source PDF page 161; printed label 152. -->
 
-$\Delta t \rightarrow$ d$t, v_{cm}$ and $a_{cm}$ can instead be written as:
+$\Delta t \rightarrow$ $\mathrm{d}t, v_{cm}$ and $a_{cm}$ can instead be written as:
 
 $$
 \begin{aligned}
@@ -660,11 +654,11 @@ It may seem counter-intuitive to have the external force as the negative term, b
 Now we have both forms of Newton’s laws:
 
 $$
-\sum F = ma_{cm}=\Rightarrow F - f = mR\alpha
+\sum F = ma_{cm}\quad\Rightarrow  F - f = mR\alpha
 $$
 
 $$
-\sum \tau = I\alpha =\Rightarrow Rf - rF = I\alpha
+\sum \tau = I\alpha \quad\Rightarrow  Rf - rF = I\alpha
 $$
 
 With two equations and two unknowns, $f$ (which we want) and $\alpha$, we can re-arrange these equations to solve for $f$.
@@ -677,7 +671,7 @@ $$
 $$
 
 $$
-\frac{Rf - rF}{I} = \frac{F - f}{mR} =\Rightarrow (1) = (2)
+\frac{Rf - rF}{I} = \frac{F - f}{mR} \quad\Rightarrow  (1) = (2)
 $$
 
 $$
@@ -695,7 +689,6 @@ To fully solve this problem, however, we need to know the moment of inertia $I$.
 
 <!-- Source PDF page 164; printed label 155. -->
 
-::::{admonition} Continued
 
 radius of $r$ and an outer radius of $R$. In this case, the rotation axis is through the center of the wheel, so we don’t need to apply the parallel axis theorem ([Chapter 7.2.2](#sec-7-2-2)). The moment of inertia for a thick ring with an axis through its center is $I_{CM}= \frac{1}{2} M(r_{1}^{2}+r_{2}^{2})$ (see [Appendix A.4](#sec-A-4)). For our values, this gives $I = \frac{1}{2} m(r^{2}+ R^{2})$. Adding our equation for $I$ to the problem, we get:
 
@@ -712,7 +705,7 @@ $$
 
 3. What force should you exert on the wheel (from b) to have it move without slipping?
 
-::::
+:::::
 
 (sec-7-7)=
 ## 7.7 Real-World Application

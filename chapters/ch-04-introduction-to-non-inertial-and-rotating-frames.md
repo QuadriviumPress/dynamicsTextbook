@@ -37,7 +37,7 @@ $$
 \vec{r}_{PS}= \vec{r}_{S^{\prime }S}+ \vec{r}_{PS^{\prime }}
 $$
 
-$\vec{v}_{PS}= \vec{v}_{S^{\prime }S}+ \vec{v}_{PS^{\prime }}=\Rightarrow$ taking the first time derivative of all terms $\vec{a}_{PS}= \vec{a}_{S^{\prime }S}+ \vec{a}_{PS^{\prime }}=\Rightarrow$ taking the second time derivative of all terms
+$\vec{v}_{PS}= \vec{v}_{S^{\prime }S}+ \vec{v}_{PS^{\prime }}\quad\Rightarrow $ taking the first time derivative of all terms $\vec{a}_{PS}= \vec{a}_{S^{\prime }S}+ \vec{a}_{PS^{\prime }}\quad\Rightarrow $ taking the second time derivative of all terms
 
 <!-- Source PDF page 81; printed label 72. -->
 
@@ -48,19 +48,19 @@ For two different *inertial* frames, an observer in each frame would measure the
 (sec-4-2)=
 ## 4.2 Introduction to Non-Inertial Reference Frames
 
-In a non-inertial frame, the frame of reference is accelerating or rotating. Going back to our example from [Section 4.1](#sec-4-1), now $\vec{a}_{S^{\prime }S}\not =$ 0 and the acceleration for point P measured in both frames will be different because
+In a non-inertial frame, the frame of reference is accelerating or rotating. Going back to our example from [Section 4.1](#sec-4-1), now $\vec{a}_{S^{\prime }S}\neq 0$ and the acceleration for point P measured in both frames will be different because
 
 $$
 \vec{a}_{PS}= \vec{a}_{S^{\prime }S}+ \vec{a}_{PS^{\prime }}
 $$
 
-Let’s consider motion from the perspective of an observer in an inertial frame $(S)$ and an observer in a non-inertial frame $(S^{\prime })$. Imagine that the two observers are sitting at the origins of each frame. They would register the motion of point $P$ relative to their frame only. So the observer in $S$ would say that the acceleration of $P$ is $\vec{a}_{PS}$ and the observer in $S^{\prime }$ would measure $\vec{a}_{PS^{\prime }}$, where $\vec{a}_{PS}\not = \vec{a}_{PS^{\prime }}$.
+Let’s consider motion from the perspective of an observer in an inertial frame $(S)$ and an observer in a non-inertial frame $(S^{\prime })$. Imagine that the two observers are sitting at the origins of each frame. They would register the motion of point $P$ relative to their frame only. So the observer in $S$ would say that the acceleration of $P$ is $\vec{a}_{PS}$ and the observer in $S^{\prime }$ would measure $\vec{a}_{PS^{\prime }}$, where $\vec{a}_{PS}\neq \vec{a}_{PS^{\prime }}$.
 
 If both observers were to apply Newton’s second law, they would get: Observer in $S$: $\sum \vec{F}_{S}= m\vec{a}_{PS}$
 
 Observer in $S^{\prime }$: $\sum \vec{F}_{S^{\prime }}= m\vec{a}_{PS^{\prime }}$
 
-But $m\vec{a}_{PS}\not = m\vec{a}_{PS^{\prime }}$, so that means $\sum \vec{F}_{S}\not = \sum \vec{F}_{S^{\prime }}$. The two observers will measure different solutions from Newton’s laws.
+But $m\vec{a}_{PS}\neq m\vec{a}_{PS^{\prime }}$, so that means $\sum \vec{F}_{S}\neq \sum \vec{F}_{S^{\prime }}$. The two observers will measure different solutions from Newton’s laws.
 
 But there can be only one true net force. Physics cannot change just because the reference frame has changed. It may seem like Newton’s laws have failed, but in practice, we need to apply a “correction” for the accelerating frame. This correction can be written as:
 
@@ -69,7 +69,7 @@ $$
 $$
 
 $$
-\sum \vec{F}_{S^{\prime }}= m(\vec{a}_{PS}- \vec{a}_{S^{\prime }S}) =\Rightarrow \vec{a}_{PS}= \vec{a}_{S^{\prime }S}+ \vec{a}_{PS^{\prime }}
+\sum \vec{F}_{S^{\prime }}= m(\vec{a}_{PS}- \vec{a}_{S^{\prime }S}) \quad\Rightarrow  \vec{a}_{PS}= \vec{a}_{S^{\prime }S}+ \vec{a}_{PS^{\prime }}
 $$
 
 $$
@@ -120,12 +120,11 @@ m\vec{a}_{PS^{\prime }}= m\vec{a}_{PS}- m\vec{a}_{S^{\prime }S}
 $$
 
 $$
-m\vec{a}_{PS^{\prime }}= m(\vec{a}_{S^{\prime }S}+ \vec{a}_{PS^{\prime }}) - m\vec{a}_{S^{\prime }S}=\Rightarrow \mathrm{definition} \mathrm{of} \vec{a}_{PS}
+m\vec{a}_{PS^{\prime }}= m(\vec{a}_{S^{\prime }S}+ \vec{a}_{PS^{\prime }}) - m\vec{a}_{S^{\prime }S}\quad\Rightarrow  \text{definition of}\vec{a}_{PS}
 $$
 
 $$
-m\vec{a}_{PS^{\prime }}= m\vec{a}_{PS^{\prime }}=\Rightarrow \mathrm{left} \mathrm{side} = \mathrm{right} \mathrm{side}
-$$
+m\vec{a}_{PS^{\prime }}= m\vec{a}_{PS^{\prime }}\quad\Rightarrow  \text{left side}= \text{right side}$$
 
 So now we have matching physics in both reference frames. That is, the two observers would come to the same answer if we include a new “force”. Ultimately, an observer in a non-inertial frame must correct their net force (compared to an inertial frame) using a fictitious force.
 
@@ -152,7 +151,7 @@ Let’s put non-inertial frames into practice with a couple of examples where th
 
 ::::{admonition} Sample Problem 4-1
 
-The mass is hanging from the ceiling of an elevator by a rope, and the elevator is moving upwards with an acceleration of $a_{e}$. **Compare the tension in the rope as measured** **by an observer in (a) an inertial frame and (b) the elevator’s moving frame.** See [Figure 4.3](#fig-4-3).
+The mass is hanging from the ceiling of an elevator by a rope, and the elevator is moving upwards with an acceleration of $a_{e}$. **Compare the tension in the rope as measured by an observer in (a) an inertial frame and (b) the elevator’s moving frame.** See [Figure 4.3](#fig-4-3).
 
 :::{figure} ../images/figures/figure-4-3.png
 :label: fig-4-3
@@ -198,11 +197,11 @@ $$
 $$
 
 $$
-\sum \vec{F}_{S^{\prime }}= \sum \vec{F}_{S}- ma_{e}=\Rightarrow \vec{F}_{fic}= -m\vec{a}_{S^{\prime }S}= -ma_{e}
+\sum \vec{F}_{S^{\prime }}= \sum \vec{F}_{S}- ma_{e}\quad\Rightarrow  \vec{F}_{fic}= -m\vec{a}_{S^{\prime }S}= -ma_{e}
 $$
 
 $$
-0 = T - mg - ma_{e}=\Rightarrow m \mathrm{at} \mathrm{rest} \mathrm{in} S^{\prime }, \mathrm{so} \sum \vec{F}_{S^{\prime }}= 0
+0 = T - mg - ma_{e}\quad\Rightarrow  m \text{at rest in}S^{\prime }, \mathrm{so} \sum \vec{F}_{S^{\prime }}= 0
 $$
 
 $$
@@ -221,9 +220,9 @@ which is the same answer as before from the inertial frame as expected. We need 
 
 (example-4-2)=
 
-::::{admonition} Sample Problem 4-2
+:::::{admonition} Sample Problem 4-2
 
-A truck is carrying a box of mass $m$. When the truck decelerates at a rate of $a_{0}= 0.6g$, the box in the rear of the truck begins to slide forward relative to an observer sitting in the truck. If the coefficient of friction between the box and the truck is $\mu = 0.4$, **what** **is the acceleration of the box relative to (a) the ground and (b) the truck?**
+A truck is carrying a box of mass $m$. When the truck decelerates at a rate of $a_{0}= 0.6g$, the box in the rear of the truck begins to slide forward relative to an observer sitting in the truck. If the coefficient of friction between the box and the truck is $\mu = 0.4$, **what is the acceleration of the box relative to (a) the ground and (b) the truck?**
 
 **Solution**
 
@@ -264,7 +263,6 @@ So the acceleration of the box relative to the ground is $-0.4g$ (taking forward
 
 b) To get the acceleration of the box relative to the truck, $a_{b^{\prime }}$, we use coordinate transformation. Note that the acceleration of the truck is $\vec{a}_{0}= -0.6g\hat{\imath}$ because the
 
-::::
 
 <!-- Source PDF page 86; printed label 77. -->
 
@@ -306,7 +304,7 @@ $$
 $$
 
 $$
-a_{b^{\prime }}= -0.4g + 0.6g =\Rightarrow \vec{F}_{fic}= -ma_{0}\mathrm{and} a_{0}= -0.6g
+a_{b^{\prime }}= -0.4g + 0.6g \quad\Rightarrow  \vec{F}_{fic}= -ma_{0}\text{and} a_{0}= -0.6g
 $$
 
 $$
@@ -324,6 +322,8 @@ Which is exactly what we had before from Case 1 when solving the problem from th
 2. What if the deceleration of the truck is $a_{0}= 0.2g$? Will the box slide?
 
 ::::
+
+:::::
 
 (sec-4-4)=
 ## 4.4 Rotating Frames
@@ -345,7 +345,7 @@ $$
 \vec{a} = \vec{\omega} \times (\vec{\omega} \times \vec{r})
 $$
 
-Consider an object rotating with $\omega$ in the $\hat{k}$ direction and that this axis of rotation is fixed (see [Figure 4.6](#fig-4-6)). A point P in this system has the vector position $\vec{r}$. This vector position can also be described by $\vec{r} = \rho \hat{\rho}+z\hat{k}$ , where $\vec{\rho}$ is the projection of $\vec{r}$ onto the plane perpendicular to $\vec{\omega}$ (for $\vec{\omega}$ along $\hat{k}$ , this plane is the $x - y$ plane).
+Consider an object rotating with $\omega$ in the $\hat{k}$ direction and that this axis of rotation is fixed (see [Figure 4.6](#fig-4-6)). A point P in this system has the vector position $\vec{r}$. This vector position can also be described by $\vec{r} = \rho \hat{\rho}+z\hat{k}$, where $\vec{\rho}$ is the projection of $\vec{r}$ onto the plane perpendicular to $\vec{\omega}$ (for $\vec{\omega}$ along $\hat{k}$, this plane is the $x - y$ plane).
 
 :::{figure} ../images/figures/figure-4-6.png
 :label: fig-4-6
@@ -353,10 +353,10 @@ Consider an object rotating with $\omega$ in the $\hat{k}$ direction and that th
 :alt: Figure shows an irregular object rotating around the z-axis.
 :width: 176px
 
-An irregular object rotating in the counterclockwise direction around the $z-$axis of an $xyz-$axis coordinate system. The labeled point is a distance $\vec{r}$ from the origin and a distance $\rho$ from the $z-$axis.
+An irregular object rotating in the counterclockwise direction around the $z$-axis of an $xyz-$axis coordinate system. The labeled point is a distance $\vec{r}$ from the origin and a distance $\rho$ from the $z$-axis.
 :::
 
-From this definition of $\vec{r}$ and $\vec{\rho}$ , we can show that the velocity is:
+From this definition of $\vec{r}$ and $\vec{\rho}$, we can show that the velocity is:
 
 $$
 \vec{v} = \vec{\omega} \times \vec{r} = \omega r\sin \theta \hat{\theta} = \omega \rho \hat{\theta}
@@ -372,7 +372,7 @@ $$
 \vec{a} = -\omega ^{2}\vec{\rho}
 $$
 
-since $\vec{a} = \vec{\omega} \times (\vec{\omega} \times \vec{r}) = \vec{\omega} \times (\omega \rho \hat{\theta}$ ), and $\vec{\omega} \perp \hat{\theta}$ . The negative sign arises from the cross product and indicates that the acceleration is directed toward the rotation axis. See [Chapter 1.5.2](#sec-1-5-2) for a review of vector cross products and the right-hand rule.
+since $\vec{a} = \vec{\omega} \times (\vec{\omega} \times \vec{r}) = \vec{\omega} \times (\omega \rho \hat{\theta}$ ), and $\vec{\omega} \perp \hat{\theta}$. The negative sign arises from the cross product and indicates that the acceleration is directed toward the rotation axis. See [Chapter 1.5.2](#sec-1-5-2) for a review of vector cross products and the right-hand rule.
 
 (sec-4-4-2)=
 ### 4.4.2 Coordinate System of a Rotating Frame: Velocity
@@ -465,17 +465,17 @@ $$
 $$
 
 $$
-\frac{\Delta \hat{\imath}^{\prime}}{\Delta t} = (\hat{\imath}^{\prime}\sin \varphi) \frac{\Delta \theta}{\Delta t} =\Rightarrow \mathrm{divide} \mathrm{by} \Delta t
+\frac{\Delta \hat{\imath}^{\prime}}{\Delta t} = (\hat{\imath}^{\prime}\sin \varphi) \frac{\Delta \theta}{\Delta t} \quad\Rightarrow  \text{divide by}\Delta t
 $$
 
-Assuming that $\Delta t$ is sufficiently short, we can set $\Delta t \rightarrow$ d$t, \Delta \hat{\imath}^{\prime }\rightarrow$ d$\hat{\imath}^{\prime }$, and $\Delta \theta \rightarrow$ d$\theta$:
+Assuming that $\Delta t$ is sufficiently short, we can set $\Delta t \rightarrow$ $\mathrm{d}t, \Delta \hat{\imath}^{\prime }\rightarrow$ $\mathrm{d}\hat{\imath}^{\prime }$, and $\Delta \theta \rightarrow$ $\mathrm{d}\theta$:
 
 $$
 \frac{\mathrm{d}\hat{\imath}^{\prime}}{\mathrm{d}t} = (\hat{\imath}^{\prime}\sin \varphi) \frac{\mathrm{d}\theta}{\mathrm{d}t}
 $$
 
 $$
-\frac{\mathrm{d}\hat{\imath}^{\prime}}{\mathrm{d}t} = (\hat{\imath}^{\prime}\sin \varphi)\omega =\Rightarrow \omega = \frac{\mathrm{d}\theta}{\mathrm{d}t}
+\frac{\mathrm{d}\hat{\imath}^{\prime}}{\mathrm{d}t} = (\hat{\imath}^{\prime}\sin \varphi)\omega \quad\Rightarrow  \omega = \frac{\mathrm{d}\theta}{\mathrm{d}t}
 $$
 
 The form of this equation should look familiar. It looks like a vector cross product. Recall that $\vec{a} \times \vec{b} = ab\sin \theta$, where $\theta$ is the angle between the vectors. So we can say that
@@ -612,7 +612,7 @@ $$
 \Bigg(\frac{\mathrm{d}\vec{\omega}}{\mathrm{d}t} \Bigg)_{R}= \Bigg(\frac{\mathrm{d}\vec{\omega}}{\mathrm{d}t} \Bigg)_{I}
 $$
 
-So we will define the time derivative of $\vec{\omega}$ as $\vec{\alpha}$ , which is the angular acceleration.
+So we will define the time derivative of $\vec{\omega}$ as $\vec{\alpha}$, which is the angular acceleration.
 
 Thus, we obtain the equation for the coordinate transformation of acceleration:
 
@@ -682,9 +682,9 @@ This chapter looks at simple cases of rotating reference frames. We will get to 
 
 (example-4-3)=
 
-::::{admonition} Sample Problem 4-3
+:::::{admonition} Sample Problem 4-3
 
-Consider a particle of mass $m$ in circular motion with a radius $R$ around a star of mass $M$ due to gravity at a constant angular speed of $\omega$. **Describe the motion of the** **particle in the inertial and the rotating frame.**
+Consider a particle of mass $m$ in circular motion with a radius $R$ around a star of mass $M$ due to gravity at a constant angular speed of $\omega$. **Describe the motion of the particle in the inertial and the rotating frame.**
 
 :::{figure} ../images/figures/figure-4-9.png
 :label: fig-4-9
@@ -698,8 +698,6 @@ In red is the rotating frame where the particle is moving in the counter-clockwi
 **Solution**
 
 Inertial Frame: In the inertial frame, an observer, $O$ is looking at this particle orbit the
-
-::::
 
 <!-- Source PDF page 94; printed label 85. -->
 
@@ -744,12 +742,10 @@ What about the direction of the centrifugal force? In the rotating frame, the ce
 
 <!-- Source PDF page 95; printed label 86. -->
 
-::::{admonition} Continued
-
 :::{figure} ../images/figures/figure-4-10.png
 :label: fig-4-10
 :enumerator: 4.10
-:alt: $\omega$ points in the positive $z$-direction, and $\vec{r}$ points in the positive $y$-direction. So $\omega \times \vec{r}$ points in the negative $x$-direction. Since $\omega$ points in the positive $z$-direction, $-\omega$ points in the negative $z$-direction.
+:alt: Right-hand rule for $\vec{\omega}\times(\vec{\omega}\times\vec{r})$ showing the centrifugal force direction outward from the origin.
 :width: 297px
 
 For the direction of the centrifugal force, use the right-hand rule.
@@ -770,7 +766,7 @@ $$
 
 which is exactly what we had for the inertial frame.
 
-::::
+:::::
 
 <!-- Source PDF page 96; printed label 87. -->
 

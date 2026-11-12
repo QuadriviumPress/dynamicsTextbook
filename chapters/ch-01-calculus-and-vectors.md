@@ -89,7 +89,7 @@ The above equations highlight that there are several ways to write a parameter i
 
 The time derivative of position gives you *instantaneous* velocity and the time derivative of velocity gives you the *instantaneous* acceleration. These are instantaneous because they correspond to the velocity or acceleration in that exact instant or moment in time. By contrast, the *average* velocity $(\bar{v} = \frac{\Delta \vec{r}}{\Delta t})$ and *average* acceleration $(\bar{a} = \frac{\Delta \vec{v}}{\Delta t})$ are measured over a longer duration of time, $\Delta t$. The average quantity is denoted by a bar (–) over the variable.
 
-Note that in the limit as $\Delta t \rightarrow 0, \frac{\Delta \vec{r}}{\Delta t} \rightarrow \vec{v}$ and $\frac{\Delta \vec{v}}{\Delta t} \rightarrow \vec{a}$. So for a very short duration of time, $\Delta t \rightarrow$ d$t$, the average velocity and average acceleration are equivalent to the instantaneous quantities.
+Note that in the limit as $\Delta t \rightarrow 0, \frac{\Delta \vec{r}}{\Delta t} \rightarrow \vec{v}$ and $\frac{\Delta \vec{v}}{\Delta t} \rightarrow \vec{a}$. So for a very short duration of time, $\Delta t \rightarrow$ $\mathrm{d}t$, the average velocity and average acceleration are equivalent to the instantaneous quantities.
 
 ::::
 
@@ -144,7 +144,7 @@ $2\pi$ rad = $360^{\circ}$ = 1 revolution
 
 1 rad = $57.296^{\circ}= 0.159$ revolutions
 
-The average angular velocity of the object is then given by $\bar{\omega} = \frac{\Delta \theta}{\Delta t}$. As we shrink $\Delta t$ to a very small time interval $(\Delta t \rightarrow$ d$t)$, then we get the instantaneous angular velocity or the angular velocity, $\omega$. The angular velocity is given by the time derivative of $\theta$ and the angular acceleration is given by the time derivative of the angular velocity.
+The average angular velocity of the object is then given by $\bar{\omega} = \frac{\Delta \theta}{\Delta t}$. As we shrink $\Delta t$ to a very small time interval $(\Delta t \rightarrow$ $\mathrm{d}t)$, then we get the instantaneous angular velocity or the angular velocity, $\omega$. The angular velocity is given by the time derivative of $\theta$ and the angular acceleration is given by the time derivative of the angular velocity.
 
 $$
 \omega = \frac{\mathrm{d}\theta}{\mathrm{d}t} = \dot{\theta}
@@ -180,7 +180,7 @@ $$
 
 Of course, $r$ and $\theta$ are the polar coordinates (scalars), with unit vectors $\hat{r}$ and $\hat{\theta}$, where $\hat{r}$ points away from the origin of the system and $\hat{\theta}$ is orthogonal to $\hat{r}$ in the counter-clockwise direction (usually). Note that the hat symbol indicates a unit vector (direction only). [Figure 1.4](#fig-1-4) shows these vector directions.
 
-The position vector in plane polar coordinates can be written as $\vec{r} = r\hat{r}$ and the angle vector can be written as $\vec{\theta} = \theta \hat{\theta}$ .
+The position vector in plane polar coordinates can be written as $\vec{r} = r\hat{r}$. The polar angle $\theta$ is a scalar coordinate; its associated unit vector $\hat{\theta}$ gives the tangential direction.
 
 <!-- Source PDF page 15; printed label 6. -->
 
@@ -207,7 +207,7 @@ $$
 \vec{v} = \frac{\mathrm{d}\vec{r}}{\mathrm{d}t} = \frac{\mathrm{d}(r\hat{r})}{\mathrm{d}t} = \frac{\mathrm{d}r}{\mathrm{d}t} \hat{r} + r \frac{\mathrm{d}\hat{r}}{\mathrm{d}t}
 $$
 
-where $\frac{\mathrm{d}\hat{r}}{\mathrm{d}t} \not =$ 0. Consider the line moving in [Figure 1.4](#fig-1-4). The $\hat{r}$ unit vector will point in a different direction as the radius vector moves around the circle.
+where $\frac{\mathrm{d}\hat{r}}{\mathrm{d}t} \neq 0$. Consider the line moving in [Figure 1.4](#fig-1-4). The $\hat{r}$ unit vector will point in a different direction as the radius vector moves around the circle.
 
 [Figure 1.5](#fig-1-5) defines the $\hat{r}$ and $\hat{\theta}$ unit vectors in terms of Cartesian axes. Both $\hat{r}$ and $\hat{\theta}$ have components in $x$ and $y$.
 
@@ -229,7 +229,7 @@ Note that the Cartesian unit vectors $(\hat{\imath}, \hat{\jmath}$ ) are fixed, 
 :alt: Polar unit vectors r-hat and theta-hat resolved into fixed Cartesian i-hat and j-hat components.
 :width: 228px
 
-Sketch showing how $\hat{r}$ and $\hat{\theta}$ can be described in terms of $\hat{\imath}$ and $\hat{\jmath}$ . Note that the Cartesian system $(\hat{\imath}$ and $\hat{\jmath}$ ) does not change with time, but the plane polar system $(\hat{r}$ and $\hat{\theta}$ ) does change with time.
+Sketch showing how $\hat{r}$ and $\hat{\theta}$ can be described in terms of $\hat{\imath}$ and $\hat{\jmath}$. Note that the Cartesian system $(\hat{\imath}$ and $\hat{\jmath}$ ) does not change with time, but the plane polar system $(\hat{r}$ and $\hat{\theta}$ ) does change with time.
 :::
 
 If we take the derivative of $\hat{r}$ with respect to time, we get:
@@ -247,7 +247,7 @@ $$
 \end{aligned}
 $$
 
-The above equation applies a full time derivative to $\hat{r}$ , which means that you must not only take the time derivative of $\cos \theta$ and $\sin \theta$, but also the time derivative of $\theta$. See the textbook repository for a video showing the difference between full and partial derivatives.
+The above equation applies a full time derivative to $\hat{r}$, which means that you must not only take the time derivative of $\cos \theta$ and $\sin \theta$, but also the time derivative of $\theta$. See the textbook repository for a video showing the difference between full and partial derivatives.
 
 Now that we have $\frac{\mathrm{d}\hat{r}}{\mathrm{d}t}$, we can go back to our velocity equation from before. For polar coordinates we get:
 
@@ -259,13 +259,13 @@ $$
 \vec{v} = \frac{\mathrm{d}r}{\mathrm{d}t} \hat{r}+r \frac{\mathrm{d}\theta}{\mathrm{d}t} \hat{\theta}
 $$ (eq-1-2)
 
-where the first term is the radial velocity component $\vec{v}_{r}$ and the second term is the tangential velocity component $\vec{v}_{\theta}$. The radial velocity component indicates how the point is moving in and out along the direction of the radius vector, whereas the tangential velocity component of the motion describes how the point is moving along a circle (motion that is tangent to the radius vector). For circular motion, the radius is constant, such that $\frac{\mathrm{d}r}{\mathrm{d}t}=0$ and you get $\vec{v}_{circ}= r\omega \hat{\theta}$ .
+where the first term is the radial velocity component $\vec{v}_{r}$ and the second term is the tangential velocity component $\vec{v}_{\theta}$. The radial velocity component indicates how the point is moving in and out along the direction of the radius vector, whereas the tangential velocity component of the motion describes how the point is moving along a circle (motion that is tangent to the radius vector). For circular motion, the radius is constant, such that $\frac{\mathrm{d}r}{\mathrm{d}t}=0$ and you get $\vec{v}_{circ}= r\omega \hat{\theta}$.
 
 By definition the speed (or $|\vec{v}|$) is given by $\sqrt{\vec{v}\cdot\vec{v}}=\sqrt{v_{r}^{2}+v_{\theta}^{2}}=\sqrt{v_{r}^{2}+(r\omega)^{2}}$, using the vector dot product (see also, [Chapter 1.5.1](#sec-1-5-1)).
 
 <!-- Source PDF page 17; printed label 8. -->
 
-We can also take the time derivative of $\hat{\theta}$ , using the definition of $\hat{\theta}$ in Cartesian coordinates.
+We can also take the time derivative of $\hat{\theta}$, using the definition of $\hat{\theta}$ in Cartesian coordinates.
 
 $$
 \begin{aligned}
@@ -337,19 +337,19 @@ These acceleration terms are key in rotating reference frames ([Chapter 5](#ch-5
 In the previous section, we defined the positions, velocities, and accelerations for linear and circular motion. To describe the motion, however, you need to solve these equations.
 
 $$
-\vec{v} = \frac{\mathrm{d}\vec{r}}{\mathrm{d}t} =\Rightarrow \vec{r} = \int \vec{v} \mathrm{d}t
+\vec{v} = \frac{\mathrm{d}\vec{r}}{\mathrm{d}t} \quad\Rightarrow  \vec{r} = \int \vec{v} \mathrm{d}t
 $$
 
 $$
-\vec{a} = \frac{\mathrm{d}\vec{v}}{\mathrm{d}t} =\Rightarrow \vec{v} = \int \vec{a} \mathrm{d}t
+\vec{a} = \frac{\mathrm{d}\vec{v}}{\mathrm{d}t} \quad\Rightarrow  \vec{v} = \int \vec{a} \mathrm{d}t
 $$
 
 $$
-\omega = \frac{\mathrm{d}\theta}{\mathrm{d}t} =\Rightarrow \theta = \int \omega \mathrm{d}t
+\omega = \frac{\mathrm{d}\theta}{\mathrm{d}t} \quad\Rightarrow  \theta = \int \omega \mathrm{d}t
 $$
 
 $$
-\alpha = \frac{\mathrm{d}\omega}{\mathrm{d}t} =\Rightarrow \omega = \int \alpha \mathrm{d}t
+\alpha = \frac{\mathrm{d}\omega}{\mathrm{d}t} \quad\Rightarrow  \omega = \int \alpha \mathrm{d}t
 $$
 
 The solutions to these integrals depend on how the system moves with time. For example, consider the case when $\alpha$ and $\vec{a}$ are constant with time. Let’s look at the case of linear motion with constant acceleration in 1-D so that we can drop the vector notation.
@@ -432,7 +432,7 @@ $$
 \vec{r} = r_{0}\cos \theta \hat{\imath} + r_{0}\sin \theta \hat{\jmath}
 $$
 
-For circular motion, $\theta$ changes with time. Let’s consider the simplest case where $\dot{\theta} = \omega$ = constant, such that we can solve for $\theta (t)$ as $\theta = \int \omega$d$t = \omega t + \theta _{0}$, where $\theta _{0}$ is a constant of integration and represents the initial angle. It is often convenient to define the initial angle as $\theta _{0}$ = 0 so $\theta (t) = \omega t$. Therefore, we get:
+For circular motion, $\theta$ changes with time. Let’s consider the simplest case where $\dot{\theta} = \omega$ = constant, such that we can solve for $\theta (t)$ as $\theta = \int \omega\,\mathrm{d}t = \omega t + \theta _{0}$, where $\theta _{0}$ is a constant of integration and represents the initial angle. It is often convenient to define the initial angle as $\theta _{0}$ = 0 so $\theta (t) = \omega t$. Therefore, we get:
 
 $$
 \vec{r}=\underbrace{r_{0}\cos(\omega t)}_{x(t)}\hat{\imath}
@@ -471,9 +471,9 @@ $$
 
 (example-1-1)=
 
-::::{admonition} Sample Problem 1-1
+:::::{admonition} Sample Problem 1-1
 
-You throw a ball straight up into the air with a constant velocity of $v_{0}$ and at an initial height of $r_{0}$. **(1) What is the maximum height that the ball reaches? (2) How** **long does it take for the ball to hit the ground?**
+You throw a ball straight up into the air with an initial velocity of $v_{0}$ and at an initial height of $r_{0}$. **(1) What is the maximum height that the ball reaches? (2) How long does it take for the ball to hit the ground?**
 
 **Solution**
 
@@ -488,7 +488,6 @@ This is a 1-D motion problem under constant acceleration $(a = -g \hat{y}$ ). Fi
 Cartoon of 1-D vertical motion. For vertical motion upward with an acceleration downward, the ball rises initially (A $\rightarrow$ B) and slows down as it moves upward until it has $v = 0$ (point B at the peak), before it falls back down again (B $\rightarrow$ D).
 :::
 
-::::
 
 <!-- Source PDF page 21; printed label 12. -->
 
@@ -497,33 +496,33 @@ Note that we are using the $y$ axis only at this time because all the motion is 
 1. **What is the maximum height that the ball reaches?** This is the height at point B in [Figure 1.7](#fig-1-7). This problem is a linear motion question with constant acceleration. We just solved that equation in [Section 1.3](#sec-1-3), so we will need to use the equation, $y = \frac{1}{2} at^{2}+ v_{y,0}t + r_{0}$ to solve for $y$ when the ball is at its highest point. We aren’t given the time when this happens, but we can solve for it, because when the ball has reached its maximum height, $v_{y}$ = 0 (requirement of the physics). So the first step is to get the time when the ball has reached its maximum height.
 
 $$
-v_{y}= at + v_{y,0}=\Rightarrow \mathrm{see} \mathrm{Section} 1.3
+v_{y}= at + v_{y,0}\quad\Rightarrow  \text{see Section }1.3
 $$
 
 $$
 \begin{aligned}
-0 &= at + v_{y,0}=\Rightarrow \mathrm{set} v_{y}= 0 \mathrm{at} \mathrm{the} \mathrm{maximum} \mathrm{height} \\
+0 &= at + v_{y,0}\quad\Rightarrow  \text{set} v_{y}= 0 \text{at the maximum height}\\
 t &= - \frac{v_{y,0}}{a} \\
 t &= \frac{v_{y,0}}{g} \\
-&=\Rightarrow \mathrm{because} a = -g
+&\quad\Rightarrow  \text{because} a = -g
 \end{aligned}
 $$
 
-For simplicity, we can drop the vector notation because everything is happening in 1-D. Here positive corresponds to $+\hat{y}$ and negative corresponds to $-\hat{y}$ .
+For simplicity, we can drop the vector notation because everything is happening in 1-D. Here positive corresponds to $+\hat{y}$ and negative corresponds to $-\hat{y}$.
 
 So now we have the time when the ball reaches the maximum height. We can put this time into our distance equation to solve for the maximum height.
 
 $$
 \begin{aligned}
 y &= \frac{1}{2} at^{2}+ v_{y,0}t + r_{0} \\
-y &= \frac{1}{2} (-g)\Bigg(\frac{v_{y,0}}{g} \Bigg)^{2}+ v_{y,0}\Bigg(\frac{v_{y,0}}{g} \Bigg) + r_{0}=\Rightarrow t = \frac{v_{y,0}}{g}, a = -g
+y &= \frac{1}{2} (-g)\Bigg(\frac{v_{y,0}}{g} \Bigg)^{2}+ v_{y,0}\Bigg(\frac{v_{y,0}}{g} \Bigg) + r_{0}\quad\Rightarrow  t = \frac{v_{y,0}}{g}, a = -g
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
 y &= - \frac{1}{2} \Bigg(\frac{v_{y,0}^{2}}{g} \Bigg) + \Bigg(\frac{v_{y,0}^{2}}{g} \Bigg) + r_{0} \\
-&=\Rightarrow \mathrm{simplify}
+&\quad\Rightarrow  \text{simplify}
 \end{aligned}
 $$
 
@@ -577,11 +576,13 @@ Here we drop the $-$ case because it is unphysical.
 
 ::::
 
+:::::
+
 (example-1-2)=
 
 ::::{admonition} Sample Problem 1-2
 
-A wheel rotating at an angular speed of $\omega _{0}$ is allowed to decelerate. After $\tau$ seconds the new angular speed is $\omega _{\tau}$. If the angular acceleration is constant, **how long does** **it take the wheel to come to rest and how many revolutions does the wheel** **make before coming to a rest?**
+A wheel rotating at an angular speed of $\omega _{0}$ is allowed to decelerate. After $\tau$ seconds the new angular speed is $\omega _{\tau}$. If the angular acceleration is constant, **how long does it take the wheel to come to rest and how many revolutions does the wheel make before coming to a rest?**
 
 **Solution**
 
@@ -608,15 +609,15 @@ $$
 $$
 
 $$
-\alpha = \frac{\omega _{\tau}- \omega _{0}}{\tau} =\Rightarrow \mathrm{for} \omega _{0}\mathrm{at} t = 0 \mathrm{to} \omega _{\tau}\mathrm{at} t = \tau
+\alpha = \frac{\omega _{\tau}- \omega _{0}}{\tau} \quad\Rightarrow  \text{for} \omega _{0}\text{at} t = 0 \text{to} \omega _{\tau}\text{at} t = \tau
 $$
 
 Now that we have $\alpha$, we can solve for the time at which the wheel has reached rest.
 
 $$
 \begin{aligned}
-t &= - \frac{\omega _{0}}{\alpha} =\Rightarrow 0 = \alpha t + \omega _{0}\mathrm{as} \mathrm{given} \mathrm{above} \\
-t &= - \frac{\omega _{0}\tau}{\omega _{\tau}- \omega _{0}} =\Rightarrow \mathrm{sub} \mathrm{in} \mathrm{the} \mathrm{equation} \mathrm{for} \alpha
+t &= - \frac{\omega _{0}}{\alpha} \quad\Rightarrow  0 = \alpha t + \omega _{0}\text{as given above}\\
+t &= - \frac{\omega _{0}\tau}{\omega _{\tau}- \omega _{0}} \quad\Rightarrow  \text{sub in the equation for}\alpha
 \end{aligned}
 $$
 
@@ -655,7 +656,7 @@ Note that we are interested in the angular displacement. As such, the initial an
 (sec-1-5-1)=
 ### 1.5.1 Vector Dot Product
 
-For any two vectors, $\vec{a} = x_{a}\hat{\imath} + y_{a}\hat{\jmath} + z_{a}\hat{k}$ and $\vec{b} = x_{b}\hat{\imath} + y_{b}\hat{\jmath} + z_{b}\hat{k}$ , the vector dot product (also called the vector scalar product) is given by:
+For any two vectors, $\vec{a} = x_{a}\hat{\imath} + y_{a}\hat{\jmath} + z_{a}\hat{k}$ and $\vec{b} = x_{b}\hat{\imath} + y_{b}\hat{\jmath} + z_{b}\hat{k}$, the vector dot product (also called the vector scalar product) is given by:
 
 $$
 \vec{a} \cdot \vec{b} = x_{a}x_{b}+ y_{a}y_{b}+ z_{a}z_{b}
@@ -667,7 +668,7 @@ $$
 (\mathrm{e.g}., \vec{a} \cdot \vec{b} = \vec{b} \cdot \vec{a}).
 $$
 
-In principle, the dot product represents the projection of one vector onto the other. For example, when you want to calculate the $x-$component of a vector, you take the projection of that vector on the $x-$axis. This is equivalent to $\vec{a} \cdot \hat{\imath}$, where only the $x-$component is retained.
+In principle, the dot product represents the projection of one vector onto the other. For example, when you want to calculate the $x$-component of a vector, you take the projection of that vector on the $x$-axis. This is equivalent to $\vec{a} \cdot \hat{\imath}$, where only the $x$-component is retained.
 
 The dot product can also be expressed as:
 
@@ -775,11 +776,10 @@ where the direction is given by the right-hand rule. For rotational motion:
 :::
 
 $$
-=\Rightarrow \mathrm{curl} \mathrm{your} \mathrm{fingers} \mathrm{in} \mathrm{direction} \mathrm{of} \mathrm{rotation}
-$$
+\quad\Rightarrow  \text{curl your fingers in direction of rotation}$$
 
 $$
-=\Rightarrow \mathrm{thumb} \mathrm{points} \mathrm{in} \mathrm{the} \mathrm{direction} \mathrm{of} \vec{\omega}
+\quad\Rightarrow  \text{thumb points in the direction of}\vec{\omega}
 $$
 
 ::::
@@ -796,7 +796,7 @@ A very common approach is to use the Taylor series expansion. The idea here is t
 $$
 \begin{aligned}
 f(x) &= f(x_{0}) + \frac{\mathrm{d}f(x_{0})}{\mathrm{d}x} (x - x_{0}) + \frac{1}{2} \frac{\mathrm{d}^{2}f(x_{0})}{\mathrm{d}x^{2}} (x - x_{0})^{2}+ \\
-\frac{1}{3!} \frac{\mathrm{d}^{3}f(x_{0})}{\mathrm{d}x^{3}} (x - x_{0})^{3}+ \cdot \cdot \cdot + \frac{1}{n!} \frac{\mathrm{d}^{n}f(x_{0})}{\mathrm{d}x^{n}} (x - x_{0})^{n}
+\frac{1}{3!} \frac{\mathrm{d}^{3}f(x_{0})}{\mathrm{d}x^{3}} (x - x_{0})^{3}+ \cdots + \frac{1}{n!} \frac{\mathrm{d}^{n}f(x_{0})}{\mathrm{d}x^{n}} (x - x_{0})^{n}
 \end{aligned}
 $$ (eq-1-5)
 
@@ -807,7 +807,7 @@ For Equation 1.5, consider values of $x \approx x_{0}$. That is, you are only lo
 Let’s look at an example. Consider the Taylor series expansion for $e^{x}$ for small values of $x$. In this case, we can set $x_{0}$ = 0 because we are looking at small values of $x$. The expansion is:
 
 $$
-f(x) \approx f(0) + f^{\prime}(0)(x) + \frac{1}{2} f^{\prime \prime}(0)(x)^{2}+ \frac{1}{3!} f^{\prime \prime \prime}(0)(x)^{3}+ \cdot \cdot \cdot +
+f(x) \approx f(0) + f^{\prime}(0)(x) + \frac{1}{2} f^{\prime \prime}(0)(x)^{2}+ \frac{1}{3!} f^{\prime \prime \prime}(0)(x)^{3}+ \cdots +
 $$
 
 where $f^{\prime }(0)$ means take the derivative of $f(x)$ with respect to $x$ and evaluate that for $x$ = 0. For $f = e^{x}$, we have:
@@ -818,8 +818,8 @@ $$
 
 $$
 \begin{aligned}
-f^{\prime}(0) &= e^{0}= 1 =\Rightarrow \frac{\mathrm{d}e^{x}}{\mathrm{d}x} = e^{x} \\
-f^{\prime \prime}(0) &= e^{0}= 1 =\Rightarrow \frac{\mathrm{d}^{2}e^{x}}{\mathrm{d}x^{2}} = e^{x}
+f^{\prime}(0) &= e^{0}= 1 \quad\Rightarrow  \frac{\mathrm{d}e^{x}}{\mathrm{d}x} = e^{x} \\
+f^{\prime \prime}(0) &= e^{0}= 1 \quad\Rightarrow  \frac{\mathrm{d}^{2}e^{x}}{\mathrm{d}x^{2}} = e^{x}
 \end{aligned}
 $$
 
@@ -965,7 +965,7 @@ The first gravitational waves were detected on September 14, 2015 by the Laser I
 Cartoon showing the basic concept behind the LIGO experiment. Laser light is split into two orthogonal beams and reflects off distant mirrors that are 4 km away. The reflected light combines at a detector. The distance between the mirrors is so precise that the reflected waves should destructively interfere at the detector. A gravitational wave alters the mirror separations causing the combined wave to produce an interference pattern instead.
 :::
 
-The slight change in distance from a passing gravitational wave alters the interference pattern measured at the detector. [Figure 1.11](#fig-1-11) shows the gravitational wave signal from the first detection, which was generated by a pair of merging intermediate-mass black holes located 1.3 billion light years away. The interference pattern is often described as a “chirp”, because it rises to higher frequencies toward the end. Research into gravitational waves includes LIGO in the USA, VIRGO in Italy, and GEO600 in Germany, with a third site, KAGRA, under construction in Japan. Multiple experiments all over the world are necessary to pinpoint the direction of the gravitational wave events because each site will
+The slight change in distance from a passing gravitational wave alters the interference pattern measured at the detector. [Figure 1.11](#fig-1-11) shows the gravitational wave signal from the first detection, which was generated by a pair of merging stellar-mass black holes located 1.3 billion light years away. The interference pattern is often described as a “chirp”, because it rises to higher frequencies toward the end. Research into gravitational waves includes LIGO in the USA, VIRGO in Italy, and GEO600 in Germany, with a third site, KAGRA in Japan. Multiple experiments all over the world are necessary to pinpoint the direction of the gravitational wave events because each site will
 
 <!-- Source PDF page 32; printed label 23. -->
 
@@ -1005,7 +1005,7 @@ $$
 \vec{a} = \ddot{x}\hat{\imath} + \ddot{y}\hat{\jmath} + \ddot{z}\hat{k}
 $$
 
-In plane-polar coordinates, the position vector is given by $\langle r,\theta \rangle$, and the velocity is described by:
+In plane-polar coordinates, the coordinates are $(r,\theta)$ and the position vector is $\vec{r} = r\hat{r}$. The velocity is described by:
 
 $$
 \begin{aligned}
@@ -1106,7 +1106,7 @@ $$
 **Taylor series approximation (for small $x$):**
 
 $$
-f(x) \approx f(0) + f^{\prime}(0)(x) + \frac{1}{2} f^{\prime \prime}(0)(x)^{2}+ \frac{1}{3!} f^{\prime \prime \prime}(0)(x)^{3}+ \cdot \cdot \cdot +
+f(x) \approx f(0) + f^{\prime}(0)(x) + \frac{1}{2} f^{\prime \prime}(0)(x)^{2}+ \frac{1}{3!} f^{\prime \prime \prime}(0)(x)^{3}+ \cdots +
 $$
 
 ::::
@@ -1150,7 +1150,7 @@ Find $\vec{a} \cdot \vec{b}$ if:
 
 $$
 \begin{aligned}
-\mathrm{a}) \vec{a} &= -4\hat{\imath} + 4\hat{\jmath} + 4\hat{k}, \vec{b} = 4\hat{\imath} - 4\hat{\jmath} - 4\hat{k} \\
+\text{a}) \vec{a} &= -4\hat{\imath} + 4\hat{\jmath} + 4\hat{k}, \vec{b} = 4\hat{\imath} - 4\hat{\jmath} - 4\hat{k} \\
 \mathrm{b}) \vec{a} &= 7\hat{\imath} + 5\hat{\jmath} + 3\hat{k}, \vec{b} = 2\hat{\imath} + 4\hat{\jmath} - 8\hat{k} \\
 \mathrm{c}) \vec{a} &= 3\hat{\imath} + 3\hat{\jmath} + 2c\hat{k}, \vec{b} = 3c\hat{\imath} - 3\hat{\jmath} - c\hat{k}
 \end{aligned}
@@ -1166,11 +1166,11 @@ d) What value(s) of the constant $c$ in part c) would make $\vec{a}$ and $\vec{b
 
 ::::{admonition} Practice Problem 1-5
 
-For the vectors $\vec{a} = 9\hat{\imath} - 3\hat{\jmath} + 2\hat{k}, \vec{b} = -4\hat{\imath} - 5\hat{\jmath} + 2\hat{k}$ , and $\vec{c} = 3s\hat{\imath} + 3\hat{\jmath} + 9s\hat{k}$ , solve:
+For the vectors $\vec{a} = 9\hat{\imath} - 3\hat{\jmath} + 2\hat{k}, \vec{b} = -4\hat{\imath} - 5\hat{\jmath} + 2\hat{k}$, and $\vec{c} = 3s\hat{\imath} + 3\hat{\jmath} + 9s\hat{k}$, solve:
 
 $$
 \begin{aligned}
-\mathrm{a}) \vec{a} \times \vec{b} \\
+\text{a}) \vec{a} \times \vec{b} \\
 \mathrm{b}) \vec{b} \times \vec{c} \\
 \mathrm{c}) \vec{c} \times \vec{b}
 \end{aligned}
@@ -1186,11 +1186,11 @@ $$
 
 ::::{admonition} Practice Problem 1-6
 
-Two vectors are $\vec{a} = 2\hat{\imath} + \hat{\jmath} + \hat{k}$ and $\vec{b} = \hat{\imath} + 2\hat{\jmath} + \hat{k}$ . Solve the following triple cross products:
+Two vectors are $\vec{a} = 2\hat{\imath} + \hat{\jmath} + \hat{k}$ and $\vec{b} = \hat{\imath} + 2\hat{\jmath} + \hat{k}$. Solve the following triple cross products:
 
 $$
 \begin{aligned}
-\mathrm{a}) \vec{a} \times (\vec{a} \times \vec{b}) \\
+\text{a}) \vec{a} \times (\vec{a} \times \vec{b}) \\
 \mathrm{b}) \vec{b} \times (\vec{b} \times \vec{a}) \\
 \mathrm{c}) (\vec{b} \times \vec{a}) \times \vec{b}
 \end{aligned}
@@ -1205,7 +1205,7 @@ $$
 For each of the following, find the plane-polar $(r,\theta)$ coordinates or equation.
 
 $$
-\mathrm{a}) P(x,y) = (3,4)
+\text{a}) P(x,y) = (3,4)
 $$
 
 $$
@@ -1256,7 +1256,7 @@ c) Show that the angle between the velocity and acceleration is a constant.
 For small $x$, solve the first *three* terms of the Taylor series for
 
 $$
-\mathrm{a}) f(x) = \tan x
+\text{a}) f(x) = \tan x
 $$
 
 $$
@@ -1276,7 +1276,7 @@ $$
 For small $x$, solve the first *two* terms of the Taylor series for
 
 $$
-\mathrm{a}) f(x) = (1 - x^{2})^{3}
+\text{a}) f(x) = (1 - x^{2})^{3}
 $$
 
 $$
@@ -1299,7 +1299,7 @@ a) $f(x) = e^{-x^{2}}$ for $x \approx 0$
 
 b) $f(x) = 2e^{x^{2}}$ for $x \approx 0$
 
-c) ln (1 + $x)$ for $x \approx 0$
+c) $f(x) = \ln(1 + x)$ for $x \approx 0$
 
 d) $e^{x}$ for $x \approx 2$
 

@@ -51,7 +51,7 @@ Newton’s three laws of motion are a mathematical description connecting motion
 
 The **first law** corresponds to the conservation of momentum. The idea here is that an object with no forces acting on it will be at rest or moving at a constant velocity. It is important to note that the first law requires that you define an appropriate inertial frame (a frame of reference). Your inertial frame can be static (at rest) or in motion (with constant velocity, no acceleration). If your reference frame is accelerating, we call that a non-inertial frame and the physics is a bit different. We will discuss non-inertial frames in [Chapters 4](#ch-4) and 5.
 
-The **second law** corresponds to the rate of change of momentum, $\vec{p}$ . The net force acting on a system is:
+The **second law** corresponds to the rate of change of momentum, $\vec{p}$. The net force acting on a system is:
 
 $$
 \sum \vec{F} = \frac{\mathrm{d}\vec{p}}{\mathrm{d}t}
@@ -104,7 +104,7 @@ Static systems are systems that are not in motion. In this case, the sum of all 
 
 (example-2-1)=
 
-::::{admonition} Sample Problem 2-1
+:::::{admonition} Sample Problem 2-1
 
 [Figure 2.1](#fig-2-1) shows two masses connected to each other by an ideal pulley. If this system is at rest, **what is the magnitude of the force of friction?**
 
@@ -119,9 +119,8 @@ Two masses are attached to an ideal string that runs along the ideal pulley at t
 
 **Solution**
 
-First, we find all the forces acting on the system. Since there are two masses, they will each have gravity $M_{1}g$ and $M_{2}g. M_{1}$ is sitting on the incline, so it is pushing down on the incline due to gravity and the incline is pushing up on $M_{1}$ via the normal force $N$. Since $M_{2}$ is hanging, it does not have a normal force. Both masses are attached by a string so that means there is a tension $T$ for both. Since the string and pulley are *ideal*, they have no mass or friction. But there is a coefficient of friction acting on $M_{1}$ from the incline and the friction force is $f = \mu N$, where $N$ is the normal force.
+First, we find all the forces acting on the system. Since there are two masses, they will each have gravity $M_{1}g$ and $M_{2}g. M_{1}$ is sitting on the incline, so it is pushing down on the incline due to gravity and the incline is pushing up on $M_{1}$ via the normal force $N$. Since $M_{2}$ is hanging, it does not have a normal force. Both masses are attached by a string so that means there is a tension $T$ for both. Since the string and pulley are *ideal*, they have no mass or friction. But there is a coefficient of static friction $\mu$ acting on $M_{1}$ from the incline; because the system is at rest, static friction satisfies $f \leq \mu N$ (with $N$ the normal force), and we will solve for the friction needed to keep the system from sliding.
 
-::::
 
 <!-- Source PDF page 41; printed label 32. -->
 
@@ -161,7 +160,6 @@ Left: Free-body diagram of $M_{1}$ with $T_{1}= T_{2}= M_{2}g$. Right: Vector di
 
 <!-- Source PDF page 42; printed label 33. -->
 
-::::{admonition} Continued
 
 With [Figure 2.3](#fig-2-3), we can solve for the normal force $N$ and friction $f$. We break up the gravitational force into the component that is parallel to the incline and perpendicular to the incline. We can get these from trigonometry (see the right panel of [Figure 2.3](#fig-2-3)):
 
@@ -202,9 +200,11 @@ Thus, we have our magnitude of $f$. The true direction of $f$ will depend on $\t
 
 1. If $M_{2}$ and $\theta$ are held constant, what is the maximum mass for $M_{1}$ before our assumed direction of friction from [Figure 2.2](#fig-2-2) is wrong?
 
-2. Recall that friction is defined by $f = \mu N$, where $\mu$ is the coefficient of friction. If $M_{1}= M_{2}$ and the angle is $30^{\circ}$, what is the value of $\mu$?
+2. Recall that the maximum static friction is $f_{\max} = \mu N$, where $\mu$ is the coefficient of static friction. If $M_{1}= M_{2}$ and the angle is $30^{\circ}$, what is the value of $\mu$ needed for the system to remain at rest?
 
 ::::
+
+:::::
 
 ::::{admonition} Lance’s Thoughts
 
@@ -258,7 +258,7 @@ The simplest case for Newton’s laws is a system with constant acceleration and
 
 ::::{admonition} Sample Problem 2-2
 
-A person of height $r_{0}$ throws a ball at an angle of $\theta$ upwards from the ground with an initial speed of $v_{0}$. **What is the maximum height that the ball reaches? How** **far does the ball travel horizontally when it hits the ground?**
+A person of height $r_{0}$ throws a ball at an angle of $\theta$ upwards from the ground with an initial speed of $v_{0}$. **What is the maximum height that the ball reaches? How far does the ball travel horizontally when it hits the ground?**
 
 :::{figure} ../images/figures/figure-2-5.png
 :label: fig-2-5
@@ -277,23 +277,21 @@ First, consider how the ball will move. Since the ball is given both a vertical 
 
 Therefore, the ball will make an arc, with its vertical motion changing (due to the acceleration with gravity) and its horizontal motion held constant (we will ignore any air resistance). The motion along $x$ and $y$ is independent, so we can solve this problem by looking at each component separately.
 
-1. **What is the maximum height?** This is point B in [Figure 2.5](#fig-2-5). The maximum height depends only on the motion along the $y-$axis, so we can ignore motion on the $x-$axis. For the $y-$axis motion, we have an acceleration of $a = -g$, defining up as positive. Since $a = \frac{\mathrm{d}v}{\mathrm{d}t}$ , we can integrate to get the equation for velocity as a function of time. See also, [Chapter 1](#ch-1) for more details.
+1. **What is the maximum height?** This is point B in [Figure 2.5](#fig-2-5). The maximum height depends only on the motion along the $y$-axis, so we can ignore motion on the $x$-axis. For the $y$-axis motion, we have an acceleration of $a = -g$, defining up as positive. Since $a = \frac{\mathrm{d}v}{\mathrm{d}t}$, we can integrate to get the equation for velocity as a function of time. See also, [Chapter 1](#ch-1) for more details.
 
-::::
 
 <!-- Source PDF page 45; printed label 36. -->
 
 $v_{y} = \int a\,\mathrm{d}t$. Since $a = -g$ is constant, $v_{y} = -gt + C$, where $C$ is the initial velocity along the $y$-axis. That initial velocity is $v_{0}\sin\theta$, so $v_{y} = -gt + v_{0}\sin\theta$ (see [Figure 2.5](#fig-2-5)).
 
-For height, $y = \int v_{y}$d$t$. Integrating the velocity equation gives,
+For height, $y = \int v_{y}\,\mathrm{d}t$. Integrating the velocity equation gives,
 
 $$
-y = r_{0}+ v_{0}\sin \theta t - \frac{1}{2} gt^{2}=\Rightarrow r_{0}\mathrm{is} \mathrm{the} \mathrm{initial} \mathrm{height} \mathrm{of} \mathrm{the} \mathrm{ball}
-$$
+y = r_{0}+ v_{0}\sin \theta t - \frac{1}{2} gt^{2}\quad\Rightarrow  r_{0}\text{is the initial height of the ball}$$
 
 To find the maximum height, $y_{B}$, we need the time when the ball reaches the peak of motion, $t_{B}$. At the peak, the vertical component of the velocity will be instantaneously zero.
 
-0 = $-gt_{B}+ v_{0}\sin \theta =\Rightarrow$ at the peak of motion, $v_{y}$ = 0
+$0 = -gt_{B}+ v_{0}\sin\theta$ at the peak of motion, where $v_y=0$
 
 $$
 t_{B}= \frac{v_{0}\sin \theta}{g}
@@ -317,7 +315,6 @@ Note that this equation has the same form as the 1-D case (see Example 1-1), but
 
 <!-- Source PDF page 46; printed label 37. -->
 
-::::{admonition} Continued
 
 To get the length of time that the ball was in the air, we need to solve for the time when $y$ = 0 because the ball has hit the ground (see Example 1-1). The height at point C is given by,
 
@@ -395,18 +392,17 @@ Now consider cases where the acceleration is not constant. As a result, the forc
 (sec-2-5-1)=
 ### 2.5.1 Exponential Force
 
-Consider a force that is changing exponentially with time. You can get exponential forces in some cases of drag and damping (e.g., in the critical case). Let us assume there is one force and it has a form of $F = m\alpha e^{-\beta t}$, where $\alpha$ and $\beta$ are positive constants, and $m$ is the mass of the system. Note that this is our net force such that $F = ma = m\alpha e^{-\beta t}$, so $a = \alpha e^{-\beta t}$. For the equation to be dimensionally consistent with $a$, the units of $\alpha$ are [m $\mathrm{s}^{-2}]$ and the units of $\beta$ are $[\mathrm{s}^{-1}]$. **Find the equations for** $x(t)$ **and** $v(t)$ **assuming that the system** **has** $v = v_{0}$ **and** $x$ = 0 **at** $t$ = 0**.**
+Consider a force that is changing exponentially with time. You can get exponential forces in some cases of drag and damping (e.g., in the critical case). Let us assume there is one force and it has a form of $F = m\alpha e^{-\beta t}$, where $\alpha$ and $\beta$ are positive constants, and $m$ is the mass of the system. Note that this is our net force such that $F = ma = m\alpha e^{-\beta t}$, so $a = \alpha e^{-\beta t}$. For the equation to be dimensionally consistent with $a$, the units of $\alpha$ are [m $\mathrm{s}^{-2}]$ and the units of $\beta$ are $[\mathrm{s}^{-1}]$. **Find the equations for** $x(t)$ **and** $v(t)$ **assuming that the system has** $v = v_{0}$ **and** $x$ = 0 **at** $t$ = 0**.**
 
 To solve this problem, we use $\frac{\mathrm{d}v}{\mathrm{d}t}=a$ and $\frac{\mathrm{d}x}{\mathrm{d}t}=v$. Starting with $a$:
 
 $$
 \begin{aligned}
 \frac{\mathrm{d}v}{\mathrm{d}t} &= a \\
-\frac{\mathrm{d}v}{\mathrm{d}t} &= \alpha e^{-\beta t}=\Rightarrow \mathrm{sub} \mathrm{in} \mathrm{our} \mathrm{equation} \mathrm{for} a \\
+\frac{\mathrm{d}v}{\mathrm{d}t} &= \alpha e^{-\beta t}\quad\Rightarrow  \text{sub in our equation for}a \\
 \mathrm{d}v &= \alpha e^{-\beta t}\mathrm{d}t \\
 \int \mathrm{d}v &= \int \alpha e^{-\beta t}\mathrm{d}t \\
-v &= - \frac{\alpha}{\beta} e^{-\beta t}+ C =\Rightarrow \mathrm{where} C \mathrm{is} \mathrm{a} \mathrm{constant} \mathrm{of} \mathrm{integration}
-\end{aligned}
+v &= - \frac{\alpha}{\beta} e^{-\beta t}+ C \quad\Rightarrow  \text{where} C \text{is a constant of integration}\end{aligned}
 $$
 
 We can solve for $C$ using the initial conditions that $v = v_{0}$ at $t$ = 0.
@@ -414,7 +410,7 @@ We can solve for $C$ using the initial conditions that $v = v_{0}$ at $t$ = 0.
 $$
 \begin{aligned}
 C &= v + \frac{\alpha}{\beta} e^{-\beta t} \\
-C &= v_{0}+ \frac{\alpha}{\beta} =\Rightarrow \mathrm{set} v = v_{0}\mathrm{at} t = 0
+C &= v_{0}+ \frac{\alpha}{\beta} \quad\Rightarrow  \text{set} v = v_{0}\text{at} t = 0
 \end{aligned}
 $$
 
@@ -468,7 +464,7 @@ Finally, let’s solve for the position, $x$ using the *definite* integral:
 $$
 \begin{aligned}
 \frac{\mathrm{d}x}{\mathrm{d}t} &= v \\
-\frac{\mathrm{d}x}{\mathrm{d}t} &= v_{0}+ \frac{\alpha}{\beta} \Big(1 - e^{-\beta t}\Big) =\Rightarrow \mathrm{sub} \mathrm{in} \mathrm{our} \mathrm{equation} \mathrm{for} v \\
+\frac{\mathrm{d}x}{\mathrm{d}t} &= v_{0}+ \frac{\alpha}{\beta} \Big(1 - e^{-\beta t}\Big) \quad\Rightarrow  \text{sub in our equation for}v \\
 \mathrm{d}x &= v_{0}\mathrm{d}t + \frac{\alpha}{\beta} \Big(1 - e^{-\beta t}\Big)\mathrm{d}t
 \end{aligned}
 $$
@@ -531,7 +527,7 @@ $$
 \frac{\mathrm{d}v}{\mathrm{d}t} = -\alpha v
 $$
 
-What we have now is a differential equation. The time derivative of $v$ depends on $v$ itself. This differential equation has a simple solution, fortunately. We must re-arrange the equation by moving the $v$ to the left side of the equation and the d$t$ to the right side of the
+What we have now is a differential equation. The time derivative of $v$ depends on $v$ itself. This differential equation has a simple solution, fortunately. We must re-arrange the equation by moving the $v$ to the left side of the equation and the $\mathrm{d}t$ to the right side of the
 
 <!-- Source PDF page 51; printed label 42. -->
 
@@ -539,8 +535,8 @@ equation. We can now easily integrate both sides to solve this problem.
 
 $$
 \begin{aligned}
-\frac{\mathrm{d}v}{v} &= -\alpha \mathrm{d}t =\Rightarrow \mathrm{using} \mathrm{dummy} \mathrm{variables} \mathrm{because} \mathrm{we}\text{’}\mathrm{re} \mathrm{solving} \mathrm{for} v \mathrm{at} t \\
-\int_{v_{0}}^{V} \frac{\mathrm{d}v}{v} &= -\alpha \int_{0}^{\tau} \mathrm{d}t =\Rightarrow v = v_{0}\mathrm{at} t = 0, V \mathrm{and} \tau \mathrm{are} \mathrm{dummy} \mathrm{variables} \\
+\frac{\mathrm{d}v}{v} &= -\alpha \mathrm{d}t \quad\Rightarrow  \text{using dummy variables because we}\text{’}\text{re solving for}v \text{at} t \\
+\int_{v_{0}}^{V} \frac{\mathrm{d}v}{v} &= -\alpha \int_{0}^{\tau} \mathrm{d}t \quad\Rightarrow  v = v_{0}\text{at} t = 0, V \text{and} \tau \text{are dummy variables}\\
 \left[\ln v\right]_{v_{0}}^{V} &= -\alpha (\tau - 0)
 \end{aligned}
 $$
@@ -592,7 +588,7 @@ There are other ways that force can be proportional to velocity. Let’s look at
 
 ::::{admonition} Sample Problem 2-3
 
-A metal block of mass $m$ slides on a horizontal surface that has a layer of heavy oil so that the block experiences a viscous force that varies as the $3/2$ power of the speed, that is, $F(v) = -bmv^{3/2}$; here $b$ is a positive constant. Let the initial speed of the block be $v_{0}$ at $x$ = 0. **What is the equation of maximum distance that the block will** **travel before it comes to rest in terms of** $m, v_{0}$**, and** $b$**?**
+A metal block of mass $m$ slides on a horizontal surface that has a layer of heavy oil so that the block experiences a viscous force that varies as the $3/2$ power of the speed, that is, $F(v) = -bmv^{3/2}$; here $b$ is a positive constant. Let the initial speed of the block be $v_{0}$ at $x$ = 0. **What is the equation of maximum distance that the block will travel before it comes to rest in terms of** $m, v_{0}$**, and** $b$**?**
 
 :::{figure} ../images/figures/figure-2-6.png
 :label: fig-2-6
@@ -639,11 +635,11 @@ A way to think of the chain rule for derivatives is to think in terms of finite 
 $$
 \begin{aligned}
 a &= \frac{\Delta v}{\Delta t} \\
-a &= \frac{\Delta v}{\Delta t} \frac{\Delta x}{\Delta x} =\Rightarrow \mathrm{note} \mathrm{that} \frac{\Delta x}{\Delta x} = 1 \\
-a &= \frac{\Delta v}{\Delta x} \frac{\Delta x}{\Delta t} =\Rightarrow \mathrm{rearrange} \mathrm{the} \mathrm{terms} \\
-a &= \frac{\Delta v}{\Delta x} v =\Rightarrow \frac{\Delta x}{\Delta t} = v \\
+a &= \frac{\Delta v}{\Delta t} \frac{\Delta x}{\Delta x} \quad\Rightarrow  \text{note that}\frac{\Delta x}{\Delta x} = 1 \\
+a &= \frac{\Delta v}{\Delta x} \frac{\Delta x}{\Delta t} \quad\Rightarrow  \text{rearrange the terms}\\
+a &= \frac{\Delta v}{\Delta x} v \quad\Rightarrow  \frac{\Delta x}{\Delta t} = v \\
 \frac{\Delta v}{\Delta t} &= v \frac{\Delta v}{\Delta x} \\
-\frac{\mathrm{d}v}{\mathrm{d}t} &= v \frac{\mathrm{d}v}{\mathrm{d}x} =\Rightarrow \mathrm{in} \mathrm{the} \mathrm{limit} \mathrm{where} \Delta t \rightarrow 0
+\frac{\mathrm{d}v}{\mathrm{d}t} &= v \frac{\mathrm{d}v}{\mathrm{d}x} \quad\Rightarrow  \text{in the limit where}\Delta t \rightarrow 0
 \end{aligned}
 $$
 
@@ -654,8 +650,8 @@ Using the chain rule, we can get the equation of motion in terms of $v(x)$:
 $$
 \begin{aligned}
 v \frac{\mathrm{d}v}{\mathrm{d}x} &= -bv^{3/2} \\
-\frac{\mathrm{d}v}{\mathrm{d}x} &= -bv^{1/2}=\Rightarrow \mathrm{simplify} \\
-v^{-1/2}\mathrm{d}v &= -b\mathrm{d}x =\Rightarrow \mathrm{rearrange}
+\frac{\mathrm{d}v}{\mathrm{d}x} &= -bv^{1/2}\quad\Rightarrow  \text{simplify} \\
+v^{-1/2}\mathrm{d}v &= -b\mathrm{d}x \quad\Rightarrow  \mathrm{rearrange}
 \end{aligned}
 $$
 
@@ -759,7 +755,7 @@ See [Appendix C](#app-c) for answers to the practice problems.
 
 ::::{admonition} Practice Problem 2-1
 
-Two masses, $m_{1}$ and $m_{2}$ are attached by a massless string that passes over an *ideal* pulley $(m_{p})$ as shown in the figure. The pulley is then lifted upwards by a constant acceleration $a_{F}$ due to an external force. What are the correct equations for Newton’s Second Law for the two masses and the pulley?
+Two masses, $m_{1}$ and $m_{2}$ are attached by a massless string that passes over a pulley of mass $m_{p}$ as shown in the figure. The pulley is then lifted upwards by a constant acceleration $a_{F}$ due to an external force. What are the correct equations for Newton’s Second Law for the two masses and the pulley?
 
 :::{figure} ../images/figures/figure-2-7.png
 :label: fig-2-7
@@ -919,13 +915,13 @@ Figure for [Problem 2-9](#problem-2-9).
 
 ::::{admonition} Practice Problem 2-10
 
-A double Atwood machine has three masses. Assume $M_{1}= 2M$ and $M_{2}= 3M$.
+A double Atwood machine has three masses $M_{1}$, $M_{2}$, and $M_{3}$, where $M$ is a mass scale. Assume $M_{1}= 2M$, $M_{2}= 3M$, and $M_{3}= M$ (the upper mass labeled $M$ in [Figure 2.4](#fig-2-4) is $M_{3}$ here).
 
 a) Draw the free-body diagram for the two pulleys and the three masses.
 
 b) Describe how the system should move.
 
-c) Find the acceleration of $M$ relative to the accelerations of masses $M_{2}$ and $M_{3}$.
+c) Find the acceleration of $M_{3}$ relative to the accelerations of masses $M_{1}$ and $M_{2}$.
 
 d) Find the acceleration of $M_{2}$.
 

@@ -112,11 +112,11 @@ V) Check your answer: After working through a complex problem, consider what you
 Dimensional analysis can be an effective way to check your answer. Unit conversions can be tricky and in some cases, you may be given specialized units over standard units (e.g., distances in astronomy are often in parsecs or light years). Dimensional analysis lets you verify that the units broadly match your expectations. For example, the dimensional analysis of kinetic energy, $K = \frac{1}{2} mv^{2}$ is:
 
 $$
-[\mathrm{J}] = [\mathrm{kg}][\mathrm{m} \mathrm{s}^{-1}]^{2}
+[\mathrm{J}] = [\mathrm{kg}][\text{m s}^{-1}]^{2}
 $$
 
 $$
-[\mathrm{J}] = [\mathrm{kg} \mathrm{m}^{2}\mathrm{s}^{-2}]
+[\mathrm{J}] = [\text{kg m}^{2}\mathrm{s}^{-2}]
 $$
 
 $$
@@ -129,4 +129,4 @@ For more information, see lists of the International System of Units (SI) and so
 
 <!-- Source PDF page 5; printed label iv. -->
 
-VI) Physics is best learned with others: Whether you are hearing the thoughts and perspective of a classmate or vocalizing your own understanding, **you learn more and** **retain that knowledge better** by sharing with others. Share ideas with your classmates. Work on problems with each other. And have fun!
+VI) Physics is best learned with others: Whether you are hearing the thoughts and perspective of a classmate or vocalizing your own understanding, **you learn more and retain that knowledge better** by sharing with others. Share ideas with your classmates. Work on problems with each other. And have fun!

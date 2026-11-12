@@ -56,11 +56,11 @@ $$
 \int \frac{\mathrm{d}x}{(x^{2}+ a^{2})^{3/2}} = \frac{1}{a^{2}} \frac{x}{\sqrt{x^{2}+ a^{2}}}, \int \frac{\mathrm{d}x}{x^{2}+ a^{2}} = \frac{1}{a} \tan ^{-1}\bigg(\frac{x}{a} \bigg), \int \frac{\mathrm{d}x}{\sqrt{a^{2}- x^{2}}} = \sin ^{-1}\bigg(\frac{x}{a} \bigg)
 $$
 
-:::{image} ../images/math/p278-d79919ffc2b8.svg
-:alt: Mathematical expression from source PDF page 278
-:class: source-equation
-:align: center
-:::
+$$
+\int \frac{\mathrm{d}x}{\sqrt{x^{2}+ a^{2}}} = \ln\!\big(x + \sqrt{x^{2}+ a^{2}}\big),\quad
+\int \frac{x\,\mathrm{d}x}{(x^{2}+ a^{2})^{3/2}} = -\frac{1}{\sqrt{x^{2}+ a^{2}}},\quad
+\int \frac{x\,\mathrm{d}x}{\sqrt{x^{2}+ a^{2}}} = \sqrt{x^{2}+ a^{2}}
+$$
 
 $\sin (\theta \pm \gamma) = \sin \theta \cos \gamma \pm \cos \theta \sin \gamma, \cos (\theta \pm \gamma) = \cos \theta \cos \gamma \mp \sin \theta \sin \gamma$
 
@@ -89,30 +89,30 @@ The following are common Taylor Series approximations for values around $x \appr
 
 $$
 \begin{aligned}
-\sin x &= x - \frac{x^{3}}{3!} + \frac{x^{5}}{5!} - \frac{x^{7}}{7!} + \cdot \cdot \cdot \\
-\cos x &= 1 - \frac{x^{2}}{2!} + \frac{x^{4}}{4!} - \frac{x^{6}}{6!} + \cdot \cdot \cdot \\
-e^{x}&= 1 + x + \frac{x^{2}}{2!} + \frac{x^{3}}{3!} + \cdot \cdot \cdot \\
-\ln (1 + x) &= x - \frac{x^{2}}{2} + \frac{x^{3}}{3} - \frac{x^{4}}{4} + \cdot \cdot \cdot \\
-\frac{1}{1 - x} &= 1 + x + x^{2}+ x^{3}+ \cdot \cdot \cdot \\
-\frac{1}{1 + x} &= 1 - x + x^{2}- x^{3}+ \cdot \cdot \cdot \\
-\frac{1}{1 - x^{2}} &= 1 + x^{2}+ x^{4}+ x^{6}+ \cdot \cdot \cdot \\
-\frac{1}{1 + x^{2}} &= 1 - x^{2}+ x^{4}- x^{6}+ \cdot \cdot \cdot \\
-\frac{1}{(1 - x)^{2}} &= 1 + 2x + 3x^{2}+ 4x^{3}+ \cdot \cdot \cdot \\
-\frac{1}{(1 + x)^{2}} &= 1 - 2x + 3x^{2}- 4x^{3}+ \cdot \cdot \cdot
+\sin x &= x - \frac{x^{3}}{3!} + \frac{x^{5}}{5!} - \frac{x^{7}}{7!} + \cdots \\
+\cos x &= 1 - \frac{x^{2}}{2!} + \frac{x^{4}}{4!} - \frac{x^{6}}{6!} + \cdots \\
+e^{x}&= 1 + x + \frac{x^{2}}{2!} + \frac{x^{3}}{3!} + \cdots \\
+\ln (1 + x) &= x - \frac{x^{2}}{2} + \frac{x^{3}}{3} - \frac{x^{4}}{4} + \cdots \\
+\frac{1}{1 - x} &= 1 + x + x^{2}+ x^{3}+ \cdots \\
+\frac{1}{1 + x} &= 1 - x + x^{2}- x^{3}+ \cdots \\
+\frac{1}{1 - x^{2}} &= 1 + x^{2}+ x^{4}+ x^{6}+ \cdots \\
+\frac{1}{1 + x^{2}} &= 1 - x^{2}+ x^{4}- x^{6}+ \cdots \\
+\frac{1}{(1 - x)^{2}} &= 1 + 2x + 3x^{2}+ 4x^{3}+ \cdots \\
+\frac{1}{(1 + x)^{2}} &= 1 - 2x + 3x^{2}- 4x^{3}+ \cdots
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
-\frac{1}{\sqrt{1 - x}} &= 1 + \frac{x}{2} + \frac{3x^{2}}{8} + \frac{5x^{3}}{16} + \cdot \cdot \cdot \\
-\frac{1}{\sqrt{1 + x}} &= 1 - \frac{x}{2} + \frac{3x^{2}}{8} - \frac{5x^{3}}{16} + \cdot \cdot \cdot
+\frac{1}{\sqrt{1 - x}} &= 1 + \frac{x}{2} + \frac{3x^{2}}{8} + \frac{5x^{3}}{16} + \cdots \\
+\frac{1}{\sqrt{1 + x}} &= 1 - \frac{x}{2} + \frac{3x^{2}}{8} - \frac{5x^{3}}{16} + \cdots
 \end{aligned}
 $$
 
 $$
 \begin{aligned}
-\frac{1}{\sqrt{1 - x^{2}}} &= 1 + \frac{x^{2}}{2} + \frac{3x^{4}}{8} + \frac{5x^{6}}{16} + \cdot \cdot \cdot \\
-\frac{1}{\sqrt{1 + x^{2}}} &= 1 - \frac{x^{2}}{2} + \frac{3x^{4}}{8} - \frac{5x^{6}}{16} + \cdot \cdot \cdot
+\frac{1}{\sqrt{1 - x^{2}}} &= 1 + \frac{x^{2}}{2} + \frac{3x^{4}}{8} + \frac{5x^{6}}{16} + \cdots \\
+\frac{1}{\sqrt{1 + x^{2}}} &= 1 - \frac{x^{2}}{2} + \frac{3x^{4}}{8} - \frac{5x^{6}}{16} + \cdots
 \end{aligned}
 $$
 
@@ -198,7 +198,7 @@ A_{1} & A_{2} & A_{3}
 \end{vmatrix}
 $$
 
-where $\hat{x}$ is used for $\hat{\imath}, \hat{y}$ is used for $\hat{\jmath}$ , and $\hat{z}$ is used for $\hat{k}$ .
+where $\hat{x}$ is used for $\hat{\imath}, \hat{y}$ is used for $\hat{\jmath}$, and $\hat{z}$ is used for $\hat{k}$.
 
 (sec-A-5-3)=
 ### A.5.3 Cylindrical Coordinates

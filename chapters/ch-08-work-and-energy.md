@@ -33,7 +33,7 @@ where $\vec{F}$ is the force and $\mathrm{d}\vec{r}$ represents a small displace
 Work has units of energy. The SI unit for energy is the Joule, abbreviated as [J].
 
 $$
-[1 \mathrm{J}] = [1 \mathrm{N} \mathrm{m}] = [1 \mathrm{kg} \mathrm{m}^{2}\mathrm{s}^{-2}].
+[1 \mathrm{J}] = [1 \text{N m}] = [1 \text{kg m}^{2}\mathrm{s}^{-2}].
 $$
 
 ::::
@@ -86,8 +86,8 @@ using the chain rule (see [Sample Problem 2-3](#example-2-3) for more informatio
 $$
 \begin{aligned}
 F\mathrm{d}x &= mv\mathrm{d}v \\
-F\mathrm{d}x &= \frac{1}{2} m\mathrm{d}(v^{2}) =\Rightarrow \mathrm{note} \mathrm{that} \mathrm{d}(v^{2}) = 2v\mathrm{d}v \\
-F\mathrm{d}x &= \mathrm{d}\bigg(\frac{1}{2} mv^{2}\bigg) =\Rightarrow m \mathrm{is} \mathrm{constant} \\
+F\mathrm{d}x &= \frac{1}{2} m\mathrm{d}(v^{2}) \quad\Rightarrow  \text{note that d}(v^{2}) = 2v\mathrm{d}v \\
+F\mathrm{d}x &= \mathrm{d}\bigg(\frac{1}{2} mv^{2}\bigg) \quad\Rightarrow  m \text{is constant}\\
 F\mathrm{d}x &= \mathrm{d}K
 \end{aligned}
 $$
@@ -123,18 +123,20 @@ $$
 \tau = I\alpha = I \frac{\mathrm{d}^{2}\theta}{\mathrm{d}t^{2}} = I \frac{\mathrm{d}\theta}{\mathrm{d}t} \frac{\mathrm{d}\omega}{\mathrm{d}\theta} = I\omega \frac{\mathrm{d}\omega}{\mathrm{d}\theta}
 $$
 
-Now, torque is a vector quantity given by $\vec{\tau} = \vec{r} \times \vec{F}$ . But work is a scalar quantity and the work done on a particle to move it from one position to another applies only to the component of the force in the direction of motion. If a force is perpendicular to the direction of motion, that force does no work. And if a force is parallel to the direction of motion, it does maximum work.
+Now, torque is a vector quantity given by $\vec{\tau} = \vec{r} \times \vec{F}$. But work is a scalar quantity and the work done on a particle to move it from one position to another applies only to the component of the force in the direction of motion. If a force is perpendicular to the direction of motion, that force does no work. And if a force is parallel to the direction of motion, it does maximum work.
 
-So if the path length in the direction of the force is d$s = r$d$\theta$, then we can say that the work done by the force is:
-
-d$W = F_{s}$d$s =\Rightarrow F_{s}$ is the component parallel to the path $s$
+So if the path length in the direction of the force is $\mathrm{d}s = r\,\mathrm{d}\theta$, then we can say that the work done by the force is:
 
 $$
-= F_{s}r\mathrm{d}\theta =\Rightarrow \mathrm{sub} \mathrm{in} \mathrm{d}s = r\mathrm{d}\theta
+\mathrm{d}W = F_{s}\,\mathrm{d}s \quad\Rightarrow  F_{s} \text{ is the component parallel to the path } s
 $$
 
 $$
-= \tau \mathrm{d}\theta =\Rightarrow \tau = rF_{s}\mathrm{because} \vec{F}_{s}\perp \vec{r} \mathrm{if} \vec{F}_{s}// \mathrm{d}\vec{s} (\mathrm{e.g}., \vec{r} \perp \mathrm{d}\vec{s})
+= F_{s}r\,\mathrm{d}\theta \quad\Rightarrow  \text{sub in } \mathrm{d}s = r\,\mathrm{d}\theta
+$$
+
+$$
+= \tau\,\mathrm{d}\theta \quad\Rightarrow\ \tau = r F_s\ \text{because }\vec{F}_s\perp\vec{r}\text{ if }\vec{F}_s\parallel\mathrm{d}\vec{s}\ (\text{e.g. }\vec{r}\perp\mathrm{d}\vec{s})
 $$
 
 Combining this with our definition of torque from before, we get:
@@ -142,15 +144,14 @@ Combining this with our definition of torque from before, we get:
 $$
 \begin{aligned}
 \mathrm{d}W &= \tau \mathrm{d}\theta \\
-&= \Bigg(I\omega \frac{\mathrm{d}\omega}{\mathrm{d}\theta} \Bigg)\mathrm{d}\theta =\Rightarrow \mathrm{equation} \mathrm{for} \tau \mathrm{from} \mathrm{the} \mathrm{second} \mathrm{law}
-\end{aligned}
+&= \Bigg(I\omega \frac{\mathrm{d}\omega}{\mathrm{d}\theta} \Bigg)\mathrm{d}\theta \quad\Rightarrow  \text{equation for}\tau \text{from the second law}\end{aligned}
 $$
 
 $$
 \begin{aligned}
 &= I\omega \mathrm{d}\omega \\
-&= \frac{1}{2} I\mathrm{d}(\omega ^{2}) =\Rightarrow \mathrm{note} \mathrm{that} \mathrm{d}(\omega ^{2}) = 2\omega \mathrm{d}\omega \\
-&= \mathrm{d}\bigg(\frac{1}{2} I\omega ^{2}\bigg) =\Rightarrow I \mathrm{is} \mathrm{constant} \\
+&= \frac{1}{2} I\mathrm{d}(\omega ^{2}) \quad\Rightarrow  \text{note that d}(\omega ^{2}) = 2\omega \mathrm{d}\omega \\
+&= \mathrm{d}\bigg(\frac{1}{2} I\omega ^{2}\bigg) \quad\Rightarrow  I \text{is constant}\\
 &= \mathrm{d}K
 \end{aligned}
 $$
@@ -160,12 +161,10 @@ $$
 Integrating both sides will give you the same answer as the linear case: $W(\theta _{1}\rightarrow \theta _{2}) = \Delta K$. So the work-kinetic energy theorem applies for both translation and rotation movement. The kinetic energy equations are slightly different, however.
 
 $$
-K = \frac{1}{2} mv^{2}=\Rightarrow \mathrm{for} \mathrm{translation}
-$$ (eq-8-4)
+K = \frac{1}{2} mv^{2}\quad\Rightarrow  \text{for translation}$$ (eq-8-4)
 
 $$
-K = \frac{1}{2} I\omega ^{2}=\Rightarrow \mathrm{for} \mathrm{rotation}
-$$ (eq-8-5)
+K = \frac{1}{2} I\omega ^{2}\quad\Rightarrow  \text{for rotation}$$ (eq-8-5)
 
 (sec-8-3)=
 ## 8.3 Work in Different Frames
@@ -208,10 +207,10 @@ $$
 \Delta W &= F\Delta x \\
 &=(ma)\left(\frac12at^2+ut\right)\\
 &=\frac12m\left[(at)^2+2uat\right]\\
-&=\frac12m\left[(at)^2+2uat+u^2-u^2\right]=\Rightarrow\mathrm{add}\ \mathrm{and}\ \mathrm{subtract}\ u^{2}\ (\mathrm{same}\ \mathrm{as}\ \mathrm{adding}\ \mathrm{zero})\\
-&=\frac12m\left[(at+u)^2-u^2\right]=\Rightarrow\mathrm{recall}\ \mathrm{that}\ (a+b)^{2}=a^{2}+2ab+b^{2}\\
-&=\frac12m\left[v_f^2-u^2\right]=\Rightarrow\mathrm{for}\ \mathrm{constant}\ \mathrm{acceleration},\ v_{f}=at+u\\
-&=\frac12m\left[v_f^2-v_i^2\right]=\Rightarrow u\ \mathrm{is}\ \mathrm{just}\ \mathrm{the}\ \mathrm{initial}\ \mathrm{velocity},\ v_{i}\\
+&=\frac12m\left[(at)^2+2uat+u^2-u^2\right]\quad\Rightarrow \mathrm{add}\ \text{and}\ \mathrm{subtract}\ u^{2}\ (\mathrm{same}\ \text{as}\ \mathrm{adding}\ \mathrm{zero})\\
+&=\frac12m\left[(at+u)^2-u^2\right]\quad\Rightarrow \text{recall}\ \text{that}\ (a+b)^{2}=a^{2}+2ab+b^{2}\\
+&=\frac12m\left[v_f^2-u^2\right]\quad\Rightarrow \text{for}\ \mathrm{constant}\ \mathrm{acceleration},\ v_{f}=at+u\\
+&=\frac12m\left[v_f^2-v_i^2\right]\quad\Rightarrow  u\ \text{is}\ \mathrm{just}\ \text{the}\ \mathrm{initial}\ \mathrm{velocity},\ v_{i}\\
 &=K_f-K_i\\
 &=\Delta K
 \end{aligned}
@@ -233,7 +232,7 @@ Consider the case where the position of a heavy box of mass $m$ changes from $y_
 
 <!-- Source PDF page 178; printed label 169. -->
 
-the box is $\Delta \vec{y} = (y_{2}-y_{1})\hat{\jmath}$ , whereas the gravitational force is $\vec{F}_{g}= -mg\hat{\jmath}$ , which is constant. Taking the equation for work with a constant force, the work is:
+the box is $\Delta \vec{y} = (y_{2}-y_{1})\hat{\jmath}$, whereas the gravitational force is $\vec{F}_{g}= -mg\hat{\jmath}$, which is constant. Taking the equation for work with a constant force, the work is:
 
 $$
 \Delta W = \vec{F}_{g}\cdot \Delta \vec{y}
@@ -244,7 +243,7 @@ $$
 $$
 
 $$
-= -mg(y_{2}- y_{1}) =\Rightarrow \hat{\jmath} \cdot \hat{\jmath} = 1
+= -mg(y_{2}- y_{1}) \quad\Rightarrow  \hat{\jmath} \cdot \hat{\jmath} = 1
 $$
 
 Remember, this is the work done by gravity. So if a box is lifted upward $(y_{2}> y_{1})$, gravity acts against the displacement and $W < 0$. If the box is lowered $(y_{2}< y_{1})$, gravity acts with (helps) the displacement and $W > 0$. And if $y_{2}= y_{1}$ then $W$ = 0 (no work is done by gravity).
@@ -279,7 +278,7 @@ $$
 The force of gravity is a radial force with no azimuthal (angle) dependence. That means that any point that has the same radial distance $(|\vec{r}|)$ will have the same magnitude of gravity $|\vec{g}|$. We often describe gravity as a gravitational field, a sphere of influence where any object with a mass $m$ will be subjected to a gravitational force. The magnitude of the gravitational field changes as a function of radial distance. For example, [Figure 8.2](#fig-8-2) shows a cartoon of the Earth with two different vectors, $\vec{r}_{1}$ and $\vec{r}_{2}$. Their magnitudes of gravitational acceleration are:
 
 $$
-|\vec{g}_{1}| = \frac{GM}{r_{1}^{2}} \mathrm{and} |\vec{g}_{2}| = \frac{GM}{r_{2}^{2}}
+|\vec{g}_{1}| = \frac{GM}{r_{1}^{2}} \text{and} |\vec{g}_{2}| = \frac{GM}{r_{2}^{2}}
 $$
 
 <!-- Source PDF page 179; printed label 170. -->
@@ -303,10 +302,10 @@ Well, consider going from $r_{1}$ to $r_{2}$ as shown in [Figure 8.2](#fig-8-2).
 
 $$
 \begin{aligned}
-W(r_{1}\rightarrow r_{2}) &= \int_{r_{1}}^{r_{2}} \vec{F} \cdot \mathrm{d}\vec{r} =\Rightarrow \mathrm{force} \mathrm{is} \mathrm{not} \mathrm{constant} \\
-&= \int_{r_{1}}^{r_{2}} \bigg(- \frac{GMm}{r^{2}} \bigg)\hat{r} \cdot \mathrm{d}\vec{r} =\Rightarrow \mathrm{use} \mathrm{the} \mathrm{equation} \mathrm{for} \mathrm{the} \mathrm{force} \mathrm{of} \mathrm{gravity} \\
-&= -GMm\int_{r_{1}}^{r_{2}} \bigg(\frac{1}{r^{2}} \hat{r}\bigg) \cdot (\mathrm{d}r\hat{r}) =\Rightarrow \mathrm{d}\vec{r} = \mathrm{d}r\hat{r} \\
-&= -GMm\int_{r_{1}}^{r_{2}} \bigg(\frac{1}{r^{2}} \mathrm{d}r\bigg)\hat{r} \cdot \hat{r} =\Rightarrow \hat{a} \cdot \hat{a} = 1 \mathrm{for} \mathrm{any} \mathrm{unit} \mathrm{vector} \\
+W(r_{1}\rightarrow r_{2}) &= \int_{r_{1}}^{r_{2}} \vec{F} \cdot \mathrm{d}\vec{r} \quad\Rightarrow  \text{force is not constant}\\
+&= \int_{r_{1}}^{r_{2}} \bigg(- \frac{GMm}{r^{2}} \bigg)\hat{r} \cdot \mathrm{d}\vec{r} \quad\Rightarrow  \text{use the equation for the force of gravity}\\
+&= -GMm\int_{r_{1}}^{r_{2}} \bigg(\frac{1}{r^{2}} \hat{r}\bigg) \cdot (\mathrm{d}r\hat{r}) \quad\Rightarrow  \mathrm{d}\vec{r} = \mathrm{d}r\hat{r} \\
+&= -GMm\int_{r_{1}}^{r_{2}} \bigg(\frac{1}{r^{2}} \mathrm{d}r\bigg)\hat{r} \cdot \hat{r} \quad\Rightarrow  \hat{a} \cdot \hat{a} = 1 \text{for any unit vector}\\
 &= -GMm\int_{r_{1}}^{r_{2}} \frac{1}{r^{2}} \mathrm{d}r \\
 &= -GMm\bigg(- \frac{1}{r} \bigg|_{r_{1}}^{r_{2}} \bigg) \\
 &= \frac{GMm}{r_{2}} - \frac{GMm}{r_{1}}
@@ -322,7 +321,7 @@ Note that if $r_{2}> r_{1}, W < 0$ as we would expect (e.g., you are doing work 
 
 The gravitational force follows an inverse square ($\frac{1}{r^{2}}$) law. So at very large distances from the source of the gravitational field, the gravitational force goes to zero and the work necessary to move a particle also goes to zero (if there is no force, there is no work).
 
-Consider an object that is on the surface of Earth and is launched so that it reaches a very large distance away (assume infinity). Due to Earth’s gravitational field, the object will feel a force that opposes its motion to leave. Gravity will be doing negative work and the kinetic energy of the object will decrease. **What speed is needed for this object to** **just reach infinity?** Assume Earth’s atmosphere does not affect its motion.
+Consider an object that is on the surface of Earth and is launched so that it reaches a very large distance away (assume infinity). Due to Earth’s gravitational field, the object will feel a force that opposes its motion to leave. Gravity will be doing negative work and the kinetic energy of the object will decrease. **What speed is needed for this object to just reach infinity?** Assume Earth’s atmosphere does not affect its motion.
 
 To solve this problem, we will use the work-kinetic energy theorem (Equation (8.3)).
 
@@ -444,7 +443,7 @@ Comparison of two paths between points $r_{1}$ and $r_{2}$. For a conservative f
 
 And of course, if you go from $r_{1}$ to $r_{2}$ and then from $r_{2}$ back to $r_{1}$, the total work is zero (first criterion) no matter which path you take in either case (e.g., Path I from $r_{1}$ to $r_{2}$ and then Path II from $r_{2}$ back to $r_{1}$).
 
-Note that forces like friction are *not* conservative forces. First, friction doesn’t depend on position. Second, friction removes energy from a system. Third, the work done by friction in a closed loop is not zero. For example, consider a hockey puck moving in a circle of radius $R$ on a rough horizontal surface that has friction. The friction force on the hockey puck is $\vec{f} = \mu _{K}mg\hat{\theta}$ , and the friction force is always antiparallel $(180^{\circ})$ to the displacement. So $W_{f}= -f\Delta d = -\mu _{K}mg(2\pi R)$ for a closed loop. Thus, $W_{f}\not =$ 0.
+Note that forces like friction are *not* conservative forces. First, friction doesn’t depend on position. Second, friction removes energy from a system. Third, the work done by friction in a closed loop is not zero. For example, consider a hockey puck moving in a circle of radius $R$ on a rough horizontal surface that has friction. The friction force on the hockey puck is $\vec{f} = \mu _{K}mg\hat{\theta}$, and the friction force is always antiparallel $(180^{\circ})$ to the displacement. So $W_{f}= -f\Delta d = -\mu _{K}mg(2\pi R)$ for a closed loop. Thus, $W_{f}\neq 0$.
 
 (sec-8-5-1)=
 ### 8.5.1 Identifying Conservative Forces
@@ -455,7 +454,7 @@ $$
 \vec{\nabla} \times \vec{F} = 0
 $$ (eq-8-11)
 
-Note that $\vec{\nabla} \times \vec{F}$ is a vector cross product called the curl of the vector $\vec{F}$ . The $\vec{\nabla}$ symbol is a vector differential operator sometimes called the del or nabla operator. In Cartesian coordinates, it has the form of:
+Note that $\vec{\nabla} \times \vec{F}$ is a vector cross product called the curl of the vector $\vec{F}$. The $\vec{\nabla}$ symbol is a vector differential operator sometimes called the del or nabla operator. In Cartesian coordinates, it has the form of:
 
 $$
 \vec{\nabla} = \frac{\partial}{\partial x} \hat{\imath} + \frac{\partial}{\partial y} \hat{\jmath} + \frac{\partial}{\partial z} \hat{k}
@@ -538,7 +537,7 @@ because the force has no $\theta$ or $\varphi$ dependence. That is, $\frac{\part
 
 **Solution**
 
-Here we have some unnamed force that depends on position. To find out if this force is conservative, we have to solve $\vec{\nabla} \times \vec{F}$ . Note that the force is in Cartesian coordinates, so we will want to use the curl in Cartesian coordinates.
+Here we have some unnamed force that depends on position. To find out if this force is conservative, we have to solve $\vec{\nabla} \times \vec{F}$. Note that the force is in Cartesian coordinates, so we will want to use the curl in Cartesian coordinates.
 
 $$
 \begin{aligned}
@@ -556,7 +555,7 @@ x^{2}yz & 0 & -xyz^{2}
 \end{aligned}
 $$
 
-Since $\vec{\nabla} \times \vec{F} \not =$ 0, this force is not a conservative force.
+Since $\vec{\nabla} \times \vec{F} \neq 0$, this force is not a conservative force.
 
 ::::
 
@@ -596,7 +595,7 @@ $$
 In general, the gravitational potential energy is measured between two points. It is a *relative* energy. You will want to set a convenient reference point. For example, we can set $r_{1}= \infty$, where there would be no contribution from the force, such that:
 
 $$
-U = - \frac{GMm}{r} (\mathrm{compared} \mathrm{to} \mathrm{infinity})
+U = - \frac{GMm}{r} (\text{compared to infinity})
 $$
 
 For gravity problems near Earth’s surface, setting $U$ = 0 at the surface is often convenient.
@@ -627,7 +626,7 @@ $$
 $$
 
 $$
-\Delta W_{con}+ \Delta W_{nc}= \Delta K =\Rightarrow \Delta W = \Delta W_{con}+ \Delta W_{nc}
+\Delta W_{con}+ \Delta W_{nc}= \Delta K \quad\Rightarrow  \Delta W = \Delta W_{con}+ \Delta W_{nc}
 $$
 
 $$
@@ -635,7 +634,7 @@ $$
 $$
 
 $$
-\Delta W_{nc}= \Delta K + \Delta U =\Rightarrow \Delta W_{con}= -\Delta U
+\Delta W_{nc}= \Delta K + \Delta U \quad\Rightarrow  \Delta W_{con}= -\Delta U
 $$
 
 <!-- Source PDF page 186; printed label 177. -->
@@ -646,7 +645,7 @@ $$
 \Delta E = \Delta (K + U)
 $$ (eq-8-13)
 
-For small times d$t$, you can say that d$E = \mathrm{d}(K+U)$. Integrating these functions then gives
+For small times $\mathrm{d}t$, you can say that $\mathrm{d}E = \mathrm{d}(K+U)$. Integrating these functions then gives
 
 $$
 E = K + U.
@@ -687,9 +686,9 @@ We can use this definition of a conservative force to show that $U(r_{1}\rightar
 $$
 \begin{aligned}
 W(r_{1}\rightarrow r_{2}) &= \int_{r_{1}}^{r_{2}} \vec{F} \cdot \mathrm{d}\vec{r} \\
-&= \int_{r_{1}}^{r_{2}}(-\vec{\nabla}U) \cdot \mathrm{d}\vec{r} =\Rightarrow \mathrm{substitute} \mathrm{in} \mathrm{our} \mathrm{scalar} \mathrm{field} \\
-&= -\int_{r_{1}}^{r_{2}} \mathrm{d}U_{r}=\Rightarrow \mathrm{only} \mathrm{the} \mathrm{component} \mathrm{along} \mathrm{the} \mathrm{path} \mathrm{is} \mathrm{non-zero} \\
-&= -\Big(U_{r}\Big|_{r_{1}}^{r_{2}}\Big) =\Rightarrow \mathrm{only} \mathrm{the} \mathrm{end} \mathrm{points} \mathrm{matter} \mathrm{for} \mathrm{conservative} \mathrm{forces} \\
+&= \int_{r_{1}}^{r_{2}}(-\vec{\nabla}U) \cdot \mathrm{d}\vec{r} \quad\Rightarrow  \text{substitute in our scalar field}\\
+&= -\int_{r_{1}}^{r_{2}} \mathrm{d}U_{r}\quad\Rightarrow  \text{only the component along the path is non-zero}\\
+&= -\Big(U_{r}\Big|_{r_{1}}^{r_{2}}\Big) \quad\Rightarrow  \text{only the end points matter for conservative forces}\\
 &= -U(r_{1}\rightarrow r_{2})
 \end{aligned}
 $$
@@ -788,7 +787,7 @@ be useful to consider the functions as hills for a ball to roll on. At the exact
 
 ::::{admonition} Sample Problem 8-4
 
-A particle is moving in one dimension under the influence of the potential $U(x)$ = $2x^{3}-3x^{2}-12x+30$, where all values are in SI units. **Find the equilibrium point(s)** **of this potential. Which point(s) are stable?**
+A particle is moving in one dimension under the influence of the potential $U(x) = 2x^{3}-3x^{2}-12x+30$, where all values are in SI units. **Find the equilibrium point(s) of this potential. Which point(s) are stable?**
 
 **Solution**
 
@@ -816,7 +815,7 @@ At $x = -1$ m, $U^{\prime \prime }< 0$ and at $x$ = 2 m, $U^{\prime \prime }> 0$
 
 ::::{admonition} Real World Applications
 
-Lagrange points are saddle points that correspond to maxima or minima in gravitational potential between the planets and the Sun. These are special points where gravity from the Sun and planet and the centrifugal force balance. For example, Jupiter has a collection of “moons” called Trojan asteroids that are located in two clusters within Jupiter’s orbit at the Lagrange Points L4 and L5, which are potential minima. These asteroids are effectively trapped by a local potential minimum saddle point and they orbit [the](http://hyperphysics.phy-astr.gsu.edu/hbase/Solar/trojan.html) Sun (not Jupiter) in lock-step with Jupiter. For more information, see the [hyperphysics webpage](http://hyperphysics.phy-astr.gsu.edu/hbase/Solar/trojan.html) for Trojan satellites and [NASA’s webpage](https://solarsystem.nasa.gov/resources/754/what-is-a-lagrange-point/) on Lagrange points.
+Lagrange points are saddle points that correspond to maxima or minima in gravitational potential between the planets and the Sun. These are special points where gravity from the Sun and planet and the centrifugal force balance. For example, Jupiter has a collection of “moons” called Trojan asteroids that are located in two clusters within Jupiter’s orbit at the Lagrange Points L4 and L5, which are potential minima. These asteroids are effectively trapped by a local potential minimum saddle point and they orbit the Sun (not Jupiter) in lock-step with Jupiter. For more information, see the [hyperphysics webpage](http://hyperphysics.phy-astr.gsu.edu/hbase/Solar/trojan.html) for Trojan satellites and [NASA’s webpage](https://solarsystem.nasa.gov/resources/754/what-is-a-lagrange-point/) on Lagrange points.
 
 ::::
 
@@ -824,7 +823,7 @@ Lagrange points are saddle points that correspond to maxima or minima in gravita
 
 ::::{admonition} Sample Problem 8-5
 
-A particle of mass $m$ moves in a potential given by the following equation: $U$ = $k(\frac{1}{3} x^{2}+4y^{2})$. **What is the equation for acceleration for the particle in both** $x$ **and** $y$ **coordinates?**
+A particle of mass $m$ moves in a potential given by the following equation: $U = k(\frac{1}{3} x^{2}+4y^{2})$. **What is the equation for acceleration for the particle in both** $x$ **and** $y$ **coordinates?**
 
 **Solution**
 
@@ -876,11 +875,11 @@ Note that both of these accelerations have the form of simple harmonic motion (s
 
 ::::{admonition} Sample Problem 8-6
 
-A particle of mass m is moving under the influence of a potential of $U = Ay^{2}e^{-x}$, where $A$ is a constant. No other forces act on the particle. **Find the work required to** **move the particle under a straight path from points** $(2,$ 1) **to** $(2,$ 3)**.**
+A particle of mass $m$ is moving under the influence of a potential of $U = Ay^{2}e^{-x}$, where $A$ is a constant. No other forces act on the particle. **Find the work required to move the particle under a straight path from points $(2,1)$ to $(2,3)$.**
 
 **Solution**
 
-To solve for the work, you can do one of two things. You can use $U = -\Delta W$ (true if there are no non-conservative forces) or you can solve for $F$ and specify that $\Delta W = \int F$d$r$.
+To solve for the work, you can do one of two things. You can use $U = -\Delta W$ (true if there are no non-conservative forces) or you can solve for $F$ and specify that $\Delta W = \int F\,\mathrm{d}r$.
 
 **Case 1:** $\Delta W = -\Delta U$ **(this is the simplest of the methods).**
 
@@ -938,9 +937,8 @@ where the kinetic energy can be either translation (linear motion) or rotation.
 
 $$
 \begin{aligned}
-K &= \frac{1}{2} mv^{2}=\Rightarrow \mathrm{for} \mathrm{translation} \\
-K &= \frac{1}{2} I\omega ^{2}=\Rightarrow \mathrm{for} \mathrm{rotation}
-\end{aligned}
+K &= \frac{1}{2} mv^{2}\quad\Rightarrow  \text{for translation}\\
+K &= \frac{1}{2} I\omega ^{2}\quad\Rightarrow  \text{for rotation}\end{aligned}
 $$
 
 This chapter also introduced conservative forces, such as gravity, which are a class of forces where the work done is independent of the path taken, and energy is conserved.
@@ -986,8 +984,7 @@ W = \int \vec{F} \cdot \mathrm{d}\vec{r}
 $$
 
 $$
-W(r_{1}\rightarrow r_{2}) = -W(r_{2}\rightarrow r_{1}) =\Rightarrow \mathrm{for} \mathrm{conservative} \mathrm{forces}
-$$
+W(r_{1}\rightarrow r_{2}) = -W(r_{2}\rightarrow r_{1}) \quad\Rightarrow  \text{for conservative forces}$$
 
 **Work Kinetic Energy Theorem:**
 
@@ -999,9 +996,8 @@ $$
 
 $$
 \begin{aligned}
-K &= \frac{1}{2} mv^{2}=\Rightarrow \mathrm{for} \mathrm{translation} \\
-K &= \frac{1}{2} I\omega ^{2}=\Rightarrow \mathrm{for} \mathrm{rotation}
-\end{aligned}
+K &= \frac{1}{2} mv^{2}\quad\Rightarrow  \text{for translation}\\
+K &= \frac{1}{2} I\omega ^{2}\quad\Rightarrow  \text{for rotation}\end{aligned}
 $$
 
 **Gravitational Force:**
@@ -1097,7 +1093,7 @@ d) Plot the escape velocity as a function of distance from the Sun.
 For each of the following forces, determine if the force is conservative.
 
 $$
-\mathrm{a}) \vec{F} = (xy)\hat{\imath} + (yz)\hat{\jmath} + (xz)\hat{k}
+\text{a}) \vec{F} = (xy)\hat{\imath} + (yz)\hat{\jmath} + (xz)\hat{k}
 $$
 
 $$
@@ -1116,7 +1112,7 @@ d) $\vec{F} = r\sin (2\varphi)\hat{r} + r\cos (2\varphi)\hat{\varphi} + 3\hat{z}
 
 ::::{admonition} Practice Problem 8-4
 
-A force has the form $\vec{F} = (ax + by^{2})\hat{\imath} + (cxy)\hat{\jmath}$ , where $a, b$, and $c$ are all constants. Under what condition(s) is this force conservative?
+A force has the form $\vec{F} = (ax + by^{2})\hat{\imath} + (cxy)\hat{\jmath}$, where $a, b$, and $c$ are all constants. Under what condition(s) is this force conservative?
 
 ::::
 
@@ -1145,7 +1141,7 @@ a conservative force?
 Find the equation for the conservative force that produces the following potentials:
 
 $$
-\mathrm{a}) U = 2x + 3y^{2}+ 4z^{2}
+\text{a}) U = 2x + 3y^{2}+ 4z^{2}
 $$
 
 $$
@@ -1158,7 +1154,7 @@ $$
 
 ::::{admonition} Practice Problem 8-7
 
-A particle can move only along the $x-$axis. It is in a potential defined as $U = Bx + A/x$, where $B$ and $A$ are constants. What is the equilibrium position of this particle?
+A particle can move only along the $x$-axis. It is in a potential defined as $U = Bx + A/x$, where $B$ and $A$ are constants. What is the equilibrium position of this particle?
 
 ::::
 
@@ -1166,7 +1162,7 @@ A particle can move only along the $x-$axis. It is in a potential defined as $U 
 
 ::::{admonition} Practice Problem 8-8
 
-A particle of mass m moves under a potential of $U(x,y,z) = ax + by^{2}+ cz^{3}$ with no other forces acting on it. The parameters $a, b$, and $c$ are all constants. If the particle is momentarily at rest at position $(1,1,$ 1), what is its speed at the origin? (Hint: you do not need to solve any differential equations of motion for this problem.)
+A particle of mass $m$ moves under a potential of $U(x,y,z) = ax + by^{2}+ cz^{3}$ with no other forces acting on it. The parameters $a, b$, and $c$ are all constants. If the particle is momentarily at rest at position $(1,1,1)$, what is its speed at the origin? (Hint: you do not need to solve any differential equations of motion for this problem.)
 
 ::::
 
@@ -1194,7 +1190,7 @@ e) Determine the speed of the ball upon hitting the ground on the opponent’s s
 
 ::::{admonition} Practice Problem 8-10
 
-Consider the forces $F_{1}= x\hat{\imath} + y\hat{\jmath}$ , and $F_{2}= y\hat{\imath} - x\hat{\jmath}$ .
+Consider the forces $F_{1}= x\hat{\imath} + y\hat{\jmath}$, and $F_{2}= y\hat{\imath} - x\hat{\jmath}$.
 
 a) Find the work done by both forces to move a particle from position $(0,$ 0) to $(0,$ 1) and then the work done to move the particle from position $(0,$ 1) to $(1,$ 1)
 
