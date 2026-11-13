@@ -43,9 +43,9 @@ Newton’s three laws of motion are a mathematical description connecting motion
 
 <!-- Source PDF page 39; printed label 30. -->
 
-1. **The law of inertia**: A body moves with constant velocity unless acted on by a force.
+1. **The law of inertia**: A body moves with constant velocity unless acted on by a net force.
 
-2. **The equation of motion**: The change of momentum of a body equals the net force acting on it.
+2. **The equation of motion**: The rate of change of momentum of a body equals the net force acting on it.
 
 3. **The law of action and reaction**: For every force acting on a body, there is an equal and opposite reactive force.
 
@@ -527,11 +527,9 @@ $$
 \frac{\mathrm{d}v}{\mathrm{d}t} = -\alpha v
 $$
 
-What we have now is a differential equation. The time derivative of $v$ depends on $v$ itself. This differential equation has a simple solution, fortunately. We must re-arrange the equation by moving the $v$ to the left side of the equation and the $\mathrm{d}t$ to the right side of the
+What we have now is a differential equation. The time derivative of $v$ depends on $v$ itself. This differential equation has a simple solution, fortunately. We must re-arrange the equation by moving the $v$ to the left side of the equation and the $\mathrm{d}t$ to the right side of the equation. We can now easily integrate both sides to solve this problem.
 
 <!-- Source PDF page 51; printed label 42. -->
-
-equation. We can now easily integrate both sides to solve this problem.
 
 $$
 \begin{aligned}
@@ -576,7 +574,7 @@ $$
 
 1. What is the position as $t \rightarrow$ 0 and $t \rightarrow \infty$? Do these values make sense?
 
-2. Plot position, velocity, and acceleration for the particle assuming $\alpha = 0.5 \mathrm{s}^{-1}$ and $v_{0}$ = 2 m $\mathrm{s}^{-1}$. You can use any programming language (e.g., python, MATLAB) or you can try and plot it by hand. Check your limits against your plots.
+2. Plot position, velocity, and acceleration for the particle assuming $\alpha = 0.5 \mathrm{s}^{-1}$ and $v_{0}$ = 2 m $\mathrm{s}^{-1}$. You can use any programming language (e.g., Python, MATLAB) or you can try and plot it by hand. Check your limits against your plots.
 
 ::::
 
@@ -684,7 +682,7 @@ Parachutes are used for other purposes as well, like slowing a race car down qui
 
 **For more information:** For demonstrations of the drag force in action to slow down short track race cars, check out [this video, courtesy of the National Hot Rod Association.](https://www.youtube.com/watch?v=xEjLviWTuXU)
 
-[This video shows the descent of Perseverance](https://www.youtube.com/watch?v=4czjS9h4Fpg) using a parachute to slow from 450 m/s to only about 30 m/s before it deployed to the surface of Mars.
+[This video shows the descent of Perseverance](https://www.youtube.com/watch?v=4czjS9h4Fpg) using a parachute to slow from 450 m/s to only about 30 m/s before it landed on the surface of Mars.
 
 <!-- Source PDF page 55; printed label 46. -->
 
@@ -780,7 +778,7 @@ You are standing a distance $d$ from a building and your friend is on the roof (
 
 ::::{admonition} Practice Problem 2-3
 
-For the following problems, plot the position, velocity, and acceleration for the first three seconds of motion. Example codes for python are provided in the [online repository](https://github.com/QuadriviumPress/dynamicsTextbook/tree/main/py_notebooks).
+For the following problems, plot the position, velocity, and acceleration for the first three seconds of motion. Example codes for Python are provided in the [online repository](https://github.com/QuadriviumPress/dynamicsTextbook/tree/main/py_notebooks).
 
 a) A ball with an initial velocity of 10 m $\mathrm{s}^{-1}$ and an acceleration of 9.8 m $\mathrm{s}^{-2}$, both in the $+x$ direction. Assume the initial position is $x_{0}$ = 0.
 

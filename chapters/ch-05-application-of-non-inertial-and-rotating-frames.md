@@ -67,7 +67,7 @@ $$
 \vec{F}_{cent}= -m\vec{\omega} \times (\vec{\omega} \times \vec{r}^{\prime })
 $$ (eq-5-5)
 
-Note that the acceleration from the centrifugal force is $\vec{\omega}\times (\vec{\omega}\times \vec{r}^{\prime })$ and this acceleration has the same form as the centripetal acceleration associated with circular motion (see [Chapter 1](#ch-1)). If you have circular motion, $\vec{\omega} \perp \vec{r}$ and $|\vec{F}_{circ}| = m\omega ^{2}r = \frac{mv^{2}}{r}$.
+Note that the acceleration from the centrifugal force is $\vec{\omega}\times (\vec{\omega}\times \vec{r}^{\prime })$ and this acceleration has the same form as the centripetal acceleration associated with circular motion (see [Chapter 1](#ch-1)). If you have circular motion, $\vec{\omega} \perp \vec{r}$ and $|\vec{F}_{cent}| = m\omega ^{2}r = \frac{mv^{2}}{r}$.
 
 ::::{admonition} Centrifugal vs Centripetal Acceleration
 
@@ -79,11 +79,9 @@ While similar in magnitude, the direction of the centrifugal force is not the sa
 
 To prove that the centrifugal force is radially outward, let’s go through an example vector cross product for uniform circular motion with its axis of rotation pointing up $(\hat{k}^{\prime })$. Even though we have a radial dependence with our cross product, we will use Cartesian coordinates for the rotating frame $(\hat{\imath}^{\prime },\hat{\jmath}^{\prime },\hat{k}^{\prime })$. The reason is, in our rotating frame, the radial vector will move with the non-inertial coordinate system. That is, from the perspective of a non-inertial observer rotating with the coordinate system, the radial vector does not change. So we can define our radial vector as being along the $x$-axis $(\vec{r}^{\prime }= r\hat{\imath}^{\prime })$ for example, and as the system rotates, our radial vector will remain along the $\hat{\imath}^{\prime }$ direction (both the position and the coordinates are rotating in this non-inertial frame).
 
-Using $\vec{\omega} = \omega \hat{k}^{\prime }$ and $\vec{r}^{\prime }= r\hat{\imath}^{\prime }$, the centrifugal acceleration is $\vec{\omega} \times (\vec{\omega} \times \vec{r}^{\prime }) = \omega \hat{k}^{\prime }\times (\omega \hat{k}^{\prime }\times r\hat{\imath}^{\prime })$. To solve this problem, we need to do two cross products. First, we will do the cross product
+Using $\vec{\omega} = \omega \hat{k}^{\prime }$ and $\vec{r}^{\prime }= r\hat{\imath}^{\prime }$, the centrifugal acceleration is $\vec{\omega} \times (\vec{\omega} \times \vec{r}^{\prime }) = \omega \hat{k}^{\prime }\times (\omega \hat{k}^{\prime }\times r\hat{\imath}^{\prime })$. To solve this problem, we need to do two cross products. First, we will do the cross product in brackets. (See [Chapter 1.5.2](#sec-1-5-2) for review on computing the cross product).
 
 <!-- Source PDF page 103; printed label 94. -->
-
-in brackets. (See [Chapter 1.5.2](#sec-1-5-2) for review on computing the cross product).
 
 $$
 \begin{aligned}
@@ -137,12 +135,9 @@ $$
 \vec{a} = -\omega ^{2}R\hat{r}
 $$
 
-which is just the centripetal acceleration. The force behind this acceleration is actually
-
+which is just the centripetal acceleration. The force behind this acceleration is actually friction with the table. The friction force points inward toward the center, because in the inertial frame the cat’s inertia tends to carry it in a straight line.
 
 <!-- Source PDF page 104; printed label 95. -->
-
-friction with the table. The friction force points inward toward the center, because the rotation makes the cat want to move outward (centrifugal force).
 
 $$
 \vec{f} = -\mu N\hat{r} = -\mu mg\hat{r}
@@ -392,7 +387,7 @@ Consider [Figure 5.4](#fig-5-4), which shows the position of a person on Earth�
 A coordinate system on Earth. The point shown is fixed to the surface of the Earth. The red coordinates show the non-inertial reference frame for an observer at this location $(O^{\prime })$. The black coordinates show the inertial reference frame at the center of the Earth, a distance $R$ from the point. Also shown are the latitude $\theta$, polar angle $\varphi$, and distance to the rotation axis $\rho$.
 :::
 
-Our observer is located at the point shown in [Figure 5.4](#fig-5-4). This person is at a latitude of $\theta$, where the equator is located at the $x,y-$plane of the inertial frame. We can also describe the person’s position using the polar angle $\varphi$ (also called the colatitude), where $\varphi = 90-\theta$. In the inertial frame, these angles do not change (e.g., the latitude of a fixed point on Earth does not change), but the $x,y$ axes rotate about the $z$ axis due to Earth’s spin.
+Our observer is located at the point shown in [Figure 5.4](#fig-5-4). This person is at a latitude of $\theta$, where the equator is located at the $x,y-$plane of the inertial frame. We can also describe the person’s position using the polar angle $\varphi$ (also called the colatitude), where $\varphi = 90^{\circ}-\theta$. In the inertial frame, these angles do not change (e.g., the latitude of a fixed point on Earth does not change), but the $x,y$ axes rotate about the $z$ axis due to Earth’s spin.
 
 The observer on Earth’s surface has a different coordinate system that is fixed from their perspective (they don’t see the rotation). For example, here on Earth we define up and down, North and South, East and West, and those directions are fixed from our reference, even though we are on a moving surface. North is always north. Up is always up. The Earth’s motion does not change your perspective on those directions.
 
@@ -447,7 +442,7 @@ $$
 (\vec{\omega} \times \vec{r}^{\prime }).
 $$
 
-As for the direction, the centrifugal force should be along an axis that is perpendicular to the rotation axis (e.g., $\hat{\rho}$ ). We can verify this by using the vector cross product, where the
+As for the direction, the centrifugal force should be along an axis that is perpendicular to the rotation axis (e.g., $\hat{\rho}$ ). We can verify this by using the vector cross product with the observer located at $\vec{R}\hat{k}^{\prime }$ and Earth’s angular velocity from Equation 5.9.
 
 <!-- Source PDF page 111; printed label 102. -->
 
@@ -459,8 +454,6 @@ As for the direction, the centrifugal force should be along an axis that is perp
 
 The vector cross product solution for the centrifugal force at a position that is at a latitude of $\theta$ from the equator. The point $P$ is undergoing circular motion with a radius of $\rho$, with $\rho = R\sin \varphi = R\cos \theta$.
 :::
-
-observer is located at $\vec{R}\hat{k}^{\prime }$ and the equation for Earth’s angular motion in the non-inertial frame from Equation 5.9.
 
 $$
 \vec{\omega}\times\vec{r}'=
@@ -509,7 +502,7 @@ $$
 \begin{aligned}
 |\vec{F}_{cen}|
 &=\sqrt{(-m\omega^2R\cos\theta\sin\theta)^2+(m\omega^2R\cos^2\theta)^2}\\
-&=m\omega^2R\cos\theta\sqrt{\sin^2\theta+\underbrace{\cos^2\theta}_{=1}}\\
+&=m\omega^2R\cos\theta\sqrt{\underbrace{\sin^2\theta+\cos^2\theta}_{=1}}\\
 &= m\omega ^{2}R\cos \theta
 \end{aligned}
 $$
@@ -581,11 +574,10 @@ For the $x^{\prime }$ and $y^{\prime }$ components, we use the projection of $T$
 
 ::::
 
-**2. Finding the non-inertial forces:** For our pendulum, the only non-inertial force we
+**2. Finding the non-inertial forces:** For our pendulum, the only non-inertial force we need to consider is the Coriolis force (the centrifugal force is negligible).
 
 <!-- Source PDF page 114; printed label 105. -->
-
-need to consider is the Coriolis force (the centrifugal force is negligible). In [Section 5.3](#sec-5-3) we found the Coriolis force for a velocity in 1-D. The Foucault pendulum, however, moves in $\hat{\imath}^{\prime },\hat{\jmath}^{\prime },\hat{k}^{\prime }$. If we assume small angles, then $z^{\prime }\ll \ell$ and any motion in the vertical direction $(\hat{k}^{\prime })$ will be negligible and we can approximate the velocity by $\vec{v}^{\prime }= \dot{x}^{\prime }\hat{\imath}^{\prime }+ \dot{y}^{\prime }\hat{\jmath}^{\prime }$.
+ In [Section 5.3](#sec-5-3) we found the Coriolis force for a velocity in 1-D. The Foucault pendulum, however, moves in $\hat{\imath}^{\prime },\hat{\jmath}^{\prime },\hat{k}^{\prime }$. If we assume small angles, then $z^{\prime }\ll \ell$ and any motion in the vertical direction $(\hat{k}^{\prime })$ will be negligible and we can approximate the velocity by $\vec{v}^{\prime }= \dot{x}^{\prime }\hat{\imath}^{\prime }+ \dot{y}^{\prime }\hat{\jmath}^{\prime }$.
 
 Using $\vec{\omega}$ from Equation 5.9 and $\vec{v}^{\prime }= \dot{x}^{\prime }\hat{\imath}^{\prime }+ \dot{y}^{\prime }\hat{\jmath}^{\prime }$, we can solve for the Coriolis force.
 
@@ -670,11 +662,9 @@ So the Foucault pendulum offers a direct way to measure your latitude. At the No
 
 Although forces like the centrifugal force and Coriolis force are fictitious, we can see the effects of rotating reference frames on objects and ourselves. A centrifuge is a device that rotates an object around a fixed axis very quickly. In laboratories, these high rotation speeds are used to separate out different substances into layers by their densities allowing pristine samples to be collected. The effective force can be hundreds or thousands of times that of a standard Earth gravity.
 
-Rotating rides at amusement parks operate at lower speeds than centrifuges, but those on the rides feel similar effects. When on one of these rides, you would feel your body move
+Rotating rides at amusement parks operate at lower speeds than centrifuges, but those on the rides feel similar effects. When on one of these rides, you would feel your body move outward, often against the wall. Space agencies also use systems like centrifuges for high gravity simulation during astronaut training. Astronauts leaving or returning to Earth feel changes in effective gravity that can affect the blood flow to their heads and make them pass out. With training, the astronauts can simulate those conditions and learn to function.
 
 <!-- Source PDF page 116; printed label 107. -->
-
-outward, often against the wall. Space agencies also use systems like centrifuges for high gravity simulation during astronaut training. Astronauts leaving or returning to Earth feel changes in effective gravity that can affect the blood flow to their heads and make them pass out. With training, the astronauts can simulate those conditions and learn to function.
 
 Courtesy of the ESA astronaut Andreas Mogensen, [this video shows](https://www.youtube.com/watch?v=Hgz7kJJSksM) the view from outside and inside a training centrifuge in operation.
 
@@ -729,7 +719,7 @@ $$
 
 ::::{admonition} Continued
 
-**Rotation Frame Fictitious Forces:**
+**Rotating Frame Fictitious Forces:**
 
 $$
 m\vec{a}'=m\vec{a}

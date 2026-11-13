@@ -492,22 +492,22 @@ We can solve for this equilibrium point by setting the net force and net torque 
 Free-body diagram of the pulley. There is a tension $T_{1}$ from the rope on the left, and a tension $T_{2}$ from the small mass $m$ acting at the center of mass. The pulley has its own gravity $Mg$. And there is the spring force $F_{s}$ acting on the right side of the pulley.
 :::
 
-Since we’re in equilibrium, the net torque must be zero. Therefore, $T_{1}= F_{s}$, otherwise the pulley would rotate. For a spring, $F_{s}= -kx = T_{1}$. The other unknown force is $T_{2}$, but that is simply the tension caused by the hanging mass $m$ and therefore $T_{2}= mg$.
+Since we’re in equilibrium, the net torque must be zero. Therefore, $T_{1}= F_{s}$, otherwise the pulley would rotate. Let $x$ be the downward displacement of the pulley (and mass $m$) from the position where the spring is unstretched. Because the rope does not slip, the spring stretches by $2x$, so $F_{s}= -k(2x) = T_{1}$. The other unknown force is $T_{2}$, but that is simply the tension caused by the hanging mass $m$ and therefore $T_{2}= mg$.
 
 <!-- Source PDF page 209; printed label 200. -->
 
-So for our sum of all forces, we have:
+So for our sum of all forces (taking upward as positive), we have:
 
 $$
 \sum F = T_{1}+ F_{s}- Mg - mg
 $$
 
 $$
-0 = -2kx - g(M + m) \quad\Rightarrow  \text{for equilibrium}, \sum F = 0
+0 = -2k(2x) - g(M + m) \quad\Rightarrow  \text{for equilibrium}, \sum F = 0
 $$
 
 $$
-x_{0}= - \frac{g(M + m)}{2k}
+x_{0}= - \frac{g(M + m)}{4k}
 $$
 
 **What is the period of small oscillations?** We want the differential equation of motion. If you can get the equation in the form of $\ddot{x} + Cx$ = 0, then you can read off $\omega _{0}^{2}$ and can get the period.
@@ -517,10 +517,10 @@ You can solve this problem using forces and torques, but we will use the conserv
 The potential energy is given by the gravitational potential energy of the two masses and the potential energy of the spring. Thus, our potential energy is:
 
 $$
-U = -Mgx - mgx + \frac{1}{2} k\Delta x^{2}
+U = -Mgx - mgx + \frac{1}{2} k(2x)^{2}
 $$
 
-where we have specified that the potential energy is zero for the masses at $x$ = 0. A convenient reference point (e.g., setting $x$ = 0 for the gravitational energy) is at $x_{0}$, since this is a known reference point. Note that the spring potential is *not* zero at $x = x_{0}$. So we need to consider $\Delta x$ for the spring.
+where we have specified that the gravitational potential energy is zero for the masses at $x$ = 0, and the spring stretch is $2x$ as discussed below.
 
 The kinetic energy of the system is given by the motion of translation energy of the mass, the translation energy of the pulley, and the rotation of the pulley.
 
@@ -564,11 +564,11 @@ The total energy is
 $$
 \begin{aligned}
 E &= K + U \\
-E &= \frac{1}{2} I\omega ^{2}+ \frac{1}{2} Mv^{2}+ \frac{1}{2} mv^{2}- Mgx - mgx + \frac{1}{2} k(2x - x_{0})^{2}
+E &= \frac{1}{2} I\omega ^{2}+ \frac{1}{2} Mv^{2}+ \frac{1}{2} mv^{2}- Mgx - mgx + \frac{1}{2} k[2(x - x_{0})]^{2}
 \end{aligned}
 $$
 
-where the change in potential energy depends on a displacement of $2x-x_{0}$, because we set our reference position to $x_{0}$ and the spring stretches and compresses at twice the rate that the pulley and mass move.
+where the spring term is written relative to equilibrium: the spring stretch is $2x$, so the stretch relative to equilibrium is $2(x-x_{0})$.
 
 <!-- Source PDF page 211; printed label 202. -->
 
@@ -577,37 +577,28 @@ For rotating without slipping, $\omega = v/R$. So we can simplify the above as:
 
 $$
 \begin{aligned}
-E &= \frac{1}{2} I \bigg(\frac{v}{R} \bigg)^{2}+ \frac{1}{2} Mv^{2}+ \frac{1}{2} mv^{2}- (M + m)gx + \frac{1}{2} k(2x - x_{0})^{2} \\
-E &= \frac{1}{2} v^{2} \bigg(\frac{I}{R^{2}} + M + m\bigg) - (M + m)gx + \frac{1}{2} k(2x - x_{0})^{2} \\
-E &= \frac{1}{2} v^{2}\bigg(\frac{1}{2} M + M + m\bigg) - (M + m)gx + \frac{1}{2} k(2x - x_{0})^{2}\quad\Rightarrow  I = \frac{1}{2} MR^{2} \\
-E &= \frac{1}{2} v^{2} \bigg(\frac{3}{2} M + m\bigg) - (M + m)gx + \frac{1}{2} k(2x - x_{0})^{2}
+E &= \frac{1}{2} I \bigg(\frac{v}{R} \bigg)^{2}+ \frac{1}{2} Mv^{2}+ \frac{1}{2} mv^{2}- (M + m)gx + \frac{1}{2} k[2(x - x_{0})]^{2} \\
+E &= \frac{1}{2} v^{2} \bigg(\frac{I}{R^{2}} + M + m\bigg) - (M + m)gx + 2k(x - x_{0})^{2} \\
+E &= \frac{1}{2} v^{2}\bigg(\frac{1}{2} M + M + m\bigg) - (M + m)gx + 2k(x - x_{0})^{2}\quad\Rightarrow  I = \frac{1}{2} MR^{2} \\
+E &= \frac{1}{2} v^{2} \bigg(\frac{3}{2} M + m\bigg) - (M + m)gx + 2k(x - x_{0})^{2}
 \end{aligned}
 $$
 
-Now take the derivative of the energy with respect to time.
+Now take the derivative of the energy with respect to time. It is convenient to measure the gravitational potential from the equilibrium height as well, so that the linear gravity term is absorbed into the definition of $x_{0}$ and only the quadratic spring term remains for small oscillations about equilibrium:
 
 $$
 \begin{aligned}
-\frac{\mathrm{d}E}{\mathrm{d}t} &= 0 = \frac{\mathrm{d}}{\mathrm{d}t} \bigg[\frac{1}{2} v^{2}\bigg(\frac{3}{2} M + m\bigg) - (M + m)gx + \frac{1}{2} k(2x - x_{0})^{2}\bigg] \\
-0 &= \bigg(\frac{3}{2} M + m\bigg) v \frac{\mathrm{d}v}{\mathrm{d}t} - (M + m)gv + k(2x - x_{0})(2v) \\
-0 &= \bigg(\frac{3}{2} M + m\bigg) \frac{\mathrm{d}v}{\mathrm{d}t} - (M + m)g + 2k(2x - x_{0}) \quad\Rightarrow  \mathrm{eliminate} v \\
-0 &= \frac{\mathrm{d}v}{\mathrm{d}t} + \Bigg(\frac{1}{\frac{3}{2} M + m} \Bigg)\Big[4kx - (M + m)g - 2kx_{0}\Big]
+\frac{\mathrm{d}E}{\mathrm{d}t} &= 0 = \frac{\mathrm{d}}{\mathrm{d}t} \bigg[\frac{1}{2} v^{2}\bigg(\frac{3}{2} M + m\bigg) + 2k(x - x_{0})^{2}\bigg] \\
+0 &= \bigg(\frac{3}{2} M + m\bigg) v \frac{\mathrm{d}v}{\mathrm{d}t} + 4k(x - x_{0})v \\
+0 &= \bigg(\frac{3}{2} M + m\bigg) \frac{\mathrm{d}v}{\mathrm{d}t} + 4k(x - x_{0}) \quad\Rightarrow  \mathrm{eliminate }v
 \end{aligned}
 $$
 
-With $x_0=-g(M+m)/(2k)$, this becomes
+Letting $X = x - x_{0}$, this becomes
 
 $$
-0=\frac{\mathrm{d}^2x}{\mathrm{d}t^2}
-+\left(\frac{1}{\frac32M+m}\right)
-\left[4kx-(M+m)g-2k\left(-\frac{g(M+m)}{2k}\right)\right],
-$$
-
-and hence
-
-$$
-0=\frac{\mathrm{d}^2x}{\mathrm{d}t^2}
-+\underbrace{\left(\frac{4k}{\frac32M+m}\right)}_{\omega_0^2}x.
+0=\frac{\mathrm{d}^2X}{\mathrm{d}t^2}
++\underbrace{\left(\frac{4k}{\frac32M+m}\right)}_{\omega_0^2}X.
 $$
 
 Note how we recover the differential equation of motion directly from energy conservation. We have it in the familiar form that we want and we can solve for the period of oscillations easily from this.

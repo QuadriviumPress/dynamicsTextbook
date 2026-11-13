@@ -145,7 +145,7 @@ where $\vec{F}_{i,int}$ is the force on the particle from the system itself (int
 $$
 \begin{aligned}
 \frac{\mathrm{d}\vec{p}_{tot}}{\mathrm{d}t} &= \sum \frac{\mathrm{d}}{\mathrm{d}t}\vec{p}_{i}= \sum \vec{F}_{i,int}+ \sum \vec{F}_{i,ext} \\
-\frac{\mathrm{d}\vec{p}_{tot}}{\mathrm{d}t} &= \sum \vec{F}_{i,ext}\quad\Rightarrow  \sum \vec{F}_{i,int}= 0 (\text{see Chapter}6.2)
+\frac{\mathrm{d}\vec{p}_{tot}}{\mathrm{d}t} &= \sum \vec{F}_{i,ext}\quad\Rightarrow  \sum \vec{F}_{i,int}= 0 (\text{see Chapter 6.2})
 \end{aligned}
 $$
 
@@ -788,13 +788,9 @@ $$
 
 At time $t+\mathrm{d}t$, the rocket expels exhaust in the $-x$ direction. Under the conservation of momentum, the rocket must be given equal momentum in the $+x$ direction (this is the impulse given to the rocket that propels it forward). The rocket gains a bit of velocity $\mathrm{d}v$ and speeds up. But as the rocket is gaining velocity, it is also losing mass because it is using up fuel by expelling the exhaust. The mass of exhaust will equal the mass lost by the rocket (we need to obey the conservation of mass). The exhaust at time $t$ + $\mathrm{d}t$ has a mass of $\mathrm{d}m_{ex}$ and a speed of $v_{ex}(-\hat{\imath})$ relative to the speed of the system as a whole (see [Figure 6.7](#fig-6-7)).
 
-In the frame of a stationary observer at time $t$ + $\mathrm{d}t$, the exhaust is moving at a speed of $(v - v_{ex})\hat{\imath}$ and the rocket has a mass $m -$ $\mathrm{d}m_{ex}$ and a velocity of $(v$ + $\mathrm{d}v)\hat{\imath}$. The total
-
+In the frame of a stationary observer at time $t$ + $\mathrm{d}t$, the exhaust is moving at a speed of $(v - v_{ex})\hat{\imath}$ and the rocket has a mass $m -$ $\mathrm{d}m_{ex}$ and a velocity of $(v$ + $\mathrm{d}v)\hat{\imath}$. The total momentum at time $t$ + $\mathrm{d}t$ is therefore,
 
 <!-- Source PDF page 138; printed label 129. -->
-
-
-momentum at time $t$ + $\mathrm{d}t$ is therefore,
 
 $$
 \vec{p}_{tot}(t+\mathrm{d}t)
@@ -818,9 +814,9 @@ This equation relates a differential velocity to a differential mass. But $\math
 
 $$
 \begin{aligned}
-\mathrm{d}v &= -v_{ex} \frac{\mathrm{d}m}{m} \quad\Rightarrow  \text{sub d}m_{ex}= -\mathrm{d}m \\
+\mathrm{d}v &= -v_{ex} \frac{\mathrm{d}m}{m} \quad\Rightarrow  \text{sub }\mathrm{d}m_{ex}= -\mathrm{d}m \\
 \int_{0}^{v_{f}} \mathrm{d}v &= -v_{ex}\int_{M}^{M_{f}} \frac{\mathrm{d}m}{m} \quad\Rightarrow  v_{ex}\text{is a constant}\\
-v_{f}- 0 &= -v_{ex}\Big(\ln m\Big|_{M}^{M_{f}}\Big) \quad\Rightarrow  \text{initial is}v = 0, m = M \\
+v_{f}- 0 &= -v_{ex}\Big(\ln m\Big|_{M}^{M_{f}}\Big) \quad\Rightarrow  \text{initial is }v = 0, m = M \\
 v_{f}&= -v_{ex}(\ln M_{f}- \ln M)
 \end{aligned}
 $$

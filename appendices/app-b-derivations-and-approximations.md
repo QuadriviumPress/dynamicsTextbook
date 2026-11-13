@@ -49,7 +49,7 @@ $$
 $$
 
 $$
-\frac{1}{r^{4}} \Bigg(\frac{\mathrm{d}r}{\mathrm{d}\theta} \Bigg)^{2}= \frac{2m(E - U_{eff})}{L^{2}} \quad\Rightarrow  \text{bring all}r \text{terms to the other side}$$
+\frac{1}{r^{4}} \Bigg(\frac{\mathrm{d}r}{\mathrm{d}\theta} \Bigg)^{2}= \frac{2m(E - U_{eff})}{L^{2}} \quad\Rightarrow  \text{bring all }r \text{terms to the other side}$$
 
 <!-- Source PDF page 284; printed label 275. -->
 
@@ -76,7 +76,7 @@ $$
 To solve Equation B.6, there is a substitution trick we can use to help simplify the problem. Instead of solving for $r$, we’re going to solve for $y = \frac{1}{r}$. The reason for this substitution is that
 
 $$
-\frac{\mathrm{d}y}{\mathrm{d}\theta} = - \frac{1}{r^{2}} \frac{\mathrm{d}r}{\mathrm{d}\theta} \quad\Rightarrow  \text{remember that}y = \frac{1}{r}
+\frac{\mathrm{d}y}{\mathrm{d}\theta} = - \frac{1}{r^{2}} \frac{\mathrm{d}r}{\mathrm{d}\theta} \quad\Rightarrow  \text{remember that }y = \frac{1}{r}
 $$
 
 Thus, we can write Equation B.6 in terms of $y = \frac{1}{r}$ instead of $r$.
@@ -307,7 +307,7 @@ You will use the small angle assumption many times in this course and in other c
 
 1. Use a calculator to verify that $\sin x \approx x$ and $\cos x \approx 1 - \frac{x^{2}}{2}$ for small angles.
 
-2. Try plotting both functions and see at which angles the approximations break down. Practice using a programming language like python if you can.
+2. Try plotting both functions and see at which angles the approximations break down. Practice using a programming language like Python if you can.
 
 3. You have a telescope and lens that can resolve (separate) objects that subtend angles of at least $0.0003^{\circ}$. Could you resolve a crater that is 1 km in diameter on the Moon with this telescope? Assume the Moon is 300,000 km away.
 

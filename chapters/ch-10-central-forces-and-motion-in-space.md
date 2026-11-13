@@ -535,7 +535,7 @@ $$
 $$
 \begin{aligned}
 0 &= \frac{1}{2} \frac{L^{2}}{mr^{2}} - \frac{\gamma}{r} - E \quad\Rightarrow  U_{eff}= \frac{1}{2} \frac{L^{2}}{mr^{2}} - \frac{\gamma}{r} \\
-0 &= \frac{L^{2}}{m} - 2\gamma r - 2Er^{2}\quad\Rightarrow  \text{multiply by}2r^{2}
+0 &= \frac{L^{2}}{m} - 2\gamma r - 2Er^{2}\quad\Rightarrow  \text{multiply by }2r^{2}
 \end{aligned}
 $$
 
@@ -606,11 +606,11 @@ The values of $r_{\min}$ and $E_{\min}$ represent a special case where there is 
 
 When $E = E_{\min}$, it means that your orbital solution has the minimum allowed potential energy and it can only orbit with a single, fixed radius. This solution describes a *circular* *orbit*.
 
-**Case (2)** $E > E_{\min}$ **and** $E < 0$: Consider [Figure 10.4](#fig-10-4) for a particle with an energy of $E = -0.2$. This energy puts the system just above the minimum effective potential curve. With that energy, the allowed radii for the particle are between $r \approx 0.1$ and $r \approx 0.24$ (under
+**Case (2)** $E > E_{\min}$ **and** $E < 0$: Consider [Figure 10.4](#fig-10-4) for a particle with an energy of $E = -0.2$. This energy puts the system just above the minimum effective potential curve. With that energy, the allowed radii for the particle are between $r \approx 0.1$ and $r \approx 0.24$ (under the condition $E \ge U_{eff}$ in [Figure 10.4](#fig-10-4)).
 
 <!-- Source PDF page 228; printed label 219. -->
 
-the condition $E \ge U_{eff}$ in [Figure 10.4](#fig-10-4)). That is, for radii of $r < 0.1$ and $r > 0.24, E = -0.2$ would be below the effective potential curve, which is not allowed.
+That is, for radii of $r < 0.1$ and $r > 0.24, E = -0.2$ would be below the effective potential curve, which is not allowed.
 
 This scenario describes a *bound elliptical orbit*. The particle can move freely from $r \approx 0.1$ to $r \approx 0.24$ and back again all with the same energy (energy is conserved). The positions of $r \approx 0.1$ and $r \approx 0.24$ are special, because they are where $\dot{r}$ is instantaneously zero, but in this case, the radial velocity does not stay zero (unlike in Case 1).
 
@@ -684,7 +684,7 @@ $$
 $$
 \begin{aligned}
 0 &= - \frac{L^{2}}{mr^{3}} + \frac{\gamma}{r^{2}} + \frac{3\gamma \varepsilon}{r^{4}} \\
-0 &= - \frac{L^{2}r}{m} + \gamma r^{2}+ 3\gamma \varepsilon \quad\Rightarrow  \text{multiply by}r^{4}
+0 &= - \frac{L^{2}r}{m} + \gamma r^{2}+ 3\gamma \varepsilon \quad\Rightarrow  \text{multiply by }r^{4}
 \end{aligned}
 $$
 
@@ -700,13 +700,13 @@ $$
 r=\frac{-(-L^2/m)\pm\sqrt{(-L^2/m)^2-4(\gamma)(3\gamma\varepsilon)}}{2\gamma}.
 $$
 
-So there are two values of $r > 0$ for which we can have a saddle point in the effective potential.
+So there are two values of $r > 0$ for which we can have an extremum (local maximum or minimum) in the effective potential.
 
 $$
 r=\frac{L^2/m\pm\sqrt{(L^2/m)^2-12\gamma^2\varepsilon}}{2\gamma}.
 $$
 
-Since these are by definition the radii at a local maximum or minimum, they are the solutions for a circular orbit. But only a local minimum will produce a stable circular orbit. Recall the discussion on saddle points from [Chapter 8.8](#sec-8-8).
+Since these are by definition the radii at a local maximum or minimum, they are the solutions for a circular orbit. But only a local minimum will produce a stable circular orbit. Recall the discussion of stable and unstable equilibria from [Chapter 8.8](#sec-8-8).
 
 Remember that effective force is the gradient of a potential, so our initial assumption was that $F_{eff}$ = 0 for circular orbits. This means that our two radii are at the minimum and maximum points of potential, one being at a stable position and the other at an unstable position. We can look back to [Chapter 8](#ch-8), to the analogy of a ball resting atop the potential energy curve to help describe the stability of positions. This means that the radius at the max potential will be unstable and the radius at the minimum potential will be stable.
 
@@ -922,10 +922,10 @@ A particle of mass $m$ moves in a circular orbit of radius $R$ under the influen
 
 ::::{admonition} Practice Problem 10-6
 
-Consider the modification of Earth’s gravitational field described by $U(r) = - \frac{\gamma}{r} \Big(1 + \frac{\varepsilon}{r^{2}}$
+Consider the modification of Earth’s gravitational field described by
 
 $$
-\Big)
+U(r) = -\frac{\gamma}{r}\left(1 + \frac{\varepsilon}{r^{2}}\right),
 $$
 
 where $\gamma$ and $\varepsilon$ are constants. A particle of mass $m$ is in a closed orbit in this gravitational potential with an angular momentum of $L$. What is the effective force associated with the potential?

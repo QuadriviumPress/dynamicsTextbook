@@ -15,7 +15,7 @@
 
 ::::
 
-In this chapter, we will expand on orbits and their properties within a gravitational potential that was introduced in the last chapter. When one thinks of orbits, they likely picture the planets orbiting the Sun, the Moon orbiting the Earth, or communication satellites orbiting the Earth. The force behind orbits is gravity. As a reminder, gravity is a central force ([Chapter 10](#ch-10)) that follows an inverse-square law. The consequences for an inverse-square law central force are that bound orbits will be elliptical. In this chapter, we will look at elliptical orbits in more detail and how they apply to Kepler’s Laws.
+In this chapter, we will expand on orbits and their properties within a gravitational potential that was introduced in the last chapter. When one thinks of orbits, they likely picture the planets orbiting the Sun, the Moon orbiting the Earth, or communication satellites orbiting the Earth. The force behind orbits is gravity. As a reminder, gravity is a central force ([Chapter 10](#ch-10)) that follows an inverse-square law. The consequences of an inverse-square law central force are that bound orbits will be elliptical. In this chapter, we will look at elliptical orbits in more detail and how they apply to Kepler’s Laws.
 
 ::::{admonition} Examples of Orbits
 
@@ -37,11 +37,9 @@ $$
 \varepsilon=\sqrt{1-\frac{b^2}{a^2}}.
 $$
 
-[Figure 11.1](#fig-11-1) also shows two special points in red, which are called the foci (focus is the singular term). These two foci, denoted as $f_{1}$ and $f_{2}$, are located on the semi-major axis, each at a distance $\varepsilon a$ from the center of the ellipse. The foci of an ellipse define the shape. An ellipse is defined by a locus (path) of points where the total distance from any point on
+[Figure 11.1](#fig-11-1) also shows two special points in red, which are called the foci (focus is the singular term). These two foci, denoted as $f_{1}$ and $f_{2}$, are located on the semi-major axis, each at a distance $\varepsilon a$ from the center of the ellipse. The foci of an ellipse define the shape. An ellipse is defined by a locus (path) of points where the total distance from any point on the locus to the two foci adds up to a constant. For example, [Figure 11.1](#fig-11-1) shows a point on the ellipse that is a distance $r_{1}$ from $f_{1}$ and a distance $r_{2}$ from $f_{2}$. The shape of the ellipse is defined such that the sum of those two distances $r_{1}+r_{2}$ = constant for every position on the locus. For an ellipse, $r_{1}+ r_{2}= 2a$.
 
 <!-- Source PDF page 238; printed label 229. -->
-
-the locus to the two foci adds up to a constant. For example, [Figure 11.1](#fig-11-1) shows a point on the ellipse that is a distance $r_{1}$ from $f_{1}$ and a distance $r_{2}$ from $f_{2}$. The shape of the ellipse is defined such that the sum of those two distances $r_{1}+r_{2}$ = constant for every position on the locus. For an ellipse, $r_{1}+ r_{2}= 2a$.
 
 :::{figure} ../images/figures/figure-11-1.png
 :label: fig-11-1
@@ -294,12 +292,9 @@ $$
 
 Thus, the total energy has increased because kinetic energy was added to the satellite. It does not matter if the rockets move the satellite toward the Earth $(\dot{r} < 0)$ or away from the Earth $(\dot{r} > 0)$, the kinetic energy term is always positive so it will always add to the total energy. The final energy, $E_{f}$, must be larger than our initial energy $E_{i}$. The exact amount of the increase depends on the radial velocity $\dot{r}$ given to the satellite by the engines. Since we are not given that quantity, all we can conclude is that the total energy of the satellite has increased due to the engines firing.
 
-b) There are a couple of ways we can answer this question. First, we can sketch the energy diagram. [Figure 11.4](#fig-11-4) shows a sketch of what the initial and final energies may
+b) There are a couple of ways we can answer this question. First, we can sketch the energy diagram. [Figure 11.4](#fig-11-4) shows a sketch of what the initial and final energies may look like for this satellite. Note, we are assuming that the boost in energy is sufficiently small that the satellite remains bound to the Earth.
 
 <!-- Source PDF page 244; printed label 235. -->
-
-
-look like for this satellite. Note, we are assuming that the boost in energy is sufficiently small that the satellite remains bound to the Earth.
 
 :::{figure} ../images/figures/figure-11-4.png
 :label: fig-11-4
@@ -329,11 +324,9 @@ The three laws of planetary motion are:
 
 3. The square of the period of a full orbit about the Sun is proportional to the cube of the semi-major axis.
 
-For the first law, we have shown in this chapter (and in the last chapter) that bound orbits are elliptical in a gravitational potential (we consider circular orbits to be a special case of the elliptical orbit where $r_{p}= r_{a}$). Gravity being a central force that follows an inverse-
+For the first law, we have shown in this chapter (and in the last chapter) that bound orbits are elliptical in a gravitational potential (we consider circular orbits to be a special case of the elliptical orbit where $r_{p}= r_{a}$). Gravity being a central force that follows an inverse-square law will naturally give rise to elliptical orbits provided that the system is bound.
 
 <!-- Source PDF page 245; printed label 236. -->
-
-square law will naturally give rise to elliptical orbits provided that the system is bound.
 
 ::::{tip} Quick Question
 
@@ -407,9 +400,11 @@ r_{p}+ r_{a}&= 2a \\
 2a &= \frac{r_{c}}{1 + \varepsilon} + \frac{r_{c}}{1 - \varepsilon} \\
 2a &= r_{c}\bigg(\frac{1 - \varepsilon}{1 - \varepsilon ^{2}} + \frac{1 + \varepsilon}{1 - \varepsilon ^{2}} \bigg) \\
 2a &= r_{c}\bigg(\frac{2}{1 - \varepsilon ^{2}} \bigg) \\
-1 - \varepsilon ^{2}&= \frac{r_{c}}{a} \quad\Rightarrow  r_{c}= \frac{L^{2}}{m\gamma}
+1 - \varepsilon ^{2}&= \frac{r_{c}}{a}
 \end{aligned}
 $$
+
+Using $r_{c}= L^{2}/(m\gamma)$,
 
 $$
 1 - \varepsilon ^{2}= \frac{L^{2}}{am\gamma}
@@ -456,12 +451,9 @@ $$
 T^{2}= \frac{4\pi ^{2}a^{3}}{GM}
 $$
 
-Note for comets, the orbit is around the Sun (the Sun is at one focus). So we need to
-
+Note for comets, the orbit is around the Sun (the Sun is at one focus). So we need to set $M = M_{sun}= 2.0 \times 10^{30}$ kg. Plugging in our numbers, we get:
 
 <!-- Source PDF page 248; printed label 239. -->
-
-set $M = M_{sun}= 2.0 \times 10^{30}$ kg. Plugging in our numbers, we get:
 
 $$
 [75\,\mathrm{years} \times (3.154 \times 10^{7}\,\mathrm{s/year})]^{2}

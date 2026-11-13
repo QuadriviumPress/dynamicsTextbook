@@ -1052,7 +1052,7 @@ $$
 **Problem 9-4:** [Question](#problem-9-4)
 
 $$
-N = 3m
+N = 3mg
 $$
 
 (solution-9-5)=
@@ -1105,7 +1105,7 @@ $$
 $$
 
 $$
-\mathrm{d}) T = 2\pi \sqrt{\frac{3m}{2k}}
+\mathrm{d}) T = 2\pi \sqrt{\frac{3M}{2k}}
 $$
 
 ::::
@@ -1182,7 +1182,7 @@ $$
 **Problem 10-8:** [Question](#problem-10-8)
 
 $$
-L = \sqrt{3A\beta mR^{5}e^{\beta R^{3}}}
+L = \sqrt{3A\beta mR^{5}e^{-\beta R^{3}}}
 $$
 
 (solution-10-9)=
@@ -1232,7 +1232,7 @@ $$
 $$
 
 $$
-\mathrm{c}) U_{eff}(r = r_{0}) = \frac{1}{54} \Bigg(\frac{L^{6}}{A^{2}m^{2}} \Bigg)
+\mathrm{c}) U_{eff}(r = r_{0}) = \frac{1}{54} \Bigg(\frac{L^{6}}{A^{2}m^{3}} \Bigg)
 $$
 
 d) Unstable
@@ -1358,7 +1358,7 @@ Solutions to Practice Problems from [Chapter 12.8](#sec-12-8)
 **Problem 12-1:** [Question](#problem-12-1)
 
 $$
-\ddot{x} = \frac{k}{m} (x - x_{0})
+\ddot{x} = -\frac{k}{m} (x - x_{0})
 $$
 
 (solution-12-2)=
@@ -1366,7 +1366,7 @@ $$
 **Problem 12-2:** [Question](#problem-12-2)
 
 $$
-\ddot{\theta} = \frac{3g}{4L} \theta
+\ddot{\theta} = -\frac{3g}{2L} \theta
 $$
 
 (solution-12-3)=
@@ -1409,10 +1409,10 @@ $$
 \text{a}) K = \frac{1}{2} m\dot{x}^{2}
 $$
 
-b) $U_{spring}= \frac{1}{2} kx^{2}$ and $U_{grav}= mgx\sin \theta$
+b) With $x$ measured from equilibrium, $U = \frac{1}{2} kx^{2}$ (gravity is already balanced at equilibrium).
 
 $$
-\mathrm{c}) L = \frac{1}{2} m\dot{x}^{2}- \frac{1}{2} kx^{2}- mgx\sin \theta; \ddot{x} = - \frac{k}{m} x - g\sin \theta
+\mathrm{c}) L = \frac{1}{2} m\dot{x}^{2}- \frac{1}{2} kx^{2}; \ddot{x} = - \frac{k}{m} x
 $$
 
 ::::

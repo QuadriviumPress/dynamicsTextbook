@@ -33,10 +33,10 @@ $$ (eq-1-1)
 :alt: Figure shows a standard set of 3D Cartesian axes, with a position vector pointing from the origin to a point P.
 :width: 143px
 
-Position of a vector in Cartesian coordinates where $\hat{\imath}$ is the unit vector for $x, \hat{\jmath}$ is the unit vector for $y$, and $\hat{k}$ is the unit vector for $z$.
+Position vector in Cartesian coordinates where $\hat{\imath}$ is the unit vector for $x, \hat{\jmath}$ is the unit vector for $y$, and $\hat{k}$ is the unit vector for $z$.
 :::
 
-The equations of linear motion in 1-D:
+The equations of linear motion by Cartesian component:
 
 $$
 \begin{aligned}
@@ -207,7 +207,7 @@ $$
 \vec{v} = \frac{\mathrm{d}\vec{r}}{\mathrm{d}t} = \frac{\mathrm{d}(r\hat{r})}{\mathrm{d}t} = \frac{\mathrm{d}r}{\mathrm{d}t} \hat{r} + r \frac{\mathrm{d}\hat{r}}{\mathrm{d}t}
 $$
 
-where $\frac{\mathrm{d}\hat{r}}{\mathrm{d}t} \neq 0$. Consider the line moving in [Figure 1.4](#fig-1-4). The $\hat{r}$ unit vector will point in a different direction as the radius vector moves around the circle.
+where $\frac{\mathrm{d}\hat{r}}{\mathrm{d}t} \neq 0$. Consider the radial direction as it moves in [Figure 1.4](#fig-1-4). The $\hat{r}$ unit vector will point in a different direction as the radius vector moves around the circle.
 
 [Figure 1.5](#fig-1-5) defines the $\hat{r}$ and $\hat{\theta}$ unit vectors in terms of Cartesian axes. Both $\hat{r}$ and $\hat{\theta}$ have components in $x$ and $y$.
 
@@ -588,7 +588,7 @@ A wheel rotating at an angular speed of $\omega _{0}$ is allowed to decelerate. 
 
 Let’s first consider the motion. The wheel is fixed in place and spinning along an axis. The rate at which it is spinning is slowing down with time, but we do not know the angular acceleration (only that it is negative). We also do not know how long it takes to come to rest. But we are given the initial angular speed $(\omega _{0})$, and the speed $\omega _{\tau}$ at a specific time $\tau$, where $\omega _{0}> \omega _{\tau}$. We also know the final angular speed $\omega _{t}$ = 0 at time $t$.
 
-To solve this problem, we need to look at equations for angular motion. With constant angular acceleration, these have the same form as the equations for rotational motion that we went through earlier in [Section 1.3](#sec-1-3).
+To solve this problem, we need to look at equations for angular motion. With constant angular acceleration, these are analogous to the constant-acceleration linear equations in [Section 1.3](#sec-1-3).
 
 $$
 \omega = \alpha t + \omega _{0}, \theta = \frac{1}{2} \alpha t^{2}+ \omega _{0}t + \theta _{0}
@@ -758,19 +758,22 @@ $$
 
 ::::{admonition} Definitions
 
-In general, angular velocity $(\omega)$ and angular acceleration $(\alpha)$ are vectors, although we often drop the vector symbol. The true definitions of these terms are:
+In general, angular velocity $(\omega)$ and angular acceleration $(\alpha)$ are vectors, although we often drop the vector symbol. For motion about a fixed origin, angular velocity can be written as
 
 $$
-\begin{aligned}
-\vec{\omega} &= \frac{\vec{r} \times \vec{v}}{r^{2}} \\
-\vec{\alpha} &= \frac{\vec{r} \times \vec{a}}{r^{2}}
-\end{aligned}
+\vec{\omega} = \frac{\vec{r} \times \vec{v}}{r^{2}},
 $$
 
-where the direction is given by the right-hand rule. For rotational motion:
+and angular acceleration is defined by
+
+$$
+\vec{\alpha} = \frac{\mathrm{d}\vec{\omega}}{\mathrm{d}t}.
+$$
+
+The related expression $\vec{\alpha} = (\vec{r} \times \vec{a})/r^{2}$ holds only under additional assumptions (for example, fixed $r$ with $\vec{r}\cdot\vec{v}=0$). The direction of $\vec{\omega}$ is given by the right-hand rule. For rotational motion:
 
 :::{image} ../images/figures/figure-p026-2.png
-:alt: Cartoon of the angular momentum vector with rotation direction.
+:alt: Cartoon of the angular velocity vector with rotation direction.
 :width: 124px
 :align: center
 :::
@@ -907,7 +910,7 @@ You might run across a very complicated equation you need to approximate, someth
 
 ::::{tip} Challenge Question
 
-1. Find the first three terms of the Taylor series for $y = e^{\cos (2x)}$ assuming $x$ is close to 0. Plot the function and your approximation using a programming language. See the [online repository](https://github.com/QuadriviumPress/dynamicsTextbook/tree/main/py_notebooks) for examples using python.
+1. Find the first three terms of the Taylor series for $y = e^{\cos (2x)}$ assuming $x$ is close to 0. Plot the function and your approximation using a programming language. See the [online repository](https://github.com/QuadriviumPress/dynamicsTextbook/tree/main/py_notebooks) for examples using Python.
 
 ::::
 
@@ -948,11 +951,9 @@ Now our expansion gives us a simple function for how $\cos x$ varies with $x$ fo
 
 One of the simplest, fundamental concepts in physics is the case of constant motion where $d = vt$. And this basic equation is at the core of one of the most ground-breaking discoveries in the 21st century, gravitational waves.
 
-First predicted by Einstein in 1916, gravitational waves are a natural outcome of General Relativity and can be described as “ripples” in spacetime. They are incredibly small in
+First predicted by Einstein in 1916, gravitational waves are a natural outcome of General Relativity and can be described as “ripples” in spacetime. They are incredibly small in magnitude, where *strong* gravitational waves have magnitudes on the order of $10^{-18}$ m, which is around one thousandth the diameter of a proton. With the level of sensitivity needed, it was roughly a century between prediction and detection.
 
 <!-- Source PDF page 31; printed label 22. -->
-
-magnitude, where *strong* gravitational waves have magnitudes on the order of $10^{-18}$ m, which is around one thousandth the diameter of a proton. With the level of sensitivity needed, it was roughly a century between prediction and detection.
 
 The first gravitational waves were detected on September 14, 2015 by the Laser Interferometer Gravitational-wave Observatory (LIGO) experiment. The experiment itself uses interferometry where identical laser beams reflect off mirrors and then converge on a detector producing an interference pattern (see [Figure 1.10](#fig-1-10)). When a gravitational wave passes through the Earth, it temporarily warps space and changes the distance between the mirrors which subsequently changes the arrival time of the reflected beams at the detector. LIGO can detect a change in distance between its mirrors on the order of $10^{-19}$ m.
 
@@ -965,11 +966,9 @@ The first gravitational waves were detected on September 14, 2015 by the Laser I
 Cartoon showing the basic concept behind the LIGO experiment. Laser light is split into two orthogonal beams and reflects off distant mirrors that are 4 km away. The reflected light combines at a detector. The distance between the mirrors is so precise that the reflected waves should destructively interfere at the detector. A gravitational wave alters the mirror separations causing the combined wave to produce an interference pattern instead.
 :::
 
-The slight change in distance from a passing gravitational wave alters the interference pattern measured at the detector. [Figure 1.11](#fig-1-11) shows the gravitational wave signal from the first detection, which was generated by a pair of merging stellar-mass black holes located 1.3 billion light years away. The interference pattern is often described as a “chirp”, because it rises to higher frequencies toward the end. Research into gravitational waves includes LIGO in the USA, VIRGO in Italy, and GEO600 in Germany, with a third site, KAGRA in Japan. Multiple experiments all over the world are necessary to pinpoint the direction of the gravitational wave events because each site will
+The slight change in distance from a passing gravitational wave alters the interference pattern measured at the detector. [Figure 1.11](#fig-1-11) shows the gravitational wave signal from the first detection, which was generated by a pair of merging stellar-mass black holes located 1.3 billion light years away. The interference pattern is often described as a “chirp”, because it rises to higher frequencies toward the end. Research into gravitational waves includes LIGO in the USA, VIRGO in Italy, and GEO600 in Germany, with a third site, KAGRA in Japan. Multiple experiments all over the world are necessary to pinpoint the direction of the gravitational wave events because each site will measure a difference in signal and arrival time.
 
 <!-- Source PDF page 32; printed label 23. -->
-
-measure a difference in signal and arrival time.
 
 :::{figure} ../images/figures/figure-1-11.png
 :label: fig-1-11
@@ -1293,7 +1292,7 @@ $$
 
 ::::{admonition} Practice Problem 1-13
 
-Plot the functions and Taylor series approximations (first three non-zero terms) for the following functions ([sample python script](https://github.com/QuadriviumPress/dynamicsTextbook/tree/main/py_notebooks)).
+Plot the functions and Taylor series approximations (first three non-zero terms) for the following functions ([sample Python script](https://github.com/QuadriviumPress/dynamicsTextbook/tree/main/py_notebooks)).
 
 a) $f(x) = e^{-x^{2}}$ for $x \approx 0$
 

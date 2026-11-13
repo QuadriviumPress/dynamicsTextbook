@@ -201,7 +201,7 @@ $$
 $$
 
 $$
-0 = T - mg - ma_{e}\quad\Rightarrow  m \text{at rest in}S^{\prime }, \mathrm{so} \sum \vec{F}_{S^{\prime }}= 0
+0 = T - mg - ma_{e}\quad\Rightarrow  m \text{at rest in }S^{\prime }, \mathrm{so} \sum \vec{F}_{S^{\prime }}= 0
 $$
 
 $$
@@ -261,12 +261,9 @@ $$
 
 So the acceleration of the box relative to the ground is $-0.4g$ (taking forward to be positive).
 
-b) To get the acceleration of the box relative to the truck, $a_{b^{\prime }}$, we use coordinate transformation. Note that the acceleration of the truck is $\vec{a}_{0}= -0.6g\hat{\imath}$ because the
-
+b) To get the acceleration of the box relative to the truck, $a_{b^{\prime }}$, we use coordinate transformation. Note that the acceleration of the truck is $\vec{a}_{0}= -0.6g\hat{\imath}$ because the truck is decelerating and we set the forward direction as the positive $x$ direction.
 
 <!-- Source PDF page 86; printed label 77. -->
-
-truck is decelerating and we set the forward direction as the positive $x$ direction.
 
 $$
 \vec{a}_{b^{\prime }}= \vec{a}_{b}- \vec{a}_{0}
@@ -304,7 +301,7 @@ $$
 $$
 
 $$
-a_{b^{\prime }}= -0.4g + 0.6g \quad\Rightarrow  \vec{F}_{fic}= -ma_{0}\text{and} a_{0}= -0.6g
+a_{b^{\prime }}= -0.4g + 0.6g \quad\Rightarrow  \vec{F}_{fic}= -ma_{0}\text{ and }a_{0}= -0.6g
 $$
 
 $$
@@ -366,11 +363,13 @@ where $\theta$ is the angle between $\vec{\omega}$ and $\vec{r}$, and $\hat{\the
 
 <!-- Source PDF page 88; printed label 79. -->
 
-Similarly, we can show that the magnitude of acceleration is:
+Similarly, we can show that the acceleration is:
 
 $$
 \vec{a} = -\omega ^{2}\vec{\rho}
 $$
+
+with magnitude $\omega^{2}\rho$.
 
 since $\vec{a} = \vec{\omega} \times (\vec{\omega} \times \vec{r}) = \vec{\omega} \times (\omega \rho \hat{\theta}$ ), and $\vec{\omega} \perp \hat{\theta}$. The negative sign arises from the cross product and indicates that the acceleration is directed toward the rotation axis. See [Chapter 1.5.2](#sec-1-5-2) for a review of vector cross products and the right-hand rule.
 
@@ -458,30 +457,22 @@ where $\hat{n}$ is a unit vector in the direction of $\vec{\omega}$ (the normal 
 The $\hat{\imath}^{\prime }$ coordinate is offset by an angle $\varphi$ from the rotation axis (angle in red). In time $\Delta t, \hat{\imath}^{\prime }$ moves from position $A$ to position $B$ due to rotation. The change in the vector position is shown by the change $\Delta \hat{\imath}^{\prime }$ and the angle $\Delta \theta$.
 :::
 
-From [Figure 4.8](#fig-4-8), the $\hat{\imath}^{\prime }$ axis moves a distance $\Delta \hat{\imath}^{\prime }$ between points $A$ and $B$ in a time $\Delta t$. That displacement in time $\Delta t$ is:
+From [Figure 4.8](#fig-4-8), the $\hat{\imath}^{\prime }$ axis moves between points $A$ and $B$ in a time $\Delta t$. The magnitude of that change is
 
 $$
-\Delta \hat{\imath}^{\prime }= (\hat{\imath}^{\prime }\sin \varphi)\Delta \theta
+|\Delta \hat{\imath}^{\prime }| = (\sin \varphi)\,\Delta \theta,
 $$
 
-$$
-\frac{\Delta \hat{\imath}^{\prime}}{\Delta t} = (\hat{\imath}^{\prime}\sin \varphi) \frac{\Delta \theta}{\Delta t} \quad\Rightarrow  \text{divide by}\Delta t
-$$
-
-Assuming that $\Delta t$ is sufficiently short, we can set $\Delta t \rightarrow$ $\mathrm{d}t, \Delta \hat{\imath}^{\prime }\rightarrow$ $\mathrm{d}\hat{\imath}^{\prime }$, and $\Delta \theta \rightarrow$ $\mathrm{d}\theta$:
+since $|\hat{\imath}^{\prime }|=1$ and $\varphi$ is the angle between $\hat{\imath}^{\prime }$ and the rotation axis. The direction of $\Delta \hat{\imath}^{\prime }$ is perpendicular to $\hat{\imath}^{\prime }$ (along the sense of rotation). Dividing by $\Delta t$ and taking the limit $\Delta t \rightarrow 0$ gives
 
 $$
-\frac{\mathrm{d}\hat{\imath}^{\prime}}{\mathrm{d}t} = (\hat{\imath}^{\prime}\sin \varphi) \frac{\mathrm{d}\theta}{\mathrm{d}t}
+\left|\frac{\mathrm{d}\hat{\imath}^{\prime}}{\mathrm{d}t}\right| = (\sin \varphi)\,\omega \quad\Rightarrow  \omega = \frac{\mathrm{d}\theta}{\mathrm{d}t}.
 $$
 
-$$
-\frac{\mathrm{d}\hat{\imath}^{\prime}}{\mathrm{d}t} = (\hat{\imath}^{\prime}\sin \varphi)\omega \quad\Rightarrow  \omega = \frac{\mathrm{d}\theta}{\mathrm{d}t}
-$$
-
-The form of this equation should look familiar. It looks like a vector cross product. Recall that $\vec{a} \times \vec{b} = ab\sin \theta$, where $\theta$ is the angle between the vectors. So we can say that
+This is the magnitude of a vector cross product. Recall that $|\vec{a} \times \vec{b}| = ab\sin \theta$, where $\theta$ is the angle between the vectors. With the right-hand rule fixing the direction,
 
 $$
-\frac{\mathrm{d}\hat{\imath}^{\prime}}{\mathrm{d}t} = \vec{\omega} \times \hat{\imath}^{\prime}
+\frac{\mathrm{d}\hat{\imath}^{\prime}}{\mathrm{d}t} = \vec{\omega} \times \hat{\imath}^{\prime}.
 $$
 
 You can apply similar arguments to get
@@ -697,11 +688,9 @@ In red is the rotating frame where the particle is moving in the counter-clockwi
 
 **Solution**
 
-Inertial Frame: In the inertial frame, an observer, $O$ is looking at this particle orbit the
+Inertial Frame: In the inertial frame, an observer $O$ is looking at this particle orbiting the star. There is a single force, gravity, acting on the particle.
 
 <!-- Source PDF page 94; printed label 85. -->
-
-star. There is a single force, gravity, acting on the particle.
 
 $$
 \sum \vec{F}_{I}= - \frac{GMm}{R^{2}} \hat{r} = m\vec{a}

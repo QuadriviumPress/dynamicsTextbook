@@ -274,7 +274,7 @@ $$
 $$
 \begin{aligned}
 K &= \frac{1}{2} (m_{1}+ m_{2})(\dot{y}_{1})^{2}+ \frac{1}{2} I \bigg(\frac{\dot{y}_{1}}{R} \bigg)^{2} \\
-&= \frac{1}{2} \bigg(m_{1}+ m_{2}+ \frac{1}{2} M\bigg)\dot{y}_{1}^{2}\quad\Rightarrow  \text{sub in}I = \frac{1}{2} MR^{2}
+&= \frac{1}{2} \bigg(m_{1}+ m_{2}+ \frac{1}{2} M\bigg)\dot{y}_{1}^{2}\quad\Rightarrow  \text{sub in }I = \frac{1}{2} MR^{2}
 \end{aligned}
 $$
 
@@ -738,7 +738,7 @@ The solution is a differential equation of motion, but it is difficult to solve 
 
 Initially, it might seem like the Euler-Lagrange Method is unnecessarily complicated, but we’re really just touching the edge of what it can be used for. Remember that this textbook is still mostly focusing on simple, idealized problems. The real world of experimentation and research is much more complex, and many physics problems don’t have simple, analytical solutions and can only be probed numerically using computers.
 
-Lagrangian mechanics help simplify the calculations for complex or even chaotic systems where forces are hard to define or the initial conditions can drastically change the outcome (e.g., consider the [motion of a double pendulum](https://www.youtube.com/watch?v=czLIj-4suOk)). In terms of physics research, solving problems with the Euler-Lagrange method is often more efficient when mapping the motion of stars in galactic mergers or near supermassive black holes, tracing particle collisions in accelerators, solving problems in fluid mechanics, or tracking systems of particles in thermodynamics or quantum mechanics. The Euler-Lagrange equations are a tool to break down big problems into smaller calculations.
+Lagrangian mechanics helps simplify the calculations for complex or even chaotic systems where forces are hard to define or the initial conditions can drastically change the outcome (e.g., consider the [motion of a double pendulum](https://www.youtube.com/watch?v=czLIj-4suOk)). In terms of physics research, solving problems with the Euler-Lagrange method is often more efficient when mapping the motion of stars in galactic mergers or near supermassive black holes, tracing particle collisions in accelerators, solving problems in fluid mechanics, or tracking systems of particles in thermodynamics or quantum mechanics. The Euler-Lagrange equations are a tool to break down big problems into smaller calculations.
 
 One common application of Lagrangian mechanics is with magnetohydrodynamics (MHD), which is the study of fluids that conduct electricity. MHD is used in many branches of physics, but one example is nuclear fusion experimentation, where many experiments seek to produce energy by magnetically confining a fast-moving plasma in a torus. MHD research must solve various equations such as the equation of state, mass continuity, Faraday’s law, and Ohm’s law simultaneously for the entire system, and these equations are usually non-linear with time. As such, Lagrangian mechanics are often employed to simplify the problem.
 
@@ -767,7 +767,7 @@ $$
 
 ::::{admonition} Continued
 
-The Euler-Lagrange equations and the Lagrangian hold under very general circumstances. You can apply these equations to n-dimensional systems (e.g., you do not need to be restricted to 3 dimensions). Systems in n-dimension are often called Euclidean space. In broad terms, you can express the Euler-Lagrange equations as:
+The Euler-Lagrange equations and the Lagrangian hold under very general circumstances. You can apply these equations to n-dimensional systems (e.g., you do not need to be restricted to 3 dimensions). Such $n$-dimensional systems are often described in Euclidean space. In broad terms, you can express the Euler-Lagrange equations as:
 
 $$
 \frac{\mathrm{d}}{\mathrm{d}t} \Bigg(\frac{\partial L}{\partial \dot{x}_{i}} \Bigg) = \frac{\partial L}{\partial x_{i}}

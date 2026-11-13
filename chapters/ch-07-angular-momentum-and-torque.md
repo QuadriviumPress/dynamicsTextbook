@@ -65,7 +65,7 @@ $$
 &= m_{i}(\dot{\vec{r}}_{i}\times \dot{\vec{r}}_{i}+ \vec{r}_{i}\times \ddot{\vec{r}}_{i}) \quad\Rightarrow  \text{apply the time derivative to each term}\\
 &= m_{i}(0 + \vec{r}_{i}\times \ddot{\vec{r}}_{i}) \quad\Rightarrow  \text{the cross product of two identical vectors is zero}\\
 &= \vec{r}_{i}\times (m_{i}\ddot{\vec{r}}_{i}) \quad\Rightarrow  \text{mass is a constant}, \text{so you can put it anywhere}\\
-&= \vec{r}_{i}\times \vec{F}_{i}\quad\Rightarrow  \text{recall that}F = ma = m\ddot{r} \text{for constant mass}\end{aligned}
+&= \vec{r}_{i}\times \vec{F}_{i}\quad\Rightarrow  \text{recall that }F = ma = m\ddot{r} \text{for constant mass}\end{aligned}
 $$
 
 We get that the time derivative of the angular momentum equals the cross product of $\vec{r}$ and $\vec{F}$. This cross product is also known as the torque, $\vec{\tau}$.
@@ -117,15 +117,13 @@ $$
 
 ::::{admonition} Torques in the Earth-Moon System
 
-You’ve probably heard that the Moon causes tides on
+You’ve probably heard that the Moon causes tides on Earth. The tides don’t occur right when the Moon is overhead; instead, the tides are ahead of the Moon. As a consequence, the Earth’s tides bulge at an angle to the Moon. This bulge pulls on the Moon and the Moon in return pulls on the bulge (equal and opposite reactions); see the figure below (not to scale). Because these tiny forces are at an angle relative to the Earth-Moon radial line, they will each cause a torque. The torque on the Moon pulls the Moon ahead in its orbit slightly (the Moon gains angular momentum), whereas the torque on Earth drags the Earth slightly back in its spin (the Earth loses angular momentum). This is a case of angular momentum conservation! The net effect is very small, but the Moon is slowly moving away from us (at a rate of $\sim 40$ mm per year) and the Earth’s day is slowly increasing (by $\sim 2$ ms per century). For more information, see the [Wikipedia webpage](https://en.wikipedia.org/wiki/Tidal_acceleration) and [Explaining Science’s webpage](https://explainingscience.org/2014/05/27/the-days-are-getting-longer/) on tidal acceleration and the day on Earth.
 
 :::{image} ../images/figures/figure-p149-1.png
 :alt: Figure shows a representation of the Earth-Moon system, exaggerating the tidal bulge to show torque.
 :width: 204px
 :align: center
 :::
-
-Earth. The tides don’t occur right when the Moon is overhead; instead, the tides are ahead of the Moon. As a consequence, the Earth’s tides bulge at an angle to the Moon. This bulge pulls on the Moon and the Moon in return pulls on the bulge (equal and opposite reactions), see figure (not to scale). Because these tiny forces are at an angle relative to the Earth-Moon radial line, they will each cause a torque. The torque on the Moon pulls the Moon ahead in its orbit slightly (the Moon gains momentum), whereas the torque on Earth drags the Earth slightly back in its spin (the Earth loses momentum). This is a case of angular momentum conservation! The net effect is very small, but the Moon is slowly moving away from us (at a rate of $\sim 40$ mm per year) and the Earth’s day is slowly increasing (by $\sim 2$ ms per century). For more information, see the [Wikipedia webpage](https://en.wikipedia.org/wiki/Tidal_acceleration) and [Explaining Science’s webpage](https://explainingscience.org/2014/05/27/the-days-are-getting-longer/) on tidal acceleration and the day on Earth.
 
 ::::
 
@@ -685,12 +683,9 @@ $$
 f = F \bigg(\frac{mRr + I}{mR^{2}+ I} \bigg)
 $$
 
-To fully solve this problem, however, we need to know the moment of inertia $I$. What is $I$ for a wheel? We will assume that the wheel consists of a thick ring with an inner
+To fully solve this problem, however, we need to know the moment of inertia $I$. What is $I$ for a wheel? We will assume that the wheel consists of a thick ring with an inner radius of $r$ and an outer radius of $R$. In this case, the rotation axis is through the center of the wheel, so we don’t need to apply the parallel axis theorem ([Chapter 7.2.2](#sec-7-2-2)). The moment of inertia for a thick ring with an axis through its center is $I_{CM}= \frac{1}{2} M(r_{1}^{2}+r_{2}^{2})$ (see [Appendix A.4](#sec-A-4)). For our values, this gives $I = \frac{1}{2} m(r^{2}+ R^{2})$. Adding our equation for $I$ to the problem, we get:
 
 <!-- Source PDF page 164; printed label 155. -->
-
-
-radius of $r$ and an outer radius of $R$. In this case, the rotation axis is through the center of the wheel, so we don’t need to apply the parallel axis theorem ([Chapter 7.2.2](#sec-7-2-2)). The moment of inertia for a thick ring with an axis through its center is $I_{CM}= \frac{1}{2} M(r_{1}^{2}+r_{2}^{2})$ (see [Appendix A.4](#sec-A-4)). For our values, this gives $I = \frac{1}{2} m(r^{2}+ R^{2})$. Adding our equation for $I$ to the problem, we get:
 
 $$
 \begin{aligned}
@@ -699,7 +694,7 @@ f &= F \frac{2Rr + r^{2}+ R^{2}}{3R^{2}+ r^{2}}
 \end{aligned}
 $$
 
-1. Find the *maximum* amount of friction for the wheel if the mass is 45 kg and the coefficient of kinetic friction is $\mu _{k}= 0.15$.
+1. Find the *maximum* amount of friction for the wheel if the mass is 45 kg and the coefficient of static friction is $\mu _{s}= 0.15$.
 
 2. How does the maximum amount of friction compare to the friction necessary to keep the wheel rolling without slipping? Assume $r = 7.5$ cm, $R = 12.5$ cm, and $F$ = 180 N.
 
@@ -721,11 +716,9 @@ The conservation of angular momentum is a fundamental physics concept. It is som
 Examples of fidget spinners. Image credit: Matthias Wewering from Pixabay
 :::
 
-While the fidget spinner is an example of a simple low-weight mechanical gyroscope, there
+While the fidget spinner is an example of a simple low-weight mechanical gyroscope, there are other types, including fluid, laser, fiber-optic, and vibrational, all working on the same basic principles of rotational motion. For example, with vibrational or MEMS (micro-electro-mechanical system) gyroscopes, the angular velocity in the sensor produces torques on vibration elements, providing measurable displacements that can then be amplified to produce an angular velocity signal. Three sensors arranged orthogonally in a single chip provide three dimensional components and track changes in orientation. This is the type of gyroscope used in smart phones to provide image stabilization in a camera or auto-rotation, track step counts in fitness programs, and help give accurate location and positioning with accelerometers in GPS satellites.
 
 <!-- Source PDF page 165; printed label 156. -->
-
-are other types, including fluid, laser, fiber-optic, and vibrational, all working on the same basic principles of rotational motion. For example, with vibrational or MEMS (micro-electro-mechanical system) gyroscopes, the angular velocity in the sensor produces torques on vibration elements, providing measurable displacements that can then be amplified to produce an angular velocity signal. Three sensors arranged orthogonally in a single chip provide three dimensional components and track changes in orientation. This is the type of gyroscope used in smart phones to provide image stabilization in a camera or auto-rotation, track step counts in fitness programs, and help give accurate location and positioning with accelerometers in GPS satellites.
 
 **For more information:**
 

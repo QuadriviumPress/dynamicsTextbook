@@ -5,7 +5,7 @@
 
 **Welcome!**
 
-This resource is an open-source textbook for second-year classical mechanics and flipped classroom instruction that is currently under development for Queen’s University by Prof Sarah Sadavoy with support from Queen’s students Cora Sleegers and Lance Schonberg. This textbook is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA). Materials can be used, shared, and adapted with credit, but materials should not be used for commercial purposes.
+This resource is an open-source textbook for second-year classical mechanics and flipped classroom instruction that is currently under development for Queen’s University by Prof. Sarah Sadavoy with support from Queen’s students Cora Sleegers and Lance Schonberg. This textbook is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA). Materials can be used, shared, and adapted with credit, but materials should not be used for commercial purposes.
 
 This textbook covers the main topics of the second-year dynamics course for Queen’s University, PHYS 206. These topics include:
 
@@ -31,9 +31,9 @@ This textbook covers the main topics of the second-year dynamics course for Quee
 
 **How to Best Use this Book**
 
-This book follows the design and format from *[Introductory Physics: Building Models to Describe Our World](https://github.com/OSTP/PhysicsArtofModelling)*, which is an open-source textbook for first-year physics developed by Prof Ryan Martin and students Emma Neary, Joshua Rinaldo, and Olivia Woodman among others.
+This book follows the design and format from *[Introductory Physics: Building Models to Describe Our World](https://github.com/OSTP/PhysicsArtofModelling)*, which is an open-source textbook for first-year physics developed by Prof. Ryan Martin and students Emma Neary, Joshua Rinaldo, and Olivia Woodman among others.
 
-To help broaden the physics instruction, this book contains a number of different elements to help with the learning process, including checkpoint questions, worked examples, student commentary, and real-world applications of the physics. There are also videos and extra problems using python [available via our online repository](https://github.com/QuadriviumPress/dynamicsTextbook/tree/main). Each textbook feature is represented by a different tag, as summarized below:
+To help broaden the physics instruction, this book contains a number of different elements to help with the learning process, including checkpoint questions, worked examples, student commentary, and real-world applications of the physics. There are also videos and extra problems using Python [available via our online repository](https://github.com/QuadriviumPress/dynamicsTextbook/tree/main). Each textbook feature is represented by a different tag, as summarized below:
 
 ::::{admonition} Learning Objectives
 
@@ -57,7 +57,7 @@ Additional information to help you reflect on or research a topic.
 
 ::::{admonition} Student’s Thoughts
 
-Commentary from a student’s perspective on challenging concepts.
+Commentary from a student’s perspective on challenging concepts (in the chapters these appear as named boxes such as Lance’s Thoughts or Cora’s Thoughts).
 
 ::::
 
@@ -93,7 +93,7 @@ Problems at the end of each chapter to test your understanding of the concepts.
 
 **Physics Mindset and Strategies**
 
-Physics teaches **problem solving**. The main goals of this textbook are to develop your **physics toolkit** and to teach **critical thinking** so that you can break down big problems into smaller, easier to implement pieces. There are often multiple ways to solve a physics problem, and by building your foundation, you will be able to select which of those ways is most efficient or most ideal. When solving problems, think about the different methods you could use to solve physics problems and under which situations you would favor one method over another.
+Physics teaches **problem solving**. The main goals of this textbook are to develop your **physics toolkit** and to teach **critical thinking** so that you can break down big problems into smaller pieces that are easier to implement. There are often multiple ways to solve a physics problem, and by building your foundation, you will be able to select which of those ways is most efficient or most appropriate. When solving problems, think about the different methods you could use to solve physics problems and under which situations you would favor one method over another.
 
 *Thinking like a physicist*: there are lots of ways to approach physics problems. As you practice solving problems, try to recognize and develop the strategies that work best for you. Everyone is different, but here are some common tips and strategies to consider:
 

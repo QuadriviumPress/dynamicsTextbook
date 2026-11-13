@@ -46,11 +46,9 @@ $$
 
 where $\Delta \vec{r}$ represents the displacement between two points, $r_{1}$ and $r_{2}$. Alternatively, the vector dot product can be solved following $\vec{F} \cdot \Delta \vec{r} = F\Delta r\cos \theta$, where $\theta$ is the angle between the two vectors.
 
-If $\vec{F}$ and $\mathrm{d}\vec{r}$ are parallel $(\theta$ = 0), then the force is acting in the same direction as the displacement and the force does maximum positive work. If the force is perpendicular to the displacement $(\theta = \frac{\pi}{2})$, then the force does zero work. That is, the force is not responsible for the displacement and contributes no work to that displacement. If the force
+If $\vec{F}$ and $\mathrm{d}\vec{r}$ are parallel $(\theta$ = 0), then the force is acting in the same direction as the displacement and the force does maximum positive work. If the force is perpendicular to the displacement $(\theta = \frac{\pi}{2})$, then the force does zero work. That is, the force is not responsible for the displacement and contributes no work to that displacement. If the force is antiparallel to the displacement $(\theta = \pi)$, then the force does maximum negative work (the force acts to counter the motion as much as it can).
 
 <!-- Source PDF page 174; printed label 165. -->
-
-is antiparallel to the displacement $(\theta = \pi)$, then the force does maximum negative work (the force acts to counter the motion as much as it can).
 
 ::::{tip} Quick Question
 
@@ -101,7 +99,7 @@ The work done by the force $F$ going from position $x_{1}$ to $x_{2}$ can be fou
 $$
 \begin{aligned}
 \int_{x_{1}}^{x_{2}} F(x)\mathrm{d}x &= \int_{x_{1}}^{x_{2}} \mathrm{d}K \\
-W_{2}- W_{1}&= K_{2}- K_{1}
+W(x_{1}\rightarrow x_{2}) &= K_{2}- K_{1}
 \end{aligned}
 $$
 
@@ -228,11 +226,9 @@ So while the values of $W$ and $K$ as measured in the two frames (stationary and
 
 Near the Earth’s surface, we often describe the gravitational force as $\vec{F}_{g}= m\vec{g}$, where $\vec{g}$ is a constant vector that points down vertically and has a constant magnitude.
 
-Consider the case where the position of a heavy box of mass $m$ changes from $y_{1}$ to $y_{2}$ in vertical height and that both positions $y_{2}$ and $y_{1}$ are near the Earth’s surface. Work is done by gravity as the box moves by this displacement. The vector describing the displacement of
+Consider the case where the position of a heavy box of mass $m$ changes from $y_{1}$ to $y_{2}$ in vertical height and that both positions $y_{2}$ and $y_{1}$ are near the Earth’s surface. Work is done by gravity as the box moves by this displacement. The vector describing the displacement of the box is $\Delta \vec{y} = (y_{2}-y_{1})\hat{\jmath}$, whereas the gravitational force is $\vec{F}_{g}= -mg\hat{\jmath}$, which is constant. Taking the equation for work with a constant force, the work is:
 
 <!-- Source PDF page 178; printed label 169. -->
-
-the box is $\Delta \vec{y} = (y_{2}-y_{1})\hat{\jmath}$, whereas the gravitational force is $\vec{F}_{g}= -mg\hat{\jmath}$, which is constant. Taking the equation for work with a constant force, the work is:
 
 $$
 \Delta W = \vec{F}_{g}\cdot \Delta \vec{y}
@@ -610,7 +606,7 @@ Once again, we want to set a convenient initial value like $x_{1}$ = 0 (the equi
 
 ::::{tip} Quick Questions
 
-1. Show that the potential energy of a pendulum can be written as $U = \frac{1}{2} mgh\theta ^{2}$ for small angles of $\theta$ and setting $\theta _{1}$ = 0.
+1. Show that the potential energy of a pendulum of length $L$ can be written as $U = \frac{1}{2} mgL\theta ^{2}$ for small angles of $\theta$ and setting $\theta _{1}$ = 0.
 
 2. Show that the potential energy of the electric force $F_{e}= \frac{kQq}{r^{2}} \hat{r}$ is given by $U = \frac{kQq}{r}$, where $k$ is the electric constant, $Q$ is the electric charge of the central object forming the electric field, and $q$ is the charge of the test particle in the field.
 
@@ -766,7 +762,7 @@ At the local maximum saddle point, however, a slight perturbation will have a hu
 
 ::::{admonition} Cora’s Thoughts
 
-When looking at potential graphs it can
+When looking at potential graphs it can be useful to consider the functions as hills for a ball to roll on. At the exact max of the function, the ball will not roll, however, with a small perturbation, it will roll making it an unstable position. At the minimum, the ball will also be stationary, but with a small perturbation, it will not roll much. The valley that the ball is in keeps it in a stable position.
 
 :::{figure} ../images/figures/figure-8-6.png
 :label: fig-8-6
@@ -776,8 +772,6 @@ When looking at potential graphs it can
 
 A ball rolling on the same potential graph from [Figure 8.5](#fig-8-5).
 :::
-
-be useful to consider the functions as hills for a ball to roll on. At the exact max of the function, the ball will not roll, however, with a small perturbation, it will roll making it an unstable position. At the minimum, the ball will also be stationary, but with a small perturbation, it will not roll much. The valley that the ball is in keeps it in a stable position.
 
 ::::
 
@@ -801,7 +795,7 @@ which is a quadratic equation with the solutions $x = -1$ m and $x$ = 2 m.
 
 Although there are two equilibrium points, only one of these is a *stable* equilibrium solution.
 
-Visually, we can see from the figure of the potential, that our minimum saddle point is at $x$ = 2 m. But if we wanted to calculate the saddle point without plotting, the true equilibrium position is when the second derivative of the potential is positive. The second derivative of our potential is:
+Visually, we can see from the figure of the potential that our stable equilibrium (local minimum) is at $x$ = 2 m. But if we wanted to identify the stable point without plotting, the equilibrium is stable when the second derivative of the potential is positive. The second derivative of our potential is:
 
 $$
 \frac{\partial ^{2}U(x)}{\partial x^{2}} = \frac{\partial}{\partial x} (6x^{2}- 6x - 12) = 12x - 6
@@ -815,7 +809,7 @@ At $x = -1$ m, $U^{\prime \prime }< 0$ and at $x$ = 2 m, $U^{\prime \prime }> 0$
 
 ::::{admonition} Real World Applications
 
-Lagrange points are saddle points that correspond to maxima or minima in gravitational potential between the planets and the Sun. These are special points where gravity from the Sun and planet and the centrifugal force balance. For example, Jupiter has a collection of “moons” called Trojan asteroids that are located in two clusters within Jupiter’s orbit at the Lagrange Points L4 and L5, which are potential minima. These asteroids are effectively trapped by a local potential minimum saddle point and they orbit the Sun (not Jupiter) in lock-step with Jupiter. For more information, see the [hyperphysics webpage](http://hyperphysics.phy-astr.gsu.edu/hbase/Solar/trojan.html) for Trojan satellites and [NASA’s webpage](https://solarsystem.nasa.gov/resources/754/what-is-a-lagrange-point/) on Lagrange points.
+Lagrange points are special locations where gravity from the Sun and a planet, together with the centrifugal force in the co-rotating frame, balance. Points L1–L3 are saddle points of the effective potential. Points L4 and L5 are extrema of that effective potential that can be dynamically stable because of Coriolis effects. For example, Jupiter has a collection of “moons” called Trojan asteroids that are located in two clusters within Jupiter’s orbit at L4 and L5. These asteroids stay near those points and orbit the Sun (not Jupiter) in lock-step with Jupiter. For more information, see the [hyperphysics webpage](http://hyperphysics.phy-astr.gsu.edu/hbase/Solar/trojan.html) for Trojan satellites and [NASA’s webpage](https://solarsystem.nasa.gov/resources/754/what-is-a-lagrange-point/) on Lagrange points.
 
 ::::
 
@@ -965,13 +959,13 @@ The potential energy is important to setting how a system, when released, will m
 
 ::::{admonition} Continued
 
-For systems with only conservative forces,
+For systems with only conservative forces, $\Delta W_{nc}= 0$, so
 
 $$
-\Delta E = \Delta (K + U)
+\Delta E = \Delta (K + U) = 0
 $$
 
-which is the equation of energy conservation.
+and mechanical energy is conserved ($K + U$ = constant).
 
 ::::
 

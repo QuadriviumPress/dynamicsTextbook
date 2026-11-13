@@ -264,7 +264,7 @@ Now let’s consider a simple pendulum. A simple pendulum is a mass that hangs a
 Example of a simple pendulum. The mass $m$ is in equilibrium when it is vertically downward and displaced from equilibrium when shifted an angle $\theta$ from the vertical axis. A restoring force $(F)$ moves the pendulum back to equilibrium.
 :::
 
-A pendulum is a simple harmonic oscillator as well, because it has an equilibrium position (straight down) and a restoring force that is proportional to the displacement will seek to return the pendulum to that position.
+A pendulum is a simple harmonic oscillator as well, because it has an equilibrium position (straight down) and a restoring force proportional to the displacement that seeks to return the pendulum to that position.
 
 ::::{admonition} Keep in Mind
 
@@ -479,7 +479,7 @@ A mass $m$ forms a simple pendulum with a massless rope of length $L$. The mass 
 
 **Solution**
 
-This problem contains two simple harmonic oscillators. Let’s look at a free-body diagram for the mass. At the position of the mass, the forces are gravity on the mass, tension in the rope, and the spring force. Breaking up the gravitational force into its components along the axis of the rope and perpendicular to that axis, we get the restoring force from the pendulum as $F_{p}= F_{g}\sin \theta \approx \frac{mg}{L} x$ for small angles, $\theta$. Note that for small angles, both the restoring forces act in the same direction.
+This problem contains two simple harmonic oscillators. Let’s look at a free-body diagram for the mass. At the position of the mass, the forces are gravity on the mass, tension in the rope, and the spring force. Breaking up the gravitational force into its components along the axis of the rope and perpendicular to that axis, we get the restoring force from the pendulum as $F_{p}= -F_{g}\sin \theta \approx -\frac{mg}{L} x$ for small angles, $\theta$ (the minus sign shows that the force opposes the displacement). Note that for small angles, both restoring forces act in the same sense.
 
 :::{figure} ../images/figures/figure-3-11.png
 :label: fig-3-11
@@ -538,11 +538,9 @@ $$
 
 In the harmonic motion described above, energy is perfectly conserved (e.g., there is no loss of energy from friction). In practice, most oscillators undergoing harmonic motion are damped or driven. Examples of damped (energy lost) oscillations include the suspension in a vehicle (this is on purpose to limit the oscillations from bumps on the road) and tuned mass dampers in tall buildings to limit motion at high floors from earthquakes or strong winds. Examples of driven (energy gained) oscillations include pushing a child on a swing (when timed right, the child goes higher and higher) or resonances in bridges. Damped and driven motion will not be covered here.
 
-But for fun, here are some videos that show damping motion in action. An excellent example of a tuned mass damper is the Taipei 101 building in Taiwan. Unlike most skyscrapers, the
+But for fun, here are some videos that show damping motion in action. An excellent example of a tuned mass damper is the Taipei 101 building in Taiwan. Unlike most skyscrapers, the tuned mass damper in Taipei 101 is available to be seen. Here is [a nice video showing the Taipei 101 building tuned mass damper](https://www.youtube.com/watch?v=ohKqE_mwMmo) in action. This video does a nice job [illustrating why these dampers work](https://www.youtube.com/watch?v=f1U4SAgy60c).
 
 <!-- Source PDF page 73; printed label 64. -->
-
-tuned mass damper in Taipei 101 is available to be seen. Here is [a nice video showing the Taipei 101 building tuned mass damper](https://www.youtube.com/watch?v=ohKqE_mwMmo) in action. This video does a nice job [illustrating why these dampers work](https://www.youtube.com/watch?v=f1U4SAgy60c).
 
 And to also showcase driven motion, here is a video from 1940 which shows the [collapse of the Tacoma Narrows bridge](https://youtu.be/GBa_USozxFM?t=75) in the USA during a strong wind after less than four months in operation. Here is the [Millennium pedestrian bridge in the UK](https://www.youtube.com/watch?v=eAXVa__XWZ8). It did not collapse, but note how the oscillations are driven; as the bridge sways, more and more people become unbalanced at the same time and then take steps in sequence driving stronger oscillations.
 
@@ -802,7 +800,7 @@ c) Find the angular frequency and period of the mass as it oscillates.
 
 d) Find the equations for displacement, velocity, and acceleration in terms of the variables given.
 
-e) Plot the functions from part d). Sample python codes are available in the [online repository](https://github.com/QuadriviumPress/dynamicsTextbook/tree/main/py_notebooks).
+e) Plot the functions from part d). Sample Python codes are available in the [online repository](https://github.com/QuadriviumPress/dynamicsTextbook/tree/main/py_notebooks).
 
 ::::
 
