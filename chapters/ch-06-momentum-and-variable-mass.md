@@ -22,15 +22,21 @@ In this chapter, we will review linear momentum and the conservation of momentum
 
 Momentum is a dynamic property of a system, equal to mass times velocity.
 
-$$
+```{math}
+:label: eq-6-1
+:enumerator: 6.1
+
 \vec{p} = m\vec{v}
-$$ (eq-6-1)
+```
 
 In [Chapter 2](#ch-2), we related momentum to Newton’s second law. Namely, the net force on a system is equal to the change in momentum for that system.
 
-$$
+```{math}
+:label: eq-6-2
+:enumerator: 6.2
+
 \sum \vec{F} = \frac{\mathrm{d}\vec{p}}{\mathrm{d}t}
-$$ (eq-6-2)
+```
 
 If we assume that mass is constant we can substitute in Equation (6.1):
 
@@ -51,9 +57,12 @@ If the net external force is equal to zero ($\sum \vec{F}=0$), then the total mo
 
 Consider an isolated system of n particles that have distinct masses and velocities. The total momentum of the system is given by:
 
-$$
+```{math}
+:label: eq-6-3
+:enumerator: 6.3
+
 \vec{p}_{tot}= \sum \vec{p}_{i}= \vec{p}_{1}+ \vec{p}_{2}+ \cdots + \vec{p}_{n}
-$$ (eq-6-3)
+```
 
 <!-- Source PDF page 123; printed label 114. -->
 
@@ -125,9 +134,12 @@ which is basically saying that the time derivative of the momentum for the $i$th
 
 To then get the total momentum of an isolated system, we need to sum over individual particles, $\vec{p}_{tot}= \sum \vec{p}_{i}$. This gives us our nested sums,
 
-$$
+```{math}
+:label: eq-6-4
+:enumerator: 6.4
+
 \frac{\mathrm{d}\vec{p}_{tot}}{\mathrm{d}t} = \sum_{i=1}^{N}\sum_{\substack{j=1\\j\neq i}}^{N}\vec{F}_{ij}= 0
-$$ (eq-6-4)
+```
 
 where you start with the outer summation and set a value for $i$ before cycling through the inner summation and setting all possible values for $j$. For an example, if $N$ = 3, the nested sums would give $\vec{F}_{12},\vec{F}_{13},\vec{F}_{21},\vec{F}_{23},\vec{F}_{31},$ and $\vec{F}_{32}$ in that order.
 
@@ -136,9 +148,12 @@ where you start with the outer summation and set a value for $i$ before cycling 
 
 The conservation of linear momentum draws directly from Newton’s third law. In an isolated system, all forces balance (equal and opposite reactions) such that the total momentum of the system is constant. But if there is an external force, then the total linear momentum is no longer constant. For a simple particle in a system,
 
-$$
+```{math}
+:label: eq-6-5
+:enumerator: 6.5
+
 \frac{\mathrm{d}\vec{p}_{i}}{\mathrm{d}t} = \sum \vec{F}_{i}= \vec{F}_{i,int}+ \vec{F}_{i,ext}
-$$ (eq-6-5)
+```
 
 where $\vec{F}_{i,int}$ is the force on the particle from the system itself (internal force) and $\vec{F}_{i,ext}$ is the external force on the particle. If you then look at all particles in the system:
 
@@ -164,9 +179,12 @@ $$
 
 where $F$ is the net force acting on the system. We can re-define the net force in terms of momentum, however.
 
-$$
+```{math}
+:label: eq-6-6
+:enumerator: 6.6
+
 \vec{I} = \int_{t_{1}}^{t_{2}} \vec{F}\mathrm{d}t = \int_{t_{1}}^{t_{2}} \frac{\mathrm{d}\vec{p}}{\mathrm{d}t} \mathrm{d}t = \int_{t_{1}}^{t_{2}} \mathrm{d}\vec{p} = \vec{p}_{2}- \vec{p}_{1}= \Delta \vec{p}
-$$ (eq-6-6)
+```
 
 The impulse of a force represents the change in linear momentum in the system. Note that mass does not need to be constant in the definition of an impulse.
 
@@ -380,9 +398,12 @@ $$
 \vec{p}_{i}= \vec{p}_{f}
 $$
 
-$$
+```{math}
+:label: eq-6-7
+:enumerator: 6.7
+
 m_{1}\vec{v}_{1,i}+ m_{2}\vec{v}_{2,i}= m_{1}\vec{v}_{1,f}+ m_{2}\vec{v}_{2,f}
-$$ (eq-6-7)
+```
 
 But to fully solve this problem, we cannot just use the conservation of momentum, because we have two unknown quantities $(v_{1,f}$ and $v_{2,f})$. To have a unique solution with two unknown quantities, you need to have at least two unique equations. For our second equation, we will use the conservation of kinetic energy (we will return to kinetic energy in [Chapter 8](#ch-8)), where kinetic energy can be expressed as $K = \frac{1}{2} mv^{2}$.
 
@@ -394,15 +415,21 @@ so the total kinetic energy is conserved.
 
 Multiplying through by 2 gives
 
-$$
+```{math}
+:label: eq-6-8
+:enumerator: 6.8
+
 m_1v_{1,i}^2+m_2v_{2,i}^2=m_1v_{1,f}^2+m_2v_{2,f}^2.
-$$ (eq-6-8)
+```
 
 Now we have two equations and two unknowns and can solve the problem. To make the math easier, we will re-arrange Equation 6.7 to bring all $m_{1}$ terms to one side and all $m_{2}$ terms to the other side.
 
-$$
+```{math}
+:label: eq-6-9
+:enumerator: 6.9
+
 m_{1}(v_{1,i}- v_{1,f}) = m_{2}(v_{2,f}- v_{2,i})
-$$ (eq-6-9)
+```
 
 ::::
 
@@ -416,9 +443,12 @@ $$
 m_{1}(v_{1,i}^{2}- v_{1,f}^{2}) = m_{2}(v_{2,f}^{2}- v_{2,i}^{2})
 $$
 
-$$
+```{math}
+:label: eq-6-10
+:enumerator: 6.10
+
 m_{1}(v_{1,i}- v_{1,f})(v_{1,i}+ v_{1,f}) = m_{2}(v_{2,f}- v_{2,i})(v_{2,f}+ v_{2,i})
-$$ (eq-6-10)
+```
 
 where we use the difference of squares, $(a^{2}-b^{2}) = (a-b)(a+b)$ to simplify the equation.
 
@@ -489,9 +519,12 @@ $$
 
 where $\vec{r}_{i}$ is the position of the $i$th particle relative to the origin and $m_{i}$ is the mass of that particle. Since $\sum m_{i}= M$ is the total mass of the system, the center of mass is:
 
-$$
+```{math}
+:label: eq-6-11
+:enumerator: 6.11
+
 \vec{R}_{cm}= \frac{\sum m_{i}\vec{r}_{i}}{M}
-$$ (eq-6-11)
+```
 
 Note that you can think of the center of mass as a mass-weighted average position. The formal definition of an average quantity is:
 
@@ -533,15 +566,21 @@ $$
 
 If the particle mass is constant, then the total momentum of a system of particles can be written as:
 
-$$
+```{math}
+:label: eq-6-12
+:enumerator: 6.12
+
 \vec{p} = \sum m_{i}\vec{v}_{i}= \sum m_{i} \frac{\mathrm{d}\vec{r}_{i}}{\mathrm{d}t} = \frac{\mathrm{d}}{\mathrm{d}t} \sum (m_{i}\vec{r}_{i})
-$$ (eq-6-12)
+```
 
 Note that the term in the summation from the above equation is equivalent to $M\vec{R}_{cm}$ from Equation 6.11. Thus, we can put the total momentum in terms of the center of mass.
 
-$$
+```{math}
+:label: eq-6-13
+:enumerator: 6.13
+
 \vec{p} = \frac{\mathrm{d}}{\mathrm{d}t} (M\vec{R}_{cm}) = M\vec{v}_{cm}
-$$ (eq-6-13)
+```
 
 where $\vec{v}_{cm}$ is the velocity of the center of mass. In other words, the total momentum of a system of particles is equivalent to the total mass of the system times the velocity of the center of mass (how the center of mass of the system is moving).
 
@@ -878,7 +917,7 @@ $$
 \vec{I} = \int_{t_{1}}^{t_{2}} \vec{F}\mathrm{d}t = \Delta \vec{p}
 $$
 
-Collisions are when momentum is exchanged between objects in a system. There are two types, inelastic collisions (the objects stick together) and elastic collisions (the objects rebound away). If the total linear momentum from the collisions is conserved, then we can say:
+During a collision, objects exchange momentum. Total kinetic energy is conserved in an elastic collision and decreases in an inelastic collision. In a perfectly inelastic collision the objects stick together. Objects can also rebound in an inelastic collision. If the net external impulse is negligible, total momentum is conserved in either kind of collision.
 
 $$
 \vec{p}_{i}= \vec{p}_{f}
@@ -1021,7 +1060,7 @@ b) If this impulse is delivered to the student in 0.20 seconds, then what is the
 
 ::::{admonition} Practice Problem 6-5
 
-A bullet traveling at a velocity of $v\hat{\imath}$ is shot through a stationary block of wood head-on. When it emerges from the other side, the bullet has lost half its speed. If the block has a mass of $M$ and the bullet has a mass of $m$, what is the velocity of the block of wood after the bullet emerges? (Ignore any friction or loss of energy. Assume the block of wood loses no mass.)
+A bullet traveling at a velocity of $v\hat{\imath}$ is shot through a stationary block of wood head-on. When it emerges from the other side, the bullet has lost half its speed. If the block has a mass of $M$ and the bullet has a mass of $m$, what is the velocity of the block of wood after the bullet emerges? Assume the block loses no mass and the external horizontal impulse during the collision is negligible.
 
 ::::
 
@@ -1068,7 +1107,7 @@ Figure for [Problem 6-7](#problem-6-7).
 
 ::::{admonition} Practice Problem 6-8
 
-On a strange alien planet, Grog has invented a rudimentary car by attaching four wheels to a long piece of wood. Grog then fixes another piece of wood vertically to the front of it and operates the car by throwing 0.25-kg rocks perfectly horizontally at 20 m/s to bounce off the vertical piece. The rock rebounds with only one quarter of its original speed (Grog ducks) and lands behind the wooden car. If there is no loss of energy to friction, what is Grog’s speed after throwing 10 rocks? Grog’s mass is 70 kg and the wheeled vehicle has a mass of 30 kg. Neglect the mass of the rocks still on the car after each throw.
+On a strange alien planet, Grog builds a four-wheeled wooden car with a vertical board fixed to the front. Starting from rest, Grog throws 0.25 kg rocks horizontally forward at 20 m/s relative to the car. Each rock bounces off the board, leaving it at 5 m/s backward relative to the car immediately after the bounce. Grog ducks and the rock lands behind the car. What is Grog’s speed relative to the ground after 10 rocks have rebounded? Grog has a mass of 70 kg and the car has a mass of 30 kg. Neglect any horizontal impulse from the ground and the mass of the unthrown rocks, apart from the one about to be thrown.
 
 :::{figure} ../images/figures/figure-6-10.png
 :label: fig-6-10
@@ -1079,7 +1118,7 @@ On a strange alien planet, Grog has invented a rudimentary car by attaching four
 Figure for [Problem 6-8](#problem-6-8).
 :::
 
-*Note, this problem could be considered a variable mass question as the loss of the rocks* *ends up changing the mass of the car. If you want to challenge yourself, try solving* *the problem including the mass loss.*
+*For an additional challenge, account for the mass of all the unthrown rocks still on board at each step.*
 
 ::::
 

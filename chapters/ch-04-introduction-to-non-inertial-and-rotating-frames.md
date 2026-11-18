@@ -86,9 +86,12 @@ $$
 
 where we have introduced a “new force”, $\vec{F}_{fic}$. We call this “new force” a *fictitious force* or an inertial force. For the second law to match in both the inertial and non-inertial (accelerating) frame, we add in these fictitious forces to the non-inertial frame, where
 
-$$
+```{math}
+:label: eq-4-1
+:enumerator: 4.1
+
 \vec{F}_{fic}= -m\vec{a}_{S^{\prime }S}
-$$ (eq-4-1)
+```
 
 <!-- Source PDF page 82; printed label 73. -->
 
@@ -130,11 +133,14 @@ So now we have matching physics in both reference frames. That is, the two obser
 
 <!-- Source PDF page 83; printed label 74. -->
 
-$$
+```{math}
+:label: eq-4-2
+:enumerator: 4.2
+
 \underbrace{\sum\vec{F}_{S'}}_{\text{non-inertial frame}}
 =\underbrace{\sum\vec{F}_{S}}_{\text{inertial frame}}
 +\underbrace{\vec{F}_{fic}}_{\text{correction}}
-$$ (eq-4-2)
+```
 
 ::::{admonition} Equivalence Principle of Mechanics
 
@@ -510,9 +516,12 @@ $$
 
 Thus, our coordinate transformation is:
 
-$$
+```{math}
+:label: eq-4-3
+:enumerator: 4.3
+
 \vec{v} = \vec{v}^{\prime }+ \vec{\omega} \times \vec{r}^{\prime }
-$$ (eq-4-3)
+```
 
 where $\vec{v}$ is the velocity relative to the inertial frame, $\vec{v}^{\prime }$ is the velocity relative to the rotating frame, and $\vec{\omega} \times \vec{r}^{\prime }$ is the coordinate transformation of the rotating frame.
 
@@ -547,11 +556,14 @@ $$
 
 Recall however that $\vec{r} = \vec{r}^{\prime }$ since both frames have the same origin and same end point, $P$. As a result, we can say that the above equation can be written as:
 
-$$
+```{math}
+:label: eq-4-4
+:enumerator: 4.4
+
 \left(\frac{\mathrm{d}\vec{r}}{\mathrm{d}t}\right)_{I}
 =\underbrace{\left[\left(\frac{\mathrm{d}}{\mathrm{d}t}\right)_{R}
 +\vec{\omega}\times\right]}_{\text{operator}}\vec{r}
-$$ (eq-4-4)
+```
 
 where the term in front of $\vec{r}$ acts like a coordinate transformation operator on vector $\vec{r}$ to go from the rotating frame to the inertial frame. But you can technically apply an operator to any vector, it doesn’t have to be position. So if we apply this vector operator to $\vec{v}$ instead of $\vec{r}$, we get acceleration in the inertial frame.
 
@@ -607,9 +619,12 @@ So we will define the time derivative of $\vec{\omega}$ as $\vec{\alpha}$, which
 
 Thus, we obtain the equation for the coordinate transformation of acceleration:
 
-$$
+```{math}
+:label: eq-4-5
+:enumerator: 4.5
+
 \vec{a} = \vec{a}^{\prime }+ \vec{\alpha} \times \vec{r}^{\prime }+ 2\vec{\omega} \times \vec{v}^{\prime }+ \vec{\omega} \times (\vec{\omega} \times \vec{r}^{\prime })
-$$ (eq-4-5)
+```
 
 ::::{tip} Quick Question
 
@@ -629,16 +644,19 @@ Here $\vec{a} = \ddot{x}\hat{\imath} + \ddot{y}\hat{\jmath} + \ddot{z}\hat{k}$ a
 
 Equation 4.5 equates the acceleration between an inertial frame and a non-inertial rotating frame where the two have the same origin. In practice, the origin of the rotating frame can move relative to the origin of the inertial frame. This motion would add a linear acceleration term that is independent of the rotation, so we can just add an additional acceleration term, $\vec{A}$ to represent the acceleration of the origin of the rotating frame as viewed by an observer in the inertial frame.
 
-Thus, our final equation for the acceleration (relative to the non-inertial frame) is:
+The position $\vec{r}^{\prime}$ is measured from the origin of the rotating frame. The acceleration in that frame is:
 
-$$
+```{math}
+:label: eq-4-6
+:enumerator: 4.6
+
 \underbrace{\vec{a}'}_{1}
 =\underbrace{\vec{a}}_{2}
--\underbrace{\vec{\alpha}\times\vec{r}}_{3}
+-\underbrace{\vec{\alpha}\times\vec{r}^{\prime}}_{3}
 -\underbrace{2\vec{\omega}\times\vec{v}'}_{4}
--\underbrace{\vec{\omega}\times(\vec{\omega}\times\vec{r})}_{5}
+-\underbrace{\vec{\omega}\times(\vec{\omega}\times\vec{r}^{\prime})}_{5}
 -\underbrace{\vec{A}}_{6}
-$$ (eq-4-6)
+```
 
 1. Linear acceleration in the rotating frame (what an observer in the rotating frame would measure as the acceleration). This would be equivalent to the net acceleration from the perspective of the rotating frame.
 
@@ -657,12 +675,15 @@ $$ (eq-4-6)
 To solve for the force in the rotating frame, multiply all the accelerations by the mass, $m$:
 
 $$
-m\vec{a}^{\prime }= m\vec{a} - m\vec{\alpha} \times \vec{r} - 2m\vec{\omega} \times \vec{v}^{\prime }- m\vec{\omega} \times (\vec{\omega} \times \vec{r}) - m\vec{A}
+m\vec{a}^{\prime }= m\vec{a} - m\vec{\alpha} \times \vec{r}^{\prime } - 2m\vec{\omega} \times \vec{v}^{\prime }- m\vec{\omega} \times (\vec{\omega} \times \vec{r}^{\prime }) - m\vec{A}
 $$
 
-$$
+```{math}
+:label: eq-4-7
+:enumerator: 4.7
+
 m\vec{a}^{\prime }= \sum \vec{F}_{I}+ \vec{F}_{az}+ \vec{F}_{Cor}+ \vec{F}_{cent}+ \vec{F}_{trans}
-$$ (eq-4-7)
+```
 
 where $\sum \vec{F}_{I}$ is the net force in the inertial frame and the remaining terms are all the fictitious forces. Note that for a given problem, not all fictitious forces may be present. You will need to consider the physics in the problem to identify which ones are applicable.
 
@@ -702,7 +723,7 @@ $$
 - \frac{GMm}{R^{2}} \hat{r} = -m\omega ^{2}R\hat{r}
 $$
 
-Rotating Frame: In the rotating frame, an observer sitting on the particle doesn’t think the particle is moving. So this observer would measure no rotation and no acceleration relative to their position. So this observer would measure:
+Rotating Frame: Choose a frame centered on the star that rotates at the same angular velocity as the particle. The particle stays at a fixed position in this frame, so its velocity and acceleration in the frame are zero.
 
 $$
 m\vec{a}^{\prime }= 0
@@ -712,9 +733,9 @@ But this observer has not considered that they are on a rotating reference frame
 
 $$
 m\vec{a}'=\sum\vec{F}_{I}
--m\vec{\alpha}\times\vec{r}
+-m\vec{\alpha}\times\vec{r}'
 -2m\vec{\omega}\times\vec{v}'
--m\vec{\omega}\times(\vec{\omega}\times\vec{r})
+-m\vec{\omega}\times(\vec{\omega}\times\vec{r}')
 -m\vec{A},
 $$
 
@@ -722,19 +743,19 @@ There is no angular acceleration $(\alpha$ = 0), the person is not moving within
 
 $$
 0=\sum\vec{F}_{I}
--\underbrace{m\vec{\omega}\times(\vec{\omega}\times\vec{r})}_{\vec{F}_{cent}}
++\underbrace{\left[-m\vec{\omega}\times(\vec{\omega}\times\vec{r}')\right]}_{\vec{F}_{cent}}
 $$
 
 For this circular rotation, the angular velocity and radial vectors are perpendicular to each other. Thus, $F_{cent}$ has a magnitude of $m\omega ^{2}R$. You’ll notice that this force has the same magnitude as the centripetal force in the inertial frame.
 
-What about the direction of the centrifugal force? In the rotating frame, the centrifugal force points outward from the origin. This makes sense, since fictitious forces act in the opposite direction to the acceleration relative to the inertial frame (equivalence principle). The centripetal acceleration always points inward. The figure below shows a breakdown of the $\vec{\omega} \times (\vec{\omega} \times \vec{r})$ cross product terms.
+The double cross product $\vec{\omega}\times(\vec{\omega}\times\vec{r}^{\prime})$ points inward, along the inertial-frame centripetal acceleration. Its negative points outward, along the centrifugal force in the rotating frame.
 
 <!-- Source PDF page 95; printed label 86. -->
 
 :::{figure} ../images/figures/figure-4-10.png
 :label: fig-4-10
 :enumerator: 4.10
-:alt: Right-hand rule for $\vec{\omega}\times(\vec{\omega}\times\vec{r})$ showing the centrifugal force direction outward from the origin.
+:alt: The double cross product of angular velocity with position points inward. Reversing its sign gives the outward centrifugal force.
 :width: 297px
 
 For the direction of the centrifugal force, use the right-hand rule.

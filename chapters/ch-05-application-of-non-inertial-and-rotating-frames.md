@@ -22,35 +22,47 @@ In [Chapter 4](#ch-4), we derived the equations for acceleration and velocity in
 
 The equation for acceleration in a rotating frame is:
 
-$$
+```{math}
+:label: eq-5-1
+:enumerator: 5.1
+
 \vec{a}^{\prime }= \vec{a} - \vec{\alpha} \times \vec{r}^{\prime }- 2\vec{\omega} \times \vec{v}^{\prime }- \vec{\omega} \times (\vec{\omega} \times \vec{r}^{\prime }) - \vec{A}
-$$ (eq-5-1)
+```
 
 where the parameters with primes are in the rotating reference frame and the parameters without primes are measured in an inertial frame. See [Chapter 4.5](#sec-4-5) for what each of these terms means. If your system is *not* rotating, then $\vec{\alpha} = \vec{\omega} = 0$ and we recover the same equation for a linear non-inertial frame from [Chapter 4.2](#sec-4-2),
 
-$$
-\vec{a}^{\prime }= \vec{a} - \vec{A} \quad\Rightarrow  \text{for no rotation}$$ (eq-5-2)
+```{math}
+:label: eq-5-2
+:enumerator: 5.2
+
+\vec{a}^{\prime }= \vec{a} - \vec{A} \quad\Rightarrow  \text{for no rotation}
+```
 
 where $\vec{A}$ is the acceleration of the non-inertial frame relative to the inertial frame.
 
 Similarly, the equation for velocity in a rotating frame is:
 
-$$
+```{math}
+:label: eq-5-3
+:enumerator: 5.3
+
 \vec{v}^{\prime }= \vec{v} - \vec{\omega} \times \vec{r}^{\prime }- \vec{u}
-$$ (eq-5-3)
+```
 
 where we have added an extra term, $\vec{u}$, to represent the velocity of the origin in the non-inertial frame relative to the inertial frame.
 
 Finally, we defined the fictitious forces as,
 
-(eq-5-4)=
-$$
+```{math}
+:label: eq-5-4
+:enumerator: 5.4
+
 m\vec{a}'=m\vec{a}
 \underbrace{-m\vec{\alpha}\times\vec{r}'}_{\vec{F}_{az}}
 \underbrace{-2m\vec{\omega}\times\vec{v}'}_{\vec{F}_{Cor}}
 \underbrace{-m\vec{\omega}\times(\vec{\omega}\times\vec{r}')}_{\vec{F}_{cent}}
 \underbrace{-m\vec{A}}_{\vec{F}_{trans}}.
-$$
+```
 
 <!-- Source PDF page 102; printed label 93. -->
 
@@ -63,11 +75,14 @@ In the next two sections, we will look at examples of the centrifugal force and 
 
 The centrifugal force is a consequence of a rotating frame and has the form of
 
-$$
-\vec{F}_{cent}= -m\vec{\omega} \times (\vec{\omega} \times \vec{r}^{\prime })
-$$ (eq-5-5)
+```{math}
+:label: eq-5-5
+:enumerator: 5.5
 
-Note that the acceleration from the centrifugal force is $\vec{\omega}\times (\vec{\omega}\times \vec{r}^{\prime })$ and this acceleration has the same form as the centripetal acceleration associated with circular motion (see [Chapter 1](#ch-1)). If you have circular motion, $\vec{\omega} \perp \vec{r}$ and $|\vec{F}_{cent}| = m\omega ^{2}r = \frac{mv^{2}}{r}$.
+\vec{F}_{cent}= -m\vec{\omega} \times (\vec{\omega} \times \vec{r}^{\prime })
+```
+
+Let $\vec{r}^{\prime}_{\perp}$ be the component of $\vec{r}^{\prime}$ perpendicular to the rotation axis. The centrifugal acceleration is $-\vec{\omega}\times(\vec{\omega}\times\vec{r}^{\prime})=\omega^2\vec{r}^{\prime}_{\perp}$. It points away from the rotation axis. For an object co-rotating on a circle of radius $r$ at speed $v=\omega r$, the centrifugal force has magnitude $m\omega^2r=mv^2/r$.
 
 ::::{admonition} Centrifugal vs Centripetal Acceleration
 
@@ -79,7 +94,7 @@ While similar in magnitude, the direction of the centrifugal force is not the sa
 
 To prove that the centrifugal force is radially outward, let’s go through an example vector cross product for uniform circular motion with its axis of rotation pointing up $(\hat{k}^{\prime })$. Even though we have a radial dependence with our cross product, we will use Cartesian coordinates for the rotating frame $(\hat{\imath}^{\prime },\hat{\jmath}^{\prime },\hat{k}^{\prime })$. The reason is, in our rotating frame, the radial vector will move with the non-inertial coordinate system. That is, from the perspective of a non-inertial observer rotating with the coordinate system, the radial vector does not change. So we can define our radial vector as being along the $x$-axis $(\vec{r}^{\prime }= r\hat{\imath}^{\prime })$ for example, and as the system rotates, our radial vector will remain along the $\hat{\imath}^{\prime }$ direction (both the position and the coordinates are rotating in this non-inertial frame).
 
-Using $\vec{\omega} = \omega \hat{k}^{\prime }$ and $\vec{r}^{\prime }= r\hat{\imath}^{\prime }$, the centrifugal acceleration is $\vec{\omega} \times (\vec{\omega} \times \vec{r}^{\prime }) = \omega \hat{k}^{\prime }\times (\omega \hat{k}^{\prime }\times r\hat{\imath}^{\prime })$. To solve this problem, we need to do two cross products. First, we will do the cross product in brackets. (See [Chapter 1.5.2](#sec-1-5-2) for review on computing the cross product).
+Using $\vec{\omega}=\omega\hat{k}^{\prime}$ and $\vec{r}^{\prime}=r\hat{\imath}^{\prime}$, first calculate the double cross product $\vec{\omega}\times(\vec{\omega}\times\vec{r}^{\prime})$. Its negative gives the centrifugal acceleration. Start with the cross product inside the parentheses. See [Chapter 1.5.2](#sec-1-5-2) for a review.
 
 <!-- Source PDF page 103; printed label 94. -->
 
@@ -99,7 +114,10 @@ $$
 
 Then we will take our solution to that first cross product and apply that to the second cross product.
 
-$$
+```{math}
+:label: eq-5-6
+:enumerator: 5.6
+
 \begin{aligned}
 \vec{\omega} \times (\vec{\omega} \times \vec{r}^{\prime })
 &=
@@ -111,7 +129,7 @@ $$
 \\
 &= \hat{\imath}^{\prime }(0 - r\omega ^{2}) + \hat{\jmath}^{\prime }(0 - 0) + \hat{k}^{\prime }(0 - 0) = -r\omega ^{2}\hat{\imath}^{\prime }
 \end{aligned}
-$$ (eq-5-6)
+```
 
 So the direction of the resulting vector from $\vec{\omega} \times (\vec{\omega} \times \vec{r}^{\prime })$ is along the radial line, pointing inward toward the origin (negative value). But the centrifugal fictitious force is equal to $\vec{F}_{cent}= -m\vec{\omega} \times (\vec{\omega} \times \vec{r}^{\prime }) = mr\omega ^{2}\hat{\imath}^{\prime }$, which means that $\vec{F}_{cent}$ is pointing radially outward (away from the origin).
 
@@ -222,9 +240,12 @@ In the sample problem above, we only had centrifugal force to worry about. Since
 
 The Coriolis force is a consequence of an object moving in a rotating frame. The force equation is:
 
-$$
+```{math}
+:label: eq-5-7
+:enumerator: 5.7
+
 \vec{F}_{Cor}= -2m\vec{\omega} \times \vec{v}^{\prime }
-$$ (eq-5-7)
+```
 
 <!-- Source PDF page 106; printed label 97. -->
 
@@ -234,7 +255,10 @@ Let’s assume that we have a rotating system with $\vec{\omega} = \omega \hat{k
 
 Using $\vec{\omega} = \omega \hat{k}^{\prime }$ and $\vec{v}^{\prime }= v^{\prime }\hat{\imath}^{\prime }$, we need to solve $\vec{\omega} \times \vec{v}^{\prime }= \omega \hat{k}^{\prime }\times (v^{\prime }\hat{\imath}^{\prime })$ for the Coriolis force.
 
-$$
+```{math}
+:label: eq-5-8
+:enumerator: 5.8
+
 \begin{aligned}
 \vec{\omega} \times \vec{v}^{\prime }
 &=
@@ -246,7 +270,7 @@ v^{\prime} & 0 & 0
 \\
 &= \hat{\imath}^{\prime }(0 - 0) + \hat{\jmath}^{\prime }(v^{\prime }\omega - 0) + \hat{k}^{\prime }(0 - 0) = v^{\prime }\omega \hat{\jmath}^{\prime }
 \end{aligned}
-$$ (eq-5-8)
+```
 
 But the Coriolis fictitious force is equal to $\vec{F}_{Cor}= -2m\vec{\omega} \times \vec{v}^{\prime }= -2mv^{\prime }\omega \hat{\jmath}^{\prime }$. So the Coriolis force is in the negative $\hat{\jmath}^{\prime }$ direction. You may notice this force if you’ve ever tried walking on a rotating surface (e.g., a merry-go-round). You feel off balance.
 
@@ -376,18 +400,18 @@ So this is the maximum radial distance that the cat can reach before the combina
 
 The Earth is rotating, which means the Earth is a non-inertial reference frame. To think about the fictitious forces acting on the Earth, it helps to think in 3-D.
 
-Consider [Figure 5.4](#fig-5-4), which shows the position of a person on Earth’s surface. Ignoring Earth’s orbit around the Sun, we can set the inertial reference frame to the center of the planet (rotation is zero there) and we can set the non-inertial reference frame to the position of the person at the surface. Note: this example is a case where the inertial and rotating frames do not have the same origin. But the distance between them, $R$ is fixed.
+Ignoring Earth’s orbit, choose an inertial frame and a co-rotating frame that both have their origin at Earth’s center. The center has no translational acceleration in this approximation. The position $\vec{r}^{\prime}$ in [Equation 5.1](#eq-5-1) is therefore measured from Earth’s center. At the observer’s location on the surface, $\vec{r}^{\prime}=\vec{R}$, where $R$ is Earth’s radius.
 
 :::{figure} ../images/figures/figure-5-4.png
 :label: fig-5-4
 :enumerator: 5.4
-:alt: Figure shows the relationship between the inertial x-y-z coordinate centered on the Earth and the rotating x-prime, y-prime, z-prime coordinate system on the Earth’s surface.
+:alt: The black axes are centered on Earth. The red axes show local east, north, and up at a point on the surface.
 :width: 293px
 
-A coordinate system on Earth. The point shown is fixed to the surface of the Earth. The red coordinates show the non-inertial reference frame for an observer at this location $(O^{\prime })$. The black coordinates show the inertial reference frame at the center of the Earth, a distance $R$ from the point. Also shown are the latitude $\theta$, polar angle $\varphi$, and distance to the rotation axis $\rho$.
+The red axes show the local directions at a point fixed to the surface $(O^{\prime})$. We use them to express vector components while keeping the rotating frame’s origin at Earth’s center. The diagram also shows the latitude $\theta$, polar angle $\varphi$, and distance $\rho$ to the rotation axis.
 :::
 
-Our observer is located at the point shown in [Figure 5.4](#fig-5-4). This person is at a latitude of $\theta$, where the equator is located at the $x,y-$plane of the inertial frame. We can also describe the person’s position using the polar angle $\varphi$ (also called the colatitude), where $\varphi = 90^{\circ}-\theta$. In the inertial frame, these angles do not change (e.g., the latitude of a fixed point on Earth does not change), but the $x,y$ axes rotate about the $z$ axis due to Earth’s spin.
+The observer’s latitude $\theta$ and colatitude $\varphi=90^{\circ}-\theta$ are fixed. In the inertial frame the observer moves around the spin axis, and the direction of $\vec R$ changes even though its magnitude is constant. Choosing the surface point as the rotating origin instead would require the translational acceleration $\vec A=\vec\omega\times(\vec\omega\times\vec R)$.
 
 The observer on Earth’s surface has a different coordinate system that is fixed from their perspective (they don’t see the rotation). For example, here on Earth we define up and down, North and South, East and West, and those directions are fixed from our reference, even though we are on a moving surface. North is always north. Up is always up. The Earth’s motion does not change your perspective on those directions.
 
@@ -395,9 +419,12 @@ In this textbook, we will define up as $+\hat{k}^{\prime }$, East as $+\hat{\ima
 
 From [Figure 5.5](#fig-5-5), Earth’s angular velocity vector can be described as
 
-$$
+```{math}
+:label: eq-5-9
+:enumerator: 5.9
+
 \vec{\omega} = \omega \cos \theta \hat{\jmath}^{\prime }+ \omega \sin \theta \hat{k}^{\prime }
-$$ (eq-5-9)
+```
 
 Thus, non-inertial motion on Earth’s surface will vary with latitude.
 
@@ -412,23 +439,14 @@ Thus, non-inertial motion on Earth’s surface will vary with latitude.
 (a) A person at a latitude of $\theta$. The moving coordinate system has $\hat{k}^{\prime }$ normal to the surface whereas $\vec{\omega}$ is in the $\hat{k}$ direction of the inertial frame (see also, Figure 5.4). (b) Zoom in of the reference frame at a latitude of $\theta$ showing the components of $\vec{\omega}$ in the $\hat{k}^{\prime }$ and $\hat{\jmath}^{\prime }$ coordinates.
 :::
 
-For a person on Earth’s surface moving with a constant velocity, there will be fictitious forces acting on them because they are in a non-inertial frame. Let’s look at what is at play.
+Treat Earth’s angular velocity as constant, so $\vec{\alpha}=0$. With the shared origin, $\vec{A}=0$ and the rotating-frame acceleration is
 
 $$
-\vec{a}^{\prime }= \vec{a} - \vec{\alpha} \times \vec{r}^{\prime }- 2\vec{\omega} \times \vec{v}^{\prime }- \vec{\omega} \times (\vec{\omega} \times \vec{r}^{\prime }) - \vec{A}
+\vec{a}^{\prime}=\vec{a}-2\vec{\omega}\times\vec{v}^{\prime}
+-\vec{\omega}\times(\vec{\omega}\times\vec{r}^{\prime}).
 $$
 
-We can simplify this equation. We will assume that (1) the Earth’s rotation is constant,$^1$ so $\alpha = \dot{\omega}$ = 0 and (2) the origin of the non-inertial frame has no translational acceleration relative to the origin of the inertial frame $(R$ is constant, $A = \ddot{R}$ = 0). Moreover, if the person is moving with a constant velocity on Earth’s surface, $\vec{a}^{\prime }$ = 0. Taking these simplifications, the remaining fictitious forces are the centrifugal and the Coriolis forces.
-
-$^1$The Earth is actually slowing down in rotation due to torques with the Moon, but the change is very small and can be considered negligible.
-
-$$
-0 = \vec{a} - 2\vec{\omega} \times \vec{v}^{\prime }- \vec{\omega} \times (\vec{\omega} \times \vec{r}^{\prime })
-$$
-
-Let’s start with the centrifugal force, $F_{cent}= -m\vec{\omega} \times (\vec{\omega} \times \vec{r}^{\prime })$.
-
-[Figure 5.6](#fig-5-6) shows the breakdown of the vector directions from the two cross products. Since $\vec{\omega}$ is not along the $\hat{k}^{\prime }$ axis and it is not perpendicular to $\vec{R}$, getting the direction is not intuitive. You can use the right-hand rule (see [Chapter 1.5.2](#sec-1-5-2)) to estimate the direction, where $\vec{\omega}\times \vec{R}$ points mostly into the page, and $\vec{\omega}\times (\vec{\omega}\times \vec{R}$ ) points mostly toward the Earth’s axis of rotation. Thus, we should expect the centrifugal force to mostly point away from the axis of rotation.
+At the surface point $\vec{r}^{\prime}=\vec R$, the centrifugal force is $\vec{F}_{cent}=-m\vec{\omega}\times(\vec{\omega}\times\vec R)$. [Figure 5.6](#fig-5-6) shows how the two cross products give a vector toward the rotation axis. The centrifugal force is its negative and points away from the axis.
 
 The total magnitude of the centrifugal force should therefore be given by
 
@@ -436,13 +454,7 @@ $$
 |\vec{F}_{cen}| = m\omega ^{2}R\sin \varphi = m\omega ^{2}R\cos \theta
 $$
 
-where $\varphi$ is the angle between the axis of rotation and the radius vectors (see [Figure 5.6](#fig-5-6)). Note that $\sin \varphi = \cos \theta$, and that the $\sin \varphi$ term only comes from the first cross product,
-
-$$
-(\vec{\omega} \times \vec{r}^{\prime }).
-$$
-
-As for the direction, the centrifugal force should be along an axis that is perpendicular to the rotation axis (e.g., $\hat{\rho}$ ). We can verify this by using the vector cross product with the observer located at $\vec{R}\hat{k}^{\prime }$ and Earth’s angular velocity from Equation 5.9.
+Here $\varphi$ is the colatitude and $R\sin\varphi=R\cos\theta$ is the perpendicular distance to the rotation axis. To find the local components, use $\vec R=R\hat{k}^{\prime}$ and the angular velocity from [Equation 5.9](#eq-5-9).
 
 <!-- Source PDF page 111; printed label 102. -->
 
@@ -456,7 +468,7 @@ The vector cross product solution for the centrifugal force at a position that i
 :::
 
 $$
-\vec{\omega}\times\vec{r}'=
+\vec{\omega}\times\vec R=
 \begin{vmatrix}
 \hat{\imath}'&\hat{\jmath}'&\hat{k}'\\
 0&\omega\cos\theta&\omega\sin\theta\\
@@ -467,7 +479,7 @@ $$
 
 $$
 \begin{aligned}
-\vec{\omega}\times(\vec{\omega}\times\vec{r}')
+\vec{\omega}\times(\vec{\omega}\times\vec R)
 &=\begin{vmatrix}
 \hat{\imath}'&\hat{\jmath}'&\hat{k}'\\
 0&\omega\cos\theta&\omega\sin\theta\\
@@ -484,7 +496,7 @@ $$
 \vec{F}_{cen}= -m\omega ^{2}R\cos \theta \sin \theta \hat{\jmath}^{\prime }+ m\omega ^{2}R\cos ^{2}\theta \hat{k}^{\prime }
 $$
 
-which is pointing in a direction that is South and up. Looking at [Figure 5.6](#fig-5-6), that direction points away from the rotation axis.
+The centrifugal force has an upward component and, away from the equator and the poles, a horizontal component toward the equator. Both components combine to point away from the rotation axis, as in [Figure 5.6](#fig-5-6).
 
 ::::{tip} Quick Question
 
@@ -562,11 +574,11 @@ $$
 \vec{T} = - \frac{Tx^{\prime}}{\ell} \hat{\imath}^{\prime}- \frac{Ty^{\prime}}{\ell} \hat{\jmath}^{\prime}+ \frac{T(\ell - z^{\prime})}{\ell} \hat{k}^{\prime}
 $$
 
-Note the negative signs for the $x^{\prime }$ and $y^{\prime }$ components. This should make sense as these would be restoring forces and restoring forces are always negative.
+Each horizontal component of tension has the opposite sign to the corresponding displacement from equilibrium.
 
 For the $z^{\prime }$ component, we can use the vector dot product because we know the angle between tension and $\hat{k}^{\prime }$ is $\delta$. So $T_{z^{\prime }}= T \cos \delta$. We can define $\cos \delta$ from the length of the rope because it is fixed. The pendulum height is given by $z^{\prime }= \ell -\ell \cos \delta$, so we can solve for $\cos \delta = \frac{\ell -z^{\prime}}{\ell}$. For small angles, $z^{\prime }\approx 0$ so $T_{z^{\prime }}\approx T$.
 
-For the $x^{\prime }$ and $y^{\prime }$ components, we use the projection of $T$ into the $x^{\prime }- y^{\prime }$ plane. The right panel of [Figure 5.8](#fig-5-8) shows this projection. The $x^{\prime }-$component is given by $T_{x^{\prime }}= T \sin \delta \sin \alpha$, where $\sin \alpha = \frac{x^{\prime}}{\ell \sin \delta}$, so $T_{x^{\prime }}$ simplifies to $T_{x^{\prime}}= \frac{Tx^{\prime}}{\ell}$. Similar arguments can be made for $T_{y^{\prime }}$.
+The right panel of [Figure 5.8](#fig-5-8) shows the projection into the horizontal plane. The $x^{\prime}$ component is $T_{x^{\prime}}=-T\sin\delta\sin\alpha=-Tx^{\prime}/\ell$, using $\sin\alpha=x^{\prime}/(\ell\sin\delta)$. The same projection along $y^{\prime}$ gives $T_{y^{\prime}}=-Ty^{\prime}/\ell$.
 
 ::::{tip} Quick Question
 
@@ -639,15 +651,16 @@ Alternatively, here is [a great video that shows the full rotation of a Foucault
 
 ::::
 
-For northern latitudes $(\theta > 0)$, the pendulum will rotate clockwise due to the Coriolis force, and for southern latitudes $(\theta < 0)$, the pendulum will rotate counter-clockwise due to the Coriolis force. At the equator, $\theta$ = 0, and there is no deflection in the $x^{\prime }$ and $y^{\prime }$ plane. So a Foucault pendulum at the equator is just an ordinary pendulum that oscillates back and forth.
+Viewed from above, the pendulum’s swing plane precesses clockwise at northern latitudes $(\theta>0)$ and counterclockwise at southern latitudes $(\theta<0)$. At the equator the horizontal Coriolis deflection vanishes, so the swing plane does not precess in this approximation.
 
-The time it takes the pendulum to complete one full circle depends on the latitude. The period for one full circle due to the Coriolis force is given by:
+At a nonzero latitude the period for one full revolution of the swing plane is
 
 $$
-t_{F}= \frac{2\pi}{\omega \sin \theta} = \frac{24h}{\sin \theta}
+t_F=\frac{2\pi}{\omega\lvert\sin\theta\rvert}
+=\frac{T_{\mathrm{sid}}}{\lvert\sin\theta\rvert},
 $$
 
-So the Foucault pendulum offers a direct way to measure your latitude. At the North and South pole, this period is exactly 24 hours (the length of 1 day). You can say that the Earth is rotating below the pendulum as it oscillates in place due to the Coriolis force. As you approach the equator, the period gets longer. The experiment of Foucault’s pendulum was monumental for showing Earth’s rotation and that the Earth is a non-inertial frame.
+where $T_{\mathrm{sid}}=2\pi/\omega$ is Earth’s sidereal rotation period, approximately 23 hours and 56 minutes. At either pole the period is one sidereal day, and the pendulum’s swing plane stays approximately fixed while Earth rotates beneath it. The period grows as the observer approaches the equator. Measuring the period gives the magnitude of the latitude, and the precession direction identifies the hemisphere. Foucault’s experiment demonstrated Earth’s rotation.
 
 ::::{tip} Quick Questions
 
@@ -778,7 +791,7 @@ e) A ladybug is running towards the edge of a merry-go-round that is deceleratin
 
 ::::{admonition} Practice Problem 5-2
 
-Astronauts use a training centrifuge to simulate the high gravity conditions they can experience during launch and re-entry. NASA uses a centrifuge that is 8.84 m in diameter for astronaut training.
+Astronauts use centrifuges to simulate the high accelerations they can experience during launch and re-entry. NASA’s 20-G centrifuge at Ames has a radius of 8.84 m and is rated up to $12.5g$ for human subjects. The facility can reach $20g$ for non-human payloads. See the [NASA facility fact sheet](https://www.nasa.gov/wp-content/uploads/2023/12/lsarf-fs-29sep2020.pdf?emrc=68c044f34165b).
 
 a) Find the expression for the centrifugal acceleration.
 
@@ -823,9 +836,9 @@ An amusement park ride spins its riders in a large circle and then tilts the cir
 
 a) During the acceleration phase of the ride, what fictitious forces will the riders experience?
 
-b) The ride reaches a maximum centrifugal acceleration of $1g$ before it tilts. Find the angular acceleration if it takes 90 seconds to reach its maximum speed and it gets there with a constant angular acceleration.
+b) The ride reaches a maximum centrifugal acceleration of $1g$ before it tilts. Find the constant angular acceleration if it starts from rest and takes 90 seconds to reach its maximum speed.
 
-c) Find the magnitude of the azimuthal force and centrifugal force halfway through the acceleration phase (e.g., at 45 seconds).
+c) Find the magnitudes of the azimuthal and centrifugal forces in terms of rider mass halfway through the acceleration phase, at 45 seconds.
 
 ::::
 
@@ -851,7 +864,7 @@ $$
 
 ::::{admonition} Practice Problem 5-7
 
-A group of astronauts crash land on a planet with an unknown angular velocity of rotation. The astronauts have a Foucault pendulum, and they measure the period of precession of 38 hours at their unknown latitude of $\theta$. The astronauts then walk north and estimate their new position as being $10^{\circ}$ above the original latitude. They then measure a new period of precession for the Foucault pendulum of 31 hours. What was the original latitude of the crash landing? (Hint, you may find the following trig identity helpful: $\sin (\alpha + \beta) = \sin \alpha \cos \beta + \cos \alpha \sin \beta)$
+A group of astronauts crash land on a planet with an unknown angular velocity of rotation. The astronauts have a Foucault pendulum, and they measure the period of precession of 38 hours at their unknown latitude of $\theta$. The astronauts then walk north and estimate their new position as being $10^{\circ}$ above the original latitude. They then measure a new period of precession for the Foucault pendulum of 31 hours. What original latitudes are consistent with the two periods? How could observing the direction of precession distinguish them? The identity $\sin(\alpha+\beta)=\sin\alpha\cos\beta+\cos\alpha\sin\beta$ may be useful.
 
 ::::
 
@@ -869,15 +882,15 @@ On a physics field trip, you drop a pebble from rest in the elevator shaft of th
 
 ::::{admonition} Practice Problem 5-9
 
-A bead of mass $m$ sits at the end of a smooth frictionless rod of length $L$ that is rotating about one end at a rate of $\omega$ as shown in the figure below. The bead is given a little push so that it starts moving.
+A bead of mass $m$ starts at position $x_0$ along a smooth rod of length $L$, where $0<x_0<L$. The rod rotates about one end with constant angular speed $\omega$, as shown below. Take the positive $x^{\prime}$ direction along the rod away from the pivot and the positive $y^{\prime}$ direction perpendicular to it in the horizontal plane.
 
 a) What is the magnitude and direction of the centrifugal and Coriolis forces?
 
-b) What is the magnitude and direction of the inertial force?
+b) What is the magnitude and direction of the horizontal force that the rod exerts on the bead?
 
-c) Draw a free-body diagram for the bead in the rotating frame. What inertial force(s) are acting on the bead?
+c) Draw a free-body diagram showing the horizontal forces on the bead in the rotating frame.
 
-d) Use the differential equation of motion to find the equation for $x(t)$ if the initial velocity given to the bead is $\omega L$. (Hint, you may find the following equation helpful: $\ddot{x} - C^{2}x = 0 \rightarrow x(t) = Ae^{Ct}+ Be^{-Ct}$, where $A,B,C$ are constants)
+d) Find $x^{\prime}(t)$ for initial velocity $\dot{x}^{\prime}(0)=\omega L$, while the bead stays on the rod. Use the general solution $x^{\prime}(t)=Ae^{\omega t}+Be^{-\omega t}$ of $\ddot{x}^{\prime}-\omega^2x^{\prime}=0$.
 
 :::{figure} ../images/figures/figure-5-10.png
 :label: fig-5-10

@@ -15,8 +15,9 @@ The older 2023 and 2024 editions remain in the repository.
 
 This edition converts the introduction, twelve chapters, and three appendices
 into editable MyST Markdown. The web navigation replaces the printed contents.
-Author numbering and the original scientific content are retained. Source
-typos and statements have not been systematically corrected or modernized.
+The web edition preserves the source's numbering. Editorial corrections address
+errors in the questions, worked examples, equations, and answer key. The original
+PDF linked above records the Fall 2025 source.
 
 Prose, headings, teaching boxes, figure captions, and the constants table are
 editable text.
@@ -39,8 +40,9 @@ conversion does not model. Every such region is listed under `unresolved` in
 `source/conversion.json`, with its physical page, the reason, and the glyphs
 that did not reconcile, so it can be checked or transcribed by hand.
 
-Equation numbers set in the right margin become cross-reference labels rather
-than part of the expression, so `(1.1)` in the source is linkable as `eq-1-1`.
+Numbered equations use the source number and a stable cross-reference label,
+so `(1.1)` in the source is linkable as `eq-1-1`. Intermediate displays are
+unnumbered.
 
 The figure artwork is extracted from the PDF. The original textual figure
 descriptions are used where available. Some descriptions sit on the next

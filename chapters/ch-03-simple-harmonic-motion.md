@@ -37,9 +37,12 @@ The key element of a restoring force is the negative sign in the $F = -kx$ equat
 
 If the net force acting on the mass is the spring force, then we can use Newton’s second law, $\sum F = ma = -kx$ to get,
 
-$$
+```{math}
+:label: eq-3-1
+:enumerator: 3.1
+
 a = \frac{\mathrm{d}^{2}x}{\mathrm{d}t^{2}} = - \frac{k}{m} x
-$$ (eq-3-1)
+```
 
 <!-- Source PDF page 62; printed label 53. -->
 
@@ -58,9 +61,12 @@ Motion of a simple harmonic oscillator. The left panel shows that the mass will 
 
 Therefore, the solution to the second-order differential equation (Eq 3.1) is met with:
 
-$$
+```{math}
+:label: eq-3-2
+:enumerator: 3.2
+
 x = A\cos (\omega _{0}t + \varphi)
-$$ (eq-3-2)
+```
 
 where $A,\omega _{0}$, and $\varphi$ are all constants.
 
@@ -83,9 +89,12 @@ $$
 
 <!-- Source PDF page 63; printed label 54. -->
 
-$$
+```{math}
+:label: eq-3-3
+:enumerator: 3.3
+
 v = -\omega _{0}A\sin (\omega _{0}t + \varphi)
-$$ (eq-3-3)
+```
 
 And we can differentiate again to get the acceleration.
 
@@ -97,9 +106,12 @@ a&=-\omega_{0}^{2}\underbrace{\left[A\cos(\omega_{0}t+\varphi)\right]}_{x(t)}
 \end{aligned}
 $$
 
-$$
+```{math}
+:label: eq-3-4
+:enumerator: 3.4
+
 a = -\omega _{0}^{2}x
-$$ (eq-3-4)
+```
 
 Thus, we find that $a = -\omega _{0}^{2}x$, where $\omega _{0}$ is the angular frequency constant. Going back to our original definition of the force in Equation (3.1), we had $a = - \frac{k}{m} x$ for the force $F = -kx$. Thus, the generic differential equation of motion solves Hooke’s Law if:
 
@@ -127,9 +139,12 @@ where $\omega_{0}=\sqrt{\frac{k}{m}}$. To get the values for $A$ and $\varphi$, 
 
 The angular frequency, $\omega _{0}$, is a fundamental property of the system itself (depends on the mass and spring constant) and it also relates to the period of motion. A cos function repeats every $2\pi$ radians, so a full period $T$ occurs when $\omega _{0}T = 2\pi$ or:
 
-$$
+```{math}
+:label: eq-3-5
+:enumerator: 3.5
+
 T=\frac{2\pi}{\omega_{0}}=2\pi\sqrt{\frac{m}{k}}
-$$ (eq-3-5)
+```
 
 So the physical properties of the system itself (mass, spring constant) determine the period of motion. That is, the system itself sets the period of motion, not the force that is applied.
 
@@ -264,7 +279,7 @@ Now let’s consider a simple pendulum. A simple pendulum is a mass that hangs a
 Example of a simple pendulum. The mass $m$ is in equilibrium when it is vertically downward and displaced from equilibrium when shifted an angle $\theta$ from the vertical axis. A restoring force $(F)$ moves the pendulum back to equilibrium.
 :::
 
-A pendulum is a simple harmonic oscillator as well, because it has an equilibrium position (straight down) and a restoring force proportional to the displacement that seeks to return the pendulum to that position.
+For small oscillations about the downward equilibrium, the restoring force along the swing is approximately proportional to the displacement. In this limit, the pendulum is a simple harmonic oscillator.
 
 ::::{admonition} Keep in Mind
 
@@ -282,22 +297,22 @@ To solve for the force, let’s look at the free-body diagram of this system ([F
 :alt: Figure shows a free-body diagram for a simple pendulum with standard Cartesian axes.
 :width: 163px
 
-Free-body diagram of the simple pendulum from [Figure 3.4](#fig-3-4). The labeled forces are tension $(T)$ in red, gravity $(mg)$ in blue, and the restoring force $(mg\sin \theta)$ in magenta. Shown in dotted-red is the component of gravity that balances tension $(mg\cos \theta)$.
+Free-body diagram of the simple pendulum from [Figure 3.4](#fig-3-4). The labeled forces are tension $(T)$ in red, gravity $(mg)$ in blue, and the restoring force $(mg\sin \theta)$ in magenta. The dotted red arrow is the component of gravity along the string, directed away from the pivot for the angle shown.
 :::
 
-The restoring force is caused by a component of gravity that is perpendicular to the tension in the string. Because the mass-string system has an angular displacement $(\theta)$ from the equilibrium line, there is a component of gravity along the string and a component of gravity perpendicular to the string. It is the perpendicular component that is our restoring force (see magenta arrow in [Figure 3.5](#fig-3-5)). From trigonometry, the component parallel to the string can be written as $mg\cos \theta$ and the component perpendicular to the string is $mg\sin \theta$. The $mg\cos \theta$ component is equal (and opposite) to the tension in the string. The $mg\sin \theta$ component is our restoring force and it will be driving our motion. So we have,
+For the mass to follow a circular arc, it has an inward acceleration $L\dot\theta^2$ even though the string length $L$ is fixed. Taking inward as positive, Newton's second law along the string gives
 
 $$
-F = -mg\sin \theta
+T-mg\cos\theta=mL\dot\theta^2.
 $$
 
-where the negative sign is present because this is a restoring force (it will act in the opposite direction to our angular displacement). Since $T$ and $mg\cos \theta$ cancel (equal and opposite forces because the string is not deforming), our net force is equal to this restoring force.
-
-You’ll notice that this force equation does not depend on $x$, but instead depends on the angular displacement. If we want to use $F = ma$, we need to get the displacement in units of $x$ because $a = \ddot{x}$. Using the small angle approximation (see [Appendix B](#app-b)), we can write
+Along the tangent, take increasing $\theta$ as positive. Tension has no tangential component, so the tangential equation of motion is
 
 $$
-\sin \theta \approx \frac{x}{L} :
+mL\ddot\theta=-mg\sin\theta.
 $$
+
+For small angles in radians, the horizontal displacement $x$ satisfies $x\approx L\theta$, and $\sin\theta\approx\theta$ (see [Appendix B](#app-b)).
 
 :::{figure} ../images/figures/figure-3-6.png
 :label: fig-3-6
@@ -310,21 +325,17 @@ Small angle approximation diagram for small values of $\theta$, as this is appro
 
 The true path of the pendulum is an arc, so this assumption requires that $\theta$ isn’t too big so that there is very little difference between an arc and a straight line. See [Appendix B](#app-b) for a review on applying small angle approximations.
 
-So with the small angle assumption, we get
+The tangential force in the small-angle approximation is
 
 $$
-F = - \frac{mg}{L} x
+F_{\mathrm{tan}}\approx - \frac{mg}{L} x
 $$
 
 where $m,g$, and $L$ are all constants.
 
 <!-- Source PDF page 68; printed label 59. -->
 
-This equation has the exact same form as what we used for the spring $F = -kx$, only with different constants. We can solve the equation of motion.
-
-$$
-\sum F = ma
-$$
+Using $L\ddot\theta\approx\ddot x$ to first order in the small displacement, the resulting equation has the same form as the spring equation.
 
 $$
 \begin{aligned}
@@ -466,7 +477,7 @@ This is the same solution as the simple (one spring) case, but $k \rightarrow k_
 
 ::::{admonition} Sample Problem 3-2
 
-A simple pendulum of mass $m$ and length $L$ is also attached to a spring with spring constant $k$ as shown in the figure below. The equilibrium point for both the pendulum and spring lies on the vertical line directly below the pivot point. If the pendulum is displaced from this equilibrium by an angle $\theta$ (like a pendulum), **find the period of oscillations**.
+A simple pendulum of mass $m$ and length $L$ is attached to a spring of constant $k$. The spring is horizontal and relaxed at the downward equilibrium, as shown. **Find the period of small oscillations.**
 
 :::{figure} ../images/figures/figure-3-10.png
 :label: fig-3-10
@@ -479,7 +490,7 @@ A mass $m$ forms a simple pendulum with a massless rope of length $L$. The mass 
 
 **Solution**
 
-This problem contains two simple harmonic oscillators. Let’s look at a free-body diagram for the mass. At the position of the mass, the forces are gravity on the mass, tension in the rope, and the spring force. Breaking up the gravitational force into its components along the axis of the rope and perpendicular to that axis, we get the restoring force from the pendulum as $F_{p}= -F_{g}\sin \theta \approx -\frac{mg}{L} x$ for small angles, $\theta$ (the minus sign shows that the force opposes the displacement). Note that for small angles, both restoring forces act in the same sense.
+Gravity and the spring both contribute to the tangential restoring force. For small $\theta$, write the bob's horizontal displacement as $x\approx L\theta$. To first order, the spring extension is $x$ and the spring acts along the tangent. The tangential component of gravity is $-mg\sin\theta\approx -(mg/L)x$.
 
 :::{figure} ../images/figures/figure-3-11.png
 :label: fig-3-11
@@ -490,7 +501,7 @@ This problem contains two simple harmonic oscillators. Let’s look at a free-bo
 On the left is the free-body diagram of the spring-mass system, and on the right is the component breakdown of the force of gravity, $(F_{g})$ in red.
 :::
 
-Putting these forces together, we can solve the equation of motion from the sum of all
+Write Newton's second law along the tangent. Tension acts along the rope and has zero tangential component.
 
 ::::
 
@@ -498,19 +509,12 @@ Putting these forces together, we can solve the equation of motion from the sum 
 
 ::::{admonition} Continued
 
-forces:
+With $a_{\mathrm{tan}}\approx\ddot x$, the linearized equation is
 
 $$
-\begin{aligned}
-\sum F &= F_{s}+ F_{p}= ma \quad\Rightarrow  T \text{ and } F_{g}\cos \theta \text{ cancel, so we can ignore them} \\
-ma &= -kx - \frac{mg}{L} x \\
-m \frac{\mathrm{d}^{2}x}{\mathrm{d}t^{2}} &= -\bigg(k + \frac{mg}{L} \bigg)x \\
-\frac{\mathrm{d}^{2}x}{\mathrm{d}t^{2}} &= -\Bigg(\frac{kL + mg}{mL} \Bigg)x
-\end{aligned}
-$$
-
-$$
-0 = \frac{\mathrm{d}^{2}x}{\mathrm{d}t^{2}} + \Bigg(\frac{kL + mg}{mL} \Bigg)x
+m\ddot x=-kx-\frac{mg}{L}x,
+\qquad
+\ddot x + \left(\frac{k}{m}+\frac{g}{L}\right)x=0.
 $$
 
 Again, we have a Differential Equation of Motion, and in this form, we can read off $\omega _{0}^{2}$ from the coefficient in front of the $x$ term.
@@ -702,9 +706,9 @@ A standard pendulum clock on Earth has a period of 2 s. If NASA wants to enginee
 
 ::::{admonition} Practice Problem 3-3
 
-An antique pendulum clock uses a uniform rod of length $L$ and operates with an angular frequency of $\omega_{0}=\sqrt{\frac{3g}{L}}$.
+An antique pendulum clock uses a uniform rod of length $L$ and mass $m$ pivoted at one end. Its center of mass lies $L/2$ from the pivot, and its moment of inertia about the pivot is $mL^2/3$. Assume small oscillations.
 
-a) What is the differential equation of motion for this clock?
+a) What is the differential equation for the angular displacement $\theta$ from the downward vertical?
 
 b) Plot the period as a function of rod length for lengths between 10 cm and 1 m.
 
@@ -753,7 +757,7 @@ $$
 \omega_{0}=\sqrt{\frac{k}{m}+\frac{g}{L}}
 $$
 
-a) Write out the equations for position, velocity, and acceleration assuming small displacements, $A$ in $x$.
+a) The pendulum is released from rest at $x=A$, where $A$ is small enough for the linear approximation. Write the position, velocity, and acceleration as functions of time.
 
 b) Plot these equations for different values for $A, k, m$, and $L$ and observe how the graphs change.
 
@@ -763,11 +767,11 @@ b) Plot these equations for different values for $A, k, m$, and $L$ and observe 
 
 ::::{admonition} Practice Problem 3-7
 
-See the figure below. A mass, $m$, is sitting on an incline of angle $\theta$ and attached to a spring from the top. Assume the surface is frictionless. The mass is displaced from equilibrium by a small distance, $x$.
+See the figure below. A mass, $m$, is sitting on an incline of angle $\theta$ and attached to a spring from the top. Assume the surface is frictionless. Take uphill as positive. Let $q$ be the displacement from the spring's relaxed position, and let $x=q-q_0$ be the displacement from equilibrium.
 
 a) Draw a free-body diagram for the mass.
 
-b) What is the equilibrium point of the mass?
+b) Find the equilibrium position $q_0$.
 
 c) What is the differential equation of motion for the mass?
 

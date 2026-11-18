@@ -93,11 +93,11 @@ $$
 ::::{admonition} Continued
 
 $$
-\mathrm{b}) \theta = \frac{\pi}{4} \mathrm{or} \theta = 45^{\circ}
+\mathrm{b}) \theta=\frac{\pi}{4}\pmod{\pi}
 $$
 
 $$
-\mathrm{c}) r = \frac{\sin \theta - \cos \theta}{\cos ^{2}\theta}
+\mathrm{c}) r\sin\theta=r^2\cos^2\theta+r\cos\theta
 $$
 
 (solution-1-8)=
@@ -105,7 +105,7 @@ $$
 **Problem 1-8:** [Question](#problem-1-8)
 
 $$
-\vec{v} = 2e^{2t}\hat{r} + 2te^{2t}\hat{\theta}, \vec{a} = (4e^{2t}- 2t^{2}e^{2t})\hat{r} + (2e^{2t}+ 8te^{2t})\hat{\theta}
+\vec{v} = 2e^{2t}\hat{r} + 2te^{2t}\hat{\theta}, \vec{a}=(4-4t^2)e^{2t}\hat{r}+(2+8t)e^{2t}\hat{\theta}
 $$
 
 (solution-1-9)=
@@ -152,7 +152,16 @@ $$
 
 **Problem 1-13:** [Question](#problem-1-13)
 
-Solution not provided in the source edition.
+Plot each function together with its polynomial near the specified expansion point.
+
+$$
+\begin{aligned}
+\text{a})\quad e^{-x^2}&\approx 1-x^2+\tfrac12x^4,\\
+\text{b})\quad 2e^{x^2}&\approx 2+2x^2+x^4,\\
+\text{c})\quad \ln(1+x)&\approx x-\tfrac12x^2+\tfrac13x^3,\\
+\text{d})\quad e^x&\approx e^2\left(1+(x-2)+\tfrac12(x-2)^2\right).
+\end{aligned}
+$$
 
 ::::
 
@@ -167,31 +176,45 @@ Solutions to Practice Problems from [Chapter 2.8](#sec-2-8)
 
 **Problem 2-1:** [Question](#problem-2-1)
 
-$$
-m_{1}: T - m_{1}g = m_{1}\ddot{y}_{1}
-$$
+With upward positive and $T_1,T_2$ the respective tensions,
 
 $$
-m_{2}: T - m_{2}g = m_{2}\ddot{y}_{2}
+\begin{aligned}
+T_1-m_1g&=m_1\ddot y_1,\\
+T_2-m_2g&=m_2\ddot y_2,\\
+F-m_pg-T_1-T_2&=m_pa_F.
+\end{aligned}
 $$
 
-$$
-pulley : F - m_{p}g - 2T = m_{p}a_{F}= 0
-$$
+An inextensible string gives $\ddot y_1+\ddot y_2=2a_F$. To determine the tensions for a pulley that rotates without slipping, also use its rotational equation of motion about its center.
 
 (solution-2-2)=
 
 **Problem 2-2:** [Question](#problem-2-2)
 
+At $x=d$, the flight time is $t=d/(v_0\cos\theta)$. Substituting into $h=y_0+v_0t\sin\theta-gt^2/2$ gives
+
 $$
-v_{\min}= \sqrt{\frac{2g}{\sin ^{2}\theta} (h - y_{0})}
+v_0=\sqrt{\frac{gd^2}{2\cos^2\theta\,[d\tan\theta-(h-y_0)]}}.
 $$
+
+For $d>0$ and $\cos\theta>0$, a finite solution requires $d\tan\theta>h-y_0$.
 
 (solution-2-3)=
 
 **Problem 2-3:** [Question](#problem-2-3)
 
-Solution not provided in the source edition.
+a) In SI units, $x=10t+4.9t^2$, $v_x=10+9.8t$, and $a_x=9.8$.
+
+b) Let $u=10/\sqrt{2}$ in SI units. Plot $x=ut$, $y=ut-4.9t^2$, $v_x=u$, $v_y=u-9.8t$, $a_x=0$, and $a_y=-9.8$ from launch through impact at $t=2u/9.8\approx 1.44\,\mathrm{s}$.
+
+c) Integrating the stated acceleration gives
+
+$$
+x=3+7t+e^{-2t}-1,
+\qquad v=7-2e^{-2t},
+\qquad a=4e^{-2t}.
+$$
 
 (solution-2-4)=
 
@@ -222,14 +245,17 @@ $$
 
 **Problem 2-6:** [Question](#problem-2-6)
 
-a) $\sum F = -bmv + mg$, where down is positive
+With upward positive,
 
 $$
 \begin{aligned}
-\mathrm{b}) \frac{g}{b} \\
-\mathrm{c}) y &= \frac{g}{b^{2}} e^{-bt}+ \frac{g}{b} t - \frac{g}{b^{2}}
+\text{a})\quad \sum F_y &= -mg-bmv,\\
+\text{b})\quad v_{\mathrm{term}}&=-\frac{g}{b},\\
+\text{c})\quad y(t)&=h-\frac{g}{b}t+\frac{g}{b^2}(1-e^{-bt}).
 \end{aligned}
 $$
+
+The height formula applies up to touchdown.
 
 (solution-2-7)=
 
@@ -263,8 +289,10 @@ $$
 
 **Problem 2-9:** [Question](#problem-2-9)
 
+b) While the blocks slip, the top block's horizontal acceleration is $-\mu g$ and the bottom block's is $\mu m_1g/m_2$ in the direction of the top block's initial motion. The relative speed reaches zero at
+
 $$
-\mathrm{b}) t_{r}= \frac{m_{2}v_{0}}{\mu gm_{1}}
+t_r=\frac{v_0}{\mu g(1+m_1/m_2)}=\frac{m_2v_0}{\mu g(m_1+m_2)}.
 $$
 
 $$
@@ -312,13 +340,16 @@ Mercury: 0.375 m, Earth: 1 m, Mars: 0.376 m, Jupiter: 2.5 m, Neptune: 1.13 m
 
 **Problem 3-3:** [Question](#problem-3-3)
 
-$$
-\text{a}) \ddot{x} = \frac{3g}{L} x = 0
-$$
+Gravity exerts a restoring torque $-mg(L/2)\sin\theta$. With $I=mL^2/3$, the small-angle equation and period are
 
 $$
-\mathrm{c}) L = 0.745 \mathrm{m}
+\begin{aligned}
+\text{a})\quad \ddot\theta+\frac{3g}{2L}\theta &= 0,\\
+\text{b})\quad T(L)&=2\pi\sqrt{\frac{2L}{3g}}.
+\end{aligned}
 $$
+
+c) For $T=1\,\mathrm{s}$, $L=3gT^2/(8\pi^2)\approx 0.373\,\mathrm{m}$.
 
 (solution-3-4)=
 
@@ -358,8 +389,12 @@ $$
 
 **Problem 3-7:** [Question](#problem-3-7)
 
+a) The forces are gravity, the normal force, and the spring force. The spring contributes the uphill component $-kq$, and gravity contributes $-mg\sin\theta$ along the incline.
+
+b) Balance the components along the incline to obtain
+
 $$
-\mathrm{b}) x_{0}= - \frac{mg\sin \theta}{k}
+q_0=-\frac{mg\sin\theta}{k}.
 $$
 
 ::::
@@ -368,13 +403,13 @@ $$
 
 ::::{admonition} Continued
 
-$$
-\mathrm{c}) 0 = \ddot{x} + \frac{k}{m} (x - x_{0})
-$$
+c) With $x=q-q_0$, gravity and the spring preload combine so that $m\ddot x=-kx$. Thus
 
 $$
-\mathrm{d}) T = 2\pi \sqrt{\frac{m}{k}}
+\ddot x+\frac{k}{m}x=0.
 $$
+
+d) The period $T=2\pi\sqrt{m/k}$ is independent of the incline angle. Changing the angle shifts $q_0$.
 
 (solution-3-8)=
 
@@ -396,7 +431,15 @@ $$
 
 **Problem 3-9:** [Question](#problem-3-9)
 
-Solution not provided in the source edition.
+a) The mass experiences weight downward and the lower spring's force upward.
+
+b) The ideal springs carry the same tension. An increase $\Delta F$ in tension changes their extensions by $\Delta F/k_1$ and $\Delta F/k_2$, so their total extension changes by $\Delta x=\Delta F(1/k_1+1/k_2)$. Hence
+
+$$
+k_{\mathrm{eff}}=\frac{\Delta F}{\Delta x}
+=\left(\frac{1}{k_1}+\frac{1}{k_2}\right)^{-1}
+=\frac{k_1k_2}{k_1+k_2}.
+$$
 
 (solution-3-10)=
 
@@ -544,11 +587,11 @@ e) $F_{cent}, F_{Cor}, F_{az}$ and $F_{trans}$
 
 **Problem 5-2:** [Question](#problem-5-2)
 
-$$
-\text{a}) 8.84\omega ^{2}\hat{r}
-$$
+a) The centrifugal acceleration at radius $r=8.84\,\mathrm{m}$ is $r\omega^2\hat{r}$, directed outward from the rotation axis.
 
-b) $4.7 \mathrm{s}^{-1}$ or 0.75 revolutions per second
+b) Setting $r\omega^2=20g$ gives $\omega=\sqrt{20g/r}\approx 4.71\,\mathrm{rad\,s^{-1}}$, or about $0.75$ revolutions per second.
+
+c) The plot of angular speed versus centrifugal acceleration $a$ follows $\omega=\sqrt{a/r}$. A larger radius lowers the angular speed needed for the same acceleration.
 
 (solution-5-3)=
 
@@ -556,49 +599,66 @@ b) $4.7 \mathrm{s}^{-1}$ or 0.75 revolutions per second
 
 The azimuthal force $F_{az}$ points in the positive $y^{\prime }-$direction and the centrifugal force $F_{cent}$ points in the positive $x^{\prime }-$direction.
 
-a) azimuthal and centrifugal forces
-
-$$
-\mathrm{b}) 0.014 \mathrm{s}^{-2}
-$$
-
-$$
-\mathrm{c}) F_{cent}= 343 \mathrm{N}, F_{az}= 12 \mathrm{N}
-$$
-
 (solution-5-4)=
 
 **Problem 5-4:** [Question](#problem-5-4)
 
-Solution not provided in the source edition.
+The outward velocity is perpendicular to the rotation axis. The Coriolis force has magnitude
+
+$$
+2m\omega v
+=2(2.0\times 10^{-5}\,\mathrm{kg})\left(\frac{100}{3}\frac{2\pi}{60}\,\mathrm{rad\,s^{-1}}\right)(0.01\,\mathrm{m\,s^{-1}})
+\approx 1.40\times10^{-6}\,\mathrm{N}.
+$$
+
+The force is tangential and points opposite the record’s rotation.
 
 (solution-5-5)=
 
 **Problem 5-5:** [Question](#problem-5-5)
 
-a) $-\hat{x}$ -direction (west)
+a) An azimuthal force acts opposite the angular acceleration in the tangential direction, and a centrifugal force acts outward once the ride is spinning.
 
-$$
-\mathrm{b}) 0.0005
-$$
+b) The maximum angular speed is $\sqrt{g/r}$. Starting from rest, the ride reaches that speed after $90\,\mathrm{s}$, so $\alpha=\sqrt{g/r}/(90\,\mathrm{s})\approx0.01004\,\mathrm{rad\,s^{-2}}$.
+
+c) At 45 seconds, the angular speed is half its maximum. For a rider of mass $m$, the azimuthal force has magnitude $mr\alpha\approx m(0.1205\,\mathrm{m\,s^{-2}})$ and the centrifugal force has magnitude $mg/4\approx m(2.45\,\mathrm{m\,s^{-2}})$.
 
 (solution-5-6)=
 
 **Problem 5-6:** [Question](#problem-5-6)
 
-$\theta$ = 35 deg
+a) For southward travel, the Coriolis force points west.
+
+b) For northward travel, the Coriolis force points east. At $v=200\,\mathrm{km\,h^{-1}}$, its magnitude relative to gravity is
+
+$$
+\frac{F_{Cor}}{F_g}=\frac{2\omega v\sin(40^{\circ})}{g}\approx 5.3\times10^{-4}.
+$$
 
 (solution-5-7)=
 
 **Problem 5-7:** [Question](#problem-5-7)
 
-East
+The ratio of the measured periods gives
+
+$$
+\frac{\lvert\sin(\theta+10^{\circ})\rvert}{\lvert\sin\theta\rvert}=\frac{38}{31}.
+$$
+
+Using the angle-addition identity gives $\tan\theta=\sin(10^{\circ})/[\pm(38/31)-\cos(10^{\circ})]$. The original latitude can be $35.77^{\circ}$ N or $4.49^{\circ}$ S. In the second case the walk crosses the equator. The sense of precession, as viewed from above, identifies which hemisphere the astronauts started in.
 
 (solution-5-8)=
 
 **Problem 5-8:** [Question](#problem-5-8)
 
-a) $\vec{F}_{cent}= m\omega ^{2}x^{\prime }\hat{x}^{\prime }$ and $\vec{F}_{Cor}= -2m\omega \dot{x}^{\prime }\hat{y}^{\prime }$
+With up as positive, $\dot{z}^{\prime}\approx-gt$. The eastward Coriolis acceleration is $a_E=-2\omega\cos\theta\,\dot{z}^{\prime}=2\omega gt\cos\theta$. Integrating twice from rest gives the deflection at impact,
+
+$$
+x^{\prime}(t)=\frac{\omega g\cos\theta}{3}t^3,
+\qquad t=\sqrt{\frac{2(500\,\mathrm{m})}{g}}.
+$$
+
+The pebble lands about $0.178\,\mathrm{m}$ east of the point directly below release.
 
 ::::
 
@@ -606,23 +666,25 @@ a) $\vec{F}_{cent}= m\omega ^{2}x^{\prime }\hat{x}^{\prime }$ and $\vec{F}_{Cor}
 
 ::::{admonition} Continued
 
-$$
-\mathrm{b}) \vec{F}_{I}= 2m\omega \dot{x}^{\prime }\hat{y}^{\prime }
-$$
-
-c) The centrifugal force $F_{cent}$ points parallel to the $x$ prime axis, the Coriolis force $F_{Cor}$ is anti-parallel to the $y$ prime axis, and the inertial force $F_{I}$ is parallel to the $y$ prime axis. The system is rotating in the counter-clockwise direction. [Reaction force between the bead and rod]
-
-$$
-\mathrm{d}) x(t) = \frac{L}{2} [e^{\omega t}- e^{-\omega t}]
-$$
-
-::::
-
 (solution-5-9)=
 
 **Problem 5-9:** [Question](#problem-5-9)
 
-Solution not provided in the source edition.
+a) In the rotating frame the centrifugal force is $m\omega^2x^{\prime}\hat{x}^{\prime}$, and the Coriolis force is $-2m\omega\dot{x}^{\prime}\hat{y}^{\prime}$.
+
+b) The horizontal force exerted by the rod is $2m\omega\dot{x}^{\prime}\hat{y}^{\prime}$. It balances the Coriolis force because the bead is constrained to stay on the rod.
+
+c) Draw the centrifugal force outward along the rod. Draw the Coriolis force and the rod’s horizontal force as equal, oppositely directed arrows perpendicular to the rod.
+
+d) Along the rod the equation of motion is $\ddot{x}^{\prime}=\omega^2x^{\prime}$. With $x^{\prime}(0)=x_0$ and $\dot{x}^{\prime}(0)=\omega L$, the solution is
+
+$$
+x^{\prime}(t)=x_0\cosh(\omega t)+L\sinh(\omega t).
+$$
+
+This expression applies until the bead reaches the outer end at $x^{\prime}=L$.
+
+::::
 
 (sec-C-6)=
 ## C.6 Momentum and Variable Mass
@@ -712,17 +774,27 @@ $$
 \mathrm{c}) \theta _{\max}= \frac{m_{p}}{(m_{p}+ M)} v_{0}\sqrt{\frac{1}{Lg}}
 $$
 
+d) Solving part (c) for the puck’s initial speed, with the maximum angle in radians, gives
+
 $$
-\mathrm{d}) 31.91 \text{m s}^{-1}
+v_0=\frac{M+m_p}{m_p}\sqrt{gL}\,\theta_{\max}
+\approx 1.47\,\mathrm{m\,s^{-1}}.
 $$
+
+This is slow for a slap shot. The supplied masses and modest swing angle imply a low impact speed.
 
 (solution-6-8)=
 
 **Problem 6-8:** [Question](#problem-6-8)
 
+Let $M=100\,\mathrm{kg}$ be the combined mass of Grog and the car and $m=0.25\,\mathrm{kg}$ be the mass of one rock. Apply horizontal momentum conservation from just before each throw to just after the rebound. If the car’s speed changes from $V_i$ to $V_f$, the rebounding rock has ground-frame velocity $V_f-u$, where $u=5\,\mathrm{m\,s^{-1}}$. Then
+
 $$
-0.625 \text{m s}^{-1}
+(M+m)V_i=MV_f+m(V_f-u),
+\qquad V_f-V_i=\frac{mu}{M+m}.
 $$
+
+Each rock increases the car’s speed by about $0.0125\,\mathrm{m\,s^{-1}}$, including the recoil from the throw. The speed after ten rocks is about $0.125\,\mathrm{m\,s^{-1}}$ forward.
 
 (solution-6-9)=
 
@@ -788,11 +860,11 @@ $$
 $$
 
 $$
-\mathrm{b}) \frac{1}{3} M_{R}L^{2}+ \frac{1}{2} M_{S}R^{2}+ M_{S}(L + R)^{2}
+\mathrm{b}) \frac{1}{3} M_{R}L^{2}+ \frac{2}{5} M_{S}R^{2}+ M_{S}(L + R)^{2}
 $$
 
 $$
-\mathrm{c}) \frac{1}{3} M_{R}L^{2}+ \frac{1}{2} M_{P}(\ell ^{2}+ w^{2}) + M_{P}(L + \frac{1}{2} \ell)^{2}
+\mathrm{c}) \frac{1}{3} M_{R}L^{2}+ \frac{1}{12} M_{P}(\ell ^{2}+ w^{2}) + M_{P}(L + \frac{1}{2} \ell)^{2}
 $$
 
 $$
@@ -803,19 +875,27 @@ $$
 
 **Problem 7-2:** [Question](#problem-7-2)
 
-$5.6 \times 10^{14}$ times faster
+With the assumed negligible angular momentum in the ejecta, $I_{\mathrm{initial}}\omega_{\mathrm{initial}}=I_{\mathrm{NS}}\omega_{\mathrm{NS}}$. For uniform spheres, $I=\tfrac{2}{5}MR^2$, so
+
+$$
+\frac{\omega_{\mathrm{NS}}}{\omega_{\mathrm{initial}}}
+=10\left(\frac{1.5\times10^8\,\mathrm{km}}{20\,\mathrm{km}}\right)^2
+\approx 5.6\times10^{14}.
+$$
+
+If the neutron star retains a fraction of the initial angular momentum, multiply this factor by that fraction.
 
 (solution-7-3)=
 
 **Problem 7-3:** [Question](#problem-7-3)
 
-a) $\vec{\tau} = rF$ [into the page]
+a) Magnitude $rF$, directed into the page.
 
-b) $\vec{\tau} = rF \sin \theta$ [into the page]
+b) Magnitude $rF\sin\theta$, directed into the page.
 
-c) $\vec{\tau} = Rmg$ [into the page]
+c) Magnitude $RT$, directed into the page, where $T$ is the tension in the rope.
 
-d) $\vec{\tau} = R(m_{1}- m_{2})g$ [out of the page]
+d) Taking out of the page as positive, $\tau_z=R(T_1-T_2)$, where $T_1$ and $T_2$ are the left and right tensions, respectively. The torque points out of the page if $T_1>T_2$ and into the page if $T_1<T_2$. The rope tensions equal the respective hanging weights only when those masses have zero acceleration.
 
 (solution-7-4)=
 
@@ -838,7 +918,7 @@ $$
 **Problem 7-6:** [Question](#problem-7-6)
 
 $$
-\text{a}) I_{0}= \frac{1}{2} MR^{2}+ ms^{2}
+\text{a}) I_{0}= \frac{1}{2} MR^{2}+ Ms^{2}
 $$
 
 $$
@@ -868,15 +948,15 @@ $$
 **Problem 7-8:** [Question](#problem-7-8)
 
 $$
-\text{a}) h = \frac{3L + R}{4}
+\text{a}) h = \frac{M(L/2)+M(L+R)}{2M}=\frac{3L+2R}{4}
 $$
 
 $$
-\mathrm{b}) I = \frac{1}{3} ML^{2}+ \frac{2}{5} MR^{2}+ M(L + \frac{1}{2} R)^{2}
+\mathrm{b}) I = \frac{1}{3} ML^{2}+\frac{2}{5} MR^{2}+M(L+R)^{2}
 $$
 
 $$
-\mathrm{c}) T = 2\pi \sqrt{\frac{\frac{2}{3} ML^{2}+ \frac{4}{5} MR^{2}+ 2M(L + \frac{1}{2} R)^{2}}{Mg(3L + R)}}
+\mathrm{c}) T=2\pi\sqrt{\frac{I}{2Mgh}}
 $$
 
 (solution-7-9)=
@@ -982,9 +1062,13 @@ $$
 
 **Problem 8-8:** [Question](#problem-8-8)
 
+If the particle reaches the origin, conservation of energy gives $\tfrac12mv^2=U(1,1,1)-U(0,0,0)=a+b+c$, so
+
 $$
-v = \sqrt{\frac{2}{m} (a + b + c)}
+v = \sqrt{\frac{2}{m} (a + b + c)}.
 $$
+
+The energy relation alone does not establish that the trajectory passes through the origin.
 
 (solution-8-9)=
 
@@ -998,13 +1082,13 @@ $$
 
 **Problem 8-10:** [Question](#problem-8-10)
 
-a) $W_{1}$ = 1 and $W_{2}= -1$
+a) On the vertical segment the work is $1/2$ for $\vec{F}_1$ and $0$ for $\vec{F}_2$. On the horizontal segment the respective values are $1/2$ and $1$. The total work along the two segments is $W_1=1$ and $W_2=1$.
 
 b) $W_{1}$ = 1 and $W_{2}$ = 0
 
 c) $\vec{F}_{1}$ gives the same work for two different paths. $\vec{F}_{2}$ gives different work for two different paths. $\vec{F}_{1}$ is a conservative force. $\vec{F}_{2}$ is not a conservative force.
 
-d) $F_{1}$ is conservative. $F_{2}$ is not conservative.
+d) $\vec{\nabla}\times\vec{F}_1=0$ and $\vec{\nabla}\times\vec{F}_2=-2\hat{k}$, in agreement with the path comparison.
 
 ::::
 
@@ -1075,11 +1159,17 @@ $$
 
 **Problem 9-7:** [Question](#problem-9-7)
 
+a) The jumper starts at height $d-x_0$ with spring energy $\tfrac12 kx_0^2$. At the highest point the jumper is momentarily at rest and has left the bed. Conservation of energy gives
+
 $$
-\text{a}) h = \frac{1}{2} \frac{kd^{2}}{mg}
+Mg(d-x_0)+\frac12kx_0^2=Mgh_{\max},
+\qquad
+h_{\max}=d-x_0+\frac{kx_0^2}{2Mg}.
 $$
 
-b) The adult can only jump half as high as the child.
+For the ideal model, launch with upward speed requires $x_0>2Mg/k$.
+
+b) At the same $x_0$, the child rises twice as far above the common starting height $d-x_0$ as the adult. Their heights above the ground are $h_{\mathrm{adult}}=d-x_0+kx_0^2/(2Mg)$ and $h_{\mathrm{child}}=d-x_0+kx_0^2/(Mg)$.
 
 (solution-9-8)=
 
@@ -1235,7 +1325,7 @@ $$
 \mathrm{c}) U_{eff}(r = r_{0}) = \frac{1}{54} \Bigg(\frac{L^{6}}{A^{2}m^{3}} \Bigg)
 $$
 
-d) Unstable
+d) The stationary point is a local maximum of the effective potential, so the circular orbit is radially unstable.
 
 (sec-C-11)=
 ## C.11 Orbits and Kepler’s Laws
@@ -1340,7 +1430,9 @@ $$
 \mathrm{b}) \cos \theta = \frac{p(1 + \varepsilon) - R}{R\varepsilon}
 $$
 
-c) If $\varepsilon$ = 0, then the comet only crosses the Earth's orbit if $p = R$
+With $p<R$, the ellipse crosses Earth's orbit at the two angles $\pm\arccos\big([p(1+\varepsilon)-R]/[R\varepsilon]\big)$ if its aphelion distance $p(1+\varepsilon)/(1-\varepsilon)$ exceeds $R$. If that distance equals $R$, the orbits are tangent at aphelion ($\theta=\pi$). If it is smaller, there are no crossings.
+
+c) At $\varepsilon=0$ the comet stays on a circle of radius $p<R$, so there are no crossings. If $p=R$ were allowed, the two circles would coincide.
 
 d) If $\varepsilon$ = 1, then $\cos \theta = \dfrac{2p - R}{R}$. From symmetry, there are two places of crossing $(\pm \theta)$.
 
@@ -1412,8 +1504,11 @@ $$
 b) With $x$ measured from equilibrium, $U = \frac{1}{2} kx^{2}$ (gravity is already balanced at equilibrium).
 
 $$
-\mathrm{c}) L = \frac{1}{2} m\dot{x}^{2}- \frac{1}{2} kx^{2}; \ddot{x} = - \frac{k}{m} x
+\mathrm{c})\quad L=\frac{1}{2}m\dot{x}^{2}-\frac{1}{2}kx^{2},
+\qquad \ddot{x}+\frac{k}{m}x=0.
 $$
+
+With $\omega=\sqrt{k/m}$, the general solution is $x(t)=A\cos(\omega t)+B\sin(\omega t)$. The constants $A=x(0)$ and $B=\dot x(0)/\omega$ are set by the initial conditions.
 
 ::::
 
@@ -1433,13 +1528,19 @@ $$
 
 **Problem 12-8:** [Question](#problem-12-8)
 
-$$
-\text{a}) L = \frac{3}{8} MR^{2}\dot{\theta}^{2}- \frac{1}{4} MgR\theta ^{2}
-$$
+a) The moment of inertia about the pivot is $I=\frac12 MR^2+M(R/2)^2=\frac34 MR^2$. Taking the gravitational potential energy to be zero at the stable hanging position gives
 
 $$
-\mathrm{b}) 0 = \ddot{\theta} + \frac{2g}{3R} \theta
+L=\frac{3}{8}MR^2\dot\theta^2-\frac{MgR}{2}(1-\cos\theta).
 $$
+
+b) The Euler–Lagrange equation gives
+
+$$
+\ddot\theta+\frac{2g}{3R}\sin\theta=0.
+$$
+
+For small angles, $\sin\theta\approx\theta$, and the equation reduces to simple harmonic motion with angular frequency $\sqrt{2g/(3R)}$.
 
 (solution-12-9)=
 

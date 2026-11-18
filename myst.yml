@@ -30,6 +30,7 @@ project:
       severity: ignore
   numbering:
     headings: false
+    math: false
   toc:
     - file: index.md
     - file: front/introduction.md

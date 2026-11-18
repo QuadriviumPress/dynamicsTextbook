@@ -22,9 +22,12 @@ In this chapter, we will switch to using energy to solve physical problems inste
 
 When a force is applied to an object such that it moves a displacement of $\Delta \vec{r}$, work is done by that force. Work is defined as:
 
-$$
+```{math}
+:label: eq-8-1
+:enumerator: 8.1
+
 W = \int \vec{F} \cdot \mathrm{d}\vec{r}
-$$ (eq-8-1)
+```
 
 where $\vec{F}$ is the force and $\mathrm{d}\vec{r}$ represents a small displacement.
 
@@ -62,9 +65,12 @@ Work is a *scalar* quantity. It has magnitude but no direction. Since work is ca
 
 Since work is measured from one position $(r_{1})$ to a second position $(r_{2})$, we will use $W(r_{1}\rightarrow r_{2})$ to illustrate that the work is being done from $r_{1}$ to $r_{2}$. This form is convenient to specify the direction, because you can also measure the work from $r_{2}$ to $r_{1}$. For conservative forces ([Chapter 8.5](#sec-8-5)),
 
-$$
+```{math}
+:label: eq-8-2
+:enumerator: 8.2
+
 W(r_{1}\rightarrow r_{2}) = -W(r_{2}\rightarrow r_{1})
-$$ (eq-8-2)
+```
 
 The difference between these two cases is the direction of the displacement vector for $\mathrm{d}\vec{r}$. In one case, the force will be against the displacement (negative work), and in the other case, the force will be in the same direction as the displacement (positive work).
 
@@ -103,9 +109,12 @@ W(x_{1}\rightarrow x_{2}) &= K_{2}- K_{1}
 \end{aligned}
 $$
 
-$$
+```{math}
+:label: eq-8-3
+:enumerator: 8.3
+
 W(x_{1}\rightarrow x_{2}) = \Delta K
-$$ (eq-8-3)
+```
 
 Equation 8.3 is the *work-kinetic energy theorem*.
 
@@ -158,16 +167,32 @@ $$
 
 Integrating both sides will give you the same answer as the linear case: $W(\theta _{1}\rightarrow \theta _{2}) = \Delta K$. So the work-kinetic energy theorem applies for both translation and rotation movement. The kinetic energy equations are slightly different, however.
 
-$$
-K = \frac{1}{2} mv^{2}\quad\Rightarrow  \text{for translation}$$ (eq-8-4)
+```{math}
+:label: eq-8-4
+:enumerator: 8.4
 
-$$
-K = \frac{1}{2} I\omega ^{2}\quad\Rightarrow  \text{for rotation}$$ (eq-8-5)
+K = \frac{1}{2} mv^{2}\quad\Rightarrow  \text{for translation}
+```
+
+```{math}
+:label: eq-8-5
+:enumerator: 8.5
+
+K = \frac{1}{2} I\omega ^{2}\quad\Rightarrow  \text{for rotation}
+```
 
 (sec-8-3)=
 ## 8.3 Work in Different Frames
 
-The work-kinetic energy theorem applies to all inertial frames (constant velocity) whether they are moving or stationary. So the change in work is the same within a stationary $(S)$ frame or in a moving frame $S^{\prime }$ (e.g., the center-of-mass frame such as in [Chapter 6](#ch-6)).
+The work–kinetic energy theorem holds in every inertial frame. The displacement and the work can differ between frames. If $S^\prime$ moves with constant velocity $\vec{V}$ relative to $S$, then $\vec{v}^{\,\prime}=\vec{v}-\vec{V}$ and the corresponding changes for a particle of constant mass are
+
+$$
+W' = W-\vec{V}\cdot\Delta\vec{p},
+\qquad
+\Delta K' = \Delta K-\vec{V}\cdot\Delta\vec{p}.
+$$
+
+Here $\Delta\vec{p}$ is the change in the particle’s momentum. The change in kinetic energy and the net work are equal within each frame.
 
 [Figure 8.1](#fig-8-1) shows a particle starting from rest and moving under a constant force $F$ in a laboratory. This particle will have a constant acceleration $a$ due to this force. The work done to move this particle from point $x_{1}$ to $x_{2}$ in the laboratory frame $(S)$ is simply $W_{S}= F\Delta x = \Delta K$ because all the motion is in 1-D.
 
@@ -177,18 +202,21 @@ The work-kinetic energy theorem applies to all inertial frames (constant velocit
 :alt: Figure compares the standard 2D Cartesian axes for a rest frame and a moving frame.
 :width: 234px
 
-The motion of a particle in two different inertial frames. The lab frame $S$ is stationary (red) and the second frame $S^{\prime }$ is moving at a constant velocity $u$ relative to the lab frame. A particle moves under a constant force $F$ with an acceleration $a$ in the lab frame. The work done to move that particle from points $x_{1}$ to $x_{2}$ in the lab frame is equal to the work done to move the particle in the moving inertial frame.
+The same motion observed in two inertial frames. The lab frame $S$ is shown in red. The moving frame $S^\prime$ has a constant velocity $-u\hat{\imath}$ relative to $S$. The force $F$ and acceleration $a$ are the same in both frames. Each observer calculates work using the displacement measured in their own frame.
 :::
 
 Now, consider what an observer in a moving frame, $S^{\prime }$ would measure for the work done by that force. Here, $S^{\prime }$ is moving at a constant velocity and is also an inertial frame. Because $S^{\prime }$ is moving at a constant velocity, the observer in $S^{\prime }$ would find the same acceleration as the observer in $S$ (e.g., $\frac{\mathrm{d}}{\mathrm{d}t} (v + v_{0}) = \frac{\mathrm{d}v}{\mathrm{d}t}$ ). As a result, both the acceleration and force are unchanged in the moving frame. So
 
-$$
+```{math}
+:label: eq-8-6
+:enumerator: 8.6
+
 F_{S}= F_{S^{\prime }}= ma
-$$ (eq-8-6)
+```
 
 with the same value of $a$ for both frames.
 
-If the force is constant (given in the question), then the work in the moving frame is $W_{S^{\prime }}= \vec{F}\Delta \vec{x}_{S^{\prime }}$, where $\Delta \vec{x}_{S^{\prime }}$ is the displacement in the moving frame. Note that since the motion still takes place in 1-D we can drop vectors (if there are more dimensions, you just need to break up the movement by each coordinate).
+If the force is constant (given in the question), then the work in the moving frame is $W_{S^{\prime }}=\vec{F}\cdot\Delta \vec{x}_{S^{\prime }}$, where $\Delta \vec{x}_{S^{\prime }}$ is the displacement in the moving frame. Note that since the motion still takes place in 1-D we can drop vectors (if there are more dimensions, you just need to break up the movement by each coordinate).
 
 <!-- Source PDF page 177; printed label 168. -->
 
@@ -216,7 +244,7 @@ $$
 
 where $K_{f}$ is the final kinetic energy and $K_{i}$ is the initial kinetic energy.
 
-So while the values of $W$ and $K$ as measured in the two frames (stationary and moving) may be different, the requirement that $\Delta W = \Delta K$ holds in both frames. Again, this is only the case for *inertial* frames. In non-inertial frames (e.g., rotating or accelerating frames), the net force will include fictitious forces due to the non-inertial frame and the measured accelerations would be different (see [Chapters 4](#ch-4) and 5).
+The moving frame finds an additional work term $mau t$ compared with the lab frame, and the same difference in $\Delta K$. An observer in a non-inertial frame can also apply the work–kinetic energy theorem by computing the work of the effective net force, including fictitious forces (see [Chapters 4](#ch-4) and 5).
 
 (sec-8-4)=
 ## 8.4 Gravity
@@ -249,15 +277,21 @@ Remember, this is the work done by gravity. So if a box is lifted upward $(y_{2}
 
 In general, the true form of the gravitational force is:
 
-$$
+```{math}
+:label: eq-8-7
+:enumerator: 8.7
+
 \vec{F}_{g}= - \frac{GMm}{r^{2}} \hat{r}
-$$ (eq-8-7)
+```
 
 where $G$ is the gravitational constant of $6.67 \times 10^{-11}$ N $\mathrm{m}^{2}\mathrm{kg}^{-2}, M$ is the mass of the object producing the gravitational field, $m$ is the mass of an object being accelerated in the gravitational field, and $r$ is the distance between the centers of the two objects. Thus, the true form for the acceleration due to gravity is given by:
 
-$$
+```{math}
+:label: eq-8-8
+:enumerator: 8.8
+
 \vec{g} = - \frac{GM}{r^{2}} \hat{r}
-$$ (eq-8-8)
+```
 
 Note that the acceleration due to gravity always points toward the center of the source of the gravitational field (points radially inward).
 
@@ -341,10 +375,12 @@ v_{1}^{2}&= \frac{2GM_{E}}{R_{E}}
 \end{aligned}
 $$
 
-(eq-8-9)=
-$$
+```{math}
+:label: eq-8-9
+:enumerator: 8.9
+
 v_{esc}=\sqrt{\frac{2GM_E}{R_E}}.
-$$
+```
 
 [Equation 8.9](#eq-8-9) describes the *escape velocity*, which for Earth is roughly 11 km $\mathrm{s}^{-1}$. The escape velocity is the minimum speed for rockets and satellites to leave Earth’s surface and travel great distances away.
 
@@ -369,9 +405,12 @@ Conservative forces are a class of forces that depend only on position. These fo
 
 The first requirement states:
 
-$$
+```{math}
+:label: eq-8-10
+:enumerator: 8.10
+
 W(r_{1}\rightarrow r_{1}) = \oint \vec{F} \cdot \mathrm{d}\vec{r} = 0
-$$ (eq-8-10)
+```
 
 where $\oint$ indicates an integral over a closed loop. For example, if you measure the work between $r_{1}\rightarrow r_{2}$ and then $r_{2}\rightarrow r_{1}$, the work function would be:
 
@@ -444,11 +483,14 @@ Note that forces like friction are *not* conservative forces. First, friction do
 (sec-8-5-1)=
 ### 8.5.1 Identifying Conservative Forces
 
-A conservative force can be identified mathematically using the following condition:
+A smooth conservative force has zero curl:
 
-$$
+```{math}
+:label: eq-8-11
+:enumerator: 8.11
+
 \vec{\nabla} \times \vec{F} = 0
-$$ (eq-8-11)
+```
 
 Note that $\vec{\nabla} \times \vec{F}$ is a vector cross product called the curl of the vector $\vec{F}$. The $\vec{\nabla}$ symbol is a vector differential operator sometimes called the del or nabla operator. In Cartesian coordinates, it has the form of:
 
@@ -473,7 +515,7 @@ A_{x} & A_{y} & A_{z}
 \end{aligned}
 $$
 
-A conservative force has $\vec{\nabla} \times \vec{F}$ = 0 by definition. We will discuss why in [Chapter 8.6](#sec-8-6).
+Zero curl is sufficient for a smooth force to be conservative on a simply connected domain. The domain matters. For example, $\vec{F}=(-y\hat{\imath}+x\hat{\jmath})/(x^2+y^2)$ has zero curl away from the $z$ axis. On a counterclockwise circle of radius $R$ around that axis, the force is tangent to the circle and has magnitude $1/R$, so its circulation is $2\pi$. We will connect zero curl to potential energy in [Chapter 8.6](#sec-8-6).
 
 (sec-8-5-2)=
 ### 8.5.2 Example Conservative Forces
@@ -566,9 +608,12 @@ $$
 
 where $\Delta W_{con}$ is the work done by a conservative force. More formally,
 
-$$
+```{math}
+:label: eq-8-12
+:enumerator: 8.12
+
 U(r_{1}\rightarrow r_{2}) = -\int_{r_{1}}^{r_{2}} \vec{F} \cdot \mathrm{d}\vec{r} = -W_{con}(r_{1}\rightarrow r_{2})
-$$ (eq-8-12)
+```
 
 Potential energy is associated with conservative forces only. Consider a heavy box. If you lift that box upward, the work done by gravity is negative (gravity opposes the motion), but you increase the potential energy of the box because work is being done against gravity $(W < 0)$. If you lower that box or let go, then gravity is doing positive work on the box $(W > 0)$ and it will have a decrease in potential energy.
 
@@ -637,9 +682,12 @@ $$
 
 Setting $\Delta W_{nc}= \Delta E$, or the change in mechanical energy (non-conservative work), we get:
 
-$$
+```{math}
+:label: eq-8-13
+:enumerator: 8.13
+
 \Delta E = \Delta (K + U)
-$$ (eq-8-13)
+```
 
 For small times $\mathrm{d}t$, you can say that $\mathrm{d}E = \mathrm{d}(K+U)$. Integrating these functions then gives
 
@@ -669,9 +717,12 @@ Cartoon of a hydroelectric dam. Image credit: Tennessee Valley Authority.
 
 A conservative force can also be written in terms of the potential energy,
 
-$$
+```{math}
+:label: eq-8-14
+:enumerator: 8.14
+
 \vec{F} = -\vec{\nabla}U = -\Bigg(\frac{\partial U}{\partial x} \hat{\imath} + \frac{\partial U}{\partial y} \hat{\jmath} + \frac{\partial U}{\partial z} \hat{k}\Bigg)
-$$ (eq-8-14)
+```
 
 for Cartesian coordinates (see [Appendix A.5](#sec-A-5) for other coordinate systems). The $\vec{\nabla}$ operator in this context means the gradient of $U$.
 
@@ -734,12 +785,12 @@ Since the potential energy has a radial component only, we only need the radial 
 of the gradient $(\vec{F} = -\vec{\nabla}U)$ to find the force.
 
 $$
-\vec{F} = -\vec{\nabla}U = - \frac{\partial U(r)}{\partial r} \hat{r} = -\bigg(\frac{1}{2} A\sigma ^{2}\bigg)(- \frac{2r}{\sigma ^{2}} e^{-r^{2}/\sigma ^{2}})\hat{r} = -rAe^{-r^{2}/\sigma ^{2}}\hat{r}
+\vec{F} = -\vec{\nabla}U = - \frac{\partial U(r)}{\partial r} \hat{r}=-\left(-\frac{1}{2}A\sigma^2\right)\left(-\frac{2r}{\sigma^2}\right)e^{-r^2/\sigma^2}\hat{r}=-Ar e^{-r^2/\sigma^2}\hat{r}
 $$
 
 ::::
 
-For a potential, $U$, there can be points where $-\vec{\nabla}U = \vec{F}$ = 0. Mathematically, these points are located where the derivative of the potential is zero and correspond to points of local maxima or local minima. [Figure 8.5](#fig-8-5) shows a sketch of a potential with a local maximum and local minimum. These locations are also known as *equilibrium points* or saddle points.
+A stationary point of $U$ satisfies $\vec{\nabla}U=0$. A particle placed at rest there is in equilibrium because $\vec{F}=-\vec{\nabla}U=0$. [Figure 8.5](#fig-8-5) shows two types of stationary point in one dimension, a local maximum and a local minimum. A stationary point may also be an inflection point, as at $x=0$ for $U(x)=x^3$.
 
 :::{figure} ../images/figures/figure-8-5.png
 :label: fig-8-5
@@ -750,13 +801,13 @@ For a potential, $U$, there can be points where $-\vec{\nabla}U = \vec{F}$ = 0. 
 Example potential with a local maximum and local minimum.
 :::
 
-A local minimum is a *stable* equilibrium point. At the minimum, if a particle is slightly perturbed, it wouldn’t really go anywhere. The particle will feel a force that just brings it back to the minimum saddle point. Recall that the force is the negative derivative of the potential, so if you perturb the particle to a lower $x$ value, the potential has a negative slope and the force will be positive back toward the saddle point. And if you perturb the particle to a higher $x$ value, the potential has a positive slope and the force will be negative back toward the saddle point. So for a small shift in position, your particle more or less stays at the saddle point.
+Near the local minimum in [Figure 8.5](#fig-8-5), a displacement to the left gives a negative slope and a force toward the right. A displacement to the right gives a positive slope and a force toward the left. This restoring force keeps a small disturbance near the minimum, so the equilibrium is stable.
 
-At the local maximum saddle point, however, a slight perturbation will have a huge effect on the particle’s motion. If you slightly perturb the particle to a lower $x$ value, the potential has a positive slope so the force will be negative toward even more negative $x$ values. (Similar case if you perturb the particle to a higher $x$ value). So a slight perturbation at the maximum of a potential will cause the system to be unstable and move away from that position.
+The force directions reverse near the local maximum. The force drives the particle farther from the maximum after a small displacement on either side, so the equilibrium is unstable.
 
 ::::{tip} Quick Questions
 
-1. Do the math for this problem and show yourself that the minimum is an equilibrium saddle point where the force will always point back to the minimum and the maximum is an unstable saddle point where the force will always point away from the maximum.
+1. Use the sign of the slope on each side of the two stationary points in [Figure 8.5](#fig-8-5) to show that the force points back toward the local minimum and away from the local maximum.
 
 ::::
 
@@ -788,10 +839,10 @@ A particle is moving in one dimension under the influence of the potential $U(x)
 [Figure 8.5](#fig-8-5) shows a sketch of this potential (a cubic function). So we should expect two equilibrium points, one maximum and one minimum. Since equilibrium points are where $\vec{F}$ = 0, we can set the derivative of the potential to zero to find their location.
 
 $$
-0 = \frac{\partial U(x)}{\partial x} = 6x^{2}- 6x - 12 = x^{2}- x - 2
+\frac{\mathrm{d}U}{\mathrm{d}x}=6x^{2}-6x-12.
 $$
 
-which is a quadratic equation with the solutions $x = -1$ m and $x$ = 2 m.
+Setting the derivative to zero and dividing by 6 gives $x^2-x-2=0$, with solutions $x=-1$ m and $x=2$ m.
 
 Although there are two equilibrium points, only one of these is a *stable* equilibrium solution.
 
@@ -935,7 +986,7 @@ K &= \frac{1}{2} mv^{2}\quad\Rightarrow  \text{for translation}\\
 K &= \frac{1}{2} I\omega ^{2}\quad\Rightarrow  \text{for rotation}\end{aligned}
 $$
 
-This chapter also introduced conservative forces, such as gravity, which are a class of forces where the work done is independent of the path taken, and energy is conserved.
+The work done by a conservative force, such as gravity, depends only on the endpoints. A smooth conservative force has zero curl, and zero curl is sufficient for conservativeness on a simply connected domain.
 
 $$
 W(r_{1}\rightarrow r_{1}) = \oint \vec{F} \cdot \mathrm{d}\vec{r} = 0
@@ -951,7 +1002,7 @@ $$
 \vec{F} = -\vec{\nabla}U
 $$
 
-The potential energy is important to setting how a system, when released, will move because it directly connects to a force. The chapter briefly introduces saddle points, which are regions of local stability or instability within a potential field. Examples of conservative forces and potential energy are given for gravity.
+The potential energy is important to setting how a system, when released, will move because it directly connects to a force. The chapter also classifies equilibrium points of a one-dimensional potential using the force near each stationary point. Examples of conservative forces and potential energy are given for gravity.
 
 ::::
 
@@ -1156,7 +1207,7 @@ A particle can move only along the $x$-axis. It is in a potential defined as $U 
 
 ::::{admonition} Practice Problem 8-8
 
-A particle of mass $m$ moves under a potential of $U(x,y,z) = ax + by^{2}+ cz^{3}$ with no other forces acting on it. The parameters $a, b$, and $c$ are all constants. If the particle is momentarily at rest at position $(1,1,1)$, what is its speed at the origin? (Hint: you do not need to solve any differential equations of motion for this problem.)
+A particle of mass $m$ moves under a potential of $U(x,y,z) = ax + by^{2}+ cz^{3}$ with no other forces acting on it. The parameters $a, b$, and $c$ are all constants. The particle is released from rest at $(1,1,1)$. If its trajectory passes through the origin, what is its speed there? (Hint: you do not need to solve any differential equations of motion for this problem.)
 
 ::::
 
@@ -1186,7 +1237,7 @@ e) Determine the speed of the ball upon hitting the ground on the opponent’s s
 
 Consider the forces $F_{1}= x\hat{\imath} + y\hat{\jmath}$, and $F_{2}= y\hat{\imath} - x\hat{\jmath}$.
 
-a) Find the work done by both forces to move a particle from position $(0,$ 0) to $(0,$ 1) and then the work done to move the particle from position $(0,$ 1) to $(1,$ 1)
+a) Find the work done by each force along the two straight segments from $(0,0)$ to $(0,1)$ and then from $(0,1)$ to $(1,1)$.
 
 b) Find the work done by both forces to move a particle from position $(0,$ 0) to $(1,$ 1) using a direct path (e.g., using the line $y = x$).
 

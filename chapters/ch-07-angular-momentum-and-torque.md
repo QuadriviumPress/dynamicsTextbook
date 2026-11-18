@@ -22,15 +22,21 @@ In this chapter, we will discuss rotational motion in the context of angular mom
 
 In [Chapter 6](#ch-6), we introduced linear momentum, $\vec{p} = m\vec{v}$. But objects can also move by rotation (spinning), and the momentum of a body as it undergoes rotation is called *angular* *momentum*. We define the angular momentum of a particle as:
 
-$$
+```{math}
+:label: eq-7-1
+:enumerator: 7.1
+
 \vec{l}_{i}= \vec{r}_{i}\times \vec{p}_{i}
-$$ (eq-7-1)
+```
 
 where $\vec{r}_{i}$ is the position of the particle relative to the origin, and $\vec{p}_{i}$ is the momentum of that particle. The total angular momentum of a system of particles is the sum of all the particles’ angular momentum:
 
-$$
+```{math}
+:label: eq-7-2
+:enumerator: 7.2
+
 \vec{L} = \sum \vec{l}_{i}= \sum (\vec{r}_{i}\times \vec{p}_{i})
-$$ (eq-7-2)
+```
 
 Note: The angular momentum is a vector quantity. The direction of the vector is given by the vector cross product of $\vec{r}$ and $\vec{p}$ (see [Chapter 1.5.2](#sec-1-5-2) for a review of cross products).
 
@@ -70,40 +76,46 @@ $$
 
 We get that the time derivative of the angular momentum equals the cross product of $\vec{r}$ and $\vec{F}$. This cross product is also known as the torque, $\vec{\tau}$.
 
-$$
+```{math}
+:label: eq-7-3
+:enumerator: 7.3
+
 \vec{\tau}_{i}= \vec{r}_{i}\times \vec{F}_{i}
-$$ (eq-7-3)
+```
 
 Now, if we have a collection of particles, then we need to sum up all their individual contributions. This yields:
 
-$$
+```{math}
+:label: eq-7-4
+:enumerator: 7.4
+
 \sum\vec{\tau}_{i}= \sum \frac{\mathrm{d}\vec{l}_{i}}{\mathrm{d}t} = \frac{\mathrm{d}\vec{L}}{\mathrm{d}t}
-$$ (eq-7-4)
+```
 
 where $\vec{L}$ is the total angular momentum of a system. Thus, we find that the net torque acting on a system is equal to the time derivative of the total angular momentum of that system. Equation 7.4 is Newton’s second law for rotation.
 
-If you have a rigid body instead of a system of independent particles, then all the mass elements in the body will rotate together with the same angular velocity, $\omega$, and angular acceleration, $\alpha$ (e.g., the body does not deform). The magnitude of the total angular momentum, $L$, of a body is:
+For a rigid body rotating about a fixed axis, let $\omega$ be the signed angular velocity about the axis. The component of angular momentum along that axis is
 
-$$
-L = I\omega
-$$ (eq-7-5)
+```{math}
+:label: eq-7-5
+:enumerator: 7.5
 
-where $I$ is the moment of inertia of the system of particles (see [Section 7.2.2](#sec-7-2-2) for details).
+L_{\mathrm{axis}} = I_{\mathrm{axis}}\omega
+```
+
+where $I_{\mathrm{axis}}$ is the moment of inertia about the axis (see [Section 7.2.2](#sec-7-2-2)). In general the full angular momentum is $\vec{L}=\mathsf{I}\boldsymbol{\omega}$, where $\mathsf{I}$ is the inertia tensor. The two vectors need not be parallel.
 
 <!-- Source PDF page 149; printed label 140. -->
 
-Combining our equation for the total angular momentum (Equation 7.5) with the equation for the net torque (Equation 7.4), we get:
+The moment of inertia about a fixed axis is constant for a rigid body. Taking the component of the rotational second law along that axis gives
 
 $$
-\sum\vec{\tau}=\frac{\mathrm{d}\vec{L}}{\mathrm{d}t}
-=\frac{\mathrm{d}(I\vec{\omega})}{\mathrm{d}t}
-=I\frac{\mathrm{d}\vec{\omega}}{\mathrm{d}t}
-=I\vec{\alpha},
+\sum\tau_{\mathrm{axis}}
+=\frac{\mathrm{d}L_{\mathrm{axis}}}{\mathrm{d}t}
+=I_{\mathrm{axis}}\alpha.
 $$
 
-where $I$ is constant in time because the system does not deform.
-
-So similarly to $F = ma$ for the net force, we have $\tau = I\alpha$ for the net torque.
+In fixed-axis examples we often write the signed component equation as $\sum\tau=I\alpha$.
 
 ::::{tip} Quick Question
 
@@ -132,9 +144,12 @@ You’ve probably heard that the Moon causes tides on Earth. The tides don’t o
 
 The moment of inertia, $I$, is an important quantity in rotation. It represents how the mass of the system is distributed as a function of position and describes how efficiently the system can be rotated. It is defined as:
 
-$$
+```{math}
+:label: eq-7-6
+:enumerator: 7.6
+
 I = \sum_{i}m_{i}r_{i}^{2}
-$$ (eq-7-6)
+```
 
 <!-- Source PDF page 150; printed label 141. -->
 
@@ -171,9 +186,12 @@ See [Appendix A.4](#sec-A-4) for a chart of basic shapes and their moments of in
 
 Equation 7.7 gives the parallel axis theorem. Consider an object that has a moment of inertia about its center of mass of $I_{cm}$. If you were to pivot that object at a point $P$ that is a distance $d$ from the center of mass, the moment of inertia about point $P$ would be.
 
-$$
+```{math}
+:label: eq-7-7
+:enumerator: 7.7
+
 I_{p}= I_{cm}+ Md^{2}
-$$ (eq-7-7)
+```
 
 where $I_{p}$ is the moment of inertia about $P$ and $M$ is the total mass of the object.
 
@@ -188,24 +206,24 @@ The power of the parallel axis theorem shines through when you have a strange or
 
 Torque and angular momentum are vectors, where their directions are defined by a vector cross product, which makes finding their directions more challenging. There are several ways to get the directions. First, you can use the RHR or matrix determinant to get the direction from the definition of each vector, e.g., $\vec{\tau} = \vec{r} \times \vec{F}$. See [Chapter 1.5.2](#sec-1-5-2) for a review of the vector cross product.
 
-Second, you can use the RHR for rotation to connect the rotation of a system to the direction of its torque or angular momentum vectors. To apply the RHR for rotation, curl your fingers in the direction of rotation and your thumb will point in the direction of the torque vector (see also [Figure 7.2](#fig-7-2)). Note you can also use the RHR for rotation to get the direction of rotation if you know the direction of torque.
+For rotation about a fixed axis, curl your right-hand fingers in the direction of rotation. Your thumb points along the angular velocity $\boldsymbol{\omega}$ and along the corresponding component of angular momentum. To find the direction of torque, apply the right-hand rule to the cross product $\vec{r}\times\vec{F}$.
 
 :::{figure} ../images/figures/figure-7-2.png
 :label: fig-7-2
 :enumerator: 7.2
-:alt: Cartoon demonstrating the rotational right-hand rule to determine the direction of the torque vector.
+:alt: A rotating disk with angular velocity and angular momentum pointing together along its axis, and torque pointing in the opposite direction.
 :width: 195px
 
-Right hand rule for connecting the direction of rotation with the direction of the torque vector.
+Angular velocity and angular momentum point along the axis in this example. The opposing torque decreases the disk’s angular momentum along its spin direction.
 :::
 
-If the torque vector points out of the page (e.g., toward you), then the system is rotating counter-clockwise. If the torque vector points into the page (away from you), then the system is rotating clockwise. When solving problems, you will want to define which of these two rotation directions (counter-clockwise versus clockwise) is positive.
+Taking out of the page as positive, an outward torque increases the counterclockwise component of angular momentum. For a body initially spinning clockwise about that axis, such a torque slows its spin. The direction of rotation is set by the angular velocity.
 
 <!-- Source PDF page 152; printed label 143. -->
 
 ::::{admonition} Cora’s Thoughts
 
-Another way to think of torques is in the context of screws. When twisting a screw clockwise, it gets tighter and moves into the page which is the direction of that torque. When twisting a screw counterclockwise it loosens and moves out of the page, which is the direction of its torque. The direction of the movement of a screw is the same as the direction of its torque.
+Another way to think of torques is in the context of screws. When twisting a screw clockwise, it gets tighter and moves into the page which is the direction of that torque. When twisting a screw counterclockwise it loosens and moves out of the page, which is the direction of its torque. For a right-handed screw, the applied torque during tightening or loosening can illustrate the right-hand rule.
 
 :::{figure} ../images/figures/figure-7-3.png
 :label: fig-7-3
@@ -229,7 +247,7 @@ Let’s return to the pendulum program from [Chapter 3.4](#sec-3-4), but this ti
 :alt: Figure 7.4 from the source textbook
 :width: 455px
 
-Example of a simple pendulum. Left: The mass is in equilibrium when it is vertically downward and displaced from equilibrium when shifted an angle $\theta$ from the vertical axis. A restoring force $(F)$ moves the pendulum back to equilibrium. Right: The free-body diagram shows the labeled forces tension $(T)$ in red, gravity $(mg)$ in blue, and the restoring force $(mg\sin \theta)$ in magenta. Shown in dotted-red is the component of gravity that balances tension $(mg\cos \theta)$.
+Example of a simple pendulum. Left: The mass is in equilibrium when it is vertically downward and displaced from equilibrium when shifted an angle $\theta$ from the vertical axis. A restoring force $(F)$ moves the pendulum back to equilibrium. Right: The free-body diagram shows the labeled forces tension $(T)$ in red, gravity $(mg)$ in blue, and the restoring force $(mg\sin \theta)$ in magenta. The dotted red arrow is the radial component of gravity, $mg\cos\theta$. The net inward radial force is $T-mg\cos\theta=mv^{2}/L$.
 :::
 
 The restoring force acting on the pendulum is given by $F = -mg\sin \theta$. The torque acting on the pendulum is then $\vec{\tau} = \vec{r}\times \vec{F}$. So we need to find $\vec{r}, \vec{F}$, and the angle between them.
@@ -260,9 +278,12 @@ $$
 
 From Newton’s second law for rotation, the net torque is equal to:
 
-$$
+```{math}
+:label: eq-7-8
+:enumerator: 7.8
+
 \sum \tau = I\alpha
-$$ (eq-7-8)
+```
 
 Since there is only one torque acting on the system (from the restoring force),
 
@@ -283,7 +304,7 @@ $$
 \frac{\mathrm{d}^{2}\theta}{\mathrm{d}t^{2}} + \frac{mgL}{I} \theta = 0
 $$
 
-Now our equation is in the form of a simple differential equation of motion (see [Chapter 3](#ch-3)), and we know how to solve an equation in this format. The solution for $\theta(t)$ is a cos function with an angular frequency given by the coefficient in front of the $\theta$ term.
+Now our equation is in the form of a simple differential equation of motion (see [Chapter 3](#ch-3)), and we know how to solve an equation in this format. The coefficient of $\theta$ is $\omega_0^2$, so the angular frequency is $\omega_0=\sqrt{mgL/I}$.
 
 But wait, that isn’t the exact same solution as what we had before in [Chapter 3.4](#sec-3-4). Well, there is one more step we need to do. We need to define the moment of inertia, $I$.
 
@@ -299,7 +320,7 @@ which is exactly the same as what we had before in [Chapter 3](#ch-3), and it on
 
 ::::{admonition} Force vs Torque
 
-The torque method gives $\ddot{\theta}+ \frac{mgL}{I} \theta$ = 0, which is a more general solution to describe the motion of a pendulum. This solution holds for a single pendulum of any shape. If you can write down the moment of inertia for that pendulum, you can solve its equation of motion. See [Appendix A.4](#sec-A-4) for basic geometric shapes. Or you can find a [table of solutions online](https://openstax.org/books/college-physics-2e/pages/10-5-angular-momentum-and-its-conservation).
+For small oscillations of a rigid physical pendulum of mass $m$, the torque method gives $\ddot{\theta}+(mgL/I)\theta=0$, where $L$ is the distance from the pivot to the center of mass and $I$ is the moment of inertia about the pivot axis. See [Appendix A.4](#sec-A-4) for basic geometric shapes. Or you can find a [table of solutions online](https://openstax.org/books/college-physics-2e/pages/10-5-angular-momentum-and-its-conservation).
 
 Complex pendulum shapes are hard to solve with the linear force method. Think about the problem you are trying to solve, and consider using torques rather than forces!
 
@@ -795,16 +816,14 @@ $$
 **Newton’s second law for rotation:**
 
 $$
-\begin{aligned}
-\sum \vec{\tau} &= \frac{\mathrm{d}\vec{L}}{\mathrm{d}t} \\
-\sum \tau &= I\alpha
-\end{aligned}
+\sum \vec{\tau} = \frac{\mathrm{d}\vec{L}}{\mathrm{d}t}
 $$
 
-**Magnitude of Total Angular Momentum:**
+**Components along a fixed axis for a rigid body:**
 
 $$
-L = I\omega
+L_{\mathrm{axis}}=I_{\mathrm{axis}}\omega,
+\qquad \sum\tau_{\mathrm{axis}}=I_{\mathrm{axis}}\alpha
 $$
 
 **Moment of Inertia:**
@@ -838,7 +857,7 @@ See [Appendix C](#app-c) for answers to the practice problems.
 
 ::::{admonition} Practice Problem 7-1
 
-Use the Parallel Axis Theorem to find expressions for the moments of inertia for each of the figures below. Note the location of the axis of rotation in each case.
+Use the Parallel Axis Theorem to find expressions for the moments of inertia for each of the figures below. Assume each component has uniform density. Note the location of the axis of rotation in each case.
 
 :::{figure} ../images/figures/figure-7-14.png
 :label: fig-7-14
@@ -851,9 +870,9 @@ Figure for [Problem 7-1](#problem-7-1).
 
 a) A thin disk of radius $R$ and mass $M$ rotating around an axis at its edge.
 
-b) A rod of length $L$ and mass $M_{R}$ with a sphere of radius $R$ and mass $M_{S}$ attached to one end and the axis of rotation at the opposite end.
+b) A rod of length $L$ and mass $M_{R}$ with a solid sphere of radius $R$ and mass $M_{S}$ attached to one end and the axis of rotation at the opposite end.
 
-c) A rod of length $L$ and mass $M_{R}$ with a thin rectangular plate of mass $M_{P}$, length $\ell$, and width $w$ attached to one end and the axis of rotation at the opposite end.
+c) A rod of length $L$ and mass $M_{R}$ with a thin rectangular plate of mass $M_{P}$, length $\ell$, and width $w$ attached to one end. The axis passes through the other end of the rod and is perpendicular to the plate.
 
 d) A rod of length $L$ and mass $M_{R}$ with a hollow cylinder of mass $M_{C}$, inner radius $R_{1}$ and outer radius $R_{2}$ attached to one end. The axis of rotation is through the center of the rod.
 
@@ -865,7 +884,7 @@ d) A rod of length $L$ and mass $M_{R}$ with a hollow cylinder of mass $M_{C}$, 
 
 ::::{admonition} Practice Problem 7-2
 
-A red giant star has a mass fifteen times that of our Sun (15 $\mathrm{M}_{\odot}$) and a radius of one astronomical unit $(1.5 \times 10^{8}$ km). It undergoes a sudden supernova, producing a neutron star with a radius of 20 km. Assuming only 1/10th of the star’s mass ends up in the neutron star, what happens to its rotation rate (angular speed)? Assume both the red giant star and the neutron star can be approximated as perfect spheres.
+A red giant star has a mass fifteen times that of our Sun (15 $\mathrm{M}_{\odot}$) and a radius of one astronomical unit $(1.5 \times 10^{8}$ km). It undergoes a sudden supernova, producing a neutron star with a radius of 20 km. Assuming only 1/10th of the star’s mass ends up in the neutron star, what happens to its rotation rate (angular speed)? Model both stars as uniform spheres and assume that the ejected material carries negligible angular momentum about the spin axis.
 
 ::::
 
@@ -888,9 +907,9 @@ a) A force $F$ is applied orthogonally to the end of a fulcrum of length $r$.
 
 b) A force $F$ is applied at an angle $\theta$ to the end of a fulcrum of length $r$.
 
-c) A mass $M$ hangs from a pulley of radius $R$. Find the torque on the pulley.
+c) A mass $m$ hangs from a pulley of radius $R$. Find the torque about the pulley’s axle in terms of the rope tension.
 
-d) Two masses, $M_{1}$ and $M_{2}$, hang from opposite ends of a rope over a pulley of radius $R$. Find the equation for the torque on the pulley.
+d) Two masses, $m_{1}$ and $m_{2}$, hang from opposite ends of a rope over a pulley of radius $R$. Find the net torque about the axle in terms of the tensions on the two sides.
 
 ::::
 
@@ -975,7 +994,7 @@ Figure for [Problem 7-7](#problem-7-7).
 
 ::::{admonition} Practice Problem 7-8
 
-A physical pendulum is made of a rod of length $L$ and a sphere of radius $R$, as shown in [Figure 7.14](#fig-7-14) (top right). The rod and the sphere have the same mass, $M$. Consider the pivot point to be through the opposite end of the rod from the sphere.
+A physical pendulum is made of a uniform rod of length $L$ and a uniform solid sphere of radius $R$, as shown in [Figure 7.14](#fig-7-14) (top right). Each component has mass $M$. The pivot is at the opposite end of the rod from the sphere, so the sphere’s center is $L+R$ from the pivot.
 
 a) Where is the center of mass?
 

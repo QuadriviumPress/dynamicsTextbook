@@ -136,16 +136,36 @@ def main():
                  ", ".join(dangling[:10]))
 
     # --- problems and their solutions --------------------------------------
-    for key, prefix, name in (("practice_problem_labels", "problem", "practice problems"),
-                              ("solution_labels", "solution", "solutions")):
-        source = {n for page in inventory["pages"] for n in page[key]}
-        absent = sorted(n for n in source if f"({prefix}-{n})=" not in body)
+    problems = {n for page in inventory["pages"] for n in page["practice_problem_labels"]}
+    source_solutions = {n for page in inventory["pages"] for n in page["solution_labels"]}
+    for source, prefix, name in ((problems, "problem", "practice problems"),
+                                 (source_solutions, "solution", "source solution entries")):
+        absent = sorted(n for n in source if f"{prefix}-{n}" not in labels)
         report.check(not absent, f"all {len(source)} {name} are present and labelled",
                      ", ".join(absent[:10]))
-    unanswered = sorted(n for n in {m for p in inventory["pages"] for m in p["practice_problem_labels"]}
-                        if f"(solution-{n})=" not in body)
-    report.note(f"{len(unanswered)} practice problems have no solution in Appendix C"
-                + (f": {unanswered[:8]}" if unanswered else ""))
+
+    solution_text = texts["appendices/app-c-solutions-to-problems.md"]
+    entries = dict(re.findall(
+        r"^\(solution-(\d+-\d+)\)=\n(.*?)(?=^\((?:solution-|sec-C-)|\Z)",
+        solution_text, re.M | re.S,
+    ))
+    bad_links = []
+    answered = set()
+    for number, entry in entries.items():
+        heading = f"**Problem {number}:** [Question](#problem-{number})"
+        if not entry.lstrip().startswith(heading):
+            bad_links.append(number)
+            continue
+        answer = entry.lstrip().removeprefix(heading)
+        answer = re.sub(r"<!--.*?-->", "", answer, flags=re.S)
+        answer = re.sub(r"^:{3,}[^\n]*", "", answer, flags=re.M).strip()
+        if answer and answer != "Solution not provided in the source edition.":
+            answered.add(number)
+    report.check(not bad_links, "solution labels, headings, and question links agree",
+                 ", ".join(bad_links))
+    unanswered = sorted(problems - answered, key=lambda n: tuple(map(int, n.split("-"))))
+    report.check(not unanswered, f"all {len(problems)} practice problems have an answer in Appendix C",
+                 ", ".join(unanswered))
 
     # --- transcription artefacts -------------------------------------------
     stray = []
@@ -168,8 +188,21 @@ def main():
     sys.path.insert(0, str(ROOT / "scripts"))
     import mathtext
 
+    numbered_math = re.compile(
+        r"^```\{math\}\n:label: (eq-\S+)\n:enumerator: (\S+)\n\n(.*?)^```$",
+        re.M | re.S,
+    )
+    numbers = {label: number for label, number, _ in numbered_math.findall(body)}
+    wrong_numbers = [label for label in labels if label.startswith("eq-")
+                     and numbers.get(label) != label.removeprefix("eq-").replace("-", ".").upper()]
+    report.check(not wrong_numbers, "numbered equations display their source numbers",
+                 ", ".join(wrong_numbers[:10]))
+
     bad = []
     for path, text in texts.items():
+        for label, _, fragment in numbered_math.findall(text):
+            if not mathtext.latex_is_well_formed(fragment):
+                bad.append(f"{path}: {label}")
         stripped = re.sub(r"^```.*?^```", "", text, flags=re.S | re.M)
         for match in re.finditer(r"\$\$(.+?)\$\$|(?<![\$\\])\$([^\$\n]+)\$", stripped, re.S):
             fragment = match[1] or match[2]

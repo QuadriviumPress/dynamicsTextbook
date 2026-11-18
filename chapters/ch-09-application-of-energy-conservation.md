@@ -20,15 +20,21 @@ In this chapter, we will apply energy conservation to solve problems in physics.
 
 In [Chapter 8](#ch-8), we showed that conservative forces had the property of
 
-$$
+```{math}
+:label: eq-9-1
+:enumerator: 9.1
+
 \Delta K + \Delta U = 0
-$$ (eq-9-1)
+```
 
 where $K$ is the kinetic energy and $U$ is the potential energy. This result indicates that $K + U = E$ = constant.
 
-$$
+```{math}
+:label: eq-9-2
+:enumerator: 9.2
+
 K + U = E = \mathrm{constant}
-$$ (eq-9-2)
+```
 
 where $E$ is the mechanical energy of the system. If $E$ is a constant, then your mechanical energy equals the total (kinetic plus potential) energy of your system.
 
@@ -58,9 +64,12 @@ For this method to be applicable, you need to have a clearly defined energy (pot
 
 Alternatively, if energy is conserved, then $E$ is a constant and
 
-$$
+```{math}
+:label: eq-9-3
+:enumerator: 9.3
+
 \frac{\mathrm{d}E}{\mathrm{d}t} = 0
-$$ (eq-9-3)
+```
 
 For this method to be applicable, you need to express the energy as a function of time $t$.
 
@@ -151,7 +160,7 @@ $$
 
 for any velocity for the particle. So if you have a system that is fully described by conservative forces in any dimension, then that system will have its total energy conserved.
 
-Keep in mind that not all forces that are functions of position are conservative forces. For a system to have a conservative force, $\vec{\nabla} \times \vec{F}$ = 0 (see [Chapter 8](#ch-8)) or the work done on the system within a closed loop must be zero.
+A force that depends on position is conservative if its work is zero around every closed loop within its domain. A smooth conservative force has zero curl. The converse holds on a simply connected domain (see [Chapter 8.5.1](#sec-8-5-1)).
 
 (example-9-1)=
 
@@ -479,7 +488,7 @@ A “simple” harmonic oscillator formed by a pulley and spring. The pulley is 
 
 **Solution**
 
-**Find the equilibrium position.** When you are in equilibrium, there is no movement, so there is no rotation and no velocity. That means that all forces are zero. But before we can answer this question, how do the pulley, mass, and spring move relative to each other?
+**Find the equilibrium position.** At static equilibrium the net force and net torque on the pulley are both zero.
 
 We can solve for this equilibrium point by setting the net force and net torque on the pulley equal to zero (that will be the equilibrium point). [Figure 9.7](#fig-9-7) shows the free-body diagram for the pulley.
 
@@ -489,25 +498,23 @@ We can solve for this equilibrium point by setting the net force and net torque 
 :alt: Figure shows a free-body diagram for the pulley alone with all forces labeled.
 :width: 155px
 
-Free-body diagram of the pulley. There is a tension $T_{1}$ from the rope on the left, and a tension $T_{2}$ from the small mass $m$ acting at the center of mass. The pulley has its own gravity $Mg$. And there is the spring force $F_{s}$ acting on the right side of the pulley.
+Free-body diagram of the pulley. The rope pulls upward with tensions $T_1$ and $F_s$ on the left and right. The hanging mass pulls downward with tension $T_2$. The downward arrow on the centerline represents the pulley’s weight $Mg$.
 :::
 
-Since we’re in equilibrium, the net torque must be zero. Therefore, $T_{1}= F_{s}$, otherwise the pulley would rotate. Let $x$ be the downward displacement of the pulley (and mass $m$) from the position where the spring is unstretched. Because the rope does not slip, the spring stretches by $2x$, so $F_{s}= -k(2x) = T_{1}$. The other unknown force is $T_{2}$, but that is simply the tension caused by the hanging mass $m$ and therefore $T_{2}= mg$.
+At equilibrium, the two upward tensions exert equal and opposite torques, so their magnitudes satisfy $T_1=F_s$. Let $x$ be the downward displacement of the pulley and hanging mass from the position where the spring is unstretched. Because the rope does not slip, the spring extends by $2x$. At equilibrium the right-hand rope exerts an upward force of magnitude $F_s=2kx_0$. The hanging mass is at rest, so $T_2=mg$.
 
 <!-- Source PDF page 209; printed label 200. -->
 
-So for our sum of all forces (taking upward as positive), we have:
+With upward positive for the forces on the pulley,
 
 $$
-\sum F = T_{1}+ F_{s}- Mg - mg
+\sum F_y=T_1+F_s-Mg-T_2=4kx_0-(M+m)g=0.
 $$
 
-$$
-0 = -2k(2x) - g(M + m) \quad\Rightarrow  \text{for equilibrium}, \sum F = 0
-$$
+The pulley’s equilibrium displacement is therefore
 
 $$
-x_{0}= - \frac{g(M + m)}{4k}
+x_0=\frac{(M+m)g}{4k}.
 $$
 
 **What is the period of small oscillations?** We want the differential equation of motion. If you can get the equation in the form of $\ddot{x} + Cx$ = 0, then you can read off $\omega _{0}^{2}$ and can get the period.
@@ -559,42 +566,32 @@ Second, let’s consider how the spring stretches relative to the pulley’s mot
 
 So this means that if the mass and pulley move $x$ in time $t$, the spring stretches (or compresses) by a displacement of $2x$ in the same time. We must take into account this difference in the spring’s displacement relative to the vertical displacement of the mass and pulley in our energy conservation.
 
-The total energy is
+In the unshifted coordinate, the total potential energy is $U=2kx^2-(M+m)gx$. Completing the square with the equilibrium position found above gives
 
 $$
-\begin{aligned}
-E &= K + U \\
-E &= \frac{1}{2} I\omega ^{2}+ \frac{1}{2} Mv^{2}+ \frac{1}{2} mv^{2}- Mgx - mgx + \frac{1}{2} k[2(x - x_{0})]^{2}
-\end{aligned}
+U=2k(x-x_0)^2-2kx_0^2.
 $$
-
-where the spring term is written relative to equilibrium: the spring stretch is $2x$, so the stretch relative to equilibrium is $2(x-x_{0})$.
 
 <!-- Source PDF page 211; printed label 202. -->
 
-
-For rotating without slipping, $\omega = v/R$. So we can simplify the above as:
+For the kinetic energy, use $v=\dot{x}$ and $|\omega|=|v|/R$. For the disk $I=MR^2/2$, so
 
 $$
-\begin{aligned}
-E &= \frac{1}{2} I \bigg(\frac{v}{R} \bigg)^{2}+ \frac{1}{2} Mv^{2}+ \frac{1}{2} mv^{2}- (M + m)gx + \frac{1}{2} k[2(x - x_{0})]^{2} \\
-E &= \frac{1}{2} v^{2} \bigg(\frac{I}{R^{2}} + M + m\bigg) - (M + m)gx + 2k(x - x_{0})^{2} \\
-E &= \frac{1}{2} v^{2}\bigg(\frac{1}{2} M + M + m\bigg) - (M + m)gx + 2k(x - x_{0})^{2}\quad\Rightarrow  I = \frac{1}{2} MR^{2} \\
-E &= \frac{1}{2} v^{2} \bigg(\frac{3}{2} M + m\bigg) - (M + m)gx + 2k(x - x_{0})^{2}
-\end{aligned}
+K=\frac12\left(\frac{I}{R^2}+M+m\right)v^2
+=\frac12\left(\frac32M+m\right)v^2.
 $$
 
-Now take the derivative of the energy with respect to time. It is convenient to measure the gravitational potential from the equilibrium height as well, so that the linear gravity term is absorbed into the definition of $x_{0}$ and only the quadratic spring term remains for small oscillations about equilibrium:
+Choosing the potential energy to be zero at equilibrium removes the constant $-2kx_0^2$. The remaining potential energy is $2k(x-x_0)^2$. Differentiate the conserved total energy with respect to time.
 
 $$
 \begin{aligned}
 \frac{\mathrm{d}E}{\mathrm{d}t} &= 0 = \frac{\mathrm{d}}{\mathrm{d}t} \bigg[\frac{1}{2} v^{2}\bigg(\frac{3}{2} M + m\bigg) + 2k(x - x_{0})^{2}\bigg] \\
 0 &= \bigg(\frac{3}{2} M + m\bigg) v \frac{\mathrm{d}v}{\mathrm{d}t} + 4k(x - x_{0})v \\
-0 &= \bigg(\frac{3}{2} M + m\bigg) \frac{\mathrm{d}v}{\mathrm{d}t} + 4k(x - x_{0}) \quad\Rightarrow  \mathrm{eliminate }v
+0 &= \bigg(\frac{3}{2} M + m\bigg) \frac{\mathrm{d}v}{\mathrm{d}t} + 4k(x - x_{0}) \quad\Rightarrow \text{divide by }v\text{ when }v\ne 0
 \end{aligned}
 $$
 
-Letting $X = x - x_{0}$, this becomes
+For an oscillation this equation also holds at the turning points by continuity. Letting $X = x-x_0$ gives
 
 $$
 0=\frac{\mathrm{d}^2X}{\mathrm{d}t^2}
@@ -622,13 +619,13 @@ Try to solve the same problem using torques and forces. Be wary of your vector d
 
 ::::{admonition} Key Takeaways
 
-This chapter applies the concepts from [Chapter 8](#ch-8), in particular those of energy conservation, to physics problems. The main idea of energy conservation is that,
+This chapter applies energy conservation to physics problems. For the time-independent potentials used here, the change in mechanical energy is the net work done by nonconservative forces (see [Chapter 8](#ch-8)):
 
 $$
-E = U + K = \mathrm{constant}
+\Delta E = \Delta(K+U)=W_{\mathrm{nc}}.
 $$
 
-Energy is conserved if all of the forces acting on your system are conservative forces. If there is a non-conservative force (e.g., friction), then energy will not be conserved and $E$ will not be constant.
+Mechanical energy stays constant when the net nonconservative work is zero. For example, static friction can act on an object rolling without slipping on a stationary surface while doing zero work at the contact point.
 
 There are two main approaches to solving physics problems with energy conservation.
 
@@ -699,7 +696,7 @@ A rock of mass $M$ is released from a height $h$ above the ground. What is the v
 
 ::::{admonition} Practice Problem 9-3
 
-A mass $m$ is attached to a spring with constant $k$ and set in simple harmonic motion with an amplitude $A$. Find the equations for potential and kinetic energy in terms of $m, k$, and $A$. Plot these energies and their sum as a function of time from $t$ = 0 to $t = T$ (the period of oscillations). For the plot, choose arbitrary values for $k, m$, and $A$.
+A mass $m$ attached to a spring with constant $k$ is released from rest at $x=A$, where $x$ is displacement from equilibrium. Find the potential and kinetic energy as functions of time in terms of $m$, $k$, and $A$. Plot these energies and their sum as a function of time from $t$ = 0 to $t = T$ (the period of oscillations). For the plot, choose arbitrary values for $k, m$, and $A$.
 
 ::::
 
@@ -766,11 +763,11 @@ Dome and particle.
 
 ::::{admonition} Practice Problem 9-7
 
-A person with mass $M$ is jumping on a trampoline that has an effective spring constant of $k$. The trampoline has a height of $d$ above the ground.
+An unloaded trampoline bed is at height $d$ above the ground and has an effective spring constant $k$. A jumper of mass $M$ starts from rest with the bed compressed vertically by $x_0$. Assume the bed acts as an ideal spring while supporting the jumper and that $x_0$ is large enough for the jumper to leave the bed with upward speed at height $d$. Neglect air resistance.
 
-a) What is the maximum height with respect to the ground that the person can reach while jumping on this trampoline?
+a) What maximum height above the ground does the jumper reach?
 
-b) How does the maximum height compare between an adult and a child jumping? Assume the child has half the mass of the adult. Does this make sense?
+b) An adult of mass $M$ and a child of mass $M/2$ start from the same compression $x_0$. How do their rises above the starting height compare? How do their maximum heights above the ground compare?
 
 ::::
 

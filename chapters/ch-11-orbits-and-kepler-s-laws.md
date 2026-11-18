@@ -32,10 +32,12 @@ A good example of a [hyperbolic orbit](https://solarsystem.nasa.gov/asteroids-co
 
 [Figure 11.1](#fig-11-1) shows an example ellipse with several key properties labeled. An ellipse is essentially an elongated circle, where the longer of the two axes is the semi-major axis $(a)$ and the shorter of the two axes is the semi-minor axis $(b)$. The degree to which the circle has been stretched is called the eccentricity (or ellipticity) and is denoted by the symbol $\varepsilon$,
 
-(eq-11-1)=
-$$
+```{math}
+:label: eq-11-1
+:enumerator: 11.1
+
 \varepsilon=\sqrt{1-\frac{b^2}{a^2}}.
-$$
+```
 
 [Figure 11.1](#fig-11-1) also shows two special points in red, which are called the foci (focus is the singular term). These two foci, denoted as $f_{1}$ and $f_{2}$, are located on the semi-major axis, each at a distance $\varepsilon a$ from the center of the ellipse. The foci of an ellipse define the shape. An ellipse is defined by a locus (path) of points where the total distance from any point on the locus to the two foci adds up to a constant. For example, [Figure 11.1](#fig-11-1) shows a point on the ellipse that is a distance $r_{1}$ from $f_{1}$ and a distance $r_{2}$ from $f_{2}$. The shape of the ellipse is defined such that the sum of those two distances $r_{1}+r_{2}$ = constant for every position on the locus. For an ellipse, $r_{1}+ r_{2}= 2a$.
 
@@ -104,9 +106,12 @@ This shows the position vectors $r_{1}$ and $r_{2}$ again for the two foci, wher
 
 Now we don’t need to use the subscript for $r$. We can say that the distance to any point on the ellipse from a given focus is:
 
-$$
+```{math}
+:label: eq-11-2
+:enumerator: 11.2
+
 r = \frac{a(1 - \varepsilon ^{2})}{1 + \varepsilon \cos \theta}
-$$ (eq-11-2)
+```
 
 ::::{tip} Quick Questions
 
@@ -122,13 +127,19 @@ For our elliptical orbit, $r$ is the distance from one of the foci to the ellips
 
 [Figure 11.3](#fig-11-3) shows the definition of these closest and farthest points. This shortest distance from the focus is called the pericenter $(r_{p})$ and is shown in blue. The largest distance from the focus is called the apocenter $(r_{a})$ and it is shown in purple. The pericenter and apocenter distances are defined as:
 
-$$
-r_{p}= a(1 - \varepsilon)
-$$ (eq-11-3)
+```{math}
+:label: eq-11-3
+:enumerator: 11.3
 
-$$
+r_{p}= a(1 - \varepsilon)
+```
+
+```{math}
+:label: eq-11-4
+:enumerator: 11.4
+
 r_{a}= a(1 + \varepsilon)
-$$ (eq-11-4)
+```
 
 <!-- Source PDF page 240; printed label 231. -->
 
@@ -153,7 +164,7 @@ If it helps, consider simple harmonic motion as an analogy. For a pendulum that 
 
 1. How do the apocenter and pericenter compare when $\varepsilon$ = 0? Does this make sense?
 
-2. What happens to the apocenter and pericenter when $\varepsilon \rightarrow$ 1? Describe the shape of the ellipse. Assume $\varepsilon$ gets close to 1, but doesn’t reach it.
+2. Hold the semimajor axis $a$ fixed. What happens to the apocenter and pericenter as $\varepsilon$ approaches 1 from below? What shape does the ellipse approach?
 
 ::::
 
@@ -189,20 +200,25 @@ r(\theta)=\left(\frac{L^2}{m\gamma}\right)
 \frac{1}{1+\sqrt{1+\frac{2EL^2}{m\gamma^2}}\cos\theta}.
 $$
 
-The above equation has the same form as a general ellipse (Equation 11.2). This indicates that our solution for a central force is an ellipse. Moreover, we can define $\varepsilon$ from the physics as
+For a bound orbit, this equation has the same form as the polar equation of an ellipse ([Equation 11.2](#eq-11-2)). The eccentricity is
 
-(eq-11-5)=
-$$
+```{math}
+:label: eq-11-5
+:enumerator: 11.5
+
 \varepsilon=\sqrt{1+\frac{2EL^2}{m\gamma^2}}.
-$$
+```
 
-Note that for the orbit to be a true ellipse, we need 0 $< \varepsilon < 1$. This condition is only met if $E < 0$, which was the same conclusion that we obtained in [Chapter 10](#ch-10) when we looked at the energy and found that $r$ had two real solutions when $E < 0$.
+For a noncircular ellipse, $0<\varepsilon<1$, which requires $E_{\min}<E<0$ at fixed $L$. These are the same energy bounds that give two distinct positive turning radii in [Chapter 10.6](#sec-10-6).
 
 In [Chapter 10.6](#sec-10-6), we showed that a circular orbit occurs when the energy of the system equals the local minimum of the effective potential. The radius of this circular orbit is
 
-$$
+```{math}
+:label: eq-11-6
+:enumerator: 11.6
+
 r_{c}= \frac{L^{2}}{m\gamma}
-$$ (eq-11-6)
+```
 
 for the gravitational force. We can also prove this definition of $r_{c}$ using Newton’s laws for uniform circular motion.
 
@@ -223,9 +239,12 @@ So $r_{c}$ is the radius of a circular orbit with an angular momentum of $L = mv
 
 Combining [Equations 11.5](#eq-11-5) and 11.6 with the equation for $r(\theta)$, we can describe a position on the orbit as,
 
-$$
+```{math}
+:label: eq-11-7
+:enumerator: 11.7
+
 r(\theta) = \frac{r_{c}}{1 + \varepsilon \cos \theta}
-$$ (eq-11-7)
+```
 
 ::::{tip} Quick Questions
 
@@ -243,21 +262,27 @@ $$
 
 The pericenter is the closest position and it corresponds to $\theta$ = 0 and the apocenter is the furthest position when $\theta = 180^{\circ}$. Putting these cases into $r$, we get:
 
-$$
+```{math}
+:label: eq-11-8
+:enumerator: 11.8
+
 r_{p}= \frac{r_{c}}{1 + \varepsilon}
-$$ (eq-11-8)
+```
 
-$$
+```{math}
+:label: eq-11-9
+:enumerator: 11.9
+
 r_{a}= \frac{r_{c}}{1 - \varepsilon}
-$$ (eq-11-9)
+```
 
-For $\varepsilon \ge 1$, the orbit is unbound. These are hyperbolic orbits $(\varepsilon > 1)$ or parabolic orbits $(\varepsilon$ = 1). The above equations for the pericenter and apocenter show that this must be true. As $\varepsilon \rightarrow$ 1, the apocenter distance becomes $r_{a}\rightarrow \infty$. That means that your furthest distance is moving so far away that the object is no longer bound to your gravitational field. If you are not bound to the gravitational field, then your system has too much energy to be contained by that field and it will just come in and go out.
+For $\varepsilon \ge 1$, the orbit is unbound. These are hyperbolic orbits $(\varepsilon>1)$ or parabolic orbits $(\varepsilon=1)$. Holding $L$ fixed holds $r_c=L^2/(m\gamma)$ fixed. In this limit, as $\varepsilon$ approaches 1 from below, the apocenter distance $r_a=r_c/(1-\varepsilon)$ diverges and the orbit approaches a parabola.
 
 (example-11-1)=
 
 ::::{admonition} Sample Problem 11-1
 
-A satellite of mass $m$ orbits the Earth in a circular orbit of radius $r_{0}$. One of its engines is fired briefly toward the Earth. **a) Describe how the energy of this satellite changes after the engine is fired. b) What happens to the orbit of the satellite?**
+A satellite of mass $m$ orbits Earth in a circle of radius $r_0$. A brief engine burn gives it a radial velocity change $u$, with negligible change in position and mass during the burn. **a) How does the satellite's energy change? b) How does the new orbit depend on $|u|$?**
 
 **Solution**
 
@@ -276,7 +301,7 @@ $$
 
 So our initial energy is $E_i=-m\gamma^2/(2L^2)$.
 
-Now, let’s consider what happens to the energy after the engines are fired briefly. We will first assume that the satellite moves a negligible amount, so its position vector, $r$, is unchanged during the energy boost from the engines. We are told that the engine is fired inward toward the Earth. In other words, the thrust is applied along a radial direction. Any motion along the radial direction does not change the angular momentum, because $L = \vec{r} \times \vec{p}$. The component of motion along a radial direction does not produce additional angular momentum. So $L$ is the same before and after the energy boost. Thus, the effective potential does not change.
+The radial impulse leaves the angular momentum $\vec L=\vec r\times\vec p$ unchanged, because $\vec r\times\Delta\vec p=0$. Both $L$ and $r_0$ are unchanged during the burn, so the effective potential has the same value immediately before and after it.
 
 But, the energy boost does induce a change in the radial momentum, which means that $\dot{r} \neq 0$. If we have a radial velocity, then our energy after the boost, $E_{f}$ is
 
@@ -290,9 +315,9 @@ $$
 E_{f}= \frac{1}{2} m\dot{r}^{2}+ E_{i}
 $$
 
-Thus, the total energy has increased because kinetic energy was added to the satellite. It does not matter if the rockets move the satellite toward the Earth $(\dot{r} < 0)$ or away from the Earth $(\dot{r} > 0)$, the kinetic energy term is always positive so it will always add to the total energy. The final energy, $E_{f}$, must be larger than our initial energy $E_{i}$. The exact amount of the increase depends on the radial velocity $\dot{r}$ given to the satellite by the engines. Since we are not given that quantity, all we can conclude is that the total energy of the satellite has increased due to the engines firing.
+Immediately after the burn, $\dot r=u$, so the energy increases by $mu^2/2$ for an inward or outward impulse.
 
-b) There are a couple of ways we can answer this question. First, we can sketch the energy diagram. [Figure 11.4](#fig-11-4) shows a sketch of what the initial and final energies may look like for this satellite. Note, we are assuming that the boost in energy is sufficiently small that the satellite remains bound to the Earth.
+b) [Figure 11.4](#fig-11-4) shows the case of a burn that leaves the satellite bound to Earth.
 
 <!-- Source PDF page 244; printed label 235. -->
 
@@ -302,12 +327,18 @@ b) There are a couple of ways we can answer this question. First, we can sketch 
 :alt: Figure shows an effective energy graph for the orbit with two different energies following the maneuver.
 :width: 248px
 
-Change in energy for our perturbed satellite. The satellite starts in a circular orbit so that $E = E_{i}$ which is at the minimum of the effective potential. After the engines are fired, the energy increases so that $E = E_{f}$.
+Change in energy for a radial impulse that leaves the satellite bound. The initial circular orbit has energy $E_i$ at the minimum of the effective potential. The final energy $E_f$ lies above the minimum and below zero.
 :::
 
-[Figure 11.4](#fig-11-4) shows the initial energy, $E_{i}$ at the minimum of $U_{eff}$ and the final energy $E_{f}$ which is somewhat larger. The increase in energy makes the satellite go into an elliptical orbit. We can see that the orbit is elliptical because we have two solutions for $r$ when the energy line hits the effective potential curve (denoted by $r_{1}$ and $r_{2}$ in the figure). These values of $r_{1}$ and $r_{2}$ are the perigee and apogee positions of the satellite (with the Earth at a focus). If the engines move the satellite inward initially, the satellite will begin moving toward its perigee position (from an initially circular orbit of $r_{c}$).
+In the bound case, the energy line meets the effective potential curve at two radii, $r_1$ and $r_2$. These are the perigee and apogee of the new ellipse. An inward impulse initially sends the satellite toward perigee.
 
-Alternatively, we could argue that the orbit is elliptical by looking at the equation for $\varepsilon$ in [Equation 11.5](#eq-11-5). From this equation, $\varepsilon$ = 0 when $E = E_{\min}$ and $\varepsilon$ will increase if $E > E_{\min}$. An orbit is circular if $\varepsilon$ = 0 and elliptical for 0 $< \varepsilon < 1$.
+In general, let $v_c=\sqrt{GM/r_0}$ be the initial circular speed, where $M$ is Earth's mass. Then $L=mr_0v_c$ and $E_i=-mv_c^2/2$. Substituting $E_f=E_i+mu^2/2$ into [Equation 11.5](#eq-11-5) gives
+
+$$
+\varepsilon=\frac{|u|}{v_c}.
+$$
+
+The orbit is circular for $u=0$, elliptical for $0<|u|<v_c$, parabolic for $|u|=v_c$, and hyperbolic for $|u|>v_c$.
 
 ::::
 
@@ -371,9 +402,12 @@ Because we have a constant angular momentum, we naturally get Kepler’s second 
 
 For the third law, we have:
 
-$$
+```{math}
+:label: eq-11-10
+:enumerator: 11.10
+
 \frac{T^{2}}{a^{3}} = \mathrm{constant}
-$$ (eq-11-10)
+```
 
 where $T$ is the period and $a$ is the semi-major axis. To show this is the case, we need to use the previous laws and our equations for the properties of an ellipse.
 
@@ -428,9 +462,12 @@ $$
 T^{2}= \frac{4\pi ^{2}a^{3}}{GM} \quad\Rightarrow  \text{sub} \gamma = GMm
 $$
 
-$$
+```{math}
+:label: eq-11-11
+:enumerator: 11.11
+
 \frac{T^{2}}{a^{3}} = \frac{4\pi ^{2}}{GM} = \mathrm{constant}
-$$ (eq-11-11)
+```
 
 (sec-11-4)=
 ## 11.4 Application of Kepler’s Laws
@@ -807,11 +844,11 @@ A satellite has an elliptical orbit where it is 250km above the Earth’s surfac
 
 ::::{admonition} Practice Problem 11-11
 
-A comet has an elliptical orbit with an eccentricity of $\varepsilon$ with a perihelion distance of $p$ from the Sun. Assume the Earth has a circular orbit of radius $R$ and the comet orbits in the plane of the Earth with $p < R$ such that the comet crosses Earth’s orbit in two places.
+A comet orbits the Sun with eccentricity $\varepsilon$ and perihelion distance $p$. Assume Earth has a circular orbit of radius $R$ in the same plane and that $0<p<R$.
 
-a) Find the equation for the comet’s position in its orbit as a function of its perihelion distance and an angle $\theta$ (where $\theta$ = 0 at the perihelion position).
+a) Find the comet’s distance from the Sun in terms of $p$, $\varepsilon$, and the angle $\theta$ measured from perihelion.
 
-b) Find the angles where the comet crosses Earth’s orbit?
+b) For an ellipse with $0<\varepsilon<1$, when are there two crossings of Earth's orbit? Find their angles. When are the orbits tangent?
 
 c) What happens if $\varepsilon$ = 0?
 

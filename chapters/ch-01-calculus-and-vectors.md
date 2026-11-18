@@ -23,9 +23,12 @@ This chapter reviews basic calculus and vector notation and coordinate systems. 
 
 For linear motion, we can use the Cartesian coordinate system. The position of an object is described by a vector $\vec{r}$ in $x$, $y$, and $z$. The linear velocity of the object is the time derivative of position, and the linear acceleration is the time derivative of velocity.
 
-$$
+```{math}
+:label: eq-1-1
+:enumerator: 1.1
+
 \vec{r} = x\hat{\imath} + y\hat{\jmath} + z\hat{k} = \langle x,y,z\rangle
-$$ (eq-1-1)
+```
 
 :::{figure} ../images/figures/figure-1-1.png
 :label: fig-1-1
@@ -174,11 +177,13 @@ In cases of circular motion, it is often easier to solve a problem by changing y
 $$
 \begin{aligned}
 r &= \sqrt{x^{2}+y^{2}} \\
-\theta &= \tan^{-1}\Bigg(\frac{y}{x}\Bigg)
+\theta &= \operatorname{atan2}(y,x)
 \end{aligned}
 $$
 
-Of course, $r$ and $\theta$ are the polar coordinates (scalars), with unit vectors $\hat{r}$ and $\hat{\theta}$, where $\hat{r}$ points away from the origin of the system and $\hat{\theta}$ is orthogonal to $\hat{r}$ in the counter-clockwise direction (usually). Note that the hat symbol indicates a unit vector (direction only). [Figure 1.4](#fig-1-4) shows these vector directions.
+The function $\operatorname{atan2}(y,x)$ uses both Cartesian coordinates to choose the correct quadrant and works on the coordinate axes away from the origin. Adjust its result by a multiple of $2\pi$ if you use a different angular range. At the origin, $r=0$ and $\theta$ is arbitrary.
+
+The quantities $r$ and $\theta$ are the polar coordinates (scalars), with unit vectors $\hat{r}$ and $\hat{\theta}$, where $\hat{r}$ points away from the origin of the system and $\hat{\theta}$ is orthogonal to $\hat{r}$ in the counter-clockwise direction (usually). Note that the hat symbol indicates a unit vector (direction only). [Figure 1.4](#fig-1-4) shows these vector directions.
 
 The position vector in plane polar coordinates can be written as $\vec{r} = r\hat{r}$. The polar angle $\theta$ is a scalar coordinate; its associated unit vector $\hat{\theta}$ gives the tangential direction.
 
@@ -255,9 +260,12 @@ $$
 \vec{v} = \frac{\mathrm{d}r}{\mathrm{d}t} \hat{r} + r \frac{\mathrm{d}\hat{r}}{\mathrm{d}t}
 $$
 
-$$
+```{math}
+:label: eq-1-2
+:enumerator: 1.2
+
 \vec{v} = \frac{\mathrm{d}r}{\mathrm{d}t} \hat{r}+r \frac{\mathrm{d}\theta}{\mathrm{d}t} \hat{\theta}
-$$ (eq-1-2)
+```
 
 where the first term is the radial velocity component $\vec{v}_{r}$ and the second term is the tangential velocity component $\vec{v}_{\theta}$. The radial velocity component indicates how the point is moving in and out along the direction of the radius vector, whereas the tangential velocity component of the motion describes how the point is moving along a circle (motion that is tangent to the radius vector). For circular motion, the radius is constant, such that $\frac{\mathrm{d}r}{\mathrm{d}t}=0$ and you get $\vec{v}_{circ}= r\omega \hat{\theta}$.
 
@@ -282,7 +290,10 @@ $$
 
 For acceleration, we want the time derivative of velocity. Following a similar procedure,
 
-$$
+```{math}
+:label: eq-1-3
+:enumerator: 1.3
+
 \begin{aligned}
 \vec{a}
 &= \frac{\mathrm{d}\vec{v}}{\mathrm{d}t}
@@ -307,7 +318,7 @@ $$
  +\left(r\frac{\mathrm{d}^{2}\theta}{\mathrm{d}t^{2}}
  +2\frac{\mathrm{d}r}{\mathrm{d}t}\frac{\mathrm{d}\theta}{\mathrm{d}t}\right)\hat{\theta}
 \end{aligned}
-$$ (eq-1-3)
+```
 
 where the first term is the acceleration in the radial direction $(a_{r})$ and the second term is the acceleration in the tangential direction $(a_{\theta})$. That is:
 
@@ -434,10 +445,13 @@ $$
 
 For circular motion, $\theta$ changes with time. Let’s consider the simplest case where $\dot{\theta} = \omega$ = constant, such that we can solve for $\theta (t)$ as $\theta = \int \omega\,\mathrm{d}t = \omega t + \theta _{0}$, where $\theta _{0}$ is a constant of integration and represents the initial angle. It is often convenient to define the initial angle as $\theta _{0}$ = 0 so $\theta (t) = \omega t$. Therefore, we get:
 
-$$
+```{math}
+:label: eq-1-4
+:enumerator: 1.4
+
 \vec{r}=\underbrace{r_{0}\cos(\omega t)}_{x(t)}\hat{\imath}
 +\underbrace{r_{0}\sin(\omega t)}_{y(t)}\hat{\jmath}
-$$ (eq-1-4)
+```
 
 <!-- Source PDF page 20; printed label 11. -->
 
@@ -794,23 +808,26 @@ $$
 
 In physics, you can often make approximations to simplify the math based on the conditions of your system. For example, if you have a complicated force acting on a system, but you are only interested in short distances or short times, you can often simplify the equation for that force making the calculations easier. Deviations between the true value (considering the full complicated force equation) and the approximation (with the simplified force equation) would be considered small, such that you get a good idea of how the system will move without needing to do the complicated math. (Of course, with some high-precision physics, you cannot make this approximation.)
 
-A very common approach is to use the Taylor series expansion. The idea here is that any function can be broken up into a series of polynomials following:
+For a function with enough continuous derivatives near $x_0$, Taylor's theorem gives a polynomial approximation. The degree-$n$ Taylor polynomial and its remainder give
 
-$$
+```{math}
+:label: eq-1-5
+:enumerator: 1.5
+
 \begin{aligned}
-f(x) &= f(x_{0}) + \frac{\mathrm{d}f(x_{0})}{\mathrm{d}x} (x - x_{0}) + \frac{1}{2} \frac{\mathrm{d}^{2}f(x_{0})}{\mathrm{d}x^{2}} (x - x_{0})^{2}+ \\
-\frac{1}{3!} \frac{\mathrm{d}^{3}f(x_{0})}{\mathrm{d}x^{3}} (x - x_{0})^{3}+ \cdots + \frac{1}{n!} \frac{\mathrm{d}^{n}f(x_{0})}{\mathrm{d}x^{n}} (x - x_{0})^{n}
+f(x) &= f(x_{0}) + f^\prime(x_0) (x - x_{0}) + \frac{1}{2} f^{(2)}(x_0) (x - x_{0})^{2}+ \\
+\frac{1}{3!} f^{(3)}(x_0) (x - x_{0})^{3}+ \cdots + \frac{1}{n!} f^{(n)}(x_0) (x - x_{0})^{n} + R_n(x)
 \end{aligned}
-$$ (eq-1-5)
+```
 
-where $f(x)$ is the function and $x_{0}$ is a reference value for the function and the ! symbol is the factorial symbol. That is $f(x)$ describes the entire function for all values $x$, whereas $f(x_{0})$ is the value of the function at the specific value of $x = x_{0}$. See [Appendix B.2](#sec-B-2) for more details and other approximation techniques.
+Here $f^{(n)}(x_0)$ denotes the $n$th derivative evaluated at the expansion point, $n!$ denotes the factorial of $n$, and $R_n(x)$ is the error from truncating the expansion. For an analytic function, such as $e^x$, the infinite Taylor series equals the function in its interval of convergence. See [Appendix B.2](#sec-B-2) for more details and other approximation techniques.
 
 For Equation 1.5, consider values of $x \approx x_{0}$. That is, you are only looking at cases of your variable, $x$ when it is close to your reference value. In this case, $x-x_{0}$ is small. Thus, higher order terms like $(x-x_{0})^{2}$ and $(x-x_{0})^{3}$ are very small and can be dropped. Suddenly, your function has become very simple.
 
 Let’s look at an example. Consider the Taylor series expansion for $e^{x}$ for small values of $x$. In this case, we can set $x_{0}$ = 0 because we are looking at small values of $x$. The expansion is:
 
 $$
-f(x) \approx f(0) + f^{\prime}(0)(x) + \frac{1}{2} f^{\prime \prime}(0)(x)^{2}+ \frac{1}{3!} f^{\prime \prime \prime}(0)(x)^{3}+ \cdots +
+f(x) \approx f(0) + f^{\prime}(0)(x) + \frac{1}{2} f^{\prime \prime}(0)(x)^{2}+ \frac{1}{3!} f^{\prime \prime \prime}(0)(x)^{3}
 $$
 
 where $f^{\prime }(0)$ means take the derivative of $f(x)$ with respect to $x$ and evaluate that for $x$ = 0. For $f = e^{x}$, we have:
@@ -1105,7 +1122,7 @@ $$
 **Taylor series approximation (for small $x$):**
 
 $$
-f(x) \approx f(0) + f^{\prime}(0)(x) + \frac{1}{2} f^{\prime \prime}(0)(x)^{2}+ \frac{1}{3!} f^{\prime \prime \prime}(0)(x)^{3}+ \cdots +
+f(x) \approx f(0) + f^{\prime}(0)(x) + \frac{1}{2} f^{\prime \prime}(0)(x)^{2}+ \frac{1}{3!} f^{\prime \prime \prime}(0)(x)^{3}
 $$
 
 ::::

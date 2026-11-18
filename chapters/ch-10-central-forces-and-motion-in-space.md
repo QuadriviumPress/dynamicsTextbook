@@ -37,9 +37,12 @@ A *central force* is defined as follows:
 
 2. The magnitude of the force depends only on the distance $r$.
 
-$$
+```{math}
+:label: eq-10-1
+:enumerator: 10.1
+
 \vec{F} = f(r)\hat{r} = f(r) \frac{\vec{r}}{r}
-$$ (eq-10-1)
+```
 
 A central force is *attractive* if $f(r) < 0$ (the force points toward the origin) and repulsive if $f(r) > 0$ (the force points away from the origin). An attractive force acts to bring the particle to the origin, whereas a repulsive force acts to move the particle away from the origin. We have already discussed several such central forces in previous chapters.
 
@@ -99,9 +102,12 @@ where $\mathrm{d}r$ is a tiny displacement along the path. Recall that for conse
 
 Or we can solve for the force if we know the potential of the central force:
 
-$$
+```{math}
+:label: eq-10-2
+:enumerator: 10.2
+
 \vec{F} = -\vec{\nabla}U = - \frac{\partial U}{\partial r} \hat{r}
-$$ (eq-10-2)
+```
 
 since the force is radial, only the radial component of the gradient matters. For a review of the properties of conservative forces, see [Chapter 8](#ch-8).
 
@@ -177,9 +183,12 @@ where we have a radial component of the acceleration and a tangential component 
 
 **1)** The radial equation of motion is $m\vec{a}_{r}= f(r)\hat{r}$ because both act in the radial direction.
 
-$$
+```{math}
+:label: eq-10-3
+:enumerator: 10.3
+
 f(r)\hat{r} = m\vec{a}_{r}= m(\ddot{r} - \dot{\theta}^{2}r)\hat{r}
-$$ (eq-10-3)
+```
 
 **2)** The tangential acceleration is $\vec{a}_{\theta}$ = 0 because central forces are only radial in direction. Setting the tangential acceleration component to zero, we get:
 
@@ -194,9 +203,12 @@ where the latter equation can be expanded to recover the $\vec{a}_{\theta}$ term
 
 In the above equation, we have a time derivative equal to zero. If you have a time derivative equal to zero, that means the term in the derivative is a constant.
 
-$$
+```{math}
+:label: eq-10-4
+:enumerator: 10.4
+
 r^{2}\dot{\theta} = \mathrm{constant}
-$$ (eq-10-4)
+```
 
 <!-- Source PDF page 220; printed label 211. -->
 
@@ -222,9 +234,12 @@ $$
 
 Since $\vec{L}$ is a constant, the magnitude of $\vec{L}$ is also a constant. The magnitude of $\vec{L}$ is
 
-$$
+```{math}
+:label: eq-10-5
+:enumerator: 10.5
+
 |\vec{L}| = m\dot{\theta}r^{2}= \mathrm{constant}
-$$ (eq-10-5)
+```
 
 Since $m$ is also a constant for our particle (assumed), we get that $\dot{\theta}r^{2}$ must be a constant.
 
@@ -244,9 +259,12 @@ We can use Equation 10.5 to re-write the kinetic energy in terms of the linear v
 
 and the angular momentum using $\dot{\theta}=L/(mr^2)$.
 
-$$
+```{math}
+:label: eq-10-6
+:enumerator: 10.6
+
 K = \frac{1}{2} m\dot{r}^{2}+ \frac{1}{2} \frac{L^{2}}{mr^{2}}
-$$ (eq-10-6)
+```
 
 The total energy of the system is then:
 
@@ -259,19 +277,24 @@ $$
 
 where $U(r)$ represents the potential produced by the central force. The first term depends only on $\dot{r}$ whereas the other two terms depend only on $r$ ($m$ and $L$ are constant).
 
-(eq-10-7)=
-$$
+```{math}
+:label: eq-10-7
+:enumerator: 10.7
+
 E=\underbrace{\frac12m\dot{r}^2}_{\dot{r}\text{ term}}
 +\underbrace{\frac12\frac{L^2}{mr^2}+U(r)}_{r\text{ terms}}.
-$$
+```
 
 <!-- Source PDF page 221; printed label 212. -->
 
 This should look familiar. This is a 1-D energy equation. You have the energy entirely expressed along one coordinate axis. For example, when we looked at a mass and spring, $K = \frac{1}{2} m\dot{x}^{2}$ and $U = \frac{1}{2} kx^{2}$, such that $E = \frac{1}{2} m\dot{x}^{2}+ \frac{1}{2} kx^{2}$, all the energy is along one axis $(x)$. So the energy equation for a central force can be simplified into a 1-D energy equation with an additional $r$ term. By definition, the potential energy will depend on position alone. So we can combine the two $r$-terms into an *effective potential energy*, $U_{eff}$:
 
-$$
+```{math}
+:label: eq-10-8
+:enumerator: 10.8
+
 U_{eff}= \frac{1}{2} \frac{L^{2}}{mr^{2}} + U(r)
-$$ (eq-10-8)
+```
 
 where the first term is related to the angular momentum and is often called the centrifugal potential. The second term is the potential due to the central force itself.
 
@@ -283,9 +306,12 @@ The effective potential energy is a mathematical description of two energy terms
 
 Coming back to our energy equation, we have:
 
-$$
+```{math}
+:label: eq-10-9
+:enumerator: 10.9
+
 E = \frac{1}{2} m\dot{r}^{2}+ U_{eff}
-$$ (eq-10-9)
+```
 
 This looks exactly like a 1-D energy problem, even though the system may be in a 3-D space and moving in a 2-D plane. By cutting back on the dimensions, we make the math much easier.
 
@@ -310,9 +336,7 @@ So with just the effective potential, we can start to get an idea of the allowed
 
 ::::{admonition} Sample Problem 10-1
 
-A particle of mass $m$ and energy $E$ moves in an inverse-cube field $f(r)=-\gamma/r^3$, where $\gamma$
-
-is a constant. The angular momentum of the particle is $L$. If $\dot{r}$ = 0, **find the equation for** $r$ **in terms of** $\gamma,m,$ **and** $E$**. What kind of motion is this?**
+A particle of mass $m$, energy $E$, and angular momentum of magnitude $L$ moves in an attractive inverse-cube field $f(r)=-\gamma/r^3$, where $\gamma>0$. **Find the possible radius $r$ at an instant when $\dot r=0$. When does this condition correspond to a turning point, and when can the orbit be circular?**
 
 ::::
 
@@ -342,7 +366,7 @@ U_{eff}&= \frac{1}{2r^{2}} \Bigg(\frac{L^{2}}{m} - \gamma \Bigg)
 \end{aligned}
 $$
 
-Since $U_{eff}= E$, we have:
+At an instant when $\dot r=0$, we have:
 
 $$
 E = \frac{1}{2r^{2}} \Bigg(\frac{L^{2}}{m} - \gamma \Bigg)
@@ -356,9 +380,14 @@ $$
 r=\sqrt{\frac{1}{2E}\left(\frac{L^2}{m}-\gamma\right)}.
 $$
 
-We ignore the negative case for the square-root because by definition, $r > 0$.
+The square-root expression gives a finite positive radius when $E\ne 0$ and $(L^2/m-\gamma)/E>0$. The radial equation of motion is
 
-As for the kind of motion, this object moves in such a way that $r$ is constant. In other words, the particle is moving in a perfect circle (circular motion).
+$$
+m\ddot r=-\frac{\mathrm{d}U_{eff}}{\mathrm{d}r}
+=\frac{L^2/m-\gamma}{r^3}.
+$$
+
+If $L^2/m-\gamma\ne 0$, then $\ddot r\ne 0$ and the radius above is a turning point. An orbit at constant radius requires $L^2/m=\gamma$. In that case $U_{eff}=0$ and $\dot r=0$ implies $E=0$. The initial radius then sets the radius of the circular orbit.
 
 ::::
 
@@ -509,7 +538,7 @@ $$
 
 The effective potential still sets the minimum value of energy that a system can have. That is, we still have the condition $E \ge U_{eff}$ because $\dot{r}^{2}\ge 0$. So the effective potential curve $U_{eff}$ in [Figure 10.4](#fig-10-4) shows the minimum allowed energy of the system. Note that this curve has a distinct shape with a local minimum in the potential. This shape has a profound impact on how objects in this potential are going to move.
 
-For simplicity, let’s look at the condition where $\dot{r}$ = 0. An object with $\dot{r}$ = 0 has no radial motion. Instead, all the motion will be transverse due to the non-zero angular momentum $(L = m\dot{\theta}r^{2})$. Note that transverse motion describes rotation. So an object in a gravitational field will rotate or *orbit* around the source of that gravitational field.
+At an instant when $\dot r=0$, the velocity is purely transverse because the angular momentum is nonzero. The radius can be at a radial turning point or remain constant on a circular orbit.
 
 <!-- Source PDF page 226; printed label 217. -->
 
@@ -522,7 +551,7 @@ For simplicity, let’s look at the condition where $\dot{r}$ = 0. An object wit
 The effective potential energy for a system moving in a gravitational field. The effective potential is in purple. The potential from gravity is in blue and the centrifugal potential is in red. The functions use arbitrary constants and units for plotting.
 :::
 
-Let’s find the conditions for a stable orbit. We will substitute $\gamma = GMm$ to make the math a bit easier to read. Assuming $\dot{r}$ = 0:
+Let’s find the possible radii at which $\dot r=0$. We will substitute $\gamma=GMm$ to make the math a bit easier to read:
 
 $$
 E = U_{eff}
@@ -539,20 +568,18 @@ $$
 \end{aligned}
 $$
 
-The above equation is a quadratic equation with $r$, where the solution is:
+For $E\ne 0$, the equation is quadratic in $r$, with solutions
 
 $$
 r=\frac{-(-2\gamma)\pm\sqrt{(-2\gamma)^2-4(-2E)(L^2/m)}}{2(-2E)}
 =\frac{\gamma\pm\sqrt{\gamma^2+2EL^2/m}}{-2E}.
 $$
 
-where $\gamma = GMm$.
-
-To have a real orbit, we need to have real values for $r$. By definition, $r \ge 0$, or $r$ must be positive. The above equation has two positive (real) solutions for $r$ if $E < 0$ or if the energy is negative.
+The roots give physical turning radii only when they are real and positive. There are two distinct positive roots when $E_{\min}<E<0$, where $E_{\min}=-m\gamma^2/(2L^2)$. At $E=E_{\min}$ the roots coincide, and below $E_{\min}$ there are no real roots. When $E=0$, the equation is linear and gives one positive turning radius, $r=L^2/(2m\gamma)$.
 
 ::::{tip} Quick Question
 
-1. Look at [Figure 10.4](#fig-10-4). Assuming $E = U_{eff}$, consider the values for $r$ that are satisfied when $E = U_{eff}= -0.1$ versus $E = U_{eff}= 0.1$. How many solutions for $r$ do you get in each case?
+1. Look at [Figure 10.4](#fig-10-4). How many times does the curve $U_{eff}(r)$ cross the energy levels $E=-0.1$ and $E=0.1$? What do the crossing radii represent?
 
 ::::
 
@@ -650,13 +677,11 @@ constant, reproduces the orbital solutions discussed in this section. The proper
 
 In [Sample Problem 10-2](#example-10-2), we used a modification of Earth’s gravitational field described
 
-as $U(r)=-\dfrac{\gamma}{r}\left(1+\dfrac{\varepsilon}{r^2}\right)$, where $\gamma$ and $\varepsilon$ are constants. A particle of mass $m$ is in a closed
-
-orbit in this gravitational potential with an angular momentum of $L$. **If the angular momentum of the system is the exact value to put the particle in a circular orbit, what are the possible radii for a circular orbit?**
+as $U(r)=-\dfrac{\gamma}{r}\left(1+\dfrac{\varepsilon}{r^2}\right)$. Take $\gamma>0$ and $\varepsilon>0$. A particle of mass $m$ has angular momentum of magnitude $L$. **For which values of $L$ can the particle have a circular orbit? Find the possible radii and determine their radial stability.**
 
 **Solution**
 
-You have a circular orbit when $\mathrm{d}U_{eff}/\mathrm{d}r=0$. For this system,
+For a circular orbit, the radial velocity and acceleration must both vanish. A candidate radius therefore satisfies $\mathrm{d}U_{eff}/\mathrm{d}r=0$. For this system,
 $U_{eff}=L^2/(2mr^2)+U(r)$,
 
 where $U(r)$ is the potential given in the equation. If you plot the effective potential, depending on the constants, you will get a curve that looks like:
@@ -670,7 +695,7 @@ where $U(r)$ is the potential given in the equation. If you plot the effective p
 An example of $U_{eff}$ with arbitrary constants.
 :::
 
-So, we see that there are multiple possible places where the derivative of $U_{eff}$ will be zero (local maxima or minima). Note that the exact shape of the effective potential curve will depend on the constants themselves.
+The illustrated curve has two stationary points. Their existence depends on the constants.
 
 To get the equations for a circular orbit, let’s first solve for the derivative and set that to be zero:
 
@@ -700,15 +725,15 @@ $$
 r=\frac{-(-L^2/m)\pm\sqrt{(-L^2/m)^2-4(\gamma)(3\gamma\varepsilon)}}{2\gamma}.
 $$
 
-So there are two values of $r > 0$ for which we can have an extremum (local maximum or minimum) in the effective potential.
+When $L^4/m^2>12\gamma^2\varepsilon$, the quadratic gives two distinct positive circular radii:
 
 $$
 r=\frac{L^2/m\pm\sqrt{(L^2/m)^2-12\gamma^2\varepsilon}}{2\gamma}.
 $$
 
-Since these are by definition the radii at a local maximum or minimum, they are the solutions for a circular orbit. But only a local minimum will produce a stable circular orbit. Recall the discussion of stable and unstable equilibria from [Chapter 8.8](#sec-8-8).
+The derivative $\mathrm{d}U_{eff}/\mathrm{d}r$ has the sign of the upward-opening quadratic above. It changes from positive to negative at the smaller radius, giving a local maximum and an unstable circular orbit. At the larger radius it changes from negative to positive, giving a local minimum and a stable circular orbit. See [Chapter 8.8](#sec-8-8) for the discussion of radial stability.
 
-Remember that effective force is the gradient of a potential, so our initial assumption was that $F_{eff}$ = 0 for circular orbits. This means that our two radii are at the minimum and maximum points of potential, one being at a stable position and the other at an unstable position. We can look back to [Chapter 8](#ch-8), to the analogy of a ball resting atop the potential energy curve to help describe the stability of positions. This means that the radius at the max potential will be unstable and the radius at the minimum potential will be stable.
+When $L^4/m^2=12\gamma^2\varepsilon$, the two roots coincide at $r=L^2/(2m\gamma)$. The derivative vanishes there but stays positive on both sides. The effective potential has a stationary inflection, so there is an exact circular orbit at the repeated root with no stable small radial oscillations. When $L^4/m^2<12\gamma^2\varepsilon$, neither circular radius exists.
 
 ::::
 
@@ -848,7 +873,7 @@ $$
 \vec{F}_{eff}= -\vec{\nabla}U_{eff}
 $$
 
-**Position of Saddle Point and Minimum Energy for Gravity:**
+**Radius and Energy at the Effective Potential Minimum for Gravity:**
 
 $$
 r_{\min}= \frac{L^{2}}{\gamma m}
@@ -984,11 +1009,11 @@ d) What is the central force function?
 
 ::::{admonition} Practice Problem 10-11
 
-A particle of mass $m$ and angular momentum of $L$ experiences a central force that produces a potential of $U(r) = - \frac{A}{r^{3}}$, where $A$ is a positive constant.
+A particle of mass $m$ and nonzero angular momentum of magnitude $L$ experiences a central force with potential $U(r)=-A/r^3$, where $A>0$.
 
 a) Sketch the effective potential for this system. Which potential (central force potential or centrifugal potential) dominates at small radii and which one dominates at large radii? Hint: make sure your plot matches your expectations.
 
-b) At what radius do you reach a saddle point in the potential?
+b) At what radius is the effective potential stationary?
 
 c) What is the effective potential at this position?
 

@@ -45,9 +45,12 @@ $$
 
 The above equation is a function of the kinetic and potential energies. So we define the **Lagrangian** as:
 
-$$
+```{math}
+:label: eq-12-1
+:enumerator: 12.1
+
 L = K - U
-$$ (eq-12-1)
+```
 
 <!-- Source PDF page 258; printed label 249. -->
 
@@ -69,17 +72,23 @@ Therefore, we can rewrite
 $\frac{\mathrm{d}}{\mathrm{d}t}\left(\frac{\mathrm{d}K}{\mathrm{d}\dot{x}}\right)=-\frac{\mathrm{d}U}{\mathrm{d}x}$,
 which we had before as:
 
-$$
+```{math}
+:label: eq-12-2
+:enumerator: 12.2
+
 \frac{\mathrm{d}}{\mathrm{d}t} \Bigg(\frac{\partial L}{\partial \dot{x}} \Bigg) = \frac{\partial L}{\partial x}
-$$ (eq-12-2)
+```
 
 This is the **Euler-Lagrange equation**. The above example is for 1-D motion in the $x$-axis, but in practice, you can apply the arguments to represent the Euler-Lagrange equations in other (independent) coordinates. In its general form, the Euler-Lagrange equation is:
 
-$$
-\frac{\mathrm{d}}{\mathrm{d}t} \Bigg(\frac{\partial L}{\partial \dot{x}_{i}} \Bigg) = \frac{\partial L}{\partial x_{i}}
-$$ (eq-12-3)
+```{math}
+:label: eq-12-3
+:enumerator: 12.3
 
-where $x_{i}$ represents a coordinate axis (e.g., could be $x, y, r$, etc.). For multi-dimensional problems, you need to solve the Euler-Lagrange equations for each dimension (each axis) separately.
+\frac{\mathrm{d}}{\mathrm{d}t} \Bigg(\frac{\partial L}{\partial \dot{x}_{i}} \Bigg) = \frac{\partial L}{\partial x_{i}}
+```
+
+Here $x_i$ is an independent generalized coordinate, such as a Cartesian position, a radius, or an angle. Write one Euler–Lagrange equation for each independent coordinate and solve the equations together when they are coupled.
 
 The Lagrangian method represents yet another way you can solve problems in physics. For the rest of the chapter, we will look at a few examples.
 
@@ -91,9 +100,17 @@ The Lagrangian method represents yet another way you can solve problems in physi
 
 ::::
 
-::::{admonition} Caveats to the Lagrange Method
+::::{admonition} Explicit Time Dependence and Energy
 
-For the Lagrange method to work, we must treat $\dot{x}_{i}$ and $x_{i}$ as independent variables and assume that the time dependence only enters the problem through $x_{i}$ and $\dot{x}_{i}$.
+When taking partial derivatives of the Lagrangian, treat $x_i$, $\dot x_i$, and $t$ as independent arguments. The Euler–Lagrange equations also apply when $L$ depends explicitly on time.
+
+Along a solution, the energy function
+
+$$
+H=\sum_i \dot x_i\frac{\partial L}{\partial \dot x_i}-L
+$$
+
+satisfies $\mathrm{d}H/\mathrm{d}t=-\partial L/\partial t$. When $L$ has no explicit time dependence, $H$ is conserved.
 
 ::::
 
@@ -375,7 +392,7 @@ $$
 L = \frac{1}{2} m(\dot{r}^{2}+ r^{2}\dot{\theta}^{2}) + \frac{GMm}{r}
 $$
 
-So the Lagrangian is really $L = L(r,\dot{r},\theta,\dot{\theta}$ ) and each dimension must be solved separately.
+The Lagrangian is $L=L(r,\dot r,\theta,\dot\theta)$. Write one equation for $r$ and one for $\theta$.
 
 $$
 \frac{\partial L}{\partial r} = \frac{\mathrm{d}}{\mathrm{d}t} \Bigg(\frac{\partial L}{\partial \dot{r}} \Bigg)
@@ -781,7 +798,7 @@ where $x_{i}$ represents a coordinate (and these do not need to be Cartesian coo
 
 2. Write out $K$ and $U$ and $L = K -U$. Note that the physics is just in $L = K -U$, so once you have the Lagrangian, you have finished with the physics.
 
-3. Solve the Euler-Lagrange equations for each coordinate system separately. Note that a constant in the potential (e.g., $U \rightarrow U(x_{i}) + U_{0})$ does not affect the solution. So you do not care about constant values for the potential.
+3. Write one Euler–Lagrange equation for each independent generalized coordinate. Solve any coupled equations together. The equations of motion are invariant under adding a constant to the potential.
 
 4. If $L$ does not depend on a position coordinate (e.g., $x_i$), then $\partial L/\partial x_i=0$ and $\partial L/\partial\dot{x}_i$ is a constant. See for example the Gravity example in [Section 12.3](#sec-12-3).
 
@@ -868,13 +885,13 @@ Two identical blocks of mass $m$ are connected by an ideal rope. One block is pl
 
 ::::{admonition} Practice Problem 12-6
 
-A block of mass $m$ is attached to a spring with constant $k$ on an incline as shown in the figure. If the block is displaced a small value $x$ from the equilibrium position,
+A block of mass $m$ is attached to a spring with constant $k$ on a frictionless incline as shown in the figure. Let $x$ be the block’s displacement from equilibrium.
 
 a) What is the kinetic energy of the mass?
 
-b) What is the potential energy of the mass?
+b) What is the total potential energy of the spring–block system, including gravity?
 
-c) Find the Lagrangian of the system and solve the Euler-Lagrange equations.
+c) Find the Lagrangian, derive the Euler–Lagrange equation, and give the general solution for $x(t)$.
 
 :::{figure} ../images/figures/figure-12-8.png
 :label: fig-12-8
@@ -910,11 +927,11 @@ Figure for [Problem 12-7](#problem-12-7).
 
 ::::{admonition} Practice Problem 12-8
 
-A circular disk of mass $M$ and radius $R$ hangs from a pivot point that is displaced from the center of mass by a distance $s = R/2$ as shown.
+A thin uniform disk of mass $M$ and radius $R$ swings in its plane about a pivot a distance $s=R/2$ from its center of mass. Let $\theta$ be the angle measured from the stable hanging position.
 
 a) What is the Lagrangian for this system?
 
-b) Check that this answer makes sense by applying the Euler-Lagrange equations and showing that you get a standard differential equation of motion.
+b) Apply the Euler–Lagrange equation to find the equation of motion for arbitrary $\theta$. How does it simplify for small angles?
 
 :::{figure} ../images/figures/figure-12-10.png
 :label: fig-12-10
@@ -940,9 +957,9 @@ y &= \frac{a}{4} (1 - \cos 2\theta)
 \end{aligned}
 $$
 
-where $a$ is a constant and 0 $< \theta < \pi$. See the figure below.
+where $a>0$ and $-\pi/2<\theta<\pi/2$. The bottom of the half-pipe is at $\theta=0$, as shown below.
 
-a) If gravity is the only force on the snowboarder, find the potential energy. Express this in terms of $\theta$.
+a) The normal force constrains the snowboarder to the half-pipe, and gravity supplies the potential energy. Find the gravitational potential energy in terms of $\theta$ with zero at the bottom.
 
 b) What is the kinetic energy of the snowboarder? Express this in terms of $\theta$ and $\dot{\theta}$.
 

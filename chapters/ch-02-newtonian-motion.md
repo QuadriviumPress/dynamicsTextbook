@@ -53,15 +53,21 @@ The **first law** corresponds to the conservation of momentum. The idea here is 
 
 The **second law** corresponds to the rate of change of momentum, $\vec{p}$. The net force acting on a system is:
 
-$$
+```{math}
+:label: eq-2-1
+:enumerator: 2.1
+
 \sum \vec{F} = \frac{\mathrm{d}\vec{p}}{\mathrm{d}t}
-$$ (eq-2-1)
+```
 
 where the momentum is $\vec{p} = m\vec{v}$. If your system has *constant mass*, then the second law can be written as:
 
-$$
+```{math}
+:label: eq-2-2
+:enumerator: 2.2
+
 \sum \vec{F} = m\vec{a} = m\ddot{\vec{r}}
-$$ (eq-2-2)
+```
 
 See [Chapter 1](#ch-1) for a review of vector notation.
 
@@ -69,11 +75,14 @@ The second law connects kinematics (changes in momentum or the acceleration of a
 
 Finally, the **third law** says that forces come in pairs. For two objects that are exerting forces on each other, those forces will be equal in magnitude and opposite in sign. That is,
 
-$$
-\vec{F}_{12}= -\vec{F}_{21}
-$$ (eq-2-3)
+```{math}
+:label: eq-2-3
+:enumerator: 2.3
 
-For example, when you stand on the ground, you push downward on the surface due to gravity. But you don’t fall into the surface, because the ground pushes back up on you in an equal and opposite force, typically called the normal force.
+\vec{F}_{12}= -\vec{F}_{21}
+```
+
+When you stand on the ground, the ground exerts an upward normal force on you, and you exert an equal downward contact force on the ground. These two contact forces form a third-law pair. Your weight and the upward normal force both act on you and balance while you stand at rest.
 
 ::::{admonition} Limitations of Newton’s Laws
 
@@ -119,7 +128,7 @@ Two masses are attached to an ideal string that runs along the ideal pulley at t
 
 **Solution**
 
-First, we find all the forces acting on the system. Since there are two masses, they will each have gravity $M_{1}g$ and $M_{2}g. M_{1}$ is sitting on the incline, so it is pushing down on the incline due to gravity and the incline is pushing up on $M_{1}$ via the normal force $N$. Since $M_{2}$ is hanging, it does not have a normal force. Both masses are attached by a string so that means there is a tension $T$ for both. Since the string and pulley are *ideal*, they have no mass or friction. But there is a coefficient of static friction $\mu$ acting on $M_{1}$ from the incline; because the system is at rest, static friction satisfies $f \leq \mu N$ (with $N$ the normal force), and we will solve for the friction needed to keep the system from sliding.
+First, we find all the forces acting on the system. Since there are two masses, they will each have gravity $M_{1}g$ and $M_{2}g. M_{1}$ is sitting on the incline, so it is pushing down on the incline due to gravity and the incline is pushing up on $M_{1}$ via the normal force $N$. Since $M_{2}$ is hanging, it does not have a normal force. Both masses are attached by a string so that means there is a tension $T$ for both. Since the string and pulley are *ideal*, they have no mass or friction. The coefficient of static friction is $\mu$. We will solve for the friction needed to hold the system at rest and compare its magnitude with the maximum static friction $\mu N$.
 
 
 <!-- Source PDF page 41; printed label 32. -->
@@ -135,7 +144,7 @@ With the forces, let’s draw the free-body diagram. For simplicity, we’ll spl
 Free-body diagram showing gravity $(mg)$, tension $(T)$, friction $(f)$, and the normal force $(N)$ associated with [Figure 2.1](#fig-2-1). Left panel is for $M_{1}$, right panel is for $M_{2}$.
 :::
 
-[Figure 2.2](#fig-2-2) shows the directions for all the forces, where gravity points down, the normal force is perpendicular to the incline, tension is along the string, and friction is parallel to the surface. Note that we need to assume a direction for friction. The actual direction of friction will depend on the relative masses for $M_{1}$ and $M_{2}$ (we do not know if $M_{1}$ wants to slide up or down the incline at this time). So we will make a guess for the direction of friction for now. If we guessed wrong, we will just get a negative force.
+[Figure 2.2](#fig-2-2) shows gravity pointing down, the normal force perpendicular to the incline, and tension along the string. Define $f$ as the signed component of the static friction force in the direction of the arrow, down the incline. A negative $f$ indicates that friction points up the incline.
 
 ::::{tip} Quick Question
 
@@ -196,7 +205,11 @@ f &= M_{2}g - M_{1}g\sin \theta
 \end{aligned}
 $$
 
-Thus, we have our magnitude of $f$. The true direction of $f$ will depend on $\theta, M_{1}$, and $M_{2}$. If $M_{2}g > M_{1}g\sin \theta$, then $f$ is positive and our assumed direction for $f$ is correct. If $M_{2}g < M_{1}g\sin \theta$, then $f$ will be negative, indicating that our assumed direction for $f$ was wrong. This case means that $M_{1}$ is so heavy that it will pull on $M_{2}$ (e.g., $M_{1}$ wants to move down the incline so friction is acting up the incline) .
+The friction magnitude is $|f|=g|M_2-M_1\sin\theta|$. Friction points down the incline if $M_2>M_1\sin\theta$, up the incline if $M_2<M_1\sin\theta$, and vanishes if $M_2=M_1\sin\theta$. The assumed static equilibrium is possible only if
+
+$$
+g|M_2-M_1\sin\theta|\leq \mu M_1g\cos\theta.
+$$
 
 1. If $M_{2}$ and $\theta$ are held constant, what is the maximum mass for $M_{1}$ before our assumed direction of friction from [Figure 2.2](#fig-2-2) is wrong?
 
@@ -586,7 +599,7 @@ There are other ways that force can be proportional to velocity. Let’s look at
 
 ::::{admonition} Sample Problem 2-3
 
-A metal block of mass $m$ slides on a horizontal surface that has a layer of heavy oil so that the block experiences a viscous force that varies as the $3/2$ power of the speed, that is, $F(v) = -bmv^{3/2}$; here $b$ is a positive constant. Let the initial speed of the block be $v_{0}$ at $x$ = 0. **What is the equation of maximum distance that the block will travel before it comes to rest in terms of** $m, v_{0}$**, and** $b$**?**
+A metal block of mass $m$ slides on a horizontal surface that has a layer of heavy oil so that the block experiences a viscous force that varies as the $3/2$ power of the speed, that is, $F(v) = -bmv^{3/2}$; here $b$ is a positive constant. Let the initial speed of the block be $v_{0}$ at $x$ = 0. **What limiting distance does the block approach as its speed tends to zero? Express your answer in terms of the given parameters.**
 
 :::{figure} ../images/figures/figure-2-6.png
 :label: fig-2-6
@@ -601,7 +614,7 @@ Block of mass $m$ slides forward in an oil slick, experiencing $F(v)$, the visco
 
 Looking at the above diagram, and knowing intuitively that the metal block does not leave the horizontal surface, the vertical y-component forces can be ignored as $F_{g}= F_{N}$ (the gravitational force equals the normal force). So the only forces that matter are in the horizontal direction.
 
-The block starts with a velocity $v_{0}$ and the viscous force acts to slow it down (the block has negative acceleration). When the block reaches its maximum displacement, then $v$ = 0 (e.g., if the block is still moving forward, then it has not reached its maximum distance yet).
+The block starts with speed $v_0>0$ and the viscous force slows it as it moves forward. To find the limiting distance, we can integrate up to the limit $v\to 0$.
 
 If we apply Newton’s second law (Equation 2.1) to the viscous force given, then we obtain a differential equation of motion:
 
@@ -616,7 +629,7 @@ m \frac{\mathrm{d}v}{\mathrm{d}t} &= -bmv^{3/2} \\
 \end{aligned}
 $$
 
-Since we are trying to solve for the maximum distance (when $v$ = 0), we could solve the problem by getting $v(t)$ and then $x(t)$ using all the initial conditions, find the time when the velocity goes to zero, and then get $x$ at that time. But a faster way to solve this problem is to get $v(x)$. We can do this using the *chain rule*, where
+We could solve for $v(t)$, integrate to get $x(t)$, and take the limit as $t\to\infty$. A direct way to find the distance is to express speed as a function of position using the chain rule,
 
 $$
 \frac{\mathrm{d}v}{\mathrm{d}t} = \frac{\mathrm{d}v}{\mathrm{d}x} \frac{\mathrm{d}x}{\mathrm{d}t} = v \frac{\mathrm{d}v}{\mathrm{d}x}.
@@ -653,7 +666,7 @@ v^{-1/2}\mathrm{d}v &= -b\mathrm{d}x \quad\Rightarrow  \mathrm{rearrange}
 \end{aligned}
 $$
 
-Now we can integrate both sides. In this case, we consider $v$ at different positions $x$. At $t$ = 0 we are told that $x$ = 0 and $v = v_{0}$ in the problem. At our maximum distance, $x_{\max}$, the block stops moving, so $v$ = 0. So we can solve this differential equation using these limits:
+Integrate from the initial conditions $x=0$ and $v=v_0$ to the limit $v\to 0^+$ at $x\to x_{\max}$. This gives
 
 $$
 \begin{aligned}
@@ -667,7 +680,7 @@ $$
 x_{\max}=\frac{2}{b}\sqrt{v_{0}}
 $$
 
-You will get the same answer if you solve for $v(t), x(t)$, and the time $t_{\max}$ when $v$ = 0 to then find the position $x(t_{\max})$. Try it out and compare the time and number of steps.
+Solving the time-dependent equation gives $v(t)=(v_0^{-1/2}+bt/2)^{-2}$. The speed is positive at every finite time and tends to zero as $t\to\infty$. Integrating this speed and taking the same limit gives the distance above.
 
 ::::
 
@@ -753,7 +766,7 @@ See [Appendix C](#app-c) for answers to the practice problems.
 
 ::::{admonition} Practice Problem 2-1
 
-Two masses, $m_{1}$ and $m_{2}$ are attached by a massless string that passes over a pulley of mass $m_{p}$ as shown in the figure. The pulley is then lifted upwards by a constant acceleration $a_{F}$ due to an external force. What are the correct equations for Newton’s Second Law for the two masses and the pulley?
+Two masses, $m_1$ and $m_2$, are attached by a massless string that passes over a pulley of mass $m_p$ as shown. An upward external force $F$ lifts the pulley with constant upward acceleration $a_F$. Write the translational equations for both masses and the pulley. Allow the tensions on the two sides of the pulley to differ.
 
 :::{figure} ../images/figures/figure-2-7.png
 :label: fig-2-7
@@ -770,7 +783,7 @@ Figure for problem 2-1.
 
 ::::{admonition} Practice Problem 2-2
 
-You are standing a distance $d$ from a building and your friend is on the roof (height $h)$. You throw an object at an angle of $\theta$ from head level $(y_{0})$ so that it reaches your friend. What is the minimum initial speed for the object to just make it on the roof?
+Your friend is at the edge of a roof at height $h$, a horizontal distance $d$ from you. You launch an object from height $y_0$ at a fixed angle $\theta$ above the horizontal toward the roof. Neglect air resistance. What initial speed brings the object to your friend's position, and under what condition is that trajectory possible?
 
 ::::
 
@@ -778,11 +791,11 @@ You are standing a distance $d$ from a building and your friend is on the roof (
 
 ::::{admonition} Practice Problem 2-3
 
-For the following problems, plot the position, velocity, and acceleration for the first three seconds of motion. Example codes for Python are provided in the [online repository](https://github.com/QuadriviumPress/dynamicsTextbook/tree/main/py_notebooks).
+For each case, plot the position, velocity, and acceleration for the first three seconds of motion or until impact, whichever comes first. Example codes for Python are provided in the [online repository](https://github.com/QuadriviumPress/dynamicsTextbook/tree/main/py_notebooks).
 
 a) A ball with an initial velocity of 10 m $\mathrm{s}^{-1}$ and an acceleration of 9.8 m $\mathrm{s}^{-2}$, both in the $+x$ direction. Assume the initial position is $x_{0}$ = 0.
 
-b) A projectile launched upward with an initial velocity of 10 m $\mathrm{s}^{-1}$ at an angle of $45^{\circ}$ relative to the ground. Assume the only force acting on the projectile is gravity and that the projectile starts from the ground at $x_{0}$ = 0 and $y_{0}$ = 0.
+b) A projectile launched with an initial speed of 10 m $\mathrm{s}^{-1}$ at an angle of $45^{\circ}$ relative to the ground. Assume the only force acting on the projectile is gravity and that the projectile starts from the ground at $x_{0}$ = 0 and $y_{0}$ = 0.
 
 c) A particle accelerates such that $a = 4e^{-2t}$, where all quantities are unitless. Assume initial conditions of $v_{0}$ = 5 and $x_{0}$ = 3.
 
@@ -818,7 +831,7 @@ $$
 
 ::::{admonition} Practice Problem 2-6
 
-An alien parachutist of mass $m$ decides to go skydiving on their Earth-like home planet. The alien jumps out of a plane at a height $h$ above the surface and feels a drag force $F_{drag}= -bmv$, where $b$ is a positive constant. Assume $h$ is small enough that gravity can be approximated as a constant, $g$.
+An alien parachutist of mass $m$ begins to fall from height $h$ with zero initial vertical velocity. Let $y$ be height above the surface and $v=\dot y$. The vertical drag force is $F_{\mathrm{drag}}=-bmv$, with $b>0$. Treat $g$ as constant.
 
 a) What is the equation for the net force acting on the alien?
 
@@ -888,7 +901,7 @@ Figure for problem 2-8.
 
 ::::{admonition} Practice Problem 2-9
 
-Two blocks are sitting on top of each other on a frictionless surface. The top block has a mass $m_{1}$ and the bottom block has a mass $m_{2}$. There is a coefficient of friction $\mu$ between the two blocks. At $t = 0, m_{1}$ is moving with a speed of $v_{0}$ relative to $m_{2}$, and $m_{2}$ is at rest relative to the frictionless surface. After a certain time, $t = t_{r}, m_{1}$ will be at rest with respect to $m_{2}$ (e.g., the two blocks are traveling at the same velocity).
+Two blocks are sitting on top of each other on a frictionless surface. The top block has a mass $m_{1}$ and the bottom block has a mass $m_{2}$. The coefficient of kinetic friction between the two blocks is $\mu$. At $t = 0, m_{1}$ is moving with a speed of $v_{0}$ relative to $m_{2}$, and $m_{2}$ is at rest relative to the frictionless surface. After a certain time, $t = t_{r}, m_{1}$ will be at rest with respect to $m_{2}$ (e.g., the two blocks are traveling at the same velocity).
 
 a) Draw the free-body diagram for both masses.
 

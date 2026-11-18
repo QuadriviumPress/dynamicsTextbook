@@ -141,10 +141,13 @@ This section gives the full coordinate transformations for the gradient, diverge
 
 In general, consider a 3-D coordinate system $c_{1}, c_{2}$, and $c_{3}$ with orthogonal unit vectors defined as $\hat{e}_{1}, \hat{e}_{2}$, and $\hat{e}_{3}$. Note that $c_{1}, c_{2}$, and $c_{3}$ are merely stand-ins for $x,y,z$ or $r,\theta,\varphi$.
 
-In this general 3-D coordinate system, a line element would be
+In this orthogonal coordinate system, the infinitesimal displacement and the corresponding arc length satisfy
 
 $$
-\mathrm{d}s = \langle h_{1}\mathrm{d}c_{1},h_{2}\mathrm{d}c_{2},h_{3}\mathrm{d}c_{3}\rangle
+\begin{aligned}
+\mathrm{d}\vec{r} &= \sum_{i=1}^{3} h_i\,\mathrm{d}c_i\,\hat{e}_i, \\
+\mathrm{d}s^2 &= \sum_{i=1}^{3} h_i^2\,\mathrm{d}c_i^2.
+\end{aligned}
 $$
 
 where $h_{1}, h_{2}$, and $h_{3}$ are scale factors that may need to be applied to each coordinate (the value of these scale factors depends on the coordinate transformation - more on this below).
